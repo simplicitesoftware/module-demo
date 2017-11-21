@@ -1,0 +1,5 @@
+/* Customized trays colors */
+.tray.object-DemoOrder .tray-col[data-name="P"] .tray-content { background: #FFF2F2; }
+.tray.object-DemoOrder .tray-col[data-name="V"] .tray-content { background: #FFF7EF; }
+.tray.object-DemoOrder .tray-col[data-name="D"] .tray-content { background: #F2FFF2; }
+.tray.object-DemoOrder .tray-col[data-name="C"] .tray-content { background: #F2FBFF; }

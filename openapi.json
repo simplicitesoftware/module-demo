@@ -1,0 +1,42 @@
+{
+  "basePath": "/api",
+  "paths": {"/login": {"post": {
+    "description": "Login",
+    "operationId": "login",
+    "responses": {"200": {"description": "User information"}},
+    "parameters": [
+      {
+        "name": "login",
+        "description": "Login",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "password",
+        "description": "Password",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }}},
+  "produces": ["application/json"],
+  "host": "dev40.simplicite.cloud:-1",
+  "schemes": ["https"],
+  "swagger": "2.0",
+  "info": {
+    "license": {
+      "name": "Simplicite license",
+      "url": "http://www.simplicitesoftware.com"
+    },
+    "contact": {
+      "name": "Simplicite Software",
+      "url": "http://www.simplicitesoftware.com",
+      "email": "contact@simplicitesoftware.com"
+    },
+    "description": "API for Demo",
+    "termsOfService": "",
+    "title": "Demo",
+    "version": "4.0"
+  },
+  "consumes": ["application/json"]
+}

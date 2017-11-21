@@ -1,0 +1,12 @@
+{
+    "date": "Thu Nov 16 15:56:40 CET 2017",
+    "name": "Demo",
+    "format": "xml",
+    "description": "Order management demo",
+    "repository": {
+        "type": "url",
+        "url": "https://www.simplicite.io/resources/modules/demo-app-4.0.xml"
+    },
+    "version": "4.0",
+    "dependencies": [{"Simplicite": "4.0"}]
+}

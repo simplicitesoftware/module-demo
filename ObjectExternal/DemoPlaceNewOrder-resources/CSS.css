@@ -1,0 +1,11 @@
+.obj {
+	padding: 8px;
+	margin: 4px;
+	cursor: pointer;
+}
+.obj:active, .obj:hover {
+	background: #F0F0F0;
+}
+.sel {
+	background: #E7E7E7;
+}
