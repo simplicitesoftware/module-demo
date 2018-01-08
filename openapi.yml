@@ -1,0 +1,3000 @@
+---
+servers:
+- url: https://dev40.simplicite.cloud/api
+openapi: 3.0.0
+paths:
+  /rest/DemoOrderHistoric/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdStatus
+        description: Status
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Quantity
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdStatus
+        description: Status
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Quantity
+        required: false
+  /login:
+    post:
+      description: Login
+      operationId: login
+      responses:
+        '200':
+          description: User information
+      parameters:
+      - schema:
+          type: string
+        in: query
+        name: login
+        description: Login
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: password
+        description: Password
+        required: true
+  /rest/DemoOrderHistoric:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Search filter for Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: Search filter for User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdStatus
+        description: Search filter for Status
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Search filter for Quantity
+        required: false
+  /rest/DemoContact/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoCtcDatetime
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcType
+        description: Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcSubType
+        description: Subtype
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCanal
+        description: Canal
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoCtcPriority
+        description: Priority
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcStatus
+        description: Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId
+        description: Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliCode
+        description: Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFirstname
+        description: Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliLastname
+        description: Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliEmail
+        description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliHomePhone
+        description: Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliWorkPhone
+        description: Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliMobilePhone
+        description: Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFax
+        description: Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId
+        description: Order
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdNumber
+        description: Order number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdDate
+        description: Order date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdStatus
+        description: Order status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdCliId
+        description: Order client
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId
+        description: Order product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
+        description: Order product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Order product supplier responsible
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
+        description: Order product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
+        description: Order product name
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdQuantity
+        description: Order quantity
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: File
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoCtcDatetime
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcType
+        description: Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcSubType
+        description: Subtype
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCanal
+        description: Canal
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoCtcPriority
+        description: Priority
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcStatus
+        description: Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId
+        description: Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliCode
+        description: Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFirstname
+        description: Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliLastname
+        description: Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliEmail
+        description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliHomePhone
+        description: Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliWorkPhone
+        description: Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliMobilePhone
+        description: Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFax
+        description: Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId
+        description: Order
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdNumber
+        description: Order number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdDate
+        description: Order date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdStatus
+        description: Order status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdCliId
+        description: Order client
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId
+        description: Order product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
+        description: Order product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Order product supplier responsible
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
+        description: Order product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
+        description: Order product name
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdQuantity
+        description: Order quantity
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: File
+        required: false
+  /logout:
+    get:
+      description: Logout
+      operationId: logout
+      responses:
+        '200':
+          description: Logout confirmation
+  /rest:
+    get:
+      description: Application session information
+      operationId: app-info
+      responses:
+        '200':
+          description: Application information
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: texts
+        description: Texts?
+        required: false
+  /rest/DemoProductHistoric/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Available
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Available
+        required: false
+  /rest/DemoSupplier/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoSupCode
+        description: Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupName
+        description: Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupDescription
+        description: Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupPhone
+        description: Phone
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupFax
+        description: Fax
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupWebsite
+        description: Website
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupEmail
+        description: Email
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoSupLogo
+        description: Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId__usr_login
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupComments
+        description: Comments
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoSupCode
+        description: Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupName
+        description: Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupDescription
+        description: Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupPhone
+        description: Phone
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupFax
+        description: Fax
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupWebsite
+        description: Website
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupEmail
+        description: Email
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoSupLogo
+        description: Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId__usr_login
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupComments
+        description: Comments
+        required: false
+  /rest/DemoContact:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcDatetime
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcType
+        description: Search filter for Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcSubType
+        description: Search filter for Subtype
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCanal
+        description: Search filter for Canal
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoCtcPriority
+        description: Search filter for Priority
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcStatus
+        description: Search filter for Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId
+        description: Search filter for Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliCode
+        description: Search filter for Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFirstname
+        description: Search filter for Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliLastname
+        description: Search filter for Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliEmail
+        description: Search filter for E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliHomePhone
+        description: Search filter for Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliWorkPhone
+        description: Search filter for Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliMobilePhone
+        description: Search filter for Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFax
+        description: Search filter for Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId
+        description: Search filter for Order
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdNumber
+        description: Search filter for Order number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdDate
+        description: Search filter for Order date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdStatus
+        description: Search filter for Order status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdCliId
+        description: Search filter for Order client
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId
+        description: Search filter for Order product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
+        description: Search filter for Order product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Search filter for Order product supplier responsible
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
+        description: Search filter for Order product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
+        description: Search filter for Order product name
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdQuantity
+        description: Search filter for Order quantity
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Search filter for Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: Search filter for File
+        required: false
+  /rest/DemoSupplier:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupCode
+        description: Search filter for Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupName
+        description: Search filter for Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupDescription
+        description: Search filter for Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupPhone
+        description: Search filter for Phone
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupFax
+        description: Search filter for Fax
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupWebsite
+        description: Search filter for Website
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupEmail
+        description: Search filter for Email
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoSupLogo
+        description: Search filter for Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId
+        description: Search filter for Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId__usr_login
+        description: Search filter for Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupComments
+        description: Search filter for Comments
+        required: false
+  /rest/DemoClient/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoCliCode
+        description: Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliFirstname
+        description: First name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliLastname
+        description: Last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress1
+        description: Address 1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress2
+        description: Address 2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress3
+        description: Address 3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliZipCode
+        description: Zip code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCity
+        description: City
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCountry
+        description: Country
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCoords
+        description: Coordinates
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliEmail
+        description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliHomePhone
+        description: Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliWorkPhone
+        description: Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliMobilePhone
+        description: Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliFax
+        description: Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliType
+        description: Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliComments
+        description: Comments
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoCliCode
+        description: Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliFirstname
+        description: First name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliLastname
+        description: Last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress1
+        description: Address 1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress2
+        description: Address 2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress3
+        description: Address 3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliZipCode
+        description: Zip code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCity
+        description: City
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCountry
+        description: Country
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCoords
+        description: Coordinates
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliEmail
+        description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliHomePhone
+        description: Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliWorkPhone
+        description: Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliMobilePhone
+        description: Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliFax
+        description: Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliType
+        description: Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliComments
+        description: Comments
+        required: false
+  /rest/DemoOrder/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdNumber
+        description: Number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDate
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdStatus
+        description: Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDeliveryDate
+        description: Delivery date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId
+        description: Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCode
+        description: Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliFirstname
+        description: Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliLastname
+        description: Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliEmail
+        description: Customer e-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress1
+        description: Customer address 1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress2
+        description: Customer address 2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress3
+        description: Customer address 3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliZipCode
+        description: Customer zip code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCity
+        description: Customer city
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCountry
+        description: Customer country
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId
+        description: Product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdReference
+        description: Product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdName
+        description: Product name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoOrdPrdId__demoPrdPicture
+        description: Product picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId
+        description: Supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupCode
+        description: Supplier code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupName
+        description: Supplier name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupLogo
+        description: Supplier logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdPrdId__demoPrdStock
+        description: Product Stock
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdPrdId__demoPrdUnitPrice
+        description: Current unit price
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Quantity
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdTotal
+        description: Total
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdVAT
+        description: VAT
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdComments
+        description: Comments
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdNumber
+        description: Number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDate
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdStatus
+        description: Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDeliveryDate
+        description: Delivery date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId
+        description: Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCode
+        description: Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliFirstname
+        description: Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliLastname
+        description: Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliEmail
+        description: Customer e-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress1
+        description: Customer address 1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress2
+        description: Customer address 2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress3
+        description: Customer address 3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliZipCode
+        description: Customer zip code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCity
+        description: Customer city
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCountry
+        description: Customer country
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId
+        description: Product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdReference
+        description: Product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdName
+        description: Product name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoOrdPrdId__demoPrdPicture
+        description: Product picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId
+        description: Supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupCode
+        description: Supplier code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupName
+        description: Supplier name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupLogo
+        description: Supplier logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdPrdId__demoPrdStock
+        description: Product Stock
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdPrdId__demoPrdUnitPrice
+        description: Current unit price
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Quantity
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdTotal
+        description: Total
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdVAT
+        description: VAT
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdComments
+        description: Comments
+        required: false
+  /rest/DemoOrder:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdNumber
+        description: Search filter for Number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDate
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdStatus
+        description: Search filter for Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDeliveryDate
+        description: Search filter for Delivery date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId
+        description: Search filter for Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCode
+        description: Search filter for Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliFirstname
+        description: Search filter for Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliLastname
+        description: Search filter for Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliEmail
+        description: Search filter for Customer e-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress1
+        description: Search filter for Customer address 1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress2
+        description: Search filter for Customer address 2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliAddress3
+        description: Search filter for Customer address 3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliZipCode
+        description: Search filter for Customer zip code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCity
+        description: Search filter for Customer city
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdCliId__demoCliCountry
+        description: Search filter for Customer country
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId
+        description: Search filter for Product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdReference
+        description: Search filter for Product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdName
+        description: Search filter for Product name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoOrdPrdId__demoPrdPicture
+        description: Search filter for Product picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId
+        description: Search filter for Supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupCode
+        description: Search filter for Supplier code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupName
+        description: Search filter for Supplier name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupLogo
+        description: Search filter for Supplier logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Search filter for Responsible user
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdPrdId__demoPrdStock
+        description: Search filter for Product Stock
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdPrdId__demoPrdUnitPrice
+        description: Search filter for Current unit price
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdUnitPrice
+        description: Search filter for Unit price
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Search filter for Quantity
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdTotal
+        description: Search filter for Total
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoOrdVAT
+        description: Search filter for VAT
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdComments
+        description: Search filter for Comments
+        required: false
+  /rest/DemoProductHistoric:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Search filter for Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: Search filter for User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Search filter for Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Search filter for Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Search filter for Available
+        required: false
+  /rest/DemoContactHistoric:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Search filter for Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: Search filter for User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Search filter for Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: Search filter for File
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcStatus
+        description: Search filter for Status
+        required: false
+  /rest/DemoClient:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCode
+        description: Search filter for Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliFirstname
+        description: Search filter for First name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliLastname
+        description: Search filter for Last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress1
+        description: Search filter for Address 1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress2
+        description: Search filter for Address 2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliAddress3
+        description: Search filter for Address 3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliZipCode
+        description: Search filter for Zip code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCity
+        description: Search filter for City
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCountry
+        description: Search filter for Country
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliCoords
+        description: Search filter for Coordinates
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliEmail
+        description: Search filter for E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliHomePhone
+        description: Search filter for Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliWorkPhone
+        description: Search filter for Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliMobilePhone
+        description: Search filter for Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliFax
+        description: Search filter for Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliType
+        description: Search filter for Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCliComments
+        description: Search filter for Comments
+        required: false
+  /rest/DemoProduct:
+    get:
+      description: Get business object metadata or search records
+      operationId: obj-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId
+        description: Search filter for Supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupCode
+        description: Search filter for Supplier code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupName
+        description: Search filter for Supplier name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdSupId__demoSupLogo
+        description: Search filter for Supplier Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupUsrId
+        description: Search filter for Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Search filter for Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdDescription
+        description: Search filter for Description
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdPicture
+        description: Search filter for Picture
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoPrdStock
+        description: Search filter for Stock
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Search filter for Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Search filter for Available
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdDocumentation
+        description: Search filter for Description
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdBrochure
+        description: Search filter for Brochure
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdComments
+        description: Search filter for Comments
+        required: false
+  /rest/DemoContactHistoric/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: File
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcStatus
+        description: Status
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: File
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcStatus
+        description: Status
+        required: false
+  /rest/DemoProduct/{row_id}:
+    post:
+      description: Create business object record
+      operationId: obj-create
+      responses:
+        '200':
+          description: Created business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId
+        description: Supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupCode
+        description: Supplier code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupName
+        description: Supplier name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdSupId__demoSupLogo
+        description: Supplier Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdDescription
+        description: Description
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdPicture
+        description: Picture
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoPrdStock
+        description: Stock
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Available
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdDocumentation
+        description: Description
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdBrochure
+        description: Brochure
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdComments
+        description: Comments
+        required: false
+    get:
+      description: Get business object record
+      operationId: obj-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+    delete:
+      description: Delete business object record
+      operationId: obj-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+    put:
+      description: Update business object record
+      operationId: obj-update
+      responses:
+        '200':
+          description: Updated business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId
+        description: Supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupCode
+        description: Supplier code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupName
+        description: Supplier name
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdSupId__demoSupLogo
+        description: Supplier Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdDescription
+        description: Description
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdPicture
+        description: Picture
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoPrdStock
+        description: Stock
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Available
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdDocumentation
+        description: Description
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoPrdBrochure
+        description: Brochure
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdComments
+        description: Comments
+        required: false
+info:
+  license:
+    name: Simplicite license
+    url: http://www.simplicitesoftware.com
+  contact:
+    name: Simplicite Software
+    url: http://www.simplicitesoftware.com
+    email: contact@simplicitesoftware.com
+  description: REST APIs for Demo
+  termsOfService: ''
+  title: Demo
+  version: '4.0'
