@@ -108,9 +108,9 @@ A contact can be linked or not a an order of the selelcted client
     - `CHAT` Code CHAT
     - `WEB` Code WEB
 * `DEMO_CTC_STATUS`
-    - `O` Code O
-    - `C` Code C
-    - `P` Code P
+    - `O` Open
+    - `C` Closed
+    - `P` Processing
 * `DEMO_ORD_STATUS`
     - `P` Pending status
     - `V` Validated status
@@ -141,9 +141,9 @@ No custom action
 ### Lists
 
 * `DEMO_CTC_STATUS`
-    - `O` Code O
-    - `C` Code C
-    - `P` Code P
+    - `O` Open
+    - `C` Closed
+    - `P` Processing
 
 ### Custom actions
 
@@ -262,7 +262,7 @@ Its reference is unique per supplier.
 | `demoPrdStock`                                               | int(11)                                  | x   | x   | -                                                                                |
 | `demoPrdUnitPrice`                                           | float(11, 2)                             | x   | x   | -                                                                                |
 | `demoPrdAvailable`                                           | boolean                                  | x   | x   | -                                                                                |
-| `demoPrdDocumentation`                                       | html(50000)                              |     | x   | -                                                                                |
+| `demoPrdDocumentation`                                       | html(1000000)                            |     | x   | -                                                                                |
 | `demoPrdBrochure`                                            | document                                 |     | x   | -                                                                                |
 | `demoPrdComments`                                            | notepad(50000)                           |     | x   | -                                                                                |
 

@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2017-11-16 15:56:40</mdl_lastupd>
+		<mdl_lastupd>2018-01-08 17:24:23</mdl_lastupd>
 		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
@@ -251,26 +251,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<action>upsert</action>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY DemoAdminHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"DemoSupplier","rowId":"1","label":"Supplier : BIM"},
-{"object":"Model","rowId":"18","label":"Data model : DemoProducts"},
-{"object":"User","rowId":"1","label":"User designer"}]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY ViewGrant</usp_param_id.sys_code>
-		<usp_value><![CDATA[[]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
 		<usp_value><![CDATA[dropdown]]></usp_value>
 		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
@@ -294,24 +274,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>SCOPE_PREFS</usp_param_id.sys_code>
-		<usp_value><![CDATA[DemoAdminHome,ViewGrant]]></usp_value>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY DemoUserHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
 		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
 		<usp_value><![CDATA[split]]></usp_value>
@@ -324,18 +286,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 - `accordion` Accordion menu (left),
 - `split` Split menu (top and left),
 - `dropdown` Dropdown menu (top)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY DemoUserHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"DemoOrder","rowId":"85","label":"Commande: Commande N°85"},
-{"object":"DemoOrder","rowId":"82","label":"Commande: Commande N°82"},
-{"object":"DemoOrder","rowId":"88","label":"Commande: Commande N°88"},
-{"object":"DemoSupplier","rowId":"1","label":"Fournisseur: BIM"}]]]></usp_value>
-		<usp_param_id.sys_type/>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -949,8 +899,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_name>DEMO_CTC_STATUS</lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_model_id.mod_name/>
-		<lov_model_id.mod_image/>
+		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
+		<lov_model_id.mod_image>Model/mod_image/0/25/DemoContactStates.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE</lov_name>
@@ -985,8 +935,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_name>DEMO_ORD_STATUS</lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_model_id.mod_name/>
-		<lov_model_id.mod_image/>
+		<lov_model_id.mod_name>DemoOrderStates</lov_model_id.mod_name>
+		<lov_model_id.mod_image>Model/mod_image/0/11/DemoOrderStates.png</lov_model_id.mod_image>
 	</data>
 </object>
 <object>
@@ -1073,21 +1023,21 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<lov_code>O</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code O</lov_label>
+		<lov_label>Open</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<lov_code>C</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code C</lov_label>
+		<lov_label>Closed</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<lov_code>P</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code P</lov_label>
+		<lov_label>Processing</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1862,7 +1812,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<fld_name>demoCliCoords</fld_name>
 		<fld_dbname>cli_coords</fld_dbname>
-		<fld_visible>3</fld_visible>
+		<fld_visible>2</fld_visible>
 		<fld_updatable>0</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
@@ -3029,7 +2979,7 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
-		<fld_size>50000</fld_size>
+		<fld_size>1000000</fld_size>
 		<fld_minsize/>
 		<fld_precision>w=80 h=10</fld_precision>
 		<fld_dfault/>
@@ -5138,7 +5088,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_copy/>
 		<obf_ref_order/>
 		<obf_fld_visible/>
-		<obf_field_id.fld_visible>3</obf_field_id.fld_visible>
+		<obf_field_id.fld_visible>2</obf_field_id.fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
@@ -11024,6 +10974,22 @@ state transition to _shipped_ status.]]></act_comment>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<prt_object_id.obo_name>DemoSupplier</prt_object_id.obo_name>
+		<prt_name>DemoSupplier-CATALOG</prt_name>
+		<prt_usage>L</prt_usage>
+		<prt_type>FILE</prt_type>
+		<prt_method/>
+		<prt_file>PrintTemplate/DemoSupplier-CATALOG.html</prt_file>
+		<prt_template_id.tpl_name/>
+		<prt_mimetype>html</prt_mimetype>
+		<prt_filename/>
+		<prt_translation>Catalog</prt_translation>
+		<prt_lang>ANY</prt_lang>
+		<prt_grantable>0</prt_grantable>
+		<prt_visible>1</prt_visible>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>BPMProcess</name>
@@ -11040,8 +11006,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<pcs_persist_depth>0</pcs_persist_depth>
 		<pcs_alert_id.alt_name/>
 		<pcs_compensate_id.pcs_name/>
-		<pcs_model_id.mod_name/>
-		<pcs_model_id.mod_image/>
+		<pcs_model_id.mod_name>DemoWorkflow</pcs_model_id.mod_name>
+		<pcs_model_id.mod_image>Model/mod_image/0/14/DemoWorkflow.png</pcs_model_id.mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<pcs_mainact_id.acy_step/>
 		<pcs_mainact_id.acy_name/>
@@ -11754,7 +11720,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<sta_state_id.lov_code>C</sta_state_id.lov_code>
 		<sta_state>C</sta_state>
-		<sta_label>State C</sta_label>
+		<sta_label>Closed</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>1</sta_terminal>
 		<sta_read>1</sta_read>
@@ -11768,7 +11734,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<sta_state_id.lov_code>O</sta_state_id.lov_code>
 		<sta_state>O</sta_state>
-		<sta_label>State O</sta_label>
+		<sta_label>Open</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -11782,7 +11748,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<sta_state_id.lov_code>P</sta_state_id.lov_code>
 		<sta_state>P</sta_state>
-		<sta_label>State P</sta_label>
+		<sta_label>Processing</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
@@ -12899,23 +12865,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<trv_tree_id.trv_name>DemoTreeAuto</trv_tree_id.trv_name>
-		<trv_level>00</trv_level>
-		<trv_object_id.obo_name/>
-		<trv_field_id.fld_name/>
-		<trv_external_id.obe_name/>
-		<trv_action_id.act_name/>
-		<trv_shortcut_id.shc_name/>
-		<trv_process_id.pcs_name>DemoOrderCreate</trv_process_id.pcs_name>
-		<trv_subtree_id.trv_name/>
-		<trv_open>0</trv_open>
-		<trv_pagine>0</trv_pagine>
-		<trv_onclick/>
-		<treename/>
-		<trv_parent_id.trv_level/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<trv_tree_id.trv_name>DemoTreeAuto</trv_tree_id.trv_name>
 		<trv_level>10</trv_level>
 		<trv_object_id.obo_name>DemoClient</trv_object_id.obo_name>
 		<trv_field_id.fld_name/>
@@ -12952,6 +12901,24 @@ state transition to _shipped_ status.]]></act_comment>
 <object>
 	<name>Resource</name>
 	<action>upsert</action>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>CSS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>DEMO_PRINT_STYLES</res_code>
+		<res_cached>0</res_cached>
+		<res_file>Disposition/default-resources/DEMO_PRINT_STYLES.css</res_file>
+		<res_file_compiled/>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<res_object>
 			<object>
@@ -13035,9 +13002,9 @@ state transition to _shipped_ status.]]></act_comment>
 		</res_object>
 		<res_type>CSS</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>CSS</res_code>
+		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/CSS.css</res_file>
+		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/STYLES.css</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -13471,6 +13438,14 @@ state transition to _shipped_ status.]]></act_comment>
 <object>
 	<name>Model</name>
 	<action>upsert</action>
+	<data>
+		<mod_name>DemoContactStates</mod_name>
+		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
+		<mod_doc>Model/DemoContactStates.json</mod_doc>
+		<mod_json/>
+		<mod_image>Model/DemoContactStates.png</mod_image>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<mod_name>DemoObjects</mod_name>
 		<mod_template_id.mtp_name>ModelObject</mod_template_id.mtp_name>
@@ -16609,7 +16584,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>DemoAdminHome</tsl_id.viw_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo administrator</tsl_value>
+		<tsl_value>Demo</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16625,7 +16600,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>DemoUserHome</tsl_id.viw_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo user</tsl_value>
+		<tsl_value>Demo</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16633,7 +16608,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>DemoAdminHome</tsl_id.viw_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Administration démo</tsl_value>
+		<tsl_value>Démo</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16649,7 +16624,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeView>V</tsl_typeView>
 		<tsl_id.viw_name>DemoUserHome</tsl_id.viw_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Utilisateur démo</tsl_value>
+		<tsl_value>Démo</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
