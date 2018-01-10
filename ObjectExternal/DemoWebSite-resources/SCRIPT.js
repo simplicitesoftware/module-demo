@@ -166,6 +166,10 @@ DemoWebSiteBootstrap = (function($) {
 	}
 
 	function catalog() {
+		function order_click() {
+			prd.item = $(this).data("item");
+			order();
+		}
 		reset(true);
 		page = "catalog";
 		prd.search(function() {
@@ -181,10 +185,7 @@ DemoWebSiteBootstrap = (function($) {
 				//var pi = $("<img/>", { style: "height: 200px;", title: item.demoPrdReference, src: "data:" + item.demoPrdPicture.mime + ";base64," + item.demoPrdPicture.content }).popover({ content: item.demoPrdDescription });
 				var pi = $("<img/>", { style: "height: 150px;", title: item.demoPrdReference, src: app.imageURL(prd.getName(), "demoPrdPicture", item.row_id, item.demoPrdPicture, false) }).popover({ content: item.demoPrdDescription });
 				var pp = $("<strong/>", { style: "margin-right: 25px;" }).append(amount(item.demoPrdUnitPrice));
-				var b = $("<button/>").addClass("btn").addClass("btn-success").text("Order").data("item", item).click(function () {
-					prd.item = $(this).data("item");
-					order();
-				});
+				var b = $("<button/>").addClass("btn").addClass("btn-success").text("Order").data("item", item).click(order_click);
 				r.append(panel($("<div/>").addClass("text-center").append(pi).append("<hr/>").append($("<p/>").addClass("text-right").append(pp).append(b)), pt, "default", 3));
 			}
 			if (r !== undefined) $main.append(r);
@@ -255,6 +256,9 @@ DemoWebSiteBootstrap = (function($) {
 	}
 	
 	function orders() {
+		function message_click() {
+			contact($(this).data("item"));
+		}
 		reset(true);
 		page = "orders";
 		if (cli.item === undefined) {
@@ -283,9 +287,7 @@ DemoWebSiteBootstrap = (function($) {
 								.append($("<td/>").text(o.demoOrdPrdId__demoPrdSupId__demoSupName + " / " + o.demoOrdPrdId__demoPrdName))
 								.append($("<td/>").text(o.demoOrdQuantity))
 								.append($("<td/>").html(amount(o.demoOrdTotal)))
-								.append($("<td/>").append($("<button/>").addClass("btn").addClass("btn-primary").addClass("btn-xs").text("Message").data("item", o).click(function () {
-									contact($(this).data("item"));
-								})));
+								.append($("<td/>").append($("<button/>").addClass("btn").addClass("btn-primary").addClass("btn-xs").text("Message").data("item", o).click(message_click)));
 						var s = o.demoOrdStatus;
 						if (s === "P")
 							tr.addClass("danger");
@@ -368,7 +370,7 @@ DemoWebSiteBootstrap = (function($) {
 			maxTime: "22:00:00",
 			eventClick: function(e) {
 				$popup.title.empty().append(e.title);
-				var ordId = e.id
+				var ordId = e.id;
 				$popup.body.empty().append($("<p/>").html("TODO: get order for row ID = " + ordId));
 				$popup.ok.click(function() { return undefined; });
 				$popup.show();

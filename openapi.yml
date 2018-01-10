@@ -1,4 +1,16 @@
 ---
+components:
+  securitySchemes:
+    basicAuth:
+      scheme: basic
+      type: http
+    bearerAuth:
+      bearerFormat: Simplicite token
+      scheme: bearer
+      type: http
+security:
+- basicAuth: []
+- bearerAuth: []
 servers:
 - url: https://dev40.simplicite.cloud/api
 openapi: 3.0.0
@@ -6,10 +18,12 @@ paths:
   /rest/DemoOrderHistoric/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-demoorderhistoric-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -43,6 +57,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoOrdStatus
         description: Status
@@ -53,9 +72,11 @@ paths:
         name: demoOrdQuantity
         description: Quantity
         required: false
+      tags:
+      - DemoOrderHistoric
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-demoorderhistoric-get
       responses:
         '200':
           description: Business object record
@@ -84,12 +105,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoOrderHistoric
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-demoorderhistoric-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -97,12 +122,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoOrderHistoric
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-demoorderhistoric-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -136,6 +165,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoOrdStatus
         description: Status
@@ -146,6 +180,8 @@ paths:
         name: demoOrdQuantity
         description: Quantity
         required: false
+      tags:
+      - DemoOrderHistoric
   /login:
     post:
       description: Login
@@ -153,6 +189,8 @@ paths:
       responses:
         '200':
           description: User information
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -166,13 +204,17 @@ paths:
         name: password
         description: Password
         required: true
+      tags:
+      - Application
   /rest/DemoOrderHistoric:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-demoorderhistoric-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -212,6 +254,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoOrdStatus
         description: Search filter for Status
@@ -222,13 +269,17 @@ paths:
         name: demoOrdQuantity
         description: Search filter for Quantity
         required: false
+      tags:
+      - DemoOrderHistoric
   /rest/DemoContact/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-democontact-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -244,18 +295,36 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
         in: query
         name: demoCtcType
         description: Type
         required: false
       - schema:
           type: string
+          enum:
+          - ORDSTATUS
+          - PRDINFO
+          - ORDCANCEL
+          - ORDCHANGE
+          - ORDISSUE
+          - BILLISSUE
         in: query
         name: demoCtcSubType
         description: Subtype
         required: false
       - schema:
           type: string
+          enum:
+          - PHONE
+          - FAX
+          - EMAIL
+          - CHAT
+          - WEB
         in: query
         name: demoCtcCanal
         description: Canal
@@ -268,6 +337,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -346,6 +419,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoCtcOrdId__demoOrdStatus
         description: Order status
@@ -404,9 +482,11 @@ paths:
         name: demoCtcFile
         description: File
         required: false
+      tags:
+      - DemoContact
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-democontact-get
       responses:
         '200':
           description: Business object record
@@ -435,12 +515,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoContact
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-democontact-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -448,12 +532,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoContact
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-democontact-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -469,18 +557,36 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
         in: query
         name: demoCtcType
         description: Type
         required: false
       - schema:
           type: string
+          enum:
+          - ORDSTATUS
+          - PRDINFO
+          - ORDCANCEL
+          - ORDCHANGE
+          - ORDISSUE
+          - BILLISSUE
         in: query
         name: demoCtcSubType
         description: Subtype
         required: false
       - schema:
           type: string
+          enum:
+          - PHONE
+          - FAX
+          - EMAIL
+          - CHAT
+          - WEB
         in: query
         name: demoCtcCanal
         description: Canal
@@ -493,6 +599,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -571,6 +681,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoCtcOrdId__demoOrdStatus
         description: Order status
@@ -629,6 +744,8 @@ paths:
         name: demoCtcFile
         description: File
         required: false
+      tags:
+      - DemoContact
   /logout:
     get:
       description: Logout
@@ -636,13 +753,19 @@ paths:
       responses:
         '200':
           description: Logout confirmation
+          content:
+            application/json: {}
+      tags:
+      - Application
   /rest:
     get:
       description: Application session information
-      operationId: app-info
+      operationId: info
       responses:
         '200':
           description: Application information
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -650,13 +773,17 @@ paths:
         name: texts
         description: Texts?
         required: false
+      tags:
+      - Application
   /rest/DemoProductHistoric/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-demoproducthistoric-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -712,9 +839,11 @@ paths:
         name: demoPrdAvailable
         description: Available
         required: false
+      tags:
+      - DemoProductHistoric
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-demoproducthistoric-get
       responses:
         '200':
           description: Business object record
@@ -743,12 +872,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoProductHistoric
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-demoproducthistoric-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -756,12 +889,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoProductHistoric
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-demoproducthistoric-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -817,13 +954,17 @@ paths:
         name: demoPrdAvailable
         description: Available
         required: false
+      tags:
+      - DemoProductHistoric
   /rest/DemoSupplier/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-demosupplier-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -897,9 +1038,11 @@ paths:
         name: demoSupComments
         description: Comments
         required: false
+      tags:
+      - DemoSupplier
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-demosupplier-get
       responses:
         '200':
           description: Business object record
@@ -928,12 +1071,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoSupplier
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-demosupplier-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -941,12 +1088,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoSupplier
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-demosupplier-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1020,13 +1171,17 @@ paths:
         name: demoSupComments
         description: Comments
         required: false
+      tags:
+      - DemoSupplier
   /rest/DemoContact:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-democontact-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -1048,18 +1203,36 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
         in: query
         name: demoCtcType
         description: Search filter for Type
         required: false
       - schema:
           type: string
+          enum:
+          - ORDSTATUS
+          - PRDINFO
+          - ORDCANCEL
+          - ORDCHANGE
+          - ORDISSUE
+          - BILLISSUE
         in: query
         name: demoCtcSubType
         description: Search filter for Subtype
         required: false
       - schema:
           type: string
+          enum:
+          - PHONE
+          - FAX
+          - EMAIL
+          - CHAT
+          - WEB
         in: query
         name: demoCtcCanal
         description: Search filter for Canal
@@ -1072,6 +1245,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Status
@@ -1150,6 +1327,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoCtcOrdId__demoOrdStatus
         description: Search filter for Order status
@@ -1208,13 +1390,17 @@ paths:
         name: demoCtcFile
         description: Search filter for File
         required: false
+      tags:
+      - DemoContact
   /rest/DemoSupplier:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-demosupplier-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -1294,13 +1480,17 @@ paths:
         name: demoSupComments
         description: Search filter for Comments
         required: false
+      tags:
+      - DemoSupplier
   /rest/DemoClient/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-democlient-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1358,6 +1548,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - FR
+          - UK
+          - SP
         in: query
         name: demoCliCountry
         description: Country
@@ -1400,6 +1594,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - T1
+          - T2
+          - T3
         in: query
         name: demoCliType
         description: Type
@@ -1410,9 +1608,11 @@ paths:
         name: demoCliComments
         description: Comments
         required: false
+      tags:
+      - DemoClient
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-democlient-get
       responses:
         '200':
           description: Business object record
@@ -1441,12 +1641,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoClient
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-democlient-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1454,12 +1658,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoClient
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-democlient-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1517,6 +1725,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - FR
+          - UK
+          - SP
         in: query
         name: demoCliCountry
         description: Country
@@ -1559,6 +1771,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - T1
+          - T2
+          - T3
         in: query
         name: demoCliType
         description: Type
@@ -1569,13 +1785,17 @@ paths:
         name: demoCliComments
         description: Comments
         required: false
+      tags:
+      - DemoClient
   /rest/DemoOrder/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-demoorder-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1597,6 +1817,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoOrdStatus
         description: Status
@@ -1669,6 +1894,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - FR
+          - UK
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Customer country
@@ -1769,9 +1998,11 @@ paths:
         name: demoOrdComments
         description: Comments
         required: false
+      tags:
+      - DemoOrder
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-demoorder-get
       responses:
         '200':
           description: Business object record
@@ -1800,12 +2031,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoOrder
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-demoorder-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1813,12 +2048,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoOrder
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-demoorder-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1840,6 +2079,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoOrdStatus
         description: Status
@@ -1912,6 +2156,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - FR
+          - UK
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Customer country
@@ -2012,13 +2260,17 @@ paths:
         name: demoOrdComments
         description: Comments
         required: false
+      tags:
+      - DemoOrder
   /rest/DemoOrder:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-demoorder-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -2046,6 +2298,11 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
         in: query
         name: demoOrdStatus
         description: Search filter for Status
@@ -2118,6 +2375,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - FR
+          - UK
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -2218,13 +2479,17 @@ paths:
         name: demoOrdComments
         description: Search filter for Comments
         required: false
+      tags:
+      - DemoOrder
   /rest/DemoProductHistoric:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-demoproducthistoric-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -2286,13 +2551,17 @@ paths:
         name: demoPrdAvailable
         description: Search filter for Available
         required: false
+      tags:
+      - DemoProductHistoric
   /rest/DemoContactHistoric:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-democontacthistoric-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -2344,17 +2613,25 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Status
         required: false
+      tags:
+      - DemoContactHistoric
   /rest/DemoClient:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-democlient-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -2418,6 +2695,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - FR
+          - UK
+          - SP
         in: query
         name: demoCliCountry
         description: Search filter for Country
@@ -2460,6 +2741,10 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - T1
+          - T2
+          - T3
         in: query
         name: demoCliType
         description: Search filter for Type
@@ -2470,13 +2755,17 @@ paths:
         name: demoCliComments
         description: Search filter for Comments
         required: false
+      tags:
+      - DemoClient
   /rest/DemoProduct:
     get:
       description: Get business object metadata or search records
-      operationId: obj-search
+      operationId: obj-demoproduct-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: boolean
@@ -2580,13 +2869,17 @@ paths:
         name: demoPrdComments
         description: Search filter for Comments
         required: false
+      tags:
+      - DemoProduct
   /rest/DemoContactHistoric/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-democontacthistoric-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2632,13 +2925,19 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
         required: false
+      tags:
+      - DemoContactHistoric
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-democontacthistoric-get
       responses:
         '200':
           description: Business object record
@@ -2667,12 +2966,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoContactHistoric
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-democontacthistoric-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2680,12 +2983,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoContactHistoric
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-democontacthistoric-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2731,17 +3038,25 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
         required: false
+      tags:
+      - DemoContactHistoric
   /rest/DemoProduct/{row_id}:
     post:
       description: Create business object record
-      operationId: obj-create
+      operationId: obj-demoproduct-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2839,9 +3154,11 @@ paths:
         name: demoPrdComments
         description: Comments
         required: false
+      tags:
+      - DemoProduct
     get:
       description: Get business object record
-      operationId: obj-get
+      operationId: obj-demoproduct-get
       responses:
         '200':
           description: Business object record
@@ -2870,12 +3187,16 @@ paths:
         name: _inline_objects
         description: Inline objects?
         required: false
+      tags:
+      - DemoProduct
     delete:
       description: Delete business object record
-      operationId: obj-delete
+      operationId: obj-demoproduct-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2883,12 +3204,16 @@ paths:
         name: row_id
         description: row ID
         required: true
+      tags:
+      - DemoProduct
     put:
       description: Update business object record
-      operationId: obj-update
+      operationId: obj-demoproduct-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2986,6 +3311,8 @@ paths:
         name: demoPrdComments
         description: Comments
         required: false
+      tags:
+      - DemoProduct
 info:
   license:
     name: Simplicite license
@@ -2995,6 +3322,5 @@ info:
     url: http://www.simplicitesoftware.com
     email: contact@simplicitesoftware.com
   description: REST APIs for Demo
-  termsOfService: ''
   title: Demo
   version: '4.0'
