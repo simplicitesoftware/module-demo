@@ -1,4 +1,3 @@
----
 components:
   securitySchemes:
     basicAuth:
@@ -8,20 +7,23 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
-security:
-- basicAuth: []
-- bearerAuth: []
 servers:
 - url: https://dev40.simplicite.cloud/api
 openapi: 3.0.0
 paths:
   /rest/DemoOrderHistoric/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-demoorderhistoric-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -75,6 +77,8 @@ paths:
       tags:
       - DemoOrderHistoric
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-demoorderhistoric-get
       responses:
@@ -108,11 +112,17 @@ paths:
       tags:
       - DemoOrderHistoric
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-demoorderhistoric-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -125,11 +135,17 @@ paths:
       tags:
       - DemoOrderHistoric
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-demoorderhistoric-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -183,36 +199,46 @@ paths:
       tags:
       - DemoOrderHistoric
   /login:
-    post:
+    get:
+      security:
+      - basicAuth: []
       description: Login
       operationId: login
       responses:
         '200':
-          description: User information
+          description: User token
+          content:
+            application/json: {}
+            text/plain: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
       - schema:
           type: string
+          enum:
+          - json
+          - oauth2
         in: query
-        name: login
-        description: Login
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: password
-        description: Password
-        required: true
+        name: _output
+        description: Optional output format
+        required: false
       tags:
       - Application
   /rest/DemoOrderHistoric:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-demoorderhistoric-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -273,11 +299,17 @@ paths:
       - DemoOrderHistoric
   /rest/DemoContact/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-democontact-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -485,6 +517,8 @@ paths:
       tags:
       - DemoContact
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-democontact-get
       responses:
@@ -518,11 +552,17 @@ paths:
       tags:
       - DemoContact
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-democontact-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -535,11 +575,17 @@ paths:
       tags:
       - DemoContact
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-democontact-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -748,6 +794,8 @@ paths:
       - DemoContact
   /logout:
     get:
+      security:
+      - bearerAuth: []
       description: Logout
       operationId: logout
       responses:
@@ -755,10 +803,16 @@ paths:
           description: Logout confirmation
           content:
             application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       tags:
       - Application
   /rest:
     get:
+      security:
+      - bearerAuth: []
       description: Application session information
       operationId: info
       responses:
@@ -766,6 +820,11 @@ paths:
           description: Application information
           content:
             application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+            text/plain: {}
       parameters:
       - schema:
           type: boolean
@@ -777,11 +836,17 @@ paths:
       - Application
   /rest/DemoProductHistoric/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-demoproducthistoric-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -842,6 +907,8 @@ paths:
       tags:
       - DemoProductHistoric
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-demoproducthistoric-get
       responses:
@@ -875,11 +942,17 @@ paths:
       tags:
       - DemoProductHistoric
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-demoproducthistoric-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -892,11 +965,17 @@ paths:
       tags:
       - DemoProductHistoric
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-demoproducthistoric-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -958,11 +1037,17 @@ paths:
       - DemoProductHistoric
   /rest/DemoSupplier/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-demosupplier-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1041,6 +1126,8 @@ paths:
       tags:
       - DemoSupplier
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-demosupplier-get
       responses:
@@ -1074,11 +1161,17 @@ paths:
       tags:
       - DemoSupplier
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-demosupplier-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1091,11 +1184,17 @@ paths:
       tags:
       - DemoSupplier
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-demosupplier-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1175,11 +1274,17 @@ paths:
       - DemoSupplier
   /rest/DemoContact:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-democontact-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1394,11 +1499,17 @@ paths:
       - DemoContact
   /rest/DemoSupplier:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-demosupplier-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1484,11 +1595,17 @@ paths:
       - DemoSupplier
   /rest/DemoClient/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-democlient-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1611,6 +1728,8 @@ paths:
       tags:
       - DemoClient
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-democlient-get
       responses:
@@ -1644,11 +1763,17 @@ paths:
       tags:
       - DemoClient
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-democlient-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1661,11 +1786,17 @@ paths:
       tags:
       - DemoClient
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-democlient-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -1789,11 +1920,17 @@ paths:
       - DemoClient
   /rest/DemoOrder/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-demoorder-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2001,6 +2138,8 @@ paths:
       tags:
       - DemoOrder
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-demoorder-get
       responses:
@@ -2034,11 +2173,17 @@ paths:
       tags:
       - DemoOrder
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-demoorder-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2051,11 +2196,17 @@ paths:
       tags:
       - DemoOrder
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-demoorder-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2264,11 +2415,17 @@ paths:
       - DemoOrder
   /rest/DemoOrder:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-demoorder-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2483,11 +2640,17 @@ paths:
       - DemoOrder
   /rest/DemoProductHistoric:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-demoproducthistoric-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2555,11 +2718,17 @@ paths:
       - DemoProductHistoric
   /rest/DemoContactHistoric:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-democontacthistoric-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2625,11 +2794,17 @@ paths:
       - DemoContactHistoric
   /rest/DemoClient:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-democlient-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2759,11 +2934,17 @@ paths:
       - DemoClient
   /rest/DemoProduct:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-demoproduct-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2873,11 +3054,17 @@ paths:
       - DemoProduct
   /rest/DemoContactHistoric/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-democontacthistoric-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2936,6 +3123,8 @@ paths:
       tags:
       - DemoContactHistoric
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-democontacthistoric-get
       responses:
@@ -2969,11 +3158,17 @@ paths:
       tags:
       - DemoContactHistoric
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-democontacthistoric-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -2986,11 +3181,17 @@ paths:
       tags:
       - DemoContactHistoric
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-democontacthistoric-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -3050,11 +3251,17 @@ paths:
       - DemoContactHistoric
   /rest/DemoProduct/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-demoproduct-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -3157,6 +3364,8 @@ paths:
       tags:
       - DemoProduct
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-demoproduct-get
       responses:
@@ -3190,11 +3399,17 @@ paths:
       tags:
       - DemoProduct
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-demoproduct-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -3207,11 +3422,17 @@ paths:
       tags:
       - DemoProduct
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-demoproduct-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:

@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-01-08 22:33:37</mdl_lastupd>
+		<mdl_lastupd>2018-02-02 17:50:23</mdl_lastupd>
 		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
@@ -249,6 +249,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY DemoAdminHome</usp_param_id.sys_code>
+		<usp_value><![CDATA[[]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
@@ -3692,20 +3701,22 @@ Automatically calculated at creation]]></fld_comment>
 		</tr>
 	</tbody>
 </table>]]></tpl_form>
-		<tpl_ui><![CDATA[<script src="https://apis.google.com/js/platform.js" async defer></script>
-<div>
-	<div class="row">
-		<div class="area col-sm-12" data-area="1:="></div>
-	</div>
-	<div class="row">
-		<div class="area col-sm-6" data-area="2,3,4:="></div>
-		<div class="area col-sm-6">
-			<div id="hangout-button"></div>
-			<div id="client-map" style="display: none; width: 500px; height: 450px; border: solid 1px #D0D0D0; overflow: hidden;">
-				<iframe frameborder="0" name="gmap" scrolling="no" style="width: 100%; height: 100%;"></iframe>
-			</div>
-		</div>
-	</div>
+		<tpl_ui><![CDATA[<div>
+  <script async="" defer src="https://apis.google.com/js/platform.js"></script>
+  <div>
+    <div class="row">
+      <div class="area col-sm-12" data-area="1"></div>
+    </div>
+    <div class="row">
+      <div class="area col-sm-6" data-area="2,3,4"></div>
+      <div class="area col-sm-6">
+        <div id="hangout-button"></div>
+        <div id="client-map" style="display: none; width: 500px; height: 450px; border: solid 1px #D0D0D0; overflow: hidden;">
+          <iframe frameborder="0" name="gmap" scrolling="no" style="width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 ]]></tpl_ui>
 		<tpl_min/>
@@ -3878,7 +3889,7 @@ Automatically calculated at creation]]></fld_comment>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
     <div class="area col-sm-8" data-area="1:="></div>
-    <div class="area col-sm-4" data-area="2:="></div>
+    <div class="area col-sm-4" data-area="2"></div>
   </div>
   <div class="row">
     <div class="area col-sm-12" data-area="3:-"></div>
@@ -3899,9 +3910,9 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCliCode"/>
-  <div class="field" data-field="demoCliFirstname"/>
-  <div class="field" data-field="demoCliLastname"/>
+  <div class="field" data-field="demoCliCode"></div>
+  <div class="field" data-field="demoCliFirstname"></div>
+  <div class="field" data-field="demoCliLastname"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -3913,13 +3924,13 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCliAddress1"/>
-  <div class="field" data-field="demoCliAddress2"/>
-  <div class="field" data-field="demoCliAddress3"/>
-  <div class="field" data-field="demoCliZipCode"/>
-  <div class="field" data-field="demoCliCity"/>
-  <div class="field" data-field="demoCliCountry"/>
-  <div class="field" data-field="demoCliCoords"/>
+  <div class="field" data-field="demoCliAddress1"></div>
+  <div class="field" data-field="demoCliAddress2"></div>
+  <div class="field" data-field="demoCliAddress3"></div>
+  <div class="field" data-field="demoCliZipCode"></div>
+  <div class="field" data-field="demoCliCity"></div>
+  <div class="field" data-field="demoCliCountry"></div>
+  <div class="field" data-field="demoCliCoords"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -3931,11 +3942,11 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCliEmail"/>
-  <div class="field" data-field="demoCliHomePhone"/>
-  <div class="field" data-field="demoCliWorkPhone"/>
-  <div class="field" data-field="demoCliMobilePhone"/>
-  <div class="field" data-field="demoCliFax"/>
+  <div class="field" data-field="demoCliEmail"></div>
+  <div class="field" data-field="demoCliHomePhone"></div>
+  <div class="field" data-field="demoCliWorkPhone"></div>
+  <div class="field" data-field="demoCliMobilePhone"></div>
+  <div class="field" data-field="demoCliFax"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -3947,8 +3958,8 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCliType"/>
-  <div class="field" data-field="demoCliComments"/>
+  <div class="field" data-field="demoCliType"></div>
+  <div class="field" data-field="demoCliComments"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -11423,7 +11434,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<dta_group>Forward</dta_group>
 		<dta_name>Page</dta_name>
 		<dta_order>1</dta_order>
-		<dta_value>[EXPR:HTMLTool.getFormURL(&quot;DemoOrder&quot;, null, &quot;[PARAM:1]&quot;, null)]</dta_value>
+		<dta_value>[EXPR:HTMLTool.getFormURL("DemoOrder", null, "[PARAM:1]", null)]</dta_value>
 		<dta_field_id.fld_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13678,7 +13689,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeCrosstab>C</tsl_typeCrosstab>
 		<tsl_id.ctb_name>DemoOrder-TC2</tsl_id.ctb_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Chiffre d&#39;affaire</tsl_value>
+		<tsl_value>Chiffre d'affaire</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -16464,7 +16475,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<obf_field_id.fld_name>demoCtcCliId</obf_field_id.fld_name>
 		<tsl_id.obf_order>200</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer&#39;s contacts</tsl_value>
+		<tsl_value>Customer's contacts</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16474,7 +16485,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<obf_field_id.fld_name>demoOrdCliId</obf_field_id.fld_name>
 		<tsl_id.obf_order>200</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer&#39;s orders</tsl_value>
+		<tsl_value>Customer's orders</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16484,7 +16495,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
 		<tsl_id.obf_order>100</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Supplier&#39;s products</tsl_value>
+		<tsl_value>Supplier's products</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
