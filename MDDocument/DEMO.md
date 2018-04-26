@@ -40,6 +40,8 @@ The order entry workflow has the following model:
 
 ![]([MODEL:DemoWorkflow])
 
+[PROCESSDOC:DemoOrderCreate]
+
 Profiles
 ========
 

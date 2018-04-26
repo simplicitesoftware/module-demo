@@ -7,10 +7,10 @@ DemoOrderAgenda = (function($) {
 var $s, debug = false;
 
 function display(url) {
-	$s = new Simplicite.Ajax();
+	$s = Simplicite.Application || new Simplicite.Ajax();
 	var ord = $s.getBusinessObject("DemoOrder", "agenda_DemoOrder");
 
-	$j("#ordercalendar").fullCalendar({
+	$("#ordercalendar").fullCalendar({
 		header: {
 			left: "prev,next today",
 			center: "title",
@@ -29,8 +29,8 @@ function display(url) {
 		},
 		eventClick: function(e) {
 			if (debug) console.log("Order " + e.id + " clicked");
-			if (typeof parent.$ui !== "undefined")
-				parent.$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
+			if (typeof $ui !== "undefined")
+				$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
 			else
 				document.location.replace(url.replace(/ROWID/, e.id));
 		},

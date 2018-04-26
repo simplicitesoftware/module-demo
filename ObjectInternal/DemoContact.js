@@ -5,17 +5,18 @@
 DemoContact.printExcel = function(pt) {
 	importPackage(Packages.org.apache.poi.ss.usermodel);
 	
-	/*var doc = pt.getDocument(this.getGrant());
-	var xls = new ExcelPOITool(this.getGrant(), doc);
-	var wb = xls.getWorkbook();
-	var sh = wb.getSheetAt(0);
-	var r = sh.getRow(0);
-	var c = r.getCell(0);
-	c.setCellValue(this.getCount() + " contacts");*/
+	// Build rows from selected IDs or from current filters
+	var rows = new ArrayList();
+	var ids = this.getSelectedIds();
+	if (ids && ids.size()>0) {
+		for (var k = 0; k < ids.size(); k++)
+			if (this.select(ids.get(k)))
+				rows.add(this.getValues());
+	} else
+		rows = this.search(false);
 	
 	var xls = new ExcelPOITool();
 	var sh = xls.newSheet("Test");
-	var rows = this.search(false);
 	for (var i = 0; i < rows.size(); i++) {
 		var r = xls.newRow(i);
 		var row = rows.get(i);

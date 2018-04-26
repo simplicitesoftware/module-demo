@@ -23,11 +23,9 @@ DemoClient = (function($) {
 	
 	// Google Hangouts button
 	var hangout = function() {
-		if (typeof gapi !== "undefined") {
-			var email = getFieldValue("demoCliEmail");
-			var invites = email ? [{ id: email, invite_type: "EMAIL" }]: [];
-			gapi.hangout.render("hangout-button", { "render": "createhangout", "invites": invites });
-		}
+		var email = getFieldValue("demoCliEmail");
+		var invites = email ? [{ id: email, invite_type: "EMAIL" }]: [];
+		gapi.hangout.render("hangout-button", { "render": "createhangout", "invites": invites });
 	};
 
 	if (resp) {
@@ -37,8 +35,24 @@ DemoClient = (function($) {
 		// Responsive UI hook
 		Simplicite.UI.hooks.DemoClient = function(o, cbk) {
 			try {
-				o.locals.ui.form.onload = hangout;
-			} catch(e) { console.error(e.message); } finally { cbk && cbk(); }
+				o.locals.ui.form.onload = function() {
+					try {
+						if (typeof gapi === "undefined" || typeof gapi.hangout === "undefined") {
+							$ui.loadScript({
+								url: "https://apis.google.com/js/platform.js",
+								onload: hangout
+							})
+						} else
+							hangout();
+					} catch(el) {
+						console.error(el);
+					}
+				}
+			} catch(e) {
+				console.error(e.message);
+			} finally {
+				cbk && cbk();
+			}
 		};
 	} else
 		// Legacy UI hook

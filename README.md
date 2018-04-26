@@ -35,6 +35,7 @@ His address is geolocalized using GoogleMaps&reg; API.
 | `demoCliFax`                                                 | phone(20)                                |     | x   | -                                                                                |
 | `demoCliType`                                                | enum(7) using `DEMO_CLI_TYPE` list       | x   | x   | -                                                                                |
 | `demoCliComments`                                            | text(1000000)                            |     | x   | -                                                                                |
+| `demoCliPlacemapLabel`                                       | char(100)                                |     | x   | Place map label                                                                  |
 
 ### Lists
 
@@ -218,7 +219,6 @@ No custom action
 
 | Name                                                         | Type                                     | Req | Upd | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | --- | --- | -------------------------------------------------------------------------------- |
-| `row_idx`                                                    | int(11)                                  | x*  | x   | -                                                                                |
 | `row_ref_id` link to **`DemoOrder`**                         | id                                       | x*  |     | -                                                                                |
 | `row_idx`                                                    | int(11)                                  | x*  | x   | -                                                                                |
 | `created_by_hist`                                            | char(100)                                | x*  |     | -                                                                                |
@@ -321,3 +321,16 @@ suppliers of products that can be ordered.
 
 No custom action
 
+`DemoOrderCreate` business process definition
+---------------------------------------------
+
+**Order entry** activity workflow
+
+### Activities
+
+* `Begin`: Begin activity
+* `ClientSelect`: Customer selection activity
+* `SupplierSelect`: Supplier selection activity
+* `ProductSelect`: Selected supplier's product selection activity
+* `OrderCreate`: Order creation form activity
+* `End`: End activity

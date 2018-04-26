@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-02-02 17:50:23</mdl_lastupd>
+		<mdl_lastupd>2018-04-26 16:57:22</mdl_lastupd>
 		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
@@ -55,6 +55,7 @@
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font/>
+		<thm_iconset/>
 		<thm_menu_dom_c/>
 		<thm_menu_dom_t/>
 		<thm_menu_dact_c/>
@@ -93,10 +94,12 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<viw_name>DemoHome</viw_name>
-		<viw_template><![CDATA[<div class="area">[AREA:1,2:=]</div>
-<div class="area">[AREA:3:=]</div>]]></viw_template>
-		<viw_ui><![CDATA[<div class="row"><div class="area col-sm-12" data-area="1,2:="></div></div>
-<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>]]></viw_ui>
+		<viw_template><![CDATA[<div class="area">[AREA:1,2,4:=]</div>
+<div class="area">[AREA:3:=]</div>
+]]></viw_template>
+		<viw_ui><![CDATA[<div class="row"><div class="area col-sm-12" data-area="1,2,4:="></div></div>
+<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
+]]></viw_ui>
 		<viw_order>100</viw_order>
 		<viw_icon>demo</viw_icon>
 		<viw_disp_id.dis_code/>
@@ -295,6 +298,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 - `accordion` Accordion menu (left),
 - `split` Split menu (top and left),
 - `dropdown` Dropdown menu (top)]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY DemoUserHome</usp_param_id.sys_code>
+		<usp_value><![CDATA[[]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -588,6 +600,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_order>100</shc_order>
 		<shc_visible>1</shc_visible>
 		<shc_icon/>
+		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -597,6 +610,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_order>110</shc_order>
 		<shc_visible>1</shc_visible>
 		<shc_icon/>
+		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -606,6 +620,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_order>120</shc_order>
 		<shc_visible>1</shc_visible>
 		<shc_icon/>
+		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -615,6 +630,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_order>130</shc_order>
 		<shc_visible>1</shc_visible>
 		<shc_icon/>
+		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -624,6 +640,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_order>140</shc_order>
 		<shc_visible>1</shc_visible>
 		<shc_icon/>
+		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -2075,6 +2092,38 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>demoCliPlacemapLabel</fld_name>
+		<fld_dbname/>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>0</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_more>1</fld_more>
+		<fld_listmore>1</fld_listmore>
+		<fld_listsum/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>0</fld_copy>
+		<fld_size>100</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_updall>0</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_calc><![CDATA[[VALUE:demoCliFirstname] + " " + obj.getFieldValue("demoCliLastname", row) + " (" + [DISPLAYVALUE:demoCliType] + ")"]]></fld_calc>
+		<fld_objlist/>
+		<fld_comment><![CDATA[Place map label]]></fld_comment>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>demoCliType</fld_name>
 		<fld_dbname>cli_type</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -2228,7 +2277,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment/>
@@ -2356,7 +2405,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment/>
@@ -2516,7 +2565,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment/>
@@ -2677,7 +2726,7 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment/>
@@ -2690,7 +2739,7 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_updatable>1</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>4</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
@@ -3157,7 +3206,7 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Product **supplier** identifier.]]></fld_comment>
@@ -3477,7 +3526,7 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment/>
@@ -3702,7 +3751,6 @@ Automatically calculated at creation]]></fld_comment>
 	</tbody>
 </table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
-  <script async="" defer src="https://apis.google.com/js/platform.js"></script>
   <div>
     <div class="row">
       <div class="area col-sm-12" data-area="1"></div>
@@ -3889,7 +3937,7 @@ Automatically calculated at creation]]></fld_comment>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
     <div class="area col-sm-8" data-area="1:="></div>
-    <div class="area col-sm-4" data-area="2"></div>
+    <div class="area col-sm-4" data-area="2:="></div>
   </div>
   <div class="row">
     <div class="area col-sm-12" data-area="3:-"></div>
@@ -5369,6 +5417,42 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<obf_object_id.obo_name>DemoClient</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoCliPlacemapLabel</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>420</obf_order>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
+		<obf_field_id.fld_required>0</obf_field_id.fld_required>
+		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_field_id.fld_visible>3</obf_field_id.fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_field_id.fld_research>0</obf_field_id.fld_research>
+		<obf_fld_more/>
+		<obf_field_id.fld_more>1</obf_field_id.fld_more>
+		<obf_fld_listmore/>
+		<obf_field_id.fld_listmore>1</obf_field_id.fld_listmore>
+		<obf_fld_researchreq/>
+		<obf_field_id.fld_researchreq>0</obf_field_id.fld_researchreq>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>DemoClient-4</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCtcDatetime</obf_field_id.fld_name>
 		<obf_field_id.fld_type>5</obf_field_id.fld_type>
@@ -6291,7 +6375,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research>0</obf_fld_research>
-		<obf_field_id.fld_research>1</obf_field_id.fld_research>
+		<obf_field_id.fld_research>4</obf_field_id.fld_research>
 		<obf_fld_more>0</obf_fld_more>
 		<obf_field_id.fld_more>0</obf_field_id.fld_more>
 		<obf_fld_listmore>0</obf_fld_listmore>
@@ -7623,7 +7707,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
-		<obf_field_id.fld_research>1</obf_field_id.fld_research>
+		<obf_field_id.fld_research>4</obf_field_id.fld_research>
 		<obf_fld_more/>
 		<obf_field_id.fld_more>0</obf_field_id.fld_more>
 		<obf_fld_listmore/>
@@ -7742,42 +7826,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>DemoOrder-5</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
-		<obf_field_id.fld_name>row_idx</obf_field_id.fld_name>
-		<obf_field_id.fld_type>1</obf_field_id.fld_type>
-		<obf_order>-2</obf_order>
-		<obf_dfault_order>2</obf_dfault_order>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
-		<obf_field_id.fld_required>1</obf_field_id.fld_required>
-		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible>0</obf_fld_visible>
-		<obf_field_id.fld_visible>3</obf_field_id.fld_visible>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_field_id.fld_research>1</obf_field_id.fld_research>
-		<obf_fld_more/>
-		<obf_field_id.fld_more>0</obf_field_id.fld_more>
-		<obf_fld_listmore/>
-		<obf_field_id.fld_listmore>0</obf_field_id.fld_listmore>
-		<obf_fld_researchreq/>
-		<obf_field_id.fld_researchreq>0</obf_field_id.fld_researchreq>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -7983,7 +8031,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
-		<obf_field_id.fld_research>1</obf_field_id.fld_research>
+		<obf_field_id.fld_research>4</obf_field_id.fld_research>
 		<obf_fld_more/>
 		<obf_field_id.fld_more>0</obf_field_id.fld_more>
 		<obf_fld_listmore/>
@@ -9498,9 +9546,11 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url><![CDATA[javascript:DemoClient.map()]]></act_url>
 		<act_image>map</act_image>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>FRT</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-O-C</act_name>
@@ -9512,9 +9562,11 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-O-P</act_name>
@@ -9526,9 +9578,11 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-P-C</act_name>
@@ -9540,9 +9594,11 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_DECSTOCK</act_name>
@@ -9554,10 +9610,12 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment><![CDATA[Product stock **decrement** triggered by the order
 state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>BCK</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
@@ -9569,10 +9627,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image>../images/icon/plus.gif</act_image>
 		<act_confirm>1</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment><![CDATA[Sample action for product stock **increment**
 (by `N` specified in the product business object code).]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>BCK</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-C</act_name>
@@ -9584,9 +9644,11 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>1</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-V</act_name>
@@ -9598,9 +9660,11 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-V-C</act_name>
@@ -9612,9 +9676,11 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>1</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-V-D</act_name>
@@ -9626,9 +9692,11 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
 	</data>
 </object>
 <object>
@@ -11008,6 +11076,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<pcs_name>DemoOrderCreate</pcs_name>
 		<pcs_short_name>ORDC</pcs_short_name>
+		<pcs_comment><![CDATA[**Order entry** activity workflow]]></pcs_comment>
 		<pcs_type>0</pcs_type>
 		<pcs_class/>
 		<pcs_script_id>BPMProcess/DemoOrderCreate.js</pcs_script_id>
@@ -11033,6 +11102,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 		<acy_step>ORDC-000</acy_step>
 		<acy_name>Begin</acy_name>
+		<acy_comment><![CDATA[Begin activity]]></acy_comment>
 		<acy_type>B</acy_type>
 		<acy_posx/>
 		<acy_posy/>
@@ -11047,6 +11117,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 		<acy_step>ORDC-100</acy_step>
 		<acy_name>ClientSelect</acy_name>
+		<acy_comment><![CDATA[Customer selection activity]]></acy_comment>
 		<acy_type>C</acy_type>
 		<acy_posx/>
 		<acy_posy/>
@@ -11061,6 +11132,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 		<acy_step>ORDC-200</acy_step>
 		<acy_name>SupplierSelect</acy_name>
+		<acy_comment><![CDATA[Supplier selection activity]]></acy_comment>
 		<acy_type>C</acy_type>
 		<acy_posx/>
 		<acy_posy/>
@@ -11075,6 +11147,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 		<acy_step>ORDC-210</acy_step>
 		<acy_name>ProductSelect</acy_name>
+		<acy_comment><![CDATA[Selected supplier's product selection activity]]></acy_comment>
 		<acy_type>C</acy_type>
 		<acy_posx/>
 		<acy_posy/>
@@ -11089,6 +11162,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 		<acy_step>ORDC-300</acy_step>
 		<acy_name>OrderCreate</acy_name>
+		<acy_comment><![CDATA[Order creation form activity]]></acy_comment>
 		<acy_type>N</acy_type>
 		<acy_posx/>
 		<acy_posy/>
@@ -11103,6 +11177,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 		<acy_step>ORDC-999</acy_step>
 		<acy_name>End</acy_name>
+		<acy_comment><![CDATA[End activity]]></acy_comment>
 		<acy_type>E</acy_type>
 		<acy_posx/>
 		<acy_posy/>
@@ -12599,6 +12674,25 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+		<vwi_position>4</vwi_position>
+		<vwi_type>E</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<rch_object_id.obo_name/>
+		<rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoOrderAgenda")]]]></vwi_url>
+		<vwi_image/>
+		<vwi_graph_id.gph_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
 		<vwi_type>S</vwi_type>
@@ -12703,9 +12797,9 @@ state transition to _shipped_ status.]]></act_comment>
 		<pcm_object_id.obo_name>DemoClient</pcm_object_id.obo_name>
 		<pcm_address_id.fld_name/>
 		<pcm_coords_id.fld_name>demoCliCoords</pcm_coords_id.fld_name>
-		<pcm_label1_id.fld_name>demoCliCode</pcm_label1_id.fld_name>
-		<pcm_label2_id.fld_name>demoCliFirstname</pcm_label2_id.fld_name>
-		<pcm_label3_id.fld_name>demoCliLastname</pcm_label3_id.fld_name>
+		<pcm_label1_id.fld_name>demoCliPlacemapLabel</pcm_label1_id.fld_name>
+		<pcm_label2_id.fld_name>demoCliAddress1</pcm_label2_id.fld_name>
+		<pcm_label3_id.fld_name>demoCliCity</pcm_label3_id.fld_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -13903,6 +13997,16 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoCliPlacemapLabel</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Placemap label</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoCliType</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Type</tsl_value>
@@ -14486,6 +14590,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.fld_name>demoCliMobilePhone</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Téléphone mobile</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoCliPlacemapLabel</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Libellé carte</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>

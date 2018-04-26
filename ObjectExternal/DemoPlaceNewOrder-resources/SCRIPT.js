@@ -113,7 +113,6 @@ function order() {
 			ord.item.demoOrdQuantity = $("#qty").val();
 			ord.create(function() {
 				$("#main").html("<p>Order created with number " + ord.item.demoOrdNumber + "<br/>Thank you !</p>");
-				setTimeout(function () { location.reload(); }, 2000);
 			});
 		});
 	});
