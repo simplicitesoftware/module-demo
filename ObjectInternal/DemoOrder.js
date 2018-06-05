@@ -2,10 +2,6 @@
 // Server side script for order business object
 //---------------------------------------------
 
-/*DemoOrder.postLoad = function() {
-	Demo.echo(this.getName());
-};*/
-
 DemoOrder.postValidate = function() {
 	// Order quantity checking
 	if (this.getField("demoOrdQuantity").getInt(0) <= 0) {

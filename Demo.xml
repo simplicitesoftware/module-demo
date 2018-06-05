@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base http://www.simplicite.fr/schemas/base.xsd">
+<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -43,8 +43,8 @@
 		<thm_name>DemoTheme</thm_name>
 		<thm_logo_id/>
 		<thm_logo_invert>1</thm_logo_invert>
-		<thm_logo2_id/>
-		<thm_favicon_id/>
+		<thm_logo2_id>Theme/thm_logo2_id/0/6/demo-favicon-256.png</thm_logo2_id>
+		<thm_favicon_id>Theme/thm_favicon_id/0/6/demo-favicon-256.png</thm_favicon_id>
 		<thm_color1/>
 		<thm_color2>#418CF0</thm_color2>
 		<thm_text2>#FFFFFF</thm_text2>
@@ -317,7 +317,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>HISTORY DemoAdminHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[]]]></usp_value>
+		<usp_value><![CDATA[[{"object":"DemoProduct","rowId":"1","label":"Product : REF003"},
+{"object":"DemoSupplier","rowId":"1","label":"Supplier : BIM"}]]]></usp_value>
 		<usp_param_id.sys_type/>
 		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
 		<usp_param_id.sys_desc/>
@@ -3192,6 +3193,39 @@ Automatically calculated at creation]]></fld_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>demoPrdOnlineDoc</fld_name>
+		<fld_dbname>prd_onlinedoc</fld_dbname>
+		<fld_visible>2</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research/>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_more>1</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_type>10</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>255</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[Online doc URL]]></fld_comment>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>demoPrdPicture</fld_name>
 		<fld_dbname>prd_picture</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -3999,21 +4033,21 @@ Automatically calculated at creation]]></fld_comment>
 </table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
-    <div class="area col-sm-12" data-area="1:="/>
+    <div class="area col-sm-12" data-area="1:="></div>
   </div>
   <div class="row">
-    <div class="area col-sm-6" data-area="2:="/>
+    <div class="area col-sm-6" data-area="2:="></div>
     <div class="area col-sm-6">
       <div class="row">
-        <div class="area col-sm-12" data-area="3:="/>
+        <div class="area col-sm-12" data-area="3:="></div>
       </div>
       <div class="row">
-        <div class="area col-sm-12" data-area="4:+"/>
+        <div class="area col-sm-12" data-area="4:+"></div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="area col-sm-12" data-area="5:-"/>
+    <div class="area col-sm-12" data-area="5:-"></div>
   </div>
 </div>
 ]]></tpl_ui>
@@ -4297,11 +4331,11 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoPrdSupId"/>
-  <div class="field" data-field="demoPrdSupId__demoSupCode"/>
-  <div class="field" data-field="demoPrdSupId__demoSupName"/>
-  <div class="field" data-field="demoPrdSupId__demoSupLogo"/>
-  <div class="field" data-field="demoPrdSupId__demoSupUsrId"/>
+  <div class="field" data-field="demoPrdSupId"></div>
+  <div class="field" data-field="demoPrdSupId__demoSupCode"></div>
+  <div class="field" data-field="demoPrdSupId__demoSupName"></div>
+  <div class="field" data-field="demoPrdSupId__demoSupLogo"></div>
+  <div class="field" data-field="demoPrdSupId__demoSupUsrId"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4313,10 +4347,10 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoPrdReference"/>
-  <div class="field" data-field="demoPrdName"/>
-  <div class="field" data-field="demoPrdDescription"/>
-  <div class="field" data-field="demoPrdPicture"/>
+  <div class="field" data-field="demoPrdReference"></div>
+  <div class="field" data-field="demoPrdName"></div>
+  <div class="field" data-field="demoPrdDescription"></div>
+  <div class="field" data-field="demoPrdPicture"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4328,9 +4362,9 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoPrdStock"/>
-  <div class="field" data-field="demoPrdUnitPrice"/>
-  <div class="field" data-field="demoPrdAvailable"/>
+  <div class="field" data-field="demoPrdStock"></div>
+  <div class="field" data-field="demoPrdUnitPrice"></div>
+  <div class="field" data-field="demoPrdAvailable"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4342,8 +4376,9 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoPrdDocumentation"/>
-  <div class="field" data-field="demoPrdBrochure"/>
+  <div class="field" data-field="demoPrdDocumentation"></div>
+  <div class="field" data-field="demoPrdBrochure"></div>
+  <div class="field" data-field="demoPrdOnlineDoc"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4354,7 +4389,7 @@ Automatically calculated at creation]]></fld_comment>
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"/>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"></div>
 ]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4449,6 +4484,17 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/DemoPlaceNewOrder.js</obe_script_id>
 		<obe_icon>folder</obe_icon>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obe_name>DemoRevenueAnalysis</obe_name>
+		<obe_type>E</obe_type>
+		<obe_url/>
+		<obe_comment/>
+		<obe_help/>
+		<obe_class/>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoRevenueAnalysis.java</obe_script_id>
+		<obe_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -8784,6 +8830,43 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdOnlineDoc</obf_field_id.fld_name>
+		<obf_field_id.fld_type>10</obf_field_id.fld_type>
+		<obf_order>420</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
+		<obf_field_id.fld_required>0</obf_field_id.fld_required>
+		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_field_id.fld_visible>2</obf_field_id.fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_field_id.fld_research/>
+		<obf_fld_more/>
+		<obf_field_id.fld_more>1</obf_field_id.fld_more>
+		<obf_fld_listmore/>
+		<obf_field_id.fld_listmore>0</obf_field_id.fld_listmore>
+		<obf_fld_researchreq/>
+		<obf_field_id.fld_researchreq>0</obf_field_id.fld_researchreq>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>DemoProduct-4</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdComments</obf_field_id.fld_name>
 		<obf_field_id.fld_type>21</obf_field_id.fld_type>
 		<obf_order>500</obf_order>
@@ -9544,9 +9627,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>ord_cli_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoClient</obf_ref_object_id.obo_name>
@@ -9566,9 +9649,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>ctc_cli_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoContact</obf_ref_object_id.obo_name>
@@ -9588,9 +9671,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoOrder</obf_ref_object_id.obo_name>
@@ -9610,9 +9693,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>ctc_ord_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoOrder</obf_ref_object_id.obo_name>
@@ -9632,9 +9715,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoProduct</obf_ref_object_id.obo_name>
@@ -9654,9 +9737,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>ord_prd_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoProduct</obf_ref_object_id.obo_name>
@@ -9676,9 +9759,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>DemoSupplier</obf_ref_object_id.obo_name>
@@ -9698,9 +9781,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>prd_sup_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>User</obf_ref_object_id.obo_name>
@@ -9720,9 +9803,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_field_id.fld_dbname>sup_usr_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>DemoSupplier-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -9800,6 +9883,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url><![CDATA[javascript:DemoClient.map()]]></act_url>
 		<act_image>map</act_image>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9816,6 +9900,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9832,6 +9917,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9848,6 +9934,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9862,8 +9949,9 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method>decreaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image/>
+		<act_image>icon/minus</act_image>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment><![CDATA[Product stock **decrement** triggered by the order
@@ -9879,8 +9967,9 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method>increaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>../images/icon/plus.gif</act_image>
+		<act_image>icon/plus</act_image>
 		<act_confirm>1</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment><![CDATA[Sample action for product stock **increment**
@@ -9898,6 +9987,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>1</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9914,6 +10004,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9930,6 +10021,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>1</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
@@ -9946,11 +10038,29 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_url/>
 		<act_image/>
 		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
 		<act_confirm_ui/>
 		<act_plus>0</act_plus>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+	</data>
+	<data>
+		<act_name>DEMO_REVENUEANALYSIS</act_name>
+		<act_type>L</act_type>
+		<act_async>0</act_async>
+		<act_job_depth/>
+		<act_method/>
+		<act_script/>
+		<act_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoRevenueAnalysis", "nav=add")]]]></act_url>
+		<act_image>bars</act_image>
+		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
+		<act_confirm_ui/>
+		<act_plus>0</act_plus>
+		<act_comment><![CDATA[Revenu analysis]]></act_comment>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>FRT</act_exec>
 	</data>
 </object>
 <object>
@@ -10101,6 +10211,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fct_name>DEMO_ANALYSIS-A</fct_name>
+		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
+		<fct_function>A</fct_function>
+		<fct_action_id.act_name>DEMO_REVENUEANALYSIS</fct_action_id.act_name>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fct_name>DEMO_CLIENTMAP-A</fct_name>
 		<fct_object_id.obj_name>DemoClient</fct_object_id.obj_name>
 		<fct_function>A</fct_function>
@@ -10175,6 +10293,14 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<fct_name>DemoProduct-H</fct_name>
 		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>DemoRevenueAnalysis-E</fct_name>
+		<fct_object_id.obj_name>DemoRevenueAnalysis</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
@@ -10300,6 +10426,16 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>DEMO_ANALYSIS-A</grt_function_id.fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
+		<fct_action_id.act_name>DEMO_REVENUEANALYSIS</fct_action_id.act_name>
+		<grt_function_id.fct_function>A</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DemoOrderAgenda-E</grt_function_id.fct_name>
 		<fct_object_id.obj_type>E</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoOrderAgenda</fct_object_id.obj_name>
@@ -10363,6 +10499,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO-PRDH-R</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
+		<fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>DemoRevenueAnalysis-E</grt_function_id.fct_name>
+		<fct_object_id.obj_type>E</fct_object_id.obj_type>
+		<fct_object_id.obj_name>DemoRevenueAnalysis</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -11823,7 +11969,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<atc_subject>Order [VALUE:demoOrdNumber] validated</atc_subject>
 		<atc_message><![CDATA[<p>Hello [VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]</p>
 <p>Your order [VALUE:demoOrdNumber] dated [VALUE:demoOrdDate] has been validated</p>
-<p>You will receive a calendar invitation for delivery</p>]]></atc_message>
+<p>You will shortly receive a calendar invitation for delivery</p>]]></atc_message>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -11832,7 +11978,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<atc_subject>Commande [VALUE:demoOrdNumber] validée</atc_subject>
 		<atc_message><![CDATA[<p>Bonjour [VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]</p>
 <p>Votre commande [VALUE:demoOrdNumber] du [VALUE:demoOrdDate] a &eacute;t&eacute; valid&eacute;e.</p>
-<p>Vous allez recevoir une invitation de calendrier pour la livraison</p>]]></atc_message>
+<p>Vous allez recevoir rapidement une invitation de calendrier pour la livraison</p>]]></atc_message>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -12468,7 +12614,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<ctb_fixedcolors>1</ctb_fixedcolors>
 		<ctb_precision>0</ctb_precision>
 		<ctb_subtotal>0</ctb_subtotal>
-		<ctb_totalcolor>#A6DCEC</ctb_totalcolor>
+		<ctb_totalcolor>#CFE2F3</ctb_totalcolor>
 		<ctb_caption>B</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12481,7 +12627,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<ctb_fixedcolors>1</ctb_fixedcolors>
 		<ctb_precision>2</ctb_precision>
 		<ctb_subtotal>1</ctb_subtotal>
-		<ctb_totalcolor>#F2C765</ctb_totalcolor>
+		<ctb_totalcolor>#E4E4E4</ctb_totalcolor>
 		<ctb_caption>B</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12494,7 +12640,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<ctb_fixedcolors>1</ctb_fixedcolors>
 		<ctb_precision>0</ctb_precision>
 		<ctb_subtotal>0</ctb_subtotal>
-		<ctb_totalcolor>#99F6A2</ctb_totalcolor>
+		<ctb_totalcolor>#D9EAD3</ctb_totalcolor>
 		<ctb_caption>L</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13559,6 +13705,24 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoRevenueAnalysis</obe_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>JS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>SCRIPT</res_code>
+		<res_cached>0</res_cached>
+		<res_file>ObjectExternal/DemoRevenueAnalysis-resources/SCRIPT.js</res_file>
+		<res_file_compiled/>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
 				<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoClient</obo_name>
@@ -13870,6 +14034,14 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>DEMO_REVENUEANALYSIS</tsl_id.act_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Revenue analysis</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
 		<tsl_id.act_name>DEMO_CLIENTMAP</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Localiser sur une carte</tsl_value>
@@ -13945,6 +14117,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_ORD_STATUS-V-D</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Envoyer</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>DEMO_REVENUEANALYSIS</tsl_id.act_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Analyse du CA</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -14501,6 +14681,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.fld_name>demoPrdName</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Name</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdOnlineDoc</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Online doc</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -15101,6 +15291,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.fld_name>demoPrdName</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Nom</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdOnlineDoc</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Documentation en ligne</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -15746,6 +15946,14 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obe_name>DemoRevenueAnalysis</tsl_id.obe_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Revenue alaysis</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>DemoWebSite</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Demo web site (bootstrap)</tsl_value>
@@ -15782,6 +15990,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Page nouvelle commande</tsl_value>
 		<tsl_help><![CDATA[Cette page vous permet de saisir une nouvelle commande]]></tsl_help>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obe_name>DemoRevenueAnalysis</tsl_id.obe_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Analyse du CA</tsl_value>
+		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>

@@ -264,6 +264,7 @@ Its reference is unique per supplier.
 | `demoPrdAvailable`                                           | boolean                                  | x   | x   | -                                                                                |
 | `demoPrdDocumentation`                                       | html(1000000)                            |     | x   | -                                                                                |
 | `demoPrdBrochure`                                            | document                                 |     | x   | -                                                                                |
+| `demoPrdOnlineDoc`                                           | url(255)                                 |     | x   | Online doc URL                                                                   |
 | `demoPrdComments`                                            | notepad(50000)                           |     | x   | -                                                                                |
 
 ### Custom actions

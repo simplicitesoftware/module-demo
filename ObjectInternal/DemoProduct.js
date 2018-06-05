@@ -5,13 +5,14 @@
 DemoProduct.increaseStock = function() {
 	// Increase stock
 	var s = this.getField("demoPrdStock");
-	s.setValue(s.getInt(0) + 10);
+	s.setValue(s.getInt(0) + 20);
 	this.save();
 	// Log
 	console.log("Stock for " + this.getFieldValue("demoPrdReference") + " is now " + s.getValue());
 	// Information message
 	return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED");
 };
+
 
 DemoProduct.decreaseStock = function() {
 	// Decrease stock

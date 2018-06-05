@@ -371,8 +371,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -647,8 +647,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -1352,8 +1352,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Status
@@ -2796,8 +2796,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Status
@@ -3065,6 +3065,12 @@ paths:
       - schema:
           type: string
         in: query
+        name: demoPrdOnlineDoc
+        description: Search filter for Online doc
+        required: false
+      - schema:
+          type: string
+        in: query
         name: demoPrdComments
         description: Search filter for Comments
         required: false
@@ -3132,8 +3138,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -3259,8 +3265,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -3372,6 +3378,12 @@ paths:
         in: query
         name: demoPrdBrochure
         description: Brochure
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdOnlineDoc
+        description: Online doc
         required: false
       - schema:
           type: string
@@ -3543,6 +3555,12 @@ paths:
         in: query
         name: demoPrdBrochure
         description: Brochure
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdOnlineDoc
+        description: Online doc
         required: false
       - schema:
           type: string
