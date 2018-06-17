@@ -1,28 +1,22 @@
-<div id="main" class="workborder">
-<table style="width: 100%;">
-	<tr>
-		<td style="width: 50%; padding: 8px;">
-			<div id="cli" style="display: none; margin-bottom: 16px;"></div>
-			<div id="sup" style="display: none; margin-bottom: 16px;"></div>
-			<div id="prd" style="display: none;"></div>
-		</td>
-		<td style="width: 50%; padding: 8px;">
-			<div class="workareatitle">Order:</div>
-			<div class="workarea">
-				<div id="ord" class="workareacontent">
-					<p>Selected customer:</p>
-					<div id="selcli"><p>&lt;none&gt;</p></div><br/>
-					<p>Selected product:</p>
-					<div id="selprd"><p>&lt;none&gt;</p></div><br/>
-					<p><input id="qty" type="text" class="normal" value="1" onchange="DemoPlaceNewOrder.total()"/>&nbsp;Total = <span id="total">0.00</span> &euro;
-					<input id="ok" type="button" class="buttonaction" disabled="disabled" value=" Ok " onclick="DemoPlaceNewOrder.order()"/></p>
-					<div id="orderr" style="color: red; display: none; font-weight: bold;"></div>
-				</div>
-			</div>
-		</td>
-	</tr>
-</table>
+<div id="placeneworder">
+	<table style="width: 100%;">
+		<tbody>
+			<tr>
+				<td style="width: 50%;">
+					<div id="placeneworder-cli" style="display: none;"></div>
+					<div id="placeneworder-sup" style="display: none;"></div>
+					<div id="placeneworder-prd" style="display: none;"></div>
+				</td>
+				<td style="width: 50%;">
+					<div id="placeneworder-ord"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 <script type="text/javascript">
-onload_functions.push(DemoPlaceNewOrder.start);
+if (typeof $ui === "undefined") // legacy UI
+	onload_functions.push(DemoPlaceNewOrder.start);
+else // Responsive UI
+	DemoPlaceNewOrder.start();
 </script>

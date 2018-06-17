@@ -1,11 +1,23 @@
-.obj {
+#placeneworder .obj {
 	padding: 8px;
 	margin: 4px;
 	cursor: pointer;
 }
-.obj:active, .obj:hover {
+#placeneworder .obj:active, .obj:hover {
 	background: #F0F0F0;
 }
-.sel {
+#placeneworder input {
+	border-radius: 5px;
+	border: solid 1px #E0E0E0;
+	padding: 8px;
+}
+#placeneworder .sel {
 	background: #E7E7E7;
+}
+#placeneworder td {
+	vertical-align: top;
+	padding: 8px;
+}
+#placeneworder-cli, #placeneworder-sup {
+	margin-bottom: 16px;
 }

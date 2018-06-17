@@ -4472,29 +4472,18 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/DemoOrderAgenda.js</obe_script_id>
-		<obe_icon/>
+		<obe_icon>calendar</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<obe_name>DemoPlaceNewOrder</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Place new order page]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>ObjectExternal/DemoPlaceNewOrder.js</obe_script_id>
+		<obe_script_id/>
 		<obe_icon>folder</obe_icon>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obe_name>DemoRevenueAnalysis</obe_name>
-		<obe_type>E</obe_type>
-		<obe_url/>
-		<obe_comment/>
-		<obe_help/>
-		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoRevenueAnalysis.java</obe_script_id>
-		<obe_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -9889,6 +9878,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>FRT</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-O-C</act_name>
@@ -9906,6 +9896,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-O-P</act_name>
@@ -9923,6 +9914,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-P-C</act_name>
@@ -9940,6 +9932,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_DECSTOCK</act_name>
@@ -9958,6 +9951,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>BCK</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
@@ -9976,6 +9970,7 @@ state transition to _shipped_ status.]]></act_comment>
 (by `N` specified in the product business object code).]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>BCK</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-C</act_name>
@@ -9993,6 +9988,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-V</act_name>
@@ -10010,6 +10006,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-V-C</act_name>
@@ -10027,6 +10024,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
+		<act_count/>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-V-D</act_name>
@@ -10044,23 +10042,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_comment/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>NUL</act_exec>
-	</data>
-	<data>
-		<act_name>DEMO_REVENUEANALYSIS</act_name>
-		<act_type>L</act_type>
-		<act_async>0</act_async>
-		<act_job_depth/>
-		<act_method/>
-		<act_script/>
-		<act_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoRevenueAnalysis", "nav=add")]]]></act_url>
-		<act_image>bars</act_image>
-		<act_confirm>0</act_confirm>
-		<act_confirm_expr/>
-		<act_confirm_ui/>
-		<act_plus>0</act_plus>
-		<act_comment><![CDATA[Revenu analysis]]></act_comment>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<act_exec>FRT</act_exec>
+		<act_count/>
 	</data>
 </object>
 <object>
@@ -10211,14 +10193,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fct_name>DEMO_ANALYSIS-A</fct_name>
-		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
-		<fct_function>A</fct_function>
-		<fct_action_id.act_name>DEMO_REVENUEANALYSIS</fct_action_id.act_name>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<fct_name>DEMO_CLIENTMAP-A</fct_name>
 		<fct_object_id.obj_name>DemoClient</fct_object_id.obj_name>
 		<fct_function>A</fct_function>
@@ -10293,14 +10267,6 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<fct_name>DemoProduct-H</fct_name>
 		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>DemoRevenueAnalysis-E</fct_name>
-		<fct_object_id.obj_name>DemoRevenueAnalysis</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
@@ -10426,16 +10392,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO_ANALYSIS-A</grt_function_id.fct_name>
-		<fct_object_id.obj_type>O</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
-		<fct_action_id.act_name>DEMO_REVENUEANALYSIS</fct_action_id.act_name>
-		<grt_function_id.fct_function>A</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DemoOrderAgenda-E</grt_function_id.fct_name>
 		<fct_object_id.obj_type>E</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoOrderAgenda</fct_object_id.obj_name>
@@ -10499,16 +10455,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO-PRDH-R</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
-		<fct_action_id.act_name/>
-		<grt_function_id.fct_function>L</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DemoRevenueAnalysis-E</grt_function_id.fct_name>
-		<fct_object_id.obj_type>E</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoRevenueAnalysis</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -13495,6 +13441,24 @@ state transition to _shipped_ status.]]></act_comment>
 				</data>
 			</object>
 		</res_object>
+		<res_type>HTML</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>HTML</res_code>
+		<res_cached>0</res_cached>
+		<res_file>ObjectExternal/DemoOrderAgenda-resources/HTML.html</res_file>
+		<res_file_compiled/>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoOrderAgenda</obe_name>
+				</data>
+			</object>
+		</res_object>
 		<res_type>JS</res_type>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
@@ -13700,24 +13664,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_file/>
 		<res_file_compiled/>
 		<res_image>ObjectExternal/DemoWebSiteMustache-resources/BANNER.jpg</res_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoRevenueAnalysis</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>JS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>SCRIPT</res_code>
-		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoRevenueAnalysis-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
-		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14034,14 +13980,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeAction>A</tsl_typeAction>
-		<tsl_id.act_name>DEMO_REVENUEANALYSIS</tsl_id.act_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Revenue analysis</tsl_value>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeAction>A</tsl_typeAction>
 		<tsl_id.act_name>DEMO_CLIENTMAP</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Localiser sur une carte</tsl_value>
@@ -14117,14 +14055,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_ORD_STATUS-V-D</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Envoyer</tsl_value>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeAction>A</tsl_typeAction>
-		<tsl_id.act_name>DEMO_REVENUEANALYSIS</tsl_id.act_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Analyse du CA</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15946,14 +15876,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>DemoRevenueAnalysis</tsl_id.obe_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Revenue alaysis</tsl_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>DemoWebSite</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Demo web site (bootstrap)</tsl_value>
@@ -15990,14 +15912,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Page nouvelle commande</tsl_value>
 		<tsl_help><![CDATA[Cette page vous permet de saisir une nouvelle commande]]></tsl_help>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>DemoRevenueAnalysis</tsl_id.obe_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Analyse du CA</tsl_value>
-		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>

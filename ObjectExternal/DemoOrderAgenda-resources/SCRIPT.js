@@ -2,15 +2,15 @@
 // Client side JavaScript for order agenda
 //-----------------------------------------------------------
 
-DemoOrderAgenda = (function($) {
+if (typeof DemoOrderAgenda === "undefined") DemoOrderAgenda = (function($) {
 
-var $s, debug = false;
+var app, responsive = typeof $ui !== "undefined", debug = false;
 
-function display(url) {
-	$s = Simplicite.Application || new Simplicite.Ajax();
-	var ord = $s.getBusinessObject("DemoOrder", "agenda_DemoOrder");
+function render(url) {
+	app = Simplicite.Application || new Simplicite.Ajax();
+	var ord = app.getBusinessObject("DemoOrder", "agenda_DemoOrder");
 
-	$("#ordercalendar").fullCalendar({
+	$("#ordercalendar").addClass(!responsive ? "workborder" : null).fullCalendar({
 		header: {
 			left: "prev,next today",
 			center: "title",
@@ -29,7 +29,7 @@ function display(url) {
 		},
 		eventClick: function(e) {
 			if (debug) console.log("Order " + e.id + " clicked");
-			if (typeof $ui !== "undefined")
+			if (responsive)
 				$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
 			else
 				document.location.replace(url.replace(/ROWID/, e.id));
@@ -78,6 +78,6 @@ function display(url) {
 	});
 }
 
-return { display: display };
+return { render: render };
 
 })(jQuery);
