@@ -7,7 +7,7 @@ if (typeof DemoOrderAgenda === "undefined") DemoOrderAgenda = (function($) {
 var app, responsive = typeof $ui !== "undefined", debug = false;
 
 function render(url) {
-	app = Simplicite.Application || new Simplicite.Ajax();
+	app = responsive ? $ui.getAjax() : Simplicite.Application;
 	var ord = app.getBusinessObject("DemoOrder", "agenda_DemoOrder");
 
 	$("#ordercalendar").addClass(!responsive ? "workborder" : null).fullCalendar({

@@ -8,14 +8,14 @@ DemoWebSiteMustache.display = function(params) {
 	wp.appendMustache();
 	wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
 	wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
-	wp.append(HTMLTool.getResourceHTMLContent(this, "TEMPLATE"));
+	wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
 
 	wp.setReady(
 		"var app = new Simplicite.Ajax('" + HTMLTool.getRoot() + "', 'api', 'website', 'simplicite');" +
 		"var prd = app.getBusinessObject('DemoProduct');" +
 		"prd.toFixed = function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); } };" + // Mustache rendering for decimal
 		"prd.bannerURL = \"" + HTMLTool.getResourceImageURL(this, "BANNER") + "\";" + // Image banner URL
-		"prd.search(function() { var t = $(\"#template\"); t.html(Mustache.render(t.html(), prd)).show(); }, {}, { inlineDocs: true });"
+		"prd.search(function() { var t = $('#demo').html(Mustache.render($('#demo-template').html(), prd)).show(); }, {}, { inlineDocs: true });"
 	);
 	
 	return wp.toString();
