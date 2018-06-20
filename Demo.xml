@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-05-17 18:20:08</mdl_lastupd>
+		<mdl_lastupd>2018-06-20 13:55:47</mdl_lastupd>
 		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
@@ -40,19 +40,19 @@
 	<name>Theme</name>
 	<action>upsert</action>
 	<data>
-		<thm_name>DemoTheme</thm_name>
+		<thm_name>demo</thm_name>
 		<thm_logo_id/>
 		<thm_logo_invert>1</thm_logo_invert>
-		<thm_logo2_id>Theme/thm_logo2_id/0/6/demo-favicon-256.png</thm_logo2_id>
-		<thm_favicon_id>Theme/thm_favicon_id/0/6/demo-favicon-256.png</thm_favicon_id>
+		<thm_logo2_id>Theme/demo/logo2.png</thm_logo2_id>
+		<thm_favicon_id>Theme/demo/favicon.png</thm_favicon_id>
 		<thm_color1/>
 		<thm_color2>#418CF0</thm_color2>
 		<thm_text2>#FFFFFF</thm_text2>
 		<thm_color3>#418CF0</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
-		<thm_css_doc>Theme/thm_css_doc/0/6/DemoTheme_gen.css</thm_css_doc>
-		<thm_addon>Theme/thm_addon/0/6/DemoTheme.css</thm_addon>
+		<thm_css_doc>Theme/demo/demo_gen.css.css</thm_css_doc>
+		<thm_addon>Theme/demo/addon.css</thm_addon>
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font/>
@@ -91,7 +91,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>DemoTheme</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>demo</viw_theme_id.thm_name>
 	</data>
 	<data>
 		<viw_name>DemoHome</viw_name>
@@ -119,7 +119,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>DemoTheme</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>demo</viw_theme_id.thm_name>
 	</data>
 </object>
 <object>
@@ -4565,7 +4565,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder>5</obo_exportorder>
+		<obo_exportorder/>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -4678,7 +4678,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder>4</obo_exportorder>
+		<obo_exportorder/>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>

@@ -4,7 +4,7 @@ demo.display = function(params) {
 
 	var wp = new JQueryWebPage(params.getRoot(), "Demo");
 	wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
-	wp.appendAjax();
+	wp.appendAjax(true);
 	wp.appendMustache();
 	wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
 	wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
