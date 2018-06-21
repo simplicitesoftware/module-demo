@@ -13427,7 +13427,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/DemoOrderAgenda-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectExternal/DemoOrderAgenda-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13445,7 +13445,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectExternal/DemoPlaceNewOrder-resources/STYLES.css</res_file_compiled>
+		<res_file_compiled>ObjectExternal/DemoPlaceNewOrder-resources/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13481,7 +13481,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectExternal/DemoPlaceNewOrder-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13553,7 +13553,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/DemoWebSite-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectExternal/DemoWebSite-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13571,7 +13571,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/demo-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectExternal/demo-resources/STYLES.css</res_file_compiled>
+		<res_file_compiled>ObjectExternal/demo-resources/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13643,7 +13643,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/demo-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectExternal/demo-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13679,7 +13679,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectInternal/DemoOrder-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectInternal/DemoOrder-resources/STYLES.css</res_file_compiled>
+		<res_file_compiled>ObjectInternal/DemoOrder-resources/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

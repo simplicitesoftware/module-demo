@@ -1,4 +1,4 @@
-DemoWebSiteBootstrap = (function($) {
+if (typeof DemoWebSiteBootstrap === "undefined") DemoWebSiteBootstrap = (function($) {
 	var app, prd, cli, ord, ctc;
 	var $loading, $main, $info, $warning, $error, $popup;
 	
