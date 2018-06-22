@@ -6,7 +6,7 @@ if (typeof DemoPlaceNewOrder === "undefined") DemoPlaceNewOrder = (function($) {
 
 var app, cli, sup, prd, responsive = typeof $ui !== "undefined";
 
-function start() {
+function render() {
 	if (!responsive) $("#placeneworder").addClass("workborder");
 	app = responsive ? $ui.getAjax() : Simplicite.Application;
 	app.setErrorHandler(function(err) {
@@ -132,6 +132,6 @@ function order() {
 	});
 }
 
-return { start: start };
+return { render: render };
 
 })(jQuery);
