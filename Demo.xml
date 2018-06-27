@@ -673,8 +673,18 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_target>_blank</shc_target>
 		<shc_order>130</shc_order>
 		<shc_visible>1</shc_visible>
-		<shc_icon/>
+		<shc_icon>fas/globe</shc_icon>
 		<shc_keys>Alt+W</shc_keys>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<shc_name>demo</shc_name>
+		<shc_url><![CDATA[[EXPR:HTMLPage.getPublicExternalObjectURL("demo")]]]></shc_url>
+		<shc_target>_blank</shc_target>
+		<shc_order>135</shc_order>
+		<shc_visible>1</shc_visible>
+		<shc_icon>fas/globe</shc_icon>
+		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -683,7 +693,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_target>_blank</shc_target>
 		<shc_order>140</shc_order>
 		<shc_visible>1</shc_visible>
-		<shc_icon/>
+		<shc_icon>fas/book</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -691,6 +701,18 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 <object>
 	<name>ShortCutGroup</name>
 	<action>upsert</action>
+	<data>
+		<shg_shortcut_id.shc_name>demo</shg_shortcut_id.shc_name>
+		<shg_group_id.grp_name>DEMO_ADMIN</shg_group_id.grp_name>
+		<shg_activ>1</shg_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<shg_shortcut_id.shc_name>demo</shg_shortcut_id.shc_name>
+		<shg_group_id.grp_name>DEMO_USER</shg_group_id.grp_name>
+		<shg_activ>1</shg_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<shg_shortcut_id.shc_name>DemoClientNew</shg_shortcut_id.shc_name>
 		<shg_group_id.grp_name>DEMO_ADMIN</shg_group_id.grp_name>
@@ -15917,6 +15939,13 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
+		<tsl_id.shc_name>demo</tsl_id.shc_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Demo frontend</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>DemoClientNew</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>New client</tsl_value>
@@ -15926,7 +15955,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>DemoDoc</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Documentation</tsl_value>
+		<tsl_value>Demo doc</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15947,7 +15976,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>DemoWebSite</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Web site</tsl_value>
+		<tsl_value>Demo website</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeShortcut>S</tsl_typeShortcut>
+		<tsl_id.shc_name>demo</tsl_id.shc_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Frontend demo</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15961,7 +15997,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>DemoDoc</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Documentation</tsl_value>
+		<tsl_value>Doc démo</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15982,7 +16018,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>DemoWebSite</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Site web</tsl_value>
+		<tsl_value>Site web démo</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
