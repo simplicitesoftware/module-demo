@@ -34,3 +34,13 @@ DemoProduct.canReference = function(objectName, fieldName) {
 	// Hide history records on tree view
 	return !this.isTreeviewInstance() || objectName != "DemoProductHistoric";
 };
+
+// Publication
+DemoProduct.catalog = function(pt) {
+	var d = new DocxTool();
+	d.newDocument();
+	d.addStyledParagraph(DocxTool.STYLE_TITLE, this.getFieldValue("demoPrdName") + " (" + this.getFieldValue("demoPrdReference") + ")");
+	d.addParagraph(this.getFieldValue("demoPrdDescription"));
+	d.addHTML(this.getFieldValue("demoPrdDocumentation"));
+	return d.toByteArray();
+};
