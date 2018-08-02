@@ -11322,13 +11322,13 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<prt_object_id.obo_name>DemoContact</prt_object_id.obo_name>
-		<prt_name>DemoContact-XLS</prt_name>
+		<prt_name>DemoContact-Excel</prt_name>
 		<prt_usage>L</prt_usage>
 		<prt_type>METH</prt_type>
 		<prt_method>printExcel</prt_method>
-		<prt_file>PrintTemplate/DemoContact-XLS.xls</prt_file>
+		<prt_file/>
 		<prt_template_id.tpl_name/>
-		<prt_mimetype>xls</prt_mimetype>
+		<prt_mimetype>xlsx</prt_mimetype>
 		<prt_filename/>
 		<prt_translation>Excel publication example</prt_translation>
 		<prt_lang>ANY</prt_lang>
@@ -11370,22 +11370,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
-		<prt_name>DemoProduct-DOCX</prt_name>
-		<prt_usage>E</prt_usage>
-		<prt_type>METH</prt_type>
-		<prt_method>catalog</prt_method>
-		<prt_file/>
-		<prt_template_id.tpl_name/>
-		<prt_mimetype>docx</prt_mimetype>
-		<prt_filename/>
-		<prt_translation>Brochure</prt_translation>
-		<prt_lang>ANY</prt_lang>
-		<prt_grantable>1</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
 		<prt_name>DemoProduct-EMAIL</prt_name>
 		<prt_usage>X</prt_usage>
 		<prt_type>TMPL</prt_type>
@@ -11417,6 +11401,22 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
+		<prt_name>DemoProduct-Word</prt_name>
+		<prt_usage>E</prt_usage>
+		<prt_type>METH</prt_type>
+		<prt_method>catalog</prt_method>
+		<prt_file/>
+		<prt_template_id.tpl_name/>
+		<prt_mimetype>docx</prt_mimetype>
+		<prt_filename/>
+		<prt_translation>Brochure</prt_translation>
+		<prt_lang>ANY</prt_lang>
+		<prt_grantable>1</prt_grantable>
+		<prt_visible>1</prt_visible>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<prt_object_id.obo_name>DemoSupplier</prt_object_id.obo_name>
 		<prt_name>DemoSupplier-CATALOG</prt_name>
 		<prt_usage>L</prt_usage>
@@ -11437,7 +11437,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<name>PrintTemplateGroup</name>
 	<action>upsert</action>
 	<data>
-		<ptg_printtmpl_id.prt_name>DemoProduct-DOCX</ptg_printtmpl_id.prt_name>
+		<ptg_printtmpl_id.prt_name>DemoProduct-Word</ptg_printtmpl_id.prt_name>
 		<ptg_printtmpl_id.prt_lang>ANY</ptg_printtmpl_id.prt_lang>
 		<ptg_group_id.grp_name>DEMO_ADMIN</ptg_group_id.grp_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>

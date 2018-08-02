@@ -3,8 +3,6 @@
 //-----------------------------------------------
 
 DemoContact.printExcel = function(pt) {
-	importPackage(Packages.org.apache.poi.ss.usermodel);
-	
 	// Build rows from selected IDs or from current filters
 	var rows = new ArrayList();
 	var ids = this.getSelectedIds();
@@ -15,8 +13,8 @@ DemoContact.printExcel = function(pt) {
 	} else
 		rows = this.search(false);
 	
-	var xls = new ExcelPOITool();
-	var sh = xls.newSheet("Test");
+	var xls = new ExcelPOITool(true); // true = XLSX format
+	var sh = xls.newSheet("Contacts");
 	for (var i = 0; i < rows.size(); i++) {
 		var r = xls.newRow(i);
 		var row = rows.get(i);
