@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-07-26 18:20:57</mdl_lastupd>
+		<mdl_lastupd>2018-07-27 12:33:57</mdl_lastupd>
 		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
@@ -11378,7 +11378,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<prt_template_id.tpl_name/>
 		<prt_mimetype>docx</prt_mimetype>
 		<prt_filename/>
-		<prt_translation>Catalog</prt_translation>
+		<prt_translation>Brochure</prt_translation>
 		<prt_lang>ANY</prt_lang>
 		<prt_grantable>1</prt_grantable>
 		<prt_visible>1</prt_visible>
@@ -11737,119 +11737,9 @@ state transition to _shipped_ status.]]></act_comment>
 		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
 		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
 		<dta_group>Field</dta_group>
-		<dta_name>demoOrdCliId.demoCliCode</dta_name>
-		<dta_order>110</dta_order>
-		<dta_value>[ORDC-100.Field.demoCliCode]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdCliId.demoCliFirstname</dta_name>
-		<dta_order>120</dta_order>
-		<dta_value>[ORDC-100.Field.demoCliFirstname]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdCliId.demoCliLastname</dta_name>
-		<dta_order>130</dta_order>
-		<dta_value>[ORDC-100.Field.demoCliLastname]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
 		<dta_name>demoOrdPrdId</dta_name>
 		<dta_order>200</dta_order>
 		<dta_value>[ORDC-210.Field.row_id]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdPrdId.demoPrdReference</dta_name>
-		<dta_order>210</dta_order>
-		<dta_value>[ORDC-210.Field.demoPrdReference]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdPrdId.demoPrdName</dta_name>
-		<dta_order>220</dta_order>
-		<dta_value>[ORDC-210.Field.demoPrdName]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdPrdId.demoPrdSupId</dta_name>
-		<dta_order>230</dta_order>
-		<dta_value>[ORDC-200.Field.row_id]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoPrdSupId.demoSupCode</dta_name>
-		<dta_order>240</dta_order>
-		<dta_value>[ORDC-200.Field.demoSupCode]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoPrdSupId.demoSupName</dta_name>
-		<dta_order>250</dta_order>
-		<dta_value>[ORDC-200.Field.demoSupName]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdPrdId.demoPrdUnitPrice</dta_name>
-		<dta_order>280</dta_order>
-		<dta_value>[ORDC-210.Field.demoPrdUnitPrice]</dta_value>
-		<dta_field_id.fld_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-		<dta_activity_id.acy_step>ORDC-300</dta_activity_id.acy_step>
-		<dta_activity_id.acy_name>OrderCreate</dta_activity_id.acy_name>
-		<dta_group>Field</dta_group>
-		<dta_name>demoOrdPrdId.demoPrdStock</dta_name>
-		<dta_order>290</dta_order>
-		<dta_value>[ORDC-210.Field.demoPrdStock]</dta_value>
 		<dta_field_id.fld_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
