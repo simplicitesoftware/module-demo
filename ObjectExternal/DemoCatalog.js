@@ -4,7 +4,7 @@
 
 DemoCatalog.display = function(params) {
 	// ZZZ API external object ZZZ
-	this.setMIMEType(HTTPTool.MIME_TYPE_JSON + "; charset=" + Globals.getPlatformEncoding());
+	this.setJSONMIMEType();
 	
 	var method = params.getMethod();
 	console.log("Method = " + method);

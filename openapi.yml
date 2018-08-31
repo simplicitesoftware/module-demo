@@ -1,4 +1,513 @@
 components:
+  schemas:
+    ArrayOfDemoOrder:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoOrder'
+    DemoClient:
+      type: object
+      properties:
+        demoCliCity:
+          description: City
+          type: string
+        demoCliCode:
+          description: Code
+          type: string
+        demoCliCoords:
+          description: Coordinates
+          type: string
+        demoCliType:
+          description: Type
+          type: string
+          enum:
+          - T1
+          - T2
+          - T3
+        demoCliLastname:
+          description: Last name
+          type: string
+        demoCliHomePhone:
+          description: Home phone number
+          type: string
+        demoCliZipCode:
+          description: Zip code
+          type: string
+        demoCliFirstname:
+          description: First name
+          type: string
+        demoCliComments:
+          description: Comments
+          type: string
+        demoCliEmail:
+          description: E-mail
+          type: string
+        demoCliPlacemapLabel:
+          description: Placemap label
+          type: string
+        demoCliAddress3:
+          description: Address 3
+          type: string
+        demoCliFax:
+          description: Fax number
+          type: string
+        row_id:
+          description: ID
+          type: string
+        demoCliWorkPhone:
+          description: Work phone number
+          type: string
+        demoCliCountry:
+          description: Country
+          type: string
+          enum:
+          - FR
+          - UK
+          - SP
+        demoCliAddress1:
+          description: Address 1
+          type: string
+        demoCliMobilePhone:
+          description: Mobile phone number
+          type: string
+        demoCliAddress2:
+          description: Address 2
+          type: string
+    DemoOrderHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: Version
+          type: integer
+        demoOrdStatus:
+          description: Status
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        demoOrdQuantity:
+          description: Quantity
+          type: integer
+        created_dt_hist:
+          description: Date
+          type: string
+        row_id:
+          description: ID
+          type: string
+        created_by_hist:
+          description: User
+          type: string
+        row_ref_id:
+          description: Reference
+          type: string
+    ArrayOfDemoOrderHistoric:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoOrderHistoric'
+    DemoOrder:
+      type: object
+      properties:
+        demoOrdPrdId__demoPrdUnitPrice:
+          description: Current unit price
+          type: number
+        demoOrdCliId__demoCliFirstname:
+          description: Customer first name
+          type: string
+        demoOrdDate:
+          description: Date
+          type: string
+        demoOrdPrdId__demoPrdSupId__demoSupUsrId:
+          description: Responsible user
+          type: string
+        demoOrdPrdId__demoPrdSupId:
+          description: Supplier
+          type: string
+        demoOrdPrdId__demoPrdStock:
+          description: Product Stock
+          type: integer
+        demoOrdStatus:
+          description: Status
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        demoOrdCliId__demoCliCode:
+          description: Customer code
+          type: string
+        demoOrdCliId__demoCliCity:
+          description: Customer city
+          type: string
+        demoOrdCliId__demoCliZipCode:
+          description: Customer zip code
+          type: string
+        demoOrdPrdId__demoPrdSupId__demoSupName:
+          description: Supplier name
+          type: string
+        demoOrdUnitPrice:
+          description: Unit price
+          type: number
+        demoOrdDeliveryDate:
+          description: Delivery date
+          type: string
+        demoOrdCliId__demoCliLastname:
+          description: Customer last name
+          type: string
+        demoOrdPrdId__demoPrdSupId__demoSupCode:
+          description: Supplier code
+          type: string
+        demoOrdQuantity:
+          description: Quantity
+          type: integer
+        demoOrdCliId:
+          description: Customer
+          type: string
+        demoOrdNumber:
+          description: Number
+          type: integer
+        demoOrdComments:
+          description: Comments
+          type: string
+        demoOrdTotal:
+          description: Total
+          type: number
+        demoOrdPrdId:
+          description: Product
+          type: string
+        demoOrdVAT:
+          description: VAT
+          type: number
+        demoOrdCliId__demoCliAddress3:
+          description: Customer address 3
+          type: string
+        demoOrdCliId__demoCliAddress2:
+          description: Customer address 2
+          type: string
+        demoOrdCliId__demoCliEmail:
+          description: Customer e-mail
+          type: string
+        demoOrdCliId__demoCliAddress1:
+          description: Customer address 1
+          type: string
+        demoOrdPrdId__demoPrdReference:
+          description: Product reference
+          type: string
+        demoOrdCliId__demoCliCountry:
+          description: Customer country
+          type: string
+          enum:
+          - FR
+          - UK
+          - SP
+        demoOrdPrdId__demoPrdPicture:
+          description: Product picture
+          type: object
+        row_id:
+          description: ID
+          type: string
+        demoOrdPrdId__demoPrdSupId__demoSupLogo:
+          description: Supplier logo
+          type: object
+        demoOrdPrdId__demoPrdName:
+          description: Product name
+          type: string
+    DemoProduct:
+      type: object
+      properties:
+        demoPrdSupId__demoSupCode:
+          description: Supplier code
+          type: string
+        demoPrdAvailable:
+          description: Available
+          type: boolean
+        demoPrdDocumentation:
+          description: Description
+          type: string
+        demoPrdOnlineDoc:
+          description: Online doc
+          type: string
+        demoPrdSupId:
+          description: Supplier
+          type: string
+        demoPrdUnitPrice:
+          description: Unit price
+          type: number
+        demoPrdSupId__demoSupUsrId:
+          description: Responsible user
+          type: string
+        demoPrdReference:
+          description: Reference
+          type: string
+        demoPrdPicture:
+          description: Picture
+          type: object
+        demoPrdBrochure:
+          description: Brochure
+          type: object
+        demoPrdComments:
+          description: Comments
+          type: string
+        demoPrdDescription:
+          description: Description
+          type: string
+        demoPrdStock:
+          description: Stock
+          type: integer
+        row_id:
+          description: ID
+          type: string
+        demoPrdName:
+          description: Name
+          type: string
+        demoPrdSupId__demoSupLogo:
+          description: Supplier Logo
+          type: object
+        demoPrdSupId__demoSupName:
+          description: Supplier name
+          type: string
+    ArrayOfDemoProduct:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoProduct'
+    ArrayOfDemoContact:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoContact'
+    ArrayOfDemoSupplier:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoSupplier'
+    DemoContactHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: Version
+          type: integer
+        demoCtcComments:
+          description: Message
+          type: string
+        demoCtcFile:
+          description: File
+          type: object
+        demoCtcStatus:
+          description: Status
+          type: string
+          enum:
+          - O
+          - P
+          - C
+        created_dt_hist:
+          description: Date
+          type: string
+        row_id:
+          description: ID
+          type: string
+        created_by_hist:
+          description: User
+          type: string
+        row_ref_id:
+          description: Reference
+          type: string
+    DemoContact:
+      type: object
+      properties:
+        demoCtcCliId__demoCliLastname:
+          description: Customer last name
+          type: string
+        demoCtcCliId__demoCliFirstname:
+          description: Customer first name
+          type: string
+        demoCtcCliId:
+          description: Customer
+          type: string
+        demoCtcCliId__demoCliWorkPhone:
+          description: Work phone number
+          type: string
+        demoCtcComments:
+          description: Message
+          type: string
+        demoCtcCanal:
+          description: Canal
+          type: string
+          enum:
+          - PHONE
+          - FAX
+          - EMAIL
+          - CHAT
+          - WEB
+        demoCtcCliId__demoCliFax:
+          description: Fax number
+          type: string
+        demoCtcFile:
+          description: File
+          type: object
+        demoCtcOrdId__demoOrdDate:
+          description: Order date
+          type: string
+        demoCtcOrdId__demoOrdNumber:
+          description: Order number
+          type: integer
+        demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId:
+          description: Order product supplier responsible
+          type: string
+        demoCtcOrdId__demoOrdPrdId__demoPrdName:
+          description: Order product name
+          type: string
+        demoCtcSubType:
+          description: Subtype
+          type: string
+          enum:
+          - ORDSTATUS
+          - PRDINFO
+          - ORDCANCEL
+          - ORDCHANGE
+          - ORDISSUE
+          - BILLISSUE
+        demoCtcCliId__demoCliHomePhone:
+          description: Home phone number
+          type: string
+        demoCtcStatus:
+          description: Status
+          type: string
+          enum:
+          - O
+          - P
+          - C
+        demoCtcDatetime:
+          description: Date
+          type: string
+        demoCtcType:
+          description: Type
+          type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
+        demoCtcOrdId__demoOrdQuantity:
+          description: Order quantity
+          type: integer
+        demoCtcCliId__demoCliMobilePhone:
+          description: Mobile phone number
+          type: string
+        demoCtcPriority:
+          description: Priority
+          type: boolean
+        demoCtcCliId__demoCliCode:
+          description: Customer code
+          type: string
+        demoCtcCliId__demoCliEmail:
+          description: E-mail
+          type: string
+        demoCtcOrdId__demoOrdCliId:
+          description: Order client
+          type: string
+        demoCtcOrdId__demoOrdPrdId:
+          description: Order product
+          type: string
+        demoCtcOrdId__demoOrdStatus:
+          description: Order status
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
+          description: Order product supplier
+          type: string
+        row_id:
+          description: ID
+          type: string
+        demoCtcOrdId:
+          description: Order
+          type: string
+        demoCtcOrdId__demoOrdPrdId__demoPrdReference:
+          description: Order product reference
+          type: string
+    ArrayOfDemoContactHistoric:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoContactHistoric'
+    ArrayOfDemoProductHistoric:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoProductHistoric'
+    DemoProductHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: Version
+          type: integer
+        demoPrdAvailable:
+          description: Available
+          type: boolean
+        created_dt_hist:
+          description: Date
+          type: string
+        demoPrdUnitPrice:
+          description: Unit price
+          type: number
+        row_id:
+          description: ID
+          type: string
+        demoPrdName:
+          description: Name
+          type: string
+        created_by_hist:
+          description: User
+          type: string
+        row_ref_id:
+          description: Reference
+          type: string
+        demoPrdReference:
+          description: Reference
+          type: string
+    DemoSupplier:
+      type: object
+      properties:
+        demoSupDescription:
+          description: Description
+          type: string
+        demoSupPhone:
+          description: Phone
+          type: string
+        demoSupCode:
+          description: Code
+          type: string
+        demoSupName:
+          description: Name
+          type: string
+        demoSupFax:
+          description: Fax
+          type: string
+        demoSupEmail:
+          description: Email
+          type: string
+        demoSupLogo:
+          description: Logo
+          type: object
+        demoSupUsrId:
+          description: Responsible user
+          type: string
+        row_id:
+          description: ID
+          type: string
+        demoSupWebsite:
+          description: Website
+          type: string
+        demoSupUsrId__usr_login:
+          description: Responsible user
+          type: string
+        demoSupComments:
+          description: Comments
+          type: string
+    ArrayOfDemoClient:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoClient'
   securitySchemes:
     basicAuth:
       scheme: basic
@@ -21,7 +530,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrderHistoric'
         '401':
           description: Authentication error
           content:
@@ -84,6 +595,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrderHistoric'
       parameters:
       - schema:
           type: string
@@ -119,8 +634,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -143,7 +656,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrderHistoric'
         '401':
           description: Authentication error
           content:
@@ -236,7 +751,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoOrderHistoric'
         '401':
           description: Authentication error
           content:
@@ -307,7 +824,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContact'
         '401':
           description: Authentication error
           content:
@@ -371,8 +890,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -524,6 +1043,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContact'
       parameters:
       - schema:
           type: string
@@ -559,8 +1082,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -583,7 +1104,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContact'
         '401':
           description: Authentication error
           content:
@@ -647,8 +1170,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -844,7 +1367,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductHistoric'
         '401':
           description: Authentication error
           content:
@@ -914,6 +1439,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductHistoric'
       parameters:
       - schema:
           type: string
@@ -949,8 +1478,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -973,7 +1500,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductHistoric'
         '401':
           description: Authentication error
           content:
@@ -1045,7 +1574,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoSupplier'
         '401':
           description: Authentication error
           content:
@@ -1133,6 +1664,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoSupplier'
       parameters:
       - schema:
           type: string
@@ -1168,8 +1703,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -1192,7 +1725,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoSupplier'
         '401':
           description: Authentication error
           content:
@@ -1282,7 +1817,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoContact'
         '401':
           description: Authentication error
           content:
@@ -1352,8 +1889,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Status
@@ -1507,7 +2044,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoSupplier'
         '401':
           description: Authentication error
           content:
@@ -1603,7 +2142,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoClient'
         '401':
           description: Authentication error
           content:
@@ -1741,6 +2282,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoClient'
       parameters:
       - schema:
           type: string
@@ -1776,8 +2321,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -1800,7 +2343,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoClient'
         '401':
           description: Authentication error
           content:
@@ -1940,7 +2485,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrder'
         '401':
           description: Authentication error
           content:
@@ -2157,6 +2704,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrder'
       parameters:
       - schema:
           type: string
@@ -2192,8 +2743,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -2216,7 +2765,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrder'
         '401':
           description: Authentication error
           content:
@@ -2435,7 +2986,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoOrder'
         '401':
           description: Authentication error
           content:
@@ -2660,7 +3213,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoProductHistoric'
         '401':
           description: Authentication error
           content:
@@ -2738,7 +3293,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoContactHistoric'
         '401':
           description: Authentication error
           content:
@@ -2796,8 +3353,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Status
@@ -2814,7 +3371,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoClient'
         '401':
           description: Authentication error
           content:
@@ -2960,7 +3519,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoProduct'
         '401':
           description: Authentication error
           content:
@@ -3086,7 +3647,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContactHistoric'
         '401':
           description: Authentication error
           content:
@@ -3138,8 +3701,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -3154,6 +3717,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContactHistoric'
       parameters:
       - schema:
           type: string
@@ -3189,8 +3756,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -3213,7 +3778,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContactHistoric'
         '401':
           description: Authentication error
           content:
@@ -3265,8 +3832,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Status
@@ -3283,7 +3850,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProduct'
         '401':
           description: Authentication error
           content:
@@ -3401,6 +3970,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProduct'
       parameters:
       - schema:
           type: string
@@ -3436,8 +4009,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -3460,7 +4031,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProduct'
         '401':
           description: Authentication error
           content:

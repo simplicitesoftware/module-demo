@@ -458,177 +458,9 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<name>Responsability</name>
 	<action>upsert</action>
 	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>CHAT_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>CHAT_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_PASSWORD</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<rsp_login_id.usr_login>designer</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>DEMO_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2015-02-10</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_PUBLIC</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-10-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>CHAT_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_PASSWORD</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>CHAT_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_PASSWORD</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>website</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_WEBSITE</rsp_group_id.grp_name>
-		<rsp_start_dt>2014-10-17</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1739,7 +1571,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer address (line 1)]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1772,7 +1605,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer address (line 2)]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1805,7 +1639,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer address (line 3)]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1838,7 +1673,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer city]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1871,7 +1707,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer code]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1904,7 +1741,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Useful comments on customer]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1924,7 +1762,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
-		<fld_size>30</fld_size>
+		<fld_size>50</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_dfault/>
@@ -1937,7 +1775,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer geoccordinates]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1970,7 +1809,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer country]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2003,7 +1843,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer email address]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2036,7 +1877,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer fax number]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2069,7 +1911,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer first name]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2102,7 +1945,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer home phone number]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2135,7 +1979,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer last name]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2168,7 +2013,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer mobile phone number]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2201,7 +2047,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc><![CDATA[[VALUE:demoCliFirstname] + " " + obj.getFieldValue("demoCliLastname", row) + " (" + [DISPLAYVALUE:demoCliType] + ")"]]></fld_calc>
 		<fld_objlist/>
-		<fld_comment><![CDATA[Place map label]]></fld_comment>
+		<fld_comment><![CDATA[Customer place map label]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2234,7 +2081,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer type]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2267,7 +2115,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer work phone number]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2300,7 +2149,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Customer postal code]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2333,7 +2183,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering>SB</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Canal used for contact]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2366,7 +2217,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact customer]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2399,7 +2251,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Comments on contact]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2432,7 +2285,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contcat date and time]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2465,7 +2319,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact attached file]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2498,7 +2353,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact order]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2531,7 +2387,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering>SLIDE</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact priority]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2564,7 +2421,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact status]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2597,7 +2455,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact sub type]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2630,7 +2489,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Contact type]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2663,7 +2523,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Order customer]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2696,7 +2557,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Comments on order]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2729,7 +2591,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Order date]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2762,7 +2625,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Order delivery date]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2795,8 +2659,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment><![CDATA[Order **number**
-Automatically calculated at creation]]></fld_comment>
+		<fld_comment><![CDATA[Order number (automatically calculated at creation)]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2829,7 +2693,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Order product]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2862,7 +2727,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product quantity ordered]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2895,7 +2761,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Order status]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2928,7 +2795,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_calc><![CDATA[[VALUE:demoOrdQuantity] * [VALUE:demoOrdUnitPrice]]]></fld_calc>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Total order amount]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2961,7 +2829,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product unit price for order]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2994,7 +2863,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_calc><![CDATA[[VALUE:demoOrdTotal] * ([SYSPARAM:DEMO_VAT]/100)]]></fld_calc>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[VAT for order]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3027,7 +2897,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Available product?]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3060,7 +2931,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product brochure]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3093,7 +2965,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Comments on product]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3126,7 +2999,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product description]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3159,7 +3033,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product documentation]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3192,7 +3067,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product name]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3225,7 +3101,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment><![CDATA[Online doc URL]]></fld_comment>
+		<fld_comment><![CDATA[Online product documentation URL]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3258,7 +3135,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product picture]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3291,7 +3169,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Product reference]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3324,7 +3203,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Current stock for product]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3357,7 +3237,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment><![CDATA[Product **supplier** identifier.]]></fld_comment>
+		<fld_comment><![CDATA[Product supplier]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3390,7 +3271,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Unit price of product]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3423,7 +3305,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment><![CDATA[Supplier unique **code** (e.g. `MYSUP`)]]></fld_comment>
+		<fld_comment><![CDATA[Supplier unique code (e.g. `MYSUP`)]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3456,7 +3339,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Comments on supplier]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3489,7 +3373,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Supplier description]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3522,7 +3407,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Supplier email address]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3555,7 +3441,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Supplier fax number]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3588,7 +3475,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Supplier logo]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3621,7 +3509,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment><![CDATA[Supplier **name** (e.g. `My supplier`)]]></fld_comment>
+		<fld_comment><![CDATA[Supplier name]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3654,7 +3543,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Supplier phone number]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3687,7 +3577,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering>FKPS</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[User responsible of supplier ]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3720,7 +3611,8 @@ Automatically calculated at creation]]></fld_comment>
 		<fld_rendering/>
 		<fld_calc/>
 		<fld_objlist/>
-		<fld_comment/>
+		<fld_comment><![CDATA[Supplier website URL]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -4460,7 +4352,7 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_name>demo</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment><![CDATA[Demo website using a Mustache template]]></obe_comment>
+		<obe_comment><![CDATA[Demo website using simple Mustache templating]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/demo.js</obe_script_id>
@@ -4471,7 +4363,7 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_name>DemoCatalog</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Custom JSON web service for getting the product catalog]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/DemoCatalog.js</obe_script_id>
@@ -4482,7 +4374,7 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_name>DemoOrderAgenda</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Order delivery agenda]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/DemoOrderAgenda.js</obe_script_id>
@@ -4493,7 +4385,7 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_name>DemoPlaceNewOrder</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment><![CDATA[Place new order page]]></obe_comment>
+		<obe_comment><![CDATA[Place new order internal page]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/DemoPlaceNewOrder.js</obe_script_id>
@@ -4504,7 +4396,7 @@ Automatically calculated at creation]]></fld_comment>
 		<obe_name>DemoWebSite</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Demo website developed in Javascript & Bootstrap]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/DemoWebSite.js</obe_script_id>
@@ -9623,17 +9515,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>10</obf_ref_order>
 		<obf_object_id.obj_name>DemoOrder</obf_object_id.obj_name>
 		<obf_field_id.fld_name>demoOrdCliId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>ord_cli_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>ord_cli_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
@@ -9645,17 +9537,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>20</obf_ref_order>
 		<obf_object_id.obj_name>DemoContact</obf_object_id.obj_name>
 		<obf_field_id.fld_name>demoCtcCliId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>ctc_cli_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>ctc_cli_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
@@ -9667,17 +9559,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>99990</obf_ref_order>
 		<obf_object_id.obj_name>DemoContactHistoric</obf_object_id.obj_name>
 		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>0</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
@@ -9689,17 +9581,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>10</obf_ref_order>
 		<obf_object_id.obj_name>DemoContact</obf_object_id.obj_name>
 		<obf_field_id.fld_name>demoCtcOrdId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>ctc_ord_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>0</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>ctc_ord_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
@@ -9711,17 +9603,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>99990</obf_ref_order>
 		<obf_object_id.obj_name>DemoOrderHistoric</obf_object_id.obj_name>
 		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>0</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
@@ -9733,17 +9625,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>20</obf_ref_order>
 		<obf_object_id.obj_name>DemoOrder</obf_object_id.obj_name>
 		<obf_field_id.fld_name>demoOrdPrdId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>ord_prd_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>0</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>ord_prd_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
@@ -9755,17 +9647,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>99990</obf_ref_order>
 		<obf_object_id.obj_name>DemoProductHistoric</obf_object_id.obj_name>
 		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>0</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
@@ -9777,17 +9669,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>10</obf_ref_order>
 		<obf_object_id.obj_name>DemoProduct</obf_object_id.obj_name>
 		<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>prd_sup_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>prd_sup_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
@@ -9799,17 +9691,17 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>1000</obf_ref_order>
 		<obf_object_id.obj_name>DemoSupplier</obf_object_id.obj_name>
 		<obf_field_id.fld_name>demoSupUsrId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>sup_usr_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>2</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>0</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_cascad>N</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>sup_usr_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>DemoSupplier-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
@@ -9974,7 +9866,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
-		<act_type>O</act_type>
+		<act_type>F</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
 		<act_method>increaseStock</act_method>
