@@ -335,28 +335,34 @@ No custom action
 * `ProductSelect`: Selected supplier's product selection activity
 * `OrderCreate`: Order creation form activity
 * `End`: End activity
+
 `demo` external object definition
 ---------------------------------
 
 Demo website using simple Mustache templating
+
 
 `DemoCatalog` external object definition
 ----------------------------------------
 
 Custom JSON web service for getting the product catalog
 
+
 `DemoOrderAgenda` external object definition
 --------------------------------------------
 
 Order delivery agenda
+
 
 `DemoPlaceNewOrder` external object definition
 ----------------------------------------------
 
 Place new order internal page
 
+
 `DemoWebSite` external object definition
 ----------------------------------------
 
 Demo website developed in Javascript & Bootstrap
+
 
