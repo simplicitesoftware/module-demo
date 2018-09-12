@@ -145,7 +145,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<mod_name>DemoContactStates</mod_name>
 		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoContactStates.json</mod_doc>
+		<mod_doc>Model/DemoContactStates.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/DemoContactStates.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -153,7 +153,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<mod_name>DemoObjects</mod_name>
 		<mod_template_id.mtp_name>ModelObject</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoObjects.json</mod_doc>
+		<mod_doc>Model/DemoObjects.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/DemoObjects.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -161,7 +161,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<mod_name>DemoOrderStates</mod_name>
 		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoOrderStates.json</mod_doc>
+		<mod_doc>Model/DemoOrderStates.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/DemoOrderStates.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -169,7 +169,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<mod_name>DemoUsers</mod_name>
 		<mod_template_id.mtp_name>ModelUser</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoUsers.json</mod_doc>
+		<mod_doc>Model/DemoUsers.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/DemoUsers.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -177,7 +177,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<mod_name>DemoWorkflow</mod_name>
 		<mod_template_id.mtp_name>ModelProcess</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoWorkflow.json</mod_doc>
+		<mod_doc>Model/DemoWorkflow.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/DemoWorkflow.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -992,7 +992,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_name>DEMO_CTC_STATUS</lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
-		<lov_model_id.mod_image>Model/mod_image/0/25/DemoContactStates.png</lov_model_id.mod_image>
+		<lov_model_id.mod_image>Model/mod_image/0/41/DemoContactStates.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE</lov_name>
@@ -1028,7 +1028,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_name>DEMO_ORD_STATUS</lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoOrderStates</lov_model_id.mod_name>
-		<lov_model_id.mod_image>Model/mod_image/0/11/DemoOrderStates.png</lov_model_id.mod_image>
+		<lov_model_id.mod_image>Model/mod_image/0/40/DemoOrderStates.png</lov_model_id.mod_image>
 	</data>
 </object>
 <object>
@@ -11520,7 +11520,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<pcs_alert_id.alt_name/>
 		<pcs_compensate_id.pcs_name/>
 		<pcs_model_id.mod_name>DemoWorkflow</pcs_model_id.mod_name>
-		<pcs_model_id.mod_image>Model/mod_image/0/14/DemoWorkflow.png</pcs_model_id.mod_image>
+		<pcs_model_id.mod_image>Model/mod_image/0/42/DemoWorkflow.png</pcs_model_id.mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<pcs_mainact_id.acy_step/>
 		<pcs_mainact_id.acy_name/>
