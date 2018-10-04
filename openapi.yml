@@ -267,6 +267,15 @@ components:
         demoPrdSupId__demoSupName:
           description: Supplier name
           type: string
+    PublicationResult:
+      type: object
+      properties:
+        mime:
+          description: MIME type
+          type: string
+        content:
+          description: Content (plain text or base64 encoded)
+          type: string
     ArrayOfDemoProduct:
       type: array
       items:
@@ -431,6 +440,12 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/DemoContactHistoric'
+    ActionResult:
+      type: object
+      properties:
+        result:
+          description: Action result
+          type: string
     ArrayOfDemoProductHistoric:
       type: array
       items:
@@ -465,11 +480,6 @@ components:
         demoPrdReference:
           description: Reference
           type: string
-    DemoProductActionResult:
-      type: object
-      properties:
-        result:
-          description: Action result
     DemoSupplier:
       type: object
       properties:
@@ -525,85 +535,19 @@ servers:
 - url: https://dev40.dev.simplicite.io/api
 openapi: 3.0.0
 paths:
-  /rest/DemoOrderHistoric/{row_id}:
-    post:
-      security:
-      - bearerAuth: []
-      description: Create business object record
-      operationId: obj-demoorderhistoric-create
-      responses:
-        '200':
-          description: Created business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoOrderHistoric'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: row_ref_id
-        description: Reference
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: row_idx
-        description: Version
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_by_hist
-        description: User
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_dt_hist
-        description: Date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        in: query
-        name: demoOrdStatus
-        description: Status
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoOrdQuantity
-        description: Quantity
-        required: false
-      tags:
-      - DemoOrderHistoric
+  /rest/DemoOrder/{row_id}/pivot:DemoOrder-PDF:
     get:
       security:
       - bearerAuth: []
-      description: Get business object record
-      operationId: obj-demoorderhistoric-get
+      description: Call custom publication for one object record or all object records
+      operationId: obj-demoorder-publication-demoorder-pdf
       responses:
         '200':
-          description: Business object record
+          description: Custom publication result
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/DemoOrderHistoric'
+                $ref: '#/components/schemas/PublicationResult'
         '401':
           description: Authentication error
           content:
@@ -613,115 +557,10 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_documents
-        description: Inline documents?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_thumbnails
-        description: Inline documents' thumbnails?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_objects
-        description: Inline objects?
-        required: false
-      tags:
-      - DemoOrderHistoric
-    delete:
-      security:
-      - bearerAuth: []
-      description: Delete business object record
-      operationId: obj-demoorderhistoric-delete
-      responses:
-        '200':
-          description: Business object deletion confirmation
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
-      - DemoOrderHistoric
-    put:
-      security:
-      - bearerAuth: []
-      description: Update business object record
-      operationId: obj-demoorderhistoric-update
-      responses:
-        '200':
-          description: Updated business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoOrderHistoric'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: row_ref_id
-        description: Reference
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: row_idx
-        description: Version
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_by_hist
-        description: User
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_dt_hist
-        description: Date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        in: query
-        name: demoOrdStatus
-        description: Status
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoOrdQuantity
-        description: Quantity
-        required: false
-      tags:
-      - DemoOrderHistoric
+      - DemoOrder
   /login:
     get:
       security:
@@ -750,601 +589,6 @@ paths:
         required: false
       tags:
       - Application
-  /rest/DemoOrderHistoric:
-    get:
-      security:
-      - bearerAuth: []
-      description: Get business object metadata or search records
-      operationId: obj-demoorderhistoric-search
-      responses:
-        '200':
-          description: Business object metadata or records of search result
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ArrayOfDemoOrderHistoric'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: row_ref_id
-        description: Search filter for Reference
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: row_idx
-        description: Search filter for Version
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_by_hist
-        description: Search filter for User
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_dt_hist
-        description: Search filter for Date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        in: query
-        name: demoOrdStatus
-        description: Search filter for Status
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoOrdQuantity
-        description: Search filter for Quantity
-        required: false
-      tags:
-      - DemoOrderHistoric
-  /rest/DemoContact/{row_id}:
-    post:
-      security:
-      - bearerAuth: []
-      description: Create business object record
-      operationId: obj-democontact-create
-      responses:
-        '200':
-          description: Created business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoContact'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: demoCtcDatetime
-        description: Date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - INF
-          - REQ
-          - CMP
-          - OTH
-        in: query
-        name: demoCtcType
-        description: Type
-        required: false
-      - schema:
-          type: string
-          enum:
-          - ORDSTATUS
-          - PRDINFO
-          - ORDCANCEL
-          - ORDCHANGE
-          - ORDISSUE
-          - BILLISSUE
-        in: query
-        name: demoCtcSubType
-        description: Subtype
-        required: false
-      - schema:
-          type: string
-          enum:
-          - PHONE
-          - FAX
-          - EMAIL
-          - CHAT
-          - WEB
-        in: query
-        name: demoCtcCanal
-        description: Canal
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: demoCtcPriority
-        description: Priority
-        required: false
-      - schema:
-          type: string
-          enum:
-          - O
-          - P
-          - C
-        in: query
-        name: demoCtcStatus
-        description: Status
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId
-        description: Customer
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliCode
-        description: Customer code
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliFirstname
-        description: Customer first name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliLastname
-        description: Customer last name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliEmail
-        description: E-mail
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliHomePhone
-        description: Home phone number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliWorkPhone
-        description: Work phone number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliMobilePhone
-        description: Mobile phone number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliFax
-        description: Fax number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId
-        description: Order
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoCtcOrdId__demoOrdNumber
-        description: Order number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdDate
-        description: Order date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        in: query
-        name: demoCtcOrdId__demoOrdStatus
-        description: Order status
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdCliId
-        description: Order client
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId
-        description: Order product
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
-        description: Order product supplier
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: Order product supplier responsible
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
-        description: Order product reference
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
-        description: Order product name
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoCtcOrdId__demoOrdQuantity
-        description: Order quantity
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcComments
-        description: Message
-        required: false
-      - schema:
-          type: object
-        in: query
-        name: demoCtcFile
-        description: File
-        required: false
-      tags:
-      - DemoContact
-    get:
-      security:
-      - bearerAuth: []
-      description: Get business object record
-      operationId: obj-democontact-get
-      responses:
-        '200':
-          description: Business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoContact'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_documents
-        description: Inline documents?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_thumbnails
-        description: Inline documents' thumbnails?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_objects
-        description: Inline objects?
-        required: false
-      tags:
-      - DemoContact
-    delete:
-      security:
-      - bearerAuth: []
-      description: Delete business object record
-      operationId: obj-democontact-delete
-      responses:
-        '200':
-          description: Business object deletion confirmation
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      tags:
-      - DemoContact
-    put:
-      security:
-      - bearerAuth: []
-      description: Update business object record
-      operationId: obj-democontact-update
-      responses:
-        '200':
-          description: Updated business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoContact'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: demoCtcDatetime
-        description: Date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - INF
-          - REQ
-          - CMP
-          - OTH
-        in: query
-        name: demoCtcType
-        description: Type
-        required: false
-      - schema:
-          type: string
-          enum:
-          - ORDSTATUS
-          - PRDINFO
-          - ORDCANCEL
-          - ORDCHANGE
-          - ORDISSUE
-          - BILLISSUE
-        in: query
-        name: demoCtcSubType
-        description: Subtype
-        required: false
-      - schema:
-          type: string
-          enum:
-          - PHONE
-          - FAX
-          - EMAIL
-          - CHAT
-          - WEB
-        in: query
-        name: demoCtcCanal
-        description: Canal
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: demoCtcPriority
-        description: Priority
-        required: false
-      - schema:
-          type: string
-          enum:
-          - O
-          - P
-          - C
-        in: query
-        name: demoCtcStatus
-        description: Status
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId
-        description: Customer
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliCode
-        description: Customer code
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliFirstname
-        description: Customer first name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliLastname
-        description: Customer last name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliEmail
-        description: E-mail
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliHomePhone
-        description: Home phone number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliWorkPhone
-        description: Work phone number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliMobilePhone
-        description: Mobile phone number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcCliId__demoCliFax
-        description: Fax number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId
-        description: Order
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoCtcOrdId__demoOrdNumber
-        description: Order number
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdDate
-        description: Order date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        in: query
-        name: demoCtcOrdId__demoOrdStatus
-        description: Order status
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdCliId
-        description: Order client
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId
-        description: Order product
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
-        description: Order product supplier
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: Order product supplier responsible
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
-        description: Order product reference
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
-        description: Order product name
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoCtcOrdId__demoOrdQuantity
-        description: Order quantity
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcComments
-        description: Message
-        required: false
-      - schema:
-          type: object
-        in: query
-        name: demoCtcFile
-        description: File
-        required: false
-      tags:
-      - DemoContact
-  /logout:
-    get:
-      security:
-      - bearerAuth: []
-      description: Logout
-      operationId: logout
-      responses:
-        '200':
-          description: Logout confirmation
-          content:
-            application/json: {}
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      tags:
-      - Application
   /rest:
     get:
       security:
@@ -1370,516 +614,6 @@ paths:
         required: false
       tags:
       - Application
-  /rest/DemoProductHistoric/{row_id}:
-    post:
-      security:
-      - bearerAuth: []
-      description: Create business object record
-      operationId: obj-demoproducthistoric-create
-      responses:
-        '200':
-          description: Created business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoProductHistoric'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: row_ref_id
-        description: Reference
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: row_idx
-        description: Version
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_by_hist
-        description: User
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_dt_hist
-        description: Date
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoPrdReference
-        description: Reference
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoPrdName
-        description: Name
-        required: false
-      - schema:
-          type: number
-        in: query
-        name: demoPrdUnitPrice
-        description: Unit price
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: demoPrdAvailable
-        description: Available
-        required: false
-      tags:
-      - DemoProductHistoric
-    get:
-      security:
-      - bearerAuth: []
-      description: Get business object record
-      operationId: obj-demoproducthistoric-get
-      responses:
-        '200':
-          description: Business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoProductHistoric'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_documents
-        description: Inline documents?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_thumbnails
-        description: Inline documents' thumbnails?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_objects
-        description: Inline objects?
-        required: false
-      tags:
-      - DemoProductHistoric
-    delete:
-      security:
-      - bearerAuth: []
-      description: Delete business object record
-      operationId: obj-demoproducthistoric-delete
-      responses:
-        '200':
-          description: Business object deletion confirmation
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      tags:
-      - DemoProductHistoric
-    put:
-      security:
-      - bearerAuth: []
-      description: Update business object record
-      operationId: obj-demoproducthistoric-update
-      responses:
-        '200':
-          description: Updated business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoProductHistoric'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: row_ref_id
-        description: Reference
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: row_idx
-        description: Version
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_by_hist
-        description: User
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: created_dt_hist
-        description: Date
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoPrdReference
-        description: Reference
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoPrdName
-        description: Name
-        required: false
-      - schema:
-          type: number
-        in: query
-        name: demoPrdUnitPrice
-        description: Unit price
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: demoPrdAvailable
-        description: Available
-        required: false
-      tags:
-      - DemoProductHistoric
-  /rest/DemoSupplier/{row_id}:
-    post:
-      security:
-      - bearerAuth: []
-      description: Create business object record
-      operationId: obj-demosupplier-create
-      responses:
-        '200':
-          description: Created business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoSupplier'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: demoSupCode
-        description: Code
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupName
-        description: Name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupDescription
-        description: Description
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupPhone
-        description: Phone
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupFax
-        description: Fax
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupWebsite
-        description: Website
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupEmail
-        description: Email
-        required: false
-      - schema:
-          type: object
-        in: query
-        name: demoSupLogo
-        description: Logo
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupUsrId
-        description: Responsible user
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupUsrId__usr_login
-        description: Responsible user
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupComments
-        description: Comments
-        required: false
-      tags:
-      - DemoSupplier
-    get:
-      security:
-      - bearerAuth: []
-      description: Get business object record
-      operationId: obj-demosupplier-get
-      responses:
-        '200':
-          description: Business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoSupplier'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_documents
-        description: Inline documents?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_thumbnails
-        description: Inline documents' thumbnails?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_objects
-        description: Inline objects?
-        required: false
-      tags:
-      - DemoSupplier
-    delete:
-      security:
-      - bearerAuth: []
-      description: Delete business object record
-      operationId: obj-demosupplier-delete
-      responses:
-        '200':
-          description: Business object deletion confirmation
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      tags:
-      - DemoSupplier
-    put:
-      security:
-      - bearerAuth: []
-      description: Update business object record
-      operationId: obj-demosupplier-update
-      responses:
-        '200':
-          description: Updated business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoSupplier'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: demoSupCode
-        description: Code
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupName
-        description: Name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupDescription
-        description: Description
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupPhone
-        description: Phone
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupFax
-        description: Fax
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupWebsite
-        description: Website
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupEmail
-        description: Email
-        required: false
-      - schema:
-          type: object
-        in: query
-        name: demoSupLogo
-        description: Logo
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupUsrId
-        description: Responsible user
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupUsrId__usr_login
-        description: Responsible user
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoSupComments
-        description: Comments
-        required: false
-      tags:
-      - DemoSupplier
-  /rest/DemoProduct/{row_id}/DEMO_INCSTOCK:
-    get:
-      security:
-      - bearerAuth: []
-      description: Call custom action for object record
-      operationId: obj-demoproduct-action
-      responses:
-        '200':
-          description: Custom action result
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoProductActionResult'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      tags:
-      - DemoProduct
-  /rest/DemoProduct/{row_id}/DEMO_DECSTOCK:
-    get:
-      security:
-      - bearerAuth: []
-      description: Call custom action for object record
-      operationId: obj-demoproduct-action
-      responses:
-        '200':
-          description: Custom action result
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoProductActionResult'
-        '401':
-          description: Authentication error
-          content:
-            application/json: {}
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: row ID
-        required: true
-      tags:
-      - DemoProduct
   /rest/DemoContact:
     get:
       security:
@@ -1903,6 +637,30 @@ paths:
         in: query
         name: _metadata
         description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
         required: false
       - schema:
           type: boolean
@@ -2134,6 +892,30 @@ paths:
       - schema:
           type: boolean
         in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
+        required: false
+      - schema:
+          type: boolean
+        in: query
         name: _doc
         description: Documentation?
         required: false
@@ -2227,7 +1009,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -2368,7 +1150,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -2407,7 +1189,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - DemoClient
@@ -2432,7 +1214,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -2574,7 +1356,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: integer
@@ -2794,7 +1576,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -2833,7 +1615,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - DemoOrder
@@ -2858,7 +1640,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: integer
@@ -3084,6 +1866,30 @@ paths:
       - schema:
           type: boolean
         in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
+        required: false
+      - schema:
+          type: boolean
+        in: query
         name: _doc
         description: Documentation?
         required: false
@@ -3284,6 +2090,1410 @@ paths:
         required: false
       tags:
       - DemoOrder
+  /rest/DemoProduct/{row_id}/pivot:DemoProduct-EMAIL:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom publication for one object record or all object records
+      operationId: obj-demoproduct-publication-demoproduct-email
+      responses:
+        '200':
+          description: Custom publication result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoProduct/{row_id}/pivot:DemoProduct-Word:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom publication for one object record or all object records
+      operationId: obj-demoproduct-publication-demoproduct-word
+      responses:
+        '200':
+          description: Custom publication result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoOrder/{row_id}/pivot:DemoOrder-XML:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom publication for one object record or all object records
+      operationId: obj-demoorder-publication-demoorder-xml
+      responses:
+        '200':
+          description: Custom publication result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoOrder
+  /rest/DemoProduct/{row_id}/action:DEMO_DECSTOCK:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom action for one object record or all object records
+      operationId: obj-demoproduct-action-demo_decstock
+      responses:
+        '200':
+          description: Custom action result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ActionResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoOrderHistoric/{row_id}:
+    post:
+      security:
+      - bearerAuth: []
+      description: Create business object record
+      operationId: obj-demoorderhistoric-create
+      responses:
+        '200':
+          description: Created business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrderHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        in: query
+        name: demoOrdStatus
+        description: Status
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Quantity
+        required: false
+      tags:
+      - DemoOrderHistoric
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object record
+      operationId: obj-demoorderhistoric-get
+      responses:
+        '200':
+          description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrderHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - DemoOrderHistoric
+    delete:
+      security:
+      - bearerAuth: []
+      description: Delete business object record
+      operationId: obj-demoorderhistoric-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoOrderHistoric
+    put:
+      security:
+      - bearerAuth: []
+      description: Update business object record
+      operationId: obj-demoorderhistoric-update
+      responses:
+        '200':
+          description: Updated business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoOrderHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        in: query
+        name: demoOrdStatus
+        description: Status
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Quantity
+        required: false
+      tags:
+      - DemoOrderHistoric
+  /rest/DemoOrderHistoric:
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object metadata or search records
+      operationId: obj-demoorderhistoric-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfDemoOrderHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Search filter for Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: Search filter for User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        in: query
+        name: demoOrdStatus
+        description: Search filter for Status
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoOrdQuantity
+        description: Search filter for Quantity
+        required: false
+      tags:
+      - DemoOrderHistoric
+  /rest/DemoContact/{row_id}:
+    post:
+      security:
+      - bearerAuth: []
+      description: Create business object record
+      operationId: obj-democontact-create
+      responses:
+        '200':
+          description: Created business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContact'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoCtcDatetime
+        description: Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
+        in: query
+        name: demoCtcType
+        description: Type
+        required: false
+      - schema:
+          type: string
+          enum:
+          - ORDSTATUS
+          - PRDINFO
+          - ORDCANCEL
+          - ORDCHANGE
+          - ORDISSUE
+          - BILLISSUE
+        in: query
+        name: demoCtcSubType
+        description: Subtype
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PHONE
+          - FAX
+          - EMAIL
+          - CHAT
+          - WEB
+        in: query
+        name: demoCtcCanal
+        description: Canal
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoCtcPriority
+        description: Priority
+        required: false
+      - schema:
+          type: string
+          enum:
+          - O
+          - P
+          - C
+        in: query
+        name: demoCtcStatus
+        description: Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId
+        description: Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliCode
+        description: Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFirstname
+        description: Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliLastname
+        description: Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliEmail
+        description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliHomePhone
+        description: Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliWorkPhone
+        description: Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliMobilePhone
+        description: Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFax
+        description: Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId
+        description: Order
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdNumber
+        description: Order number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdDate
+        description: Order date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        in: query
+        name: demoCtcOrdId__demoOrdStatus
+        description: Order status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdCliId
+        description: Order client
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId
+        description: Order product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
+        description: Order product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Order product supplier responsible
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
+        description: Order product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
+        description: Order product name
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdQuantity
+        description: Order quantity
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: File
+        required: false
+      tags:
+      - DemoContact
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object record
+      operationId: obj-democontact-get
+      responses:
+        '200':
+          description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContact'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - DemoContact
+    delete:
+      security:
+      - bearerAuth: []
+      description: Delete business object record
+      operationId: obj-democontact-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoContact
+    put:
+      security:
+      - bearerAuth: []
+      description: Update business object record
+      operationId: obj-democontact-update
+      responses:
+        '200':
+          description: Updated business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoContact'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoCtcDatetime
+        description: Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
+        in: query
+        name: demoCtcType
+        description: Type
+        required: false
+      - schema:
+          type: string
+          enum:
+          - ORDSTATUS
+          - PRDINFO
+          - ORDCANCEL
+          - ORDCHANGE
+          - ORDISSUE
+          - BILLISSUE
+        in: query
+        name: demoCtcSubType
+        description: Subtype
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PHONE
+          - FAX
+          - EMAIL
+          - CHAT
+          - WEB
+        in: query
+        name: demoCtcCanal
+        description: Canal
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoCtcPriority
+        description: Priority
+        required: false
+      - schema:
+          type: string
+          enum:
+          - O
+          - P
+          - C
+        in: query
+        name: demoCtcStatus
+        description: Status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId
+        description: Customer
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliCode
+        description: Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFirstname
+        description: Customer first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliLastname
+        description: Customer last name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliEmail
+        description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliHomePhone
+        description: Home phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliWorkPhone
+        description: Work phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliMobilePhone
+        description: Mobile phone number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcCliId__demoCliFax
+        description: Fax number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId
+        description: Order
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdNumber
+        description: Order number
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdDate
+        description: Order date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        in: query
+        name: demoCtcOrdId__demoOrdStatus
+        description: Order status
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdCliId
+        description: Order client
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId
+        description: Order product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
+        description: Order product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: Order product supplier responsible
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
+        description: Order product reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
+        description: Order product name
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: demoCtcOrdId__demoOrdQuantity
+        description: Order quantity
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Message
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoCtcFile
+        description: File
+        required: false
+      tags:
+      - DemoContact
+  /logout:
+    get:
+      security:
+      - bearerAuth: []
+      description: Logout
+      operationId: logout
+      responses:
+        '200':
+          description: Logout confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      tags:
+      - Application
+  /rest/DemoProductHistoric/{row_id}:
+    post:
+      security:
+      - bearerAuth: []
+      description: Create business object record
+      operationId: obj-demoproducthistoric-create
+      responses:
+        '200':
+          description: Created business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Available
+        required: false
+      tags:
+      - DemoProductHistoric
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object record
+      operationId: obj-demoproducthistoric-get
+      responses:
+        '200':
+          description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - DemoProductHistoric
+    delete:
+      security:
+      - bearerAuth: []
+      description: Delete business object record
+      operationId: obj-demoproducthistoric-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProductHistoric
+    put:
+      security:
+      - bearerAuth: []
+      description: Update business object record
+      operationId: obj-demoproducthistoric-update
+      responses:
+        '200':
+          description: Updated business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdReference
+        description: Reference
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdName
+        description: Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: demoPrdUnitPrice
+        description: Unit price
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdAvailable
+        description: Available
+        required: false
+      tags:
+      - DemoProductHistoric
+  /rest/DemoSupplier/{row_id}:
+    post:
+      security:
+      - bearerAuth: []
+      description: Create business object record
+      operationId: obj-demosupplier-create
+      responses:
+        '200':
+          description: Created business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoSupplier'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoSupCode
+        description: Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupName
+        description: Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupDescription
+        description: Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupPhone
+        description: Phone
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupFax
+        description: Fax
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupWebsite
+        description: Website
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupEmail
+        description: Email
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoSupLogo
+        description: Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId__usr_login
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupComments
+        description: Comments
+        required: false
+      tags:
+      - DemoSupplier
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object record
+      operationId: obj-demosupplier-get
+      responses:
+        '200':
+          description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoSupplier'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - DemoSupplier
+    delete:
+      security:
+      - bearerAuth: []
+      description: Delete business object record
+      operationId: obj-demosupplier-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoSupplier
+    put:
+      security:
+      - bearerAuth: []
+      description: Update business object record
+      operationId: obj-demosupplier-update
+      responses:
+        '200':
+          description: Updated business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoSupplier'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: demoSupCode
+        description: Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupName
+        description: Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupDescription
+        description: Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupPhone
+        description: Phone
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupFax
+        description: Fax
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupWebsite
+        description: Website
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupEmail
+        description: Email
+        required: false
+      - schema:
+          type: object
+        in: query
+        name: demoSupLogo
+        description: Logo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupUsrId__usr_login
+        description: Responsible user
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoSupComments
+        description: Comments
+        required: false
+      tags:
+      - DemoSupplier
+  /rest/DemoContact/{row_id}/pivot:DemoContact-Excel:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom publication for one object record or all object records
+      operationId: obj-democontact-publication-democontact-excel
+      responses:
+        '200':
+          description: Custom publication result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoContact
   /rest/DemoProductHistoric:
     get:
       security:
@@ -3307,6 +3517,30 @@ paths:
         in: query
         name: _metadata
         description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
         required: false
       - schema:
           type: boolean
@@ -3364,6 +3598,32 @@ paths:
         required: false
       tags:
       - DemoProductHistoric
+  /rest/DemoSupplier/{row_id}/pivot:DemoSupplier-CATALOG:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom publication for one object record or all object records
+      operationId: obj-demosupplier-publication-demosupplier-catalog
+      responses:
+        '200':
+          description: Custom publication result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoSupplier
   /rest/DemoContactHistoric:
     get:
       security:
@@ -3387,6 +3647,30 @@ paths:
         in: query
         name: _metadata
         description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
         required: false
       - schema:
           type: boolean
@@ -3465,6 +3749,30 @@ paths:
         in: query
         name: _metadata
         description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
         required: false
       - schema:
           type: boolean
@@ -3617,6 +3925,30 @@ paths:
       - schema:
           type: boolean
         in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
+        required: false
+      - schema:
+          type: boolean
+        in: query
         name: _doc
         description: Documentation?
         required: false
@@ -3740,7 +4072,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -3811,7 +4143,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -3850,7 +4182,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - DemoContactHistoric
@@ -3875,7 +4207,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -3925,6 +4257,32 @@ paths:
         required: false
       tags:
       - DemoContactHistoric
+  /rest/DemoProduct/{row_id}/action:DEMO_INCSTOCK:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom action for one object record or all object records
+      operationId: obj-demoproduct-action-demo_incstock
+      responses:
+        '200':
+          description: Custom action result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ActionResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoProduct/{row_id}:
     post:
       security:
@@ -3947,7 +4305,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -4068,7 +4426,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -4107,7 +4465,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - DemoProduct
@@ -4132,7 +4490,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string

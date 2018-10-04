@@ -4716,12 +4716,12 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
-		<obo_export>1</obo_export>
+		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>0</obo_srh_predef>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
-		<obo_delall>1</obo_delall>
+		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
 		<obo_list_edit>N;L;E</obo_list_edit>
 		<obo_useform>0</obo_useform>
@@ -4751,8 +4751,8 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
 		<obo_btn_close>1</obo_btn_close>
-		<obo_tray>1</obo_tray>
-		<obo_dashboard>1</obo_dashboard>
+		<obo_tray>0</obo_tray>
+		<obo_dashboard>0</obo_dashboard>
 	</data>
 	<data>
 		<obo_name>DemoOrder</obo_name>
@@ -4833,12 +4833,12 @@ An order is for one single product.]]></obo_comment>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
-		<obo_export>1</obo_export>
+		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>0</obo_srh_predef>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
-		<obo_delall>1</obo_delall>
+		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
 		<obo_list_edit>N;L;E</obo_list_edit>
 		<obo_useform>0</obo_useform>
@@ -4868,8 +4868,8 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
 		<obo_btn_close>1</obo_btn_close>
-		<obo_tray>1</obo_tray>
-		<obo_dashboard>1</obo_dashboard>
+		<obo_tray>0</obo_tray>
+		<obo_dashboard>0</obo_dashboard>
 	</data>
 	<data>
 		<obo_name>DemoProduct</obo_name>
@@ -4950,12 +4950,12 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
-		<obo_export>1</obo_export>
+		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>0</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
-		<obo_delall>1</obo_delall>
+		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
 		<obo_list_edit>N</obo_list_edit>
 		<obo_useform>0</obo_useform>
@@ -4985,8 +4985,8 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
 		<obo_btn_close>1</obo_btn_close>
-		<obo_tray>1</obo_tray>
-		<obo_dashboard>1</obo_dashboard>
+		<obo_tray>0</obo_tray>
+		<obo_dashboard>0</obo_dashboard>
 	</data>
 	<data>
 		<obo_name>DemoSupplier</obo_name>
@@ -10178,22 +10178,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fct_name>DEMO-CTCH-R</fct_name>
-		<fct_object_id.obj_name>DemoContactHistoric</fct_object_id.obj_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>DEMO-CTCH-U</fct_name>
-		<fct_object_id.obj_name>DemoContactHistoric</fct_object_id.obj_name>
-		<fct_function>M</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<fct_name>DEMO-ORD-CU</fct_name>
 		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
 		<fct_function>CM</fct_function>
@@ -10218,22 +10202,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fct_name>DEMO-ORDH-R</fct_name>
-		<fct_object_id.obj_name>DemoOrderHistoric</fct_object_id.obj_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>DEMO-ORDH-U</fct_name>
-		<fct_object_id.obj_name>DemoOrderHistoric</fct_object_id.obj_name>
-		<fct_function>M</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<fct_name>DEMO-PRD-CUD</fct_name>
 		<fct_object_id.obj_name>DemoProduct</fct_object_id.obj_name>
 		<fct_function>CMS</fct_function>
@@ -10245,22 +10213,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<fct_name>DEMO-PRD-R</fct_name>
 		<fct_object_id.obj_name>DemoProduct</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>DEMO-PRDH-R</fct_name>
-		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>DEMO-PRDH-U</fct_name>
-		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
-		<fct_function>M</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -10435,7 +10387,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO-CTCH-R</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoContact-H</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoContactHistoric</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
@@ -10475,7 +10427,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO-ORDH-R</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoOrder-H</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoOrderHistoric</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
@@ -10525,7 +10477,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO-PRDH-R</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoProduct-H</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
@@ -10625,7 +10577,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO-CTCH-R</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoContact-H</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoContactHistoric</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
@@ -10665,7 +10617,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO-ORDH-R</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoOrder-H</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoOrderHistoric</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
@@ -10688,16 +10640,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO-PRD-R</grt_function_id.fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoProduct</fct_object_id.obj_name>
-		<fct_action_id.act_name/>
-		<grt_function_id.fct_function>L</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DEMO-PRDH-R</grt_function_id.fct_name>
-		<fct_object_id.obj_type>O</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoProductHistoric</fct_object_id.obj_name>
 		<fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
