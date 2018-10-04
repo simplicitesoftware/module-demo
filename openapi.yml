@@ -465,6 +465,11 @@ components:
         demoPrdReference:
           description: Reference
           type: string
+    DemoProductActionResult:
+      type: object
+      properties:
+        result:
+          description: Action result
     DemoSupplier:
       type: object
       properties:
@@ -599,6 +604,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoOrderHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1047,6 +1056,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoContact'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1443,6 +1456,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoProductHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1668,6 +1685,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoSupplier'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -1807,6 +1828,58 @@ paths:
         required: false
       tags:
       - DemoSupplier
+  /rest/DemoProduct/{row_id}/DEMO_INCSTOCK:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom action for object record
+      operationId: obj-demoproduct-action
+      responses:
+        '200':
+          description: Custom action result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductActionResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoProduct/{row_id}/DEMO_DECSTOCK:
+    get:
+      security:
+      - bearerAuth: []
+      description: Call custom action for object record
+      operationId: obj-demoproduct-action
+      responses:
+        '200':
+          description: Custom action result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DemoProductActionResult'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoContact:
     get:
       security:
@@ -2286,6 +2359,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoClient'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -2708,6 +2785,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoOrder'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -3721,6 +3802,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoContactHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -3974,6 +4059,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DemoProduct'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string

@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-07-27 12:33:57</mdl_lastupd>
+		<mdl_lastupd>2018-09-12 13:03:54</mdl_lastupd>
 		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
@@ -112,7 +112,9 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<viw_name>DemoUserHome</viw_name>
 		<viw_template><![CDATA[<div class="area">[AREA:1,2:=]</div>
 <div class="area">[AREA:3:=]</div>]]></viw_template>
-		<viw_ui><![CDATA[<div class="row"><div class="area col-sm-12" data-area="1,2:="></div></div>
+		<viw_ui><![CDATA[<div class="row">
+	<div class="area col-sm-12" data-area="1,2:="></div>
+</div>
 <!-- Area 3 is not displayed on purpose -->]]></viw_ui>
 		<viw_order>120</viw_order>
 		<viw_icon>demo</viw_icon>
