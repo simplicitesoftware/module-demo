@@ -548,6 +548,14 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
+		<rsp_group_id.grp_name>DEMO_PUBLIC</rsp_group_id.grp_name>
+		<rsp_start_dt>2015-02-10</rsp_start_dt>
+		<rsp_end_dt/>
+		<rsp_activ>1</rsp_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>CHAT_USER</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
@@ -13295,7 +13303,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>DEMO_PRINT_STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>Disposition/default-resources/DEMO_PRINT_STYLES.css</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>Disposition/default-resources/DEMO_PRINT_STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13619,7 +13627,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectInternal/DemoClient-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectInternal/DemoClient-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13655,7 +13663,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectInternal/DemoOrder-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectInternal/DemoOrder-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

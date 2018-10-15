@@ -20,7 +20,7 @@ DemoClient = (function($) {
 			return false;
 		}
 	};
-	
+
 	// Google Hangouts button
 	var hangout = function() {
 		var email = getFieldValue("demoCliEmail");
