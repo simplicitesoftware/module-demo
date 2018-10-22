@@ -1,7 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for order business object
 //----------------------------------------------------
-DemoOrder = (function($) {
+var DemoOrder = typeof DemoOrder !== "undefined" ? DemoOrder : (function($) {
 	var resp = typeof $ui !== "undefined";
 
 	// Helper to dynamically change unit price when selecting product (also done on server side)
@@ -19,7 +19,7 @@ DemoOrder = (function($) {
 		};
 	} else {
 		// Legacy UI hook
-		demoOrdPrdId_changed = function() {
+		window.demoOrdPrdId_changed = function() {
 			setFieldValue("demoOrdUnitPrice", getFieldValue("demoOrdPrdId.demoPrdUnitPrice"));
 		};
 	}

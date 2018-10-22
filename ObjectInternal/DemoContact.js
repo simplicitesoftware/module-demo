@@ -10,8 +10,9 @@ DemoContact.printExcel = function(pt) {
 		for (var k = 0; k < ids.size(); k++)
 			if (this.select(ids.get(k)))
 				rows.add(this.getValues());
-	} else
+	} else {
 		rows = this.search(false);
+	}
 	
 	var xls = new ExcelPOITool(true); // true = XLSX format
 	var sh = xls.newSheet("Contacts");

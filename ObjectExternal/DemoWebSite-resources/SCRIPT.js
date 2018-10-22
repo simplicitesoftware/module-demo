@@ -411,7 +411,7 @@ var DemoWebSiteBootstrap = typeof DemoWebSiteBootstrap !== "undefined" ? DemoWeb
 			if (app.news.length > 0) {
 				for (var i = 0; i < app.news.length; i++) {
 					var n = app.news[i];
-					nr = row();
+					var nr = row();
 					nr.append($("<div/>").addClass("col-md-1").append($("<img/>", { style: "border: solid 1px grey;", src: "data:" + n.image.mime + ";base64," + n.image.content })));
 					nr.append($("<div/>").addClass("col-md-11").append($("<h3/>").append(n.title)).append(n.content));
 					$main.append(panel(nr, n.date));

@@ -16,7 +16,7 @@
 			{{#list}}
 			<div class="col-md-4">
 				<h1 class="text-primary text-center title">{{demoPrdName}}</h1>
-				<h3 class="text-muted text-center">{{#demoPrdPicture}}<img src="data:{{mime}};base64,{{content}}" alt="Picture"/>{{/demoPrdPicture}}
+				<h3 class="text-muted text-center">{{#demoPrdPicture}}<img src="data:{{mime}};base64,{{content}}" alt="{{demoPrdName}}"/>{{/demoPrdPicture}}
 				<br/>{{demoPrdReference}}</h3>
 				<p class="text-left text-muted">{{demoPrdDescription}}</p>
 				<p class="text-right"><a href="javascript:" class="btn btn-danger btn-md">{{#toFixed}}{{demoPrdUnitPrice}}{{/toFixed}}</a></p>

@@ -2,7 +2,7 @@
 // Client side JavaScript for order agenda
 //-----------------------------------------------------------
 
-if (typeof DemoOrderAgenda === "undefined") DemoOrderAgenda = (function($) {
+var DemoOrderAgenda = typeof DemoOrderAgenda !== "undefined" ? DemoOrderAgenda : (function($) {
 
 var app, responsive = typeof $ui !== "undefined", debug = false;
 

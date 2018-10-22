@@ -1,7 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for customer business object
 //----------------------------------------------------
-DemoClient = (function($) {
+var DemoClient = typeof DemoClient !== "undefined" ? DemoClient : (function($) {
 	var resp = typeof $ui !== "undefined";
 
 	// Google Map action
@@ -30,7 +30,7 @@ DemoClient = (function($) {
 
 	if (resp) {
 		// Minimalistic backward compatibility for responsive UI
-		getFieldValue = function(name) { return $("#field_" + name).val(); };
+		window.getFieldValue = function(name) { return $("#field_" + name).val(); };
 
 		// Responsive UI hook
 		Simplicite.UI.hooks.DemoClient = function(o, cbk) {
@@ -42,8 +42,9 @@ DemoClient = (function($) {
 								url: "https://apis.google.com/js/platform.js",
 								onload: hangout
 							})
-						} else
+						} else {
 							hangout();
+						}
 					} catch(el) {
 						console.error(el);
 					}
@@ -54,9 +55,10 @@ DemoClient = (function($) {
 				cbk && cbk();
 			}
 		};
-	} else
+	} else {
 		// Legacy UI hook
 		onload_functions.push(hangout);
+	}
 
 	// Exposed functions
 	return { map: map }

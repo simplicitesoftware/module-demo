@@ -2,7 +2,7 @@
 // Client side JavaScript for place new order external object
 //-----------------------------------------------------------
 
-if (typeof DemoPlaceNewOrder === "undefined") DemoPlaceNewOrder = (function($) {
+DemoPlaceNewOrder = typeof DemoPlaceNewOrder !== "undefined" ? DemoPlaceNewOrder : (function($) {
 
 var app, cli, sup, prd, responsive = typeof $ui !== "undefined";
 
@@ -44,8 +44,9 @@ function panel(title, content) {
 		return $("<div/>")
 			.append($("<div/>").addClass("workareatitle").append(title))
 			.append($("<div/>").addClass("workarea").append($("<div/>").addClass("workareacontent").append(content)));
-	} else
+	} else {
 		return $ui.view.tools.panel({ title: title, content: content });
+	}
 }
 
 function getCli() {

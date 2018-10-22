@@ -14,6 +14,7 @@ DemoOrderAgenda.display = function(params) {
 				? HTMLTool.cssIncludes(HTMLTool.fullcalendarCSS()) +
 				  HTMLTool.jsIncludes(HTMLTool.fullcalendarJS(this.getGrant().getLang()))
 				: "") + HTMLTool.jsBlock(embedded ? js : HTMLTool.jsOnload(js));
-	} else // Responsive version
+	} else  {// Responsive version
 		return this.javascript("$ui.loadCalendar(function() { " + this.getName() + ".render(); });");
+	}
 };

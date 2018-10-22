@@ -5,7 +5,6 @@ onLoadTemplate: function(template) {
 },
 
 onLoadNode: function(node) {
-	var d = this.desktop;
 	var t = this.template;
 	if (node.template.name == "DemoModel_Supplier") {
 		delete t.pictures[node.object + "-" + node.id];
@@ -41,10 +40,12 @@ onDrawNode: function(node) {
 			img.src = node.picture;
 			img.onload = function() { c.drawImage(this, node.x, node.y, node.w, node.h); };
 			t.pictures[node.object + "-" + node.id] = img;
-		} else
+		} else {
 			c.drawImage(img, node.x, node.y, node.w, node.h);
-	} else
+		}
+	} else {
 		node.draw();
+	}
 }
 
 };
