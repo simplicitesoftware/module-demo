@@ -1,8 +1,8 @@
 {
-    "date": "Wed Sep 12 13:03:54 CEST 2018",
+    "date": "Mon Oct 22 13:17:04 CEST 2018",
     "name": "Demo",
     "format": "xml",
-    "description": "Order management demo",
+    "description": "Order management demo\n\nSonar analysis: `sonar-scanner -Dsonar.exclusions=\"**.min.js,**.min.css,ObjectExternal/demo-resources/STYLES.less\"`",
     "repository": {
         "type": "url",
         "url": "https://www.simplicite.io/resources/modules/demo-app-4.0.xml"

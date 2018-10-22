@@ -1,4 +1,4 @@
-if (typeof demo === 'undefined') demo = (function($) {
+var demo = typeof demo !== 'undefined' ? demo : (function($) {
 	var app, prd;
 	
 	function render(root, banner) {

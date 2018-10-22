@@ -7,8 +7,10 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-09-12 13:03:54</mdl_lastupd>
-		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
+		<mdl_lastupd>2018-10-22 13:17:04</mdl_lastupd>
+		<mdl_comment><![CDATA[Order management demo
+
+Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/demo-resources/STYLES.less"`]]></mdl_comment>
 	</data>
 </object>
 <object>
