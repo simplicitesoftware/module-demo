@@ -3,6 +3,7 @@
 /target
 /effective.pom
 /.idea
-/.scannerwork/*.iml
+/*.iml
+/.scannerwork
 /**/Thumbs.db
 /**/.DS_Store

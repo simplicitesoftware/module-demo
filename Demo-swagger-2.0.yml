@@ -1,0 +1,3314 @@
+#  ___ _            _ _    _ _    __
+# / __(_)_ __  _ __| (_)__(_) |_ /_/
+# \__ \ | '  \| '_ \ | / _| |  _/ -_)
+# |___/_|_|_|_| .__/_|_\__|_|\__\___|
+#             |_| Module: Demo 4.0
+basePath: /api
+paths:
+  /rest/DemoProduct/{row_id}/publication:DemoProduct-EMAIL:
+    get:
+      summary: Call a custom publication for a DemoProduct business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-publication-demoproduct-email
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
+  /login:
+    get:
+      summary: Login (obtain bearer token)
+      security:
+      - basicAuth: []
+      produces:
+      - text/plain
+      - application/json
+      operationId: login
+      responses:
+        '200':
+          description: Successful login
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: _output
+        description: Optional output format
+        type: string
+        required: false
+        enum:
+        - json
+        - oauth2
+      tags:
+      - session
+  /rest/DemoContact/{row_id}/publication:DemoContact-Excel:
+    get:
+      summary: Call a custom publication for a DemoContact business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-publication-democontact-excel
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoContact
+  /rest/DemoContact:
+    get:
+      summary: Search DemoContact business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoContact'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: demoCtcDatetime
+        description: Search filter for Contcat date and time
+        type: string
+        required: false
+      - in: query
+        name: demoCtcType
+        description: Search filter for Contact type
+        type: string
+        required: false
+        enum:
+        - INF
+        - REQ
+        - CMP
+        - OTH
+      - in: query
+        name: demoCtcSubType
+        description: Search filter for Contact sub type
+        type: string
+        required: false
+        enum:
+        - ORDSTATUS
+        - PRDINFO
+        - ORDCANCEL
+        - ORDCHANGE
+        - ORDISSUE
+        - BILLISSUE
+      - in: query
+        name: demoCtcCanal
+        description: Search filter for Canal used for contact
+        type: string
+        required: false
+        enum:
+        - PHONE
+        - FAX
+        - EMAIL
+        - CHAT
+        - WEB
+      - in: query
+        name: demoCtcPriority
+        description: Search filter for Contact priority
+        type: boolean
+        required: false
+      - in: query
+        name: demoCtcStatus
+        description: Search filter for Contact status
+        type: string
+        required: false
+        enum:
+        - O
+        - P
+        - C
+      - in: query
+        name: demoCtcCliId
+        description: Search filter for Contact customer
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliCode
+        description: Search filter for Customer code
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliFirstname
+        description: Search filter for Customer first name
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliLastname
+        description: Search filter for Customer last name
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliEmail
+        description: Search filter for Customer email address
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliHomePhone
+        description: Search filter for Customer home phone number
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliWorkPhone
+        description: Search filter for Customer work phone number
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliMobilePhone
+        description: Search filter for Customer mobile phone number
+        type: string
+        required: false
+      - in: query
+        name: demoCtcCliId__demoCliFax
+        description: Search filter for Customer fax number
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId
+        description: Search filter for Contact order
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdNumber
+        description: Search filter for Order number (automatically calculated at creation)
+        type: integer
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdDate
+        description: Search filter for Order date
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdStatus
+        description: Search filter for Order status
+        type: string
+        required: false
+        enum:
+        - P
+        - V
+        - D
+        - C
+      - in: query
+        name: demoCtcOrdId__demoOrdCliId
+        description: Search filter for Order customer
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdPrdId
+        description: Search filter for Order product
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
+        description: Search filter for Product supplier
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: 'Search filter for User responsible of supplier '
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
+        description: Search filter for Product reference
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdName
+        description: Search filter for Product name
+        type: string
+        required: false
+      - in: query
+        name: demoCtcOrdId__demoOrdQuantity
+        description: Search filter for Product quantity ordered
+        type: integer
+        required: false
+      - in: query
+        name: demoCtcComments
+        description: Search filter for Comments on contact
+        type: string
+        required: false
+      - in: query
+        name: demoCtcFile
+        description: Search filter for Contact attached file
+        type: string
+        required: false
+      tags:
+      - DemoContact
+  /rest/DemoSupplier:
+    get:
+      summary: Search DemoSupplier business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demosupplier-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoSupplier'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        type: string
+        required: false
+      - in: query
+        name: demoSupName
+        description: Search filter for Supplier name
+        type: string
+        required: false
+      - in: query
+        name: demoSupDescription
+        description: Search filter for Supplier description
+        type: string
+        required: false
+      - in: query
+        name: demoSupPhone
+        description: Search filter for Supplier phone number
+        type: string
+        required: false
+      - in: query
+        name: demoSupFax
+        description: Search filter for Supplier fax number
+        type: string
+        required: false
+      - in: query
+        name: demoSupWebsite
+        description: Search filter for Supplier website URL
+        type: string
+        required: false
+      - in: query
+        name: demoSupEmail
+        description: Search filter for Supplier email address
+        type: string
+        required: false
+      - in: query
+        name: demoSupLogo
+        description: Search filter for Supplier logo
+        type: string
+        required: false
+      - in: query
+        name: demoSupUsrId
+        description: 'Search filter for User responsible of supplier '
+        type: string
+        required: false
+      - in: query
+        name: demoSupUsrId__usr_login
+        description: Search filter for Login
+        type: string
+        required: false
+      - in: query
+        name: demoSupComments
+        description: Search filter for Comments on supplier
+        type: string
+        required: false
+      tags:
+      - DemoSupplier
+  /rest/DemoClient/{row_id}:
+    post:
+      summary: Create a new DemoClientbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democlient-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoClient'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoClient'
+        in: body
+        name: body
+      tags:
+      - DemoClient
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoClient business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democlient-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoClient'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoClient
+    delete:
+      summary: Delete a DemoClient business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democlient-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoClient
+    put:
+      summary: Update a DemoClientbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democlient-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoClient'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoClient'
+        in: body
+        name: body
+      tags:
+      - DemoClient
+      consumes:
+      - application/json
+  /rest/DemoOrder/{row_id}:
+    post:
+      summary: Create a new DemoOrderbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoOrder'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoOrder'
+        in: body
+        name: body
+      tags:
+      - DemoOrder
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoOrder business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoOrder'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoOrder
+    delete:
+      summary: Delete a DemoOrder business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoOrder
+    put:
+      summary: Update a DemoOrderbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoOrder'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoOrder'
+        in: body
+        name: body
+      tags:
+      - DemoOrder
+      consumes:
+      - application/json
+  /rest/DemoOrder:
+    get:
+      summary: Search DemoOrder business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoOrder'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - DemoOrder-TC2
+        - DemoOrder-TC1
+        - DemoOrder-TC3
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
+        name: demoOrdNumber
+        description: Search filter for Order number (automatically calculated at creation)
+        type: integer
+        required: false
+      - in: query
+        name: demoOrdDate
+        description: Search filter for Order date
+        type: string
+        required: false
+      - in: query
+        name: demoOrdStatus
+        description: Search filter for Order status
+        type: string
+        required: false
+        enum:
+        - P
+        - V
+        - D
+        - C
+      - in: query
+        name: demoOrdDeliveryDate
+        description: Search filter for Order delivery date
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId
+        description: Search filter for Order customer
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliCode
+        description: Search filter for Customer code
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliFirstname
+        description: Search filter for Customer first name
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliLastname
+        description: Search filter for Customer last name
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliEmail
+        description: Search filter for Customer email address
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliAddress1
+        description: Search filter for Customer address (line 1)
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliAddress2
+        description: Search filter for Customer address (line 2)
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliAddress3
+        description: Search filter for Customer address (line 3)
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliZipCode
+        description: Search filter for Customer postal code
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliCity
+        description: Search filter for Customer city
+        type: string
+        required: false
+      - in: query
+        name: demoOrdCliId__demoCliCountry
+        description: Search filter for Customer country
+        type: string
+        required: false
+        enum:
+        - FR
+        - UK
+        - SP
+      - in: query
+        name: demoOrdPrdId
+        description: Search filter for Order product
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdReference
+        description: Search filter for Product reference
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdName
+        description: Search filter for Product name
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdPicture
+        description: Search filter for Product picture
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdSupId
+        description: Search filter for Product supplier
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupName
+        description: Search filter for Supplier name
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupLogo
+        description: Search filter for Supplier logo
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
+        description: 'Search filter for User responsible of supplier '
+        type: string
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdStock
+        description: Search filter for Current stock for product
+        type: integer
+        required: false
+      - in: query
+        name: demoOrdPrdId__demoPrdUnitPrice
+        description: Search filter for Unit price of product
+        type: number
+        required: false
+      - in: query
+        name: demoOrdUnitPrice
+        description: Search filter for Product unit price for order
+        type: number
+        required: false
+      - in: query
+        name: demoOrdQuantity
+        description: Search filter for Product quantity ordered
+        type: integer
+        required: false
+      - in: query
+        name: demoOrdTotal
+        description: Search filter for Total order amount
+        type: number
+        required: false
+      - in: query
+        name: demoOrdVAT
+        description: Search filter for VAT for order
+        type: number
+        required: false
+      - in: query
+        name: demoOrdComments
+        description: Search filter for Comments on order
+        type: string
+        required: false
+      tags:
+      - DemoOrder
+  /rest/DemoOrder/{row_id}/publication:DemoOrder-XML:
+    get:
+      summary: Call a custom publication for a DemoOrder business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-publication-demoorder-xml
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoOrder
+  /rest/DemoProduct/{row_id}/action:DEMO_DECSTOCK:
+    get:
+      summary: Call a custom action for a DemoProduct business object record or for
+        all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-action-demo_decstock
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoOrderHistoric/{row_id}:
+    post:
+      summary: Create a new DemoOrderHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorderhistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoOrderHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoOrderHistoric'
+        in: body
+        name: body
+      tags:
+      - DemoOrderHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoOrderHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorderhistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoOrderHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoOrderHistoric
+    delete:
+      summary: Delete a DemoOrderHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorderhistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoOrderHistoric
+    put:
+      summary: Update a DemoOrderHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorderhistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoOrderHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoOrderHistoric'
+        in: body
+        name: body
+      tags:
+      - DemoOrderHistoric
+      consumes:
+      - application/json
+  /rest/DemoOrderHistoric:
+    get:
+      summary: Search DemoOrderHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorderhistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoOrderHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: demoOrdStatus
+        description: Search filter for Order status
+        type: string
+        required: false
+        enum:
+        - P
+        - V
+        - D
+        - C
+      - in: query
+        name: demoOrdQuantity
+        description: Search filter for Product quantity ordered
+        type: integer
+        required: false
+      tags:
+      - DemoOrderHistoric
+  /rest/DemoContact/{row_id}:
+    post:
+      summary: Create a new DemoContactbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoContact'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoContact'
+        in: body
+        name: body
+      tags:
+      - DemoContact
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoContact business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoContact'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoContact
+    delete:
+      summary: Delete a DemoContact business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoContact
+    put:
+      summary: Update a DemoContactbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoContact'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoContact'
+        in: body
+        name: body
+      tags:
+      - DemoContact
+      consumes:
+      - application/json
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      tags:
+      - session
+  /rest/DemoProduct/{row_id}/publication:DemoProduct-Word:
+    get:
+      summary: Call a custom publication for a DemoProduct business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-publication-demoproduct-word
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoProductHistoric/{row_id}:
+    post:
+      summary: Create a new DemoProductHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproducthistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoProductHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoProductHistoric'
+        in: body
+        name: body
+      tags:
+      - DemoProductHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoProductHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproducthistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoProductHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoProductHistoric
+    delete:
+      summary: Delete a DemoProductHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproducthistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProductHistoric
+    put:
+      summary: Update a DemoProductHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproducthistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoProductHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoProductHistoric'
+        in: body
+        name: body
+      tags:
+      - DemoProductHistoric
+      consumes:
+      - application/json
+  /rest/DemoSupplier/{row_id}:
+    post:
+      summary: Create a new DemoSupplierbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demosupplier-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoSupplier'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoSupplier'
+        in: body
+        name: body
+      tags:
+      - DemoSupplier
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoSupplier business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demosupplier-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoSupplier'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoSupplier
+    delete:
+      summary: Delete a DemoSupplier business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demosupplier-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoSupplier
+    put:
+      summary: Update a DemoSupplierbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demosupplier-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoSupplier'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoSupplier'
+        in: body
+        name: body
+      tags:
+      - DemoSupplier
+      consumes:
+      - application/json
+  /:
+    get:
+      summary: Get user session information
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: info
+      responses:
+        '200':
+          description: Success in getting user session information
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: texts
+        description: Texts?
+        type: boolean
+        required: false
+      tags:
+      - session
+  /rest/DemoProductHistoric:
+    get:
+      summary: Search DemoProductHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproducthistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoProductHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: demoPrdReference
+        description: Search filter for Product reference
+        type: string
+        required: false
+      - in: query
+        name: demoPrdName
+        description: Search filter for Product name
+        type: string
+        required: false
+      - in: query
+        name: demoPrdUnitPrice
+        description: Search filter for Unit price of product
+        type: number
+        required: false
+      - in: query
+        name: demoPrdAvailable
+        description: Search filter for Available product?
+        type: boolean
+        required: false
+      tags:
+      - DemoProductHistoric
+  /rest/DemoOrder/{row_id}/publication:DemoOrder-PDF:
+    get:
+      summary: Call a custom publication for a DemoOrder business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoorder-publication-demoorder-pdf
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoOrder
+  /rest/DemoContactHistoric:
+    get:
+      summary: Search DemoContactHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontacthistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoContactHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: demoCtcComments
+        description: Search filter for Comments on contact
+        type: string
+        required: false
+      - in: query
+        name: demoCtcFile
+        description: Search filter for Contact attached file
+        type: string
+        required: false
+      - in: query
+        name: demoCtcStatus
+        description: Search filter for Contact status
+        type: string
+        required: false
+        enum:
+        - O
+        - P
+        - C
+      tags:
+      - DemoContactHistoric
+  /rest/DemoClient:
+    get:
+      summary: Search DemoClient business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democlient-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoClient'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: demoCliCode
+        description: Search filter for Customer code
+        type: string
+        required: false
+      - in: query
+        name: demoCliFirstname
+        description: Search filter for Customer first name
+        type: string
+        required: false
+      - in: query
+        name: demoCliLastname
+        description: Search filter for Customer last name
+        type: string
+        required: false
+      - in: query
+        name: demoCliAddress1
+        description: Search filter for Customer address (line 1)
+        type: string
+        required: false
+      - in: query
+        name: demoCliAddress2
+        description: Search filter for Customer address (line 2)
+        type: string
+        required: false
+      - in: query
+        name: demoCliAddress3
+        description: Search filter for Customer address (line 3)
+        type: string
+        required: false
+      - in: query
+        name: demoCliZipCode
+        description: Search filter for Customer postal code
+        type: string
+        required: false
+      - in: query
+        name: demoCliCity
+        description: Search filter for Customer city
+        type: string
+        required: false
+      - in: query
+        name: demoCliCountry
+        description: Search filter for Customer country
+        type: string
+        required: false
+        enum:
+        - FR
+        - UK
+        - SP
+      - in: query
+        name: demoCliCoords
+        description: Search filter for Customer geoccordinates
+        type: string
+        required: false
+      - in: query
+        name: demoCliEmail
+        description: Search filter for Customer email address
+        type: string
+        required: false
+      - in: query
+        name: demoCliHomePhone
+        description: Search filter for Customer home phone number
+        type: string
+        required: false
+      - in: query
+        name: demoCliWorkPhone
+        description: Search filter for Customer work phone number
+        type: string
+        required: false
+      - in: query
+        name: demoCliMobilePhone
+        description: Search filter for Customer mobile phone number
+        type: string
+        required: false
+      - in: query
+        name: demoCliFax
+        description: Search filter for Customer fax number
+        type: string
+        required: false
+      - in: query
+        name: demoCliType
+        description: Search filter for Customer type
+        type: string
+        required: false
+        enum:
+        - T1
+        - T2
+        - T3
+      - in: query
+        name: demoCliComments
+        description: Search filter for Useful comments on customer
+        type: string
+        required: false
+      - in: query
+        name: demoCliPlacemapLabel
+        description: Search filter for Customer place map label
+        type: string
+        required: false
+      tags:
+      - DemoClient
+  /rest/DemoProduct:
+    get:
+      summary: Search DemoProduct business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfDemoProduct'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: demoPrdSupId
+        description: Search filter for Product supplier
+        type: string
+        required: false
+      - in: query
+        name: demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        type: string
+        required: false
+      - in: query
+        name: demoPrdSupId__demoSupName
+        description: Search filter for Supplier name
+        type: string
+        required: false
+      - in: query
+        name: demoPrdSupId__demoSupLogo
+        description: Search filter for Supplier logo
+        type: string
+        required: false
+      - in: query
+        name: demoPrdSupId__demoSupUsrId
+        description: 'Search filter for User responsible of supplier '
+        type: string
+        required: false
+      - in: query
+        name: demoPrdReference
+        description: Search filter for Product reference
+        type: string
+        required: false
+      - in: query
+        name: demoPrdName
+        description: Search filter for Product name
+        type: string
+        required: false
+      - in: query
+        name: demoPrdDescription
+        description: Search filter for Product description
+        type: string
+        required: false
+      - in: query
+        name: demoPrdPicture
+        description: Search filter for Product picture
+        type: string
+        required: false
+      - in: query
+        name: demoPrdStock
+        description: Search filter for Current stock for product
+        type: integer
+        required: false
+      - in: query
+        name: demoPrdUnitPrice
+        description: Search filter for Unit price of product
+        type: number
+        required: false
+      - in: query
+        name: demoPrdAvailable
+        description: Search filter for Available product?
+        type: boolean
+        required: false
+      - in: query
+        name: demoPrdDocumentation
+        description: Search filter for Product documentation
+        type: string
+        required: false
+      - in: query
+        name: demoPrdBrochure
+        description: Search filter for Product brochure
+        type: string
+        required: false
+      - in: query
+        name: demoPrdOnlineDoc
+        description: Search filter for Online product documentation URL
+        type: string
+        required: false
+      - in: query
+        name: demoPrdComments
+        description: Search filter for Comments on product
+        type: string
+        required: false
+      tags:
+      - DemoProduct
+  /rest/DemoSupplier/{row_id}/publication:DemoSupplier-CATALOG:
+    get:
+      summary: Call a custom publication for a DemoSupplier business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demosupplier-publication-demosupplier-catalog
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoSupplier
+  /rest/DemoContactHistoric/{row_id}:
+    post:
+      summary: Create a new DemoContactHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontacthistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoContactHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoContactHistoric'
+        in: body
+        name: body
+      tags:
+      - DemoContactHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoContactHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontacthistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoContactHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoContactHistoric
+    delete:
+      summary: Delete a DemoContactHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontacthistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoContactHistoric
+    put:
+      summary: Update a DemoContactHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontacthistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoContactHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoContactHistoric'
+        in: body
+        name: body
+      tags:
+      - DemoContactHistoric
+      consumes:
+      - application/json
+  /rest/DemoProduct/{row_id}/action:DEMO_INCSTOCK:
+    get:
+      summary: Call a custom action for a DemoProduct business object record or for
+        all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-action-demo_incstock
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
+  /rest/DemoProduct/{row_id}:
+    post:
+      summary: Create a new DemoProductbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoProduct'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoProduct'
+        in: body
+        name: body
+      tags:
+      - DemoProduct
+      consumes:
+      - application/json
+    get:
+      summary: Get a DemoProduct business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoProduct'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - DemoProduct
+    delete:
+      summary: Delete a DemoProduct business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
+    put:
+      summary: Update a DemoProductbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/DemoProduct'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/DemoProduct'
+        in: body
+        name: body
+      tags:
+      - DemoProduct
+      consumes:
+      - application/json
+host: dev40.dev.simplicite.io
+schemes:
+- https
+securityDefinitions:
+  basicAuth:
+    type: basic
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+definitions:
+  Error404:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 404
+  ArrayOfDemoOrder:
+    type: array
+    items:
+      $ref: '#/definitions/DemoOrder'
+  DemoClient:
+    type: object
+    properties:
+      demoCliCity:
+        description: Customer city
+        type: string
+      demoCliCode:
+        description: Customer code
+        type: string
+      demoCliCoords:
+        description: Customer geoccordinates
+        type: string
+      demoCliType:
+        description: Customer type
+        type: string
+        enum:
+        - T1
+        - T2
+        - T3
+      demoCliLastname:
+        description: Customer last name
+        type: string
+      demoCliHomePhone:
+        description: Customer home phone number
+        type: string
+      demoCliZipCode:
+        description: Customer postal code
+        type: string
+      demoCliFirstname:
+        description: Customer first name
+        type: string
+      demoCliComments:
+        description: Useful comments on customer
+        type: string
+      demoCliEmail:
+        description: Customer email address
+        type: string
+      demoCliPlacemapLabel:
+        description: Customer place map label
+        type: string
+      demoCliAddress3:
+        description: Customer address (line 3)
+        type: string
+      demoCliFax:
+        description: Customer fax number
+        type: string
+      row_id:
+        description: ID
+        type: string
+      demoCliWorkPhone:
+        description: Customer work phone number
+        type: string
+      demoCliCountry:
+        description: Customer country
+        type: string
+        enum:
+        - FR
+        - UK
+        - SP
+      demoCliAddress1:
+        description: Customer address (line 1)
+        type: string
+      demoCliMobilePhone:
+        description: Customer mobile phone number
+        type: string
+      demoCliAddress2:
+        description: Customer address (line 2)
+        type: string
+  DemoOrderHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      demoOrdStatus:
+        description: Order status
+        type: string
+        enum:
+        - P
+        - V
+        - D
+        - C
+      demoOrdQuantity:
+        description: Product quantity ordered
+        type: integer
+      created_dt_hist:
+        description: Date
+        type: string
+      row_id:
+        description: ID
+        type: string
+      created_by_hist:
+        description: User
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+  ArrayOfDemoOrderHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/DemoOrderHistoric'
+  DemoOrder:
+    type: object
+    properties:
+      demoOrdPrdId__demoPrdUnitPrice:
+        description: Unit price of product
+        type: number
+      demoOrdCliId__demoCliFirstname:
+        description: Customer first name
+        type: string
+      demoOrdDate:
+        description: Order date
+        type: string
+      demoOrdPrdId__demoPrdSupId__demoSupUsrId:
+        description: 'User responsible of supplier '
+        type: string
+      demoOrdPrdId__demoPrdSupId:
+        description: Product supplier
+        type: string
+      demoOrdPrdId__demoPrdStock:
+        description: Current stock for product
+        type: integer
+      demoOrdStatus:
+        description: Order status
+        type: string
+        enum:
+        - P
+        - V
+        - D
+        - C
+      demoOrdCliId__demoCliCode:
+        description: Customer code
+        type: string
+      demoOrdCliId__demoCliCity:
+        description: Customer city
+        type: string
+      demoOrdCliId__demoCliZipCode:
+        description: Customer postal code
+        type: string
+      demoOrdPrdId__demoPrdSupId__demoSupName:
+        description: Supplier name
+        type: string
+      demoOrdUnitPrice:
+        description: Product unit price for order
+        type: number
+      demoOrdDeliveryDate:
+        description: Order delivery date
+        type: string
+      demoOrdCliId__demoCliLastname:
+        description: Customer last name
+        type: string
+      demoOrdPrdId__demoPrdSupId__demoSupCode:
+        description: Supplier unique code (e.g. `MYSUP`)
+        type: string
+      demoOrdQuantity:
+        description: Product quantity ordered
+        type: integer
+      demoOrdCliId:
+        description: Order customer
+        type: string
+      demoOrdNumber:
+        description: Order number (automatically calculated at creation)
+        type: integer
+      demoOrdComments:
+        description: Comments on order
+        type: string
+      demoOrdTotal:
+        description: Total order amount
+        type: number
+      demoOrdPrdId:
+        description: Order product
+        type: string
+      demoOrdVAT:
+        description: VAT for order
+        type: number
+      demoOrdCliId__demoCliAddress3:
+        description: Customer address (line 3)
+        type: string
+      demoOrdCliId__demoCliAddress2:
+        description: Customer address (line 2)
+        type: string
+      demoOrdCliId__demoCliEmail:
+        description: Customer email address
+        type: string
+      demoOrdCliId__demoCliAddress1:
+        description: Customer address (line 1)
+        type: string
+      demoOrdPrdId__demoPrdReference:
+        description: Product reference
+        type: string
+      demoOrdCliId__demoCliCountry:
+        description: Customer country
+        type: string
+        enum:
+        - FR
+        - UK
+        - SP
+      demoOrdPrdId__demoPrdPicture:
+        description: Product picture
+        type: object
+      row_id:
+        description: ID
+        type: string
+      demoOrdPrdId__demoPrdSupId__demoSupLogo:
+        description: Supplier logo
+        type: object
+      demoOrdPrdId__demoPrdName:
+        description: Product name
+        type: string
+  DemoProduct:
+    type: object
+    properties:
+      demoPrdSupId__demoSupCode:
+        description: Supplier unique code (e.g. `MYSUP`)
+        type: string
+      demoPrdAvailable:
+        description: Available product?
+        type: boolean
+      demoPrdDocumentation:
+        description: Product documentation
+        type: string
+      demoPrdOnlineDoc:
+        description: Online product documentation URL
+        type: string
+      demoPrdSupId:
+        description: Product supplier
+        type: string
+      demoPrdUnitPrice:
+        description: Unit price of product
+        type: number
+      demoPrdSupId__demoSupUsrId:
+        description: 'User responsible of supplier '
+        type: string
+      demoPrdReference:
+        description: Product reference
+        type: string
+      demoPrdPicture:
+        description: Product picture
+        type: object
+      demoPrdBrochure:
+        description: Product brochure
+        type: object
+      demoPrdComments:
+        description: Comments on product
+        type: string
+      demoPrdDescription:
+        description: Product description
+        type: string
+      demoPrdStock:
+        description: Current stock for product
+        type: integer
+      row_id:
+        description: ID
+        type: string
+      demoPrdName:
+        description: Product name
+        type: string
+      demoPrdSupId__demoSupLogo:
+        description: Supplier logo
+        type: object
+      demoPrdSupId__demoSupName:
+        description: Supplier name
+        type: string
+  PublicationResult:
+    type: object
+    properties:
+      mime:
+        description: MIME type
+        type: string
+      content:
+        description: Content (plain text or base64 encoded)
+        type: string
+  ArrayOfDemoProduct:
+    type: array
+    items:
+      $ref: '#/definitions/DemoProduct'
+  ArrayOfDemoContact:
+    type: array
+    items:
+      $ref: '#/definitions/DemoContact'
+  ArrayOfDemoSupplier:
+    type: array
+    items:
+      $ref: '#/definitions/DemoSupplier'
+  DemoContactHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      demoCtcComments:
+        description: Comments on contact
+        type: string
+      demoCtcFile:
+        description: Contact attached file
+        type: object
+      demoCtcStatus:
+        description: Contact status
+        type: string
+        enum:
+        - O
+        - P
+        - C
+      created_dt_hist:
+        description: Date
+        type: string
+      row_id:
+        description: ID
+        type: string
+      created_by_hist:
+        description: User
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+  DemoContact:
+    type: object
+    properties:
+      demoCtcCliId__demoCliLastname:
+        description: Customer last name
+        type: string
+      demoCtcCliId__demoCliFirstname:
+        description: Customer first name
+        type: string
+      demoCtcCliId:
+        description: Contact customer
+        type: string
+      demoCtcCliId__demoCliWorkPhone:
+        description: Customer work phone number
+        type: string
+      demoCtcComments:
+        description: Comments on contact
+        type: string
+      demoCtcCanal:
+        description: Canal used for contact
+        type: string
+        enum:
+        - PHONE
+        - FAX
+        - EMAIL
+        - CHAT
+        - WEB
+      demoCtcCliId__demoCliFax:
+        description: Customer fax number
+        type: string
+      demoCtcFile:
+        description: Contact attached file
+        type: object
+      demoCtcOrdId__demoOrdDate:
+        description: Order date
+        type: string
+      demoCtcOrdId__demoOrdNumber:
+        description: Order number (automatically calculated at creation)
+        type: integer
+      demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId:
+        description: 'User responsible of supplier '
+        type: string
+      demoCtcOrdId__demoOrdPrdId__demoPrdName:
+        description: Product name
+        type: string
+      demoCtcSubType:
+        description: Contact sub type
+        type: string
+        enum:
+        - ORDSTATUS
+        - PRDINFO
+        - ORDCANCEL
+        - ORDCHANGE
+        - ORDISSUE
+        - BILLISSUE
+      demoCtcCliId__demoCliHomePhone:
+        description: Customer home phone number
+        type: string
+      demoCtcStatus:
+        description: Contact status
+        type: string
+        enum:
+        - O
+        - P
+        - C
+      demoCtcDatetime:
+        description: Contcat date and time
+        type: string
+      demoCtcType:
+        description: Contact type
+        type: string
+        enum:
+        - INF
+        - REQ
+        - CMP
+        - OTH
+      demoCtcOrdId__demoOrdQuantity:
+        description: Product quantity ordered
+        type: integer
+      demoCtcCliId__demoCliMobilePhone:
+        description: Customer mobile phone number
+        type: string
+      demoCtcPriority:
+        description: Contact priority
+        type: boolean
+      demoCtcCliId__demoCliCode:
+        description: Customer code
+        type: string
+      demoCtcCliId__demoCliEmail:
+        description: Customer email address
+        type: string
+      demoCtcOrdId__demoOrdCliId:
+        description: Order customer
+        type: string
+      demoCtcOrdId__demoOrdPrdId:
+        description: Order product
+        type: string
+      demoCtcOrdId__demoOrdStatus:
+        description: Order status
+        type: string
+        enum:
+        - P
+        - V
+        - D
+        - C
+      demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
+        description: Product supplier
+        type: string
+      row_id:
+        description: ID
+        type: string
+      demoCtcOrdId:
+        description: Contact order
+        type: string
+      demoCtcOrdId__demoOrdPrdId__demoPrdReference:
+        description: Product reference
+        type: string
+  ArrayOfDemoContactHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/DemoContactHistoric'
+  ActionResult:
+    type: object
+    properties:
+      result:
+        description: Action result
+        type: string
+  TreeviewData:
+    type: object
+    properties:
+      item:
+        description: Object item with lists of linked objects' items
+        type: object
+  ArrayOfDemoProductHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/DemoProductHistoric'
+  DemoProductHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      demoPrdAvailable:
+        description: Available product?
+        type: boolean
+      created_dt_hist:
+        description: Date
+        type: string
+      demoPrdUnitPrice:
+        description: Unit price of product
+        type: number
+      row_id:
+        description: ID
+        type: string
+      demoPrdName:
+        description: Product name
+        type: string
+      created_by_hist:
+        description: User
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+      demoPrdReference:
+        description: Product reference
+        type: string
+  Error400:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 400
+  Error401:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 401
+  Error500:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 500
+  DemoSupplier:
+    type: object
+    properties:
+      demoSupDescription:
+        description: Supplier description
+        type: string
+      demoSupPhone:
+        description: Supplier phone number
+        type: string
+      demoSupCode:
+        description: Supplier unique code (e.g. `MYSUP`)
+        type: string
+      demoSupName:
+        description: Supplier name
+        type: string
+      demoSupFax:
+        description: Supplier fax number
+        type: string
+      demoSupEmail:
+        description: Supplier email address
+        type: string
+      demoSupLogo:
+        description: Supplier logo
+        type: object
+      demoSupUsrId:
+        description: 'User responsible of supplier '
+        type: string
+      row_id:
+        description: ID
+        type: string
+      demoSupWebsite:
+        description: Supplier website URL
+        type: string
+      demoSupUsrId__usr_login:
+        description: Login
+        type: string
+      demoSupComments:
+        description: Comments on supplier
+        type: string
+  Error403:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 403
+  ArrayOfDemoClient:
+    type: array
+    items:
+      $ref: '#/definitions/DemoClient'
+swagger: '2.0'
+info:
+  license:
+    name: Simplicite license
+    url: http://www.simplicitesoftware.com
+  contact:
+    name: Simplicite Software
+    url: http://www.simplicitesoftware.com
+    email: contact@simplicitesoftware.com
+  description: API for module Demo
+  title: Demo
+  version: '4.0'
+tags:
+- name: DemoClient
+  description: Customer
+- name: DemoContact
+  description: Contact
+- name: DemoContactHistoric
+  description: Contact (hist.)
+- name: DemoOrder
+  description: Order
+- name: DemoOrderHistoric
+  description: Order (hist.)
+- name: DemoProduct
+  description: Product
+- name: DemoProductHistoric
+  description: Product (hist.)
+- name: DemoSupplier
+  description: Supplier
