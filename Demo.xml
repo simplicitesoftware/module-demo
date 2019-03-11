@@ -4584,7 +4584,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_comment><![CDATA[Custom JSON web service for getting the product catalog]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>ObjectExternal/DemoCatalog.js</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoCatalog.java</obe_script_id>
 		<obe_icon>box</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4617,7 +4617,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_comment><![CDATA[Demo website developed in Javascript & Bootstrap]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>ObjectExternal/DemoWebSite.js</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoWebSite.java</obe_script_id>
 		<obe_icon>url</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
