@@ -1,11 +1,13 @@
 package com.simplicite.extobjects.Demo;
 
-import java.util.*;
-import com.simplicite.util.*;
-import com.simplicite.util.tools.*;
+import com.simplicite.util.AppLog;
+import com.simplicite.util.ExternalObject;
+import com.simplicite.util.tools.HTMLTool;
+import com.simplicite.util.tools.Parameters;
+import com.simplicite.webapp.web.JQueryWebPage;
 
 /**
- * Demo web site
+ * Demo web site (using Mustache(R) templating)
  */
 public class demo extends ExternalObject {
 	private static final long serialVersionUID = 1L;
@@ -16,24 +18,18 @@ public class demo extends ExternalObject {
 	 */
 	@Override
 	public Object display(Parameters params) {
+		setDecoration(false);
+		setPublic(true);
 		try {
-			/* TODO
-			demo.display = function(params) {
-				this.setDecoration(false);
-				this.setPublic(true);
-			
-				var wp = new JQueryWebPage(params.getRoot(), "Demo");
-				wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
-				wp.appendAjax(true);
-				wp.appendMustache();
-				wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
-				wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
-				wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
-				wp.setReady(this.getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "');");
-				return wp.toString();
-			};
-			*/
-			return "";
+			JQueryWebPage wp = new JQueryWebPage(params.getRoot(), "Demo");
+			wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"));
+			wp.appendAjax(true);
+			wp.appendMustache();
+			wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
+			wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
+			wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
+			wp.setReady(getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "');");
+			return wp.toString();
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();
