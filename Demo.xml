@@ -12734,19 +12734,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 </object>
 <object>
-	<name>Adapter</name>
-	<action>upsert</action>
-	<data>
-		<adp_name>DemoAdapter</adp_name>
-		<adp_atomic>1</adp_atomic>
-		<adp_type>JAVA</adp_type>
-		<adp_script/>
-		<adp_class/>
-		<adp_script_id>Adapter/DemoAdapter.js</adp_script_id>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-</object>
-<object>
 	<name>Script</name>
 	<action>upsert</action>
 	<data>
