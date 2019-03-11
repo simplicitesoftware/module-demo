@@ -2020,8 +2020,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       tags:
       - DemoContactHistoric
   /rest/DemoClient:
@@ -3015,8 +3015,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       created_dt_hist:
         description: Date
         type: string

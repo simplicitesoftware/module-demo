@@ -4475,13 +4475,25 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoSupCode"></div>
-  <div class="field" data-field="demoSupName"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoSupCode"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoSupName"></div>
+    </div>
+  </div>
   <div class="field" data-field="demoSupDescription"></div>
-  <div class="field" data-field="demoSupPhone"></div>
-  <div class="field" data-field="demoSupFax"></div>
-  <div class="field" data-field="demoSupWebsite"></div>
-  <div class="field" data-field="demoSupEmail"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoSupPhone"></div>
+      <div class="field" data-field="demoSupWebsite"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoSupFax"></div>
+      <div class="field" data-field="demoSupEmail"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -5016,7 +5028,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_name>DemoSupplier</obo_name>
 		<obo_dbtable>demo_supplier</obo_dbtable>
 		<obo_class/>
-		<obo_script_id/>
+		<obo_script_id>src/com/simplicite/objects/Demo/DemoSupplier.java</obo_script_id>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>1</obo_nosearch>
 		<obo_comment><![CDATA[The **supplier** business object corresponds to the
