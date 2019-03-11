@@ -4606,7 +4606,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_comment><![CDATA[Place new order internal page]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>ObjectExternal/DemoPlaceNewOrder.js</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoPlaceNewOrder.java</obe_script_id>
 		<obe_icon>folder</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
