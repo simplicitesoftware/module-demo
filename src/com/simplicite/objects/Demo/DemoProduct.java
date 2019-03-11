@@ -1,5 +1,6 @@
 package com.simplicite.objects.Demo;
 
+import com.simplicite.util.AppLog;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
@@ -17,9 +18,8 @@ public class DemoProduct extends ObjectDB {
 		ObjectField s = getField("demoPrdStock");
 		s.setValue(s.getInt(0) + 10);
 		save();
-
 		// Log
-		console.log("Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue());
+		AppLog.info(getClass(), "increaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
 		// User message
 		return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED");
 	}
@@ -31,21 +31,25 @@ public class DemoProduct extends ObjectDB {
 		ObjectField s = getField("demoPrdStock");
 		s.setValue(s.getInt() - q);
 		save();
-
 		// Log
-		console.log("Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue());
+		AppLog.info(getClass(), "decreaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
 		// User message
 		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + q);
 	}
 
 	/** Publication: Microsoft Word(R) catalog */
 	public Object catalog(PrintTemplate pt) {
-		DocxTool d = new DocxTool();
-		d.newDocument();
-		d.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue("demoPrdReference") + ")");
-		d.addParagraph(getFieldValue("demoPrdDescription"));
-		d.addHTML(getFieldValue("demoPrdDocumentation"));
-		return d.toByteArray();
+		try {
+			DocxTool d = new DocxTool();
+			d.newDocument();
+			d.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue("demoPrdReference") + ")");
+			d.addParagraph(getFieldValue("demoPrdDescription"));
+			d.addHTML(getFieldValue("demoPrdDocumentation"));
+			return d.toByteArray();
+		} catch (Exception e) {
+			AppLog.error(getClass(), "catalog", "Unable to publish catalog", e, getGrant());
+			return null;
+		}
 	}
 
 	/** Hook override: custom short label */
