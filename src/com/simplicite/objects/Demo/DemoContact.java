@@ -36,10 +36,11 @@ public class DemoContact extends ObjectDB {
 
 		return xls.generateToByteArray();
 	};
-
-	DemoContact.canReference = function(objectName, fieldName) {
-		// Hide history records on tree view
-		return !this.isTreeviewInstance() || objectName != "DemoContactHistoric";
-	};
 	*/
+
+	/** Hook override: hide history records on tree view */
+	@Override
+	public boolean canReference(String objName, String fkFieldName) {
+		return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
+	}
 }

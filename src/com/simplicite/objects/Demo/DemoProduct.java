@@ -61,6 +61,6 @@ public class DemoProduct extends ObjectDB {
 	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
-		return !isTreeviewInstance() || objName != "DemoProductHistoric";
+		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
 	}
 }
