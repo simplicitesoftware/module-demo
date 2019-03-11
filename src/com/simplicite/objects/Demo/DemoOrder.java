@@ -1,5 +1,8 @@
 package com.simplicite.objects.Demo;
 
+import java.util.List;
+
+import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 
 /**
@@ -8,65 +11,70 @@ import com.simplicite.util.ObjectDB;
 public class DemoOrder extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	/* TODO
-	DemoOrder.postValidate = function() {
+	@Override
+	public List<String> postValidate() {
+		List<String> msgs = super.postValidate();
 		// Order quantity checking
-		if (this.getField("demoOrdQuantity").getInt(0) <= 0) {
-			console.error("Order quantity <0 for order " + this.getField("demoOrdNumber").getValue());
-			return Message.formatError("ERR_DEMO_ORD_QUANTITY", null, "demoOrdQuantity");
-		} else if (this.getStatus() == "D" && this.getField("demoOrdPrdId.demoPrdStock").getInt(0) - this.getField("demoOrdQuantity").getInt(0) <= 0) {
-			console.error("Zero stock on " + this.getField("demoOrdPrdId.demoPrdReference").getValue());
-			return Message.formatSimpleError("ERR_DEMO_PRD_STOCK");
+		if (getField("demoOrdQuantity").getInt(0) <= 0) {
+			console.error("Order quantity <0 for order " + getField("demoOrdNumber").getValue());
+			msgs.add(Message.formatError("ERR_DEMO_ORD_QUANTITY", null, "demoOrdQuantity"));
+		}
+		// Quantity checking
+		if ("D".equals(getStatus()) && getField("demoOrdPrdId.demoPrdStock").getInt(0) - getField("demoOrdQuantity").getInt(0) <= 0) {
+			console.error("Zero stock on " + getField("demoOrdPrdId.demoPrdReference").getValue());
+			msgs.add(Message.formatSimpleError("ERR_DEMO_PRD_STOCK"));
 		}
 		// Set order unit price only at creation
-		if (this.isNew())
-			this.getField("demoOrdUnitPrice").setValue(this.getField("demoOrdPrdId.demoPrdUnitPrice").getValue());
-	};
+		if (isNew())
+			getField("demoOrdUnitPrice").setValue(getField("demoOrdPrdId.demoPrdUnitPrice").getValue());
+		return msgs;
+	}
 
+	/* TODO
 	DemoOrder.postUpdate = function() {
 		// Invitation + stock decrease on shipment
-		if (this.getOldStatus() == "V" && this.getStatus() == "D") {
+		if (getOldStatus() == "V" && getStatus() == "D") {
 			try {
-				var n = this.getFieldValue("demoOrdNumber");
-				var d = Tool.fromDateTime(this.getFieldValue("demoOrdDeliveryDate"));
-				var name = this.getFieldValue("demoOrdCliId.demoCliFirstname") + " " + this.getFieldValue("demoOrdCliId.demoCliLastname");
+				var n = getFieldValue("demoOrdNumber");
+				var d = Tool.fromDateTime(getFieldValue("demoOrdDeliveryDate"));
+				var name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
 				var desc = "Hello " + name + ". Your order " + n + " delivery is scheduled";
-				new Mail(this.getGrant()).sendInvitation(
+				new Mail(getGrant()).sendInvitation(
 					d, Tool.shiftSeconds(d, 2*3600),
-					this.getFieldValue("demoOrdCliId.demoCliAddress1") + " " + this.getFieldValue("demoOrdCliId.demoCliAddress2") + " " + this.getFieldValue("demoOrdCliId.demoCliAddress3")
-						+ this.getFieldValue("demoOrdCliId.demoCliZipCode") + this.getFieldValue("demoOrdCliId.demoCliCity"),
+					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2") + " " + getFieldValue("demoOrdCliId.demoCliAddress3")
+						+ getFieldValue("demoOrdCliId.demoCliZipCode") + getFieldValue("demoOrdCliId.demoCliCity"),
 					"demo@simplicite.fr", "Simplicité",
-					this.getFieldValue("demoOrdCliId.demoCliEmail"), name,
+					getFieldValue("demoOrdCliId.demoCliEmail"), name,
 					"Order " + n + " delivery schedule",
 					desc, desc);
 			} catch (e) {
 				console.error("Error sending invitation: " + e.getMessage());
 			}
 
-			var prd = this.getGrant().getTmpObject("DemoProduct");
-			prd.select(this.getField("demoOrdPrdId").getValue());
-			var q = this.getField("demoOrdQuantity").getInt(0);
+			var prd = getGrant().getTmpObject("DemoProduct");
+			prd.select(getField("demoOrdPrdId").getValue());
+			var q = getField("demoOrdQuantity").getInt(0);
 			prd.setParameter("QUANTITY", q);
 			prd.invokeAction("DEMO_DECSTOCK");
 			prd.removeParameter("QUANTITY");
-			console.info("Stock decreased by " + q + " on " + this.getField("demoOrdPrdId.demoPrdReference").getValue());
+			console.info("Stock decreased by " + q + " on " + getField("demoOrdPrdId.demoPrdReference").getValue());
 			return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED");
 		}
 	};
 
 	DemoOrder.postSave = function() {
 		// The Demo.isLowStock function is defined in the DemoCommon shared script
-		if (Demo.isLowStock(this.getGrant(), this.getField("demoOrdPrdId.demoPrdStock").getInt())) {
+		if (Demo.isLowStock(getGrant(), getField("demoOrdPrdId.demoPrdStock").getInt())) {
 			// Notify responsible user if stock is low
 			try {
-				new Mail(this.getGrant()).send(
+				new Mail(getGrant()).send(
 						"demo@simplicite.fr",
 						"demo@simplicite.fr",
-						"Low stock on " + this.getField("demoOrdPrdId.demoPrdReference").getValue(),
+						"Low stock on " + getField("demoOrdPrdId.demoPrdReference").getValue(),
 						"<html><body>" +
 						"<h3>Hello,</h3>" +
-						"<p>The stock is low for product <b>" + this.getField("demoOrdPrdId.demoPrdReference").getValue() + "</b> " +
-						"(" + this.getField("demoOrdPrdId.demoPrdStock").getValue() + ")<br/>Please order new ones !</p>" +
+						"<p>The stock is low for product <b>" + getField("demoOrdPrdId.demoPrdReference").getValue() + "</b> " +
+						"(" + getField("demoOrdPrdId.demoPrdStock").getValue() + ")<br/>Please order new ones !</p>" +
 						"</body></html>");
 			} catch (e) {
 				console.error("Error sending low stock email: " + e.getMessage());
@@ -79,17 +87,13 @@ public class DemoOrder extends ObjectDB {
 
 	// Custom short label
 	DemoOrder.getUserKeyLabel = function(row) {
-		return this.getGrant().T("DEMO_ORDER_NUMBER") + (row ? row[this.getFieldIndex("demoOrdNumber")] : this.getFieldValue("demoOrdNumber"));
+		return getGrant().T("DEMO_ORDER_NUMBER") + (row ? row[getFieldIndex("demoOrdNumber")] : getFieldValue("demoOrdNumber"));
 	};
 
 	DemoOrder.canReference = function(objectName, fieldName) {
 		// Hide history records on tree view
-		return !this.isTreeviewInstance() || objectName != "DemoOrderHistoric";
+		return !isTreeviewInstance() || objectName != "DemoOrderHistoric";
 	};
-
-	// -----------------------------
-	// Custom PDF publication
-	// -----------------------------
 
 	// Call to publication method (the printOrderReceipt function is defined in the DemoCommon shared script)
 	DemoOrder.printReceipt = function(pt) {
@@ -98,7 +102,7 @@ public class DemoOrder extends ObjectDB {
 
 	// Allow custom publication only if status is validated or shipped
 	DemoOrder.isPrintTemplateEnable = function(row, printtemplate) {
-		var s = row !== null ? row[this.getStatusIndex()] : this.getStatus();
+		var s = row !== null ? row[getStatusIndex()] : getStatus();
 		if (printtemplate == "DemoOrder-PDF")
 			return s == "V" || s == "D";
 	};

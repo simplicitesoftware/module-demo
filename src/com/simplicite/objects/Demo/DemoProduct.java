@@ -38,7 +38,7 @@ public class DemoProduct extends ObjectDB {
 	}
 
 	/** Publication: Microsoft Word(R) catalog */
-	public Object catalog(PrintTemplate pt) {
+	public Object printCatalog(PrintTemplate pt) {
 		try {
 			DocxTool d = new DocxTool();
 			d.newDocument();
