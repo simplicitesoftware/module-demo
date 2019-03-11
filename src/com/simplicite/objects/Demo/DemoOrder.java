@@ -3,12 +3,12 @@ package com.simplicite.objects.Demo;
 import com.simplicite.util.ObjectDB;
 
 /**
- * Order
+ * Order business object
  */
 public class DemoOrder extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	/*
+	/* TODO
 	DemoOrder.postValidate = function() {
 		// Order quantity checking
 		if (this.getField("demoOrdQuantity").getInt(0) <= 0) {

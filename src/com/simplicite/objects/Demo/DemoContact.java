@@ -3,12 +3,12 @@ package com.simplicite.objects.Demo;
 import com.simplicite.util.ObjectDB;
 
 /**
- * Contact
+ * Contact business object
  */
 public class DemoContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	/*
+	/* TODO
 	DemoContact.printExcel = function(pt) {
 		// Build rows from selected IDs or from current filters
 		var rows = new ArrayList();
