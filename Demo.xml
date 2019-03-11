@@ -4907,7 +4907,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_name>DemoProduct</obo_name>
 		<obo_dbtable>demo_product</obo_dbtable>
 		<obo_class/>
-		<obo_script_id>ObjectInternal/DemoProduct.js</obo_script_id>
+		<obo_script_id>src/com/simplicite/objects/Demo/DemoProduct.java</obo_script_id>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>1</obo_nosearch>
 		<obo_comment><![CDATA[The **product** business object corresponds to the
@@ -5028,7 +5028,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_name>DemoSupplier</obo_name>
 		<obo_dbtable>demo_supplier</obo_dbtable>
 		<obo_class/>
-		<obo_script_id>src/com/simplicite/objects/Demo/DemoSupplier.java</obo_script_id>
+		<obo_script_id/>
 		<obo_usets>1</obo_usets>
 		<obo_nosearch>1</obo_nosearch>
 		<obo_comment><![CDATA[The **supplier** business object corresponds to the

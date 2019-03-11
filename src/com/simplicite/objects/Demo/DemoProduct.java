@@ -5,9 +5,9 @@ import com.simplicite.util.*;
 import com.simplicite.util.tools.*;
 
 /**
- * Business object DemoSupplier
+ * Product business object
  */
-public class DemoSupplier extends ObjectDB {
+public class DemoProduct extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 	
 	
