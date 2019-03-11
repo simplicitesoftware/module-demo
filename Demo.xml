@@ -10516,7 +10516,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<prt_name>DemoProduct-Word</prt_name>
 		<prt_usage>E</prt_usage>
 		<prt_type>METH</prt_type>
-		<prt_method>catalog</prt_method>
+		<prt_method>printCatalog</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
 		<prt_mimetype>docx</prt_mimetype>
