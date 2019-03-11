@@ -1,9 +1,14 @@
 package com.simplicite.extobjects.Demo;
 
-import java.util.*;
-import com.simplicite.util.*;
-import com.simplicite.util.tools.*;
-import org.json.*;
+import java.util.List;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import com.simplicite.util.AppLog;
+import com.simplicite.util.ExternalObject;
+import com.simplicite.util.ObjectDB;
+import com.simplicite.util.tools.Parameters;
 
 /**
  * Catalog custom webservice
@@ -19,13 +24,13 @@ public class DemoCatalog extends ExternalObject {
 	public Object display(Parameters params) {
 		// ZZZ API external object ZZZ
 		setJSONMIMEType();
-	
+
 		String method = params.getMethod();
-		//console.log("Method = " + method);
-	
+		AppLog.info(getClass(), "display", "Method = " + method, getGrant());
+
 		JSONObject req = params.getJSONObject();
-		//console.log("Request = " + req);
-	
+		AppLog.info(getClass(), "display", "Request = " + req.toString(), getGrant());
+
 		JSONArray ps = new JSONArray();
 		ObjectDB prd = this.getGrant().getTmpObject("DemoProduct");
 		List<String[]> rows = prd.search();
@@ -36,7 +41,7 @@ public class DemoCatalog extends ExternalObject {
 			p.put("name", prd.getFieldValue("demoPrdName"));
 			ps.put(p);
 		}
-		
+
 		JSONObject res = new JSONObject();
 		if (req!=null) res.put("request", req);
 		res.put("response", ps);
