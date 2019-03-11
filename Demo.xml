@@ -7,10 +7,8 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-10-22 13:17:04</mdl_lastupd>
-		<mdl_comment><![CDATA[Order management demo
-
-Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/demo-resources/STYLES.less"`]]></mdl_comment>
+		<mdl_lastupd>2019-03-11 22:55:13</mdl_lastupd>
+		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -4575,7 +4573,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_comment><![CDATA[Demo website using simple Mustache templating]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>ObjectExternal/demo.js</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/demo.java</obe_script_id>
 		<obe_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -10565,7 +10563,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<pcs_comment><![CDATA[**Order entry** activity workflow]]></pcs_comment>
 		<pcs_type>0</pcs_type>
 		<pcs_class/>
-		<pcs_script_id>BPMProcess/DemoOrderCreate.js</pcs_script_id>
+		<pcs_script_id/>
 		<pcs_max_duration>0</pcs_max_duration>
 		<pcs_duration_unit>D</pcs_duration_unit>
 		<pcs_persitant>0</pcs_persitant>

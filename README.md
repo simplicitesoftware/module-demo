@@ -13,8 +13,6 @@
 
 Order management demo
 
-Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/demo-resources/STYLES.less"`
-
 `DemoClient` business object definition
 ---------------------------------------
 
