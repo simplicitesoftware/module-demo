@@ -1,15 +1,13 @@
 package com.simplicite.objects.Demo;
 
-import java.util.*;
-import com.simplicite.util.*;
-import com.simplicite.util.tools.*;
+import com.simplicite.util.ObjectDB;
 
 /**
  * Contact
  */
 public class DemoContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	DemoContact.printExcel = function(pt) {
 		// Build rows from selected IDs or from current filters
@@ -22,7 +20,7 @@ public class DemoContact extends ObjectDB {
 		} else {
 			rows = this.search(false);
 		}
-		
+
 		var xls = new ExcelPOITool(true); // true = XLSX format
 		var sh = xls.newSheet("Contacts");
 		for (var i = 0; i < rows.size(); i++) {
@@ -35,10 +33,10 @@ public class DemoContact extends ObjectDB {
 			sh.add(r);
 		}
 		xls.add(sh);
-		
+
 		return xls.generateToByteArray();
 	};
-	
+
 	DemoContact.canReference = function(objectName, fieldName) {
 		// Hide history records on tree view
 		return !this.isTreeviewInstance() || objectName != "DemoContactHistoric";

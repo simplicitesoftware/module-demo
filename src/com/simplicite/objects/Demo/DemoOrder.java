@@ -1,15 +1,13 @@
 package com.simplicite.objects.Demo;
 
-import java.util.*;
-import com.simplicite.util.*;
-import com.simplicite.util.tools.*;
+import com.simplicite.util.ObjectDB;
 
 /**
  * Order
  */
 public class DemoOrder extends ObjectDB {
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	DemoOrder.postValidate = function() {
 		// Order quantity checking
@@ -24,7 +22,7 @@ public class DemoOrder extends ObjectDB {
 		if (this.isNew())
 			this.getField("demoOrdUnitPrice").setValue(this.getField("demoOrdPrdId.demoPrdUnitPrice").getValue());
 	};
-	
+
 	DemoOrder.postUpdate = function() {
 		// Invitation + stock decrease on shipment
 		if (this.getOldStatus() == "V" && this.getStatus() == "D") {
@@ -44,7 +42,7 @@ public class DemoOrder extends ObjectDB {
 			} catch (e) {
 				console.error("Error sending invitation: " + e.getMessage());
 			}
-	
+
 			var prd = this.getGrant().getTmpObject("DemoProduct");
 			prd.select(this.getField("demoOrdPrdId").getValue());
 			var q = this.getField("demoOrdQuantity").getInt(0);
@@ -55,7 +53,7 @@ public class DemoOrder extends ObjectDB {
 			return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED");
 		}
 	};
-	
+
 	DemoOrder.postSave = function() {
 		// The Demo.isLowStock function is defined in the DemoCommon shared script
 		if (Demo.isLowStock(this.getGrant(), this.getField("demoOrdPrdId.demoPrdStock").getInt())) {
@@ -73,31 +71,31 @@ public class DemoOrder extends ObjectDB {
 			} catch (e) {
 				console.error("Error sending low stock email: " + e.getMessage());
 			}
-	
+
 			// Show warning to current user
 			return Message.formatSimpleWarning("ERR_DEMO_PRD_LOWSTOCK");
 		}
 	};
-	
+
 	// Custom short label
 	DemoOrder.getUserKeyLabel = function(row) {
 		return this.getGrant().T("DEMO_ORDER_NUMBER") + (row ? row[this.getFieldIndex("demoOrdNumber")] : this.getFieldValue("demoOrdNumber"));
 	};
-	
+
 	DemoOrder.canReference = function(objectName, fieldName) {
 		// Hide history records on tree view
 		return !this.isTreeviewInstance() || objectName != "DemoOrderHistoric";
 	};
-	
+
 	// -----------------------------
 	// Custom PDF publication
 	// -----------------------------
-	
+
 	// Call to publication method (the printOrderReceipt function is defined in the DemoCommon shared script)
 	DemoOrder.printReceipt = function(pt) {
 		return Demo.orderReceipt(this);
 	};
-	
+
 	// Allow custom publication only if status is validated or shipped
 	DemoOrder.isPrintTemplateEnable = function(row, printtemplate) {
 		var s = row !== null ? row[this.getStatusIndex()] : this.getStatus();
