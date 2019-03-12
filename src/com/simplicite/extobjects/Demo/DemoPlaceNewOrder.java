@@ -4,7 +4,7 @@ import com.simplicite.util.ExternalObject;
 import com.simplicite.util.tools.Parameters;
 
 /**
- * Place new order
+ * Place new order custom UI component
  */
 public class DemoPlaceNewOrder extends ExternalObject {
 	private static final long serialVersionUID = 1L;

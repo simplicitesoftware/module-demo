@@ -8,7 +8,7 @@ import com.simplicite.webapp.HTMLPage;
 import com.simplicite.webapp.web.BootstrapWebPage;
 
 /**
- * External object DemoWebSite
+ * Web site custom frontend UI
  */
 public class DemoWebSite extends ExternalObject {
 	private static final long serialVersionUID = 1L;

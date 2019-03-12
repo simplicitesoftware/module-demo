@@ -7,7 +7,7 @@ import com.simplicite.util.tools.Parameters;
 import com.simplicite.webapp.web.JQueryWebPage;
 
 /**
- * Demo web site (using Mustache(R) templating)
+ * Web site (using Mustache(R) templating) custom frontend UI
  */
 public class demo extends ExternalObject {
 	private static final long serialVersionUID = 1L;

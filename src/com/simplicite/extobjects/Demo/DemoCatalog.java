@@ -11,7 +11,7 @@ import com.simplicite.util.ExternalObject;
 import com.simplicite.util.tools.Parameters;
 
 /**
- * Catalog custom webservice
+ * Catalog custom API
  */
 public class DemoCatalog extends ExternalObject {
 	private static final long serialVersionUID = 1L;

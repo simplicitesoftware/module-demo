@@ -6,7 +6,7 @@ import com.simplicite.util.tools.Parameters;
 import com.simplicite.webapp.Navigator;
 
 /**
- * Order agenda
+ * Order agenda custom UI component
  */
 public class DemoOrderAgenda extends ExternalObject {
 	private static final long serialVersionUID = 1L;
