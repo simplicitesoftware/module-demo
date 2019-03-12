@@ -1,8 +1,8 @@
 {
-    "date": "Mon Mar 11 22:55:13 CET 2019",
+    "date": "Tue Mar 12 12:43:08 CET 2019",
     "name": "Demo",
     "format": "xml",
-    "description": "Order management demo",
+    "description": "**Order management** demo application\n\nSample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)\n\nSettings from [GitHub](https://github.com/simplicitesoftware/module-demo):\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": { \"uri\": \"https://github.com/simplicitesoftware/module-demo.git\" }\n}\n```",
     "repository": {
         "type": "url",
         "url": "https://www.simplicite.io/resources/modules/demo-app-4.0.xml"

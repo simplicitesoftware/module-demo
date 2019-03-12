@@ -7,8 +7,19 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-03-11 22:55:13</mdl_lastupd>
-		<mdl_comment><![CDATA[Order management demo]]></mdl_comment>
+		<mdl_lastupd>2019-03-12 12:43:08</mdl_lastupd>
+		<mdl_comment><![CDATA[**Order management** demo application
+
+Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
+
+Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
+
+```json
+{
+	"type": "git",
+	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo.git" }
+}
+```]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -4013,11 +4024,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 </table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
-    <div class="area col-sm-6" data-area="1:="/>
-    <div class="area col-sm-6" data-area="2,3:="/>
+    <div class="area col-sm-6" data-area="1:="></div>
+    <div class="area col-sm-6" data-area="2,3:="></div>
   </div>
   <div class="row">
-    <div class="area col-sm-12" data-area="4:="/>
+    <div class="area col-sm-12" data-area="4:="></div>
   </div>
 </div>
 ]]></tpl_ui>
@@ -4044,15 +4055,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 </table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
-    <div class="area col-sm-6" data-area="1:="/>
-    <div class="area col-sm-6" data-area="2:="/>
+    <div class="area col-sm-6" data-area="1:="></div>
+    <div class="area col-sm-6" data-area="2:="></div>
   </div>
   <div class="row">
-    <div class="area col-sm-6" data-area="4:="/>
-    <div class="area col-sm-6" data-area="3:="/>
+    <div class="area col-sm-6" data-area="4:="></div>
+    <div class="area col-sm-6" data-area="3:="></div>
   </div>
   <div class="row">
-    <div class="area col-sm-12" data-area="5:-"/>
+    <div class="area col-sm-12" data-area="5:-"></div>
   </div>
 </div>
 ]]></tpl_ui>
@@ -4264,12 +4275,30 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCtcDatetime"/>
-  <div class="field" data-field="demoCtcType"/>
-  <div class="field" data-field="demoCtcSubType"/>
-  <div class="field" data-field="demoCtcCanal"/>
-  <div class="field" data-field="demoCtcPriority"/>
-  <div class="field" data-field="demoCtcStatus"/>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcDatetime"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcCanal"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcType"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcSubType"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="field" data-field="demoCtcStatus"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcPriority"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4281,15 +4310,27 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCtcCliId"/>
-  <div class="field" data-field="demoCtcCliId__demoCliCode"/>
-  <div class="field" data-field="demoCtcCliId__demoCliFirstname"/>
-  <div class="field" data-field="demoCtcCliId__demoCliLastname"/>
-  <div class="field" data-field="demoCtcCliId__demoCliEmail"/>
-  <div class="field" data-field="demoCtcCliId__demoCliHomePhone"/>
-  <div class="field" data-field="demoCtcCliId__demoCliWorkPhone"/>
-  <div class="field" data-field="demoCtcCliId__demoCliMobilePhone"/>
-  <div class="field" data-field="demoCtcCliId__demoCliFax"/>
+  <div class="field" data-field="demoCtcCliId"></div>
+  <div class="field" data-field="demoCtcCliId__demoCliCode"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcCliId__demoCliFirstname"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcCliId__demoCliLastname"></div>
+    </div>
+  </div>
+  <div class="field" data-field="demoCtcCliId__demoCliEmail"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcCliId__demoCliHomePhone"></div>
+      <div class="field" data-field="demoCtcCliId__demoCliMobilePhone"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoCtcCliId__demoCliWorkPhone"></div>
+      <div class="field" data-field="demoCtcCliId__demoCliFax"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4301,17 +4342,33 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCtcOrdId"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdNumber"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdDate"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdStatus"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdCliId"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdSupId"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdReference"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdName"/>
-  <div class="field" data-field="demoCtcOrdId__demoOrdQuantity"/>
+  <div class="field" data-field="demoCtcOrdId"></div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcOrdId__demoOrdNumber"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcOrdId__demoOrdDate"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcOrdId__demoOrdStatus"></div>
+    </div>
+  </div>
+  <div class="field" data-field="demoCtcOrdId__demoOrdCliId"></div>
+  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId"></div>
+  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdSupId"></div>
+  <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId"></div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdReference"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcOrdId__demoOrdPrdId__demoPrdName"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcOrdId__demoOrdQuantity"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4323,8 +4380,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCtcComments"/>
-  <div class="field" data-field="demoCtcFile"/>
+  <div class="field" data-field="demoCtcComments"></div>
+  <div class="field" data-field="demoCtcFile"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4336,10 +4393,22 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoOrdNumber"/>
-  <div class="field" data-field="demoOrdDate"/>
-  <div class="field" data-field="demoOrdStatus"/>
-  <div class="field" data-field="demoOrdDeliveryDate"/>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdNumber"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdDate"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdStatus"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdDeliveryDate"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4351,17 +4420,23 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoOrdCliId"/>
-  <div class="field" data-field="demoOrdCliId__demoCliCode"/>
-  <div class="field" data-field="demoOrdCliId__demoCliFirstname"/>
-  <div class="field" data-field="demoOrdCliId__demoCliLastname"/>
-  <div class="field" data-field="demoOrdCliId__demoCliEmail"/>
-  <div class="field" data-field="demoOrdCliId__demoCliAddress1"/>
-  <div class="field" data-field="demoOrdCliId__demoCliAddress2"/>
-  <div class="field" data-field="demoOrdCliId__demoCliAddress3"/>
-  <div class="field" data-field="demoOrdCliId__demoCliZipCode"/>
-  <div class="field" data-field="demoOrdCliId__demoCliCity"/>
-  <div class="field" data-field="demoOrdCliId__demoCliCountry"/>
+  <div class="field" data-field="demoOrdCliId"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliCode"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdCliId__demoCliFirstname"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdCliId__demoCliLastname"></div>
+    </div>
+  </div>
+  <div class="field" data-field="demoOrdCliId__demoCliEmail"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliAddress1"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliAddress2"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliAddress3"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliZipCode"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliCity"></div>
+  <div class="field" data-field="demoOrdCliId__demoCliCountry"></div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4373,17 +4448,35 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoOrdPrdId"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdReference"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdName"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdPicture"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdSupId"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupCode"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupName"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupLogo"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupUsrId"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdStock"/>
-  <div class="field" data-field="demoOrdPrdId__demoPrdUnitPrice"/>
+  <div class="field" data-field="demoOrdPrdId"></div>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="field" data-field="demoOrdPrdId__demoPrdReference"></div>
+    </div>
+    <div class="col-sm-7">
+      <div class="field" data-field="demoOrdPrdId__demoPrdName"></div>
+    </div>
+  </div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdPicture"></div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdSupId"></div>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupCode"></div>
+    </div>
+    <div class="col-sm-7">
+      <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupName"></div>
+    </div>
+  </div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupLogo"></div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupUsrId"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdPrdId__demoPrdStock"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdPrdId__demoPrdUnitPrice"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4395,10 +4488,22 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoOrdUnitPrice"/>
-  <div class="field" data-field="demoOrdQuantity"/>
-  <div class="field" data-field="demoOrdTotal"/>
-  <div class="field" data-field="demoOrdVAT"/>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdUnitPrice"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdQuantity"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdVAT"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoOrdTotal"></div>
+    </div>
+  </div>
 </div>
 ]]></ofa_ui>
 		<ofa_icon/>
@@ -4409,7 +4514,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoOrdComments"/>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoOrdComments"></div>
 ]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4660,7 +4765,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_icon>user</obo_icon>
 		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>C</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>0</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -4722,7 +4827,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_icon>chat</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -4843,7 +4948,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_icon>folder</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -4964,7 +5069,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_icon>box</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -5083,7 +5188,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_icon>building</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>0</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>

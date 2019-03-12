@@ -11,7 +11,18 @@
 `Demo` module definition
 ========================
 
-Order management demo
+**Order management** demo application
+
+Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
+
+Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
+
+```json
+{
+	"type": "git",
+	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo.git" }
+}
+```
 
 `DemoClient` business object definition
 ---------------------------------------
