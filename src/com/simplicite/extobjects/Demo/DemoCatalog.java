@@ -5,9 +5,9 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.simplicite.objects.Demo.DemoProduct;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ExternalObject;
-import com.simplicite.util.ObjectDB;
 import com.simplicite.util.tools.Parameters;
 
 /**
@@ -32,7 +32,7 @@ public class DemoCatalog extends ExternalObject {
 		AppLog.info(getClass(), "display", "Request = " + req.toString(), getGrant());
 
 		JSONArray ps = new JSONArray();
-		ObjectDB prd = this.getGrant().getTmpObject("DemoProduct");
+		DemoProduct prd = (DemoProduct)getGrant().getTmpObject("DemoProduct");
 		List<String[]> rows = prd.search();
 		for (int i = 0; i < rows.size(); i++) {
 			prd.setValues(rows.get(i));

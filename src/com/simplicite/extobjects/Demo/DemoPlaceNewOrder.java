@@ -15,6 +15,6 @@ public class DemoPlaceNewOrder extends ExternalObject {
 	 */
 	@Override
 	public Object display(Parameters params) {
-		return javascript(this.getName() + ".render();");
+		return javascript(getName() + ".render();");
 	}
 }
