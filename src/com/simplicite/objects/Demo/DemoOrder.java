@@ -2,8 +2,10 @@ package com.simplicite.objects.Demo;
 
 import java.util.List;
 
+import com.simplicite.commons.Demo.DemoCommon;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
+import com.simplicite.util.PrintTemplate;
 
 /**
  * Order business object
@@ -84,27 +86,32 @@ public class DemoOrder extends ObjectDB {
 			return Message.formatSimpleWarning("ERR_DEMO_PRD_LOWSTOCK");
 		}
 	};
-
-	// Custom short label
-	DemoOrder.getUserKeyLabel = function(row) {
-		return getGrant().T("DEMO_ORDER_NUMBER") + (row ? row[getFieldIndex("demoOrdNumber")] : getFieldValue("demoOrdNumber"));
-	};
-
-	DemoOrder.canReference = function(objectName, fieldName) {
-		// Hide history records on tree view
-		return !isTreeviewInstance() || objectName != "DemoOrderHistoric";
-	};
-
-	// Call to publication method (the printOrderReceipt function is defined in the DemoCommon shared script)
-	DemoOrder.printReceipt = function(pt) {
-		return Demo.orderReceipt(this);
-	};
-
-	// Allow custom publication only if status is validated or shipped
-	DemoOrder.isPrintTemplateEnable = function(row, printtemplate) {
-		var s = row !== null ? row[getStatusIndex()] : getStatus();
-		if (printtemplate == "DemoOrder-PDF")
-			return s == "V" || s == "D";
-	};
 	*/
+
+	/** Hook override: custom short label */
+	@Override
+	public String getUserKeyLabel(String[] row) {
+		return getGrant().T("DEMO_ORDER_NUMBER") + (row!=null ? row[getFieldIndex("demoOrdNumber")] : getFieldValue("demoOrdNumber"));
+	}
+
+	/** Hook override: hide history records on tree view */
+	@Override
+	public boolean canReference(String objName, String fkFieldName) {
+		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
+	}
+
+	/** Publication: PDF receipt */
+	public Object printReceipt(PrintTemplate pt) {
+		return DemoCommon.orderReceipt(this); // Implemented in common class
+	};
+
+	/** Hook override: Allow custom publication only if status is validated or shipped */
+	@Override
+	public boolean isPrintTemplateEnable(String[] row, String ptName) {
+		if ("DemoOrder-PDF".equals(ptName)) {
+			String s = row!=null ? row[getStatusIndex()] : getStatus();
+			return "V".equals(s) || "D".equals(s);
+		}
+		return super.isPrintTemplateEnable(row, ptName);
+	}
 }
