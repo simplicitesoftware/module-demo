@@ -1,11 +1,15 @@
 package com.simplicite.objects.Demo;
 
+import java.util.Date;
 import java.util.List;
 
 import com.simplicite.commons.Demo.DemoCommon;
+import com.simplicite.util.AppLog;
+import com.simplicite.util.Mail;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.PrintTemplate;
+import com.simplicite.util.Tool;
 
 /**
  * Order business object
@@ -32,15 +36,15 @@ public class DemoOrder extends ObjectDB {
 		return msgs;
 	}
 
-	/* TODO
-	DemoOrder.postUpdate = function() {
-		// Invitation + stock decrease on shipment
-		if (getOldStatus() == "V" && getStatus() == "D") {
+	/** Hook override: invitation for delivery + stock decrease on shipment */
+	@Override
+	public String postUpdate() {
+		if ("V".equals(getOldStatus()) && "D".equals(getStatus())) { // Upon state transition to delivered
 			try {
-				var n = getFieldValue("demoOrdNumber");
-				var d = Tool.fromDateTime(getFieldValue("demoOrdDeliveryDate"));
-				var name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
-				var desc = "Hello " + name + ". Your order " + n + " delivery is scheduled";
+				String n = getFieldValue("demoOrdNumber");
+				Date d = Tool.fromDateTime(getFieldValue("demoOrdDeliveryDate"));
+				String name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
+				String desc = "Hello " + name + ". Your order " + n + " delivery is scheduled";
 				new Mail(getGrant()).sendInvitation(
 					d, Tool.shiftSeconds(d, 2*3600),
 					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2") + " " + getFieldValue("demoOrdCliId.demoCliAddress3")
@@ -49,44 +53,56 @@ public class DemoOrder extends ObjectDB {
 					getFieldValue("demoOrdCliId.demoCliEmail"), name,
 					"Order " + n + " delivery schedule",
 					desc, desc);
-			} catch (e) {
-				console.error("Error sending invitation: " + e.getMessage());
+			} catch (Exception e) {
+				AppLog.warning(getClass(), "postUpdate", "Error sending invitation", e, getGrant());
 			}
 
-			var prd = getGrant().getTmpObject("DemoProduct");
-			prd.select(getField("demoOrdPrdId").getValue());
-			var q = getField("demoOrdQuantity").getInt(0);
-			prd.setParameter("QUANTITY", q);
-			prd.invokeAction("DEMO_DECSTOCK");
-			prd.removeParameter("QUANTITY");
-			console.info("Stock decreased by " + q + " on " + getField("demoOrdPrdId.demoPrdReference").getValue());
-			return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED");
+			try {
+				DemoProduct prd = (DemoProduct)getGrant().getTmpObject("DemoProduct");
+				prd.select(getField("demoOrdPrdId").getValue());
+				int q = getField("demoOrdQuantity").getInt(0);
+				prd.setParameter("QUANTITY", q);
+				prd.invokeAction("DEMO_DECSTOCK");
+				prd.removeParameter("QUANTITY");
+				// Log
+				AppLog.info(getClass(), "postUpdate", "Stock decreased by " + q + " on " + getField("demoOrdPrdId.demoPrdReference").getValue(), getGrant());
+				// User message
+				return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED");
+			} catch (Exception e) {
+				String msg = "Error decreasing stock: " + e.getMessage();
+				// Log
+				AppLog.error(getClass(), "postUpdate", msg, e, getGrant());
+				// User message
+				return Message.formatSimpleError(msg);
+			}
 		}
-	};
+		return super.postUpdate();
+	}
 
-	DemoOrder.postSave = function() {
-		// The Demo.isLowStock function is defined in the DemoCommon shared script
-		if (Demo.isLowStock(getGrant(), getField("demoOrdPrdId.demoPrdStock").getInt())) {
+	/** Hook override: check low stock */
+	@Override
+	public String postSave() {
+		if (DemoCommon.isLowStock(getGrant(), getFieldValue("demoOrdPrdId"), getField("demoOrdPrdId.demoPrdStock").getInt(0))) {
 			// Notify responsible user if stock is low
 			try {
 				new Mail(getGrant()).send(
-						"demo@simplicite.fr",
-						"demo@simplicite.fr",
-						"Low stock on " + getField("demoOrdPrdId.demoPrdReference").getValue(),
-						"<html><body>" +
-						"<h3>Hello,</h3>" +
-						"<p>The stock is low for product <b>" + getField("demoOrdPrdId.demoPrdReference").getValue() + "</b> " +
-						"(" + getField("demoOrdPrdId.demoPrdStock").getValue() + ")<br/>Please order new ones !</p>" +
-						"</body></html>");
-			} catch (e) {
-				console.error("Error sending low stock email: " + e.getMessage());
+					"demo@simplicite.fr",
+					"demo@simplicite.fr",
+					"Low stock on " + getField("demoOrdPrdId.demoPrdReference").getValue(),
+					"<html><body>" +
+					"<h3>Hello,</h3>" +
+					"<p>The stock is low for product <b>" + getField("demoOrdPrdId.demoPrdReference").getValue() + "</b> " +
+					"(" + getField("demoOrdPrdId.demoPrdStock").getValue() + ")<br/>Please order new ones !</p>" +
+					"</body></html>");
+			} catch (Exception e) {
+				AppLog.warning(getClass(), "postSave", "Error sending low stock alert email", e, getGrant());
 			}
 
-			// Show warning to current user
+			// User message
 			return Message.formatSimpleWarning("ERR_DEMO_PRD_LOWSTOCK");
 		}
-	};
-	*/
+		return super.postSave();
+	}
 
 	/** Hook override: custom short label */
 	@Override
