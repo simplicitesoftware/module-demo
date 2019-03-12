@@ -29,7 +29,8 @@ public class DemoCatalog extends ExternalObject {
 		AppLog.info(getClass(), "display", "Method = " + method, getGrant());
 
 		JSONObject req = params.getJSONObject();
-		AppLog.info(getClass(), "display", "Request = " + req.toString(), getGrant());
+		if (req!=null)
+			AppLog.info(getClass(), "display", "Request = " + req.toString(), getGrant());
 
 		JSONArray ps = new JSONArray();
 		DemoProduct prd = (DemoProduct)getGrant().getTmpObject("DemoProduct");
@@ -43,7 +44,8 @@ public class DemoCatalog extends ExternalObject {
 		}
 
 		JSONObject res = new JSONObject();
-		if (req!=null) res.put("request", req);
+		if (req!=null)
+			res.put("request", req);
 		res.put("response", ps);
 		return res.toString();
 	}

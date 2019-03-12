@@ -28,7 +28,8 @@ public class DemoOrderAgenda extends ExternalObject {
 					? HTMLTool.cssIncludes(HTMLTool.fullcalendarCSS()) +
 					  HTMLTool.jsIncludes(HTMLTool.fullcalendarJS(getGrant().getLang()))
 					: "") + HTMLTool.jsBlock(embedded ? js : HTMLTool.jsOnload(js));
-		} else // Responsive version
+		} else { // Responsive version
 			return javascript("$ui.loadCalendar(function() { " + getName() + ".render(); });");
+		}
 	}
 }

@@ -119,7 +119,7 @@ public class DemoOrder extends ObjectDB {
 	/** Publication: PDF receipt */
 	public Object printReceipt(PrintTemplate pt) {
 		return DemoCommon.orderReceipt(this); // Implemented in common class
-	};
+	}
 
 	/** Hook override: Allow custom publication only if status is validated or shipped */
 	@Override

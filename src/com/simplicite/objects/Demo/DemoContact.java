@@ -6,6 +6,7 @@ import java.util.List;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.PrintTemplate;
+import com.simplicite.util.Tool;
 import com.simplicite.util.tools.ExcelPOITool;
 import com.simplicite.util.tools.ExcelPOITool.ExcelCell;
 import com.simplicite.util.tools.ExcelPOITool.ExcelRow;
@@ -23,12 +24,13 @@ public class DemoContact extends ObjectDB {
 			// Build rows from selected IDs or from current filters
 			List<String[]>rows = new ArrayList<>();
 			List<String> ids = getSelectedIds();
-			if (ids!=null && ids.size()>0) {
+			if (!Tool.isEmpty(ids)) {
 				for (int k = 0; k < ids.size(); k++)
 					if (select(ids.get(k)))
 						rows.add(getValues());
-			} else
+			} else {
 				rows = search(false);
+			}
 
 			ExcelPOITool xls = new ExcelPOITool(true); // true = XLSX format
 			ExcelSheet sh = xls.newSheet("Contacts");
