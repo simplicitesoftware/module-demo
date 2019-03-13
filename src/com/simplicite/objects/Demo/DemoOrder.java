@@ -2,6 +2,7 @@ package com.simplicite.objects.Demo;
 
 import java.util.Date;
 import java.util.List;
+import java.util.ArrayList;
 
 import com.simplicite.commons.Demo.DemoCommon;
 import com.simplicite.util.AppLog;
@@ -19,7 +20,7 @@ public class DemoOrder extends ObjectDB {
 
 	@Override
 	public List<String> postValidate() {
-		List<String> msgs = super.postValidate();
+		List<String> msgs = new ArrayList<>();
 		// Order quantity checking
 		if (getField("demoOrdQuantity").getInt(0) <= 0) {
 			console.error("Order quantity <0 for order " + getField("demoOrdNumber").getValue());
