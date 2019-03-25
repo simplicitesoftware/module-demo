@@ -1,4 +1,4 @@
-package com.simplicite.test;
+package com.simplicite.tests;
 
 import static org.junit.Assert.assertEquals;
 
