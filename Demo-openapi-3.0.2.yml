@@ -321,8 +321,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         created_dt_hist:
           description: Date
           type: string
@@ -398,8 +398,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -816,8 +816,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3000,8 +3000,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status

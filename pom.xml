@@ -10,7 +10,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
+    <sonar.sources>.</sonar.sources>
+    <sonar.exclusions>test/**,data/**,**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>**.js,src/**.java</sonar.coverage.exclusions>
   </properties>
   <build>

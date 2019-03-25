@@ -4765,7 +4765,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_icon>user</obo_icon>
 		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>T</obo_viewmode>
+		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>0</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -4781,6 +4781,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -4827,7 +4828,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_icon>chat</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>T</obo_viewmode>
+		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>1</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -4843,6 +4844,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -4902,6 +4904,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -4948,7 +4951,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_icon>folder</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>T</obo_viewmode>
+		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>1</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -4964,6 +4967,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5023,6 +5027,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5069,7 +5074,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_icon>box</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>T</obo_viewmode>
+		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>1</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -5085,6 +5090,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5144,6 +5150,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5188,7 +5195,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_icon>building</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>T</obo_viewmode>
+		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>0</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -5204,6 +5211,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
+		<obo_btn_listupsert/>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
