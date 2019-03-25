@@ -18,8 +18,8 @@ public class DemoProductTest {
 		DemoProduct prd = (DemoProduct)Grant.getSystemAdmin().getTmpObject("DemoProduct");
 		prd.setValues(prd.search().get(0));
 		ObjectField s = prd.getField("demoPrdStock");
-		prd.increaseStock();
 		int n = s.getInt(0);
+		prd.increaseStock();
 		assertEquals(s.getInt(0), n + DemoProduct.INCREMENT);
 	}
 }
