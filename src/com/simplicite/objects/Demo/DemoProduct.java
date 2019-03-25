@@ -6,6 +6,7 @@ import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.tools.DocxTool;
+import com.simplicite.util.tools.JUnitTool;
 
 /**
  * Product business object
@@ -65,5 +66,11 @@ public class DemoProduct extends ObjectDB {
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
 		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
+	}
+
+	/** Hook override: launch JUnit tests class */
+	@Override
+	public String unitTests() {
+		return new JUnitTool(getGrant()).run("com.simplicite.commons.Demo.DemoProductTest");
 	}
 }

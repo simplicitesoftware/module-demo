@@ -9,10 +9,10 @@ import com.simplicite.objects.Demo.DemoProduct;
 /**
  * Local unit test example
  */
-public class DemoProductTest {
+public class DemoTests {
 	/** Increment test */
 	@Test
-	public void testIncrement() {
+	public void testProductIncrement() {
 		assertEquals(10, DemoProduct.INCREMENT);
 	}
 }
