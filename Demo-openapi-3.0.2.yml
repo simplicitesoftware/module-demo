@@ -134,7 +134,7 @@ components:
           description: Order date
           type: string
         demoOrdPrdId__demoPrdSupId__demoSupUsrId:
-          description: 'User responsible of supplier '
+          description: User responsible of supplier
           type: string
         demoOrdPrdId__demoPrdSupId:
           description: Product supplier
@@ -251,7 +251,7 @@ components:
           description: Unit price of product
           type: number
         demoPrdSupId__demoSupUsrId:
-          description: 'User responsible of supplier '
+          description: User responsible of supplier
           type: string
         demoPrdReference:
           description: Product reference
@@ -375,7 +375,7 @@ components:
           description: Order number (automatically calculated at creation)
           type: integer
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId:
-          description: 'User responsible of supplier '
+          description: User responsible of supplier
           type: string
         demoCtcOrdId__demoOrdPrdId__demoPrdName:
           description: Product name
@@ -560,7 +560,7 @@ components:
           description: Supplier logo
           type: object
         demoSupUsrId:
-          description: 'User responsible of supplier '
+          description: User responsible of supplier
           type: string
         row_id:
           description: ID
@@ -927,7 +927,7 @@ paths:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         required: false
       - schema:
           type: string
@@ -1064,7 +1064,7 @@ paths:
           type: string
         in: query
         name: demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         required: false
       - schema:
           type: string
@@ -1688,7 +1688,7 @@ paths:
           type: string
         in: query
         name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         required: false
       - schema:
           type: integer
@@ -3256,7 +3256,7 @@ paths:
           type: string
         in: query
         name: demoPrdSupId__demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         required: false
       - schema:
           type: string

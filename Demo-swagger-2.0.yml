@@ -282,7 +282,7 @@ paths:
         required: false
       - in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         type: string
         required: false
       - in: query
@@ -397,7 +397,7 @@ paths:
         required: false
       - in: query
         name: demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         type: string
         required: false
       - in: query
@@ -919,7 +919,7 @@ paths:
         required: false
       - in: query
         name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         type: string
         required: false
       - in: query
@@ -2232,7 +2232,7 @@ paths:
         required: false
       - in: query
         name: demoPrdSupId__demoSupUsrId
-        description: 'Search filter for User responsible of supplier '
+        description: Search filter for User responsible of supplier
         type: string
         required: false
       - in: query
@@ -2828,7 +2828,7 @@ definitions:
         description: Order date
         type: string
       demoOrdPrdId__demoPrdSupId__demoSupUsrId:
-        description: 'User responsible of supplier '
+        description: User responsible of supplier
         type: string
       demoOrdPrdId__demoPrdSupId:
         description: Product supplier
@@ -2945,7 +2945,7 @@ definitions:
         description: Unit price of product
         type: number
       demoPrdSupId__demoSupUsrId:
-        description: 'User responsible of supplier '
+        description: User responsible of supplier
         type: string
       demoPrdReference:
         description: Product reference
@@ -3069,7 +3069,7 @@ definitions:
         description: Order number (automatically calculated at creation)
         type: integer
       demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId:
-        description: 'User responsible of supplier '
+        description: User responsible of supplier
         type: string
       demoCtcOrdId__demoOrdPrdId__demoPrdName:
         description: Product name
@@ -3254,7 +3254,7 @@ definitions:
         description: Supplier logo
         type: object
       demoSupUsrId:
-        description: 'User responsible of supplier '
+        description: User responsible of supplier
         type: string
       row_id:
         description: ID
