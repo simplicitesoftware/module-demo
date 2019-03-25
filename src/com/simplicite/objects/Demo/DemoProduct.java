@@ -76,18 +76,19 @@ public class DemoProduct extends ObjectDB {
 
 	/** JUnit test class */
 	public static class DemoProductTest {
-		/** Increment test */
+		/** Decrement test */
 		@Test
-		public void testIncrement() {
-			ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
-			prd.setValues(prd.search().get(0));
-			ObjectField s = prd.getField("demoPrdStock");
-			int n = s.getInt(0);
+		public void testDecrement() {
 			try {
-				prd.invokeAction("DEMO_INCSTOCK");
-				assertEquals(n + INCREMENT, s.getInt(0));
+				ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
+				prd.setValues(prd.search().get(0));
+				ObjectField s = prd.getField("demoPrdStock");
+				int n = s.getInt(0);
+				prd.setParameter("QUANTITY", INCREMENT);
+				prd.invokeAction("DEMO_DECSTOCK");
+				assertEquals(n - INCREMENT, s.getInt(0));
 			} catch (Exception e) {
-				fail();
+				fail(e.getMessage());
 			}
 		}
 	}

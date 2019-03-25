@@ -1,6 +1,7 @@
 package com.simplicite.commons.Demo;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
@@ -15,11 +16,15 @@ public class DemoProductTest {
 	/** Increment test */
 	@Test
 	public void testIncrement() {
-		DemoProduct prd = (DemoProduct)Grant.getSystemAdmin().getTmpObject("DemoProduct");
-		prd.setValues(prd.search().get(0));
-		ObjectField s = prd.getField("demoPrdStock");
-		int n = s.getInt(0);
-		prd.increaseStock();
-		assertEquals(n + DemoProduct.INCREMENT, s.getInt(0));
+		try {
+			DemoProduct prd = (DemoProduct)Grant.getSystemAdmin().getTmpObject("DemoProduct");
+			prd.setValues(prd.search().get(0));
+			ObjectField s = prd.getField("demoPrdStock");
+			int n = s.getInt(0);
+			prd.increaseStock();
+			assertEquals(n + DemoProduct.INCREMENT, s.getInt(0));
+		} catch (Exception e) {
+			fail(e.getMessage());
+		}
 	}
 }
