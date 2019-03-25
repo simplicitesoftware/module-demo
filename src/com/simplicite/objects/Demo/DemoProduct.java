@@ -13,10 +13,13 @@ import com.simplicite.util.tools.DocxTool;
 public class DemoProduct extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
+	/** Increase stock increment */
+	public final static int INCREMENT = 10;
+
 	/** Action: increase stock */
 	public String increaseStock() {
 		ObjectField s = getField("demoPrdStock");
-		s.setValue(s.getInt(0) + 10);
+		s.setValue(s.getInt(0) + INCREMENT);
 		save();
 		// Log
 		AppLog.info(getClass(), "increaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
