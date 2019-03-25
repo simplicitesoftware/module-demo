@@ -12827,8 +12827,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<scr_code>DemoTests</scr_code>
-		<scr_file>src/com/simplicite/commons/Demo/DemoTests.java</scr_file>
+		<scr_code>DemoProductTest</scr_code>
+		<scr_file>src/com/simplicite/commons/Demo/DemoProductTest.java</scr_file>
 		<scr_type>JSR</scr_type>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

@@ -9,9 +9,9 @@ import com.simplicite.util.Grant;
 import com.simplicite.util.ObjectField;
 
 /**
- * Server unit tests
+ * Product business object server unit tests
  */
-public class DemoTests {
+public class DemoProductTest {
 	/** Increment test */
 	@Test
 	public void testIncrement() {
