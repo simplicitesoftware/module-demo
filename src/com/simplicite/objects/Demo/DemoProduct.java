@@ -1,6 +1,12 @@
 package com.simplicite.objects.Demo;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
+
 import com.simplicite.util.AppLog;
+import com.simplicite.util.Grant;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
@@ -68,9 +74,28 @@ public class DemoProduct extends ObjectDB {
 		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
 	}
 
-	/** Hook override: launch JUnit tests class */
+	/** JUnit test class */
+	public static class DemoProductTest {
+		/** Increment test */
+		@Test
+		public void testIncrement() {
+			ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
+			prd.setValues(prd.search().get(0));
+			ObjectField s = prd.getField("demoPrdStock");
+			int n = s.getInt(0);
+			try {
+				prd.invokeAction("DEMO_INCSTOCK");
+				assertEquals(n + INCREMENT, s.getInt(0));
+			} catch (Exception e) {
+				fail();
+			}
+		}
+	}
+
+	/** Hook override: launch JUnit tests classes */
 	@Override
 	public String unitTests() {
-		return new JUnitTool(getGrant()).run("com.simplicite.commons.Demo.DemoProductTest");
+		JUnitTool t = new JUnitTool(getGrant());
+		return t.run("com.simplicite.commons.Demo.DemoProductTest") + t.run(DemoProductTest.class);
 	}
 }

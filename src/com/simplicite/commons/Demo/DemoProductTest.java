@@ -20,6 +20,6 @@ public class DemoProductTest {
 		ObjectField s = prd.getField("demoPrdStock");
 		int n = s.getInt(0);
 		prd.increaseStock();
-		assertEquals(s.getInt(0), n + DemoProduct.INCREMENT);
+		assertEquals(n + DemoProduct.INCREMENT, s.getInt(0));
 	}
 }
