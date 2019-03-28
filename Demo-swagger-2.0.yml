@@ -193,8 +193,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -2020,8 +2020,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       tags:
       - DemoContactHistoric
   /rest/DemoClient:
@@ -3015,8 +3015,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       created_dt_hist:
         description: Date
         type: string
@@ -3092,8 +3092,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcDatetime:
         description: Contcat date and time
         type: string

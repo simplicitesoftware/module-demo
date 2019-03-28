@@ -54,16 +54,16 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 		<thm_name>demo</thm_name>
 		<thm_logo_id/>
 		<thm_logo_invert>1</thm_logo_invert>
-		<thm_logo2_id>Theme/demo/logo2.png</thm_logo2_id>
-		<thm_favicon_id>Theme/demo/favicon.png</thm_favicon_id>
+		<thm_logo2_id>files/Theme/demo/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/demo/favicon.png</thm_favicon_id>
 		<thm_color1/>
 		<thm_color2>#418CF0</thm_color2>
 		<thm_text2>#FFFFFF</thm_text2>
 		<thm_color3>#418CF0</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
-		<thm_css_doc>Theme/demo/demo_gen.css</thm_css_doc>
-		<thm_addon>Theme/demo/addon.less</thm_addon>
+		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font/>
@@ -140,7 +140,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<mtp_name>DemoModel</mtp_name>
 		<mtp_type>M</mtp_type>
 		<mtp_class/>
-		<mtp_script_id>ModelTemplate/DemoModel.js</mtp_script_id>
+		<mtp_script_id>files/ModelTemplate/DemoModel.js</mtp_script_id>
 		<mtp_use_grid>1</mtp_use_grid>
 		<mtp_use_title>1</mtp_use_title>
 		<mtp_use_note>1</mtp_use_note>
@@ -156,41 +156,41 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<mod_name>DemoContactStates</mod_name>
 		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoContactStates.svg</mod_doc>
+		<mod_doc>files/Model/DemoContactStates.svg</mod_doc>
 		<mod_json/>
-		<mod_image>Model/DemoContactStates.png</mod_image>
+		<mod_image>files/Model/DemoContactStates.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<mod_name>DemoObjects</mod_name>
 		<mod_template_id.mtp_name>ModelObject</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoObjects.svg</mod_doc>
+		<mod_doc>files/Model/DemoObjects.svg</mod_doc>
 		<mod_json/>
-		<mod_image>Model/DemoObjects.png</mod_image>
+		<mod_image>files/Model/DemoObjects.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<mod_name>DemoOrderStates</mod_name>
 		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoOrderStates.svg</mod_doc>
+		<mod_doc>files/Model/DemoOrderStates.svg</mod_doc>
 		<mod_json/>
-		<mod_image>Model/DemoOrderStates.png</mod_image>
+		<mod_image>files/Model/DemoOrderStates.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<mod_name>DemoUsers</mod_name>
 		<mod_template_id.mtp_name>ModelUser</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoUsers.svg</mod_doc>
+		<mod_doc>files/Model/DemoUsers.svg</mod_doc>
 		<mod_json/>
-		<mod_image>Model/DemoUsers.png</mod_image>
+		<mod_image>files/Model/DemoUsers.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<mod_name>DemoWorkflow</mod_name>
 		<mod_template_id.mtp_name>ModelProcess</mod_template_id.mtp_name>
-		<mod_doc>Model/DemoWorkflow.svg</mod_doc>
+		<mod_doc>files/Model/DemoWorkflow.svg</mod_doc>
 		<mod_json/>
-		<mod_image>Model/DemoWorkflow.png</mod_image>
+		<mod_image>files/Model/DemoWorkflow.png</mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -200,7 +200,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<usr_login>admin</usr_login>
 		<usr_lang>ENU</usr_lang>
-		<usr_image_id>User/admin.png</usr_image_id>
+		<usr_image_id>files/User/admin.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
@@ -231,7 +231,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<usr_login>user_enu</usr_login>
 		<usr_lang>ENU</usr_lang>
-		<usr_image_id>User/user_enu.png</usr_image_id>
+		<usr_image_id>files/User/user_enu.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
@@ -262,7 +262,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<usr_login>user_fra</usr_login>
 		<usr_lang>FRA</usr_lang>
-		<usr_image_id>User/user_fra.png</usr_image_id>
+		<usr_image_id>files/User/user_fra.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
@@ -293,7 +293,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<usr_login>website</usr_login>
 		<usr_lang>ENU</usr_lang>
-		<usr_image_id>User/website.png</usr_image_id>
+		<usr_image_id>files/User/website.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>25</usr_maxrows>
@@ -10617,7 +10617,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<prt_usage>L</prt_usage>
 		<prt_type>FILE</prt_type>
 		<prt_method/>
-		<prt_file>PrintTemplate/DemoSupplier-CATALOG.html</prt_file>
+		<prt_file>files/PrintTemplate/DemoSupplier-CATALOG.html</prt_file>
 		<prt_template_id.tpl_name/>
 		<prt_mimetype>html</prt_mimetype>
 		<prt_filename/>
@@ -12337,6 +12337,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_level>10</trv_level>
 		<trv_object_id.obo_name>DemoClient</trv_object_id.obo_name>
 		<trv_field_id.fld_name/>
+		<trv_action>D;F</trv_action>
 		<trv_external_id.obe_name/>
 		<trv_action_id.act_name/>
 		<trv_shortcut_id.shc_name/>
@@ -12354,6 +12355,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_level>10-10</trv_level>
 		<trv_object_id.obo_name>DemoContact</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoCtcCliId</trv_field_id.fld_name>
+		<trv_action>D;F</trv_action>
 		<trv_external_id.obe_name/>
 		<trv_action_id.act_name/>
 		<trv_shortcut_id.shc_name/>
@@ -12371,6 +12373,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_level>10-20</trv_level>
 		<trv_object_id.obo_name>DemoOrder</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoOrdCliId</trv_field_id.fld_name>
+		<trv_action>D;F</trv_action>
 		<trv_external_id.obe_name/>
 		<trv_action_id.act_name/>
 		<trv_shortcut_id.shc_name/>
@@ -12388,6 +12391,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_level>10</trv_level>
 		<trv_object_id.obo_name>DemoSupplier</trv_object_id.obo_name>
 		<trv_field_id.fld_name/>
+		<trv_action>D;F</trv_action>
 		<trv_external_id.obe_name/>
 		<trv_action_id.act_name/>
 		<trv_shortcut_id.shc_name/>
@@ -12405,6 +12409,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_level>10-10</trv_level>
 		<trv_object_id.obo_name>DemoProduct</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoPrdSupId</trv_field_id.fld_name>
+		<trv_action>D;F</trv_action>
 		<trv_external_id.obe_name/>
 		<trv_action_id.act_name/>
 		<trv_shortcut_id.shc_name/>
@@ -12422,6 +12427,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_level>10-10-10</trv_level>
 		<trv_object_id.obo_name>DemoOrder</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoOrdPrdId</trv_field_id.fld_name>
+		<trv_action>D;F</trv_action>
 		<trv_external_id.obe_name/>
 		<trv_action_id.act_name/>
 		<trv_shortcut_id.shc_name/>
@@ -12451,8 +12457,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>DEMO_PRINT_STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>Disposition/default-resources/DEMO_PRINT_STYLES.less</res_file>
-		<res_file_compiled>Disposition/default-resources/DEMO_PRINT_STYLES.min.css</res_file_compiled>
+		<res_file>resources/Disposition/default/DEMO_PRINT_STYLES.less</res_file>
+		<res_file_compiled>resources/Disposition/default/DEMO_PRINT_STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12471,7 +12477,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>1</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>Disposition/default-resources/demo.png</res_image>
+		<res_image>resources/Disposition/default/demo.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12489,7 +12495,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>1</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>Disposition/default-resources/simplicite.png</res_image>
+		<res_image>resources/Disposition/default/simplicite.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12507,7 +12513,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>1</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>Disposition/default-resources/DEMO_LOGO.png</res_image>
+		<res_image>resources/Disposition/default/DEMO_LOGO.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12523,7 +12529,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoOrderAgenda-resources/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/DemoOrderAgenda/HTML.html</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12541,8 +12547,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoOrderAgenda-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectExternal/DemoOrderAgenda-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoOrderAgenda/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoOrderAgenda/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12559,8 +12565,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectExternal/DemoPlaceNewOrder-resources/STYLES.min.css</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoPlaceNewOrder/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12577,7 +12583,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/HTML.html</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12595,8 +12601,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoPlaceNewOrder-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectExternal/DemoPlaceNewOrder-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoPlaceNewOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12615,7 +12621,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>ObjectExternal/DemoWebSite-resources/FAVICON.ico</res_image>
+		<res_image>resources/ObjectExternal/DemoWebSite/FAVICON.ico</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12633,7 +12639,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>ObjectExternal/DemoWebSite-resources/LOADING.gif</res_image>
+		<res_image>resources/ObjectExternal/DemoWebSite/LOADING.gif</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12651,7 +12657,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>ObjectExternal/DemoWebSite-resources/LOGO.png</res_image>
+		<res_image>resources/ObjectExternal/DemoWebSite/LOGO.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12667,8 +12673,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoWebSite-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectExternal/DemoWebSite-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoWebSite/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoWebSite/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12685,8 +12691,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/demo-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectExternal/demo-resources/STYLES.min.css</res_file_compiled>
+		<res_file>resources/ObjectExternal/demo/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectExternal/demo/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12703,7 +12709,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/demo-resources/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/demo/HTML.html</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12723,7 +12729,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>ObjectExternal/demo-resources/FAVICON.png</res_image>
+		<res_image>resources/ObjectExternal/demo/FAVICON.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12741,7 +12747,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>ObjectExternal/demo-resources/BANNER.jpg</res_image>
+		<res_image>resources/ObjectExternal/demo/BANNER.jpg</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12757,8 +12763,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/demo-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectExternal/demo-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectExternal/demo/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/demo/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12775,8 +12781,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectInternal/DemoClient-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectInternal/DemoClient-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectInternal/DemoClient/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectInternal/DemoClient/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12793,8 +12799,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectInternal/DemoOrder-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectInternal/DemoOrder-resources/STYLES.min.css</res_file_compiled>
+		<res_file>resources/ObjectInternal/DemoOrder/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectInternal/DemoOrder/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12811,8 +12817,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectInternal/DemoOrder-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectInternal/DemoOrder-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectInternal/DemoOrder/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectInternal/DemoOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16635,7 +16641,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<mdDocCode>DEMO</mdDocCode>
 		<mdDocURL><![CDATA[/ext/MDViewer?doc=DEMO]]></mdDocURL>
 		<mdDocTitle>Demo</mdDocTitle>
-		<mdDocFile>MDDocument/DEMO.md</mdDocFile>
+		<mdDocFile>docs/MDDocument/DEMO.md</mdDocFile>
 		<mdDocPublished>1</mdDocPublished>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16645,7 +16651,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<mdImgCode>DEMO_LOGO</mdImgCode>
-		<mdImgFile>MDImage/DEMO_LOGO.png</mdImgFile>
+		<mdImgFile>docs/MDImage/DEMO_LOGO.png</mdImgFile>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
