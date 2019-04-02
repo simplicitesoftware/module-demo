@@ -8846,6 +8846,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8869,6 +8870,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8892,6 +8894,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8915,6 +8918,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8938,6 +8942,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8961,6 +8966,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8984,6 +8990,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -9007,6 +9014,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -9030,6 +9038,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoSupplier-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
