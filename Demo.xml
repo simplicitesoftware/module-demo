@@ -386,7 +386,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<grp_name>DEMO_ADMIN</grp_name>
 		<grp_comment><![CDATA[Administrator]]></grp_comment>
-		<grp_type>G;D;W</grp_type>
+		<grp_type>G;D;W;R</grp_type>
 		<grp_parent_id.grp_name/>
 		<grp_home_id.viw_name>DemoAdminHome</grp_home_id.viw_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -402,7 +402,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<grp_name>DEMO_USER</grp_name>
 		<grp_comment><![CDATA[User]]></grp_comment>
-		<grp_type>G;D;W</grp_type>
+		<grp_type>G;D;W;R</grp_type>
 		<grp_parent_id.grp_name/>
 		<grp_home_id.viw_name>DemoUserHome</grp_home_id.viw_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -16701,6 +16701,42 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.pcs_name>DemoOrderCreate</tsl_id.pcs_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Processus nouvelle commande</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateGroup</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeGroup>U</tsl_typeGroup>
+		<tsl_id.grp_name>DEMO_ADMIN</tsl_id.grp_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Demo administrator</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeGroup>U</tsl_typeGroup>
+		<tsl_id.grp_name>DEMO_USER</tsl_id.grp_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Demo user</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeGroup>U</tsl_typeGroup>
+		<tsl_id.grp_name>DEMO_ADMIN</tsl_id.grp_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Administrateur de la démo</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeGroup>U</tsl_typeGroup>
+		<tsl_id.grp_name>DEMO_USER</tsl_id.grp_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Utilisateur de la démo</tsl_value>
+		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>

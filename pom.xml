@@ -40,7 +40,13 @@
     <dependency>
       <groupId>com.simplicite</groupId>
       <artifactId>simplicite-api</artifactId>
-      <version>4.0.P23b-SNAPSHOT</version>
+      <version>4.0.P24b-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.simplicite</groupId>
+      <artifactId>simplicite-api</artifactId>
+      <version>4.0.P24b-SNAPSHOT</version>
+      <classifier>javadoc</classifier>
     </dependency>
   </dependencies>
 </project>
