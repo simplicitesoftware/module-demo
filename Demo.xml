@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-03-25 17:12:33</mdl_lastupd>
+		<mdl_lastupd>2019-04-24 12:45:25</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -63,7 +63,7 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
-		<thm_addon>files/Theme/demo/addon.less</thm_addon>
+		<thm_addon/>
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font/>
@@ -227,6 +227,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
+		<usr_last_logon/>
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
@@ -258,6 +259,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>0</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:06</usr_logout>
+		<usr_last_logon/>
 	</data>
 	<data>
 		<usr_login>user_fra</usr_login>
@@ -289,6 +291,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>0</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
+		<usr_last_logon/>
 	</data>
 	<data>
 		<usr_login>website</usr_login>
@@ -320,6 +323,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
+		<usr_last_logon/>
 	</data>
 </object>
 <object>
@@ -10037,6 +10041,18 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<cst_name>DemoContact-C4</cst_name>
+		<cst_object_id.obo_name>DemoContact</cst_object_id.obo_name>
+		<cst_order>30</cst_order>
+		<cst_desc><![CDATA[Hide subtype depending on type]]></cst_desc>
+		<cst_type>E</cst_type>
+		<cst_effects>F;B</cst_effects>
+		<cst_field_id.fld_name/>
+		<cst_expr><![CDATA[true]]></cst_expr>
+		<cst_method/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<cst_name>DemoOrder-C1</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>10</cst_order>
@@ -10264,6 +10280,21 @@ state transition to _shipped_ status.]]></act_comment>
 		<csi_objfield_id.obf_object_id.obo_name>DemoContact</csi_objfield_id.obf_object_id.obo_name>
 		<csi_objfield_id.obf_field_id.fld_name>demoCtcType</csi_objfield_id.obf_field_id.fld_name>
 		<csi_objfield_id.obf_order>110</csi_objfield_id.obf_order>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<csi_const_id.cst_name>DemoContact-C4</csi_const_id.cst_name>
+		<csi_const_id.cst_object_id.obo_name>DemoContact</csi_const_id.cst_object_id.obo_name>
+		<csi_const_id.cst_order>30</csi_const_id.cst_order>
+		<csi_order>10</csi_order>
+		<csi_object_prop/>
+		<csi_field_prop>V</csi_field_prop>
+		<csi_apply>F</csi_apply>
+		<csi_expr><![CDATA[![FIELD:demoCtcType].isEmpty() && [VALUE:demoCtcType] != "OTH"]]></csi_expr>
+		<csi_target/>
+		<csi_objfield_id.obf_object_id.obo_name>DemoContact</csi_objfield_id.obf_object_id.obo_name>
+		<csi_objfield_id.obf_field_id.fld_name>demoCtcSubType</csi_objfield_id.obf_field_id.fld_name>
+		<csi_objfield_id.obf_order>120</csi_objfield_id.obf_order>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>

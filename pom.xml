@@ -5,16 +5,18 @@
   <version>4.0-SNAPSHOT</version>
   <artifactId>Demo</artifactId>
   <name>Demo</name>
-  <packaging>jar</packaging>
-  <url>https://dev40.dev.simplicite.io</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <simplicite.url>https://dev40.dev.simplicite.io</simplicite.url>
+    <simplicite.version>4.0.P24b-SNAPSHOT</simplicite.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
     <sonar.sources>src,resources</sonar.sources>
     <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
   </properties>
+  <packaging>jar</packaging>
+  <url>${simplicite.url}</url>
   <build>
     <sourceDirectory>${project.basedir}/src</sourceDirectory>
     <testSourceDirectory>${project.basedir}/test/src</testSourceDirectory>
@@ -28,24 +30,24 @@
   <repositories>
     <repository>
       <id>simplicite</id>
-      <url>https://dev40.dev.simplicite.io/maven</url>
+      <url>${simplicite.url}/maven</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
   </repositories>
   <scm>
-    <url>https://dev40.dev.simplicite.io/git/Demo</url>
+    <url>${simplicite.url}/git/Demo</url>
   </scm>
   <dependencies>
     <dependency>
       <groupId>com.simplicite</groupId>
       <artifactId>simplicite-api</artifactId>
-      <version>4.0.P24b-SNAPSHOT</version>
+      <version>${simplicite.version}</version>
     </dependency>
     <dependency>
       <groupId>com.simplicite</groupId>
       <artifactId>simplicite-api</artifactId>
-      <version>4.0.P24b-SNAPSHOT</version>
+      <version>${simplicite.version}</version>
       <classifier>javadoc</classifier>
     </dependency>
   </dependencies>
