@@ -3139,7 +3139,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updatable>2</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research/>
+		<fld_research>1</fld_research>
 		<fld_researchreq/>
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
@@ -3160,7 +3160,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>NAME</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Product brochure]]></fld_comment>
@@ -4802,7 +4802,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>1</obo_mergeable>
@@ -4925,7 +4925,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>0</obo_mergeable>
@@ -5048,7 +5048,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>0</obo_mergeable>
@@ -5171,7 +5171,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>0</obo_mergeable>
@@ -5232,7 +5232,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>0</obo_mergeable>
@@ -10620,113 +10620,113 @@ state transition to _shipped_ status.]]></act_comment>
 		<prt_object_id.obo_name>DemoContact</prt_object_id.obo_name>
 		<prt_name>DemoContact-Excel</prt_name>
 		<prt_usage>L</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Excel publication example</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>xlsx</prt_mimetype>
 		<prt_type>METH</prt_type>
 		<prt_method>printExcel</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
-		<prt_mimetype>xlsx</prt_mimetype>
-		<prt_filename/>
-		<prt_translation>Excel publication example</prt_translation>
-		<prt_lang>ANY</prt_lang>
-		<prt_grantable>0</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
 		<prt_name>DemoOrder-PDF</prt_name>
 		<prt_usage>O</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Receipt</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>pdf</prt_mimetype>
 		<prt_type>METH</prt_type>
 		<prt_method>printReceipt</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
-		<prt_mimetype>pdf</prt_mimetype>
-		<prt_filename/>
-		<prt_translation>Receipt</prt_translation>
-		<prt_lang>ANY</prt_lang>
-		<prt_grantable>0</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
 		<prt_name>DemoOrder-XML</prt_name>
 		<prt_usage>L</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>XML publication example</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>xml</prt_mimetype>
 		<prt_type>TMPL</prt_type>
 		<prt_method/>
 		<prt_file/>
 		<prt_template_id.tpl_name>DemoOrder-XML</prt_template_id.tpl_name>
-		<prt_mimetype>xml</prt_mimetype>
-		<prt_filename/>
-		<prt_translation>XML publication example</prt_translation>
-		<prt_lang>ANY</prt_lang>
-		<prt_grantable>0</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
 		<prt_name>DemoProduct-EMAIL</prt_name>
 		<prt_usage>X</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ENU</prt_lang>
+		<prt_translation>Low stock email</prt_translation>
+		<prt_filename/>
+		<prt_mimetype/>
 		<prt_type>TMPL</prt_type>
 		<prt_method/>
 		<prt_file/>
 		<prt_template_id.tpl_name>DemoProduct-EMAIL-ENU</prt_template_id.tpl_name>
-		<prt_mimetype/>
-		<prt_filename/>
-		<prt_translation>Low stock email</prt_translation>
-		<prt_lang>ENU</prt_lang>
-		<prt_grantable>0</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
 		<prt_name>DemoProduct-EMAIL</prt_name>
 		<prt_usage>X</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>FRA</prt_lang>
+		<prt_translation>Email stock bas</prt_translation>
+		<prt_filename/>
+		<prt_mimetype/>
 		<prt_type>TMPL</prt_type>
 		<prt_method/>
 		<prt_file/>
 		<prt_template_id.tpl_name>DemoProduct-EMAIL-FRA</prt_template_id.tpl_name>
-		<prt_mimetype/>
-		<prt_filename/>
-		<prt_translation>Email stock bas</prt_translation>
-		<prt_lang>FRA</prt_lang>
-		<prt_grantable>0</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
 		<prt_name>DemoProduct-Word</prt_name>
 		<prt_usage>E</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>1</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Brochure</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>docx</prt_mimetype>
 		<prt_type>METH</prt_type>
 		<prt_method>printCatalog</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
-		<prt_mimetype>docx</prt_mimetype>
-		<prt_filename/>
-		<prt_translation>Brochure</prt_translation>
-		<prt_lang>ANY</prt_lang>
-		<prt_grantable>1</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoSupplier</prt_object_id.obo_name>
 		<prt_name>DemoSupplier-CATALOG</prt_name>
 		<prt_usage>L</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Catalog</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>html</prt_mimetype>
 		<prt_type>FILE</prt_type>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoSupplier-CATALOG.html</prt_file>
 		<prt_template_id.tpl_name/>
-		<prt_mimetype>html</prt_mimetype>
-		<prt_filename/>
-		<prt_translation>Catalog</prt_translation>
-		<prt_lang>ANY</prt_lang>
-		<prt_grantable>0</prt_grantable>
-		<prt_visible>1</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -11820,7 +11820,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>7</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC1</cax_crosstab_id.ctb_name>
@@ -11835,7 +11840,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>4</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -11850,7 +11860,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>4</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -11865,7 +11880,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -11880,7 +11900,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -11895,7 +11920,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula><![CDATA[values[1] != 0 ? values[0] / values[1] : 0]]></cax_formula>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type/>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -11910,7 +11940,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>2</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -11925,7 +11960,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>1</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -11940,7 +11980,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -11955,7 +12000,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -11970,7 +12020,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>1</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -11985,7 +12040,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>2</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 </object>
 <object>
