@@ -435,6 +435,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<prf_profile_id.grp_name>DEMO_ADMIN</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>MODELER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>DEMO_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>SOCIAL_USER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4858,7 +4863,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>chat</obo_icon>
@@ -4880,7 +4885,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -12505,6 +12510,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_process_id.pcs_name/>
 		<trv_subtree_id.trv_name/>
 		<trv_open>0</trv_open>
+		<trv_nolist/>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name/>
@@ -12523,6 +12529,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_process_id.pcs_name/>
 		<trv_subtree_id.trv_name/>
 		<trv_open>0</trv_open>
+		<trv_nolist/>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoClientTreeview</trv_parent_id.trv_tree_id.trv_name>
@@ -12541,6 +12548,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_process_id.pcs_name/>
 		<trv_subtree_id.trv_name/>
 		<trv_open>0</trv_open>
+		<trv_nolist/>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoClientTreeview</trv_parent_id.trv_tree_id.trv_name>
@@ -12559,6 +12567,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_process_id.pcs_name/>
 		<trv_subtree_id.trv_name/>
 		<trv_open>0</trv_open>
+		<trv_nolist/>
 		<trv_pagine>0</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name/>
@@ -12577,6 +12586,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_process_id.pcs_name/>
 		<trv_subtree_id.trv_name/>
 		<trv_open>0</trv_open>
+		<trv_nolist/>
 		<trv_pagine>0</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoSupplierTreeview</trv_parent_id.trv_tree_id.trv_name>
@@ -12595,6 +12605,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_process_id.pcs_name/>
 		<trv_subtree_id.trv_name/>
 		<trv_open>0</trv_open>
+		<trv_nolist/>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoSupplierTreeview</trv_parent_id.trv_tree_id.trv_name>
