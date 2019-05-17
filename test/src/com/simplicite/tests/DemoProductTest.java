@@ -13,6 +13,6 @@ public class DemoProductTest {
 	/** Increment test */
 	@Test
 	public void testIncrement() {
-		assertEquals(10, DemoProduct.INCREMENT);
+		assertEquals(10, DemoProduct.DEFAULT_INCREMENT);
 	}
 }
