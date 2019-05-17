@@ -24,9 +24,9 @@ public class DemoProductTest {
 			ObjectField s = prd.getField("demoPrdStock");
 			int n = s.getInt(0);
 			HashMap<String, String> params = new HashMap<>();
-			params.put("demoPrdIncrement", "10");
+			params.put("demoPrdIncrement", String.valueOf(DemoProduct.DEFAULT_INCREMENT));
 			prd.increaseStock(params);
-			assertEquals(n + 10, s.getInt(0));
+			assertEquals(n + DemoProduct.DEFAULT_INCREMENT, s.getInt(0));
 		} catch (Exception e) {
 			fail(e.getMessage());
 		}

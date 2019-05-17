@@ -9430,8 +9430,14 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<afd_action_id.act_name>DEMO_INCSTOCK</afd_action_id.act_name>
-		<afd_field_id.fld_name>demoPrdIncrement</afd_field_id.fld_name>
+		<afd_field_id.fld_name>demoPrdStock</afd_field_id.fld_name>
 		<afd_order>1</afd_order>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<afd_action_id.act_name>DEMO_INCSTOCK</afd_action_id.act_name>
+		<afd_field_id.fld_name>demoPrdIncrement</afd_field_id.fld_name>
+		<afd_order>2</afd_order>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>

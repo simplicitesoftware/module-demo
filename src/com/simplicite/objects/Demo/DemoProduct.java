@@ -23,9 +23,12 @@ import com.simplicite.util.tools.JUnitTool;
 public class DemoProduct extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
+	/** Defauklt increment */
+	public static final int DEFAULT_INCREMENT = 10;
+
 	/** Action: increase stock */
 	public String increaseStock(Map<String, String> params) {
-		int q = Tool.parseInt(params.get("demoPrdIncrement"), 0);
+		int q = Tool.parseInt(params.get("demoPrdIncrement"), DEFAULT_INCREMENT);
 		if (q > 0) {
 			ObjectField s = getField("demoPrdStock");
 			s.setValue(s.getInt(0) + q);
