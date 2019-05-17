@@ -834,6 +834,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_PRD_ERR_INCREMENT</lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Value for increment is not valid]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_DECREASED</lov_code>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Stock has been decreased]]></lov_value>
@@ -845,7 +854,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_INCREASED</lov_code>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Stock has been increased]]></lov_value>
+		<lov_value><![CDATA[Stock has been increased to]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -924,6 +933,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_PRD_ERR_INCREMENT</lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[La valeur pour l'incrément n'est pas valide]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_DECREASED</lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Le stock a été diminué]]></lov_value>
@@ -935,7 +953,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_INCREASED</lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Le stock a été augmenté]]></lov_value>
+		<lov_value><![CDATA[Le stock a été augmenté à]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -3278,6 +3296,41 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>demoPrdIncrement</fld_name>
+		<fld_dbname/>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>1</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research/>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_type>1</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>0</fld_copy>
+		<fld_size>5</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault><![CDATA[10]]></fld_dfault>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>0</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering>NUM</fld_rendering>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[Increment]]></fld_comment>
+		<fld_classification/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>demoPrdName</fld_name>
 		<fld_dbname>prd_name</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -4800,7 +4853,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>user</obo_icon>
@@ -4923,7 +4976,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit/>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon/>
@@ -4986,7 +5039,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>folder</obo_icon>
@@ -5046,7 +5099,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit/>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon/>
@@ -5109,7 +5162,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>box</obo_icon>
@@ -5169,7 +5222,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N</obo_list_edit>
+		<obo_list_edit/>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon/>
@@ -5230,7 +5283,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>building</obo_icon>
@@ -9370,6 +9423,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+	</data>
+</object>
+<object>
+	<name>ActionField</name>
+	<action>upsert</action>
+	<data>
+		<afd_action_id.act_name>DEMO_INCSTOCK</afd_action_id.act_name>
+		<afd_field_id.fld_name>demoPrdIncrement</afd_field_id.fld_name>
+		<afd_order>1</afd_order>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -13919,6 +13982,17 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdIncrement</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Increment quantity?</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdName</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Name</tsl_value>
@@ -14582,6 +14656,17 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.fld_name>demoPrdDocumentation</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Description</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdIncrement</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Quantité à incrémenter ?</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>

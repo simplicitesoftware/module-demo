@@ -3,6 +3,8 @@ package com.simplicite.objects.Demo;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
+import java.util.Map;
+
 import org.junit.Test;
 
 import com.simplicite.util.AppLog;
@@ -11,6 +13,7 @@ import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.PrintTemplate;
+import com.simplicite.util.Tool;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.JUnitTool;
 
@@ -20,18 +23,19 @@ import com.simplicite.util.tools.JUnitTool;
 public class DemoProduct extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	/** Increase stock increment */
-	public final static int INCREMENT = 10;
-
 	/** Action: increase stock */
-	public String increaseStock() {
-		ObjectField s = getField("demoPrdStock");
-		s.setValue(s.getInt(0) + INCREMENT);
-		save();
-		// Log
-		AppLog.info(getClass(), "increaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
-		// User message
-		return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED");
+	public String increaseStock(Map<String, String> params) {
+		int q = Tool.parseInt(params.get("demoPrdIncrement"), 0);
+		if (q > 0) {
+			ObjectField s = getField("demoPrdStock");
+			s.setValue(s.getInt(0) + q);
+			save();
+			// Log
+			AppLog.info(getClass(), "increaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
+			// User message
+			return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
+		} else
+			return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + q);
 	}
 
 	/** Action: decrease stock */
@@ -84,9 +88,9 @@ public class DemoProduct extends ObjectDB {
 				prd.setValues(prd.search().get(0));
 				ObjectField s = prd.getField("demoPrdStock");
 				int n = s.getInt(0);
-				prd.setParameter("QUANTITY", INCREMENT);
+				prd.setParameter("QUANTITY", 10);
 				prd.invokeAction("DEMO_DECSTOCK");
-				assertEquals(n - INCREMENT, s.getInt(0));
+				assertEquals(n - 10, s.getInt(0));
 			} catch (Exception e) {
 				fail(e.getMessage());
 			}

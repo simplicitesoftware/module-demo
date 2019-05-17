@@ -3,6 +3,8 @@ package com.simplicite.commons.Demo;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
+import java.util.HashMap;
+
 import org.junit.Test;
 
 import com.simplicite.objects.Demo.DemoProduct;
@@ -21,8 +23,10 @@ public class DemoProductTest {
 			prd.setValues(prd.search().get(0));
 			ObjectField s = prd.getField("demoPrdStock");
 			int n = s.getInt(0);
-			prd.increaseStock();
-			assertEquals(n + DemoProduct.INCREMENT, s.getInt(0));
+			HashMap<String, String> params = new HashMap<>();
+			params.put("demoPrdIncrement", "10");
+			prd.increaseStock(params);
+			assertEquals(n + 10, s.getInt(0));
 		} catch (Exception e) {
 			fail(e.getMessage());
 		}
