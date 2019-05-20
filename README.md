@@ -200,7 +200,7 @@ An order is for one single product.
 | _Ref. `demoOrdPrdId.demoPrdName`_                            | _char(100)_                              |          |           |          | _Product name_                                                                   |
 | _Ref. `demoOrdPrdId.demoPrdPicture`_                         | _image_                                  |          |           |          | _Product picture_                                                                |
 | _Ref. `demoOrdPrdId.demoPrdSupId`_                           | _id_                                     |          |           |          | _Product supplier_                                                               |
-| _Ref. `demoPrdSupId.demoSupCode`_                            | _char(10)_                               |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
+| _Ref. `demoPrdSupId.demoSupCode`_                            | _char(50)_                               |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
 | _Ref. `demoPrdSupId.demoSupName`_                            | _char(100)_                              |          |           |          | _Supplier name_                                                                  |
 | _Ref. `demoPrdSupId.demoSupLogo`_                            | _image_                                  |          |           |          | _Supplier logo_                                                                  |
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
@@ -269,7 +269,7 @@ Its reference is unique per supplier.
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
 | `demoPrdSupId` link to **`DemoSupplier`**                    | id                                       | yes*     | yes       |          | Product supplier                                                                 |
-| _Ref. `demoPrdSupId.demoSupCode`_                            | _char(10)_                               |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
+| _Ref. `demoPrdSupId.demoSupCode`_                            | _char(50)_                               |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
 | _Ref. `demoPrdSupId.demoSupName`_                            | _char(100)_                              |          |           |          | _Supplier name_                                                                  |
 | _Ref. `demoPrdSupId.demoSupLogo`_                            | _image_                                  |          |           |          | _Supplier logo_                                                                  |
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
@@ -324,7 +324,7 @@ suppliers of products that can be ordered.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `demoSupCode`                                                | char(10)                                 | yes*     | yes       |          | Supplier unique code (e.g. `MYSUP`)                                              |
+| `demoSupCode`                                                | char(50)                                 | yes*     | yes       |          | Supplier unique code (e.g. `MYSUP`)                                              |
 | `demoSupName`                                                | char(100)                                | yes      | yes       |          | Supplier name                                                                    |
 | `demoSupDescription`                                         | text(1000000)                            |          | yes       |          | Supplier description                                                             |
 | `demoSupPhone`                                               | phone(20)                                |          | yes       |          | Supplier phone number                                                            |
