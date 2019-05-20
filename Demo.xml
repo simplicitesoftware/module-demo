@@ -106,10 +106,13 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<viw_name>DemoHome</viw_name>
-		<viw_template><![CDATA[<div class="area">[AREA:1,2,4:=]</div>
-<div class="area">[AREA:3:=]</div>]]></viw_template>
-		<viw_ui><![CDATA[<div class="row"><div class="area col-sm-12" data-area="1,2,4:="></div></div>
-<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>]]></viw_ui>
+		<viw_template><![CDATA[<div class="area">[AREA:1,2,4,5:=]</div>
+<div class="area">[AREA:3:=]</div>
+]]></viw_template>
+		<viw_ui><![CDATA[<div>
+	<div class="row"><div class="area col-sm-12" data-area="1,2,4,5:="></div></div>
+	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
+</div>]]></viw_ui>
 		<viw_order>100</viw_order>
 		<viw_icon>demo</viw_icon>
 		<viw_disp_id.dis_code/>
@@ -291,7 +294,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>0</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
-		<usr_last_logon/>
+		<usr_last_logon>2019-05-17 17:06:07</usr_last_logon>
 	</data>
 	<data>
 		<usr_login>website</usr_login>
@@ -3592,7 +3595,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
-		<fld_size>10</fld_size>
+		<fld_size>50</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
@@ -3601,7 +3604,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_autocomp>1</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
-		<fld_case>U</fld_case>
+		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
 		<fld_calc/>
@@ -9330,7 +9333,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
-		<act_type>F</act_type>
+		<act_type>O</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
 		<act_method>increaseStock</act_method>
@@ -12391,6 +12394,25 @@ state transition to _shipped_ status.]]></act_comment>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+		<vwi_position>5</vwi_position>
+		<vwi_type>Z</vwi_type>
+		<vwi_title>1</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show>DemoSupplier</vwi_show>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_graph_id.gph_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name>DemoSupplier-CATALOG</vwi_printtmpl_id.prt_name>
+		<vwi_printtmpl_id.prt_lang>ANY</vwi_printtmpl_id.prt_lang>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
