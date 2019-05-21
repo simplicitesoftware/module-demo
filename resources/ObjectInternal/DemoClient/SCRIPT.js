@@ -8,8 +8,8 @@ var DemoClient = typeof DemoClient !== "undefined" ? DemoClient : (function($) {
 	var map = function() {
 		var rowId = getFieldValue("row_id");
 		if (rowId && rowId != "0") {
-			var n = getFieldValue("demoCliFirstname") + " " + getFieldValue("demoCliLastname");
-			var a = getFieldValue("demoCliAddress1") + ", " + getFieldValue("demoCliZipCode") + " " + getFieldValue("demoCliCity") + ", " + getFieldValue("demoCliCountry");
+			var n = $.escapeHTML(getFieldValue("demoCliFirstname") + " " + getFieldValue("demoCliLastname"));
+			var a = $.escapeHTML(getFieldValue("demoCliAddress1") + ", " + getFieldValue("demoCliZipCode") + " " + getFieldValue("demoCliCity") + ", " + getFieldValue("demoCliCountry"));
 			var c = getFieldValue("demoCliCoords");
 			if (c !== "") {
 				var l = c.replace(";", ",").split(",");
