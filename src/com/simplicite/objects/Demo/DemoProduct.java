@@ -23,7 +23,7 @@ import com.simplicite.util.tools.JUnitTool;
 public class DemoProduct extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	/** Defauklt increment */
+	/** Default increment */
 	public static final int DEFAULT_INCREMENT = 10;
 
 	/** Action: increase stock */

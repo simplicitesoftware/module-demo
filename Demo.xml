@@ -231,6 +231,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
 		<usr_last_logon/>
+		<usr_dateformat/>
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
@@ -263,6 +264,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:06</usr_logout>
 		<usr_last_logon/>
+		<usr_dateformat/>
 	</data>
 	<data>
 		<usr_login>user_fra</usr_login>
@@ -295,6 +297,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
 		<usr_last_logon>2019-05-17 17:06:07</usr_last_logon>
+		<usr_dateformat/>
 	</data>
 	<data>
 		<usr_login>website</usr_login>
@@ -326,7 +329,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon/>
+		<usr_last_logon>2019-05-27 19:36:15</usr_last_logon>
+		<usr_dateformat/>
 	</data>
 </object>
 <object>
