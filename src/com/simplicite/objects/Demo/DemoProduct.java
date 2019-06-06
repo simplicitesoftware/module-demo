@@ -88,7 +88,7 @@ public class DemoProduct extends ObjectDB {
 		public void testDecrement() {
 			try {
 				ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
-				prd.setValues(prd.search().get(0));
+				prd.setValues(prd.search().get(0), true);
 				ObjectField s = prd.getField("demoPrdStock");
 				int n = s.getInt(0);
 				prd.setParameter("QUANTITY", 10);
