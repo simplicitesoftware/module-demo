@@ -36,7 +36,7 @@ public class DemoCatalog extends ExternalObject {
 		DemoProduct prd = (DemoProduct)getGrant().getTmpObject("DemoProduct");
 		List<String[]> rows = prd.search();
 		for (int i = 0; i < rows.size(); i++) {
-			prd.setValues(rows.get(i));
+			prd.setValues(rows.get(i), false);
 			JSONObject p = new JSONObject();
 			p.put("ref", prd.getFieldValue("demoPrdReference"));
 			p.put("name", prd.getFieldValue("demoPrdName"));

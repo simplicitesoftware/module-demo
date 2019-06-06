@@ -20,7 +20,7 @@ public class DemoProductTest {
 	public void testIncrement() {
 		try {
 			DemoProduct prd = (DemoProduct)Grant.getSystemAdmin().getTmpObject("DemoProduct");
-			prd.setValues(prd.search().get(0));
+			prd.setValues(prd.search().get(0), true);
 			ObjectField s = prd.getField("demoPrdStock");
 			int n = s.getInt(0);
 			HashMap<String, String> params = new HashMap<>();
