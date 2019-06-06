@@ -64,6 +64,7 @@ paths:
         enum:
         - json
         - oauth2
+        - token
       tags:
       - session
   /rest/DemoContact/{row_id}/publication:DemoContact-Excel:
