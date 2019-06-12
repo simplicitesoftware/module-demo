@@ -1,5 +1,6 @@
 package com.simplicite.objects.Demo;
 
+import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.tools.GMapTool;
@@ -14,7 +15,7 @@ public class DemoClient extends ObjectDB {
 	/** Hook override: geolocate from address fields */
 	@Override
 	public String preSave() {
-		if (!isBatchInstance()) {
+		if (!isBatchInstance()) try {
 			ObjectField coords = getField("demoCliCoords");
 
 			ObjectField a1 = getField("demoCliAddress1");
@@ -26,11 +27,13 @@ public class DemoClient extends ObjectDB {
 
 			if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || a3.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
 				String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + (a3.isEmpty() ? "" : ", " + a3.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
-				console.log("Try to geocode " + a);
+				AppLog.info(getClass(), "preSave", "Try to geocode " + a, getGrant());
 				Location c = new GMapTool(getGrant()).geocodeOne(a);
-				console.log("Coordinates = " + c);
+				AppLog.info(getClass(), "preSave", "Coordinates = " + c, getGrant());
 				coords.setValue(c==null ?  "" : c.toString());
 			}
+		} catch (Exception e) {
+			AppLog.error(getClass(), "preSave", null, e, getGrant());
 		}
 		return super.preSave();
 	}

@@ -23,12 +23,12 @@ public class DemoOrder extends ObjectDB {
 		List<String> msgs = new ArrayList<>();
 		// Order quantity checking
 		if (getField("demoOrdQuantity").getInt(0) <= 0) {
-			console.error("Order quantity <0 for order " + getField("demoOrdNumber").getValue());
+			AppLog.error(getClass(), "postValidate", "Order quantity <0 for order " + getField("demoOrdNumber").getValue(), null, getGrant());
 			msgs.add(Message.formatError("ERR_DEMO_ORD_QUANTITY", null, "demoOrdQuantity"));
 		}
 		// Quantity checking
 		if ("D".equals(getStatus()) && getField("demoOrdPrdId.demoPrdStock").getInt(0) - getField("demoOrdQuantity").getInt(0) <= 0) {
-			console.error("Zero stock on " + getField("demoOrdPrdId.demoPrdReference").getValue());
+			AppLog.error(getClass(), "postValidate", "Zero stock on " + getField("demoOrdPrdId.demoPrdReference").getValue(), null, getGrant());
 			msgs.add(Message.formatSimpleError("ERR_DEMO_PRD_STOCK"));
 		}
 		// Set order unit price only at creation
