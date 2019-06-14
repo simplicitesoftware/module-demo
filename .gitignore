@@ -2,6 +2,9 @@
 /build
 /target
 /effective.pom
+/.project
+/.classpath
+/.settings
 /.idea
 /*.iml
 /.scannerwork
