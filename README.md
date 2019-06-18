@@ -384,3 +384,9 @@ Place new order internal page
 Demo website developed in Javascript & Bootstrap
 
 
+`demows` external object definition
+-----------------------------------
+
+Custom REST web services
+
+
