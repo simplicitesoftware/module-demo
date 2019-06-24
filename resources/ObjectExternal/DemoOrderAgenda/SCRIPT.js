@@ -4,12 +4,15 @@
 
 var DemoOrderAgenda = typeof DemoOrderAgenda !== "undefined" ? DemoOrderAgenda : (function($) {
 
-var app, responsive = typeof $ui !== "undefined", debug = false;
+var app, ord, responsive = typeof $ui !== "undefined", debug = false;
 
 function render(url) {
 	app = responsive ? $ui.getAjax() : Simplicite.Application;
-	var ord = app.getBusinessObject("DemoOrder", "agenda_DemoOrder");
+	ord = app.getBusinessObject("DemoOrder", "agenda_DemoOrder");
+	ord.getMetaData(renderCalendar);
+}
 
+function renderCalendar() {
 	$("#ordercalendar").addClass(!responsive ? "workborder" : null).fullCalendar({
 		header: {
 			left: "prev,next today",
@@ -55,12 +58,14 @@ function render(url) {
 					var item = ord.list[i];
 					if (item.demoOrdDeliveryDate !== "") { // ZZZ When using intervals empty values are included !
 						var s = moment(item.demoOrdDeliveryDate);
-						var e = moment(item.demoOrdDeliveryDate).add(2, "h");
+						var e = s.add(2, "h");
 						//console.debug("Event " + item.row_id + " (" + item.demoOrdDeliveryDate + ") = " + s.format(f) + " to " + e.format(f));
+						var status = ord.getField("demoOrdStatus");
+						console.log(status);
 						evts.push({
 							id: item.row_id,
 							data: item,
-							title: item.demoOrdNumber + "\n" + item.demoOrdCliId__demoCliCode + " / " + item.demoOrdPrdId__demoPrdReference,
+							title: item.demoOrdNumber + "\n" + item.demoOrdCliId__demoCliCode + " / " + item.demoOrdPrdId__demoPrdReference + "\n" + status.getDisplay() + ": " + status.displayValue(item.demoOrdStatus),
 							start: s,
 							end: e,
 							editable: item.demoOrdStatus == "P" || item.demoOrdStatus == "V",
