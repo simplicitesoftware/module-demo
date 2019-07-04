@@ -5,6 +5,7 @@
   <version>4.0-SNAPSHOT</version>
   <artifactId>Demo</artifactId>
   <name>Demo</name>
+  <description>Simplicite module: Demo</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simplicite.url>https://dev40.dev.simplicite.io</simplicite.url>
