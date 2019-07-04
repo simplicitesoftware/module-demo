@@ -8,5 +8,6 @@
 /.idea
 /*.iml
 /.scannerwork
+/.gradle
 /**/Thumbs.db
 /**/.DS_Store

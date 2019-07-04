@@ -63,7 +63,7 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
-		<thm_addon/>
+		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font/>
@@ -85,6 +85,22 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 	<name>View</name>
 	<action>upsert</action>
 	<data>
+		<viw_name>DemoHome</viw_name>
+		<viw_template><![CDATA[<div class="area">[AREA:1,2,4,5:=]</div>
+<div class="area">[AREA:3:=]</div>
+]]></viw_template>
+		<viw_ui><![CDATA[<div>
+	<div class="row"><div class="area col-sm-12" data-area="1,2,4,5:="></div></div>
+	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
+</div>]]></viw_ui>
+		<viw_order>100</viw_order>
+		<viw_icon>demo</viw_icon>
+		<viw_disp_id.dis_code/>
+		<viw_scope/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<viw_theme_id.thm_name/>
+	</data>
+	<data>
 		<viw_name>DemoAdminHome</viw_name>
 		<viw_template><![CDATA[<table style="width: 100%;">
 	<tr>
@@ -103,22 +119,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<viw_theme_id.thm_name>demo</viw_theme_id.thm_name>
-	</data>
-	<data>
-		<viw_name>DemoHome</viw_name>
-		<viw_template><![CDATA[<div class="area">[AREA:1,2,4,5:=]</div>
-<div class="area">[AREA:3:=]</div>
-]]></viw_template>
-		<viw_ui><![CDATA[<div>
-	<div class="row"><div class="area col-sm-12" data-area="1,2,4,5:="></div></div>
-	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
-</div>]]></viw_ui>
-		<viw_order>100</viw_order>
-		<viw_icon>demo</viw_icon>
-		<viw_disp_id.dis_code/>
-		<viw_scope/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name/>
 	</data>
 	<data>
 		<viw_name>DemoUserHome</viw_name>
@@ -329,7 +329,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-06-18 16:07:30</usr_last_logon>
+		<usr_last_logon>2019-07-03 12:49:46</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -4828,6 +4828,19 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obd_view_id.viw_name>DemoHome</obd_view_id.viw_name>
 		<obd_nohome>0</obd_nohome>
 		<obd_icon>demo</obd_icon>
+		<obd_order>70000</obd_order>
+		<obd_domain_id.obd_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obd_name>DemoSubDomain</obd_name>
+		<obd_comment/>
+		<obd_type>D</obd_type>
+		<obd_view_id.viw_name/>
+		<obd_nohome>1</obd_nohome>
+		<obd_icon>demo</obd_icon>
+		<obd_order>71000</obd_order>
+		<obd_domain_id.obd_name>DemoDomain</obd_domain_id.obd_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -12353,16 +12366,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>DemoPlaceNewOrder</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>70810</map_order>
-		<map_ext/>
+		<map_order>71010</map_order>
+		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>DemoOrderAgenda</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>70820</map_order>
-		<map_ext/>
+		<map_order>71020</map_order>
+		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -15306,9 +15319,25 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>DemoSubDomain</tsl_id.obd_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Others</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obd_name>DemoDomain</tsl_id.obd_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Démo</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obd_name>DemoSubDomain</tsl_id.obd_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Autres</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
