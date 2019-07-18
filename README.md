@@ -5,7 +5,7 @@
 |___/_|_|_|_| .__/_|_\__|_|\__\___|
             |_| 
 -->
-![](https://www.simplicite.io/resources//logos/logo250.png)
+![](https://docs.simplicite.io//logos/logo250.png)
 * * *
 
 `Demo` module definition

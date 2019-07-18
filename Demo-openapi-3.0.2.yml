@@ -321,8 +321,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         created_dt_hist:
           description: Date
           type: string
@@ -398,8 +398,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -597,8 +597,6 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
-servers:
-- url: https://dev40.dev.simplicite.io/api
 openapi: 3.0.2
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-EMAIL:
@@ -817,8 +815,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3001,8 +2999,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status

@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-04-24 12:45:25</mdl_lastupd>
+		<mdl_lastupd>2019-07-18 14:10:20</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -329,7 +329,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-07-03 12:49:46</usr_last_logon>
+		<usr_last_logon>2019-07-08 15:23:32</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -341,7 +341,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
 		<usp_value><![CDATA[dropdown]]></usp_value>
 		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[dropdown]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value><![CDATA[accordion]]></usp_param_id.sys_value>
 		<usp_param_id.sys_desc><![CDATA[**Menu style**:
 
 - `standard` Standard menu (left),
@@ -365,7 +365,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
 		<usp_value><![CDATA[split]]></usp_value>
 		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[dropdown]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value><![CDATA[accordion]]></usp_param_id.sys_value>
 		<usp_param_id.sys_desc><![CDATA[**Menu style**:
 
 - `standard` Standard menu (left),
@@ -380,7 +380,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
 		<usp_value><![CDATA[split]]></usp_value>
 		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[dropdown]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value><![CDATA[accordion]]></usp_param_id.sys_value>
 		<usp_param_id.sys_desc><![CDATA[**Menu style**:
 
 - `standard` Standard menu (left),
@@ -1045,7 +1045,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_name>DEMO_CTC_STATUS</lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
-		<lov_model_id.mod_image>Model/mod_image/0/41/DemoContactStates.png</lov_model_id.mod_image>
+		<lov_model_id.mod_image>files/Model/DemoContactStates.png</lov_model_id.mod_image>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE</lov_name>
@@ -1081,7 +1081,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_name>DEMO_ORD_STATUS</lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoOrderStates</lov_model_id.mod_name>
-		<lov_model_id.mod_image>Model/mod_image/0/40/DemoOrderStates.png</lov_model_id.mod_image>
+		<lov_model_id.mod_image>files/Model/DemoOrderStates.png</lov_model_id.mod_image>
 	</data>
 </object>
 <object>
@@ -7605,7 +7605,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>0</obf_fld_visible>
+		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research>0</obf_fld_research>
@@ -8127,7 +8127,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>0</obf_fld_visible>
+		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research>0</obf_fld_research>
@@ -10952,7 +10952,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<pcs_alert_id.alt_name/>
 		<pcs_compensate_id.pcs_name/>
 		<pcs_model_id.mod_name>DemoWorkflow</pcs_model_id.mod_name>
-		<pcs_model_id.mod_image>Model/mod_image/0/42/DemoWorkflow.png</pcs_model_id.mod_image>
+		<pcs_model_id.mod_image>files/Model/DemoWorkflow.png</pcs_model_id.mod_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<pcs_mainact_id.acy_step/>
 		<pcs_mainact_id.acy_name/>
@@ -13380,7 +13380,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_CLIENTMAP</tsl_id.act_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Locate on a map</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>This custom action displays a <strong>Google Map&reg;</strong> with the customer's address</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13420,7 +13420,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_INCSTOCK</tsl_id.act_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Increase stock</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>This action does a stock increment</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13460,7 +13460,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_CLIENTMAP</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Localiser sur une carte</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>Cette action sp&eacute;cifique affiche une carte <strong>Google Map&reg;</strong> avec l'adresse du client</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13500,7 +13500,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_INCSTOCK</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Augmenter le stock</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>Cette action r&eacute;alise un incr&eacute;ment de stock</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
