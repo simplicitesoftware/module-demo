@@ -3,7 +3,6 @@
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
 #             |_| Module: Demo 4.0
-basePath: /api
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-EMAIL:
     get:
@@ -194,8 +193,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -2021,8 +2020,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       tags:
       - DemoContactHistoric
   /rest/DemoClient:
@@ -2689,9 +2688,6 @@ paths:
       - DemoProduct
       consumes:
       - application/json
-host: dev40.dev.simplicite.io
-schemes:
-- https
 securityDefinitions:
   basicAuth:
     type: basic
@@ -3016,8 +3012,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       created_dt_hist:
         description: Date
         type: string
@@ -3093,8 +3089,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcDatetime:
         description: Contcat date and time
         type: string
