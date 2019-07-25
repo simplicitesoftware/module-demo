@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-07-18 14:10:20</mdl_lastupd>
+		<mdl_lastupd>2019-07-25 12:54:15</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -87,8 +87,7 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 	<data>
 		<viw_name>DemoHome</viw_name>
 		<viw_template><![CDATA[<div class="area">[AREA:1,2,4,5:=]</div>
-<div class="area">[AREA:3:=]</div>
-]]></viw_template>
+<div class="area">[AREA:3:=]</div>]]></viw_template>
 		<viw_ui><![CDATA[<div>
 	<div class="row"><div class="area col-sm-12" data-area="1,2,4,5:="></div></div>
 	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
