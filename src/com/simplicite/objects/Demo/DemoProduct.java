@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import com.simplicite.util.Action;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.Grant;
 import com.simplicite.util.Message;
@@ -25,6 +26,12 @@ public class DemoProduct extends ObjectDB {
 
 	/** Default increment */
 	public static final int DEFAULT_INCREMENT = 10;
+
+	/** Init default increment */
+	@Override
+	public void initAction(Action action) {
+		action.getConfirmField(getGrant().getLang(), "demoPrdIncrement").setDefaultValue(String.valueOf(DEFAULT_INCREMENT));
+	}
 
 	/** Action: increase stock */
 	public String increaseStock(Map<String, String> params) {

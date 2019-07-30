@@ -7,7 +7,7 @@
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-07-25 12:54:15</mdl_lastupd>
+		<mdl_lastupd>2019-07-30 12:00:43</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -1092,6 +1092,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code T1</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CLI_TYPE</lov_list_id.lov_name>
@@ -1099,6 +1103,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Code T2</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CLI_TYPE</lov_list_id.lov_name>
@@ -1106,6 +1114,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Code T3</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_COUNTRY</lov_list_id.lov_name>
@@ -1113,6 +1125,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>France</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_COUNTRY</lov_list_id.lov_name>
@@ -1120,6 +1136,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>United Kingdom</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_COUNTRY</lov_list_id.lov_name>
@@ -1127,6 +1147,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Spain</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
@@ -1134,6 +1158,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code PHONE</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
@@ -1141,6 +1169,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Code FAX</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
@@ -1148,6 +1180,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Code EMAIL</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
@@ -1155,6 +1191,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Code CHAT</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
@@ -1162,6 +1202,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>5</lov_order_by>
 		<lov_label>Code WEB</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1169,6 +1213,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Open</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#CC0000</lov_color_bg>
+		<lov_icon>icon/color/btn_red</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1176,6 +1224,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Closed</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#6AA84F</lov_color_bg>
+		<lov_icon>icon/color/btn_green</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1183,6 +1235,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Processing</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#FF9900</lov_color_bg>
+		<lov_icon>icon/color/btn_orange</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_list_id.lov_name>
@@ -1190,6 +1246,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code DEFAULT</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_list_id.lov_name>
@@ -1197,6 +1257,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code ORDISSUE</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_list_id.lov_name>
@@ -1204,6 +1268,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Code BILLISSUE</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_list_id.lov_name>
@@ -1211,6 +1279,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code ORDSTATUS</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_list_id.lov_name>
@@ -1218,6 +1290,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Code PRDINFO</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_list_id.lov_name>
@@ -1225,6 +1301,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code ORDCANCEL</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_list_id.lov_name>
@@ -1232,6 +1312,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Code ORDCHANGE</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1239,6 +1323,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Code INF</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1246,6 +1334,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Code REQ</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1253,6 +1345,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Code CMP</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1260,6 +1356,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Code OTH</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
@@ -1267,6 +1367,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Pending status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#CC0000</lov_color_bg>
+		<lov_icon>icon/color/btn_red</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
@@ -1274,6 +1378,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Validated status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#ff9900</lov_color_bg>
+		<lov_icon>icon/color/btn_orange</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
@@ -1281,6 +1389,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Shipped status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#6aa84f</lov_color_bg>
+		<lov_icon>icon/color/btn_green</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
@@ -1288,6 +1400,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Canceled status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#ffffff</lov_color>
+		<lov_color_bg>#3D85C6</lov_color_bg>
+		<lov_icon>icon/color/btn_blue</lov_icon>
+		<lov_display>L</lov_display>
 	</data>
 </object>
 <object>
