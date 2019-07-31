@@ -1215,8 +1215,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Open</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#000000</lov_color>
-		<lov_color_bg>#EA9999</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#F4CCCC</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
 		<lov_display>L</lov_display>
 	</data>
@@ -1226,8 +1226,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Closed</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#000000</lov_color>
-		<lov_color_bg>#B6D7A8</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#d9ead3</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
 		<lov_display>L</lov_display>
 	</data>
@@ -1237,8 +1237,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Processing</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#000000</lov_color>
-		<lov_color_bg>#F9CB9C</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#FCE5CD</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
 		<lov_display>L</lov_display>
 	</data>
@@ -1370,7 +1370,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_label>Pending status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#393939</lov_color>
-		<lov_color_bg>#EA9999</lov_color_bg>
+		<lov_color_bg>#f4cccc</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1381,7 +1381,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_label>Validated status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#393939</lov_color>
-		<lov_color_bg>#F9CB9C</lov_color_bg>
+		<lov_color_bg>#fce5cd</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1392,7 +1392,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_label>Shipped status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#393939</lov_color>
-		<lov_color_bg>#B6D7A8</lov_color_bg>
+		<lov_color_bg>#d9ead3</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1403,7 +1403,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_label>Canceled status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#393939</lov_color>
-		<lov_color_bg>#9FC5E8</lov_color_bg>
+		<lov_color_bg>#CFE2F3</lov_color_bg>
 		<lov_icon>icon/color/btn_blue</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
