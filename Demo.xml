@@ -86,11 +86,13 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 	<action>upsert</action>
 	<data>
 		<viw_name>DemoHome</viw_name>
-		<viw_template><![CDATA[<div class="area">[AREA:1,2,4,5:=]</div>
-<div class="area">[AREA:3:=]</div>]]></viw_template>
+		<viw_template><![CDATA[<div class="area">[AREA:1,2,4:=]</div>
+<div class="area">[AREA:3:=]</div>
+<div class="area" style="min-height: 400px;">[AREA:5:=]</div>]]></viw_template>
 		<viw_ui><![CDATA[<div>
-	<div class="row"><div class="area col-sm-12" data-area="1,2,4,5:="></div></div>
+	<div class="row"><div class="area col-sm-12" data-area="1,2,4:="></div></div>
 	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
+	<div class="row"><div class="area col-sm-12" data-area="5:=" style="min-height: 400px;"></div></div>
 </div>]]></viw_ui>
 		<viw_order>100</viw_order>
 		<viw_icon>demo</viw_icon>
@@ -328,7 +330,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-07-08 15:23:32</usr_last_logon>
+		<usr_last_logon>2019-07-31 11:02:40</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -9903,6 +9905,16 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>demo</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>demo</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DemoCatalog-E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>DemoCatalog</grt_function_id.fct_object_id.obj_name>
@@ -10106,6 +10118,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO-ORDAGD-EXT</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type/>
 		<grt_function_id.fct_object_id.obj_name/>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>demo</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>demo</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -12493,6 +12515,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
+		<map_object_id.obj_name>demo</map_object_id.obj_name>
+		<map_process_id.pcs_name/>
+		<map_order>71030</map_order>
+		<map_ext>1</map_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>ViewItem</name>
@@ -12634,7 +12664,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
 		<vwi_position>5</vwi_position>
 		<vwi_type>Z</vwi_type>
-		<vwi_title>1</vwi_title>
+		<vwi_title>0</vwi_title>
 		<vwi_research_id.rch_name/>
 		<vwi_research_id.rch_object_id.obo_name/>
 		<vwi_research_id.rch_user_id.usr_login/>
@@ -15606,7 +15636,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>demo</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo web site</tsl_value>
+		<tsl_value>Demo frontend</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15654,7 +15684,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>demo</tsl_id.obe_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Site web démo</tsl_value>
+		<tsl_value>Frontend démo</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

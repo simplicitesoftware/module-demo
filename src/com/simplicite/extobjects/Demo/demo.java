@@ -4,7 +4,7 @@ import com.simplicite.util.AppLog;
 import com.simplicite.util.ExternalObject;
 import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
-import com.simplicite.webapp.web.JQueryWebPage;
+import com.simplicite.webapp.web.BootstrapWebPage;
 
 /**
  * Web site (using Mustache(R) templating) custom frontend UI
@@ -19,17 +19,22 @@ public class demo extends ExternalObject {
 	@Override
 	public Object display(Parameters params) {
 		setDecoration(false);
-		setPublic(true);
+		String render = getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "');";
 		try {
-			JQueryWebPage wp = new JQueryWebPage(params.getRoot(), "Demo");
-			wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"));
-			wp.appendAjax(true);
-			wp.appendMustache();
-			wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
-			wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
-			wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
-			wp.setReady(getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "');");
-			return wp.toString();
+			if (isPublic()) { // Public page version (standalone Bootstrap page)
+				BootstrapWebPage wp = new BootstrapWebPage(params.getRoot(), "Demo", false);
+				wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"));
+				wp.appendAjax(true);
+				wp.appendMustache();
+				wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
+				wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
+				wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
+				wp.setReady(render);
+				return wp.toString();
+			} else { // Private page version
+				addMustache();
+				return javascript(render);
+			}
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();

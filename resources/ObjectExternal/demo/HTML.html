@@ -1,37 +1,29 @@
 <template id="demo-template">
 <div class="cover">
 	<div class="cover-image" style="background-image : url({{bannerURL}})"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center head-title">
-				<h1>Simplicit&eacute;<span class="text-primary"> Demo</span></h1>
-				<div class="baseline"><h2>This is a sample demo page using Mustache&reg; templating</h2></div>
-			</div>
+	<div class="row">
+		<div class="col-md-12 text-center head-title">
+			<h1>Simplicit&eacute;<span class="text-primary"> Demo</span></h1>
+			<div class="baseline"><h2>This is a sample demo page using Mustache&reg; templating</h2></div>
 		</div>
 	</div>
 </div>
-<div class="section-s">
-	<div class="container">
-		<div class="row">
-			{{#list}}
-			<div class="col-md-4">
-				<h1 class="text-primary text-center title">{{demoPrdName}}</h1>
-				<h3 class="text-muted text-center">{{#demoPrdPicture}}<img src="data:{{mime}};base64,{{content}}" alt="{{demoPrdName}}"/>{{/demoPrdPicture}}
-				<br/>{{demoPrdReference}}</h3>
-				<p class="text-left text-muted">{{demoPrdDescription}}</p>
-				<p class="text-right"><a href="javascript:" class="btn btn-danger btn-md">{{#toFixed}}{{demoPrdUnitPrice}}{{/toFixed}}</a></p>
-			</div>
-			{{/list}}
+<div class="container">
+	<div class="row">
+		{{#list}}
+		<div class="col-md-4">
+			<h1 class="text-primary text-center title">{{demoPrdName}}</h1>
+			<h3 class="text-muted text-center">{{#demoPrdPicture}}<img src="data:{{mime}};base64,{{content}}" alt="{{demoPrdName}}"/>{{/demoPrdPicture}}
+			<br/>{{demoPrdReference}}</h3>
+			<p class="text-left text-muted">{{demoPrdDescription}}</p>
+			<p class="text-right"><a href="javascript:" class="btn btn-danger btn-md">{{#toFixed}}{{demoPrdUnitPrice}}{{/toFixed}}</a></p>
 		</div>
+		{{/list}}
 	</div>
 </div>
-<div class="section-s">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<hr><p class="text-center">&copy; Simplcit&eacute; Software</p>
-			</div>
-		</div>
+<div class="row">
+	<div class="col-md-12">
+		<hr><p class="text-center">&copy; Simplcit&eacute; Software</p>
 	</div>
 </div>
 </template>
