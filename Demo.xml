@@ -4218,8 +4218,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 			<td class="area">[AREA:1:=]</td>
 			<td class="area" rowspan="2" style="min-width: 300px;">
 				<div id="hangout-button"></div>
-				<div id="nborders" style="height: 32px;"></div>
-				<div id="client-map" style="width: 500px; height: 450px;">
+				<div id="client-map" style="display: none; width: 500px; height: 450px;">
 					<iframe name="gmap" frameborder="0" scrolling="no" style="width: 100%; height: 100%;"></iframe>
 				</div>
 			</td>
@@ -4237,7 +4236,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
     <div class="area col-sm-6" data-area="2,3,4"></div>
     <div class="area col-sm-6">
       <div id="hangout-button"></div>
-      <div id="client-map" style="width: 500px; height: 450px;">
+      <div id="client-map" style="display: none; width: 500px; height: 450px;">
         <iframe frameborder="0" name="gmap" scrolling="no" style="width: 100%; height: 100%;"></iframe>
       </div>
     </div>
