@@ -330,7 +330,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-07-31 11:02:40</usr_last_logon>
+		<usr_last_logon>2019-07-31 17:12:40</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -1215,10 +1215,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Open</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#CC0000</lov_color_bg>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#EA9999</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1226,10 +1226,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Closed</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#6AA84F</lov_color_bg>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1237,10 +1237,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Processing</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#FF9900</lov_color_bg>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F9CB9C</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_list_id.lov_name>
@@ -1369,8 +1369,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Pending status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#CC0000</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#EA9999</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1380,8 +1380,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Validated status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#ff9900</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#F9CB9C</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1391,8 +1391,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Shipped status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#6aa84f</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#B6D7A8</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1402,10 +1402,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Canceled status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#ffffff</lov_color>
-		<lov_color_bg>#3D85C6</lov_color_bg>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#9FC5E8</lov_color_bg>
 		<lov_icon>icon/color/btn_blue</lov_icon>
-		<lov_display>L</lov_display>
+		<lov_display>I;L</lov_display>
 	</data>
 </object>
 <object>
@@ -3286,14 +3286,14 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<fld_name>demoPrdAvailable</fld_name>
 		<fld_dbname>prd_available</fld_dbname>
-		<fld_visible>0</fld_visible>
+		<fld_visible>3</fld_visible>
 		<fld_updatable>2</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>3</fld_researchreq>
 		<fld_sort>C</fld_sort>
-		<fld_more>0</fld_more>
+		<fld_more>1</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
 		<fld_type>8</fld_type>
@@ -4186,83 +4186,13 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcStatus</sty_field>
-		<sty_value>C</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>greenbg</sty_style>
-		<sty_image>btn_green.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcStatus</sty_field>
-		<sty_value>O</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>redbg</sty_style>
-		<sty_image>btn_red.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcStatus</sty_field>
-		<sty_value>P</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>orangebg</sty_style>
-		<sty_image>btn_orange.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoOrdStatus</sty_field>
-		<sty_value>C</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>bluebg</sty_style>
-		<sty_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoOrdStatus</sty_field>
-		<sty_value>D</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>greenbg</sty_style>
-		<sty_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoOrdStatus</sty_field>
-		<sty_value>P</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>redbg</sty_style>
-		<sty_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoOrdStatus</sty_field>
-		<sty_value>V</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style>orangebg</sty_style>
-		<sty_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<sty_object>DemoProduct</sty_object>
 		<sty_field>demoPrdAvailable</sty_field>
 		<sty_value>0</sty_value>
 		<sty_vmin/>
 		<sty_vmax/>
-		<sty_style>redbg</sty_style>
-		<sty_image/>
+		<sty_style/>
+		<sty_image>blank</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4271,8 +4201,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<sty_value>1</sty_value>
 		<sty_vmin/>
 		<sty_vmax/>
-		<sty_style>greenbg</sty_style>
-		<sty_image/>
+		<sty_style/>
+		<sty_image>tick</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
