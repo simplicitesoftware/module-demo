@@ -8,7 +8,7 @@
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix>DEMO</mdl_prefix>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-08-07 12:56:57</mdl_lastupd>
+		<mdl_lastupd>2019-08-07 14:54:13</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -4096,7 +4096,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>blank</sty_image>
+		<sty_image>icon/blank</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4106,7 +4106,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>tick</sty_image>
+		<sty_image>icon/tick</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4116,7 +4116,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>blank</sty_image>
+		<sty_image>icon/blank</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4126,7 +4126,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>tick</sty_image>
+		<sty_image>icon/tick</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -13227,8 +13227,8 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<dt_name>Demo-data</dt_name>
-		<dt_file>data/Demo-data.xml</dt_file>
+		<dt_name>DemoData</dt_name>
+		<dt_file>data/DemoData.xml</dt_file>
 	</data>
 </object>
 <object>
