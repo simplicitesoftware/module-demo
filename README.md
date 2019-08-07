@@ -122,7 +122,6 @@ A contact can be linked or not a an order of the selelcted client
     - `DEFAULT` Code DEFAULT
 * `DEMO_CTC_CANAL`
     - `PHONE` Code PHONE
-    - `FAX` Code FAX
     - `EMAIL` Code EMAIL
     - `CHAT` Code CHAT
     - `WEB` Code WEB

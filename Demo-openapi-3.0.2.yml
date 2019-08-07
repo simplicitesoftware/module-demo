@@ -358,7 +358,6 @@ components:
           type: string
           enum:
           - PHONE
-          - FAX
           - EMAIL
           - CHAT
           - WEB
@@ -797,7 +796,6 @@ paths:
           type: string
           enum:
           - PHONE
-          - FAX
           - EMAIL
           - CHAT
           - WEB

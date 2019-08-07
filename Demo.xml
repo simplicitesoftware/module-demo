@@ -6,8 +6,9 @@
 	<data>
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
+		<mdl_prefix>DEMO</mdl_prefix>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-07-30 12:00:43</mdl_lastupd>
+		<mdl_lastupd>2019-08-07 12:56:57</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -1162,52 +1163,41 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
-	</data>
-	<data>
-		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
-		<lov_code>FAX</lov_code>
-		<lov_order_by>2</lov_order_by>
-		<lov_label>Code FAX</lov_label>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/telephone</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
 		<lov_code>EMAIL</lov_code>
-		<lov_order_by>3</lov_order_by>
+		<lov_order_by>2</lov_order_by>
 		<lov_label>Code EMAIL</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/email</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
 		<lov_code>CHAT</lov_code>
-		<lov_order_by>4</lov_order_by>
+		<lov_order_by>3</lov_order_by>
 		<lov_label>Code CHAT</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/chat</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_CANAL</lov_list_id.lov_name>
 		<lov_code>WEB</lov_code>
-		<lov_order_by>5</lov_order_by>
+		<lov_order_by>4</lov_order_by>
 		<lov_label>Code WEB</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>icon/url</lov_icon>
+		<lov_display>I</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1517,16 +1507,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>FAX</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
-		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Fax]]></lov_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>EMAIL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[E-mail]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1534,7 +1516,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CHAT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Chat]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1542,7 +1524,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>WEB</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Web site]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1557,16 +1539,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>FAX</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
-		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Fax]]></lov_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>EMAIL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[E-mail]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1574,7 +1548,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CHAT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Chat]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1582,7 +1556,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>WEB</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Site web]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4117,62 +4091,12 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<action>upsert</action>
 	<data>
 		<sty_object>*</sty_object>
-		<sty_field>demoCtcCanal</sty_field>
-		<sty_value>CHAT</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>chat.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcCanal</sty_field>
-		<sty_value>EMAIL</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>email.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcCanal</sty_field>
-		<sty_value>FAX</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>printer.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcCanal</sty_field>
-		<sty_value>PHONE</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>telephone.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
-		<sty_field>demoCtcCanal</sty_field>
-		<sty_value>WEB</sty_value>
-		<sty_vmin/>
-		<sty_vmax/>
-		<sty_style/>
-		<sty_image>url.gif</sty_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<sty_object>*</sty_object>
 		<sty_field>demoCtcPriority</sty_field>
 		<sty_value>0</sty_value>
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>blank.gif</sty_image>
+		<sty_image>blank</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4182,7 +4106,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>tick.gif</sty_image>
+		<sty_image>tick</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4241,7 +4165,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       </div>
     </div>
   </div>
-</div>]]></tpl_ui>
+</div>
+]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4365,7 +4290,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="area col-sm-12" data-area="5:-"></div>
   </div>
-</div>]]></tpl_ui>
+</div>
+]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4437,7 +4363,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="col-sm-4">
     <div class="field" data-field="demoCliLastname"></div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4453,14 +4380,16 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="col-sm-5">
       <div class="field" data-field="demoCliZipCode"></div>
+      <div class="action" data-action="DEMO_CLIENTMAP"></div>
     </div>
     <div class="col-sm-7">
       <div class="field" data-field="demoCliCity"></div>
+      <div class="field" data-field="demoCliCountry"></div>
     </div>
   </div>
-  <div class="field" data-field="demoCliCountry"></div>
   <div class="field" data-field="demoCliCoords"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4481,7 +4410,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoCliFax"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4493,7 +4423,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="demoCliType"></div>
   <div class="field" data-field="demoCliComments"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4755,7 +4686,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   </div>
   <div class="field" data-field="demoPrdSupId__demoSupLogo"></div>
   <div class="field" data-field="demoPrdSupId__demoSupUsrId"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4775,7 +4707,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   </div>
   <div class="field" data-field="demoPrdDescription"></div>
   <div class="field" data-field="demoPrdPicture"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4784,11 +4717,17 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
-		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoPrdStock"></div>
-  <div class="field" data-field="demoPrdUnitPrice"></div>
-  <div class="field" data-field="demoPrdAvailable"></div>
-</div>]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="row">
+  <div class="col-sm-6">
+    <div class="field" data-field="demoPrdStock"></div>
+    <div class="action" data-action="DEMO_INCSTOCK"></div>
+  </div>
+  <div class="col-sm-6">
+    <div class="field" data-field="demoPrdUnitPrice"></div>
+    <div class="field" data-field="demoPrdAvailable"></div>
+  </div>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4801,7 +4740,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="field" data-field="demoPrdDocumentation"></div>
   <div class="field" data-field="demoPrdBrochure"></div>
   <div class="field" data-field="demoPrdOnlineDoc"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4810,7 +4750,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_template/>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"></div>]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"></div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12435,7 +12376,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoPlaceNewOrder</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>71010</map_order>
-		<map_ext>1</map_ext>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12443,7 +12384,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoOrderAgenda</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>71020</map_order>
-		<map_ext>1</map_ext>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13279,6 +13220,15 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_file_compiled>resources/ObjectInternal/DemoOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<dt_name>Demo-data</dt_name>
+		<dt_file>data/Demo-data.xml</dt_file>
 	</data>
 </object>
 <object>

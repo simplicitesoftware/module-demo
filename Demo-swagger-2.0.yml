@@ -177,7 +177,6 @@ paths:
         required: false
         enum:
         - PHONE
-        - FAX
         - EMAIL
         - CHAT
         - WEB
@@ -3049,7 +3048,6 @@ definitions:
         type: string
         enum:
         - PHONE
-        - FAX
         - EMAIL
         - CHAT
         - WEB
