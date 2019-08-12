@@ -29,11 +29,13 @@ var DemoClient = typeof DemoClient !== "undefined" ? DemoClient : (function($) {
 	};
 
 	if (resp) {
-		// Minimalistic backward compatibility for responsive UI
-		window.getFieldValue = function(name) { return $("#field_" + name).val(); };
-
 		// Responsive UI hook
 		Simplicite.UI.hooks.DemoClient = function(o, cbk) {
+			// Minimalistic backward compatibility with legacy UI getFieldValue for responsive UI
+			window.getFieldValue = function(name) {
+				return $ui.getUIField(null, o, name).ui.val();
+			};
+
 			try {
 				o.locals.ui.form.onload = function() {
 					try {

@@ -8,7 +8,7 @@
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix>DEMO</mdl_prefix>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-08-07 14:54:13</mdl_lastupd>
+		<mdl_lastupd>2019-08-12 12:25:00</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -13223,15 +13223,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 </object>
 <object>
-	<name>Dataset</name>
-	<action>upsert</action>
-	<data>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<dt_name>DemoData</dt_name>
-		<dt_file>data/DemoData.xml</dt_file>
-	</data>
-</object>
-<object>
 	<name>Script</name>
 	<action>upsert</action>
 	<data>
@@ -17130,6 +17121,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_value>Utilisateur de la démo</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<dt_name>DemoData</dt_name>
+		<dt_file>data/DemoData.xml</dt_file>
+		<dt_desc/>
 	</data>
 </object>
 <object>
