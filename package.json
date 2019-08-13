@@ -1,5 +1,5 @@
 {
-    "date": "Mon Aug 12 12:25:00 CEST 2019",
+    "date": "Tue Aug 13 15:08:29 CEST 2019",
     "name": "Demo",
     "format": "xml",
     "description": "**Order management** demo application\n\nSample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)\n\nSettings from [GitHub](https://github.com/simplicitesoftware/module-demo):\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": { \"uri\": \"https://github.com/simplicitesoftware/module-demo.git\" }\n}\n```",

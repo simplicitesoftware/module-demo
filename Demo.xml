@@ -6,9 +6,9 @@
 	<data>
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix>DEMO</mdl_prefix>
+		<mdl_prefix/>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-08-12 12:25:00</mdl_lastupd>
+		<mdl_lastupd>2019-08-13 15:08:29</mdl_lastupd>
 		<mdl_comment><![CDATA[**Order management** demo application
 
 Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
@@ -480,6 +480,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<prf_profile_id.grp_name>DEMO_USER</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>WEB_USER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>DESIGNER</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>DEMO_ADMIN</prf_group_id.grp_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
