@@ -331,7 +331,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-07-31 17:12:40</usr_last_logon>
+		<usr_last_logon>2019-08-29 23:33:51</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -4849,7 +4849,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/demo.java</obe_script_id>
-		<obe_icon/>
+		<obe_icon>mustache</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12895,6 +12895,24 @@ state transition to _shipped_ status.]]></act_comment>
 		</res_object>
 		<res_type>ICO</res_type>
 		<res_lang>ANY</res_lang>
+		<res_code>mustache</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_file_compiled/>
+		<res_image>resources/Disposition/default/mustache.png</res_image>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>ICO</res_type>
+		<res_lang>ANY</res_lang>
 		<res_code>simplicite</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
@@ -15512,8 +15530,8 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>demo</tsl_id.obe_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo frontend</tsl_value>
+		<tsl_lang>ANY</tsl_lang>
+		<tsl_value>Demo frontend (Mustache)</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15554,14 +15572,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obe_name>demows</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Custom webservices</tsl_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>demo</tsl_id.obe_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Frontend démo</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15612,8 +15622,8 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>demo</tsl_id.shc_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo frontend</tsl_value>
+		<tsl_lang>ANY</tsl_lang>
+		<tsl_value>Demo frontend (Mustache)</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15649,13 +15659,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoWebSite</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Demo website</tsl_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeShortcut>S</tsl_typeShortcut>
-		<tsl_id.shc_name>demo</tsl_id.shc_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Frontend demo</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>

@@ -18,11 +18,12 @@ public class demo extends ExternalObject {
 	 */
 	@Override
 	public Object display(Parameters params) {
-		setDecoration(false);
-		String render = getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "');";
 		try {
-			if (isPublic()) { // Public page version (standalone Bootstrap page)
-				BootstrapWebPage wp = new BootstrapWebPage(params.getRoot(), "Demo", false);
+			boolean pub = isPublic();
+			setDecoration(!pub);
+			String render = getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "', " + pub + ");";
+			if (pub) { // Public page version (standalone Bootstrap page)
+				BootstrapWebPage wp = new BootstrapWebPage(params.getRoot(), getDisplay(), false);
 				wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"));
 				wp.appendAjax(true);
 				wp.appendMustache();
