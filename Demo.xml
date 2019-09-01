@@ -331,7 +331,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-08-29 23:33:51</usr_last_logon>
+		<usr_last_logon>2019-09-01 01:53:35</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -4845,7 +4845,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_name>demo</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment><![CDATA[Demo website using simple Mustache templating]]></obe_comment>
+		<obe_comment><![CDATA[Simple demo frontend using **Mustache** templating]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/demo.java</obe_script_id>

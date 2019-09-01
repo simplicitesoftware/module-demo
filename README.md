@@ -356,7 +356,7 @@ No custom action
 `demo` external object definition
 ---------------------------------
 
-Demo website using simple Mustache templating
+Simple demo frontend using **Mustache** templating
 
 
 `DemoCatalog` external object definition
