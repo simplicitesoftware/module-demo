@@ -11,9 +11,7 @@
 `Demo` module definition
 ========================
 
-**Order management** demo application
-
-Sample data available [here](https://www.simplicite.io/resources/modules/demo-data-4.0.xml)
+`Demo` module: **Order management** application.
 
 Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
 
