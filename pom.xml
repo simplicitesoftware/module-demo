@@ -9,7 +9,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simplicite.url>https://dev40.dev.simplicite.io</simplicite.url>
-    <simplicite.version>4.0.P24a-SNAPSHOT</simplicite.version>
+    <simplicite.version>4.0.P25a-SNAPSHOT</simplicite.version>
     <maven.compiler.source>12</maven.compiler.source>
     <maven.compiler.target>12</maven.compiler.target>
     <sonar.sources>src,resources</sonar.sources>

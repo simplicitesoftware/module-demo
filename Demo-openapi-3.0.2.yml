@@ -232,6 +232,15 @@ components:
     DemoProduct:
       type: object
       properties:
+        demoPrdType:
+          description: Type
+          type: string
+          enum:
+          - LAPTOP
+          - DESKTOP
+          - TABLET
+          - SMARTPHONE
+          - OTHER
         demoPrdSupId__demoSupCode:
           description: Supplier unique code (e.g. `MYSUP`)
           type: string
@@ -321,8 +330,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         created_dt_hist:
           description: Date
           type: string
@@ -397,8 +406,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -813,8 +822,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -2997,8 +3006,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3320,6 +3329,18 @@ paths:
         in: query
         name: demoPrdComments
         description: Search filter for Comments on product
+        required: false
+      - schema:
+          type: string
+          enum:
+          - LAPTOP
+          - DESKTOP
+          - TABLET
+          - SMARTPHONE
+          - OTHER
+        in: query
+        name: demoPrdType
+        description: Search filter for Type
         required: false
       tags:
       - DemoProduct

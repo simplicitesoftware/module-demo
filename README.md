@@ -281,6 +281,16 @@ Its reference is unique per supplier.
 | `demoPrdBrochure`                                            | document                                 |          | yes       |          | Product brochure                                                                 |
 | `demoPrdOnlineDoc`                                           | url(255)                                 |          | yes       |          | Online product documentation URL                                                 |
 | `demoPrdComments`                                            | notepad(50000)                           |          | yes       |          | Comments on product                                                              |
+| `demoPrdType`                                                | enum(7) using `DEMO_PRD_TYPE` list       | yes      | yes       |          | -                                                                                |
+
+### Lists
+
+* `DEMO_PRD_TYPE`
+    - `LAPTOP` Laptop
+    - `DESKTOP` Desktop
+    - `TABLET` Tablet
+    - `SMARTPHONE` Smartphone
+    - `OTHER` Other
 
 ### Custom actions
 
@@ -350,12 +360,6 @@ No custom action
 * `ProductSelect`: Selected supplier's product selection activity
 * `OrderCreate`: Order creation form activity
 * `End`: End activity
-
-`demo` external object definition
----------------------------------
-
-Simple demo frontend using **Mustache** templating
-
 
 `DemoCatalog` external object definition
 ----------------------------------------

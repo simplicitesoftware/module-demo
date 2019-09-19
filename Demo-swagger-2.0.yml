@@ -192,8 +192,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -2019,8 +2019,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       tags:
       - DemoContactHistoric
   /rest/DemoClient:
@@ -2289,6 +2289,17 @@ paths:
         description: Search filter for Comments on product
         type: string
         required: false
+      - in: query
+        name: demoPrdType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - LAPTOP
+        - DESKTOP
+        - TABLET
+        - SMARTPHONE
+        - OTHER
       tags:
       - DemoProduct
   /rest/DemoSupplier/{row_id}/publication:DemoSupplier-CATALOG:
@@ -2922,6 +2933,15 @@ definitions:
   DemoProduct:
     type: object
     properties:
+      demoPrdType:
+        description: Type
+        type: string
+        enum:
+        - LAPTOP
+        - DESKTOP
+        - TABLET
+        - SMARTPHONE
+        - OTHER
       demoPrdSupId__demoSupCode:
         description: Supplier unique code (e.g. `MYSUP`)
         type: string
@@ -3011,8 +3031,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       created_dt_hist:
         description: Date
         type: string
@@ -3087,8 +3107,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcDatetime:
         description: Contcat date and time
         type: string
