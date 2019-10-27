@@ -218,8 +218,9 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon/>
+		<usr_last_logon>2019-10-22 18:27:53</usr_last_logon>
 		<usr_dateformat/>
+		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
@@ -253,6 +254,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_logout>2016-08-25 14:17:06</usr_logout>
 		<usr_last_logon/>
 		<usr_dateformat/>
+		<usr_uuid>2156a498-bcdb-4e04-a68f-ebabdc4d223c</usr_uuid>
 	</data>
 	<data>
 		<usr_login>user_fra</usr_login>
@@ -286,6 +288,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
 		<usr_last_logon>2019-05-17 17:06:07</usr_last_logon>
 		<usr_dateformat/>
+		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
 	</data>
 	<data>
 		<usr_login>website</usr_login>
@@ -317,66 +320,9 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-10-17 22:47:33</usr_last_logon>
+		<usr_last_logon>2019-10-24 16:04:56</usr_last_logon>
 		<usr_dateformat/>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
-		<usp_value><![CDATA[dropdown]]></usp_value>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[accordion]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[**Menu style**:
-
-- `standard` Standard menu (left),
-- `simple` Simple menu (left)
-- `accordion` Accordion menu (left),
-- `split` Split menu (top and left),
-- `dropdown` Dropdown menu (top)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MODULE_FILTER</usp_param_id.sys_code>
-		<usp_value><![CDATA[SHOWALL]]></usp_value>
-		<usp_param_id.sys_type>APP</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[SHOWALL]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
-		<usp_value><![CDATA[split]]></usp_value>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[accordion]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[**Menu style**:
-
-- `standard` Standard menu (left),
-- `simple` Simple menu (left)
-- `accordion` Accordion menu (left),
-- `split` Split menu (top and left),
-- `dropdown` Dropdown menu (top)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MENU_STYLE</usp_param_id.sys_code>
-		<usp_value><![CDATA[split]]></usp_value>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[accordion]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[**Menu style**:
-
-- `standard` Standard menu (left),
-- `simple` Simple menu (left)
-- `accordion` Accordion menu (left),
-- `split` Split menu (top and left),
-- `dropdown` Dropdown menu (top)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
 </object>
 <object>
@@ -4416,7 +4362,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="area col-sm-12" data-area="3:-"></div>
   </div>
-</div>]]></tpl_ui>
+</div>
+]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4841,7 +4788,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoSupEmail"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4849,7 +4797,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_name>DemoSupplier-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoSupLogo"></div>]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoSupLogo"></div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4861,7 +4810,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="field" data-field="demoSupUsrId"></div>
   <div class="field" data-field="demoSupUsrId__usr_login"></div>
   <div class="field" data-field="demoSupComments"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

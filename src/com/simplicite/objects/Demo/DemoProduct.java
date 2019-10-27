@@ -30,7 +30,10 @@ public class DemoProduct extends ObjectDB {
 	/** Init default increment */
 	@Override
 	public void initAction(Action action) {
-		action.getConfirmField(getGrant().getLang(), "demoPrdIncrement").setDefaultValue(String.valueOf(DEFAULT_INCREMENT));
+		if ("DEMO_INCSTOCK".equals(action.getName())) {
+			ObjectField f = action.getConfirmField(getGrant().getLang(), "demoPrdIncrement");
+			if (f!=null) f.setDefaultValue(String.valueOf(DEFAULT_INCREMENT));
+		}
 	}
 
 	/** Action: increase stock */
