@@ -12,7 +12,6 @@ import com.simplicite.util.tools.GMapTool.Location;
 public class DemoClient extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	
 	/** Hook override: geolocate from address fields */
 	@Override
 	public String preSave() {
