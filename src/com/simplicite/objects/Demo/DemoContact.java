@@ -10,7 +10,7 @@ import com.simplicite.util.ObjectDB;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
 import com.simplicite.util.tools.ExcelTool;
-import com.simplicite.util.tools.ExcelTool.ExcelCell;
+import com.simplicite.util.tools.ExcelTool.ExcelRow;
 
 /**
  * Contact business object
@@ -35,11 +35,12 @@ public class DemoContact extends ObjectDB {
 			ExcelTool xls = new ExcelTool(true); // true = XLSX format
 			Sheet sheet = xls.addSheet("Contacts");
 			for (int i = 0; i < rows.size(); i++) {
+				ExcelRow r = new ExcelRow(i);
 				String[] row = rows.get(i);
 				for (int j = 0; j < row.length; j++) {
-					ExcelCell cell = xls.newCell(j, row[j]);
-					xls.addRow(sheet, i, cell);
+					r.add(xls.newCell(j, row[j]));
 				}
+				xls.addRow(sheet, r);
 			}
 
 			return xls.generateToByteArray();
