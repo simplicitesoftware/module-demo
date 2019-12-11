@@ -3,14 +3,14 @@ package com.simplicite.objects.Demo;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.poi.ss.usermodel.Sheet;
-
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
-import com.simplicite.util.tools.ExcelTool;
-import com.simplicite.util.tools.ExcelTool.ExcelRow;
+import com.simplicite.util.tools.ExcelPOITool;
+import com.simplicite.util.tools.ExcelPOITool.ExcelCell;
+import com.simplicite.util.tools.ExcelPOITool.ExcelRow;
+import com.simplicite.util.tools.ExcelPOITool.ExcelSheet;
 
 /**
  * Contact business object
@@ -32,6 +32,21 @@ public class DemoContact extends ObjectDB {
 				rows = search(false);
 			}
 
+			/* Old deprecated version (kept for backward compatibility */
+			ExcelPOITool xls = new ExcelPOITool(true); // true = XLSX format
+			ExcelSheet sh = xls.newSheet("Contacts");
+			for (int i = 0; i < rows.size(); i++) {
+				ExcelRow r = xls.newRow(i);
+				String[] row = rows.get(i);
+				for (int j = 0; j < row.length; j++) {
+					ExcelCell c = xls.newCell(j, row[j]);
+					r.add(c);
+				}
+				sh.add(r);
+			}
+			xls.add(sh);
+
+			/* TODO: new version
 			ExcelTool xls = new ExcelTool(true); // true = XLSX format
 			Sheet sheet = xls.addSheet("Contacts");
 			for (int i = 0; i < rows.size(); i++) {
@@ -41,7 +56,7 @@ public class DemoContact extends ObjectDB {
 					r.add(xls.newCell(j, row[j]));
 				}
 				xls.addRow(sheet, r);
-			}
+			}*/
 
 			return xls.generateToByteArray();
 		} catch (Exception e) {
