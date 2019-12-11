@@ -2245,6 +2245,17 @@ paths:
         type: string
         required: false
       - in: query
+        name: demoPrdType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - LAPTOP
+        - DESKTOP
+        - TABLET
+        - SMARTPHONE
+        - OTHER
+      - in: query
         name: demoPrdDescription
         description: Search filter for Product description
         type: string
@@ -2289,17 +2300,6 @@ paths:
         description: Search filter for Comments on product
         type: string
         required: false
-      - in: query
-        name: demoPrdType
-        description: Search filter for Type
-        type: string
-        required: false
-        enum:
-        - LAPTOP
-        - DESKTOP
-        - TABLET
-        - SMARTPHONE
-        - OTHER
       tags:
       - DemoProduct
   /rest/DemoSupplier/{row_id}/publication:DemoSupplier-CATALOG:
@@ -2768,7 +2768,7 @@ definitions:
         description: Customer fax number
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       demoCliWorkPhone:
         description: Customer work phone number
@@ -2810,7 +2810,7 @@ definitions:
         description: Date
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       created_by_hist:
         description: User
@@ -2922,7 +2922,7 @@ definitions:
         description: Product picture
         type: object
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       demoOrdPrdId__demoPrdSupId__demoSupLogo:
         description: Supplier logo
@@ -2982,7 +2982,7 @@ definitions:
         description: Current stock for product
         type: integer
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       demoPrdName:
         description: Product name
@@ -3037,7 +3037,7 @@ definitions:
         description: Date
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       created_by_hist:
         description: User
@@ -3153,7 +3153,7 @@ definitions:
         description: Product supplier
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       demoCtcOrdId:
         description: Contact order
@@ -3197,7 +3197,7 @@ definitions:
         description: Unit price of product
         type: number
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       demoPrdName:
         description: Product name
@@ -3272,7 +3272,7 @@ definitions:
         description: User responsible of supplier
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       demoSupWebsite:
         description: Supplier website URL

@@ -320,7 +320,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-11-05 00:02:03</usr_last_logon>
+		<usr_last_logon>2019-11-22 10:07:45</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -1828,7 +1828,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_code_id.lov_code>LAPTOP</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>10</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[LAPTOP]]></lov_value>
+		<lov_value><![CDATA[PC portable]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1836,7 +1836,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_code_id.lov_code>DESKTOP</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>20</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[DESKTOP]]></lov_value>
+		<lov_value><![CDATA[PC de bureau]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1844,7 +1844,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_code_id.lov_code>TABLET</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>30</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[TABLET]]></lov_value>
+		<lov_value><![CDATA[Tablette]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1852,7 +1852,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_code_id.lov_code>SMARTPHONE</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>40</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[SMARTPHONE]]></lov_value>
+		<lov_value><![CDATA[Smartphone]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1860,7 +1860,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_code_id.lov_code>OTHER</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>50</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[OTHER]]></lov_value>
+		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -8003,7 +8003,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>110</obf_order>
-		<obf_group_by>1</obf_group_by>
+		<obf_group_by/>
 		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name>demoPrdSupId</obf_ref_field_id.fld_name>
@@ -8174,9 +8174,38 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
+		<obf_field_id.fld_type>7</obf_field_id.fld_type>
+		<obf_order>220</obf_order>
+		<obf_group_by>1</obf_group_by>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdDescription</obf_field_id.fld_name>
 		<obf_field_id.fld_type>13</obf_field_id.fld_type>
-		<obf_order>220</obf_order>
+		<obf_order>230</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -8205,7 +8234,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdPicture</obf_field_id.fld_name>
 		<obf_field_id.fld_type>20</obf_field_id.fld_type>
-		<obf_order>230</obf_order>
+		<obf_order>240</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -8431,35 +8460,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>DemoProduct-5</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
-		<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
-		<obf_field_id.fld_type>7</obf_field_id.fld_type>
-		<obf_order>510</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
-		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14128,12 +14128,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.fld_name>demoSupCode</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Code</tsl_value>
-		<tsl_simplehelp><![CDATA[<p>Supplier code</p>]]></tsl_simplehelp>
-		<tsl_short_value>Code (list)</tsl_short_value>
+		<tsl_simplehelp><![CDATA[<p>Supplier code help (on form)</p>]]></tsl_simplehelp>
+		<tsl_short_value>Code (on list)</tsl_short_value>
 		<tsl_placeholder>Code (placeholder)</tsl_placeholder>
-		<tsl_listhelp><![CDATA[<p>Supplier code (list)</p>]]></tsl_listhelp>
+		<tsl_listhelp><![CDATA[<p>Supplier code help (on list)</p>]]></tsl_listhelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
+		<tsl_tooltip><![CDATA[<p>Supplier code tooltip</p>]]></tsl_tooltip>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -14859,7 +14859,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdType</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>demo prd type</tsl_value>
+		<tsl_value>Type</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>

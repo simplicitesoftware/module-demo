@@ -272,6 +272,7 @@ Its reference is unique per supplier.
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
 | `demoPrdReference`                                           | char(10)                                 | yes*     | yes       |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
+| `demoPrdType`                                                | enum(7) using `DEMO_PRD_TYPE` list       | yes      | yes       |          | -                                                                                |
 | `demoPrdDescription`                                         | text(1000000)                            |          | yes       |          | Product description                                                              |
 | `demoPrdPicture`                                             | image                                    |          | yes       |          | Product picture                                                                  |
 | `demoPrdStock`                                               | int(11)                                  | yes      | yes       |          | Current stock for product                                                        |
@@ -281,7 +282,6 @@ Its reference is unique per supplier.
 | `demoPrdBrochure`                                            | document                                 |          | yes       |          | Product brochure                                                                 |
 | `demoPrdOnlineDoc`                                           | url(255)                                 |          | yes       |          | Online product documentation URL                                                 |
 | `demoPrdComments`                                            | notepad(50000)                           |          | yes       |          | Comments on product                                                              |
-| `demoPrdType`                                                | enum(7) using `DEMO_PRD_TYPE` list       | yes      | yes       |          | -                                                                                |
 
 ### Lists
 

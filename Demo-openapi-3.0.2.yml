@@ -67,7 +67,7 @@ components:
           description: Customer fax number
           type: string
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         demoCliWorkPhone:
           description: Customer work phone number
@@ -109,7 +109,7 @@ components:
           description: Date
           type: string
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         created_by_hist:
           description: User
@@ -221,7 +221,7 @@ components:
           description: Product picture
           type: object
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         demoOrdPrdId__demoPrdSupId__demoSupLogo:
           description: Supplier logo
@@ -281,7 +281,7 @@ components:
           description: Current stock for product
           type: integer
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         demoPrdName:
           description: Product name
@@ -336,7 +336,7 @@ components:
           description: Date
           type: string
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         created_by_hist:
           description: User
@@ -452,7 +452,7 @@ components:
           description: Product supplier
           type: string
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         demoCtcOrdId:
           description: Contact order
@@ -496,7 +496,7 @@ components:
           description: Unit price of product
           type: number
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         demoPrdName:
           description: Product name
@@ -571,7 +571,7 @@ components:
           description: User responsible of supplier
           type: string
         row_id:
-          description: ID
+          description: Unique technical row ID
           type: string
         demoSupWebsite:
           description: Supplier website URL
@@ -3278,6 +3278,18 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - LAPTOP
+          - DESKTOP
+          - TABLET
+          - SMARTPHONE
+          - OTHER
+        in: query
+        name: demoPrdType
+        description: Search filter for Type
+        required: false
+      - schema:
+          type: string
         in: query
         name: demoPrdDescription
         description: Search filter for Product description
@@ -3329,18 +3341,6 @@ paths:
         in: query
         name: demoPrdComments
         description: Search filter for Comments on product
-        required: false
-      - schema:
-          type: string
-          enum:
-          - LAPTOP
-          - DESKTOP
-          - TABLET
-          - SMARTPHONE
-          - OTHER
-        in: query
-        name: demoPrdType
-        description: Search filter for Type
         required: false
       tags:
       - DemoProduct
