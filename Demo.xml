@@ -8,7 +8,7 @@
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix/>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-09-01 02:01:53</mdl_lastupd>
+		<mdl_lastupd>2019-12-18 12:25:21</mdl_lastupd>
 		<mdl_comment><![CDATA[`Demo` module: **Order management** application.
 
 Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
@@ -320,7 +320,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-11-22 10:07:45</usr_last_logon>
+		<usr_last_logon>2019-12-18 13:29:24</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -3718,7 +3718,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_listsum/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
+		<fld_enumlist>DEMO_PRD_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_PRD_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -4198,8 +4198,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       </div>
     </div>
   </div>
-</div>
-]]></tpl_ui>
+</div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4284,8 +4283,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="area col-sm-12" data-area="5:-"></div>
   </div>
-</div>
-]]></tpl_ui>
+</div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4320,8 +4318,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="area col-sm-12" data-area="3:-"></div>
   </div>
-</div>
-]]></tpl_ui>
+</div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4344,8 +4341,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="col-sm-4">
     <div class="field" data-field="demoCliLastname"></div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4368,8 +4364,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
     </div>
   </div>
   <div class="field" data-field="demoCliCoords"></div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4389,8 +4384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoCliFax"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4401,8 +4395,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="demoCliType"></div>
   <div class="field" data-field="demoCliComments"></div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4654,8 +4647,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   </div>
   <div class="field" data-field="demoPrdSupId__demoSupLogo"></div>
   <div class="field" data-field="demoPrdSupId__demoSupUsrId"></div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4677,8 +4669,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   </div>
   <div class="field" data-field="demoPrdDescription"></div>
   <div class="field" data-field="demoPrdPicture"></div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4695,8 +4686,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
     <div class="field" data-field="demoPrdUnitPrice"></div>
     <div class="field" data-field="demoPrdAvailable"></div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4708,8 +4698,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="field" data-field="demoPrdDocumentation"></div>
   <div class="field" data-field="demoPrdBrochure"></div>
   <div class="field" data-field="demoPrdOnlineDoc"></div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4717,8 +4706,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_name>DemoProduct-5</ofa_name>
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"></div>
-]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"></div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4746,8 +4734,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoSupEmail"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4755,8 +4742,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_name>DemoSupplier-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoSupLogo"></div>
-]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoSupLogo"></div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4768,8 +4754,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="field" data-field="demoSupUsrId"></div>
   <div class="field" data-field="demoSupUsrId__usr_login"></div>
   <div class="field" data-field="demoSupComments"></div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13060,8 +13045,8 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<scr_code>DemoProductTest</scr_code>
-		<scr_file>src/com/simplicite/commons/Demo/DemoProductTest.java</scr_file>
-		<scr_type>JSR</scr_type>
+		<scr_file>test/src/com/simplicite/tests/Demo/DemoProductTest.java</scr_file>
+		<scr_type>TST</scr_type>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>

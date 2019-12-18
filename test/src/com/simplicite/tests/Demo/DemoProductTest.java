@@ -1,4 +1,4 @@
-package com.simplicite.commons.Demo;
+package com.simplicite.tests.Demo;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
