@@ -15,6 +15,7 @@ import com.simplicite.util.tools.ExcelPOITool.ExcelSheet;
 /**
  * Contact business object
  */
+@SuppressWarnings("deprecation")
 public class DemoContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
