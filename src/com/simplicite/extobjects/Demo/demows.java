@@ -10,7 +10,7 @@ public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExte
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	protected void init(Parameters params) {
+	public void init(Parameters params) {
 		setOpenAPIVersion(JSONTool.OPENAPI_OAS2);
 
 		addObject("suppliers", "DemoSupplier");

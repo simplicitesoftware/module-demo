@@ -320,7 +320,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-12-18 16:23:05</usr_last_logon>
+		<usr_last_logon>2019-12-20 16:19:38</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
