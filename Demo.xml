@@ -320,7 +320,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2019-12-20 16:19:38</usr_last_logon>
+		<usr_last_logon>2020-01-03 16:51:21</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -4876,7 +4876,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;I;E</obo_list_edit>
+		<obo_list_edit>U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>user</obo_icon>
@@ -5185,7 +5185,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;I;E</obo_list_edit>
+		<obo_list_edit>U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>box</obo_icon>
@@ -5306,7 +5306,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;I;E</obo_list_edit>
+		<obo_list_edit>U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>building</obo_icon>
