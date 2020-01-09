@@ -218,7 +218,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon>2019-10-22 18:27:53</usr_last_logon>
+		<usr_last_logon>2020-01-09 10:52:08</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
@@ -320,7 +320,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-01-03 16:51:21</usr_last_logon>
+		<usr_last_logon>2020-01-08 21:38:09</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -3111,16 +3111,16 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
-		<fld_precision/>
+		<fld_precision>min=1 max=10</fld_precision>
 		<fld_fromdate_id.fld_name/>
-		<fld_dfault/>
+		<fld_dfault><![CDATA[1]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>SLIDE</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Product quantity ordered]]></fld_comment>
@@ -6615,7 +6615,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_listmore>0</obf_fld_listmore>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
+		<obf_field_id.fld_dfault><![CDATA[1]]></obf_field_id.fld_dfault>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -7688,7 +7688,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
+		<obf_field_id.fld_dfault><![CDATA[1]]></obf_field_id.fld_dfault>
 		<obf_area_id.ofa_name>DemoOrder-4</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -7949,7 +7949,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
+		<obf_field_id.fld_dfault><![CDATA[1]]></obf_field_id.fld_dfault>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
