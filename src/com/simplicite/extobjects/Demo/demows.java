@@ -11,7 +11,9 @@ public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExte
 
 	@Override
 	public void init(Parameters params) {
-		setOpenAPIVersion(JSONTool.OPENAPI_OAS2);
+		setOpenAPISpec(JSONTool.OPENAPI_OAS2);
+		setOpenAPIDesc("This is a **simplified** variant of the demo API for the following business objects:\n\n- Suppliers\n- Products");
+		setOpenAPIVers("v4.0");
 
 		addObject("suppliers", "DemoSupplier");
 		addField("suppliers", "code", "demoSupCode");
@@ -19,10 +21,9 @@ public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExte
 
 		addObject("products", "DemoProduct");
 		addRefField("products", "suppliers", "supplierId", "demoPrdSupId", "Reference to supplier's row ID");
-		//addRefField("products", "suppliers", "supplierId", "demoPrdSupId", "supplierProducts", true, "Reference to supplier's row ID");
 		addField("products", "supplierCode", "demoPrdSupId.demoSupCode");
 		addField("products", "supplierName", "demoPrdSupId.demoSupName");
 		addField("products", "reference", "demoPrdReference");
-		addField("products", "nalme", "demoPrdName");
+		addField("products", "name", "demoPrdName");
 	}
 }
