@@ -2,18 +2,20 @@
 // Client-side logic for customer business object
 //----------------------------------------------------
 var DemoClient = typeof DemoClient !== "undefined" ? DemoClient : (function($) {
-	// Display Google map
+	// Display Google Map
 	var _map = function() {
 		var rowId = getFieldValue("row_id");
 		if (rowId && rowId != "0") {
-			var n = $.escapeHTML(getFieldValue("demoCliFirstname") + " " + getFieldValue("demoCliLastname"));
-			var a = $.escapeHTML(getFieldValue("demoCliAddress1") + ", " + getFieldValue("demoCliZipCode") + " " + getFieldValue("demoCliCity") + ", " + getFieldValue("demoCliCountry"));
 			var c = getFieldValue("demoCliCoords");
 			if (c !== "") {
-				var l = c.replace(";", ",").split(",");
-				var u = Simplicite.ROOT + "/googlemap?lat=" + l[0] + "&lng=" + l[1] + "&info=" + encodeURIComponent("<div style=\"width: 200px; height: 75px;\"><b>" + n + "</b><br/>" + a + "</div>");
-				$("#client-map").show();
-				window.frames.gmap.location.replace(u + "&width=500&height=450&title=false");
+				var latlgn = c.replace(";", ",").split(",");
+				var pos = new google.maps.LatLng(latlgn[0], latlgn[1]);
+				var map = new google.maps.Map($("#client-map").show()[0], { center: pos, zoom: 13, mapTypeId: google.maps.MapTypeId.ROADMAP });
+				var mrk = new google.maps.Marker({ position: pos, map: map });
+				var name = $.escapeHTML(getFieldValue("demoCliFirstname") + " " + getFieldValue("demoCliLastname"));
+				var addr = $.escapeHTML(getFieldValue("demoCliAddress1") + ", " + getFieldValue("demoCliZipCode") + " " + getFieldValue("demoCliCity") + ", " + getFieldValue("demoCliCountry"));
+				var inf = new google.maps.InfoWindow({ content: "<div style=\"width: 200px; height: 75px;\"><b>" + name + "</b><br/>" + addr + "</div>" });
+				google.maps.event.addListener(mrk, "click", function() { inf.open(map, mrk); });
 			}
 			return false;
 		}
