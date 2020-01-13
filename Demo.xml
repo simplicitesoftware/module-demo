@@ -3120,7 +3120,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering>NUM</fld_rendering>
+		<fld_rendering>SLIDE</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Product quantity ordered]]></fld_comment>
