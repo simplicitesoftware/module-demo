@@ -140,7 +140,11 @@ No custom action
 `DemoContactHistoric` business object definition
 ------------------------------------------------
 
+**Contact** object history, tracks changes on:
 
+- Status
+- Type and/or subtype
+- Comments
 
 ### Fields
 
@@ -150,9 +154,10 @@ No custom action
 | `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
 | `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
 | `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
-| `demoCtcComments`                                            | html(50000)                              |          | yes       |          | Comments on contact                                                              |
-| `demoCtcFile`                                                | document                                 |          | yes       |          | Contact attached file                                                            |
 | `demoCtcStatus`                                              | enum(7) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
+| `demoCtcType`                                                | enum(7) using `DEMO_CTC_TYPE` list       | yes      | yes       |          | Contact type                                                                     |
+| `demoCtcSubType`                                             | enum(7) using `DEMO_CTC_SUBTYPE` list    |          | yes       |          | Contact sub type                                                                 |
+| `demoCtcComments`                                            | html(50000)                              |          | yes       |          | Comments on contact                                                              |
 
 ### Lists
 
@@ -160,6 +165,13 @@ No custom action
     - `O` Open
     - `C` Closed
     - `P` Processing
+* `DEMO_CTC_TYPE`
+    - `INF` Code INF
+    - `REQ` Code REQ
+    - `CMP` Code CMP
+    - `OTH` Code OTH
+* `DEMO_CTC_SUBTYPE`
+    - `DEFAULT` Code DEFAULT
 
 ### Custom actions
 
@@ -228,7 +240,10 @@ No custom action
 `DemoOrderHistoric` business object definition
 ----------------------------------------------
 
+**Order** object history, tracks changes on:
 
+- Status
+- Quantity
 
 ### Fields
 
@@ -272,7 +287,7 @@ Its reference is unique per supplier.
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
 | `demoPrdReference`                                           | char(10)                                 | yes*     | yes       |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
-| `demoPrdType`                                                | enum(7) using `DEMO_PRD_TYPE` list       | yes      | yes       |          | -                                                                                |
+| `demoPrdType`                                                | enum(7) using `DEMO_PRD_TYPE` list       | yes      | yes       |          | Product type                                                                     |
 | `demoPrdDescription`                                         | text(1000000)                            |          | yes       |          | Product description                                                              |
 | `demoPrdPicture`                                             | image                                    |          | yes       |          | Product picture                                                                  |
 | `demoPrdStock`                                               | int(11)                                  | yes      | yes       |          | Current stock for product                                                        |
@@ -302,7 +317,11 @@ state transition to _shipped_ status.
 `DemoProductHistoric` business object definition
 ------------------------------------------------
 
+**Product** object history, tracks changes on:
 
+- Product name
+- Unit price
+- Availability
 
 ### Fields
 

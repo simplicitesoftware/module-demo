@@ -192,8 +192,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -2003,24 +2003,36 @@ paths:
         type: string
         required: false
       - in: query
-        name: demoCtcComments
-        description: Search filter for Comments on contact
-        type: string
-        required: false
-      - in: query
-        name: demoCtcFile
-        description: Search filter for Contact attached file
-        type: string
-        required: false
-      - in: query
         name: demoCtcStatus
         description: Search filter for Contact status
         type: string
         required: false
         enum:
         - O
-        - P
         - C
+        - P
+      - in: query
+        name: demoCtcType
+        description: Search filter for Contact type
+        type: string
+        required: false
+        enum:
+        - INF
+        - REQ
+        - CMP
+        - OTH
+      - in: query
+        name: demoCtcSubType
+        description: Search filter for Contact sub type
+        type: string
+        required: false
+        enum:
+        - DEFAULT
+      - in: query
+        name: demoCtcComments
+        description: Search filter for Comments on contact
+        type: string
+        required: false
       tags:
       - DemoContactHistoric
   /rest/DemoClient:
@@ -2246,7 +2258,7 @@ paths:
         required: false
       - in: query
         name: demoPrdType
-        description: Search filter for Type
+        description: Search filter for Product type
         type: string
         required: false
         enum:
@@ -2934,7 +2946,7 @@ definitions:
     type: object
     properties:
       demoPrdType:
-        description: Type
+        description: Product type
         type: string
         enum:
         - LAPTOP
@@ -3020,19 +3032,29 @@ definitions:
       row_idx:
         description: Version
         type: integer
+      demoCtcSubType:
+        description: Contact sub type
+        type: string
+        enum:
+        - DEFAULT
       demoCtcComments:
         description: Comments on contact
         type: string
-      demoCtcFile:
-        description: Contact attached file
-        type: object
       demoCtcStatus:
         description: Contact status
         type: string
         enum:
         - O
-        - P
         - C
+        - P
+      demoCtcType:
+        description: Contact type
+        type: string
+        enum:
+        - INF
+        - REQ
+        - CMP
+        - OTH
       created_dt_hist:
         description: Date
         type: string
@@ -3107,8 +3129,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcDatetime:
         description: Contcat date and time
         type: string

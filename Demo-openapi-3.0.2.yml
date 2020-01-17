@@ -233,7 +233,7 @@ components:
       type: object
       properties:
         demoPrdType:
-          description: Type
+          description: Product type
           type: string
           enum:
           - LAPTOP
@@ -319,19 +319,29 @@ components:
         row_idx:
           description: Version
           type: integer
+        demoCtcSubType:
+          description: Contact sub type
+          type: string
+          enum:
+          - DEFAULT
         demoCtcComments:
           description: Comments on contact
           type: string
-        demoCtcFile:
-          description: Contact attached file
-          type: object
         demoCtcStatus:
           description: Contact status
           type: string
           enum:
           - O
-          - P
           - C
+          - P
+        demoCtcType:
+          description: Contact type
+          type: string
+          enum:
+          - INF
+          - REQ
+          - CMP
+          - OTH
         created_dt_hist:
           description: Date
           type: string
@@ -406,8 +416,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -822,8 +832,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -2992,25 +3002,38 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - O
+          - C
+          - P
         in: query
-        name: demoCtcComments
-        description: Search filter for Comments on contact
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcFile
-        description: Search filter for Contact attached file
+        name: demoCtcStatus
+        description: Search filter for Contact status
         required: false
       - schema:
           type: string
           enum:
-          - O
-          - P
-          - C
+          - INF
+          - REQ
+          - CMP
+          - OTH
         in: query
-        name: demoCtcStatus
-        description: Search filter for Contact status
+        name: demoCtcType
+        description: Search filter for Contact type
+        required: false
+      - schema:
+          type: string
+          enum:
+          - DEFAULT
+        in: query
+        name: demoCtcSubType
+        description: Search filter for Contact sub type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcComments
+        description: Search filter for Comments on contact
         required: false
       tags:
       - DemoContactHistoric
@@ -3286,7 +3309,7 @@ paths:
           - OTHER
         in: query
         name: demoPrdType
-        description: Search filter for Type
+        description: Search filter for Product type
         required: false
       - schema:
           type: string
