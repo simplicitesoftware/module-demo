@@ -8,10 +8,10 @@
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix/>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2020-01-17 14:50:21</mdl_lastupd>
+		<mdl_lastupd>2020-01-17 14:57:02</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
-Demo **order management** application.
+This is a demo **order management** application (backend and frontend)
 
 ### Import
 
@@ -51,7 +51,15 @@ This ca ben acheived by importing the follwing XML:
 </object>
 </simplicite>
 ```
-]]></mdl_comment>
+
+### Quality
+
+This module can be analysed by the **SonarQube** analysis tool
+using this command:
+
+```bash
+mvn package sonar:sonar
+```]]></mdl_comment>
 	</data>
 </object>
 <object>

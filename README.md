@@ -13,7 +13,7 @@
 
 ### Introduction
 
-Demo **order management** application.
+This is a demo **order management** application (backend and frontend)
 
 ### Import
 
@@ -54,6 +54,14 @@ This ca ben acheived by importing the follwing XML:
 </simplicite>
 ```
 
+### Quality
+
+This module can be analysed by the **SonarQube** analysis tool
+using this command:
+
+```bash
+mvn package sonar:sonar
+```
 
 `DemoClient` business object definition
 ---------------------------------------
