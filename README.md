@@ -38,6 +38,22 @@ To import this module:
 In order to have the frontend examples working the password for the
 webservices-only user `website` must be `simplicite`.
 
+This ca ben acheived by importing the follwing XML:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>UserPwd</name>
+	<action>update</action>
+	<data>
+		<usr_login_read>website</usr_login_read>
+		<usr_password>simplicite</usr_password>
+	</data>
+</object>
+</simplicite>
+```
+
 
 `DemoClient` business object definition
 ---------------------------------------
