@@ -11,16 +11,33 @@
 `Demo` module definition
 ========================
 
-`Demo` module: **Order management** application.
+### Introduction
 
-Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
+Demo **order management** application.
+
+### Import
+
+To import this module:
+
+- Create a module named `Demo`
+- Set the settings as:
 
 ```json
 {
 	"type": "git",
-	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo.git" }
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo.git"
+	}
 }
 ```
+
+- Click on the _Import module_ button
+
+### Configure
+
+In order to have the frontend examples working the password for the
+webservices-only user `website` must be `simplicite`.
+
 
 `DemoClient` business object definition
 ---------------------------------------

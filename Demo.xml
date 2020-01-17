@@ -8,17 +8,34 @@
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix/>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-12-18 12:25:21</mdl_lastupd>
-		<mdl_comment><![CDATA[`Demo` module: **Order management** application.
+		<mdl_lastupd>2020-01-17 14:46:26</mdl_lastupd>
+		<mdl_comment><![CDATA[### Introduction
 
-Settings from [GitHub](https://github.com/simplicitesoftware/module-demo):
+Demo **order management** application.
+
+### Import
+
+To import this module:
+
+- Create a module named `Demo`
+- Set the settings as:
 
 ```json
 {
 	"type": "git",
-	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo.git" }
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo.git"
+	}
 }
-```]]></mdl_comment>
+```
+
+- Click on the _Import module_ button
+
+### Configure
+
+In order to have the frontend examples working the password for the
+webservices-only user `website` must be `simplicite`.
+]]></mdl_comment>
 	</data>
 </object>
 <object>
