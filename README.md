@@ -54,6 +54,15 @@ This ca ben acheived by importing the follwing XML:
 </simplicite>
 ```
 
+### Load data
+
+Some sample data is provided as a module's dataset. It contains:
+
+- Sample providers
+- Sample products
+- Sample customers
+
+Open this dataset and click on the _Apply button after having imported the module and made a full clear cache.
 ### Quality
 
 This module can be analysed by the **SonarQube** analysis tool
