@@ -157,7 +157,7 @@ A contact can be linked or not a an order of the selelcted client
 | _Ref. `demoOrdPrdId.demoPrdReference`_                       | _char(10)_                               |          |           |          | _Product reference_                                                              |
 | _Ref. `demoOrdPrdId.demoPrdName`_                            | _char(100)_                              |          |           |          | _Product name_                                                                   |
 | _Ref. `demoCtcOrdId.demoOrdQuantity`_                        | _int(11)_                                |          |           |          | _Product quantity ordered_                                                       |
-| `demoCtcComments`                                            | html(50000)                              |          | yes       |          | Comments on contact                                                              |
+| `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
 | `demoCtcFile`                                                | document                                 |          | yes       |          | Contact attached file                                                            |
 
 ### Lists
@@ -208,7 +208,7 @@ No custom action
 | `demoCtcStatus`                                              | enum(7) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
 | `demoCtcType`                                                | enum(7) using `DEMO_CTC_TYPE` list       | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(7) using `DEMO_CTC_SUBTYPE` list    |          | yes       |          | Contact sub type                                                                 |
-| `demoCtcComments`                                            | html(50000)                              |          | yes       |          | Comments on contact                                                              |
+| `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
 
 ### Lists
 

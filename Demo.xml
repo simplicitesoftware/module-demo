@@ -376,7 +376,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-01-17 18:02:53</usr_last_logon>
+		<usr_last_logon>2020-01-27 11:25:57</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -2676,8 +2676,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
-		<fld_type>11</fld_type>
+		<fld_tray>0</fld_tray>
+		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
@@ -2693,7 +2693,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>TXT</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Comments on contact]]></fld_comment>
@@ -2750,7 +2750,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -2767,7 +2767,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>MLST</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Contact attached file]]></fld_comment>
@@ -3194,7 +3194,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -3202,7 +3202,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
-		<fld_precision>min=1 max=10</fld_precision>
+		<fld_precision>min=0 max=10</fld_precision>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[1]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
@@ -4332,7 +4332,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="area col-sm-12" data-area="4:="></div>
   </div>
-</div>]]></tpl_ui>
+</div>
+]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4547,7 +4548,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoCtcPriority"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4577,7 +4579,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoCtcCliId__demoCliFax"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4613,7 +4616,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoCtcOrdId__demoOrdQuantity"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4621,10 +4625,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_name>DemoContact-4</ofa_name>
 		<ofa_position>4</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCtcComments"></div>
-  <div class="field" data-field="demoCtcFile"></div>
-</div>]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="row">
+  <div class="col-sm-7">
+    <div class="field" data-field="demoCtcComments"></div>
+  </div>
+  <div class="col-sm-5">
+    <div class="field" data-field="demoCtcFile"></div>
+  </div>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -6753,7 +6762,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCtcComments</obf_field_id.fld_name>
-		<obf_field_id.fld_type>11</obf_field_id.fld_type>
+		<obf_field_id.fld_type>21</obf_field_id.fld_type>
 		<obf_order>400</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -7014,7 +7023,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoContactHistoric</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCtcComments</obf_field_id.fld_name>
-		<obf_field_id.fld_type>11</obf_field_id.fld_type>
+		<obf_field_id.fld_type>21</obf_field_id.fld_type>
 		<obf_order>130</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -10899,6 +10908,17 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 </object>
 <object>
+	<name>DocIndex</name>
+	<action>upsert</action>
+	<data>
+		<din_name>B-demoCtcFile</din_name>
+		<din_field_id.fld_name>demoCtcFile</din_field_id.fld_name>
+		<din_path/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>PrintTemplate</name>
 	<action>upsert</action>
 	<data>
@@ -13935,7 +13955,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoCtcFile</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>File</tsl_value>
+		<tsl_value>Files</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -14691,7 +14711,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoCtcFile</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fichier joint</tsl_value>
+		<tsl_value>Fichiers</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -17091,6 +17111,24 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Vue en arbre du fournisseur</tsl_value>
 		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateDocIndex</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-demoCtcFile</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-demoCtcFile</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-demoCtcFile</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-demoCtcFile</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
