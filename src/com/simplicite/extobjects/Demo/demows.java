@@ -27,6 +27,7 @@ public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExte
 		addField("products", "supplierCode", "demoPrdSupId.demoSupCode");
 		addField("products", "supplierName", "demoPrdSupId.demoSupName");
 		addField("products", "reference", "demoPrdReference");
+		addField("products", "type", "demoPrdType");
 		addField("products", "name", "demoPrdName");
 
 		addObject("orders", "DemoOrder");
@@ -39,6 +40,7 @@ public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExte
 		addField("orders", "status", "demoOrdStatus");
 		addField("orders", "productReference", "demoOrdPrdId.demoPrdReference");
 		addField("orders", "productName", "demoOrdPrdId.demoPrdName");
+		addField("orders", "productType", "demoOrdPrdId.demoPrdType");
 		addField("orders", "productSupplierCode", "demoOrdPrdId.demoPrdSupId.demoSupCode");
 		addField("orders", "productSupplierName", "demoOrdPrdId.demoPrdSupId.demoSupName");
 	}

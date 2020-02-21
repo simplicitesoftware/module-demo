@@ -376,7 +376,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-02-05 17:28:24</usr_last_logon>
+		<usr_last_logon>2020-02-21 10:09:17</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -3897,7 +3897,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray/>
+		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
@@ -4352,7 +4352,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="area col-sm-12" data-area="5:-"></div>
   </div>
-</div>]]></tpl_ui>
+</div>
+]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4658,7 +4659,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoOrdDeliveryDate"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4684,7 +4686,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="field" data-field="demoOrdCliId__demoCliZipCode"></div>
   <div class="field" data-field="demoOrdCliId__demoCliCity"></div>
   <div class="field" data-field="demoOrdCliId__demoCliCountry"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4702,7 +4705,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoOrdPrdId__demoPrdName"></div>
     </div>
   </div>
-  <div class="field" data-field="demoOrdPrdId__demoPrdPicture"></div>
   <div class="field" data-field="demoOrdPrdId__demoPrdSupId"></div>
   <div class="row">
     <div class="col-sm-5">
@@ -4712,7 +4714,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupName"></div>
     </div>
   </div>
-  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupLogo"></div>
   <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupUsrId"></div>
   <div class="row">
     <div class="col-sm-6">
@@ -4722,7 +4723,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoOrdPrdId__demoPrdUnitPrice"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4747,7 +4749,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
       <div class="field" data-field="demoOrdTotal"></div>
     </div>
   </div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4755,7 +4758,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_name>DemoOrder-5</ofa_name>
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_ui><![CDATA[<div class="field" data-field="demoOrdComments"></div>]]></ofa_ui>
+		<ofa_ui><![CDATA[<div class="field" data-field="demoOrdComments"></div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -5320,7 +5324,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>U</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>box</obo_icon>
@@ -5445,7 +5449,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>U</obo_list_edit>
+		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>building</obo_icon>
@@ -7547,6 +7551,35 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_field_id.fld_name>demoPrdName</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>320</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>demoOrdPrdId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>DemoProduct</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible>2</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
+		<obf_field_id.fld_type>7</obf_field_id.fld_type>
+		<obf_order>325</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>

@@ -124,6 +124,15 @@ components:
     DemoOrder:
       type: object
       properties:
+        demoOrdPrdId__demoPrdType:
+          description: Product type
+          type: string
+          enum:
+          - LAPTOP
+          - DESKTOP
+          - TABLET
+          - SMARTPHONE
+          - OTHER
         demoOrdPrdId__demoPrdUnitPrice:
           description: Unit price of product
           type: number
@@ -332,8 +341,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -416,8 +425,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -832,8 +841,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -1669,6 +1678,18 @@ paths:
         in: query
         name: demoOrdPrdId__demoPrdName
         description: Search filter for Product name
+        required: false
+      - schema:
+          type: string
+          enum:
+          - LAPTOP
+          - DESKTOP
+          - TABLET
+          - SMARTPHONE
+          - OTHER
+        in: query
+        name: demoOrdPrdId__demoPrdType
+        description: Search filter for Product type
         required: false
       - schema:
           type: string
@@ -3004,8 +3025,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
