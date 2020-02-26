@@ -59,7 +59,7 @@ public class DemoOrder extends ObjectDB {
 			}
 
 			try {
-				DemoProduct prd = (DemoProduct)getGrant().getTmpObject("DemoProduct");
+				ObjectDB prd = getGrant().getTmpObject("DemoProduct");
 				prd.select(getField("demoOrdPrdId").getValue());
 				int q = getField("demoOrdQuantity").getInt(0);
 				prd.setParameter("QUANTITY", q);
