@@ -341,8 +341,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcType:
           description: Contact type
           type: string
@@ -3025,8 +3025,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status

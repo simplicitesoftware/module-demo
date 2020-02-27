@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>Demo</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix>demo</mdl_prefix>
+		<mdl_prefix/>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-demo.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-26 18:39:19</mdl_lastupd>
+		<mdl_lastupd>2020-02-27 11:19:53</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This is a demo **order management** application (backend and frontend)
@@ -376,7 +376,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-02-26 14:48:15</usr_last_logon>
+		<usr_last_logon>2020-02-27 11:17:30</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
