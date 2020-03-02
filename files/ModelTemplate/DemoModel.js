@@ -1,50 +1,69 @@
-Simplicite.ModelHooks.DemoModel = {
+Simplicite.Diagram.ModelHooks.DemoModel = {
 
-onLoadTemplate: function(template) {
-	template.pictures = {};
-},
+canUseShape: false,
 
-onLoadNode: function(node) {
-	var t = this.template;
-	if (node.template.name == "DemoModel_Supplier") {
-		delete t.pictures[node.object + "-" + node.id];
-		node.picture = Simplicite.Application.documentURL("DemoSupplier", "demoSupLogo", node.id, node.data.demoSupLogo);
-		node.bound = function() { 
-			node.w = 100;
-			var i = t.pictures[node.object + "-" + node.id];
-			node.h = i && i.width>0 ? i.height*node.w/i.width : 100;
-			return { x:node.x, y:node.y, w:node.w, h:node.h };
-		};
-	}
-	else if (node.template.name == "DemoModel_Product") {
-		delete t.pictures[node.object + "-" + node.id];
-		node.picture = Simplicite.Application.documentURL("DemoProduct", "demoPrdPicture", node.id, node.data.demoPrdPicture);
-		node.bound = function() { 
-			node.w = 100;
-			var i = t.pictures[node.object + "-" + node.id];
-			node.h = i && i.width>0 ? i.height*node.w/i.width : 100;
-			return { x:node.x, y:node.y, w:node.w, h:node.h };
-		};
-	} else if (node.template.name == "DemoModel_Client") {
-		node.setIcon("user");
-	}
-},
+imgFields: { "DemoSupplier": "demoSupLogo", "DemoProduct": "demoPrdPicture" },
 
-onDrawNode: function(node) {
-	if (node.picture) {
-		var t = this.template;
-		var c = this.desktop.ctx;
-		var img = t.pictures[node.object + "-" + node.id];
-		if (!img) {
-			img = new Image();
-			img.src = node.picture;
-			img.onload = function() { c.drawImage(this, node.x, node.y, node.w, node.h); };
-			t.pictures[node.object + "-" + node.id] = img;
-		} else {
-			c.drawImage(img, node.x, node.y, node.w, node.h);
+// Asynchronous loading of picture
+onLoadNode: function(node, cbk) {
+	var self = this;
+	var imgField = self.template.imgFields[node.object];
+	if (imgField && node.data) {
+		// Remove previous cached image in SVG definitons
+		var imgId = node.data[imgField],
+			imgName = "pict_"+node.object+"_"+node.id;
+		self.desktop.removeDefImage(imgName, 50, 0);
+		// Load picture before rendering
+		if (imgId) {
+			self.desktop.addDefImage(imgName,
+				self.root + "/ui/document?object="+node.object+"&field="+imgField+"&row_id="+node.id+"&doc_id="+imgId+"&cdisp=inline",
+				50, 0, "def-image", cbk);
+			return;
 		}
-	} else {
-		node.draw();
+	}
+	cbk();
+},
+
+// Synchronous rendering
+onDrawNode: function(n, display) {
+	var self = this, pad=10;
+		elt = Simplicite.Diagram.createElement;
+
+	var imgField = self.template.imgFields[n.object];
+	if (imgField && n.data) {
+		// Border
+		var b = n.border = elt("rect", { x:0, y:0, width:0, height:0 });
+		b.addClass("border").appendTo(n.elt);
+		n.radius && b.attr({ rx: n.radius, ry: n.radius });
+		if (n.shadow) b.attr("filter","url(#shadow)");
+		else b.removeAttr("filter");
+		n.bind(b);
+	
+		// Picture
+		var x = pad,
+			imgId = n.data[imgField],
+			imgName = "pict_"+n.object+"_"+n.id;
+		if (imgId) {
+			self.desktop.getDefImage(imgName, 50, 0)
+				.appendTo(n.elt)
+				.attr({ x:x, y:pad });
+			x += 50+pad;
+		}
+		
+		// Product infos
+		elt("text", { x:x, y:pad, dy:"1em"}).text(n.label).appendTo(n.elt).css("font-weight", "bold");
+		if (n.object=="DemoSupplier") {
+			elt("text", { x:x, y:pad, dy:"2em"}).text(n.data.demoSupName).appendTo(n.elt);
+		} else if (n.object=="DemoProduct") {
+			elt("text", { x:x, y:pad, dy:"2em"}).text(n.data.demoPrdName).appendTo(n.elt);
+			elt("text", { x:x, y:pad, dy:"3em"}).text("Unit price: "+n.data.demoPrdUnitPrice).appendTo(n.elt);
+		}
+
+		// Set final size of border
+		var box = n.elt[0].getBBox();
+		n.size(box.width + pad*2, box.height + pad*2);
+	} else { // Default drawing for other objects
+		display();
 	}
 }
 

@@ -201,6 +201,14 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<name>Model</name>
 	<action>upsert</action>
 	<data>
+		<mod_name>DemoCatalog</mod_name>
+		<mod_template_id.mtp_name>DemoModel</mod_template_id.mtp_name>
+		<mod_doc>files/Model/DemoCatalog.svg</mod_doc>
+		<mod_json/>
+		<mod_image>files/Model/DemoCatalog.png</mod_image>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<mod_name>DemoContactStates</mod_name>
 		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
 		<mod_doc>files/Model/DemoContactStates.svg</mod_doc>
@@ -13689,7 +13697,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<mto_object_id.obo_name>DemoClient</mto_object_id.obo_name>
 		<mto_type>O</mto_type>
 		<mto_show_field>1</mto_show_field>
-		<mto_color>#5C61FF</mto_color>
+		<mto_color>#FFFFFF</mto_color>
 		<mto_radius>5</mto_radius>
 		<mto_shadow>1</mto_shadow>
 		<mto_cps_field>1</mto_cps_field>
@@ -13703,7 +13711,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<mto_object_id.obo_name>DemoProduct</mto_object_id.obo_name>
 		<mto_type>O</mto_type>
 		<mto_show_field>0</mto_show_field>
-		<mto_color>#3DAB35</mto_color>
+		<mto_color>#FFFFFF</mto_color>
 		<mto_radius>5</mto_radius>
 		<mto_shadow>1</mto_shadow>
 		<mto_cps_field>1</mto_cps_field>
@@ -13717,7 +13725,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<mto_object_id.obo_name>DemoSupplier</mto_object_id.obo_name>
 		<mto_type>O</mto_type>
 		<mto_show_field>0</mto_show_field>
-		<mto_color>#FF5454</mto_color>
+		<mto_color>#FFFFFF</mto_color>
 		<mto_radius>5</mto_radius>
 		<mto_shadow>1</mto_shadow>
 		<mto_cps_field>1</mto_cps_field>
