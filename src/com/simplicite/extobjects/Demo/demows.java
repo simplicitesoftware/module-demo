@@ -43,5 +43,11 @@ public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExte
 		addField("orders", "productType", "demoOrdPrdId.demoPrdType");
 		addField("orders", "productSupplierCode", "demoOrdPrdId.demoPrdSupId.demoSupCode");
 		addField("orders", "productSupplierName", "demoOrdPrdId.demoPrdSupId.demoSupName");
+		
+		addObject("stats", "DemoStats", DESC_HIDDEN_FROM_SCHEMA);
+		addField("stats", "status", "demoOrdStatus");
+		addField("stats", "count", "demoStsCount");
+		addField("stats", "quantity", "demoStsQuantity");
+		addField("stats", "total", "demoStsTotal");
 	}
 }
