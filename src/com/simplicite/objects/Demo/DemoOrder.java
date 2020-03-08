@@ -1,8 +1,8 @@
 package com.simplicite.objects.Demo;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.ArrayList;
 
 import com.simplicite.commons.Demo.DemoCommon;
 import com.simplicite.util.AppLog;
@@ -48,7 +48,7 @@ public class DemoOrder extends ObjectDB {
 				String desc = "Hello " + name + ". Your order " + n + " delivery is scheduled";
 				new Mail(getGrant()).sendInvitation(
 					d, Tool.shiftSeconds(d, 2*3600),
-					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2") + " " + getFieldValue("demoOrdCliId.demoCliAddress3")
+					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2")
 						+ getFieldValue("demoOrdCliId.demoCliZipCode") + getFieldValue("demoOrdCliId.demoCliCity"),
 					"demo@simplicite.fr", "Simplicité",
 					getFieldValue("demoOrdCliId.demoCliEmail"), name,
