@@ -16528,7 +16528,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_field_id.fld_name>demoCliAddress1</tsl_id.obf_field_id.fld_name>
 		<tsl_id.obf_order>250</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer address 1</tsl_value>
+		<tsl_value>Customer address</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_listhelp/>
@@ -16541,7 +16541,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_field_id.fld_name>demoCliAddress2</tsl_id.obf_field_id.fld_name>
 		<tsl_id.obf_order>251</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer address 2</tsl_value>
+		<tsl_value>Customer address compl.</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_listhelp/>
@@ -17048,7 +17048,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_field_id.fld_name>demoCliAddress1</tsl_id.obf_field_id.fld_name>
 		<tsl_id.obf_order>250</tsl_id.obf_order>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Adresse client 1</tsl_value>
+		<tsl_value>Adresse client</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_listhelp/>
@@ -17061,7 +17061,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_field_id.fld_name>demoCliAddress2</tsl_id.obf_field_id.fld_name>
 		<tsl_id.obf_order>251</tsl_id.obf_order>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Adresse client 2</tsl_value>
+		<tsl_value>Complément adresse client</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_listhelp/>
