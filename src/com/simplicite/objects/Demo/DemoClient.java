@@ -20,13 +20,12 @@ public class DemoClient extends ObjectDB {
 
 			ObjectField a1 = getField("demoCliAddress1");
 			ObjectField a2 = getField("demoCliAddress2");
-			ObjectField a3 = getField("demoCliAddress3");
 			ObjectField zc = getField("demoCliZipCode");
 			ObjectField ci = getField("demoCliCity");
 			ObjectField co = getField("demoCliCountry");
 
-			if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || a3.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
-				String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + (a3.isEmpty() ? "" : ", " + a3.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
+			if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
+				String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
 				AppLog.info(getClass(), "preSave", "Try to geocode " + a, getGrant());
 				Location c = new GMapTool(getGrant()).geocodeOne(a);
 				AppLog.info(getClass(), "preSave", "Coordinates = " + c, getGrant());

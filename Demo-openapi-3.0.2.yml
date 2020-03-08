@@ -56,9 +56,6 @@ components:
         demoCliPlacemapLabel:
           description: Customer place map label
           type: string
-        demoCliAddress3:
-          description: Customer address (line 3)
-          type: string
         demoCliFax:
           description: Customer fax number
           type: string
@@ -171,9 +168,6 @@ components:
         demoOrdVAT:
           description: VAT for order
           type: number
-        demoOrdCliId__demoCliAddress3:
-          description: Customer address (line 3)
-          type: string
         demoOrdCliId__demoCliAddress2:
           description: Customer address (line 2)
           type: string
@@ -1659,12 +1653,6 @@ paths:
         in: query
         name: demoOrdCliId__demoCliAddress2
         description: Search filter for Customer address (line 2)
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoOrdCliId__demoCliAddress3
-        description: Search filter for Customer address (line 3)
         required: false
       - schema:
           type: string
@@ -3241,12 +3229,6 @@ paths:
         in: query
         name: demoCliAddress2
         description: Search filter for Customer address (line 2)
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCliAddress3
-        description: Search filter for Customer address (line 3)
         required: false
       - schema:
           type: string

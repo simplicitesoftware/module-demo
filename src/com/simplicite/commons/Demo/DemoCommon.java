@@ -96,8 +96,6 @@ public class DemoCommon implements java.io.Serializable {
 			c.addElement(new Paragraph(f.getDisplay() + ": " + f.getValue()));
 			f = ord.getField("demoOrdCliId.demoCliAddress2");
 			c.addElement(new Paragraph(f.getDisplay() + ": " + f.getValue()));
-			f = ord.getField("demoOrdCliId.demoCliAddress3");
-			c.addElement(new Paragraph(f.getDisplay() + ": " + f.getValue()));
 			f = ord.getField("demoOrdCliId.demoCliZipCode");
 			c.addElement(new Paragraph(f.getDisplay() + ": " + f.getValue()));
 			f = ord.getField("demoOrdCliId.demoCliCountry");
