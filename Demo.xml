@@ -4791,12 +4791,19 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   <div class="row">
     <div class="col-sm-6">
       <div class="field" data-field="demoOrdCliId__demoCliAddress1"></div>
-      <div class="field" data-field="demoOrdCliId__demoCliAddress3"></div>
-      <div class="field" data-field="demoOrdCliId__demoCliCity"></div>
     </div>
     <div class="col-sm-6">
       <div class="field" data-field="demoOrdCliId__demoCliAddress2"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
       <div class="field" data-field="demoOrdCliId__demoCliZipCode"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoOrdCliId__demoCliCity"></div>
+    </div>
+    <div class="col-sm-4">
       <div class="field" data-field="demoOrdCliId__demoCliCountry"></div>
     </div>
   </div>
@@ -16547,7 +16554,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_field_id.fld_name>demoCliZipCode</tsl_id.obf_field_id.fld_name>
 		<tsl_id.obf_order>253</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer zip code</tsl_value>
+		<tsl_value>Customer postal code</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_listhelp/>
