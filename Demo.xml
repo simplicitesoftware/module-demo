@@ -4462,7 +4462,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<client>
 			<code>[VALUE:demoOrdCliId.demoCliCode]</code>
 			<name>[VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]</name>
-			<address>[VALUE:demoOrdCliId.demoCliAddress1]; [VALUE:demoOrdCliId.demoCliAddress2]; [VALUE:demoOrdCliId.demoCliAddress3]; [VALUE:demoOrdCliId.demoCliZipCode]; [VALUE:demoOrdCliId.demoCliCity]; [VALUE:demoOrdCliId.demoCliCountry]</address>
+			<address>[VALUE:demoOrdCliId.demoCliAddress1]; [VALUE:demoOrdCliId.demoCliAddress2]; [VALUE:demoOrdCliId.demoCliZipCode]; [VALUE:demoOrdCliId.demoCliCity]; [VALUE:demoOrdCliId.demoCliCountry]</address>
 		</client>
 	</order>
 [END]	
