@@ -9,45 +9,50 @@ import com.simplicite.util.tools.Parameters;
 public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExternalObject {
 	private static final long serialVersionUID = 1L;
 
+	public static final String SUPPLIERS = "suppliers";
+	public static final String PRODUCTS = "products";
+	public static final String ORDERS = "orders";
+	public static final String STATS = "stats";
+
 	@Override
 	public void init(Parameters params) {
 		setOpenAPISpec(JSONTool.OPENAPI_OAS2);
 		setOpenAPIDesc("This is a **simplified** variant of the demo API for the following business objects:\n\n- Suppliers\n- Products\n- Orders");
 		setOpenAPIVers("v4.0");
 
-		addObject("suppliers", "DemoSupplier");
-		addField("suppliers", "code", "demoSupCode");
-		addField("suppliers", "name", "demoSupName");
+		addObject(SUPPLIERS, "DemoSupplier");
+		addField(SUPPLIERS, "code", "demoSupCode");
+		addField(SUPPLIERS, "name", "demoSupName");
 
-		addObject("products", "DemoProduct");
+		addObject(PRODUCTS, "DemoProduct");
 		// **Without** embedded list
-		//addRefField("products", "suppliers", "supplierId", "demoPrdSupId", "Reference to supplier's row ID");
+		//addRefField(prd, sup, "supplierId", "demoPrdSupId", "Reference to supplier's row ID");
 		// **With** embedded list
-		addRefField("products", "suppliers", "supplierId", "demoPrdSupId", "supplierProducts", true, "Reference to supplier's row ID");
-		addField("products", "supplierCode", "demoPrdSupId.demoSupCode");
-		addField("products", "supplierName", "demoPrdSupId.demoSupName");
-		addField("products", "reference", "demoPrdReference");
-		addField("products", "type", "demoPrdType");
-		addField("products", "name", "demoPrdName");
+		addRefField(PRODUCTS, SUPPLIERS, "supplierId", "demoPrdSupId", "supplierProducts", true, "Reference to supplier's row ID");
+		addField(PRODUCTS, "supplierCode", "demoPrdSupId.demoSupCode");
+		addField(PRODUCTS, "supplierName", "demoPrdSupId.demoSupName");
+		addField(PRODUCTS, "reference", "demoPrdReference");
+		addField(PRODUCTS, "type", "demoPrdType");
+		addField(PRODUCTS, "name", "demoPrdName");
 
-		addObject("orders", "DemoOrder");
+		addObject(ORDERS, "DemoOrder");
 		// **Without** embedded list
-		//addRefField("orders", "products", "productId", "demoOrdPrdId", "Reference to product's row ID");
+		//addRefField(ord, prd, "productId", "demoOrdPrdId", "Reference to product's row ID");
 		// **With** embedded list
-		addRefField("orders", "products", "productId", "demoOrdPrdId", "productOrders", true, "Reference to product's row ID");
-		addField("orders", "number", "demoOrdNumber");
-		addField("orders", "date", "demoOrdDate");
-		addField("orders", "status", "demoOrdStatus");
-		addField("orders", "productReference", "demoOrdPrdId.demoPrdReference");
-		addField("orders", "productName", "demoOrdPrdId.demoPrdName");
-		addField("orders", "productType", "demoOrdPrdId.demoPrdType");
-		addField("orders", "productSupplierCode", "demoOrdPrdId.demoPrdSupId.demoSupCode");
-		addField("orders", "productSupplierName", "demoOrdPrdId.demoPrdSupId.demoSupName");
-		
-		addObject("stats", "DemoStats", DESC_HIDDEN_FROM_SCHEMA);
-		addField("stats", "status", "demoOrdStatus");
-		addField("stats", "count", "demoStsCount");
-		addField("stats", "quantity", "demoStsQuantity");
-		addField("stats", "total", "demoStsTotal");
+		addRefField(ORDERS, PRODUCTS, "productId", "demoOrdPrdId", "productOrders", true, "Reference to product's row ID");
+		addField(ORDERS, "number", "demoOrdNumber");
+		addField(ORDERS, "date", "demoOrdDate");
+		addField(ORDERS, "status", "demoOrdStatus");
+		addField(ORDERS, "productReference", "demoOrdPrdId.demoPrdReference");
+		addField(ORDERS, "productName", "demoOrdPrdId.demoPrdName");
+		addField(ORDERS, "productType", "demoOrdPrdId.demoPrdType");
+		addField(ORDERS, "productSupplierCode", "demoOrdPrdId.demoPrdSupId.demoSupCode");
+		addField(ORDERS, "productSupplierName", "demoOrdPrdId.demoPrdSupId.demoSupName");
+
+		addObject(STATS, "DemoStats", DESC_HIDDEN_FROM_SCHEMA);
+		addField(STATS, "status", "demoOrdStatus");
+		addField(STATS, "count", "demoStsCount");
+		addField(STATS, "quantity", "demoStsQuantity");
+		addField(STATS, "total", "demoStsTotal");
 	}
 }
