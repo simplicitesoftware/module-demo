@@ -448,12 +448,6 @@ Order delivery agenda
 Place new order internal page
 
 
-`DemoWebSite` external object definition
-----------------------------------------
-
-Demo website developed in Javascript & Bootstrap
-
-
 `demows` external object definition
 -----------------------------------
 
