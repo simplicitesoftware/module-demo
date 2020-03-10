@@ -4,16 +4,16 @@
 
 var DemoPlaceNewOrder = typeof DemoPlaceNewOrder !== "undefined" ? DemoPlaceNewOrder : (function($) {
 
-var app, cli, sup, prd, responsive = typeof $ui !== "undefined";
+var app, cli, sup, prd;
 
 function render() {
-	if (!responsive) $("#placeneworder").addClass("workborder");
-	app = responsive ? $ui.getAjax() : Simplicite.Application;
+	app = $ui.getAjax();
+
 	app.setErrorHandler(function(err) {
 		$("#placeneworder-err").append($("<p/>").text(app.getErrorMessage(err))).show();
 	});
 
-	$("#placeneworder-ord").append(panel("Order", $("<div/>")
+	$("#placeneworder-ord").append($ui.view.tools.panel({ title: "Order", content: $("<div/>")
 		.append($("<div/>").append("Selected customer:"))
 		.append($("<div/>", { id: "placeneworder-selcli" }).append("&lt;none&gt;")).append("<br/>")
 		.append($("<div/>").append("Selected product:"))
@@ -23,30 +23,22 @@ function render() {
 			.append("&nbsp;Total:&nbsp;")
 			.append($("<span/>", { id: "placeneworder-total" }).append("0.00"))
 			.append("&nbsp;&euro;&nbsp;")
-			.append($("<button/>", { id: "placeneworder-ok", disabled: true }).addClass(responsive ? "btn btn-primary" : "buttonaction").text("OK").click(order))
+			.append($("<button/>", { id: "placeneworder-ok", disabled: true }).addClass("btn btn-primary").text("OK").click(order))
 		)
 		.append($("<div/>", { id: "placeneworder-err", style: "color: red; display: none; font-weight: bold;" }))
-	));
+	}));
 
 	cli = app.getBusinessObject("DemoClient");
 	cli.item = null;
+
 	sup = app.getBusinessObject("DemoSupplier");
 	sup.item = null;
+
 	prd = app.getBusinessObject("DemoProduct");
 	prd.item = null;
 
 	getCli();
 	getSup();
-}
-
-function panel(title, content) {
-	if (!responsive) {
-		return $("<div/>")
-			.append($("<div/>").addClass("workareatitle").text(title))
-			.append($("<div/>").addClass("workarea").append($("<div/>").addClass("workareacontent").append(content)));
-	} else {
-		return $ui.view.tools.panel({ title: title, content: content });
-	}
 }
 
 function getCli() {
@@ -57,7 +49,7 @@ function getCli() {
 			var l = c.demoCliCode + " - " + c.demoCliFirstname + " " + c.demoCliLastname;
 			d.append($("<p/>", { id: "placeneworder-cli_" + c.row_id }).addClass("obj").data("item", c).click(selCli).text(l));
 		}
-		$("#placeneworder-cli").append(panel("Select customer", d)).slideDown();
+		$("#placeneworder-cli").append($ui.view.tools.panel({ title: "Select customer", content: d })).slideDown();
 	});
 }
 
@@ -80,7 +72,7 @@ function getSup() {
 			var l = s.demoSupCode + " - " + s.demoSupName;
 			d.append($("<p/>", { id: "placeneworder-sup_" + s.row_id }).addClass("obj").data("item", s).click(selSup).text(l));
 		}
-		$("#placeneworder-sup").append(panel("Select supplier", d)).slideDown();
+		$("#placeneworder-sup").append($ui.view.tools.panel({ title: "Select supplier", content: d })).slideDown();
 	});
 }
 
@@ -99,7 +91,7 @@ function selSup() {
 				.append($("<img/>", { src: "data:" + p.demoPrdPicture.mime + ";base64," + p.demoPrdPicture.content }).css("width", "50px"))
 				.append($("<span/>").text(l)));
 		}
-		$("#placeneworder-prd").append(panel("Select product", d)).slideDown();
+		$("#placeneworder-prd").append($ui.view.tools.panel({ title: "Select product", content: d })).slideDown();
 	}, { demoPrdSupId: sup.item.row_id }, { inlineDocs: true });
 }
 
