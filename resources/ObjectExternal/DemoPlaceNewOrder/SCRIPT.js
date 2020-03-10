@@ -66,8 +66,10 @@ function selCli() {
 	$("#placeneworder-cli").find("p").removeClass("sel");
 	$("#placeneworder-cli_" + cli.item.row_id).addClass("sel");
 	$("#placeneworder-selcli").empty().append($("<strong/>").text(cli.item.demoCliCode + " - " + cli.item.demoCliFirstname + " " + cli.item.demoCliLastname));
-	if (prd.item)
-		$("#placeneworder-ok").attr("disabled", false); $("#placeneworder-qty").select();
+	if (prd.item) {
+		$("#placeneworder-ok").attr("disabled", false);
+		$("#placeneworder-qty").select();
+	}
 }
 
 function getSup() {
@@ -108,7 +110,10 @@ function selPrd() {
 	$("#placeneworder-selprd").empty()
 		.append($("<img/>", { src: "data:" + prd.item.demoPrdPicture.mime + ";base64," + prd.item.demoPrdPicture.content })
 		.append("<br/>").append($("<strong/>").text(prd.item.demoPrdReference + " " + prd.item.demoPrdName)));
-	if (cli.item) { $("#placeneworder-ok").attr("disabled", false); $("#placeneworder-qty").select(); }
+	if (cli.item) {
+		$("#placeneworder-ok").attr("disabled", false);
+		$("#placeneworder-qty").select();
+	}
 	total();
 }
 

@@ -142,7 +142,7 @@ public class DemoCommon implements java.io.Serializable {
 			return bos.toByteArray();
 		} catch (Exception e) {
 			AppLog.error(DemoCommon.class, "orderReceipt", "Unable to generate order receipt", e, ord.getGrant());
-			return null;
+			return e.getMessage().getBytes();
 		}
 	}
 }
