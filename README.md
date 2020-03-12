@@ -430,7 +430,7 @@ suppliers of products that can be ordered.
 * `OrderCreate`: Order creation form activity
 * `End`: End activity
 
-`DemoCatalog` external object definition
+`democatalog` external object definition
 ----------------------------------------
 
 Custom JSON web service for getting the product catalog
