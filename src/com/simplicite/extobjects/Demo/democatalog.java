@@ -5,7 +5,6 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.Tool;
 import com.simplicite.util.exceptions.HTTPException;
@@ -24,7 +23,7 @@ public class democatalog extends com.simplicite.webapp.services.RESTServiceExter
 	@Override
 	public Object get(Parameters params) throws HTTPException {
 		JSONArray res = new JSONArray();
-		
+
 		ObjectDB prd = getGrant().getTmpObject("DemoProduct");
 		prd.resetFilters();
 		prd.getField("demoPrdAvailable").setFilter(Tool.TRUE);
