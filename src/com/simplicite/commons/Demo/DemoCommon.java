@@ -8,9 +8,9 @@ import com.lowagie.text.Image;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
-import com.simplicite.objects.Demo.DemoOrder;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.Grant;
+import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.Tool;
 import com.simplicite.util.tools.PDFTool;
@@ -29,7 +29,7 @@ public class DemoCommon implements java.io.Serializable {
 	 */
 	public static boolean isLowStock(Grant grant, String prdId, int stock) {
 		// Get work instance for DemoOrder object
-		DemoOrder ord = (DemoOrder)grant.getTmpObject("DemoOrder");
+		ObjectDB ord = grant.getTmpObject("DemoOrder");
 
 		// Set search filters (on the last N days)
 		ord.resetFilters();
@@ -62,7 +62,7 @@ public class DemoCommon implements java.io.Serializable {
 	 * Order receipt publication as PDF
 	 * @param ord Order object
 	 */
-	public static byte[] orderReceipt(DemoOrder ord) {
+	public static byte[] orderReceipt(ObjectDB ord) {
 		try (ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream()) {
 			Document pdf = PDFTool.open(bos);
 
