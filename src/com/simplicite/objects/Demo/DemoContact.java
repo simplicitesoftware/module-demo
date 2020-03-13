@@ -11,6 +11,9 @@ import com.simplicite.util.tools.ExcelPOITool;
 import com.simplicite.util.tools.ExcelPOITool.ExcelCell;
 import com.simplicite.util.tools.ExcelPOITool.ExcelRow;
 import com.simplicite.util.tools.ExcelPOITool.ExcelSheet;
+import com.simplicite.util.tools.HTMLTool;
+import com.simplicite.util.tools.MustacheTool;
+import com.simplicite.webapp.web.WebPage;
 
 /**
  * Contact business object
@@ -19,7 +22,20 @@ import com.simplicite.util.tools.ExcelPOITool.ExcelSheet;
 public class DemoContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	/** Publication: Microsoft Excel(R) contact sheet */
+	/** Publication: HTML using Mustache(R) templating */
+	public Object printHTML(PrintTemplate pt) {
+		try {
+			WebPage wp = new WebPage(pt.getDisplay());
+			wp.appendCSS(HTMLTool.getResourceCSSContent(getGrant(), "DEMO_PRINT_STYLES")); // Inlined styles
+			wp.append(MustacheTool.apply(this, "PRINT"));
+			return wp.toString();
+		} catch (Exception e) {
+			AppLog.error(getClass(), "printHTML", "Unable to publish", e, getGrant());
+			return null;
+		}
+	}
+
+	/** Publication: Microsoft Excel(R) sheet */
 	public Object printExcel(PrintTemplate pt) {
 		try {
 			// Build rows from selected IDs or from current filters

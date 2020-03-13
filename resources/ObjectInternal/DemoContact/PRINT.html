@@ -1,0 +1,35 @@
+<div class="demo">
+	<section class="container">
+		<table>
+			<tr>
+				<th>Date</th>
+				<td>{{ demoCtcDatetime }}</td>
+			</tr>
+			<tr>
+				<th>Type / Sub-type</th>
+				<td>{{ demoCtcType }} / {{ demoCtcSubType }}</td>
+			</tr>
+			<tr>
+				<th>Canal</th>
+				<td>{{ demoCtcCanal }}</td>
+			</tr>
+			<tr>
+				<th>Status</th>
+				<td>{{ demoCtcStatus }}</td>
+			</tr>
+			<tr>
+				<th>Customer</th>
+				<td>
+					{{ demoCtcCliId__demoCliCode }}
+					<br/>{{ demoCtcCliId__demoCliFirstname }} {{ demoCtcCliId__demoCliLastname }}
+					<br/>{{ demoCtcCliId__demoCliEmail }}
+					<br/>{{ demoCtcCliId__demoCliMobilePhone }}
+				</td>
+			</tr>
+			<tr>
+				<th>Comments</th>
+				<td><pre>{{ demoCtcComments }}</pre></td>
+			</tr>
+		</table>
+	</section>
+</div>

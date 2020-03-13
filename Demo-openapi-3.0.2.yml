@@ -2829,6 +2829,47 @@ paths:
         required: false
       tags:
       - session
+  /rest/DemoContact/{row_id}/publication:DemoContact-HTML:
+    get:
+      summary: Call a custom publication for a DemoContact business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-democontact-publication-democontact-html
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoContact
   /rest/DemoProductHistoric:
     get:
       summary: Search DemoProductHistoric business object records or get contextualized
