@@ -33,7 +33,7 @@ function render() {
 }
 
 function getCli() {
-	$ui.getUIObject("DemoClient", function(c) {
+	$ui.getUIObject("DemoClient", "pno_DemoClient", function(c) {
 		cli = c;
 		cli.item = null;
 		console.log(cli);
@@ -61,7 +61,7 @@ function selCli() {
 }
 
 function getSup() {
-	$ui.getUIObject("DemoSupplier", function(s) {
+	$ui.getUIObject("DemoSupplier", "pno_DemoSupplier", function(s) {
 		sup = s;
 		sup.item = null;
 		sup.search(function() {
@@ -81,7 +81,7 @@ function selSup() {
 	$("#placeneworder-sup").find("p").removeClass("sel");
 	$("#placeneworder-sup_" + sup.item.row_id).addClass("sel");
 	$("#placeneworder-prd").hide().empty();
-	$ui.getUIObject("DemoProduct", function(p) {
+	$ui.getUIObject("DemoProduct", "pno_DemoProduct", function(p) {
 		prd = p;
 		prd.item = null;
 		prd.search(function() {
@@ -120,7 +120,7 @@ function total() {
 
 function order() {
 	$("#placeneworder-err").empty().hide();
-	$ui.getUIObject("DemoOrder", function(o) {
+	$ui.getUIObject("DemoOrder", "pno_DemoOrder", function(o) {
 		ord = o;
 		ord.item = null;
 		// ZZZ Get for create must be called to set default values

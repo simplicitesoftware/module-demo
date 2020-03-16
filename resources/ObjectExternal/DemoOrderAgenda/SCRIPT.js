@@ -4,16 +4,17 @@
 
 var DemoOrderAgenda = typeof DemoOrderAgenda !== "undefined" ? DemoOrderAgenda : (function($) {
 
-var app, ord, responsive = typeof $ui !== "undefined", debug = false;
+var ord, debug = false;
 
 function render(url) {
-	app = responsive ? $ui.getAjax() : Simplicite.Application;
-	ord = app.getBusinessObject("DemoOrder", "agenda_DemoOrder");
-	ord.getMetaData(renderCalendar);
+	$ui.getUIObject("DemoOrder", "agenda_DemoOrder", function(o) {
+		ord = o;
+		ord.getMetaData(calendar);
+	});
 }
 
-function renderCalendar() {
-	$("#ordercalendar").addClass(!responsive ? "workborder" : null).fullCalendar({
+function calendar() {
+	$("#ordercalendar").fullCalendar({
 		header: {
 			left: "prev,next today",
 			center: "title",
@@ -32,10 +33,7 @@ function renderCalendar() {
 		},
 		eventClick: function(e) {
 			if (debug) console.log("Order " + e.id + " clicked");
-			if (responsive)
-				$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
-			else
-				document.location.replace(url.replace(/ROWID/, e.id));
+			$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
 		},
 		eventDrop: function(e) {
 			var s = e.start.format( "YYYY-MM-DD HH:mm:ss");
