@@ -4,11 +4,11 @@
 
 var DemoPlaceNewOrder = typeof DemoPlaceNewOrder !== "undefined" ? DemoPlaceNewOrder : (function($) {
 
-var app, cli, sup, prd;
+var cli, sup, prd;
 
 function render() {
-	app = $ui.getAjax();
-
+	// Override default error handler
+	var app = $ui.getAjax();
 	app.setErrorHandler(function(err) {
 		$("#placeneworder-err").append($("<p/>").text(app.getErrorMessage(err))).show();
 	});
