@@ -8,9 +8,9 @@ var cli, sup, prd;
 
 function render() {
 	// Override default error handler
-	var app = $ui.getAjax();
-	app.setErrorHandler(function(err) {
-		$("#placeneworder-err").append($("<p/>").text(app.getErrorMessage(err))).show();
+	var ajax = $ui.getAjax();
+	ajax.setErrorHandler(function(err) {
+		$("#placeneworder-err").append($("<p/>").text(ajax.getErrorMessage(err))).show();
 	});
 
 	$("#placeneworder-ord").append($ui.view.tools.panel({ title: "Order", content: $("<div/>")
