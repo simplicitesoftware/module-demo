@@ -1,9 +1,11 @@
 package com.simplicite.commons.Demo;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.List;
 
 import com.lowagie.text.Document;
+import com.lowagie.text.DocumentException;
 import com.lowagie.text.Image;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfPCell;
@@ -62,7 +64,7 @@ public class DemoCommon implements java.io.Serializable {
 	 * Order receipt publication as PDF
 	 * @param ord Order object
 	 */
-	public static byte[] orderReceipt(ObjectDB ord) {
+	public static byte[] orderReceipt(ObjectDB ord) throws IOException, DocumentException {
 		try (ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream()) {
 			Document pdf = PDFTool.open(bos);
 
@@ -140,9 +142,6 @@ public class DemoCommon implements java.io.Serializable {
 
 			PDFTool.close(pdf);
 			return bos.toByteArray();
-		} catch (Exception e) {
-			AppLog.error(DemoCommon.class, "orderReceipt", "Unable to generate order receipt", e, ord.getGrant());
-			return e.getMessage().getBytes();
 		}
 	}
 }

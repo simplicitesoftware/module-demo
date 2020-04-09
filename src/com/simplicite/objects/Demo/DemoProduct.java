@@ -47,8 +47,9 @@ public class DemoProduct extends ObjectDB {
 			AppLog.info(getClass(), "increaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
 			// User message
 			return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
-		} else
+		} else {
 			return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + q);
+		}
 	}
 
 	/** Action: decrease stock */
@@ -74,8 +75,8 @@ public class DemoProduct extends ObjectDB {
 			d.addHTML(getFieldValue("demoPrdDocumentation"));
 			return d.toByteArray();
 		} catch (Exception e) {
-			AppLog.error(getClass(), "catalog", "Unable to publish catalog", e, getGrant());
-			return null;
+			AppLog.error(getClass(), "catalog", "Unable to publish " + pt.getName(), e, getGrant());
+			return e.getMessage();
 		}
 	}
 
@@ -103,7 +104,7 @@ public class DemoProduct extends ObjectDB {
 				int n = s.getInt(0);
 				prd.setParameter("QUANTITY", 10);
 				prd.invokeAction("DEMO_DECSTOCK");
-				assertEquals(n - 10, s.getInt(0));
+				assertEquals((long)n - 10, s.getInt(0));
 			} catch (Exception e) {
 				fail(e.getMessage());
 			}

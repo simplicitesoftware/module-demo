@@ -119,7 +119,12 @@ public class DemoOrder extends ObjectDB {
 
 	/** Publication: PDF receipt */
 	public Object printReceipt(PrintTemplate pt) {
-		return DemoCommon.orderReceipt(this); // Implemented in common class
+		try {
+			return DemoCommon.orderReceipt(this); // Implemented in common class
+		} catch (Exception e) {
+			AppLog.error(getClass(), "printReceipt", "Unable to publish " + pt.getName(), e, getGrant());
+			return e.getMessage();
+		}
 	}
 
 	/** Hook override: Allow custom publication only if status is validated or shipped */
