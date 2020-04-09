@@ -26,7 +26,7 @@ onLoadNode: function(node, cbk) {
 
 // Synchronous rendering
 onDrawNode: function(n, display) {
-	var self = this, pad=10;
+	var self = this, pad=10,
 		elt = Simplicite.Diagram.createElement;
 
 	var imgField = self.template.imgFields[n.object];

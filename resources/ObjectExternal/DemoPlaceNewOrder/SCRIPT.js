@@ -4,7 +4,7 @@
 
 var DemoPlaceNewOrder = typeof DemoPlaceNewOrder !== "undefined" ? DemoPlaceNewOrder : (function($) {
 
-var cli, sup, prd;
+var cli, sup, prd, ord;
 
 function render() {
 	// Override default error handler
@@ -38,13 +38,13 @@ function getCli() {
 		cli.item = null;
 		console.log(cli);
 		cli.search(function() {
-			var d = $("<div/>");
+			var div = $("<div/>");
 			for (var i = 0; i < cli.list.length; i++) {
-				var c = cli.list[i];
-				var l = c.demoCliCode + " - " + c.demoCliFirstname + " " + c.demoCliLastname;
-				d.append($("<p/>", { id: "placeneworder-cli_" + c.row_id }).addClass("obj").data("item", c).click(selCli).text(l));
+				var item = cli.list[i];
+				var label = item.demoCliCode + " - " + item.demoCliFirstname + " " + item.demoCliLastname;
+				div.append($("<p/>", { id: "placeneworder-cli_" + item.row_id }).addClass("obj").data("item", item).click(selCli).text(label));
 			}
-			$("#placeneworder-cli").append($ui.view.tools.panel({ title: "Select customer", content: d })).slideDown();
+			$("#placeneworder-cli").append($ui.view.tools.panel({ title: "Select customer", content: div })).slideDown();
 		});
 	});
 }
@@ -65,13 +65,13 @@ function getSup() {
 		sup = s;
 		sup.item = null;
 		sup.search(function() {
-			var d = $("<div/>");
+			var div = $("<div/>");
 			for (var i = 0; i < sup.list.length; i++) {
-				var s = sup.list[i];
-				var l = s.demoSupCode + " - " + s.demoSupName;
-				d.append($("<p/>", { id: "placeneworder-sup_" + s.row_id }).addClass("obj").data("item", s).click(selSup).text(l));
+				var item = sup.list[i];
+				var label = item.demoSupCode + " - " + item.demoSupName;
+				div.append($("<p/>", { id: "placeneworder-sup_" + item.row_id }).addClass("obj").data("item", item).click(selSup).text(label));
 			}
-			$("#placeneworder-sup").append($ui.view.tools.panel({ title: "Select supplier", content: d })).slideDown();
+			$("#placeneworder-sup").append($ui.view.tools.panel({ title: "Select supplier", content: div })).slideDown();
 		});
 	});
 }
@@ -85,15 +85,15 @@ function selSup() {
 		prd = p;
 		prd.item = null;
 		prd.search(function() {
-			var d = $("<div/>");
+			var div = $("<div/>");
 			for (var i = 0; i < prd.list.length; i++) {
-				var p = prd.list[i];
-				var l = p.demoPrdReference + " - " + p.demoPrdName;
-				d.append($("<p/>", { id: "placeneworder-prd_" + p.row_id }).addClass("obj").data("item", p).click(selPrd)
-					.append($("<img/>", { src: "data:" + p.demoPrdPicture.mime + ";base64," + p.demoPrdPicture.content }).css("width", "50px"))
-					.append($("<span/>").text(l)));
+				var item = prd.list[i];
+				var label = item.demoPrdReference + " - " + item.demoPrdName;
+				div.append($("<p/>", { id: "placeneworder-prd_" + item.row_id }).addClass("obj").data("item", item).click(selPrd)
+					.append($("<img/>", { src: "data:" + item.demoPrdPicture.mime + ";base64," + item.demoPrdPicture.content }).css("width", "50px"))
+					.append($("<span/>").text(label)));
 			}
-			$("#placeneworder-prd").append($ui.view.tools.panel({ title: "Select product", content: d })).slideDown();
+			$("#placeneworder-prd").append($ui.view.tools.panel({ title: "Select product", content: div })).slideDown();
 		}, { demoPrdSupId: sup.item.row_id }, { inlineDocs: true });
 	});
 }
