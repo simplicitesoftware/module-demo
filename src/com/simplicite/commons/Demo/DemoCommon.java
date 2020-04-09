@@ -60,6 +60,8 @@ public class DemoCommon implements java.io.Serializable {
 		return lowStock;
 	}
 
+	private static final String CURRENCY = " Euros";
+
 	/**
 	 * Order receipt publication as PDF
 	 * @param ord Order object
@@ -134,11 +136,11 @@ public class DemoCommon implements java.io.Serializable {
 			f = ord.getField("demoOrdQuantity");
 			pdf.add(new Paragraph(f.getDisplay() + ": " + f.getValue(), PDFTool.TITLE1));
 			f = ord.getField("demoOrdUnitPrice");
-			pdf.add(new Paragraph(f.getDisplay() + ": " + ord.getGrant().toFormattedFloat(f.getValue(), 10, 2) + " Euros", PDFTool.TITLE2));
+			pdf.add(new Paragraph(f.getDisplay() + ": " + ord.getGrant().toFormattedFloat(f.getValue(), 10, 2) + CURRENCY, PDFTool.TITLE2));
 			f = ord.getField("demoOrdTotal");
-			pdf.add(new Paragraph(f.getDisplay() + ": " + ord.getGrant().toFormattedFloat(f.getValue(), 10, 2) + " Euros", PDFTool.TITLE1));
+			pdf.add(new Paragraph(f.getDisplay() + ": " + ord.getGrant().toFormattedFloat(f.getValue(), 10, 2) + CURRENCY, PDFTool.TITLE1));
 			f = ord.getField("demoOrdVAT");
-			pdf.add(new Paragraph(f.getDisplay() + " (" + ord.getGrant().toFormattedFloat(ord.getGrant().getParameter("DEMO_VAT"), 10, 2) + "%): " + ord.getGrant().toFormattedFloat(f.getValue(), 10, 2) + " Euros", PDFTool.TITLE2));
+			pdf.add(new Paragraph(f.getDisplay() + " (" + ord.getGrant().toFormattedFloat(ord.getGrant().getParameter("DEMO_VAT"), 10, 2) + "%): " + ord.getGrant().toFormattedFloat(f.getValue(), 10, 2) + CURRENCY, PDFTool.TITLE2));
 
 			PDFTool.close(pdf);
 			return bos.toByteArray();
