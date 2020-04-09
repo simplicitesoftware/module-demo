@@ -9,5 +9,6 @@
 /*.iml
 /.scannerwork
 /.gradle
+/.theia
 /**/Thumbs.db
 /**/.DS_Store

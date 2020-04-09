@@ -28,6 +28,7 @@ components:
         demoCliCoords:
           description: Customer geoccordinates
           type: string
+          example: latitude;longitude
         demoCliType:
           description: Customer type
           type: string
@@ -106,6 +107,7 @@ components:
         demoOrdDate:
           description: Order date
           type: string
+          example: yyyy-MM-dd
         demoOrdPrdId__demoPrdSupId__demoSupUsrId:
           description: User responsible of supplier
           type: string
@@ -141,6 +143,7 @@ components:
         demoOrdDeliveryDate:
           description: Order delivery date
           type: string
+          example: yyyy-MM-dd HH:mm:ss
         demoOrdCliId__demoCliLastname:
           description: Customer last name
           type: string
@@ -228,6 +231,7 @@ components:
         created_dt_hist:
           description: Date
           type: string
+          example: yyyy-MM-dd HH:mm:ss
         demoPrdUnitPrice:
           description: Unit price of product
           type: number
@@ -341,6 +345,7 @@ components:
         created_dt_hist:
           description: Date
           type: string
+          example: yyyy-MM-dd HH:mm:ss
         row_id:
           description: Unique technical row ID
           type: string
@@ -453,6 +458,7 @@ components:
         created_dt_hist:
           description: Date
           type: string
+          example: yyyy-MM-dd HH:mm:ss
         row_id:
           description: Unique technical row ID
           type: string
@@ -497,6 +503,7 @@ components:
         demoCtcOrdId__demoOrdDate:
           description: Order date
           type: string
+          example: yyyy-MM-dd
         demoCtcOrdId__demoOrdNumber:
           description: Order number (automatically calculated at creation)
           type: integer
@@ -529,6 +536,7 @@ components:
         demoCtcDatetime:
           description: Contcat date and time
           type: string
+          example: yyyy-MM-dd HH:mm:ss
         demoCtcType:
           description: Contact type
           type: string

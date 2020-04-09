@@ -3003,6 +3003,7 @@ definitions:
       demoCliCoords:
         description: Customer geoccordinates
         type: string
+        example: latitude;longitude
       demoCliType:
         description: Customer type
         type: string
@@ -3081,6 +3082,7 @@ definitions:
       demoOrdDate:
         description: Order date
         type: string
+        example: yyyy-MM-dd
       demoOrdPrdId__demoPrdSupId__demoSupUsrId:
         description: User responsible of supplier
         type: string
@@ -3116,6 +3118,7 @@ definitions:
       demoOrdDeliveryDate:
         description: Order delivery date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       demoOrdCliId__demoCliLastname:
         description: Customer last name
         type: string
@@ -3203,6 +3206,7 @@ definitions:
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       demoPrdUnitPrice:
         description: Unit price of product
         type: number
@@ -3316,6 +3320,7 @@ definitions:
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
@@ -3428,6 +3433,7 @@ definitions:
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
@@ -3472,6 +3478,7 @@ definitions:
       demoCtcOrdId__demoOrdDate:
         description: Order date
         type: string
+        example: yyyy-MM-dd
       demoCtcOrdId__demoOrdNumber:
         description: Order number (automatically calculated at creation)
         type: integer
@@ -3504,6 +3511,7 @@ definitions:
       demoCtcDatetime:
         description: Contcat date and time
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       demoCtcType:
         description: Contact type
         type: string
