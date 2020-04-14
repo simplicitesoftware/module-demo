@@ -14,9 +14,11 @@
 	}
 }]]></mdl_url>
 		<mdl_lastupd>2020-02-28 22:02:50</mdl_lastupd>
-		<mdl_comment><![CDATA[### Introduction
+		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.simplicite.modules%3ADemo&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.simplicite.modules%3ADemo)
 
-This is a demo **order management** application (backend and frontend)
+### Introduction
+
+This is a demo **order management** application (backend and frontend).
 
 ### Import
 

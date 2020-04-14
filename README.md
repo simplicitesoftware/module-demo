@@ -11,9 +11,11 @@
 `Demo` module definition
 ========================
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.simplicite.modules%3ADemo&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.simplicite.modules%3ADemo)
+
 ### Introduction
 
-This is a demo **order management** application (backend and frontend)
+This is a demo **order management** application (backend and frontend).
 
 ### Import
 
