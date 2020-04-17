@@ -6,7 +6,7 @@ import com.simplicite.util.tools.Parameters;
 /**
  * Custom REST web services (suppliers and products only)
  */
-public class demows extends com.simplicite.webapp.services.RESTMappedObjectsExternalObject {
+public class DemoAPI extends com.simplicite.webapp.services.RESTMappedObjectsExternalObject {
 	private static final long serialVersionUID = 1L;
 
 	public static final String SUPPLIERS = "suppliers";

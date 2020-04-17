@@ -72,7 +72,7 @@ This module can be analysed by the **SonarQube** analysis tool
 using this command:
 
 ```bash
-mvn package sonar:sonar
+mvn verify sonar:sonar
 ```
 
 `DemoClient` business object definition
@@ -432,7 +432,13 @@ suppliers of products that can be ordered.
 * `OrderCreate`: Order creation form activity
 * `End`: End activity
 
-`democatalog` external object definition
+`DemoAPI` external object definition
+------------------------------------
+
+Custom REST web services
+
+
+`DemoCatalog` external object definition
 ----------------------------------------
 
 Custom JSON web service for getting the product catalog
@@ -448,11 +454,5 @@ Order delivery agenda
 ----------------------------------------------
 
 Place new order internal page
-
-
-`demows` external object definition
------------------------------------
-
-Custom REST web services
 
 

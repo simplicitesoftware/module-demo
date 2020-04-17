@@ -13,7 +13,7 @@ import com.simplicite.util.tools.Parameters;
 /**
  * Catalog custom API
  */
-public class democatalog extends com.simplicite.webapp.services.RESTServiceExternalObject {
+public class DemoCatalog extends com.simplicite.webapp.services.RESTServiceExternalObject {
 	private static final long serialVersionUID = 1L;
 
 	/**
