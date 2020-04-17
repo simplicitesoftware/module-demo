@@ -51,10 +51,5 @@
       <version>${simplicite.version}</version>
       <classifier>javadoc</classifier>
     </dependency>
-    <dependency>
-      <groupId>com.simplicite.modules</groupId>
-      <artifactId>DemoProject</artifactId>
-      <version>4.0-SNAPSHOT</version>
-    </dependency>
   </dependencies>
 </project>

@@ -80,15 +80,6 @@ mvn verify sonar:sonar
 	</data>
 </object>
 <object>
-	<name>ModuleLink</name>
-	<action>upsert</action>
-	<data>
-		<mdk_parent_id.mdl_name>DemoProject</mdk_parent_id.mdl_name>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<mdk_cascad>R</mdk_cascad>
-	</data>
-</object>
-<object>
 	<name>SystemParam</name>
 	<action>upsert</action>
 	<data>
