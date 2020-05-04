@@ -287,7 +287,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>0</usr_subhead>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon>2020-01-28 17:41:48</usr_last_logon>
+		<usr_last_logon>2020-04-23 23:59:25</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
@@ -389,7 +389,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-04-17 18:18:51</usr_last_logon>
+		<usr_last_logon>2020-04-27 23:20:15</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
