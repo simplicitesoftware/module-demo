@@ -13281,7 +13281,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/Disposition/default/demo-module.png</res_image>
+		<res_image>resources/Disposition/default/demo-module.svg</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13295,11 +13295,11 @@ state transition to _shipped_ status.]]></act_comment>
 		</res_object>
 		<res_type>IMG</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>demo-module-full</res_code>
+		<res_code>demo-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/Disposition/default/demo-module-full.png</res_image>
+		<res_image>resources/Disposition/default/demo-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
