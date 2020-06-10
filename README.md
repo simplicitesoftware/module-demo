@@ -374,28 +374,6 @@ state transition to _shipped_ status.
 | `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
 
-`DemoStats` business object definition
---------------------------------------
-
-Statistics (query object)
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `demoOrdStatus`                                              | enum(30) using `DEMO_ORD_STATUS` list    | yes      | yes       |          | Order status                                                                     |
-| `demoStsCount`                                               | int(10)                                  |          | yes       |          | -                                                                                |
-| `demoStsQuantity`                                            | int(10)                                  |          | yes       |          | Ordered quantities                                                               |
-| `demoStsAmount`                                              | float(10, 2)                             |          | yes       |          | Ordered amount                                                                   |
-
-### Lists
-
-* `DEMO_ORD_STATUS`
-    - `P` Pending status
-    - `V` Validated status
-    - `D` Shipped status
-    - `C` Canceled status
-
 `DemoSupplier` business object definition
 -----------------------------------------
 

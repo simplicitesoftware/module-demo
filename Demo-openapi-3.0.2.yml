@@ -16,6 +16,10 @@ components:
           type: integer
           enum:
           - 404
+    ArrayOfDemoOrder:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoOrder'
     DemoClient:
       type: object
       properties:
@@ -81,6 +85,36 @@ components:
           type: string
         demoCliAddress2:
           description: Customer address (line 2)
+          type: string
+    DemoOrderHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: Version
+          type: integer
+        demoOrdStatus:
+          description: Order status
+          type: string
+          enum:
+          - P
+          - V
+          - D
+          - C
+        demoOrdQuantity:
+          description: Product quantity ordered
+          type: integer
+        created_dt_hist:
+          description: Date
+          type: string
+          example: yyyy-MM-dd HH:mm:ss
+        row_id:
+          description: Unique technical row ID
+          type: string
+        created_by_hist:
+          description: User
+          type: string
+        row_ref_id:
+          description: Reference
           type: string
     ArrayOfDemoOrderHistoric:
       type: array
@@ -202,159 +236,6 @@ components:
         demoOrdPrdId__demoPrdName:
           description: Product name
           type: string
-    PublicationResult:
-      type: object
-      properties:
-        mime:
-          description: MIME type
-          type: string
-        content:
-          description: Content (plain text or base64 encoded)
-          type: string
-    ArrayOfDemoSupplier:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoSupplier'
-    ArrayOfDemoContactHistoric:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoContactHistoric'
-    DemoProductHistoric:
-      type: object
-      properties:
-        row_idx:
-          description: Version
-          type: integer
-        demoPrdAvailable:
-          description: Available product?
-          type: boolean
-        created_dt_hist:
-          description: Date
-          type: string
-          example: yyyy-MM-dd HH:mm:ss
-        demoPrdUnitPrice:
-          description: Unit price of product
-          type: number
-        row_id:
-          description: Unique technical row ID
-          type: string
-        demoPrdName:
-          description: Product name
-          type: string
-        created_by_hist:
-          description: User
-          type: string
-        row_ref_id:
-          description: Reference
-          type: string
-        demoPrdReference:
-          description: Product reference
-          type: string
-    Error400:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 400
-    Error401:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 401
-    Error500:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 500
-    ArrayOfDemoStats:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoStats'
-    Error403:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 403
-    DemoStats:
-      type: object
-      properties:
-        demoOrdStatus:
-          description: Order status
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        demoStsCount:
-          description: Number of orders
-          type: integer
-        demoStsAmount:
-          description: Ordered amount
-          type: number
-        row_id:
-          description: Unique technical row ID
-          type: string
-        demoStsQuantity:
-          description: Ordered quantities
-          type: integer
-    ArrayOfDemoOrder:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoOrder'
-    DemoOrderHistoric:
-      type: object
-      properties:
-        row_idx:
-          description: Version
-          type: integer
-        demoOrdStatus:
-          description: Order status
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        demoOrdQuantity:
-          description: Product quantity ordered
-          type: integer
-        created_dt_hist:
-          description: Date
-          type: string
-          example: yyyy-MM-dd HH:mm:ss
-        row_id:
-          description: Unique technical row ID
-          type: string
-        created_by_hist:
-          description: User
-          type: string
-        row_ref_id:
-          description: Reference
-          type: string
     DemoProduct:
       type: object
       properties:
@@ -418,6 +299,15 @@ components:
         demoPrdSupId__demoSupName:
           description: Supplier name
           type: string
+    PublicationResult:
+      type: object
+      properties:
+        mime:
+          description: MIME type
+          type: string
+        content:
+          description: Content (plain text or base64 encoded)
+          type: string
     ArrayOfDemoProduct:
       type: array
       items:
@@ -426,6 +316,10 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/DemoContact'
+    ArrayOfDemoSupplier:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoSupplier'
     DemoContactHistoric:
       type: object
       properties:
@@ -586,6 +480,10 @@ components:
         demoCtcOrdId__demoOrdPrdId__demoPrdReference:
           description: Product reference
           type: string
+    ArrayOfDemoContactHistoric:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoContactHistoric'
     ActionResult:
       type: object
       properties:
@@ -602,6 +500,70 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/DemoProductHistoric'
+    DemoProductHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: Version
+          type: integer
+        demoPrdAvailable:
+          description: Available product?
+          type: boolean
+        created_dt_hist:
+          description: Date
+          type: string
+          example: yyyy-MM-dd HH:mm:ss
+        demoPrdUnitPrice:
+          description: Unit price of product
+          type: number
+        row_id:
+          description: Unique technical row ID
+          type: string
+        demoPrdName:
+          description: Product name
+          type: string
+        created_by_hist:
+          description: User
+          type: string
+        row_ref_id:
+          description: Reference
+          type: string
+        demoPrdReference:
+          description: Product reference
+          type: string
+    Error400:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 400
+    Error401:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 401
+    Error500:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 500
     DemoSupplier:
       type: object
       properties:
@@ -641,6 +603,17 @@ components:
         demoSupComments:
           description: Comments on supplier
           type: string
+    Error403:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 403
     ArrayOfDemoClient:
       type: array
       items:
@@ -1580,6 +1553,7 @@ paths:
           enum:
           - DemoOrder-TC2
           - DemoOrder-TC1
+          - DemoOrder-TC4
           - DemoOrder-TC3
         in: query
         name: _crosstab
@@ -3015,82 +2989,6 @@ paths:
         required: true
       tags:
       - DemoOrder
-  /rest/DemoStats:
-    get:
-      summary: Search DemoStats business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      operationId: obj-demostats-search
-      responses:
-        '200':
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ArrayOfDemoStats'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _count
-        description: Count?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
-          type: string
-          enum:
-          - P
-          - V
-          - D
-          - C
-        in: query
-        name: demoOrdStatus
-        description: Search filter for Order status
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoStsCount
-        description: Search filter for Number of orders
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: demoStsQuantity
-        description: Search filter for Ordered quantities
-        required: false
-      - schema:
-          type: number
-        in: query
-        name: demoStsAmount
-        description: Search filter for Ordered amount
-        required: false
-      tags:
-      - DemoStats
   /rest/DemoContactHistoric:
     get:
       summary: Search DemoContactHistoric business object records or get contextualized
@@ -3522,201 +3420,6 @@ paths:
         required: false
       tags:
       - DemoProduct
-  /rest/DemoStats/{row_id}:
-    post:
-      summary: Create a new DemoStatsbusiness object record
-      security:
-      - bearerAuth: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/DemoStats'
-      operationId: obj-demostats-create
-      responses:
-        '200':
-          description: Success in creating a new business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoStats'
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error400'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - DemoStats
-    get:
-      summary: Get a DemoStats business object record
-      security:
-      - bearerAuth: []
-      operationId: obj-demostats-get
-      responses:
-        '200':
-          description: Success in getting a single business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoStats'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_documents
-        description: Inline documents?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_thumbnails
-        description: Inline documents' thumbnails?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _inline_objects
-        description: Inline objects?
-        required: false
-      tags:
-      - DemoStats
-    delete:
-      summary: Delete a DemoStats business object record
-      security:
-      - bearerAuth: []
-      operationId: obj-demostats-delete
-      responses:
-        '200':
-          description: Success in deleting a business object record
-          content:
-            application/json: {}
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error400'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - DemoStats
-    put:
-      summary: Update a DemoStatsbusiness object record
-      security:
-      - bearerAuth: []
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/DemoStats'
-      operationId: obj-demostats-update
-      responses:
-        '200':
-          description: Success in updating a business object record
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DemoStats'
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error400'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - DemoStats
   /rest/DemoSupplier/{row_id}/publication:DemoSupplier-CATALOG:
     get:
       summary: Call a custom publication for a DemoSupplier business object record
@@ -4221,7 +3924,5 @@ tags:
   description: Product
 - name: DemoProductHistoric
   description: Product (hist.)
-- name: DemoStats
-  description: Statistics
 - name: DemoSupplier
   description: Supplier

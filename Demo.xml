@@ -138,6 +138,7 @@ mvn verify sonar:sonar
 		<thm_menu_sact_t/>
 		<thm_menu_sta_c/>
 		<thm_menu_sta_t/>
+		<thm_compact/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -258,17 +259,17 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<name>User</name>
 	<action>upsert</action>
 	<data>
-		<usr_login>admin</usr_login>
-		<usr_lang>ENU</usr_lang>
 		<usr_image_id>files/User/admin.png</usr_image_id>
+		<usr_login>admin</usr_login>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
-		<usr_active>1</usr_active>
 		<usr_title>MS</usr_title>
-		<usr_last_name>SMITH</usr_last_name>
 		<usr_first_name>Barbara</usr_first_name>
+		<usr_last_name>SMITH</usr_last_name>
+		<usr_lang>ENU</usr_lang>
 		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
@@ -281,28 +282,25 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_country/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<usr_menu>1</usr_menu>
-		<usr_menu_defhidden>0</usr_menu_defhidden>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_extra>1</usr_extra>
-		<usr_subhead>0</usr_subhead>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
 		<usr_last_logon>2020-05-04 21:28:48</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
 	<data>
-		<usr_login>user_enu</usr_login>
-		<usr_lang>ENU</usr_lang>
 		<usr_image_id>files/User/user_enu.png</usr_image_id>
+		<usr_login>user_enu</usr_login>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
-		<usr_active>1</usr_active>
 		<usr_title>MRS</usr_title>
-		<usr_last_name>MARTIN</usr_last_name>
 		<usr_first_name>Allison</usr_first_name>
+		<usr_last_name>MARTIN</usr_last_name>
+		<usr_lang>ENU</usr_lang>
 		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
@@ -315,28 +313,25 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_country/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<usr_menu>1</usr_menu>
-		<usr_menu_defhidden>0</usr_menu_defhidden>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_extra>0</usr_extra>
-		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:06</usr_logout>
 		<usr_last_logon/>
 		<usr_dateformat/>
 		<usr_uuid>2156a498-bcdb-4e04-a68f-ebabdc4d223c</usr_uuid>
 	</data>
 	<data>
-		<usr_login>user_fra</usr_login>
-		<usr_lang>FRA</usr_lang>
 		<usr_image_id>files/User/user_fra.png</usr_image_id>
+		<usr_login>user_fra</usr_login>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
-		<usr_active>1</usr_active>
 		<usr_title>MR</usr_title>
-		<usr_last_name>DUPONT</usr_last_name>
 		<usr_first_name>Pierre</usr_first_name>
+		<usr_last_name>DUPONT</usr_last_name>
+		<usr_lang>FRA</usr_lang>
 		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
@@ -349,28 +344,25 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_country/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<usr_menu>1</usr_menu>
-		<usr_menu_defhidden>0</usr_menu_defhidden>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_extra>0</usr_extra>
-		<usr_subhead>0</usr_subhead>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
 		<usr_last_logon>2019-05-17 17:06:07</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
 	</data>
 	<data>
-		<usr_login>website</usr_login>
-		<usr_lang>ENU</usr_lang>
 		<usr_image_id>files/User/website.png</usr_image_id>
+		<usr_login>website</usr_login>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>25</usr_maxrows>
-		<usr_active>3</usr_active>
 		<usr_title/>
-		<usr_last_name>Website</usr_last_name>
 		<usr_first_name/>
+		<usr_last_name>Website</usr_last_name>
+		<usr_lang>ENU</usr_lang>
 		<usr_email/>
+		<usr_active>3</usr_active>
 		<usr_home_id.viw_name/>
 		<usr_work_num/>
 		<usr_home_num/>
@@ -383,13 +375,10 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_country/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<usr_menu>1</usr_menu>
-		<usr_menu_defhidden>0</usr_menu_defhidden>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_extra>1</usr_extra>
-		<usr_subhead>1</usr_subhead>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-05-05 19:33:19</usr_last_logon>
+		<usr_last_logon>2020-06-09 08:58:03</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -1927,7 +1916,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -1964,7 +1952,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -2001,7 +1988,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -2038,7 +2024,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2075,7 +2060,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>13</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1000000</fld_size>
@@ -2112,7 +2096,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>25</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50</fld_size>
@@ -2149,7 +2132,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_COUNTRY</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_COUNTRY</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>30</fld_size>
@@ -2186,7 +2168,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>12</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -2223,7 +2204,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2260,7 +2240,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -2297,7 +2276,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2334,7 +2312,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -2371,7 +2348,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2408,7 +2384,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>100</fld_size>
@@ -2445,7 +2420,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_CLI_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_CLI_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>30</fld_size>
@@ -2482,7 +2456,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -2519,7 +2492,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2556,7 +2528,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_CTC_CANAL</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_CTC_CANAL</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2593,7 +2564,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2630,7 +2600,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray>0</fld_tray>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -2667,7 +2636,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>19</fld_size>
@@ -2704,7 +2672,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray>0</fld_tray>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2741,7 +2708,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2778,7 +2744,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1</fld_size>
@@ -2815,7 +2780,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_CTC_STATUS</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_CTC_STATUS</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>1</fld_size>
@@ -2852,7 +2816,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_CTC_SUBTYPE</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_CTC_SUBTYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2889,7 +2852,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray>0</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_CTC_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_CTC_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2926,7 +2888,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -2963,7 +2924,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -3000,7 +2960,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>10</fld_size>
@@ -3037,7 +2996,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>19</fld_size>
@@ -3074,7 +3032,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>11</fld_size>
@@ -3111,7 +3068,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3148,7 +3104,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray>0</fld_tray>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3185,7 +3140,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_ORD_STATUS</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_ORD_STATUS</fld_list_id.lov_name>
 		<fld_copy>0</fld_copy>
 		<fld_size>30</fld_size>
@@ -3222,7 +3176,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3259,7 +3212,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3296,7 +3248,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3333,7 +3284,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1</fld_size>
@@ -3370,7 +3320,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3407,7 +3356,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -3444,7 +3392,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>13</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1000000</fld_size>
@@ -3481,7 +3428,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1000000</fld_size>
@@ -3518,7 +3464,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>5</fld_size>
@@ -3555,7 +3500,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -3592,7 +3536,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>255</fld_size>
@@ -3629,7 +3572,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3666,7 +3608,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -3703,7 +3644,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3740,7 +3680,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3777,7 +3716,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray>1</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist>DEMO_PRD_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>DEMO_PRD_TYPE</fld_list_id.lov_name>
 		<fld_copy>1</fld_copy>
 		<fld_size>50</fld_size>
@@ -3814,7 +3752,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -3836,117 +3773,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fld_name>demoStsAmount</fld_name>
-		<fld_dbname/>
-		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
-		<fld_required>0</fld_required>
-		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
-		<fld_researchreq>0</fld_researchreq>
-		<fld_sort>C</fld_sort>
-		<fld_more>0</fld_more>
-		<fld_listmore>0</fld_listmore>
-		<fld_listsum>1</fld_listsum>
-		<fld_tray>0</fld_tray>
-		<fld_type>2</fld_type>
-		<fld_type_id.flt_code/>
-		<fld_enumlist/>
-		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
-		<fld_size>10</fld_size>
-		<fld_minsize/>
-		<fld_precision>2</fld_precision>
-		<fld_fromdate_id.fld_name/>
-		<fld_dfault/>
-		<fld_indexable>0</fld_indexable>
-		<fld_autocomp>0</fld_autocomp>
-		<fld_groupby>0</fld_groupby>
-		<fld_updall>1</fld_updall>
-		<fld_case/>
-		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering>EURO</fld_rendering>
-		<fld_calc/>
-		<fld_objlist/>
-		<fld_comment><![CDATA[Ordered amount]]></fld_comment>
-		<fld_classification/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fld_name>demoStsCount</fld_name>
-		<fld_dbname/>
-		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
-		<fld_required>0</fld_required>
-		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
-		<fld_researchreq>0</fld_researchreq>
-		<fld_sort>C</fld_sort>
-		<fld_more>0</fld_more>
-		<fld_listmore>0</fld_listmore>
-		<fld_listsum/>
-		<fld_tray>0</fld_tray>
-		<fld_type>1</fld_type>
-		<fld_type_id.flt_code/>
-		<fld_enumlist/>
-		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
-		<fld_size>10</fld_size>
-		<fld_minsize/>
-		<fld_precision/>
-		<fld_fromdate_id.fld_name/>
-		<fld_dfault/>
-		<fld_indexable>0</fld_indexable>
-		<fld_autocomp>0</fld_autocomp>
-		<fld_groupby>0</fld_groupby>
-		<fld_updall>1</fld_updall>
-		<fld_case/>
-		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
-		<fld_calc/>
-		<fld_objlist/>
-		<fld_comment/>
-		<fld_classification/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fld_name>demoStsQuantity</fld_name>
-		<fld_dbname/>
-		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
-		<fld_required>0</fld_required>
-		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
-		<fld_researchreq>0</fld_researchreq>
-		<fld_sort>C</fld_sort>
-		<fld_more>0</fld_more>
-		<fld_listmore>0</fld_listmore>
-		<fld_listsum>1</fld_listsum>
-		<fld_tray>0</fld_tray>
-		<fld_type>1</fld_type>
-		<fld_type_id.flt_code/>
-		<fld_enumlist/>
-		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
-		<fld_size>10</fld_size>
-		<fld_minsize/>
-		<fld_precision/>
-		<fld_fromdate_id.fld_name/>
-		<fld_dfault/>
-		<fld_indexable>0</fld_indexable>
-		<fld_autocomp>0</fld_autocomp>
-		<fld_groupby>0</fld_groupby>
-		<fld_updall>1</fld_updall>
-		<fld_case/>
-		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
-		<fld_calc/>
-		<fld_objlist/>
-		<fld_comment><![CDATA[Ordered quantities]]></fld_comment>
-		<fld_classification/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<fld_name>demoSupCode</fld_name>
 		<fld_dbname>sup_code</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -3962,7 +3788,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray>0</fld_tray>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50</fld_size>
@@ -3999,7 +3824,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
@@ -4036,7 +3860,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>13</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>1000000</fld_size>
@@ -4073,7 +3896,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>12</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -4110,7 +3932,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -4147,7 +3968,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4184,7 +4004,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -4221,7 +4040,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>22</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>20</fld_size>
@@ -4258,7 +4076,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
@@ -4295,7 +4112,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
-		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>100</fld_size>
@@ -4455,8 +4271,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
     <div class="area col-sm-12" data-area="1:="></div>
   </div>
   <div class="row">
-    <div class="area col-sm-6" data-area="2:="></div>
-    <div class="area col-sm-6">
+    <div class="area col-sm-7" data-area="2:="></div>
+    <div class="area col-sm-5">
       <div class="row">
         <div class="area col-sm-12" data-area="3:="></div>
       </div>
@@ -5056,7 +4872,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoOrderAgenda.java</obe_script_id>
-		<obe_icon>calendar</obe_icon>
+		<obe_icon>img/color/calendar</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -5067,7 +4883,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoPlaceNewOrder.java</obe_script_id>
-		<obe_icon>folder</obe_icon>
+		<obe_icon>img/color/documents_folder</obe_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -5106,7 +4922,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
-		<obo_icon>user</obo_icon>
+		<obo_icon>img/color/view_user</obo_icon>
 		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
@@ -5171,7 +4987,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_list_edit>N;I;E</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
-		<obo_icon>chat</obo_icon>
+		<obo_icon>img/color/chat</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
@@ -5302,7 +5118,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_list_edit>N;I;E</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
-		<obo_icon>folder</obo_icon>
+		<obo_icon>img/color/documents_folder</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
@@ -5432,7 +5248,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
-		<obo_icon>box</obo_icon>
+		<obo_icon>img/color/box</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
@@ -5532,74 +5348,6 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_maxrows/>
 	</data>
 	<data>
-		<obo_name>DemoStats</obo_name>
-		<obo_dbtable>select</obo_dbtable>
-		<obo_class/>
-		<obo_script_id/>
-		<obo_usets>0</obo_usets>
-		<obo_nosearch>1</obo_nosearch>
-		<obo_comment><![CDATA[Statistics (query object)]]></obo_comment>
-		<obo_type>O</obo_type>
-		<obo_searchspec><![CDATA[select
-	ord_status,
-	count(*),
-	sum(ord_quantity),
-	sum(ord_total)
-from demo_order
-group by ord_status]]></obo_searchspec>
-		<obo_delspec/>
-		<obo_exportorder/>
-		<obo_distinct>0</obo_distinct>
-		<obo_indexable>0</obo_indexable>
-		<obo_groupby>0</obo_groupby>
-		<obo_dfltref/>
-		<obo_template_id.tpl_name/>
-		<obo_cache>D</obo_cache>
-		<obo_copy>1</obo_copy>
-		<obo_export>1</obo_export>
-		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef>1</obo_srh_predef>
-		<obo_selrow>1</obo_selrow>
-		<obo_updall>1</obo_updall>
-		<obo_delall>1</obo_delall>
-		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
-		<obo_useform>0</obo_useform>
-		<obo_title/>
-		<obo_icon>graph</obo_icon>
-		<obo_refcount>0</obo_refcount>
-		<obo_tree>0</obo_tree>
-		<obo_viewmode>T</obo_viewmode>
-		<obo_historic/>
-		<obo_printable>1</obo_printable>
-		<obo_followlink>1</obo_followlink>
-		<obo_mergeable>0</obo_mergeable>
-		<obo_social>1</obo_social>
-		<obo_rowid_id.fld_name/>
-		<obo_extend_id.obj_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<obo_btn_reload>P</obo_btn_reload>
-		<obo_btn_prefs>P</obo_btn_prefs>
-		<obo_btn_del>P</obo_btn_del>
-		<obo_btn_copy>P</obo_btn_copy>
-		<obo_btn_export>P</obo_btn_export>
-		<obo_btn_listadd>1</obo_btn_listadd>
-		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert>1</obo_btn_listupsert>
-		<obo_btn_updall>P</obo_btn_updall>
-		<obo_btn_delall>P</obo_btn_delall>
-		<obo_btn_merge>P</obo_btn_merge>
-		<obo_btn_save>1</obo_btn_save>
-		<obo_btn_saveclose>1</obo_btn_saveclose>
-		<obo_btn_close>1</obo_btn_close>
-		<obo_tray>0</obo_tray>
-		<obo_dashboard>0</obo_dashboard>
-		<obo_prefix>sts</obo_prefix>
-		<obo_search_ts/>
-		<obo_minrows/>
-		<obo_maxrows/>
-	</data>
-	<data>
 		<obo_name>DemoSupplier</obo_name>
 		<obo_dbtable>demo_supplier</obo_dbtable>
 		<obo_class/>
@@ -5629,7 +5377,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_list_edit>N;U</obo_list_edit>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
-		<obo_icon>building</obo_icon>
+		<obo_icon>img/color/building</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
@@ -9002,122 +8750,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<obf_object_id.obo_name>DemoStats</obf_object_id.obo_name>
-		<obf_field_id.fld_name>demoOrdStatus</obf_field_id.fld_name>
-		<obf_field_id.fld_type>7</obf_field_id.fld_type>
-		<obf_order>10</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault><![CDATA[P]]></obf_field_id.fld_dfault>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>DemoStats</obf_object_id.obo_name>
-		<obf_field_id.fld_name>demoStsCount</obf_field_id.fld_name>
-		<obf_field_id.fld_type>1</obf_field_id.fld_type>
-		<obf_order>20</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>DemoStats</obf_object_id.obo_name>
-		<obf_field_id.fld_name>demoStsQuantity</obf_field_id.fld_name>
-		<obf_field_id.fld_type>1</obf_field_id.fld_type>
-		<obf_order>30</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>DemoStats</obf_object_id.obo_name>
-		<obf_field_id.fld_name>demoStsAmount</obf_field_id.fld_name>
-		<obf_field_id.fld_type>2</obf_field_id.fld_type>
-		<obf_order>40</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<obf_object_id.obo_name>DemoSupplier</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
@@ -9730,7 +9362,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url><![CDATA[javascript:DemoClient.map()]]></act_url>
-		<act_image>map</act_image>
+		<act_image>img/color/map</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -9806,7 +9438,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method>decreaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/minus</act_image>
+		<act_image>fas/minus</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -9826,7 +9458,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method>increaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/plus</act_image>
+		<act_image>fas/plus</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10141,15 +9773,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
-	<data>
-		<fct_name>DemoStats-R</fct_name>
-		<fct_object_id.obj_type>O</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoStats</fct_object_id.obj_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 </object>
 <object>
 	<name>Grant</name>
@@ -10309,16 +9932,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DemoProduct-H</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>DemoProductHistoric</grt_function_id.fct_object_id.obj_name>
-		<grt_function_id.fct_action_id.act_name/>
-		<grt_function_id.fct_function>L</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DemoStats-R</grt_function_id.fct_name>
-		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>DemoStats</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -10539,16 +10152,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO-PRD-R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>DemoProduct</grt_function_id.fct_object_id.obj_name>
-		<grt_function_id.fct_action_id.act_name/>
-		<grt_function_id.fct_function>L</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>DEMO_WEBSITE</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DemoStats-R</grt_function_id.fct_name>
-		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>DemoStats</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -12388,6 +11991,19 @@ state transition to _shipped_ status.]]></act_comment>
 		<ctb_caption>L</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<ctb_name>DemoOrder-TC4</ctb_name>
+		<ctb_object_id.obo_name>DemoOrder</ctb_object_id.obo_name>
+		<ctb_function>S</ctb_function>
+		<ctb_grantable>0</ctb_grantable>
+		<ctb_visible>1</ctb_visible>
+		<ctb_fixedcolors>1</ctb_fixedcolors>
+		<ctb_precision>0</ctb_precision>
+		<ctb_subtotal>0</ctb_subtotal>
+		<ctb_totalcolor>#D9D2E9</ctb_totalcolor>
+		<ctb_caption>L</ctb_caption>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>CrosstabAxis</name>
@@ -12632,6 +12248,46 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoOrder-TC4</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoOrder</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>255</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoCliCountry</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>C</cax_type>
+		<cax_order>1</cax_order>
+		<cax_function/>
+		<cax_chart/>
+		<cax_precision/>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>7</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoOrder-TC4</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoOrder</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>420</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoOrdTotal</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>V</cax_type>
+		<cax_order>1</cax_order>
+		<cax_function>S</cax_function>
+		<cax_chart>pie</cax_chart>
+		<cax_precision>2</cax_precision>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>2</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+	</data>
 </object>
 <object>
 	<name>CrosstabGroup</name>
@@ -12741,14 +12397,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_process_id.pcs_name/>
 		<map_order>70040</map_order>
 		<map_ext/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name>DemoStats</map_object_id.obj_name>
-		<map_process_id.pcs_name/>
-		<map_order>70050</map_order>
-		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13840,6 +13488,13 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeCrosstab>C</tsl_typeCrosstab>
+		<tsl_id.ctb_name>DemoOrder-TC4</tsl_id.ctb_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Revenue per country</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeCrosstab>C</tsl_typeCrosstab>
 		<tsl_id.ctb_name>DemoOrder-TC1</tsl_id.ctb_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Activité</tsl_value>
@@ -13857,6 +13512,13 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.ctb_name>DemoOrder-TC3</tsl_id.ctb_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Quantités</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeCrosstab>C</tsl_typeCrosstab>
+		<tsl_id.ctb_name>DemoOrder-TC4</tsl_id.ctb_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>CA par pays</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -14538,42 +14200,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.fld_name>demoPrdUnitPrice</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Unit price</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
-	</data>
-	<data>
-		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>demoStsAmount</tsl_id.fld_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Ordered amount</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
-	</data>
-	<data>
-		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>demoStsCount</tsl_id.fld_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Number of orders</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
-	</data>
-	<data>
-		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>demoStsQuantity</tsl_id.fld_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Ordered quantity</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -15327,42 +14953,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>demoStsAmount</tsl_id.fld_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Montant commandé</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
-	</data>
-	<data>
-		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>demoStsCount</tsl_id.fld_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Nombre de commandes</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
-	</data>
-	<data>
-		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>demoStsQuantity</tsl_id.fld_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Quantité commandée</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<tsl_tooltip/>
-	</data>
-	<data>
-		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoSupCode</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Code</tsl_value>
@@ -15882,14 +15472,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obo_name>DemoStats</tsl_id.obo_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Statistics</tsl_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>DemoSupplier</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Supplier|Suppliers</tsl_value>
@@ -15954,14 +15536,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obo_name>DemoProductHistoric</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Produit (hist.)</tsl_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obo_name>DemoStats</tsl_id.obo_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Statistiques</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
