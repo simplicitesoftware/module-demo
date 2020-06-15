@@ -23,7 +23,7 @@ repositories {
 group = 'com.simplicite.modules'
 version = '4.0'
 description = 'Simplicite module: Demo'
-sourceCompatibility = '13'
+sourceCompatibility = '14'
 
 dependencies {
     compile 'com.simplicite:simplicite-api:4.0.P25a-SNAPSHOT'
