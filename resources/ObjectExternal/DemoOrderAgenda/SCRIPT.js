@@ -17,22 +17,12 @@ function render(url) {
 
 function calendar() {
 	$("#ordercalendar").fullCalendar({
-		header: {
-			left: "prev,next today",
-			center: "title",
-			right: "month,agendaWeek"
-		},
+		header: { left: "prev,next today", center: "title", right: "month,agendaWeek" },
 		timezone: $ui.grant.timezone || "local",
 		defaultView: "agendaWeek",
 		editable: true,
-		firstDay: 1,
-		minTime: "06:00:00",
-		maxTime: "22:00:00",
-		businessHours: {
-			dow: [ 1, 2, 3, 4, 5 ],
-			start: '08:00',
-			end: '20:00'
-		},
+		firstDay: 1, minTime: "06:00:00", maxTime: "22:00:00",
+		businessHours: { dow: [ 1, 2, 3, 4, 5 ], start: "08:00", end: "20:00" },
 		eventClick: function(e) {
 			if (debug) console.log("Order " + e.id + " clicked");
 			$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
@@ -61,7 +51,6 @@ function calendar() {
 						var s = moment(item.demoOrdDeliveryDate);
 						var e = s.add(2, "h");
 						var st = status.getEnumItem(item.demoOrdStatus);
-						console.log(status);
 						evts.push({
 							id: item.row_id,
 							data: item,
