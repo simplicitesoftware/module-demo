@@ -7,9 +7,11 @@ var DemoOrderAgenda = typeof DemoOrderAgenda !== "undefined" ? DemoOrderAgenda :
 var ord, debug = false;
 
 function render(url) {
-	$ui.getUIObject("DemoOrder", "agenda_DemoOrder", function(o) {
-		ord = o;
-		ord.getMetaData(calendar);
+	$ui.loadCalendar(function() {
+		$ui.getUIObject("DemoOrder", "agenda_DemoOrder", function(o) {
+			ord = o;
+			ord.getMetaData(calendar);
+		});
 	});
 }
 
@@ -18,9 +20,9 @@ function calendar() {
 		header: {
 			left: "prev,next today",
 			center: "title",
-			right: "month,agendaWeek,agendaDay"
+			right: "month,agendaWeek"
 		},
-		timezone: "local",
+		timezone: $ui.grant.timezone || "local",
 		defaultView: "agendaWeek",
 		editable: true,
 		firstDay: 1,
@@ -51,14 +53,14 @@ function calendar() {
 			if (debug) console.debug("Calendar view range = " + dmin + " to " + dmax);
 			ord.search(function() {
 				if (debug) console.debug(ord.list.length + " orders found between " + dmin + " and " + dmax);
+				var status = ord.getField("demoOrdStatus");
 				var evts = [];
 				for (var i = 0; i < ord.list.length; i++) {
 					var item = ord.list[i];
 					if (item.demoOrdDeliveryDate !== "") { // ZZZ When using intervals empty values are included !
 						var s = moment(item.demoOrdDeliveryDate);
 						var e = s.add(2, "h");
-						//console.debug("Event " + item.row_id + " (" + item.demoOrdDeliveryDate + ") = " + s.format(f) + " to " + e.format(f));
-						var status = ord.getField("demoOrdStatus");
+						var st = status.getEnumItem(item.demoOrdStatus);
 						console.log(status);
 						evts.push({
 							id: item.row_id,
@@ -68,9 +70,9 @@ function calendar() {
 							end: e,
 							editable: item.demoOrdStatus == "P" || item.demoOrdStatus == "V",
 							durationEditable: false,
-							color: item.demoOrdStatus == "P" ? "red" : (item.demoOrdStatus == "V" ? "orange" : "green"),
-							borderColor: "lightgray",
-							textColor: "white"
+							color: st.bgcolor,
+							borderColor: st.bgcolor,
+							textColor: st.color
 						});
 					}
 				}
