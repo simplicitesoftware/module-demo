@@ -98,19 +98,19 @@ function calendar4() {
 			if (debug) console.log("Order " + id + " clicked");
 			$ui.displayForm(null, "DemoOrder", id, { nav: "add" });
 		},
-		eventDrop: function(e) {
-			var s = moment(e.event.start).format( "YYYY-MM-DD HH:mm:ss");
-			var d = e.event.extendedProps.data;
-			if (debug) console.log("Order " + e.event.id + " dropped to " + s);
+		eventDrop: function(ev) {
+			var s = moment(ev.event.start).format( "YYYY-MM-DD HH:mm:ss");
+			var d = ev.event.extendedProps.data;
+			if (debug) console.log("Order " + ev.event.id + " dropped to " + s);
 			d.demoOrdDeliveryDate = s;
 			ord.update(function() {
 				d = ord.item;
 				if (debug) console.log("Order " + d.demoOrdNumber + " delivery date updated to " + s);
 			}, d);
 		},
-		events: function(e, success, failure) {
-			var start = moment(e.start);
-			var end = moment(e.end);
+		events: function(ev, success, failure) {
+			var start = moment(ev.start);
+			var end = moment(ev.end);
 			var f = "YYYY-MM-DD HH:mm:ss Z";
 			var dmin = start.format(f);
 			var dmax = end.format(f);

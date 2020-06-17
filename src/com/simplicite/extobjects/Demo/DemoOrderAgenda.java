@@ -1,7 +1,5 @@
 package com.simplicite.extobjects.Demo;
 
-import com.simplicite.util.tools.Parameters;
-
 /**
  * Order agenda custom UI component
  */
