@@ -27,6 +27,7 @@ function calendar3() {
 	$("#ordercalendar").fullCalendar({
 		header: { left: "prev,next today", center: "title", right: "month,agendaWeek" },
 		timezone: $ui.grant.timezone || "local",
+		locale: $ui.grant.langiso || "en",
 		defaultView: "agendaWeek",
 		editable: true,
 		firstDay: 1, minTime: "08:00:00", maxTime: "20:00:00",
@@ -87,6 +88,7 @@ function calendar4() {
 		header: { left: "prev,next today", center: "title", right: "dayGridMonth,timeGridWeek,dayGridDay,listWeek" },
 		nowIndicator: true,
 		timezone: $ui.grant.timezone || "local",
+		locale: $ui.grant.langiso || "en",
 		defaultView: "timeGridWeek",
 		editable: true,
 		firstDay: 1, minTime: "08:00:00", maxTime: "20:00:00",
