@@ -20,14 +20,3 @@ mvn sonar:sonar
 
 
 
-Gradle
-======
-
-Build:
-
-``` text
-gradle --refresh-dependencies clean compileJava
-```
-
-
-
