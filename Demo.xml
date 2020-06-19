@@ -378,7 +378,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-06-17 17:32:56</usr_last_logon>
+		<usr_last_logon>2020-06-19 07:56:47</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>

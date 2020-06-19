@@ -27,6 +27,7 @@ sourceCompatibility = '14'
 
 dependencies {
     compile 'com.simplicite:simplicite-api:4.0.P25a-SNAPSHOT'
+    compile 'com.simplicite:simplicite-api:4.0.P25a-SNAPSHOT:javadoc'
 }
 
 tasks.withType(JavaCompile) {
