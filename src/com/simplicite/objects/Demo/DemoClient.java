@@ -1,10 +1,15 @@
 package com.simplicite.objects.Demo;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import com.simplicite.util.AppLog;
+import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.tools.GMapTool;
 import com.simplicite.util.tools.GMapTool.Location;
+import com.simplicite.util.tools.PhoneNumTool;
 
 /**
  * Customer business object
@@ -12,12 +17,32 @@ import com.simplicite.util.tools.GMapTool.Location;
 public class DemoClient extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
+	@Override
+	public List<String> postValidate() {
+		List<String> msgs = new ArrayList<>();
+
+		// Validate phone numbers
+		try {
+			PhoneNumTool pnt = new PhoneNumTool();
+			String[] pns = { "demoCliHomePhone", "demoCliWorkPhone", "demoCliMobilePhone", "demoCliFax" };
+			for (String pn : pns) {
+				ObjectField f = getField(pn);
+				if (!f.isEmpty() && !pnt.isValid(f.getValue()))
+					msgs.add(Message.formatError("ERR_DEMO_INVALID_PHONE_NUMBER:" + f.getDisplay(), null, f.getName()));
+			}
+		} catch (Exception e) {
+			AppLog.error(getClass(), "postValidate", null, e, getGrant());
+		}
+
+		return msgs;
+	}
+
 	/** Hook override: geolocate from address fields */
 	@Override
 	public String preSave() {
 		if (!isBatchInstance()) try {
+			// Geocode address fields
 			ObjectField coords = getField("demoCliCoords");
-
 			ObjectField a1 = getField("demoCliAddress1");
 			ObjectField a2 = getField("demoCliAddress2");
 			ObjectField zc = getField("demoCliZipCode");

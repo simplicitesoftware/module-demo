@@ -794,6 +794,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>ERR_DEMO_INVALID_PHONE_NUMBER</lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[This phone number is not valid]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>ERR_DEMO_ORD_QUANTITY</lov_code>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Quantity must be higher than zero]]></lov_value>
@@ -887,6 +896,15 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<lov_code>DEMO_TREEVIEW</lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Démo]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
+		<lov_code>ERR_DEMO_INVALID_PHONE_NUMBER</lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Ce numéro de téléphone n'est pas valide]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
