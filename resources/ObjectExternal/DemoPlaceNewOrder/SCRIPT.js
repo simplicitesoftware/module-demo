@@ -2,7 +2,7 @@
 // Client side JavaScript for place new order external object
 //-----------------------------------------------------------
 
-var DemoPlaceNewOrder = typeof DemoPlaceNewOrder !== "undefined" ? DemoPlaceNewOrder : (function($) {
+var DemoPlaceNewOrder = DemoPlaceNewOrder || (function($) {
 
 var cli, sup, prd, ord;
 

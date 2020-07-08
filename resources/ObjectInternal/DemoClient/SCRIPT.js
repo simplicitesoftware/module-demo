@@ -1,7 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for customer business object
 //----------------------------------------------------
-var DemoClient = typeof DemoClient !== "undefined" ? DemoClient : (function($) {
+var DemoClient = DemoClient || (function($) {
 	// Display Google Map
 	var _map = function() {
 		var rowId = getFieldValue("row_id");

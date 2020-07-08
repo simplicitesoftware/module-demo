@@ -2,7 +2,7 @@
 // Client side JavaScript for order agenda
 //-----------------------------------------------------------
 
-var DemoOrderAgenda = typeof DemoOrderAgenda !== "undefined" ? DemoOrderAgenda : (function($) {
+var DemoOrderAgenda = DemoOrderAgenda || (function($) {
 
 var ord, debug = false;
 
