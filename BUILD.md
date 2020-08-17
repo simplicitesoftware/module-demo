@@ -4,19 +4,17 @@
 Apache Maven
 ============
 
-Build:
+Build
+-----
 
 ``` text
-mvn -U clean package
+mvn -U -DskipTests=true clean package
 ```
 
-
-
-Analyse:
+Sonar analysis
+--------------
 
 ``` text
 mvn sonar:sonar
 ```
-
-
 

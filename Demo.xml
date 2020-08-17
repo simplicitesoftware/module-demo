@@ -378,7 +378,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-07-23 22:20:43</usr_last_logon>
+		<usr_last_logon>2020-08-04 16:48:51</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -633,7 +633,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_target>frame_work</shc_target>
 		<shc_order>100</shc_order>
 		<shc_visible>1</shc_visible>
-		<shc_icon/>
+		<shc_icon>img/color/box</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -643,7 +643,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_target>frame_work</shc_target>
 		<shc_order>110</shc_order>
 		<shc_visible>1</shc_visible>
-		<shc_icon/>
+		<shc_icon>img/color/view_user</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -653,7 +653,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<shc_target>frame_work</shc_target>
 		<shc_order>120</shc_order>
 		<shc_visible>1</shc_visible>
-		<shc_icon/>
+		<shc_icon>img/color/documents_folder</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -5067,7 +5067,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_copy>0</obo_copy>
 		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef>0</obo_srh_predef>
+		<obo_srh_predef/>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
@@ -5197,7 +5197,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_copy>0</obo_copy>
 		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef>0</obo_srh_predef>
+		<obo_srh_predef/>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
@@ -5328,7 +5328,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_copy>0</obo_copy>
 		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef>0</obo_srh_predef>
+		<obo_srh_predef/>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
@@ -12297,36 +12297,43 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_ADMIN</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_USER</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC2</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_ADMIN</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC2</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_USER</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC3</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_ADMIN</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC3</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_USER</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC3</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_WEBSITE</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -15608,6 +15615,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoClientNew</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>New client</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15615,6 +15623,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoDoc</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Demo doc</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15622,6 +15631,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoOrderNew</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>New order</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15629,6 +15639,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoProductNew</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>New product</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15636,6 +15647,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoClientNew</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Nouveau client</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15643,6 +15655,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoDoc</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Doc démo</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15650,6 +15663,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoOrderNew</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Nouvelle commande</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -15657,6 +15671,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.shc_name>DemoProductNew</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Nouveau produit</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
