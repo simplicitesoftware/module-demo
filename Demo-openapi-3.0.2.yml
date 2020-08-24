@@ -411,12 +411,7 @@ components:
           description: Contact sub type
           type: string
           enum:
-          - ORDSTATUS
-          - PRDINFO
-          - ORDCANCEL
-          - ORDCHANGE
-          - ORDISSUE
-          - BILLISSUE
+          - DEFAULT
         demoCtcCliId__demoCliHomePhone:
           description: Customer home phone number
           type: string
@@ -812,12 +807,7 @@ paths:
       - schema:
           type: string
           enum:
-          - ORDSTATUS
-          - PRDINFO
-          - ORDCANCEL
-          - ORDCHANGE
-          - ORDISSUE
-          - BILLISSUE
+          - DEFAULT
         in: query
         name: demoCtcSubType
         description: Search filter for Contact sub type

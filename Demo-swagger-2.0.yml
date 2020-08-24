@@ -164,12 +164,7 @@ paths:
         type: string
         required: false
         enum:
-        - ORDSTATUS
-        - PRDINFO
-        - ORDCANCEL
-        - ORDCHANGE
-        - ORDISSUE
-        - BILLISSUE
+        - DEFAULT
       - in: query
         name: demoCtcCanal
         description: Search filter for Canal used for contact
@@ -3160,12 +3155,7 @@ definitions:
         description: Contact sub type
         type: string
         enum:
-        - ORDSTATUS
-        - PRDINFO
-        - ORDCANCEL
-        - ORDCHANGE
-        - ORDISSUE
-        - BILLISSUE
+        - DEFAULT
       demoCtcCliId__demoCliHomePhone:
         description: Customer home phone number
         type: string
