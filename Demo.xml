@@ -378,7 +378,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-08-21 10:10:14</usr_last_logon>
+		<usr_last_logon>2020-09-01 21:47:33</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
@@ -4294,10 +4294,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<tpl_name>DemoOrder-XML</tpl_name>
-		<tpl_ui><![CDATA[<orders>
-[BEGIN]
-	<order number="[VALUE:demoOrdNumber]" status="[VALUE:demoOrdStatus]">
+		<tpl_ui><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+	[BEGIN]<order number="[VALUE:demoOrdNumber]">
 		<date>[VALUE:demoOrdDate]</date>
+		<status>[VALUE:demoOrdStatus]</status>
 		<product>
 			<reference>[VALUE:demoOrdPrdId.demoPrdReference]</reference>
 			<name>[VALUE:demoOrdPrdId.demoPrdName]</name>
@@ -4311,8 +4312,13 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 			<name>[VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]</name>
 			<address>[VALUE:demoOrdCliId.demoCliAddress1]; [VALUE:demoOrdCliId.demoCliAddress2]; [VALUE:demoOrdCliId.demoCliZipCode]; [VALUE:demoOrdCliId.demoCliCity]; [VALUE:demoOrdCliId.demoCliCountry]</address>
 		</client>
-	</order>
-[END]	
+		<history>
+			[BEGIN:DemoOrderHistoric:row_ref_id]<change date="[VALUE:created_by_hist]" login="[VALUE:created_dt_hist]">
+				<status>[VALUE:demoOrdStatus]</status>
+				<quantity>[VALUE:demoOrdQuantity]</quantity>
+			</change>[END:DemoOrderHistoric]
+		</history>
+	</order>[END]	
 </orders>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
