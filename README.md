@@ -102,7 +102,7 @@ His address is geolocalized using GoogleMaps&reg; API.
 | `demoCliMobilePhone`                                         | phone(20)                                |          | yes       | yes      | Customer mobile phone number                                                     |
 | `demoCliFax`                                                 | phone(20)                                |          | yes       | yes      | Customer fax number                                                              |
 | `demoCliType`                                                | enum(30) using `DEMO_CLI_TYPE` list      | yes      | yes       |          | Customer type                                                                    |
-| `demoCliComments`                                            | text(1000000)                            |          | yes       |          | Useful comments on customer                                                      |
+| `demoCliComments`                                            | html(1000000)                            |          | yes       |          | Useful comments on customer                                                      |
 | `demoCliPlacemapLabel`                                       | char(100)                                |          | yes       |          | Customer place map label                                                         |
 
 ### Lists
@@ -194,10 +194,10 @@ A contact can be linked or not a an order of the selelcted client
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | -                                                                                |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
+| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
 | `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
 | `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
@@ -291,10 +291,10 @@ An order is for one single product.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes*     |           |          | -                                                                                |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
+| `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
 | `demoOrdStatus`                                              | enum(30) using `DEMO_ORD_STATUS` list    | yes      | yes       |          | Order status                                                                     |
 | `demoOrdQuantity`                                            | int(11)                                  | yes      | yes       |          | Product quantity ordered                                                         |
 
@@ -365,10 +365,10 @@ state transition to _shipped_ status.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `row_ref_id` link to **`DemoProduct`**                       | id                                       | yes*     |           |          | -                                                                                |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
+| `row_ref_id` link to **`DemoProduct`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
 | `demoPrdReference`                                           | char(10)                                 | yes*     | yes       |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
 | `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |

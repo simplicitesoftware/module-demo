@@ -90,7 +90,7 @@ components:
       type: object
       properties:
         row_idx:
-          description: Version
+          description: History record index
           type: integer
         demoOrdStatus:
           description: Order status
@@ -104,17 +104,17 @@ components:
           description: Product quantity ordered
           type: integer
         created_dt_hist:
-          description: Date
+          description: Created date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         row_id:
           description: Unique technical row ID
           type: string
         created_by_hist:
-          description: User
+          description: Created by
           type: string
         row_ref_id:
-          description: Reference
+          description: Record row ID
           type: string
     ArrayOfDemoOrderHistoric:
       type: array
@@ -324,7 +324,7 @@ components:
       type: object
       properties:
         row_idx:
-          description: Version
+          description: History record index
           type: integer
         demoCtcSubType:
           description: Contact sub type
@@ -339,8 +339,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -350,17 +350,17 @@ components:
           - CMP
           - OTH
         created_dt_hist:
-          description: Date
+          description: Created date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         row_id:
           description: Unique technical row ID
           type: string
         created_by_hist:
-          description: User
+          description: Created by
           type: string
         row_ref_id:
-          description: Reference
+          description: Record row ID
           type: string
     DemoContact:
       type: object
@@ -420,8 +420,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -499,13 +499,13 @@ components:
       type: object
       properties:
         row_idx:
-          description: Version
+          description: History record index
           type: integer
         demoPrdAvailable:
           description: Available product?
           type: boolean
         created_dt_hist:
-          description: Date
+          description: Created date
           type: string
           example: yyyy-MM-dd HH:mm:ss
         demoPrdUnitPrice:
@@ -518,10 +518,10 @@ components:
           description: Product name
           type: string
         created_by_hist:
-          description: User
+          description: Created by
           type: string
         row_ref_id:
-          description: Reference
+          description: Record row ID
           type: string
         demoPrdReference:
           description: Product reference
@@ -833,8 +833,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -2091,25 +2091,25 @@ paths:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         required: false
       - schema:
           type: string
@@ -2892,25 +2892,25 @@ paths:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         required: false
       - schema:
           type: string
@@ -3029,32 +3029,32 @@ paths:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         required: false
       - schema:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status

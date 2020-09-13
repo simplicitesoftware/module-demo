@@ -187,8 +187,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -1235,22 +1235,22 @@ paths:
         required: false
       - in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         type: string
         required: false
       - in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         type: integer
         required: false
       - in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         type: string
         required: false
       - in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         type: string
         required: false
       - in: query
@@ -1905,22 +1905,22 @@ paths:
         required: false
       - in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         type: string
         required: false
       - in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         type: integer
         required: false
       - in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         type: string
         required: false
       - in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         type: string
         required: false
       - in: query
@@ -2020,22 +2020,22 @@ paths:
         required: false
       - in: query
         name: row_ref_id
-        description: Search filter for Reference
+        description: Search filter for Record row ID
         type: string
         required: false
       - in: query
         name: row_idx
-        description: Search filter for Version
+        description: Search filter for History record index
         type: integer
         required: false
       - in: query
         name: created_by_hist
-        description: Search filter for User
+        description: Search filter for Created by
         type: string
         required: false
       - in: query
         name: created_dt_hist
-        description: Search filter for Date
+        description: Search filter for Created date
         type: string
         required: false
       - in: query
@@ -2045,8 +2045,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcType
         description: Search filter for Contact type
@@ -2834,7 +2834,7 @@ definitions:
     type: object
     properties:
       row_idx:
-        description: Version
+        description: History record index
         type: integer
       demoOrdStatus:
         description: Order status
@@ -2848,17 +2848,17 @@ definitions:
         description: Product quantity ordered
         type: integer
       created_dt_hist:
-        description: Date
+        description: Created date
         type: string
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
       created_by_hist:
-        description: User
+        description: Created by
         type: string
       row_ref_id:
-        description: Reference
+        description: Record row ID
         type: string
   ArrayOfDemoOrderHistoric:
     type: array
@@ -3068,7 +3068,7 @@ definitions:
     type: object
     properties:
       row_idx:
-        description: Version
+        description: History record index
         type: integer
       demoCtcSubType:
         description: Contact sub type
@@ -3083,8 +3083,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcType:
         description: Contact type
         type: string
@@ -3094,17 +3094,17 @@ definitions:
         - CMP
         - OTH
       created_dt_hist:
-        description: Date
+        description: Created date
         type: string
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
       created_by_hist:
-        description: User
+        description: Created by
         type: string
       row_ref_id:
-        description: Reference
+        description: Record row ID
         type: string
   DemoContact:
     type: object
@@ -3164,8 +3164,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcDatetime:
         description: Contcat date and time
         type: string
@@ -3243,13 +3243,13 @@ definitions:
     type: object
     properties:
       row_idx:
-        description: Version
+        description: History record index
         type: integer
       demoPrdAvailable:
         description: Available product?
         type: boolean
       created_dt_hist:
-        description: Date
+        description: Created date
         type: string
         example: yyyy-MM-dd HH:mm:ss
       demoPrdUnitPrice:
@@ -3262,10 +3262,10 @@ definitions:
         description: Product name
         type: string
       created_by_hist:
-        description: User
+        description: Created by
         type: string
       row_ref_id:
-        description: Reference
+        description: Record row ID
         type: string
       demoPrdReference:
         description: Product reference
