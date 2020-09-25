@@ -3,6 +3,7 @@ package com.simplicite.tests.Demo;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
+import java.util.Map;
 import java.util.HashMap;
 
 import org.junit.Test;
@@ -23,7 +24,7 @@ public class DemoTests {
 			prd.setValues(prd.search().get(0), true);
 			ObjectField s = prd.getField("demoPrdStock");
 			int n = s.getInt(0);
-			HashMap<String, String> params = new HashMap<>();
+			Map<String, String> params = new HashMap<>();
 			params.put("demoPrdIncrement", String.valueOf(DemoProduct.DEFAULT_INCREMENT));
 			prd.increaseStock(params);
 			assertEquals(n + DemoProduct.DEFAULT_INCREMENT, s.getInt(0));
