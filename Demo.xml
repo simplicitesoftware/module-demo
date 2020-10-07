@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Demo</mdl_name>
-		<mdl_version>4.0</mdl_version>
+		<mdl_version>5</mdl_version>
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
@@ -384,7 +384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-09-23 09:38:30</usr_last_logon>
+		<usr_last_logon>2020-10-07 20:49:39</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -5077,6 +5077,8 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -5142,6 +5144,8 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -5208,6 +5212,8 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>0</obo_tray>
 		<obo_dashboard>0</obo_dashboard>
@@ -5273,6 +5279,8 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -5338,6 +5346,8 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>0</obo_tray>
 		<obo_dashboard>0</obo_dashboard>
@@ -5403,6 +5413,8 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -5469,6 +5481,8 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>0</obo_tray>
 		<obo_dashboard>0</obo_dashboard>
@@ -5532,6 +5546,8 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>

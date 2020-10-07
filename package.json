@@ -4,6 +4,6 @@
     "description": "",
     "files": ["Demo.xml"],
     "repository": {},
-    "version": "4.0",
+    "version": "5",
     "dependencies": {"Simplicite": "5"}
 }

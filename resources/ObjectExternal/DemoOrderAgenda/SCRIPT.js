@@ -24,7 +24,7 @@ function calendar() {
 
 // For FullCalendar version 3
 function calendar3() {
-	$("#ordercalendar").fullCalendar({
+	$("#demoOrderAgenda").fullCalendar({
 		header: { left: "prev,next today", center: "title", right: "month,agendaWeek" },
 		timezone: $ui.grant.timezone || "local",
 		locale: $ui.grant.langiso || "en",
@@ -83,7 +83,7 @@ function calendar3() {
 
 // For FullCalendar version 4
 function calendar4() {
-	new FullCalendar.Calendar($("#ordercalendar")[0], {
+	new FullCalendar.Calendar($("#demoOrderAgenda")[0], {
 		plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
 		header: { left: "prev,next today", center: "title", right: "dayGridMonth,timeGridWeek,dayGridDay,listWeek" },
 		nowIndicator: true,

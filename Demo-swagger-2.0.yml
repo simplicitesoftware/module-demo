@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Demo 4.0
+#             |_| Module: Demo 5
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-EMAIL:
     get:
@@ -3368,7 +3368,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Demo
   title: Demo
-  version: '4.0'
+  version: '5'
 tags:
 - name: DemoClient
   description: Customer
