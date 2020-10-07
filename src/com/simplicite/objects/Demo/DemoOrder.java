@@ -18,31 +18,39 @@ import com.simplicite.util.Tool;
 public class DemoOrder extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
+	public static final String QUANTITY_FIELDNAME = "demoOrdQuantity";
+	public static final String NUMBER_FIELDNAME = "demoOrdNumber";
+	public static final String PRODUCT_FIELDNAME = "demoOrdPrdId";
+	public static final String REFERENCE_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.REFERENCE_FIELDNAME;
+	public static final String STOCK_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.STOCK_FIELDNAME;
+
 	@Override
 	public List<String> postValidate() {
 		List<String> msgs = new ArrayList<>();
 		// Order quantity checking
-		if (getField("demoOrdQuantity").getInt(0) <= 0) {
-			AppLog.error(getClass(), "postValidate", "Order quantity <0 for order " + getField("demoOrdNumber").getValue(), null, getGrant());
-			msgs.add(Message.formatError("ERR_DEMO_ORD_QUANTITY", null, "demoOrdQuantity"));
+		if (getField(QUANTITY_FIELDNAME).getInt(0) <= 0) {
+			AppLog.error("Order quantity <0 for order " + getFieldValue(NUMBER_FIELDNAME), null, getGrant());
+			msgs.add(Message.formatError("ERR_DEMO_ORD_QUANTITY", null, QUANTITY_FIELDNAME));
 		}
 		// Quantity checking
-		if ("D".equals(getStatus()) && getField("demoOrdPrdId.demoPrdStock").getInt(0) - getField("demoOrdQuantity").getInt(0) <= 0) {
-			AppLog.error(getClass(), "postValidate", "Zero stock on " + getField("demoOrdPrdId.demoPrdReference").getValue(), null, getGrant());
+		if ("D".equals(getStatus()) && getField(STOCK_FIELDNAME).getInt(0) - getField(QUANTITY_FIELDNAME).getInt(0) <= 0) {
+			AppLog.error("Zero stock on " + getFieldValue(REFERENCE_FIELDNAME), null, getGrant());
 			msgs.add(Message.formatSimpleError("ERR_DEMO_PRD_STOCK"));
 		}
 		// Set order unit price only at creation
 		if (isNew())
-			getField("demoOrdUnitPrice").setValue(getField("demoOrdPrdId.demoPrdUnitPrice").getValue());
+			setFieldValue("demoOrdUnitPrice", getFieldValue(PRODUCT_FIELDNAME + ".demoPrdUnitPrice"));
 		return msgs;
 	}
+
+	private static final String DEMO_EMAIL = "demo@simplicite.fr";
 
 	/** Hook override: invitation for delivery + stock decrease on shipment */
 	@Override
 	public String postUpdate() {
 		if ("V".equals(getOldStatus()) && "D".equals(getStatus())) { // Upon state transition to delivered
 			try {
-				String n = getFieldValue("demoOrdNumber");
+				String n = getFieldValue(NUMBER_FIELDNAME);
 				Date d = Tool.fromDateTime(getFieldValue("demoOrdDeliveryDate"));
 				String name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
 				String desc = "Hello " + name + ". Your order " + n + " delivery is scheduled";
@@ -50,29 +58,29 @@ public class DemoOrder extends ObjectDB {
 					d, Tool.shiftSeconds(d, 2*3600),
 					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2")
 						+ getFieldValue("demoOrdCliId.demoCliZipCode") + getFieldValue("demoOrdCliId.demoCliCity"),
-					"demo@simplicite.fr", "Simplicité",
+					DEMO_EMAIL, "Simplicité demo",
 					getFieldValue("demoOrdCliId.demoCliEmail"), name,
 					"Order " + n + " delivery schedule",
 					desc, desc);
 			} catch (Exception e) {
-				AppLog.warning(getClass(), "postUpdate", "Error sending invitation", e, getGrant());
+				AppLog.warning("Error sending invitation", e, getGrant());
 			}
 
 			try {
 				ObjectDB prd = getGrant().getTmpObject("DemoProduct");
-				prd.select(getField("demoOrdPrdId").getValue());
-				int q = getField("demoOrdQuantity").getInt(0);
+				prd.select(getFieldValue(PRODUCT_FIELDNAME));
+				int q = getField(QUANTITY_FIELDNAME).getInt(0);
 				prd.setParameter("QUANTITY", q);
 				prd.invokeAction("DEMO_DECSTOCK");
 				prd.removeParameter("QUANTITY");
 				// Log
-				AppLog.info(getClass(), "postUpdate", "Stock decreased by " + q + " on " + getField("demoOrdPrdId.demoPrdReference").getValue(), getGrant());
+				AppLog.info("Stock decreased by " + q + " on " + getFieldValue(REFERENCE_FIELDNAME), getGrant());
 				// User message
 				return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED");
 			} catch (Exception e) {
 				String msg = "Error decreasing stock: " + e.getMessage();
 				// Log
-				AppLog.error(getClass(), "postUpdate", msg, e, getGrant());
+				AppLog.error(msg, e, getGrant());
 				// User message
 				return Message.formatSimpleError(msg);
 			}
@@ -83,20 +91,20 @@ public class DemoOrder extends ObjectDB {
 	/** Hook override: check low stock */
 	@Override
 	public String postSave() {
-		if (DemoCommon.isLowStock(getGrant(), getFieldValue("demoOrdPrdId"), getField("demoOrdPrdId.demoPrdStock").getInt(0))) {
+		int stock = getField(STOCK_FIELDNAME).getInt(0);
+		if (DemoCommon.isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
 			// Notify responsible user if stock is low
 			try {
-				new Mail(getGrant()).send(
-					"demo@simplicite.fr",
-					"demo@simplicite.fr",
-					"Low stock on " + getField("demoOrdPrdId.demoPrdReference").getValue(),
+				String ref = getFieldValue(REFERENCE_FIELDNAME);
+				new Mail(getGrant()).send(DEMO_EMAIL, DEMO_EMAIL,
+					"Low stock on " + ref,
 					"<html><body>" +
 					"<h3>Hello,</h3>" +
-					"<p>The stock is low for product <b>" + getField("demoOrdPrdId.demoPrdReference").getValue() + "</b> " +
-					"(" + getField("demoOrdPrdId.demoPrdStock").getValue() + ")<br/>Please order new ones !</p>" +
+					"<p>The stock is low for product <b>" + ref + "</b> " +
+					"(" + stock + ")<br/>Please order new ones !</p>" +
 					"</body></html>");
 			} catch (Exception e) {
-				AppLog.warning(getClass(), "postSave", "Error sending low stock alert email", e, getGrant());
+				AppLog.warning("Error sending low stock alert email", e, getGrant());
 			}
 
 			// User message
@@ -108,7 +116,7 @@ public class DemoOrder extends ObjectDB {
 	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		return getGrant().T("DEMO_ORDER_NUMBER") + (row!=null ? row[getFieldIndex("demoOrdNumber")] : getFieldValue("demoOrdNumber"));
+		return getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row);
 	}
 
 	/** Hook override: hide history records on tree view */
@@ -122,7 +130,7 @@ public class DemoOrder extends ObjectDB {
 		try {
 			return DemoCommon.orderReceipt(this); // Implemented in common class
 		} catch (Exception e) {
-			AppLog.error(getClass(), "printReceipt", "Unable to publish " + pt.getName(), e, getGrant());
+			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();
 		}
 	}

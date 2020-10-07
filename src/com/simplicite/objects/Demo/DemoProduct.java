@@ -27,24 +27,28 @@ public class DemoProduct extends ObjectDB {
 	/** Default increment */
 	public static final int DEFAULT_INCREMENT = 10;
 
+	public static final String REFERENCE_FIELDNAME = "demoPrdReference";
+	public static final String STOCK_FIELDNAME = "demoPrdStock";
+	public static final String INCREMENT_FIELDNAME = "demoPrdIncrement";
+
 	/** Init default increment */
 	@Override
 	public void initAction(Action action) {
 		if ("DEMO_INCSTOCK".equals(action.getName())) {
-			ObjectField f = action.getConfirmField(getGrant().getLang(), "demoPrdIncrement");
+			ObjectField f = action.getConfirmField(getGrant().getLang(), INCREMENT_FIELDNAME);
 			if (f!=null) f.setDefaultValue(String.valueOf(DEFAULT_INCREMENT));
 		}
 	}
 
 	/** Action: increase stock */
 	public String increaseStock(Map<String, String> params) {
-		int q = Tool.parseInt(params.get("demoPrdIncrement"), DEFAULT_INCREMENT);
+		int q = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
 		if (q > 0) {
-			ObjectField s = getField("demoPrdStock");
+			ObjectField s = getField(STOCK_FIELDNAME);
 			s.setValue(s.getInt(0) + q);
 			save();
 			// Log
-			AppLog.info(getClass(), "increaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
+			AppLog.info("Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 			// User message
 			return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
 		} else {
@@ -56,11 +60,11 @@ public class DemoProduct extends ObjectDB {
 	public String decreaseStock() {
 		// Decrease stock
 		int q = getIntParameter("QUANTITY", 0);
-		ObjectField s = getField("demoPrdStock");
+		ObjectField s = getField(STOCK_FIELDNAME);
 		s.setValue(s.getInt() - q);
 		save();
 		// Log
-		AppLog.info(getClass(), "decreaseStock", "Stock for " + getFieldValue("demoPrdReference") + " is now " + s.getValue(), getGrant());
+		AppLog.info("Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 		// User message
 		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + q);
 	}
@@ -70,12 +74,12 @@ public class DemoProduct extends ObjectDB {
 		try {
 			DocxTool d = new DocxTool();
 			d.newDocument();
-			d.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue("demoPrdReference") + ")");
+			d.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue(REFERENCE_FIELDNAME) + ")");
 			d.addParagraph(getFieldValue("demoPrdDescription"));
 			d.addHTML(getFieldValue("demoPrdDocumentation"));
 			return d.toByteArray();
 		} catch (Exception e) {
-			AppLog.error(getClass(), "catalog", "Unable to publish " + pt.getName(), e, getGrant());
+			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();
 		}
 	}
@@ -83,7 +87,7 @@ public class DemoProduct extends ObjectDB {
 	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		return row!=null ? row[getFieldIndex("demoPrdReference")] : getFieldValue("demoPrdReference");
+		return getFieldValue(REFERENCE_FIELDNAME, row);
 	}
 
 	/** Hook override: hide history records on tree view */
@@ -100,7 +104,7 @@ public class DemoProduct extends ObjectDB {
 			try {
 				ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
 				prd.setValues(prd.search().get(0), true);
-				ObjectField s = prd.getField("demoPrdStock");
+				ObjectField s = prd.getField(STOCK_FIELDNAME);
 				int n = s.getInt(0);
 				prd.setParameter("QUANTITY", 10);
 				prd.invokeAction("DEMO_DECSTOCK");

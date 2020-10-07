@@ -30,7 +30,7 @@ public class DemoContact extends ObjectDB {
 			wp.append(MustacheTool.apply(this, "PRINT"));
 			return wp.toString();
 		} catch (Exception e) {
-			AppLog.error(getClass(), "printHTML", "Unable to publish " + pt.getName(), e, getGrant());
+			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();
 		}
 	}
@@ -77,7 +77,7 @@ public class DemoContact extends ObjectDB {
 
 			return xls.generateToByteArray();
 		} catch (Exception e) {
-			AppLog.error(getClass(), "printExcel", "Unable to publish " + pt.getName(), e, getGrant());
+			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();
 		}
 	}

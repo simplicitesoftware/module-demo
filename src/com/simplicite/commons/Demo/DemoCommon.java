@@ -41,21 +41,21 @@ public class DemoCommon implements java.io.Serializable {
 
 		// Search
 		List<String[]> rows = ord.search();
-		AppLog.info(DemoCommon.class, "isLowStock", rows.size() + " orders found", grant);
+		AppLog.info(rows.size() + " orders found", grant);
 
 		// Iterate over search result to calculate total ordered quantity
 		int quantity = 0;
 		int quantityIndex = ord.getFieldIndex("demoOrdQuantity");
 		for (String[] row : rows)
 			quantity += Tool.parseInt(row[quantityIndex], 10);
-		AppLog.info(DemoCommon.class, "isLowStock", "Total ordered quantity = " + quantity, grant);
+		AppLog.info("Total ordered quantity = " + quantity, grant);
 
 		// Stock is considered low if less than X% of total ordered quantity
-		AppLog.info(DemoCommon.class, "isLowStock", "Current stock = " + stock, grant);
+		AppLog.info("Current stock = " + stock, grant);
 		int threshold = Math.round(((float)grant.getIntParameter("DEMO_PRD_LOWSTOCK_THRESHOLD", 10) / 100) * quantity);
-		AppLog.info(DemoCommon.class, "isLowStock", "Low stock threshold " + threshold, grant);
+		AppLog.info("Low stock threshold " + threshold, grant);
 		boolean lowStock = stock < threshold;
-		AppLog.info(DemoCommon.class, "isLowStock", "Low stock " + lowStock, grant);
+		AppLog.info("Low stock " + lowStock, grant);
 
 		return lowStock;
 	}

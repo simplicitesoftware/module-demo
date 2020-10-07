@@ -22,10 +22,10 @@ public class DemoTests {
 		try {
 			DemoProduct prd = (DemoProduct)Grant.getSystemAdmin().getTmpObject("DemoProduct");
 			prd.setValues(prd.search().get(0), true);
-			ObjectField s = prd.getField("demoPrdStock");
+			ObjectField s = prd.getField(DemoProduct.STOCK_FIELDNAME);
 			int n = s.getInt(0);
 			Map<String, String> params = new HashMap<>();
-			params.put("demoPrdIncrement", String.valueOf(DemoProduct.DEFAULT_INCREMENT));
+			params.put(DemoProduct.INCREMENT_FIELDNAME, String.valueOf(DemoProduct.DEFAULT_INCREMENT));
 			prd.increaseStock(params);
 			assertEquals(n + DemoProduct.DEFAULT_INCREMENT, s.getInt(0));
 		} catch (Exception e) {

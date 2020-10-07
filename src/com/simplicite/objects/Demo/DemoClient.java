@@ -31,7 +31,7 @@ public class DemoClient extends ObjectDB {
 					msgs.add(Message.formatError("ERR_DEMO_INVALID_PHONE_NUMBER:" + f.getDisplay(), null, f.getName()));
 			}
 		} catch (Exception e) {
-			AppLog.error(getClass(), "postValidate", null, e, getGrant());
+			AppLog.error(null, e, getGrant());
 		}
 
 		return msgs;
@@ -51,13 +51,13 @@ public class DemoClient extends ObjectDB {
 
 			if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
 				String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
-				AppLog.info(getClass(), "preSave", "Try to geocode " + a, getGrant());
+				AppLog.info("Try to geocode " + a, getGrant());
 				Location c = new GMapTool(getGrant()).geocodeOne(a);
-				AppLog.info(getClass(), "preSave", "Coordinates = " + c, getGrant());
+				AppLog.info("Coordinates = " + c, getGrant());
 				coords.setValue(c==null ?  "" : c.toString());
 			}
 		} catch (Exception e) {
-			AppLog.error(getClass(), "preSave", null, e, getGrant());
+			AppLog.error(null, e, getGrant());
 		}
 		return super.preSave();
 	}
@@ -65,8 +65,6 @@ public class DemoClient extends ObjectDB {
 	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		return row!=null
-			? row[getFieldIndex("demoCliFirstname")] + " " + row[getFieldIndex("demoCliLastname")]
-			: getFieldValue("demoCliFirstname") + " " + getFieldValue("demoCliLastname");
+		return getFieldValue("demoCliFirstname", row) + " " + getFieldValue("demoCliLastname", row);
 	}
 }
