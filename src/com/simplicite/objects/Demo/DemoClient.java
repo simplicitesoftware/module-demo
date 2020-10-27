@@ -18,6 +18,11 @@ public class DemoClient extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
 	@Override
+	public void initUpdate() {
+		AppLog.info("Instance: " + getInstanceName(), getGrant());
+	}
+
+	@Override
 	public List<String> postValidate() {
 		List<String> msgs = new ArrayList<>();
 

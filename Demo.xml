@@ -384,7 +384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-10-07 20:49:39</usr_last_logon>
+		<usr_last_logon>2020-10-20 23:16:38</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -9782,12 +9782,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<afd_action_id.act_name>DEMO_INCSTOCK</afd_action_id.act_name>
 		<afd_field_id.fld_name>demoPrdStock</afd_field_id.fld_name>
 		<afd_order>1</afd_order>
+		<afd_ref_field_id.fld_name/>
+		<afd_ref_object_id.obo_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<afd_action_id.act_name>DEMO_INCSTOCK</afd_action_id.act_name>
 		<afd_field_id.fld_name>demoPrdIncrement</afd_field_id.fld_name>
 		<afd_order>2</afd_order>
+		<afd_ref_field_id.fld_name/>
+		<afd_ref_object_id.obo_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -13439,46 +13443,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<scr_code>DemoTests</scr_code>
 		<scr_file>test/src/com/simplicite/tests/Demo/DemoTests.java</scr_file>
 		<scr_type>TST</scr_type>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-</object>
-<object>
-	<name>ScriptUsage</name>
-	<action>upsert</action>
-	<data>
-		<scu_object>
-			<object>
-				<name>BPMProcess</name>
-				<data>
-					<pcs_name>DemoOrderCreate</pcs_name>
-				</data>
-			</object>
-		</scu_object>
-		<scu_script_id.scr_code>DemoCommon</scu_script_id.scr_code>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<scu_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCatalog</obe_name>
-				</data>
-			</object>
-		</scu_object>
-		<scu_script_id.scr_code>DemoCommon</scu_script_id.scr_code>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<scu_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>DemoOrder</obo_name>
-				</data>
-			</object>
-		</scu_object>
-		<scu_script_id.scr_code>DemoCommon</scu_script_id.scr_code>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
