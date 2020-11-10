@@ -128,6 +128,7 @@ public class DemoOrder extends ObjectDB {
 	/** Publication: PDF receipt */
 	public Object printReceipt(PrintTemplate pt) {
 		try {
+			pt.setFilename(getDisplay() + "-" + getFieldValue(NUMBER_FIELDNAME) + ".pdf");
 			return DemoCommon.orderReceipt(this); // Implemented in common class
 		} catch (Exception e) {
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
