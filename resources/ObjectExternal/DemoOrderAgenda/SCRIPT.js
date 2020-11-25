@@ -93,24 +93,24 @@ function calendar4() {
 		editable: true,
 		firstDay: 1, minTime: "08:00:00", maxTime: "20:00:00",
 		businessHours: { dow: [ 1, 2, 3, 4, 5 ], start: "09:00", end: "18:00" },
-		eventClick: function(e) {
-			var id = e.event.id;
+		eventClick: function(info) {
+			var id = info.event.id;
 			if (debug) console.log("Order " + id + " clicked");
 			$ui.displayForm(null, "DemoOrder", id, { nav: "add" });
 		},
-		eventDrop: function(ev) {
-			var s = moment(ev.event.start).format( "YYYY-MM-DD HH:mm:ss");
-			var d = ev.event.extendedProps.data;
-			if (debug) console.log("Order " + ev.event.id + " dropped to " + s);
+		eventDrop: function(info) {
+			var s = moment(info.event.start).format("YYYY-MM-DD HH:mm:ss");
+			var d = info.event.extendedProps.data;
+			if (debug) console.log("Order " + info.event.id + " dropped to " + s);
 			d.demoOrdDeliveryDate = s;
 			ord.update(function() {
 				d = ord.item;
 				if (debug) console.log("Order " + d.demoOrdNumber + " delivery date updated to " + s);
 			}, d);
 		},
-		events: function(ev, success, failure) {
-			var start = moment(ev.start);
-			var end = moment(ev.end);
+		events: function(info, success, failure) {
+			var start = moment(info.start);
+			var end = moment(info.end);
 			var f = "YYYY-MM-DD HH:mm:ss Z";
 			var dmin = start.format(f);
 			var dmax = end.format(f);

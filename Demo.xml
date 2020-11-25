@@ -288,7 +288,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon>2020-05-04 21:28:48</usr_last_logon>
+		<usr_last_logon>2020-11-17 12:58:29</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
@@ -352,7 +352,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
-		<usr_last_logon>2020-11-09 16:27:08</usr_last_logon>
+		<usr_last_logon>2020-11-17 14:21:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
@@ -384,7 +384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-10-28 10:19:00</usr_last_logon>
+		<usr_last_logon>2020-11-24 11:36:49</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -2086,7 +2086,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2160,7 +2160,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_COUNTRY</fld_list_id.lov_name>
@@ -2419,7 +2419,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum/>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2456,7 +2456,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_CLI_TYPE</fld_list_id.lov_name>
@@ -2641,7 +2641,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2715,7 +2715,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -2826,7 +2826,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_CTC_STATUS</fld_list_id.lov_name>
@@ -2900,7 +2900,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_CTC_TYPE</fld_list_id.lov_name>
@@ -3159,7 +3159,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3196,7 +3196,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_ORD_STATUS</fld_list_id.lov_name>
@@ -3270,7 +3270,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3455,7 +3455,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>13</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3788,7 +3788,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
-		<fld_tray>1</fld_tray>
+		<fld_tray>2</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_PRD_TYPE</fld_list_id.lov_name>
@@ -3862,7 +3862,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3899,7 +3899,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>21</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3936,7 +3936,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4195,7 +4195,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -4232,7 +4232,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -5513,7 +5513,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef>1</obo_srh_predef>
+		<obo_srh_predef>1;3</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>1</obo_updall>
 		<obo_delall>1</obo_delall>
