@@ -1342,8 +1342,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>fas/laptop</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1353,8 +1353,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>fas/desktop</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1364,8 +1364,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>fas/tablet-alt</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1375,8 +1375,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>fas/mobile-alt</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1386,8 +1386,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_icon>fas/archive</lov_icon>
+		<lov_display>I;L</lov_display>
 	</data>
 </object>
 <object>
