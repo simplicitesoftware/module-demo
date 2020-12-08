@@ -410,12 +410,6 @@ suppliers of products that can be ordered.
 * `OrderCreate`: Order creation form activity
 * `End`: End activity
 
-`DemoAPI` external object definition
-------------------------------------
-
-Custom REST web services
-
-
 `DemoCatalog` external object definition
 ----------------------------------------
 

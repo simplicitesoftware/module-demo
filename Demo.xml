@@ -272,11 +272,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_last_name>SMITH</usr_last_name>
 		<usr_lang>ENU</usr_lang>
 		<usr_email>demo@simplicite.fr</usr_email>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
+		<usr_active>1</usr_active>
+		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -304,11 +304,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_last_name>MARTIN</usr_last_name>
 		<usr_lang>ENU</usr_lang>
 		<usr_email>demo@simplicite.fr</usr_email>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
+		<usr_active>1</usr_active>
+		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -336,11 +336,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_last_name>DUPONT</usr_last_name>
 		<usr_lang>FRA</usr_lang>
 		<usr_email>demo@simplicite.fr</usr_email>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
+		<usr_active>1</usr_active>
+		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -368,11 +368,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_last_name>Website</usr_last_name>
 		<usr_lang>ENU</usr_lang>
 		<usr_email/>
-		<usr_active>3</usr_active>
-		<usr_home_id.viw_name/>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
+		<usr_active>3</usr_active>
+		<usr_home_id.viw_name/>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -384,7 +384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-11-24 11:36:49</usr_last_logon>
+		<usr_last_logon>2020-12-08 12:04:15</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -4972,17 +4972,6 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 <object>
 	<name>ObjectExternal</name>
 	<action>upsert</action>
-	<data>
-		<obe_name>DemoAPI</obe_name>
-		<obe_type>E</obe_type>
-		<obe_url/>
-		<obe_comment><![CDATA[Custom REST web services]]></obe_comment>
-		<obe_help/>
-		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoAPI.java</obe_script_id>
-		<obe_icon/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<obe_name>DemoCatalog</obe_name>
 		<obe_type>E</obe_type>
@@ -9934,15 +9923,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fct_name>DemoAPI-E</fct_name>
-		<fct_object_id.obj_type>E</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoAPI</fct_object_id.obj_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<fct_name>DemoCatalog-E</fct_name>
 		<fct_object_id.obj_type>E</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoCatalog</fct_object_id.obj_name>
@@ -10406,16 +10386,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_object_id.obj_name>UserFilters</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name>UserFilter-Year</grt_function_id.fct_action_id.act_name>
 		<grt_function_id.fct_function>A</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>DEMO_WEBSITE</grt_group_id.grp_name>
-		<grt_function_id.fct_name>DemoAPI-E</grt_function_id.fct_name>
-		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>DemoAPI</grt_function_id.fct_object_id.obj_name>
-		<grt_function_id.fct_action_id.act_name/>
-		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15818,14 +15788,6 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>DemoAPI</tsl_id.obe_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Custom webservices</tsl_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>DemoCatalog</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Catalog API</tsl_value>
@@ -15846,14 +15808,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Place a new order page</tsl_value>
 		<tsl_help><![CDATA[This page allow you to place a new order]]></tsl_help>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>DemoAPI</tsl_id.obe_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Webservices spécifiques</tsl_value>
-		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -16427,7 +16381,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_order>110</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Supplier code</tsl_value>
-		<tsl_simplehelp><![CDATA[This is the code of the supplier of the product]]></tsl_simplehelp>
+		<tsl_simplehelp><![CDATA[<p>This is the code of the supplier of the product</p>]]></tsl_simplehelp>
 		<tsl_short_value/>
 		<tsl_listhelp/>
 		<tsl_placeholder/>
