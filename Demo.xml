@@ -384,7 +384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2020-12-08 12:04:15</usr_last_logon>
+		<usr_last_logon>2021-01-15 17:54:43</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -2657,7 +2657,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering>TXT</fld_rendering>
+		<fld_rendering>ACT</fld_rendering>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
@@ -4323,14 +4323,13 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<tpl_name>DemoContact</tpl_name>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
-    <div class="area col-sm-6" data-area="1:="></div>
-    <div class="area col-sm-6" data-area="2,3:="></div>
+    <div class="area col-sm-5" data-area="1:="></div>
+    <div class="area col-sm-7" data-area="2,3:="></div>
   </div>
   <div class="row">
     <div class="area col-sm-12" data-area="4:="></div>
   </div>
-</div>
-]]></tpl_ui>
+</div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4586,28 +4585,37 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="demoCtcCliId"></div>
-  <div class="field" data-field="demoCtcCliId__demoCliCode"></div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcCliId__demoCliCode"></div>
+    </div>
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcCliId__demoCliFirstname"></div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcCliId__demoCliLastname"></div>
     </div>
   </div>
-  <div class="field" data-field="demoCtcCliId__demoCliEmail"></div>
   <div class="row">
-    <div class="col-sm-6">
-      <div class="field" data-field="demoCtcCliId__demoCliHomePhone"></div>
+    <div class="col-sm-8">
+      <div class="field" data-field="demoCtcCliId__demoCliEmail"></div>
+    </div>
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcCliId__demoCliMobilePhone"></div>
     </div>
-    <div class="col-sm-6">
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcCliId__demoCliHomePhone"></div>
+    </div>
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcCliId__demoCliWorkPhone"></div>
+    </div>
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcCliId__demoCliFax"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13397,6 +13405,19 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_file>resources/ObjectInternal/DemoOrder/SCRIPT.js</res_file>
 		<res_file_compiled>resources/ObjectInternal/DemoOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Adapter</name>
+	<action>upsert</action>
+	<data>
+		<adp_name>DemoAdapter</adp_name>
+		<adp_atomic>1</adp_atomic>
+		<adp_type>JAVA</adp_type>
+		<adp_script/>
+		<adp_class/>
+		<adp_script_id>src/com/simplicite/adapters/Demo/DemoAdapter.java</adp_script_id>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>

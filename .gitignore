@@ -1,15 +1,32 @@
 /bin
 /build
 /target
+/node_modules
+/tmp
+/temp
 /effective.pom
-/.project
-/.classpath
-/.settings
-/.idea
-/*.iml
-/.scannerwork
 /.gradle
-/.vscode
-/.theia
+/.m2
+/.scannerwork
+/**.bak
 /**/Thumbs.db
 /**/.DS_Store
+
+# -- Eclipse --
+#/.classpath
+#/.settings
+#/.project
+
+# -- IntelliJ --
+#/.idea
+#/*.iml
+
+# -- VSCode --
+/.vscode
+
+# -- Theia --
+#/.theia
+#/.factorypath
+
+# -- GitHub --
+#/.github

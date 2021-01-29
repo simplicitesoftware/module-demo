@@ -75,47 +75,6 @@ using this command:
 mvn verify sonar:sonar
 ```
 
-`DemoClient` business object definition
----------------------------------------
-
-The **client** business object corresponds
-to the customer who places order.
-
-His address is geolocalized using GoogleMaps&reg; API.
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `demoCliCode`                                                | char(10)                                 | yes*     | yes       |          | Customer code                                                                    |
-| `demoCliFirstname`                                           | char(100)                                | yes      | yes       | yes      | Customer first name                                                              |
-| `demoCliLastname`                                            | char(100)                                | yes      | yes       | yes      | Customer last name                                                               |
-| `demoCliAddress1`                                            | char(100)                                | yes      | yes       | yes      | Customer address (line 1)                                                        |
-| `demoCliAddress2`                                            | char(100)                                |          | yes       | yes      | Customer address (line 2)                                                        |
-| `demoCliZipCode`                                             | char(10)                                 | yes      | yes       | yes      | Customer postal code                                                             |
-| `demoCliCity`                                                | char(50)                                 | yes      | yes       | yes      | Customer city                                                                    |
-| `demoCliCountry`                                             | enum(30) using `DEMO_COUNTRY` list       | yes      | yes       | yes      | Customer country                                                                 |
-| `demoCliCoords`                                              | geocoords                                |          |           | yes      | Customer geoccordinates                                                          |
-| `demoCliEmail`                                               | email(50)                                |          | yes       | yes      | Customer email address                                                           |
-| `demoCliHomePhone`                                           | phone(20)                                |          | yes       | yes      | Customer home phone number                                                       |
-| `demoCliWorkPhone`                                           | phone(20)                                |          | yes       | yes      | Customer work phone number                                                       |
-| `demoCliMobilePhone`                                         | phone(20)                                |          | yes       | yes      | Customer mobile phone number                                                     |
-| `demoCliFax`                                                 | phone(20)                                |          | yes       | yes      | Customer fax number                                                              |
-| `demoCliType`                                                | enum(30) using `DEMO_CLI_TYPE` list      | yes      | yes       |          | Customer type                                                                    |
-| `demoCliComments`                                            | html(1000000)                            |          | yes       |          | Useful comments on customer                                                      |
-| `demoCliPlacemapLabel`                                       | char(100)                                |          | yes       |          | Customer place map label                                                         |
-
-### Lists
-
-* `DEMO_COUNTRY`
-    - `FR` France
-    - `UK` United Kingdom
-    - `SP` Spain
-* `DEMO_CLI_TYPE`
-    - `T1` Code T1
-    - `T2` Code T2
-    - `T3` Code T3
-
 `DemoContact` business object definition
 ----------------------------------------
 
@@ -126,8 +85,8 @@ A contact can be linked or not a an order of the selelcted client
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `demoCtcDatetime`                                            | datetime                                 | yes*     |           |          | Contcat date and time                                                            |
 | `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
@@ -181,42 +140,6 @@ A contact can be linked or not a an order of the selelcted client
     - `D` Shipped status
     - `C` Canceled status
 
-`DemoContactHistoric` business object definition
-------------------------------------------------
-
-**Contact** object history, tracks changes on:
-
-- Status
-- Type and/or subtype
-- Comments
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
-| `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
-| `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
-| `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
-| `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
-
-### Lists
-
-* `DEMO_CTC_STATUS`
-    - `O` Open
-    - `C` Closed
-    - `P` Processing
-* `DEMO_CTC_TYPE`
-    - `INF` Code INF
-    - `REQ` Code REQ
-    - `CMP` Code CMP
-    - `OTH` Code OTH
-* `DEMO_CTC_SUBTYPE`
-    - `DEFAULT` Code DEFAULT
-
 `DemoOrder` business object definition
 --------------------------------------
 
@@ -227,8 +150,8 @@ An order is for one single product.
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `demoOrdNumber`                                              | int(11)                                  | yes*     |           |          | Order number (automatically calculated at creation)                              |
 | `demoOrdDate`                                                | date                                     |          |           |          | Order date                                                                       |
 | `demoOrdStatus`                                              | enum(30) using `DEMO_ORD_STATUS` list    | yes      | yes       |          | Order status                                                                     |
@@ -279,6 +202,42 @@ An order is for one single product.
     - `SMARTPHONE` Smartphone
     - `OTHER` Other
 
+`DemoContactHistoric` business object definition
+------------------------------------------------
+
+**Contact** object history, tracks changes on:
+
+- Status
+- Type and/or subtype
+- Comments
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
+| `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
+| `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
+| `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
+
+### Lists
+
+* `DEMO_CTC_STATUS`
+    - `O` Open
+    - `C` Closed
+    - `P` Processing
+* `DEMO_CTC_TYPE`
+    - `INF` Code INF
+    - `REQ` Code REQ
+    - `CMP` Code CMP
+    - `OTH` Code OTH
+* `DEMO_CTC_SUBTYPE`
+    - `DEFAULT` Code DEFAULT
+
 `DemoOrderHistoric` business object definition
 ----------------------------------------------
 
@@ -289,8 +248,8 @@ An order is for one single product.
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes*     |           |          | Record row ID                                                                    |
 | `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
 | `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
@@ -306,6 +265,50 @@ An order is for one single product.
     - `D` Shipped status
     - `C` Canceled status
 
+`DemoProductHistoric` business object definition
+------------------------------------------------
+
+**Product** object history, tracks changes on:
+
+- Product name
+- Unit price
+- Availability
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `row_ref_id` link to **`DemoProduct`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `demoPrdReference`                                           | char(10)                                 | yes*     | yes       |          | Product reference                                                                |
+| `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
+| `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
+| `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
+
+`DemoSupplier` business object definition
+-----------------------------------------
+
+The **supplier** business object corresponds to the
+suppliers of products that can be ordered.
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `demoSupCode`                                                | char(50)                                 | yes*     | yes       |          | Supplier unique code (e.g. `MYSUP`)                                              |
+| `demoSupName`                                                | char(100)                                | yes      | yes       |          | Supplier name                                                                    |
+| `demoSupDescription`                                         | html(1000000)                            |          | yes       |          | Supplier description                                                             |
+| `demoSupPhone`                                               | phone(20)                                |          | yes       |          | Supplier phone number                                                            |
+| `demoSupFax`                                                 | phone(20)                                |          | yes       |          | Supplier fax number                                                              |
+| `demoSupWebsite`                                             | url(100)                                 |          | yes       |          | Supplier website URL                                                             |
+| `demoSupEmail`                                               | email(20)                                |          | yes       |          | Supplier email address                                                           |
+| `demoSupLogo`                                                | image                                    |          | yes       |          | Supplier logo                                                                    |
+| `demoSupUsrId` link to **`User`**                            | id                                       |          | yes       |          | User responsible of supplier                                                     |
+| _Ref. `demoSupUsrId.usr_login`_                              | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| `demoSupComments`                                            | notepad(50000)                           |          | yes       |          | Comments on supplier                                                             |
+
 `DemoProduct` business object definition
 ----------------------------------------
 
@@ -316,8 +319,8 @@ Its reference is unique per supplier.
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `demoPrdSupId` link to **`DemoSupplier`**                    | id                                       | yes*     | yes       |          | Product supplier                                                                 |
 | _Ref. `demoPrdSupId.demoSupCode`_                            | _char(50)_                               |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
 | _Ref. `demoPrdSupId.demoSupName`_                            | _char(100)_                              |          |           |          | _Supplier name_                                                                  |
@@ -352,49 +355,46 @@ state transition to _shipped_ status.
 * `DEMO_INCSTOCK`: Sample action for product stock **increment**
 (by `N` specified in the product business object code).
 
-`DemoProductHistoric` business object definition
-------------------------------------------------
+`DemoClient` business object definition
+---------------------------------------
 
-**Product** object history, tracks changes on:
+The **client** business object corresponds
+to the customer who places order.
 
-- Product name
-- Unit price
-- Availability
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `row_ref_id` link to **`DemoProduct`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
-| `demoPrdReference`                                           | char(10)                                 | yes*     | yes       |          | Product reference                                                                |
-| `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
-| `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
-| `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
-
-`DemoSupplier` business object definition
------------------------------------------
-
-The **supplier** business object corresponds to the
-suppliers of products that can be ordered.
+His address is geolocalized using GoogleMaps&reg; API.
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `demoSupCode`                                                | char(50)                                 | yes*     | yes       |          | Supplier unique code (e.g. `MYSUP`)                                              |
-| `demoSupName`                                                | char(100)                                | yes      | yes       |          | Supplier name                                                                    |
-| `demoSupDescription`                                         | html(1000000)                            |          | yes       |          | Supplier description                                                             |
-| `demoSupPhone`                                               | phone(20)                                |          | yes       |          | Supplier phone number                                                            |
-| `demoSupFax`                                                 | phone(20)                                |          | yes       |          | Supplier fax number                                                              |
-| `demoSupWebsite`                                             | url(100)                                 |          | yes       |          | Supplier website URL                                                             |
-| `demoSupEmail`                                               | email(20)                                |          | yes       |          | Supplier email address                                                           |
-| `demoSupLogo`                                                | image                                    |          | yes       |          | Supplier logo                                                                    |
-| `demoSupUsrId` link to **`User`**                            | id                                       |          | yes       |          | User responsible of supplier                                                     |
-| _Ref. `demoSupUsrId.usr_login`_                              | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
-| `demoSupComments`                                            | notepad(50000)                           |          | yes       |          | Comments on supplier                                                             |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `demoCliCode`                                                | char(10)                                 | yes*     | yes       |          | Customer code                                                                    |
+| `demoCliFirstname`                                           | char(100)                                | yes      | yes       | yes      | Customer first name                                                              |
+| `demoCliLastname`                                            | char(100)                                | yes      | yes       | yes      | Customer last name                                                               |
+| `demoCliAddress1`                                            | char(100)                                | yes      | yes       | yes      | Customer address (line 1)                                                        |
+| `demoCliAddress2`                                            | char(100)                                |          | yes       | yes      | Customer address (line 2)                                                        |
+| `demoCliZipCode`                                             | char(10)                                 | yes      | yes       | yes      | Customer postal code                                                             |
+| `demoCliCity`                                                | char(50)                                 | yes      | yes       | yes      | Customer city                                                                    |
+| `demoCliCountry`                                             | enum(30) using `DEMO_COUNTRY` list       | yes      | yes       | yes      | Customer country                                                                 |
+| `demoCliCoords`                                              | geocoords                                |          |           | yes      | Customer geoccordinates                                                          |
+| `demoCliEmail`                                               | email(50)                                |          | yes       | yes      | Customer email address                                                           |
+| `demoCliHomePhone`                                           | phone(20)                                |          | yes       | yes      | Customer home phone number                                                       |
+| `demoCliWorkPhone`                                           | phone(20)                                |          | yes       | yes      | Customer work phone number                                                       |
+| `demoCliMobilePhone`                                         | phone(20)                                |          | yes       | yes      | Customer mobile phone number                                                     |
+| `demoCliFax`                                                 | phone(20)                                |          | yes       | yes      | Customer fax number                                                              |
+| `demoCliType`                                                | enum(30) using `DEMO_CLI_TYPE` list      | yes      | yes       |          | Customer type                                                                    |
+| `demoCliComments`                                            | html(1000000)                            |          | yes       |          | Useful comments on customer                                                      |
+| `demoCliPlacemapLabel`                                       | char(100)                                |          | yes       |          | Customer place map label                                                         |
+
+### Lists
+
+* `DEMO_COUNTRY`
+    - `FR` France
+    - `UK` United Kingdom
+    - `SP` Spain
+* `DEMO_CLI_TYPE`
+    - `T1` Code T1
+    - `T2` Code T2
+    - `T3` Code T3
 
 `DemoOrderCreate` business process definition
 ---------------------------------------------
