@@ -29,6 +29,8 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
  
 	@Override
 	public String preProcess() {
+		AppLog.info("Start of " + getName(), getGrant());
+
 		setSeparator('\t'); // Tab is the separator
 
 		sup = getGrant().getObject("adp", "DemoSupplier");
@@ -46,7 +48,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 	public String processValues(long n, String[] values) {
 		try {
 			if (n == 1) return null; // First line with column headers is ignored
-			if (debug) AppLog.info("Processling line " + n + " = " + String.join(String.valueOf(getSeparator()), values), getGrant());
+			if (debug) appendLog("Processling line " + n + " = " + String.join(String.valueOf(getSeparator()), values));
 
 			/* Line format: <supplier code><tab><product reference><tab><product name> */
  
@@ -57,7 +59,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 			String supId;
 			try {
 				supId = supt.get(new JSONObject().put("demoSupCode", values[0]));
-				if (debug) AppLog.info("Supplier " + values[0] + " found, row ID = " + supId, getGrant());
+				if (debug) appendLog("Supplier " + values[0] + " found, row ID = " + supId);
 			} catch (GetException e) {
 				throw new PlatformException("No supplier found for " + values[0]);
 			}
@@ -73,9 +75,11 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 			}
 			prd.setFieldValue("demoPrdName", values[2]);
 			prdt.validateAndSave();
-			if (debug) AppLog.info("Product " + values[1] + " " + (exists ? "updated" : "created"), getGrant());
+			if (debug) appendLog("Product " + values[1] + " " + (exists ? "updated" : "created"));
 		} catch (PlatformException e) {
-			AppLog.error("Line " + n + " error: " + e.getMessage(), e, getGrant());
+			String msg = "Line " + n + " error: " + e.getMessage();
+			appendLog(msg);
+			AppLog.error(msg, e, getGrant());
 			appendError(values); // Rejected line
 		}
 
@@ -91,5 +95,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 		appendLog("Nb processed lines = " + nbLines);
 		appendLog("Nb errors = " + nbErrors);
 		appendLog("=================================================================");
+		
+		AppLog.info("End of " + getName(), getGrant());
 	}
 }
