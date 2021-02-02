@@ -136,6 +136,7 @@ A contact can be linked or not a an order of the selelcted client
     - `P` Processing
 * `DEMO_ORD_STATUS`
     - `P` Pending status
+    - `H` On hold
     - `V` Validated status
     - `D` Shipped status
     - `C` Canceled status
@@ -188,6 +189,7 @@ An order is for one single product.
 
 * `DEMO_ORD_STATUS`
     - `P` Pending status
+    - `H` On hold
     - `V` Validated status
     - `D` Shipped status
     - `C` Canceled status
@@ -261,6 +263,7 @@ An order is for one single product.
 
 * `DEMO_ORD_STATUS`
     - `P` Pending status
+    - `H` On hold
     - `V` Validated status
     - `D` Shipped status
     - `C` Canceled status

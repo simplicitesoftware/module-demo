@@ -1303,6 +1303,17 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
+		<lov_code>H</lov_code>
+		<lov_order_by>2</lov_order_by>
+		<lov_label>On hold</lov_label>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color>#393939</lov_color>
+		<lov_color_bg>#D9D2E9</lov_color_bg>
+		<lov_icon>icon/color/btn_purple</lov_icon>
+		<lov_display>I;L</lov_display>
+	</data>
+	<data>
+		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
 		<lov_code>V</lov_code>
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Validated status</lov_label>
@@ -1315,7 +1326,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
 		<lov_code>D</lov_code>
-		<lov_order_by>3</lov_order_by>
+		<lov_order_by>4</lov_order_by>
 		<lov_label>Shipped status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#393939</lov_color>
@@ -1326,7 +1337,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
 		<lov_code>C</lov_code>
-		<lov_order_by>4</lov_order_by>
+		<lov_order_by>5</lov_order_by>
 		<lov_label>Canceled status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#393939</lov_color>
@@ -1795,8 +1806,16 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>H</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[On hold]]></lov_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Shipped]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1804,7 +1823,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Cancelled]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1827,8 +1846,16 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>H</lov_code_id.lov_code>
+		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Reportée]]></lov_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Envoyée]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1836,7 +1863,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
+		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Annulée]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -11911,6 +11938,20 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
+		<sta_state_id.lov_code>H</sta_state_id.lov_code>
+		<sta_state>H</sta_state>
+		<sta_label>On hold</sta_label>
+		<sta_activ>1</sta_activ>
+		<sta_terminal>0</sta_terminal>
+		<sta_read>0</sta_read>
+		<sta_access>1</sta_access>
+		<sta_timeout/>
+		<sta_alert_id.alt_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
+		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>P</sta_state_id.lov_code>
 		<sta_state>P</sta_state>
 		<sta_label>Pending state</sta_label>
@@ -12039,6 +12080,34 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<stm_name>DEMO_ORD_STATUS-H-P</stm_name>
+		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
+		<stm_from_id.sta_state_id.lov_code>H</stm_from_id.sta_state_id.lov_code>
+		<stm_to_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_to_id.sta_state_id.lov_list_id.lov_name>
+		<stm_to_id.sta_state_id.lov_code>P</stm_to_id.sta_state_id.lov_code>
+		<stm_callbackscript/>
+		<stm_callback/>
+		<stm_condition/>
+		<stm_activ>1</stm_activ>
+		<stm_notif_id.alt_name/>
+		<stm_action_id.act_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stm_name>DEMO_ORD_STATUS-H-V</stm_name>
+		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
+		<stm_from_id.sta_state_id.lov_code>H</stm_from_id.sta_state_id.lov_code>
+		<stm_to_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_to_id.sta_state_id.lov_list_id.lov_name>
+		<stm_to_id.sta_state_id.lov_code>V</stm_to_id.sta_state_id.lov_code>
+		<stm_callbackscript/>
+		<stm_callback/>
+		<stm_condition/>
+		<stm_activ>1</stm_activ>
+		<stm_notif_id.alt_name/>
+		<stm_action_id.act_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<stm_name>DEMO_ORD_STATUS-P-C</stm_name>
 		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
 		<stm_from_id.sta_state_id.lov_code>P</stm_from_id.sta_state_id.lov_code>
@@ -12050,6 +12119,20 @@ state transition to _shipped_ status.]]></act_comment>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name>DemoOrderCancellation</stm_notif_id.alt_name>
 		<stm_action_id.act_name>DEMO_ORD_STATUS-P-C</stm_action_id.act_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stm_name>DEMO_ORD_STATUS-P-H</stm_name>
+		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
+		<stm_from_id.sta_state_id.lov_code>P</stm_from_id.sta_state_id.lov_code>
+		<stm_to_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_to_id.sta_state_id.lov_list_id.lov_name>
+		<stm_to_id.sta_state_id.lov_code>H</stm_to_id.sta_state_id.lov_code>
+		<stm_callbackscript/>
+		<stm_callback/>
+		<stm_condition/>
+		<stm_activ>1</stm_activ>
+		<stm_notif_id.alt_name/>
+		<stm_action_id.act_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12092,6 +12175,20 @@ state transition to _shipped_ status.]]></act_comment>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name>DemoOrderDelivery</stm_notif_id.alt_name>
 		<stm_action_id.act_name>DEMO_ORD_STATUS-V-D</stm_action_id.act_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stm_name>DEMO_ORD_STATUS-V-H</stm_name>
+		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
+		<stm_from_id.sta_state_id.lov_code>V</stm_from_id.sta_state_id.lov_code>
+		<stm_to_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_to_id.sta_state_id.lov_list_id.lov_name>
+		<stm_to_id.sta_state_id.lov_code>H</stm_to_id.sta_state_id.lov_code>
+		<stm_callbackscript/>
+		<stm_callback/>
+		<stm_condition/>
+		<stm_activ>1</stm_activ>
+		<stm_notif_id.alt_name/>
+		<stm_action_id.act_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12183,6 +12280,20 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<stg_transition_id.stm_name>DEMO_ORD_STATUS-H-P</stg_transition_id.stm_name>
+		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
+		<stg_activ>1</stg_activ>
+		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stg_transition_id.stm_name>DEMO_ORD_STATUS-H-V</stg_transition_id.stm_name>
+		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
+		<stg_activ>1</stg_activ>
+		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<stg_transition_id.stm_name>DEMO_ORD_STATUS-P-C</stg_transition_id.stm_name>
 		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
@@ -12192,6 +12303,13 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<stg_transition_id.stm_name>DEMO_ORD_STATUS-P-C</stg_transition_id.stm_name>
 		<stg_group_id.grp_name>DEMO_USER</stg_group_id.grp_name>
+		<stg_activ>1</stg_activ>
+		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stg_transition_id.stm_name>DEMO_ORD_STATUS-P-H</stg_transition_id.stm_name>
+		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12227,6 +12345,13 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<stg_transition_id.stm_name>DEMO_ORD_STATUS-V-D</stg_transition_id.stm_name>
 		<stg_group_id.grp_name>DEMO_USER</stg_group_id.grp_name>
+		<stg_activ>1</stg_activ>
+		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stg_transition_id.stm_name>DEMO_ORD_STATUS-V-H</stg_transition_id.stm_name>
+		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
