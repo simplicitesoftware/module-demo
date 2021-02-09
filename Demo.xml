@@ -288,7 +288,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon>2020-11-17 12:58:29</usr_last_logon>
+		<usr_last_logon>2021-02-03 21:10:13</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
@@ -352,7 +352,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
-		<usr_last_logon>2020-11-17 14:21:11</usr_last_logon>
+		<usr_last_logon>2021-02-03 15:07:42</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
@@ -2659,12 +2659,12 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_name>demoCtcComments</fld_name>
 		<fld_dbname>ctc_comments</fld_dbname>
 		<fld_visible>2</fld_visible>
-		<fld_updatable>2</fld_updatable>
+		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research/>
+		<fld_research>0</fld_research>
 		<fld_researchreq/>
-		<fld_sort>C</fld_sort>
+		<fld_sort/>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
@@ -2675,16 +2675,16 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_copy>1</fld_copy>
 		<fld_size>50000</fld_size>
 		<fld_minsize/>
-		<fld_precision>h=10 w=100</fld_precision>
+		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
-		<fld_updall>1</fld_updall>
+		<fld_updall>0</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering>ACT</fld_rendering>
+		<fld_rendering/>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
