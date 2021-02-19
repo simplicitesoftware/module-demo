@@ -1,9 +1,9 @@
 {
+    "date": "2021-02-19 15:17:25",
     "name": "Demo",
     "format": "xml",
-    "description": "",
     "files": ["Demo.xml"],
     "repository": {},
     "version": "5",
-    "dependencies": {"Simplicite": "5"}
+    "platform": "5.2.0-alpha"
 }

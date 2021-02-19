@@ -4523,12 +4523,11 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
   </div>
   <div class="col-sm-4">
     <div class="action" data-action="DEMO_CLIENTMAP"></div>
-    <div id="client-map" style="display: none; width: 500px; height: 350px;">
+    <div id="client-map" style="display: none; min-height: 300px;">
       <iframe frameborder="0" name="gmap" scrolling="no" style="width: 100%; height: 100%;"></iframe>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
