@@ -384,7 +384,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2021-01-15 17:54:43</usr_last_logon>
+		<usr_last_logon>2021-03-04 23:14:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -2684,7 +2684,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updall>0</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>ACT</fld_rendering>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
@@ -5078,7 +5078,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_icon>img/color/view_user</obo_icon>
 		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -5280,7 +5280,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_icon>img/color/documents_folder</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;2;3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -5414,7 +5414,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_icon>img/color/box</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -5547,7 +5547,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_icon>img/color/building</obo_icon>
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
-		<obo_viewmode>V</obo_viewmode>
+		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
@@ -12441,6 +12441,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC1</cax_crosstab_id.ctb_name>
@@ -12461,6 +12462,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12481,6 +12483,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12501,6 +12504,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12521,6 +12525,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12541,6 +12546,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12561,6 +12567,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>R</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12581,6 +12588,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12601,6 +12609,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12621,6 +12630,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>R</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12641,6 +12651,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC4</cax_crosstab_id.ctb_name>
@@ -12661,6 +12672,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC4</cax_crosstab_id.ctb_name>
@@ -12681,6 +12693,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 </object>
 <object>

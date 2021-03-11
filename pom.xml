@@ -76,5 +76,11 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <version>${simplicite.version}</version>
       <classifier>javadoc</classifier>
     </dependency>
+    <dependency>
+      <groupId>com.simplicite</groupId>
+      <artifactId>simplicite-api</artifactId>
+      <version>${simplicite.version}</version>
+      <classifier>sources</classifier>
+    </dependency>
   </dependencies>
 </project>
