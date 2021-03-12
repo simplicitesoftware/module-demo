@@ -138,7 +138,7 @@ mvn verify sonar:sonar
 		<thm_menu_sact_t/>
 		<thm_menu_sta_c/>
 		<thm_menu_sta_t/>
-		<thm_compact/>
+		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -2663,8 +2663,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
-		<fld_researchreq/>
-		<fld_sort/>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
@@ -2736,8 +2736,8 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_updatable>2</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research/>
-		<fld_researchreq/>
+		<fld_research>0</fld_research>
+		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
@@ -3403,7 +3403,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
-		<fld_researchreq/>
+		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>C</fld_sort>
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
@@ -5094,7 +5094,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5202,12 +5202,12 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_copy>0</obo_copy>
 		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef/>
+		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit/>
+		<obo_list_edit>N;L;E</obo_list_edit>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon/>
@@ -5229,7 +5229,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5296,7 +5296,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5336,12 +5336,12 @@ An order is for one single product.]]></obo_comment>
 		<obo_copy>0</obo_copy>
 		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef/>
+		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit/>
+		<obo_list_edit>N;L;E</obo_list_edit>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon/>
@@ -5363,7 +5363,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5430,7 +5430,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5471,12 +5471,12 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_copy>0</obo_copy>
 		<obo_export>0</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef/>
+		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
 		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit/>
+		<obo_list_edit>N;L;E</obo_list_edit>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon/>
@@ -5498,7 +5498,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -5563,7 +5563,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_btn_export>P</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
-		<obo_btn_listupsert/>
+		<obo_btn_listupsert>1</obo_btn_listupsert>
 		<obo_btn_updall>P</obo_btn_updall>
 		<obo_btn_delall>P</obo_btn_delall>
 		<obo_btn_merge>P</obo_btn_merge>
@@ -12702,43 +12702,43 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_ADMIN</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_USER</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC2</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_ADMIN</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC2</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_USER</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC3</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_ADMIN</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC3</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_USER</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ctg_crosstab_id.ctb_name>DemoOrder-TC3</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>DEMO_WEBSITE</ctg_group_id.grp_name>
-		<ctg_edit/>
+		<ctg_edit>0</ctg_edit>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -12778,7 +12778,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoSupplier</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>70000</map_order>
-		<map_ext/>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12786,7 +12786,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoProduct</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>70010</map_order>
-		<map_ext/>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12794,7 +12794,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoClient</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>70020</map_order>
-		<map_ext/>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12802,7 +12802,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoOrder</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>70030</map_order>
-		<map_ext/>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12810,7 +12810,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name>DemoContact</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>70040</map_order>
-		<map_ext/>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12818,7 +12818,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_object_id.obj_name/>
 		<map_process_id.pcs_name>DemoOrderCreate</map_process_id.pcs_name>
 		<map_order>70800</map_order>
-		<map_ext/>
+		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
