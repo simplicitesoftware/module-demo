@@ -9484,7 +9484,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_associate/>
-		<obf_inline/>
+		<obf_inline>0</obf_inline>
 		<obf_rendering/>
 		<obf_treedepth/>
 		<obf_area_id.ofa_name>UserFilters-Field</obf_area_id.ofa_name>
