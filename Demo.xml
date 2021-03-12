@@ -14694,7 +14694,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoCliAddress1</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Adresse </tsl_value>
+		<tsl_value>Adresse</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder>Rue, numéro, ...</tsl_placeholder>
