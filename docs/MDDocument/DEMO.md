@@ -20,6 +20,8 @@ enters and/or validate orders. Plain users are only responsible for entering and
 Business data
 -------------
 
+<img src="[MODEL:DemoObjects]" alt="Objects">
+
 The data model consist of 5 business objects:
 
 - Suppliers who supply products
@@ -32,6 +34,8 @@ NB: Orders are for 1 customer and 1 product (mono-product orders), a quantity ca
 
 User profiles
 -------------
+
+<img src="[MODEL:DemoUsers]" alt="Objects">
 
 Thes **Administrator** profile is a back office profile. He has full access to the order management application:
 he can manage all data including orders and has also access to users management. He is the only profile
@@ -49,6 +53,8 @@ Business workflows
 
 ### Order states
 
+<img src="[MODEL:DemoOrderStates]" alt="Objects">
+
 Orders can be in the following statuses:
 
 - **Pending** as the initial status
@@ -59,6 +65,8 @@ Orders can be in the following statuses:
 ![](ordermanagement-model2.jpg)
 
 ### Contacts states
+
+<img src="[MODEL:DemoContactStates]" alt="Objects">
 
 Contacts can be in the following statuses:
 
