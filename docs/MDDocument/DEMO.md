@@ -104,7 +104,7 @@ Changes on either product reference, product name or unit price is historized.
 
 A customer can only be created and updated by the administrator profile.
 
-####Order related business rules
+### Order related business rules
 
 Orders can be placed either by backend users (administrator or plain user) or by
 frontend users (customers themselves).
