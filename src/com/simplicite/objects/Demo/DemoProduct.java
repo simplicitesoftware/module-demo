@@ -120,7 +120,7 @@ public class DemoProduct extends ObjectDB {
 	public String unitTests() {
 		JUnitTool t = new JUnitTool(getGrant());
 		return
-			t.run("com.simplicite.commons.Demo.DemoProductTest") + // Shared code test class
+			t.run("com.simplicite.tests.Demo.DemoTests") + // Shared code unit tests class
 			t.run(DemoProductTest.class); // Nested test class
 	}
 }

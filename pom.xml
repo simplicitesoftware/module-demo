@@ -47,7 +47,6 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             <exclude>ObjectInternal/**</exclude>
             <exclude>ObjectExternal/**</exclude>
             <exclude>BPMProcess/**</exclude>
-            <exclude>BPMProcess/**</exclude>
           </excludes>
         </configuration>
       </plugin>

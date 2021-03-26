@@ -140,6 +140,7 @@ mvn verify sonar:sonar
 		<thm_menu_sta_t/>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<thm_const/>
 	</data>
 </object>
 <object>
@@ -384,7 +385,7 @@ $ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoad
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2021-03-04 23:14:11</usr_last_logon>
+		<usr_last_logon>2021-03-24 16:05:41</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
