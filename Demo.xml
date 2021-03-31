@@ -12531,31 +12531,10 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
 		<cax_objfield_id.obf_object_id.obo_name>DemoOrder</cax_objfield_id.obf_object_id.obo_name>
-		<cax_objfield_id.obf_order>420</cax_objfield_id.obf_order>
-		<cax_objfield_id.obf_field_id.fld_name>demoOrdTotal</cax_objfield_id.obf_field_id.fld_name>
-		<cax_type>V</cax_type>
-		<cax_order>1</cax_order>
-		<cax_function>S</cax_function>
-		<cax_chart/>
-		<cax_precision>2</cax_precision>
-		<cax_subtotal>1</cax_subtotal>
-		<cax_formula/>
-		<cax_hidden>0</cax_hidden>
-		<cax_objfield_id.obf_field_id.fld_type>2</cax_objfield_id.obf_field_id.fld_type>
-		<cax_dategroup/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<cax_unitscale/>
-		<cax_unitfunct/>
-		<cax_unitlabel/>
-		<cax_yaxis>L</cax_yaxis>
-	</data>
-	<data>
-		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
-		<cax_objfield_id.obf_object_id.obo_name>DemoOrder</cax_objfield_id.obf_object_id.obo_name>
 		<cax_objfield_id.obf_order>410</cax_objfield_id.obf_order>
 		<cax_objfield_id.obf_field_id.fld_name>demoOrdQuantity</cax_objfield_id.obf_field_id.fld_name>
 		<cax_type>V</cax_type>
-		<cax_order>2</cax_order>
+		<cax_order>1</cax_order>
 		<cax_function>S</cax_function>
 		<cax_chart/>
 		<cax_precision>0</cax_precision>
@@ -12569,6 +12548,27 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>R</cax_yaxis>
+	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoOrder</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>420</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoOrdTotal</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>V</cax_type>
+		<cax_order>2</cax_order>
+		<cax_function>S</cax_function>
+		<cax_chart/>
+		<cax_precision>2</cax_precision>
+		<cax_subtotal>1</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>2</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
