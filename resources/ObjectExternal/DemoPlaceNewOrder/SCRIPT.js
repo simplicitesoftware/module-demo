@@ -2,7 +2,7 @@
 // Client side JavaScript for place new order external object
 //-----------------------------------------------------------
 
-var DemoPlaceNewOrder = DemoPlaceNewOrder || (function($) {
+var DemoPlaceNewOrder = (function() {
 
 var cli, sup, prd, ord;
 
@@ -140,4 +140,4 @@ function order() {
 
 return { render: render };
 
-})(jQuery);
+})();

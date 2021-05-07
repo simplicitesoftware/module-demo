@@ -2,7 +2,7 @@
 // Client side JavaScript for order agenda
 //-----------------------------------------------------------
 
-var DemoOrderAgenda = DemoOrderAgenda || (function($) {
+var DemoOrderAgenda = (function() {
 
 var ord, debug = false;
 
@@ -148,4 +148,4 @@ function calendar4() {
 
 return { render: render };
 
-})(jQuery);
+})();
