@@ -806,8 +806,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -2904,8 +2904,8 @@ definitions:
         type: string
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoOrdCliId__demoCliCode:
