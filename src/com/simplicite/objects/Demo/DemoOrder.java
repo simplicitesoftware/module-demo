@@ -92,7 +92,7 @@ public class DemoOrder extends ObjectDB {
 	@Override
 	public String postSave() {
 		int stock = getField(STOCK_FIELDNAME).getInt(0);
-		if (DemoCommon.isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
+		if (DemoCommon.getInstance().isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
 			// Notify responsible user if stock is low
 			try {
 				String ref = getFieldValue(REFERENCE_FIELDNAME);
@@ -129,7 +129,7 @@ public class DemoOrder extends ObjectDB {
 	public Object printReceipt(PrintTemplate pt) {
 		try {
 			pt.setFilename(getDisplay() + "-" + getFieldValue(NUMBER_FIELDNAME) + ".pdf");
-			return DemoCommon.orderReceipt(this); // Implemented in common class
+			return DemoCommon.getInstance().orderReceipt(this); // Implemented in common class
 		} catch (Exception e) {
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();

@@ -3044,7 +3044,7 @@ try {
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -3081,7 +3081,7 @@ try {
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>5</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -9271,7 +9271,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_object_id.obo_name>DemoSupplier</obf_ref_object_id.obo_name>
 		<obf_cascad>Z</obf_cascad>
 		<obf_card>0,n</obf_card>
-		<obf_visible>1</obf_visible>
+		<obf_visible>0</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order/>
@@ -9502,7 +9502,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_cascad>Z</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
-		<obf_visible>1</obf_visible>
+		<obf_visible>0</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_associate/>

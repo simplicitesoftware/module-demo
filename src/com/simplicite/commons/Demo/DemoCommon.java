@@ -23,13 +23,21 @@ import com.simplicite.util.tools.PDFTool;
 public class DemoCommon implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 
+	private DemoCommon() {} // Hidden constructor
+
+	/** Sigleton */
+	private final static DemoCommon INSTANCE = new DemoCommon();
+
+	/** Get singleton */
+	public static DemoCommon getInstance() { return INSTANCE; }
+
 	/**
 	 * Check whether stock is low
 	 * @param grant Grant
 	 * @param prdId Product row ID
 	 * @param stock Current stock for product
 	 */
-	public static boolean isLowStock(Grant grant, String prdId, int stock) {
+	public boolean isLowStock(Grant grant, String prdId, int stock) {
 		// Get work instance for DemoOrder object
 		ObjectDB ord = grant.getTmpObject("DemoOrder");
 
@@ -66,7 +74,7 @@ public class DemoCommon implements java.io.Serializable {
 	 * Order receipt publication as PDF
 	 * @param ord Order object
 	 */
-	public static byte[] orderReceipt(ObjectDB ord) throws IOException, DocumentException {
+	public byte[] orderReceipt(ObjectDB ord) throws IOException, DocumentException {
 		try (ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream()) {
 			Document pdf = PDFTool.open(bos);
 
