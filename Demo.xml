@@ -698,7 +698,7 @@ try {
 	</data>
 	<data>
 		<shg_shortcut_id.shc_name>DemoDoc</shg_shortcut_id.shc_name>
-		<shg_group_id.grp_name>MD_ADMIN</shg_group_id.grp_name>
+		<shg_group_id.grp_name>DEMO_ADMIN</shg_group_id.grp_name>
 		<shg_activ>1</shg_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -3414,7 +3414,7 @@ try {
 		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>

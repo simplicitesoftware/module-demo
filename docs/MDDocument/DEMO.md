@@ -35,7 +35,7 @@ NB: Orders are for 1 customer and 1 product (mono-product orders), a quantity ca
 User profiles
 -------------
 
-<img src="[MODEL:DemoUsers]" alt="Objects">
+<img src="[MODEL:DemoUsers]" alt="Users">
 
 Thes **Administrator** profile is a back office profile. He has full access to the order management application:
 he can manage all data including orders and has also access to users management. He is the only profile
@@ -53,7 +53,7 @@ Business workflows
 
 ### Order states
 
-<img src="[MODEL:DemoOrderStates]" alt="Objects">
+<img src="[MODEL:DemoOrderStates]" alt="Order states">
 
 Orders can be in the following statuses:
 
