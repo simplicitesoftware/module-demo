@@ -35,7 +35,7 @@ NB: Orders are for 1 customer and 1 product (mono-product orders), a quantity ca
 User profiles
 -------------
 
-<img src="[MODEL:DemoUsers]" alt="Users">
+<img src="[MODEL:DemoUsers]" alt="Objects">
 
 Thes **Administrator** profile is a back office profile. He has full access to the order management application:
 he can manage all data including orders and has also access to users management. He is the only profile
@@ -53,7 +53,7 @@ Business workflows
 
 ### Order states
 
-<img src="[MODEL:DemoOrderStates]" alt="Order states">
+<img src="[MODEL:DemoOrderStates]" alt="Objects">
 
 Orders can be in the following statuses:
 
@@ -61,8 +61,6 @@ Orders can be in the following statuses:
 - **Validated** when validated by the administrator profile
 - **Shipped** when actually shipped to the customer
 - **Cancelled** if cancelled (cannot be cancelled when marked as shipped)
-
-![](ordermanagement-model2.jpg)
 
 ### Contacts states
 

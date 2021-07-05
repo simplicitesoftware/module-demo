@@ -13,7 +13,8 @@
 		"uri": "https://github.com/simplicitesoftware/module-demo.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-28 22:02:50</mdl_lastupd>
+		<mdl_type/>
+		<mdl_lastupd/>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
 
 ### Introduction
@@ -140,7 +141,7 @@ mvn verify sonar:sonar
 		<thm_menu_sta_t>#202020</thm_menu_sta_t>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<thm_const>Theme/thm_const/0/6/constants.less</thm_const>
+		<thm_const>files/Theme/demo/const.less</thm_const>
 	</data>
 </object>
 <object>
@@ -390,7 +391,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2021-05-11 21:19:51</usr_last_logon>
+		<usr_last_logon>2021-06-17 17:55:02</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -4725,8 +4726,7 @@ try {
       <div class="field" data-field="demoOrdDeliveryDate"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -4955,8 +4955,7 @@ try {
       <div class="field" data-field="demoSupEmail"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -11132,6 +11131,28 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 </object>
 <object>
+	<name>DocIndexMIME</name>
+	<action>upsert</action>
+	<data>
+		<dim_docindex_id.din_name>B-demoCtcFile</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/msword</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>doc</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoCtcFile</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/pdf</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>pdf</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoCtcFile</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>docx</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>PrintTemplate</name>
 	<action>upsert</action>
 	<data>
@@ -13203,7 +13224,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<trv_tree_id.trv_name>DemoClientTreeview</trv_tree_id.trv_name>
-		<trv_level>10</trv_level>
+		<trv_level>1</trv_level>
 		<trv_object_id.obo_name>DemoClient</trv_object_id.obo_name>
 		<trv_field_id.fld_name/>
 		<trv_action>D;F</trv_action>
@@ -13222,7 +13243,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<trv_tree_id.trv_name>DemoClientTreeview</trv_tree_id.trv_name>
-		<trv_level>10-10</trv_level>
+		<trv_level>2</trv_level>
 		<trv_object_id.obo_name>DemoContact</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoCtcCliId</trv_field_id.fld_name>
 		<trv_action>D;F</trv_action>
@@ -13236,12 +13257,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoClientTreeview</trv_parent_id.trv_tree_id.trv_name>
-		<trv_parent_id.trv_level>10</trv_parent_id.trv_level>
+		<trv_parent_id.trv_level>1</trv_parent_id.trv_level>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<trv_tree_id.trv_name>DemoClientTreeview</trv_tree_id.trv_name>
-		<trv_level>10-20</trv_level>
+		<trv_level>3</trv_level>
 		<trv_object_id.obo_name>DemoOrder</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoOrdCliId</trv_field_id.fld_name>
 		<trv_action>D;F</trv_action>
@@ -13255,12 +13276,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoClientTreeview</trv_parent_id.trv_tree_id.trv_name>
-		<trv_parent_id.trv_level>10</trv_parent_id.trv_level>
+		<trv_parent_id.trv_level>1</trv_parent_id.trv_level>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<trv_tree_id.trv_name>DemoSupplierTreeview</trv_tree_id.trv_name>
-		<trv_level>10</trv_level>
+		<trv_level>1</trv_level>
 		<trv_object_id.obo_name>DemoSupplier</trv_object_id.obo_name>
 		<trv_field_id.fld_name/>
 		<trv_action>D;F</trv_action>
@@ -13279,7 +13300,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<trv_tree_id.trv_name>DemoSupplierTreeview</trv_tree_id.trv_name>
-		<trv_level>10-10</trv_level>
+		<trv_level>2</trv_level>
 		<trv_object_id.obo_name>DemoProduct</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoPrdSupId</trv_field_id.fld_name>
 		<trv_action>D;F</trv_action>
@@ -13293,12 +13314,12 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_pagine>0</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoSupplierTreeview</trv_parent_id.trv_tree_id.trv_name>
-		<trv_parent_id.trv_level>10</trv_parent_id.trv_level>
+		<trv_parent_id.trv_level>1</trv_parent_id.trv_level>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<trv_tree_id.trv_name>DemoSupplierTreeview</trv_tree_id.trv_name>
-		<trv_level>10-10-10</trv_level>
+		<trv_level>3</trv_level>
 		<trv_object_id.obo_name>DemoOrder</trv_object_id.obo_name>
 		<trv_field_id.fld_name>demoOrdPrdId</trv_field_id.fld_name>
 		<trv_action>D;F</trv_action>
@@ -13312,7 +13333,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<trv_pagine>1</trv_pagine>
 		<trv_onclick/>
 		<trv_parent_id.trv_tree_id.trv_name>DemoSupplierTreeview</trv_parent_id.trv_tree_id.trv_name>
-		<trv_parent_id.trv_level>10-10</trv_parent_id.trv_level>
+		<trv_parent_id.trv_level>2</trv_parent_id.trv_level>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -13322,7 +13343,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>Disposition</name>
+							<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13340,7 +13361,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>Disposition</name>
+							<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13358,7 +13379,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>Disposition</name>
+							<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13376,7 +13397,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>Disposition</name>
+							<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13394,7 +13415,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>Disposition</name>
+							<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13412,7 +13433,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectExternal</name>
+							<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
@@ -13430,7 +13451,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectExternal</name>
+							<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
@@ -13448,7 +13469,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectExternal</name>
+							<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
@@ -13466,7 +13487,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectExternal</name>
+							<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
@@ -13484,7 +13505,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectExternal</name>
+							<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
@@ -13502,7 +13523,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectInternal</name>
+							<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoClient</obo_name>
 				</data>
@@ -13520,7 +13541,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectInternal</name>
+							<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoClient</obo_name>
 				</data>
@@ -13538,7 +13559,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectInternal</name>
+							<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoContact</obo_name>
 				</data>
@@ -13556,7 +13577,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectInternal</name>
+							<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoOrder</obo_name>
 				</data>
@@ -17515,16 +17536,6 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 </object>
 <object>
-	<name>Dataset</name>
-	<action>upsert</action>
-	<data>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<dt_name>Demo-data</dt_name>
-		<dt_file>data/Demo-data.zip</dt_file>
-		<dt_desc><![CDATA[Demo test data]]></dt_desc>
-	</data>
-</object>
-<object>
 	<name>MDDocument</name>
 	<action>upsert</action>
 	<data>
@@ -17543,6 +17554,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<mdImgCode>DEMO_LOGO</mdImgCode>
 		<mdImgFile>docs/MDImage/DEMO_LOGO.png</mdImgFile>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<dt_name>Demo-data</dt_name>
+		<dt_file>data/Demo-data.zip</dt_file>
+		<dt_desc><![CDATA[Demo test data]]></dt_desc>
 	</data>
 </object>
 </simplicite>
