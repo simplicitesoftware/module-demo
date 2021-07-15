@@ -14,7 +14,6 @@
 	}
 }]]></mdl_url>
 		<mdl_type/>
-		<mdl_lastupd/>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
 
 ### Introduction
@@ -123,7 +122,6 @@ mvn verify sonar:sonar
 		<thm_color3>#418CF0</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
-		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox/>
 		<thm_active/>
@@ -391,7 +389,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2021-06-17 17:55:02</usr_last_logon>
+		<usr_last_logon>2021-07-15 11:04:22</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
@@ -1152,7 +1150,7 @@ try {
 		<lov_color>#393939</lov_color>
 		<lov_color_bg>#F4CCCC</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1163,7 +1161,7 @@ try {
 		<lov_color>#393939</lov_color>
 		<lov_color_bg>#d9ead3</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1174,128 +1172,117 @@ try {
 		<lov_color>#393939</lov_color>
 		<lov_color_bg>#FCE5CD</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
-		<lov_display>L</lov_display>
-	</data>
-	<data>
-		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_list_id.lov_name>
-		<lov_code>DEFAULT</lov_code>
-		<lov_order_by>1</lov_order_by>
-		<lov_label>Code DEFAULT</lov_label>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_list_id.lov_name>
 		<lov_code>ORDISSUE</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code ORDISSUE</lov_label>
+		<lov_label>Order issue</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_list_id.lov_name>
 		<lov_code>BILLISSUE</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code BILLISSUE</lov_label>
+		<lov_label>Billing issue</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_list_id.lov_name>
 		<lov_code>ORDSTATUS</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code ORDSTATUS</lov_label>
+		<lov_label>Order status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_list_id.lov_name>
 		<lov_code>PRDINFO</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code PRDINFO</lov_label>
+		<lov_label>Product information</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_list_id.lov_name>
 		<lov_code>ORDCANCEL</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code ORDCANCEL</lov_label>
+		<lov_label>Order cancelation</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_list_id.lov_name>
 		<lov_code>ORDCHANGE</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code ORDCHANGE</lov_label>
+		<lov_label>Order change</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
 		<lov_code>INF</lov_code>
 		<lov_order_by>1</lov_order_by>
-		<lov_label>Code INF</lov_label>
+		<lov_label>Information</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
 		<lov_code>REQ</lov_code>
 		<lov_order_by>2</lov_order_by>
-		<lov_label>Code REQ</lov_label>
+		<lov_label>Request</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
 		<lov_code>CMP</lov_code>
 		<lov_order_by>3</lov_order_by>
-		<lov_label>Code CMP</lov_label>
+		<lov_label>Complaint</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
 		<lov_code>OTH</lov_code>
 		<lov_order_by>4</lov_order_by>
-		<lov_label>Code OTH</lov_label>
+		<lov_label>Other</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon/>
-		<lov_display>L</lov_display>
+		<lov_display>L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
@@ -1361,7 +1348,7 @@ try {
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon>fas/laptop</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1372,7 +1359,7 @@ try {
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon>fas/desktop</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1383,7 +1370,7 @@ try {
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon>fas/tablet-alt</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1394,7 +1381,7 @@ try {
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon>fas/mobile-alt</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_PRD_TYPE</lov_list_id.lov_name>
@@ -1405,7 +1392,7 @@ try {
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon>fas/archive</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 </object>
 <object>
@@ -1620,22 +1607,6 @@ try {
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>DEFAULT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
-		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Default]]></lov_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>DEFAULT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
-		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Par défaut]]></lov_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDISSUE</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
@@ -1704,7 +1675,7 @@ try {
 		<lov_code_id.lov_code>ORDCANCEL</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Order cancellation]]></lov_value>
+		<lov_value><![CDATA[Order cancelation]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2897,7 +2868,7 @@ try {
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_CTC_SUBTYPE</fld_list_id.lov_name>
@@ -2934,7 +2905,7 @@ try {
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_CTC_TYPE</fld_list_id.lov_name>
@@ -9589,7 +9560,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<fll_objfield_id.obf_order>110</fll_objfield_id.obf_order>
 		<fll_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</fll_code_id.lov_list_id.lov_name>
 		<fll_code_id.lov_code>INF</fll_code_id.lov_code>
-		<fll_code_id.lov_label>Code INF</fll_code_id.lov_label>
+		<fll_code_id.lov_label>Information</fll_code_id.lov_label>
 		<fll_linked_id.obf_object_id.obo_name>DemoContact</fll_linked_id.obf_object_id.obo_name>
 		<fll_linked_id.obf_field_id.fld_name>demoCtcSubType</fll_linked_id.obf_field_id.fld_name>
 		<fll_linked_id.obf_order>120</fll_linked_id.obf_order>
@@ -9602,7 +9573,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<fll_objfield_id.obf_order>110</fll_objfield_id.obf_order>
 		<fll_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</fll_code_id.lov_list_id.lov_name>
 		<fll_code_id.lov_code>REQ</fll_code_id.lov_code>
-		<fll_code_id.lov_label>Code REQ</fll_code_id.lov_label>
+		<fll_code_id.lov_label>Request</fll_code_id.lov_label>
 		<fll_linked_id.obf_object_id.obo_name>DemoContact</fll_linked_id.obf_object_id.obo_name>
 		<fll_linked_id.obf_field_id.fld_name>demoCtcSubType</fll_linked_id.obf_field_id.fld_name>
 		<fll_linked_id.obf_order>120</fll_linked_id.obf_order>
@@ -9615,7 +9586,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<fll_objfield_id.obf_order>110</fll_objfield_id.obf_order>
 		<fll_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</fll_code_id.lov_list_id.lov_name>
 		<fll_code_id.lov_code>CMP</fll_code_id.lov_code>
-		<fll_code_id.lov_label>Code CMP</fll_code_id.lov_label>
+		<fll_code_id.lov_label>Complaint</fll_code_id.lov_label>
 		<fll_linked_id.obf_object_id.obo_name>DemoContact</fll_linked_id.obf_object_id.obo_name>
 		<fll_linked_id.obf_field_id.fld_name>demoCtcSubType</fll_linked_id.obf_field_id.fld_name>
 		<fll_linked_id.obf_order>120</fll_linked_id.obf_order>
@@ -10548,7 +10519,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoContact-C4</cst_name>
 		<cst_object_id.obo_name>DemoContact</cst_object_id.obo_name>
 		<cst_order>30</cst_order>
-		<cst_desc><![CDATA[Hide subtype depending on type]]></cst_desc>
+		<cst_desc><![CDATA[Show/hide sub-type depending on type]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>F;B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10810,6 +10781,21 @@ state transition to _shipped_ status.]]></act_comment>
 		<csi_field_prop>U</csi_field_prop>
 		<csi_apply>F</csi_apply>
 		<csi_expr><![CDATA[true]]></csi_expr>
+		<csi_target/>
+		<csi_objfield_id.obf_object_id.obo_name>DemoContact</csi_objfield_id.obf_object_id.obo_name>
+		<csi_objfield_id.obf_field_id.fld_name>demoCtcSubType</csi_objfield_id.obf_field_id.fld_name>
+		<csi_objfield_id.obf_order>120</csi_objfield_id.obf_order>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<csi_const_id.cst_name>DemoContact-C4</csi_const_id.cst_name>
+		<csi_const_id.cst_object_id.obo_name>DemoContact</csi_const_id.cst_object_id.obo_name>
+		<csi_const_id.cst_order>30</csi_const_id.cst_order>
+		<csi_order>20</csi_order>
+		<csi_object_prop/>
+		<csi_field_prop>M</csi_field_prop>
+		<csi_apply>F</csi_apply>
+		<csi_expr><![CDATA[![FIELD:demoCtcType].isEmpty() && [VALUE:demoCtcType] != "OTH"]]></csi_expr>
 		<csi_target/>
 		<csi_objfield_id.obf_object_id.obo_name>DemoContact</csi_objfield_id.obf_object_id.obo_name>
 		<csi_objfield_id.obf_field_id.fld_name>demoCtcSubType</csi_objfield_id.obf_field_id.fld_name>
@@ -13354,7 +13340,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>DEMO_PRINT_STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/Disposition/default/DEMO_PRINT_STYLES.less</res_file>
-		<res_file_compiled>resources/Disposition/default/DEMO_PRINT_STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13372,7 +13357,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>demo</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13390,7 +13374,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>demo-module</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo-module.svg</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13408,7 +13391,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>demo-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13426,7 +13408,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>DEMO_LOGO</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/DEMO_LOGO.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13444,7 +13425,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoOrderAgenda/HTML.html</res_file>
-		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13462,7 +13442,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoOrderAgenda/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/DemoOrderAgenda/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13480,7 +13459,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/STYLES.less</res_file>
-		<res_file_compiled>resources/ObjectExternal/DemoPlaceNewOrder/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13498,7 +13476,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/HTML.html</res_file>
-		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13516,7 +13493,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/DemoPlaceNewOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13534,7 +13510,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoClient/STYLES.less</res_file>
-		<res_file_compiled>resources/ObjectInternal/DemoClient/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13552,7 +13527,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoClient/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectInternal/DemoClient/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13570,7 +13544,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>PRINT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoContact/PRINT.html</res_file>
-		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13588,7 +13561,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoOrder/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectInternal/DemoOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -14304,7 +14276,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoCtcSubType</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Subtype</tsl_value>
+		<tsl_value>Sub-type</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -15075,7 +15047,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_value>Type</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
-		<tsl_placeholder/>
+		<tsl_placeholder>Choisir le type</tsl_placeholder>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<tsl_tooltip/>

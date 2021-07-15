@@ -119,12 +119,11 @@ A contact can be linked or not a an order of the selelcted client
 ### Lists
 
 * `DEMO_CTC_TYPE`
-    - `INF` Code INF
-    - `REQ` Code REQ
-    - `CMP` Code CMP
-    - `OTH` Code OTH
+    - `INF` Information
+    - `REQ` Request
+    - `CMP` Complaint
+    - `OTH` Other
 * `DEMO_CTC_SUBTYPE`
-    - `DEFAULT` Code DEFAULT
 * `DEMO_CTC_CANAL`
     - `PHONE` Code PHONE
     - `EMAIL` Code EMAIL
@@ -233,12 +232,11 @@ An order is for one single product.
     - `C` Closed
     - `P` Processing
 * `DEMO_CTC_TYPE`
-    - `INF` Code INF
-    - `REQ` Code REQ
-    - `CMP` Code CMP
-    - `OTH` Code OTH
+    - `INF` Information
+    - `REQ` Request
+    - `CMP` Complaint
+    - `OTH` Other
 * `DEMO_CTC_SUBTYPE`
-    - `DEFAULT` Code DEFAULT
 
 `DemoOrderHistoric` business object definition
 ----------------------------------------------

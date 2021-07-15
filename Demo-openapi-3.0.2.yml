@@ -97,8 +97,8 @@ components:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoOrdQuantity:
@@ -331,8 +331,7 @@ components:
         demoCtcSubType:
           description: Contact sub type
           type: string
-          enum:
-          - DEFAULT
+          enum: []
         demoCtcComments:
           description: Comments on contact
           type: string
@@ -341,8 +340,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcType:
           description: Contact type
           type: string
@@ -412,8 +411,7 @@ components:
         demoCtcSubType:
           description: Contact sub type
           type: string
-          enum:
-          - DEFAULT
+          enum: []
         demoCtcCliId__demoCliHomePhone:
           description: Customer home phone number
           type: string
@@ -422,8 +420,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -462,8 +460,8 @@ components:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
@@ -809,8 +807,6 @@ paths:
         required: false
       - schema:
           type: string
-          enum:
-          - DEFAULT
         in: query
         name: demoCtcSubType
         description: Search filter for Contact sub type
@@ -836,8 +832,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -918,8 +914,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -2120,8 +2116,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -3059,8 +3055,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3078,8 +3074,6 @@ paths:
         required: false
       - schema:
           type: string
-          enum:
-          - DEFAULT
         in: query
         name: demoCtcSubType
         description: Search filter for Contact sub type
