@@ -296,6 +296,8 @@ try {
 		<usr_last_logon>2021-04-13 10:51:31</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
+		<usr_mfa_method/>
+		<usr_mfa_settings/>
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
 	<data>
@@ -328,6 +330,8 @@ try {
 		<usr_last_logon>2020-06-30 13:41:50</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
+		<usr_mfa_method/>
+		<usr_mfa_settings/>
 		<usr_uuid>2156a498-bcdb-4e04-a68f-ebabdc4d223c</usr_uuid>
 	</data>
 	<data>
@@ -360,6 +364,8 @@ try {
 		<usr_last_logon>2021-02-03 15:07:42</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
+		<usr_mfa_method/>
+		<usr_mfa_settings/>
 		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
 	</data>
 	<data>
@@ -389,9 +395,11 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2021-07-15 11:04:22</usr_last_logon>
+		<usr_last_logon>2021-11-16 13:36:18</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
+		<usr_mfa_method/>
+		<usr_mfa_settings/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
 </object>
@@ -1401,7 +1409,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CLI_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T1</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[External]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1409,7 +1416,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CLI_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T2</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Internal]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1417,7 +1423,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CLI_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T3</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Partner]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1425,7 +1430,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CLI_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T1</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Externe]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1433,7 +1437,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CLI_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T2</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Interne]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1441,7 +1444,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CLI_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>T3</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Partenaire]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1449,7 +1451,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_COUNTRY</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>FR</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[France]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1457,7 +1458,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_COUNTRY</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>UK</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[United Kingdom]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1465,7 +1465,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_COUNTRY</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Spain]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1473,7 +1472,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_COUNTRY</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>FR</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[France]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1481,7 +1479,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_COUNTRY</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>UK</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Royaume Uni]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1489,7 +1486,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_COUNTRY</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Espagne]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1497,7 +1493,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PHONE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Phone]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1505,7 +1500,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>EMAIL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[E-mail]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1513,7 +1507,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CHAT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Chat]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1521,7 +1514,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>WEB</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Web site]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1529,7 +1521,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PHONE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Téléphone]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1537,7 +1528,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>EMAIL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[E-mail]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1545,7 +1535,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CHAT</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Chat]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1553,7 +1542,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_CANAL</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>WEB</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Site web]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1561,7 +1549,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>O</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Open]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1569,7 +1556,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>P</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Processing]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1577,7 +1563,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Closed]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1585,7 +1570,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>O</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Ouvert]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1593,7 +1577,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Closed]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1601,7 +1584,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>P</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[En traitement]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1609,7 +1591,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDISSUE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Order issue]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1617,7 +1598,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BILLISSUE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Billing issue]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1625,7 +1605,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDISSUE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Problème sur commande]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1633,7 +1612,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>BILLISSUE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Problème facturation]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1641,7 +1619,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDSTATUS</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Order status]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1649,7 +1626,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PRDINFO</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Product information]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1657,7 +1633,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDSTATUS</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Order status]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1665,7 +1640,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PRDINFO</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Information produit]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1673,7 +1647,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDCANCEL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Order cancelation]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1681,7 +1654,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDCHANGE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Order change]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1689,7 +1661,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDCANCEL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Annulation commande]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1697,7 +1668,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDCHANGE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Modification commande]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1705,7 +1675,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>INF</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Information]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1713,7 +1682,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>REQ</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Request]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1721,7 +1689,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CMP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Complaint]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1729,7 +1696,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>OTH</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Other]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1737,7 +1703,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>INF</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Information]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1745,7 +1710,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>REQ</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Demande]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1753,7 +1717,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CMP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Réclamation]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1761,7 +1724,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>OTH</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1769,7 +1731,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>P</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Pending]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1777,23 +1738,13 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>V</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Validated]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>H</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
-		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[On hold]]></lov_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Shipped]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1801,15 +1752,20 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Cancelled]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>H</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[On hold]]></lov_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>P</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[En attente]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1817,23 +1773,13 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>V</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Validée]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>H</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
-		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Reportée]]></lov_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>D</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Envoyée]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1841,15 +1787,20 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>5</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Annulée]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<lov_code_id.lov_list_id.lov_name>DEMO_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>H</lov_code_id.lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Reportée]]></lov_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>LAPTOP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>10</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Laptop]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1857,7 +1808,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>DESKTOP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>20</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Desktop]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1865,7 +1815,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>TABLET</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>30</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Tablet]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1873,7 +1822,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SMARTPHONE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>40</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Smartphone]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1881,7 +1829,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>OTHER</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>50</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Other]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1889,7 +1836,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>LAPTOP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>10</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[PC portable]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1897,7 +1843,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>DESKTOP</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>20</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[PC de bureau]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1905,7 +1850,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>TABLET</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>30</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Tablette]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1913,7 +1857,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SMARTPHONE</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>40</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Smartphone]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -1921,7 +1864,6 @@ try {
 	<data>
 		<lov_code_id.lov_list_id.lov_name>DEMO_PRD_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>OTHER</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>50</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Autre]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -2461,7 +2403,7 @@ try {
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_CLI_TYPE</fld_list_id.lov_name>
@@ -2477,7 +2419,7 @@ try {
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>HCB</fld_rendering>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
@@ -5022,6 +4964,7 @@ try {
 	<data>
 		<obo_name>DemoClient</obo_name>
 		<obo_dbtable>demo_client</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>src/com/simplicite/objects/Demo/DemoClient.java</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -5091,6 +5034,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 	<data>
 		<obo_name>DemoContact</obo_name>
 		<obo_dbtable>demo_contact</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>src/com/simplicite/objects/Demo/DemoContact.java</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -5160,6 +5104,7 @@ A contact can be linked or not a an order of the selelcted client
 	<data>
 		<obo_name>DemoContactHistoric</obo_name>
 		<obo_dbtable>demo_contact_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5230,6 +5175,7 @@ A contact can be linked or not a an order of the selelcted client
 	<data>
 		<obo_name>DemoOrder</obo_name>
 		<obo_dbtable>demo_order</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>src/com/simplicite/objects/Demo/DemoOrder.java</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -5299,6 +5245,7 @@ An order is for one single product.]]></obo_comment>
 	<data>
 		<obo_name>DemoOrderHistoric</obo_name>
 		<obo_dbtable>demo_order_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5368,6 +5315,7 @@ An order is for one single product.]]></obo_comment>
 	<data>
 		<obo_name>DemoProduct</obo_name>
 		<obo_dbtable>demo_product</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>src/com/simplicite/objects/Demo/DemoProduct.java</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -5437,6 +5385,7 @@ Its reference is unique per supplier.]]></obo_comment>
 	<data>
 		<obo_name>DemoProductHistoric</obo_name>
 		<obo_dbtable>demo_product_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -5507,6 +5456,7 @@ Its reference is unique per supplier.]]></obo_comment>
 	<data>
 		<obo_name>DemoSupplier</obo_name>
 		<obo_dbtable>demo_supplier</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -10475,6 +10425,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_WEBSITE</grt_group_id.grp_name>
+		<grt_function_id.fct_name>WebNews-L</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>WebNews</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>ConstraintObject</name>
@@ -13329,7 +13289,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>Disposition</name>
+				<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13346,7 +13306,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>Disposition</name>
+				<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13363,7 +13323,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>Disposition</name>
+				<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13380,7 +13340,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>Disposition</name>
+				<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13397,7 +13357,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>Disposition</name>
+				<name>Disposition</name>
 				<data>
 					<dis_code>default</dis_code>
 				</data>
@@ -13414,7 +13374,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectExternal</name>
+				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
@@ -13431,7 +13391,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectExternal</name>
+				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
@@ -13448,7 +13408,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectExternal</name>
+				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
@@ -13465,7 +13425,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectExternal</name>
+				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
@@ -13482,7 +13442,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectExternal</name>
+				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
@@ -13499,7 +13459,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectInternal</name>
+				<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoClient</obo_name>
 				</data>
@@ -13516,7 +13476,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectInternal</name>
+				<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoClient</obo_name>
 				</data>
@@ -13533,7 +13493,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectInternal</name>
+				<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoContact</obo_name>
 				</data>
@@ -13550,7 +13510,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<res_object>
 			<object>
-							<name>ObjectInternal</name>
+				<name>ObjectInternal</name>
 				<data>
 					<obo_name>DemoOrder</obo_name>
 				</data>
