@@ -5065,7 +5065,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>img/color/chat</obo_icon>
-		<obo_refcount>0</obo_refcount>
+		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>1;2;3</obo_historic>
@@ -5206,7 +5206,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>img/color/documents_folder</obo_icon>
-		<obo_refcount>0</obo_refcount>
+		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;2;3</obo_historic>
@@ -5346,7 +5346,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>img/color/box</obo_icon>
-		<obo_refcount>0</obo_refcount>
+		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;3</obo_historic>
@@ -5485,7 +5485,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_useform>1</obo_useform>
 		<obo_title/>
 		<obo_icon>img/color/building</obo_icon>
-		<obo_refcount>0</obo_refcount>
+		<obo_refcount>1</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>3</obo_historic>
