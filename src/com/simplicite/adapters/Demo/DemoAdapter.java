@@ -4,8 +4,8 @@ import org.json.JSONObject;
 
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
-import com.simplicite.util.exceptions.PlatformException;
 import com.simplicite.util.exceptions.GetException;
+import com.simplicite.util.exceptions.PlatformException;
 import com.simplicite.util.tools.BusinessObjectTool;
 
 /**
@@ -21,12 +21,12 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 
 	private ObjectDB prd;
 	private transient BusinessObjectTool prdt;
-	
+
 	private int nbLines = 0;
 	private int nbErrors = 0;
 
 	private static final int NB_COLS = 3; // Expected number of columns
- 
+
 	@Override
 	public String preProcess() {
 		AppLog.info("Start of " + getName(), getGrant());
@@ -35,7 +35,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 
 		sup = getGrant().getObject("adp", "DemoSupplier");
 		supt = new BusinessObjectTool(sup); // or sup.getTool(); in versions 5.0+
- 
+
 		prd = getGrant().getObject("inlog", "DemoProduct");
 		prdt = new BusinessObjectTool(prd); // or prd.getTool();
 
@@ -51,7 +51,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 			if (debug) appendLog("Processling line " + n + " = " + String.join(String.valueOf(getSeparator()), values));
 
 			/* Line format: <supplier code><tab><product reference><tab><product name> */
- 
+
 			if (values.length != NB_COLS)
 				throw new PlatformException("Line " + n + " has " + values.length + " columns instead of " + NB_COLS + ", ignored");
 
@@ -95,7 +95,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 		appendLog("Nb processed lines = " + nbLines);
 		appendLog("Nb errors = " + nbErrors);
 		appendLog("=================================================================");
-		
+
 		AppLog.info("End of " + getName(), getGrant());
 	}
 }
