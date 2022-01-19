@@ -395,7 +395,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2021-11-16 13:36:18</usr_last_logon>
+		<usr_last_logon>2022-01-19 21:36:02</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -4456,13 +4456,8 @@ try {
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div>
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="field" data-field="demoCliEmail"></div>
-    </div>
-    <div class="col-sm-4">
-      <div id="hangout-button"></div>
-    </div>
+  <div>
+    <div class="field" data-field="demoCliEmail"></div>
   </div>
   <div class="row">
     <div class="col-sm-6">
@@ -4474,8 +4469,7 @@ try {
       <div class="field" data-field="demoCliFax"></div>
     </div>
   </div>
-</div>
-]]></ofa_ui>
+</div>]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12408,6 +12402,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC1</cax_crosstab_id.ctb_name>
@@ -12429,6 +12424,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12450,6 +12446,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12471,6 +12468,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12492,6 +12490,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12513,6 +12512,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>R</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC2</cax_crosstab_id.ctb_name>
@@ -12534,6 +12534,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12555,6 +12556,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12576,6 +12578,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12597,6 +12600,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>R</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC3</cax_crosstab_id.ctb_name>
@@ -12618,6 +12622,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC4</cax_crosstab_id.ctb_name>
@@ -12639,6 +12644,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>DemoOrder-TC4</cax_crosstab_id.ctb_name>
@@ -12660,6 +12666,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 </object>
 <object>

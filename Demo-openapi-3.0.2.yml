@@ -16,10 +16,6 @@ components:
           type: integer
           enum:
           - 404
-    ArrayOfDemoOrder:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoOrder'
     DemoClient:
       type: object
       properties:
@@ -85,37 +81,6 @@ components:
           type: string
         demoCliAddress2:
           description: Customer address (line 2)
-          type: string
-    DemoOrderHistoric:
-      type: object
-      properties:
-        row_idx:
-          description: History record index
-          type: integer
-        demoOrdStatus:
-          description: Order status
-          type: string
-          enum:
-          - P
-          - H
-          - V
-          - D
-          - C
-        demoOrdQuantity:
-          description: Product quantity ordered
-          type: integer
-        created_dt_hist:
-          description: Created date
-          type: string
-          example: yyyy-MM-dd HH:mm:ss
-        row_id:
-          description: Unique technical row ID
-          type: string
-        created_by_hist:
-          description: Created by
-          type: string
-        row_ref_id:
-          description: Record row ID
           type: string
     ArrayOfDemoOrderHistoric:
       type: array
@@ -238,6 +203,165 @@ components:
         demoOrdPrdId__demoPrdName:
           description: Product name
           type: string
+    PublicationResult:
+      type: object
+      properties:
+        mime:
+          description: MIME type
+          type: string
+        content:
+          description: Content (plain text or base64 encoded)
+          type: string
+    PlaceData:
+      type: object
+      properties:
+        coord:
+          description: Geographical coordinates
+          type: string
+        address:
+          description: Address
+          type: string
+        row_id:
+          description: Row ID
+          type: string
+        label1:
+          description: 'Label #1'
+          type: string
+        label2:
+          description: 'Label #2'
+          type: string
+        label3:
+          description: 'Label #3'
+          type: string
+    PlaceMapData:
+      type: object
+      properties:
+        places:
+          description: Places
+          type: array
+          items:
+            $ref: '#/components/schemas/PlaceData'
+        name:
+          description: Name
+          type: string
+    ArrayOfDemoSupplier:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoSupplier'
+    ArrayOfDemoContactHistoric:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoContactHistoric'
+    DemoProductHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: History record index
+          type: integer
+        demoPrdAvailable:
+          description: Available product?
+          type: boolean
+        created_dt_hist:
+          description: Created date
+          type: string
+          example: yyyy-MM-dd HH:mm:ss
+        demoPrdUnitPrice:
+          description: Unit price of product
+          type: number
+        row_id:
+          description: Unique technical row ID
+          type: string
+        demoPrdName:
+          description: Product name
+          type: string
+        created_by_hist:
+          description: Created by
+          type: string
+        row_ref_id:
+          description: Record row ID
+          type: string
+        demoPrdReference:
+          description: Product reference
+          type: string
+    Error400:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 400
+    Error401:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 401
+    Error500:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 500
+    Error403:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 403
+    ArrayOfDemoOrder:
+      type: array
+      items:
+        $ref: '#/components/schemas/DemoOrder'
+    DemoOrderHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: History record index
+          type: integer
+        demoOrdStatus:
+          description: Order status
+          type: string
+          enum:
+          - P
+          - V
+          - H
+          - D
+          - C
+        demoOrdQuantity:
+          description: Product quantity ordered
+          type: integer
+        created_dt_hist:
+          description: Created date
+          type: string
+          example: yyyy-MM-dd HH:mm:ss
+        row_id:
+          description: Unique technical row ID
+          type: string
+        created_by_hist:
+          description: Created by
+          type: string
+        row_ref_id:
+          description: Record row ID
+          type: string
     DemoProduct:
       type: object
       properties:
@@ -301,15 +425,6 @@ components:
         demoPrdSupId__demoSupName:
           description: Supplier name
           type: string
-    PublicationResult:
-      type: object
-      properties:
-        mime:
-          description: MIME type
-          type: string
-        content:
-          description: Content (plain text or base64 encoded)
-          type: string
     ArrayOfDemoProduct:
       type: array
       items:
@@ -318,10 +433,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/DemoContact'
-    ArrayOfDemoSupplier:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoSupplier'
     DemoContactHistoric:
       type: object
       properties:
@@ -340,8 +451,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -476,10 +587,6 @@ components:
         demoCtcOrdId__demoOrdPrdId__demoPrdReference:
           description: Product reference
           type: string
-    ArrayOfDemoContactHistoric:
-      type: array
-      items:
-        $ref: '#/components/schemas/DemoContactHistoric'
     ActionResult:
       type: object
       properties:
@@ -496,70 +603,6 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/DemoProductHistoric'
-    DemoProductHistoric:
-      type: object
-      properties:
-        row_idx:
-          description: History record index
-          type: integer
-        demoPrdAvailable:
-          description: Available product?
-          type: boolean
-        created_dt_hist:
-          description: Created date
-          type: string
-          example: yyyy-MM-dd HH:mm:ss
-        demoPrdUnitPrice:
-          description: Unit price of product
-          type: number
-        row_id:
-          description: Unique technical row ID
-          type: string
-        demoPrdName:
-          description: Product name
-          type: string
-        created_by_hist:
-          description: Created by
-          type: string
-        row_ref_id:
-          description: Record row ID
-          type: string
-        demoPrdReference:
-          description: Product reference
-          type: string
-    Error400:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 400
-    Error401:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 401
-    Error500:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 500
     DemoSupplier:
       type: object
       properties:
@@ -599,17 +642,6 @@ components:
         demoSupComments:
           description: Comments on supplier
           type: string
-    Error403:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 403
     ArrayOfDemoClient:
       type: array
       items:
@@ -2116,8 +2148,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -2132,6 +2164,46 @@ paths:
         required: false
       tags:
       - DemoOrderHistoric
+  /rest/DemoClient/{row_id}/placemap:DemoClients:
+    get:
+      summary: Call a place map for DemoClient business object
+      security:
+      - bearerAuth: []
+      operationId: obj-democlient-placemap-democlients
+      responses:
+        '200':
+          description: Success in calling the place map adat
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlaceMapData'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoClient
   /rest/DemoContact/{row_id}:
     post:
       summary: Create a new DemoContactbusiness object record
@@ -3055,8 +3127,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
