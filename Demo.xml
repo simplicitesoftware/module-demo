@@ -172,7 +172,7 @@ try {
 }
 </script>]]></viw_ui>
 		<viw_order>110</viw_order>
-		<viw_icon/>
+		<viw_icon>demo</viw_icon>
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -186,7 +186,7 @@ try {
 </div>
 <!-- Area 3 is not displayed on purpose -->]]></viw_ui>
 		<viw_order>120</viw_order>
-		<viw_icon/>
+		<viw_icon>demo</viw_icon>
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -395,7 +395,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-01-19 21:36:02</usr_last_logon>
+		<usr_last_logon>2022-02-03 18:11:16</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -4973,7 +4973,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_exportorder>3</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby>0</obo_groupby>
+		<obo_groupby/>
 		<obo_dfltref>DemoOrder;demoOrdCliId</obo_dfltref>
 		<obo_template_id.tpl_name>DemoClient</obo_template_id.tpl_name>
 		<obo_cache>S</obo_cache>
@@ -4990,7 +4990,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_title/>
 		<obo_icon>img/color/view_user</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree>0</obo_tree>
+		<obo_tree/>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>3</obo_historic>
 		<obo_printable>1</obo_printable>
