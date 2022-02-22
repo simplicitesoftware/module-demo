@@ -395,7 +395,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-02-18 09:33:43</usr_last_logon>
+		<usr_last_logon>2022-02-22 15:27:31</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -12968,66 +12968,6 @@ state transition to _shipped_ status.]]></act_comment>
 <object>
 	<name>ViewItem</name>
 	<action>upsert</action>
-	<data>
-		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
-		<vwi_position>1</vwi_position>
-		<vwi_type>X</vwi_type>
-		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name/>
-		<vwi_research_id.rch_object_id.obo_name/>
-		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec><![CDATA[ord_status <> 'C' and datediff('dd', ord_date, current_date) <= 14]]></vwi_search_spec>
-		<vwi_lov_code/>
-		<vwi_show>DemoOrder</vwi_show>
-		<vwi_url><![CDATA[&zgraph=pie&zcontrol=no&zwidth=300&zheight=250]]></vwi_url>
-		<vwi_image/>
-		<vwi_subview_id.viw_name/>
-		<vwi_treeview_id.trv_name/>
-		<vwi_crosstab_id.ctb_name>DemoOrder-TC1</vwi_crosstab_id.ctb_name>
-		<vwi_printtmpl_id.prt_name/>
-		<vwi_printtmpl_id.prt_lang/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
-		<vwi_position>2</vwi_position>
-		<vwi_type>X</vwi_type>
-		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name/>
-		<vwi_research_id.rch_object_id.obo_name/>
-		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec><![CDATA[ord_status <> 'C' and datediff('dd', ord_date, current_date) <= 14]]></vwi_search_spec>
-		<vwi_lov_code/>
-		<vwi_show>DemoOrder</vwi_show>
-		<vwi_url><![CDATA[&zgraph_demoOrdTotal=area_stack&zcontrol=no&zwidth=600&zheight=250&zstotal=yes]]></vwi_url>
-		<vwi_image/>
-		<vwi_subview_id.viw_name/>
-		<vwi_treeview_id.trv_name/>
-		<vwi_crosstab_id.ctb_name>DemoOrder-TC2</vwi_crosstab_id.ctb_name>
-		<vwi_printtmpl_id.prt_name/>
-		<vwi_printtmpl_id.prt_lang/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
-		<vwi_position>3</vwi_position>
-		<vwi_type>E</vwi_type>
-		<vwi_title>0</vwi_title>
-		<vwi_research_id.rch_name/>
-		<vwi_research_id.rch_object_id.obo_name/>
-		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec/>
-		<vwi_lov_code/>
-		<vwi_show/>
-		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("SocialPosts")]]]></vwi_url>
-		<vwi_image/>
-		<vwi_subview_id.viw_name/>
-		<vwi_treeview_id.trv_name/>
-		<vwi_crosstab_id.ctb_name/>
-		<vwi_printtmpl_id.prt_name/>
-		<vwi_printtmpl_id.prt_lang/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
