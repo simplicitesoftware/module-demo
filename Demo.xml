@@ -165,7 +165,7 @@ mvn verify sonar:sonar
 		<viw_ui><![CDATA[<script type="text/javascript">
 try {
 	$ui.view.showLoading(null);
-	$ui.displayStatusMetrics(null, "DemoOrder", null, function() { $ui.view.hideLoading(null); });
+	$ui.displayStatusMetrics(null, 'DemoOrder', { nav: 'new' }, function() { $ui.view.hideLoading(null); });
 } catch (e) {
 	console.error(e);
 	$ui.view.hideLoading(null);
