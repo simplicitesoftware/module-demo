@@ -124,6 +124,7 @@ A contact can be linked or not a an order of the selelcted client
     - `CMP` Complaint
     - `OTH` Other
 * `DEMO_CTC_SUBTYPE`
+    - `EMPTY` 
 * `DEMO_CTC_CANAL`
     - `PHONE` Code PHONE
     - `EMAIL` Code EMAIL
@@ -237,6 +238,7 @@ An order is for one single product.
     - `CMP` Complaint
     - `OTH` Other
 * `DEMO_CTC_SUBTYPE`
+    - `EMPTY` 
 
 `DemoOrderHistoric` business object definition
 ----------------------------------------------

@@ -395,7 +395,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-02-22 15:27:31</usr_last_logon>
+		<usr_last_logon>2022-02-28 11:38:44</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -1183,6 +1183,17 @@ try {
 		<lov_display>L;T</lov_display>
 	</data>
 	<data>
+		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_list_id.lov_name>
+		<lov_code>EMPTY</lov_code>
+		<lov_order_by>0</lov_order_by>
+		<lov_label/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
+	</data>
+	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE_CMP</lov_list_id.lov_name>
 		<lov_code>ORDISSUE</lov_code>
 		<lov_order_by>1</lov_order_by>
@@ -1586,6 +1597,20 @@ try {
 		<lov_code_id.lov_code>P</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[En traitement]]></lov_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>EMPTY</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Empty]]></lov_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>EMPTY</lov_code_id.lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Vide]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
