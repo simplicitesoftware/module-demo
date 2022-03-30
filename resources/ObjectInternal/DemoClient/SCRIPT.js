@@ -1,9 +1,8 @@
 //----------------------------------------------------
 // Client-side logic for customer business object
 //----------------------------------------------------
-var DemoClient = DemoClient || (function($) {
+const DemoClient = (function() {
 	// UI hook
-	let _map;
 	Simplicite.UI.hooks.DemoClient = function(o, cbk) {
 		function _val(name) {
 			return $ui.getUIField(null, o, name).ui.val();
@@ -44,15 +43,11 @@ var DemoClient = DemoClient || (function($) {
 
 	return {
 		// Action function
-		map: function() {
-			if (typeof google === "undefined" || typeof google.maps === "undefined") {
-				$ui.loadScript({
-					url: Simplicite.GOOGLE_MAPS_JS_URL,
-					onload: _map
-				});
-			} else {
-				_map();
-			}
+		map: () => {
+			$ui.loadScript({
+				url: Simplicite.GOOGLE_MAPS_JS_URL,
+				onload: _map
+			});
 		}
 	}
-})(jQuery);
+})();

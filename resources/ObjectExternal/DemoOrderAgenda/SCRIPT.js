@@ -2,9 +2,11 @@
 // Client side JavaScript for order agenda
 //-----------------------------------------------------------
 
-var DemoOrderAgenda = (function() {
+const DemoOrderAgenda = (function() {
 
-var ord, debug = false;
+const debug = false;
+
+let org;
 
 function render(url) {
 	$ui.loadCalendar(function() {
@@ -17,7 +19,7 @@ function render(url) {
 
 // Choose appropriate calendar function for current FullCalendar version
 function calendar() {
-	var fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 3;
+	const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 3;
 	if (debug) console.log("FullCalendar version = " + fc);
 	if (fc == 3) calendar3(); else calendar4();
 }
@@ -37,7 +39,7 @@ function calendar3() {
 			$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
 		},
 		eventDrop: function(e) {
-			var s = e.start.format( "YYYY-MM-DD HH:mm:ss");
+			const s = e.start.format( "YYYY-MM-DD HH:mm:ss");
 			if (debug) console.log("Order " + e.id + " dropped to " + s);
 			e.data.demoOrdDeliveryDate = s;
 			ord.update(function() {
@@ -46,20 +48,19 @@ function calendar3() {
 			}, e.data);
 		},
 		events: function(start, end, tz, callback) {
-			var f = "YYYY-MM-DD HH:mm:ss Z";
-			var dmin = start.format(f);
-			var dmax = end.format(f);
+			const f = "YYYY-MM-DD HH:mm:ss Z";
+			const dmin = start.format(f);
+			const dmax = end.format(f);
 			if (debug) console.log("Calendar view range = " + dmin + " to " + dmax);
 			ord.search(function() {
 				if (debug) console.log(ord.list.length + " orders found between " + dmin + " and " + dmax);
-				var status = ord.getField("demoOrdStatus");
-				var evts = [];
-				for (var i = 0; i < ord.list.length; i++) {
-					var item = ord.list[i];
+				const status = ord.getField("demoOrdStatus");
+				const evts = [];
+				for (const item of ord.list) {
 					if (item.demoOrdDeliveryDate !== "") { // ZZZ When using intervals empty values are included !
-						var s = moment(item.demoOrdDeliveryDate);
-						var e = s.add(2, "h");
-						var st = status.getEnumItem(item.demoOrdStatus);
+						const s = moment(item.demoOrdDeliveryDate);
+						const e = s.add(2, "h");
+						const st = status.getEnumItem(item.demoOrdStatus);
 						evts.push({
 							id: item.row_id,
 							data: item,
@@ -94,13 +95,13 @@ function calendar4() {
 		firstDay: 1, minTime: "08:00:00", maxTime: "20:00:00",
 		businessHours: { dow: [ 1, 2, 3, 4, 5 ], start: "09:00", end: "18:00" },
 		eventClick: function(info) {
-			var id = info.event.id;
+			const id = info.event.id;
 			if (debug) console.log("Order " + id + " clicked");
 			$ui.displayForm(null, "DemoOrder", id, { nav: "add" });
 		},
 		eventDrop: function(info) {
-			var s = moment(info.event.start).format("YYYY-MM-DD HH:mm:ss");
-			var d = info.event.extendedProps.data;
+			const s = moment(info.event.start).format("YYYY-MM-DD HH:mm:ss");
+			let d = info.event.extendedProps.data;
 			if (debug) console.log("Order " + info.event.id + " dropped to " + s);
 			d.demoOrdDeliveryDate = s;
 			ord.update(function() {
@@ -109,22 +110,21 @@ function calendar4() {
 			}, d);
 		},
 		events: function(info, success, failure) {
-			var start = moment(info.start);
-			var end = moment(info.end);
-			var f = "YYYY-MM-DD HH:mm:ss Z";
-			var dmin = start.format(f);
-			var dmax = end.format(f);
+			const start = moment(info.start);
+			const end = moment(info.end);
+			const f = "YYYY-MM-DD HH:mm:ss Z";
+			const dmin = start.format(f);
+			const dmax = end.format(f);
 			if (debug) console.log("Calendar view range = " + dmin + " to " + dmax);
 			ord.search(function() {
 				if (debug) console.log(ord.list.length + " orders found between " + dmin + " and " + dmax);
-				var status = ord.getField("demoOrdStatus");
-				var evts = [];
-				for (var i = 0; i < ord.list.length; i++) {
-					var item = ord.list[i];
+				const status = ord.getField("demoOrdStatus");
+				const evts = [];
+				for (const item of ord.list) {
 					if (item.demoOrdDeliveryDate !== "") { // ZZZ When using intervals empty values are included !
-						var s = moment(item.demoOrdDeliveryDate);
-						var e = s.add(2, "h");
-						var st = status.getEnumItem(item.demoOrdStatus);
+						const s = moment(item.demoOrdDeliveryDate);
+						const e = s.add(2, "h");
+						const st = status.getEnumItem(item.demoOrdStatus);
 						evts.push({
 							id: item.row_id,
 							data: item,

@@ -1,7 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for order business object
 //----------------------------------------------------
-var DemoOrder = DemoOrder || (function($) {
+const DemoOrder = (function() {
 	// Responsive UI hook
 	Simplicite.UI.hooks.DemoOrder = function(o, cbk) {
 		try {
@@ -12,6 +12,10 @@ var DemoOrder = DemoOrder || (function($) {
 					$ui.getUIField(ctn, obj, "demoOrdUnitPrice").ui.val(f.ui.val());
 				});
 			};
-		} catch(e) { console.error(e.message); } finally { cbk && cbk(); }
+		} catch(e) {
+			console.error(e.message);
+		} finally {
+			cbk && cbk();
+		}
 	};
-})(jQuery);
+})();
