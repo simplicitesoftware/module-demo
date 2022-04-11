@@ -396,26 +396,12 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-03-31 00:52:51</usr_last_logon>
+		<usr_last_logon>2022-04-11 15:32:53</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings/>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -13511,11 +13497,11 @@ state transition to _shipped_ status.]]></act_comment>
 		<agd_name>DemoOrderAgenda</agd_name>
 		<agd_object_id.obo_name>DemoOrder</agd_object_id.obo_name>
 		<agd_opendays>1;2;3;4;5;6;7</agd_opendays>
-		<agd_min_hr>00:00</agd_min_hr>
-		<agd_max_hr>24:00</agd_max_hr>
+		<agd_min_hr>06:00</agd_min_hr>
+		<agd_max_hr>20:00</agd_max_hr>
 		<agd_start_hr>08:00</agd_start_hr>
 		<agd_end_hr>18:00</agd_end_hr>
-		<agd_quantum>60</agd_quantum>
+		<agd_quantum>30</agd_quantum>
 		<agd_flying>0</agd_flying>
 		<agd_date_id.fld_name>demoOrdDeliveryDate</agd_date_id.fld_name>
 		<agd_enddate_id.fld_name/>

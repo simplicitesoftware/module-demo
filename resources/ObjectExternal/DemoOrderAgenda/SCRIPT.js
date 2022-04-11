@@ -21,7 +21,12 @@ function render(url) {
 function calendar() {
 	const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 3;
 	if (debug) console.log("FullCalendar version = " + fc);
-	if (fc == 3) calendar3(); else calendar4();
+	if (fc == 5)
+		calendar5();
+	else if (fc == 4)
+		calendar4();
+	else
+		calendar3();
 }
 
 // For FullCalendar version 3
@@ -144,6 +149,11 @@ function calendar4() {
 			}, { demoOrdDeliveryDate: dmin + ";" + dmax, demoOrdStatus: "P;V;D" }, { inlineDocs: false });
 		}
 	}).render();
+}
+
+// For FullCalendar version 5
+function calendar5() {
+	$("#demoOrderAgenda").text("Order agenda is not yet available for FullCalendar version 5");
 }
 
 return { render: render };
