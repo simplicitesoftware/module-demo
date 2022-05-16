@@ -1,7 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for customer business object
 //----------------------------------------------------
-const DemoClient = (function() {
+var DemoClient = DemoClient || (function() {
 	// UI hook
 	Simplicite.UI.hooks.DemoClient = function(o, cbk) {
 		function _val(name) {

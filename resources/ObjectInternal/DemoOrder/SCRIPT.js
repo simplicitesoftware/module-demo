@@ -1,7 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for order business object
 //----------------------------------------------------
-const DemoOrder = (function() {
+var DemoOrder = DemoOrder || (function() {
 	// Responsive UI hook
 	Simplicite.UI.hooks.DemoOrder = function(o, cbk) {
 		try {

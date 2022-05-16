@@ -122,8 +122,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -342,8 +342,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdQuantity:
@@ -573,8 +573,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
@@ -950,8 +950,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -1607,8 +1607,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -2152,8 +2152,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
