@@ -20,7 +20,7 @@ enters and/or validate orders. Plain users are only responsible for entering and
 Business data
 -------------
 
-![objects.png]()
+![](objects.png])
 
 The data model consist of 5 business objects:
 
