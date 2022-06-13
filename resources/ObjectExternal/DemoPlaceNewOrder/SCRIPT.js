@@ -30,7 +30,9 @@ function render() {
 
 	getCli();
 	getSup();
+	if (prd) prd.item = undefined;
 }
+
 
 function getCli() {
 	$ui.getUIObject("DemoClient", "pno_DemoClient", function(c) {
@@ -129,6 +131,7 @@ function order() {
 				ord.item.demoOrdQuantity = $("#DemoPlaceNewOrder-qty").val();
 				ord.create(function() {
 					$("#DemoPlaceNewOrder").html("<p>Order created with number " + ord.item.demoOrdNumber + "<br/>Thank you !</p>");
+					$ui.view.notify({ type: "create", object: ord, rowId: ord.item.row_id }); // Notify UI components (e.g. menu)
 				});
 			});
 		});

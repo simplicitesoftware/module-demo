@@ -396,7 +396,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-04-11 15:45:06</usr_last_logon>
+		<usr_last_logon>2022-06-13 13:10:46</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -408,39 +408,9 @@ try {
 	<name>UserSysParam</name>
 	<action>upsert</action>
 	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
+		<usp_value/>
 		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
 		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
 		<usp_param_id.sys_value2/>
@@ -5023,7 +4993,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_exportorder>3</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby>0</obo_groupby>
+		<obo_groupby/>
 		<obo_dfltref>DemoOrder;demoOrdCliId</obo_dfltref>
 		<obo_template_id.tpl_name>DemoClient</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -5040,7 +5010,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_title/>
 		<obo_icon>img/color/view_user</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree>0</obo_tree>
+		<obo_tree/>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>3</obo_historic>
 		<obo_printable>1</obo_printable>
@@ -5374,7 +5344,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_exportorder>2</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby>0</obo_groupby>
+		<obo_groupby/>
 		<obo_dfltref>DemoProductHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoProduct</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -5391,12 +5361,12 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_title/>
 		<obo_icon>img/color/box</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree>0</obo_tree>
+		<obo_tree/>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
-		<obo_mergeable>0</obo_mergeable>
+		<obo_mergeable/>
 		<obo_social>1</obo_social>
 		<obo_rowid_id.fld_name/>
 		<obo_extend_id.obj_name/>
