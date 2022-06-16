@@ -17,7 +17,7 @@
 	h4 { font-size: 18px; color: #808080; }
 	h5 { font-size: 14px; color: #A0A0A0; }
 	table { width: 100%; }
-	table, tr, td { border-collapse: collapse; border: none 0; }
+	table, tr, td { border-collapse: collapse; border: dotted 1px #F0F0F0; }
 	th, td { vertical-align: top; padding: 5px; }
 	th { max-width: 33%; background: #F0F0F0; }
 	header, footer { background: #F7F7F7; padding: 5px; }
@@ -36,6 +36,7 @@
 @media print {
 	@page { size: auto A4 portrait; margin: .5cm; }
 	.demo {
+		.container { padding: .5cm; box-shadow: none; }
 		section { page-break-after: always; }
 	}
 }

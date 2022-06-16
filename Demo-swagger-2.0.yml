@@ -100,6 +100,40 @@ paths:
         required: true
       tags:
       - DemoContact
+  /rest/DemoContact/{row_id}/publication:DemoContact-Mustache:
+    get:
+      summary: Call a custom publication for a DemoContact business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-democontact-publication-democontact-mustache
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoContact
   /rest/DemoContact:
     get:
       summary: Search DemoContact business object records or get contextualized metadata
@@ -187,8 +221,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -1881,15 +1915,15 @@ paths:
         required: false
       tags:
       - session
-  /rest/DemoContact/{row_id}/publication:DemoContact-HTML:
+  /rest/DemoOrder/{row_id}/publication:DemoOrder-HTML:
     get:
-      summary: Call a custom publication for a DemoContact business object record
-        or for all records
+      summary: Call a custom publication for a DemoOrder business object record or
+        for all records
       security:
       - bearerAuth: []
       produces:
       - application/json
-      operationId: obj-democontact-publication-democontact-html
+      operationId: obj-demoorder-publication-demoorder-html
       responses:
         '200':
           schema:
@@ -1914,7 +1948,7 @@ paths:
         type: string
         required: true
       tags:
-      - DemoContact
+      - DemoOrder
   /rest/DemoProductHistoric:
     get:
       summary: Search DemoProductHistoric business object records or get contextualized
@@ -3334,8 +3368,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcDatetime:
         description: Contcat date and time
         type: string

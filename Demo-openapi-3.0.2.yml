@@ -539,8 +539,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -780,6 +780,47 @@ paths:
         required: true
       tags:
       - DemoContact
+  /rest/DemoContact/{row_id}/publication:DemoContact-Mustache:
+    get:
+      summary: Call a custom publication for a DemoContact business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-democontact-publication-democontact-mustache
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoContact
   /rest/DemoContact:
     get:
       summary: Search DemoContact business object records or get contextualized metadata
@@ -877,8 +918,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -2906,13 +2947,13 @@ paths:
         required: false
       tags:
       - session
-  /rest/DemoContact/{row_id}/publication:DemoContact-HTML:
+  /rest/DemoOrder/{row_id}/publication:DemoOrder-HTML:
     get:
-      summary: Call a custom publication for a DemoContact business object record
-        or for all records
+      summary: Call a custom publication for a DemoOrder business object record or
+        for all records
       security:
       - bearerAuth: []
-      operationId: obj-democontact-publication-democontact-html
+      operationId: obj-demoorder-publication-demoorder-html
       responses:
         '200':
           description: Success in calling the custom publication
@@ -2946,7 +2987,7 @@ paths:
         description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
-      - DemoContact
+      - DemoOrder
   /rest/DemoProductHistoric:
     get:
       summary: Search DemoProductHistoric business object records or get contextualized
