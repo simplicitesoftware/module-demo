@@ -115,6 +115,7 @@ A contact can be linked or not a an order of the selelcted client
 | _Ref. `demoCtcOrdId.demoOrdQuantity`_                        | _int(11)_                                |          |           |          | _Product quantity ordered_                                                       |
 | `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
 | `demoCtcFile`                                                | document                                 |          | yes       |          | Contact attached file                                                            |
+| `demoCtcMessages`                                            | notepad(50000)                           | yes      | yes       |          | Messages                                                                         |
 
 ### Lists
 

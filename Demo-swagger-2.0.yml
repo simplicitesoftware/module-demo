@@ -305,6 +305,11 @@ paths:
         description: Search filter for Contact attached file
         type: string
         required: false
+      - in: query
+        name: demoCtcMessages
+        description: Search filter for Messages
+        type: string
+        required: false
       tags:
       - DemoContact
   /rest/DemoSupplier:
@@ -3347,6 +3352,9 @@ definitions:
         type: string
       demoCtcOrdId__demoOrdPrdId:
         description: Order product
+        type: string
+      demoCtcMessages:
+        description: Messages
         type: string
       demoCtcOrdId__demoOrdStatus:
         description: Order status

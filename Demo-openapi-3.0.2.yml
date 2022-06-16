@@ -568,6 +568,9 @@ components:
         demoCtcOrdId__demoOrdPrdId:
           description: Order product
           type: string
+        demoCtcMessages:
+          description: Messages
+          type: string
         demoCtcOrdId__demoOrdStatus:
           description: Order status
           type: string
@@ -1011,6 +1014,12 @@ paths:
         in: query
         name: demoCtcFile
         description: Search filter for Contact attached file
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcMessages
+        description: Search filter for Messages
         required: false
       tags:
       - DemoContact
