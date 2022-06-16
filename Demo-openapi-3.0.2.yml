@@ -452,8 +452,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -486,6 +486,9 @@ components:
           type: string
         demoCtcCliId:
           description: Contact customer
+          type: string
+        demoCtcOrdId__demoOrdCliId__demoCliCode:
+          description: Customer code
           type: string
         demoCtcCliId__demoCliWorkPhone:
           description: Customer work phone number
@@ -520,6 +523,9 @@ components:
         demoCtcOrdId__demoOrdPrdId__demoPrdName:
           description: Product name
           type: string
+        demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupCode:
+          description: Supplier unique code (e.g. `MYSUP`)
+          type: string
         demoCtcSubType:
           description: Contact sub type
           type: string
@@ -533,8 +539,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -871,8 +877,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -970,6 +976,12 @@ paths:
       - schema:
           type: string
         in: query
+        name: demoCtcOrdId__demoOrdCliId__demoCliCode
+        description: Search filter for Customer code
+        required: false
+      - schema:
+          type: string
+        in: query
         name: demoCtcOrdId__demoOrdPrdId
         description: Search filter for Order product
         required: false
@@ -978,6 +990,12 @@ paths:
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
         description: Search filter for Product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
         required: false
       - schema:
           type: string
@@ -3140,8 +3158,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status

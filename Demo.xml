@@ -396,7 +396,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-06-16 11:24:34</usr_last_logon>
+		<usr_last_logon>2022-06-16 12:31:07</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -2628,7 +2628,7 @@ try {
 	<data>
 		<fld_name>demoCtcComments</fld_name>
 		<fld_dbname>ctc_comments</fld_dbname>
-		<fld_visible>2</fld_visible>
+		<fld_visible>4</fld_visible>
 		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
@@ -2739,7 +2739,7 @@ try {
 	<data>
 		<fld_name oldvalue="demoCtcMessage">demoCtcMessages</fld_name>
 		<fld_dbname>demo_ctc_messages</fld_dbname>
-		<fld_visible>3</fld_visible>
+		<fld_visible>2</fld_visible>
 		<fld_updatable>2</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
@@ -6664,6 +6664,35 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>345</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>demoOrdCliId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>DemoClient</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible>4</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research>0</obf_fld_research>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoOrdPrdId</obf_field_id.fld_name>
 		<obf_field_id.fld_type>0</obf_field_id.fld_type>
 		<obf_order>350</obf_order>
@@ -6714,6 +6743,35 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_more>0</obf_fld_more>
 		<obf_fld_listmore>0</obf_fld_listmore>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>361</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>demoPrdSupId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>DemoSupplier</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible>4</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research>0</obf_fld_research>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>

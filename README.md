@@ -107,13 +107,14 @@ A contact can be linked or not a an order of the selelcted client
 | _Ref. `demoCtcOrdId.demoOrdDate`_                            | _date_                                   |          |           |          | _Order date_                                                                     |
 | _Ref. `demoCtcOrdId.demoOrdStatus`_                          | _enum(30) using `DEMO_ORD_STATUS` list_  |          |           |          | _Order status_                                                                   |
 | _Ref. `demoCtcOrdId.demoOrdCliId`_                           | _id_                                     |          |           |          | _Order customer_                                                                 |
+| _Ref. `demoOrdCliId.demoCliCode`_                            | _char(10)_                               |          |           |          | _Customer code_                                                                  |
 | _Ref. `demoCtcOrdId.demoOrdPrdId`_                           | _id_                                     |          |           |          | _Order product_                                                                  |
 | _Ref. `demoOrdPrdId.demoPrdSupId`_                           | _id_                                     |          |           |          | _Product supplier_                                                               |
+| _Ref. `demoPrdSupId.demoSupCode`_                            | _char(50)_                               |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
 | _Ref. `demoOrdPrdId.demoPrdReference`_                       | _char(10)_                               |          |           |          | _Product reference_                                                              |
 | _Ref. `demoOrdPrdId.demoPrdName`_                            | _char(100)_                              |          |           |          | _Product name_                                                                   |
 | _Ref. `demoCtcOrdId.demoOrdQuantity`_                        | _int(11)_                                |          |           |          | _Product quantity ordered_                                                       |
-| `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
 | `demoCtcFile`                                                | document                                 |          | yes       |          | Contact attached file                                                            |
 | `demoCtcMessages`                                            | notepad(50000)                           | yes      | yes       |          | Messages                                                                         |
 
@@ -225,7 +226,6 @@ An order is for one single product.
 | `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
 | `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
-| `demoCtcComments`                                            | notepad(50000)                           |          | yes       |          | Comments on contact                                                              |
 
 ### Lists
 

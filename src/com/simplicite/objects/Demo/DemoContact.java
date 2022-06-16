@@ -7,6 +7,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
+import com.simplicite.util.ObjectField;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
 import com.simplicite.util.tools.ExcelTool;
@@ -20,6 +21,13 @@ import com.simplicite.webapp.web.WebPage;
  */
 public class DemoContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
+	
+	@Override
+	public void postLoad() {
+		// Comments are only visible to administrators and users
+		if (getGrant().hasResponsibility("DEMO_ADMIN") || getGrant().hasResponsibility("DEMO_USER"))
+			getField("demoCtcComments").setVisibility(ObjectField.VIS_FORM);
+	}
 
 	/** Publication: HTML using Mustache(R) templating */
 	public Object printHTML(PrintTemplate pt) {
