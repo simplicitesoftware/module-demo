@@ -444,9 +444,6 @@ components:
           type: string
           enum:
           - EMPTY
-        demoCtcComments:
-          description: Comments on contact
-          type: string
         demoCtcStatus:
           description: Contact status
           type: string
@@ -539,8 +536,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -918,8 +915,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3223,12 +3220,6 @@ paths:
         in: query
         name: demoCtcSubType
         description: Search filter for Contact sub type
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: demoCtcComments
-        description: Search filter for Comments on contact
         required: false
       tags:
       - DemoContactHistoric

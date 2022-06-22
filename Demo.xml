@@ -396,7 +396,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-06-16 15:51:00</usr_last_logon>
+		<usr_last_logon>2022-06-23 00:47:45</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -4349,8 +4349,10 @@ try {
     <div class="area col-sm-5" data-area="1:="></div>
     <div class="area col-sm-7" data-area="2,3:="></div>
   </div>
-  <div class="row">
-    <div class="area col-sm-12" data-area="4:="></div>
+  <div>
+    <div class="row">
+      <div class="area col-sm-12" data-area="4,DemoContactHistoric;row_ref_id"></div>
+    </div>
   </div>
 </div>]]></tpl_ui>
 		<tpl_min/>
@@ -4362,12 +4364,12 @@ try {
 		<tpl_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-5">
-      <div class="area" data-area="1:="></div>
-      <div class="area" data-area="4:="></div>
+      <div class="area" data-area="1"></div>
+      <div class="area" data-area="4"></div>
     </div>
     <div class="col-sm-7">
-      <div class="area" data-area="2:="></div>
-      <div class="area" data-area="3:="></div>
+      <div class="area" data-area="2"></div>
+      <div class="area" data-area="3"></div>
     </div>
   </div>
   <div class="row">
@@ -4414,16 +4416,16 @@ try {
 		<tpl_name>DemoProduct</tpl_name>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
-    <div class="area col-sm-12" data-area="1:="></div>
+    <div class="area col-sm-12" data-area="1"></div>
   </div>
   <div class="row">
-    <div class="area col-sm-7" data-area="2:="></div>
+    <div class="area col-sm-7" data-area="2"></div>
     <div class="area col-sm-5">
       <div class="row">
-        <div class="area col-sm-12" data-area="3:="></div>
+        <div class="area col-sm-12" data-area="3"></div>
       </div>
       <div class="row">
-        <div class="area col-sm-12" data-area="4:+"></div>
+        <div class="area col-sm-12" data-area="4"></div>
       </div>
     </div>
   </div>
@@ -4459,8 +4461,8 @@ try {
 		<tpl_name>DemoSupplier</tpl_name>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
-    <div class="area col-sm-8" data-area="1:="></div>
-    <div class="area col-sm-4" data-area="2:="></div>
+    <div class="area col-sm-8" data-area="1"></div>
+    <div class="area col-sm-4" data-area="2"></div>
   </div>
   <div class="row">
     <div class="area col-sm-12" data-area="3:-"></div>
@@ -4489,13 +4491,13 @@ try {
     <div class="field" data-field="demoCliLastname"></div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/view_user</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ofa_name>DemoClient-2</ofa_name>
 		<ofa_position>2</ofa_position>
-		<ofa_title>1</ofa_title>
+		<ofa_title>0</ofa_title>
 		<ofa_ui><![CDATA[<div class="row">
   <div class="col-sm-8">
     <div class="field" data-field="demoCliAddress1"></div>
@@ -4520,13 +4522,13 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/map</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ofa_name>DemoClient-3</ofa_name>
 		<ofa_position>3</ofa_position>
-		<ofa_title>1</ofa_title>
+		<ofa_title>0</ofa_title>
 		<ofa_ui><![CDATA[<div>
   <div>
     <div class="field" data-field="demoCliEmail"></div>
@@ -4542,18 +4544,18 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/mailbox</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ofa_name>DemoClient-4</ofa_name>
 		<ofa_position>4</ofa_position>
-		<ofa_title>1</ofa_title>
+		<ofa_title>0</ofa_title>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="demoCliType"></div>
   <div class="field" data-field="demoCliComments"></div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/info_squared</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4586,13 +4588,13 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/chat</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ofa_name>DemoContact-2</ofa_name>
 		<ofa_position>2</ofa_position>
-		<ofa_title>1</ofa_title>
+		<ofa_title>0</ofa_title>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="demoCtcCliId"></div>
   <div class="row">
@@ -4626,7 +4628,7 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/view_user</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4662,25 +4664,25 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/documents_folder</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<ofa_name>DemoContact-4</ofa_name>
 		<ofa_position>4</ofa_position>
-		<ofa_title>1</ofa_title>
+		<ofa_title>0</ofa_title>
 		<ofa_ui><![CDATA[<div>
-  <div class="field" data-field="demoCtcMessages"></div>
   <div class="row">
-    <div class="col-sm-7">
-      <div class="field" data-field="demoCtcComments"></div>
+    <div class="col-sm-8">
+      <div class="field" data-field="demoCtcMessages"></div>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcFile"></div>
     </div>
   </div>
+  <div class="field" data-field="demoCtcComments"></div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>message</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4705,7 +4707,7 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>folderitem</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4746,7 +4748,7 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/view_user</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4785,7 +4787,7 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/box</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4810,7 +4812,7 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/collectibles</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4818,7 +4820,7 @@ try {
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div class="field" data-field="demoOrdComments"></div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/info_squared</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4838,7 +4840,7 @@ try {
   <div class="field" data-field="demoPrdSupId__demoSupLogo"></div>
   <div class="field" data-field="demoPrdSupId__demoSupUsrId"></div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/building</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4860,7 +4862,7 @@ try {
   <div class="field" data-field="demoPrdDescription"></div>
   <div class="field" data-field="demoPrdPicture"></div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/box</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4877,7 +4879,7 @@ try {
     <div class="field" data-field="demoPrdAvailable"></div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/money</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4889,7 +4891,7 @@ try {
   <div class="field" data-field="demoPrdBrochure"></div>
   <div class="field" data-field="demoPrdOnlineDoc"></div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/presentation</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4897,7 +4899,7 @@ try {
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div class="field" data-field="demoPrdComments"></div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/info_squared</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4925,7 +4927,7 @@ try {
     </div>
   </div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/building</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4933,7 +4935,7 @@ try {
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div class="field" data-field="demoSupLogo"></div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/image_file</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4945,7 +4947,7 @@ try {
   <div class="field" data-field="demoSupUsrId__usr_login"></div>
   <div class="field" data-field="demoSupComments"></div>
 </div>]]></ofa_ui>
-		<ofa_icon/>
+		<ofa_icon>img/color/info_squared</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -7150,35 +7152,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_field_id.fld_name>demoCtcSubType</obf_field_id.fld_name>
 		<obf_field_id.fld_type>7</obf_field_id.fld_type>
 		<obf_order>120</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>DemoContactHistoric</obf_object_id.obo_name>
-		<obf_field_id.fld_name>demoCtcComments</obf_field_id.fld_name>
-		<obf_field_id.fld_type>21</obf_field_id.fld_type>
-		<obf_order>130</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -17238,6 +17211,16 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeLink>K</tsl_typeLink>
+		<tsl_id.obf_object_id.obj_name>DemoContactHistoric</tsl_id.obf_object_id.obj_name>
+		<tsl_id.obf_field_id.fld_name>row_ref_id</tsl_id.obf_field_id.fld_name>
+		<tsl_id.obf_order>1</tsl_id.obf_order>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>History</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeLink>K</tsl_typeLink>
 		<tsl_id.obf_object_id.obj_name>DemoOrder</tsl_id.obf_object_id.obj_name>
 		<tsl_id.obf_field_id.fld_name>demoOrdCliId</tsl_id.obf_field_id.fld_name>
 		<tsl_id.obf_order>200</tsl_id.obf_order>
@@ -17263,6 +17246,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obf_order>200</tsl_id.obf_order>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Contacts du client</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeLink>K</tsl_typeLink>
+		<tsl_id.obf_object_id.obj_name>DemoContactHistoric</tsl_id.obf_object_id.obj_name>
+		<tsl_id.obf_field_id.fld_name>row_ref_id</tsl_id.obf_field_id.fld_name>
+		<tsl_id.obf_order>1</tsl_id.obf_order>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Historique</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

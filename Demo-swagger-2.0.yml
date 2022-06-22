@@ -221,8 +221,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -2149,11 +2149,6 @@ paths:
         required: false
         enum:
         - EMPTY
-      - in: query
-        name: demoCtcComments
-        description: Search filter for Comments on contact
-        type: string
-        required: false
       tags:
       - DemoContactHistoric
   /rest/DemoClient:
@@ -3273,9 +3268,6 @@ definitions:
         type: string
         enum:
         - EMPTY
-      demoCtcComments:
-        description: Comments on contact
-        type: string
       demoCtcStatus:
         description: Contact status
         type: string
@@ -3368,8 +3360,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcDatetime:
         description: Contcat date and time
         type: string
