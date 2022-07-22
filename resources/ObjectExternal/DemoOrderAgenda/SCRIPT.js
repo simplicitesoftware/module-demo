@@ -125,7 +125,7 @@ function calendar4() {
 			$ui.displayForm(null, "DemoOrder", id, { nav: "add" });
 		},
 		eventDrop: function(info) {
-			const s = moment(info.event.start).format("YYYY-MM-DD HH:mm:ss");
+			const s = moment(info.event.start).utc().format("YYYY-MM-DD HH:mm:ss");
 			let d = info.event.extendedProps.data;
 			if (debug) console.log("Order " + info.event.id + " dropped to " + s);
 			d.demoOrdDeliveryDate = s;
@@ -198,7 +198,7 @@ function calendar5() {
 			$ui.displayForm(null, "DemoOrder", id, { nav: "add" });
 		},
 		eventDrop: function(info) {
-			const s = moment(info.event.start).format("YYYY-MM-DD HH:mm:ss");
+			const s = moment(info.event.start).utc().format("YYYY-MM-DD HH:mm:ss");
 			let d = info.event.extendedProps.data;
 			if (debug) console.log("Order " + info.event.id + " dropped to " + s);
 			d.demoOrdDeliveryDate = s;

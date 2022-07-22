@@ -1860,6 +1860,46 @@ paths:
         required: false
       tags:
       - DemoOrder
+  /rest/DemoSupplier/{row_id}/tree:DemoSupplierTreeview:
+    get:
+      summary: Get a treeview data for a DemoSupplier business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-demosupplier-treeview-demosuppliertreeview
+      responses:
+        '200':
+          description: Success in getting the treeview data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TreeviewData'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoSupplier
   /rest/DemoOrder/{row_id}/publication:DemoOrder-XML:
     get:
       summary: Call a custom publication for a DemoOrder business object record or
@@ -3588,6 +3628,46 @@ paths:
         required: true
       tags:
       - DemoSupplier
+  /rest/DemoClient/{row_id}/tree:DemoClientTreeview:
+    get:
+      summary: Get a treeview data for a DemoClient business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-democlient-treeview-democlienttreeview
+      responses:
+        '200':
+          description: Success in getting the treeview data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TreeviewData'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoClient
   /rest/DemoContactHistoric/{row_id}:
     post:
       summary: Create a new DemoContactHistoricbusiness object record
