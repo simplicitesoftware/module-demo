@@ -29,7 +29,9 @@ public class DemoCommon implements java.io.Serializable {
 	private final static DemoCommon INSTANCE = new DemoCommon();
 
 	/** Get singleton */
-	public static DemoCommon getInstance() { return INSTANCE; }
+	public static DemoCommon getInstance() {
+		return INSTANCE;
+	}
 
 	/**
 	 * Check whether stock is low
