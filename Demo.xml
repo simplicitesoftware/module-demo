@@ -137,7 +137,7 @@ mvn verify sonar:sonar
 		<thm_menu_sact_c/>
 		<thm_menu_sact_t>#418cf0</thm_menu_sact_t>
 		<thm_menu_sta_c/>
-		<thm_menu_sta_t>#8DA5C4</thm_menu_sta_t>
+		<thm_menu_sta_t>#418cf0</thm_menu_sta_t>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<thm_const>files/Theme/demo/const.less</thm_const>
@@ -428,7 +428,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-09-05 17:03:16</usr_last_logon>
+		<usr_last_logon>2022-09-05 17:16:55</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -439,16 +439,6 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
