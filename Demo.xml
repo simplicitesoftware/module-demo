@@ -113,17 +113,49 @@ mvn verify sonar:sonar
 	<data>
 		<thm_name>demo</thm_name>
 		<thm_logo_id/>
-		<thm_logo_invert>1</thm_logo_invert>
+		<thm_logo_invert>0</thm_logo_invert>
 		<thm_logo2_id>files/Theme/demo/logo2.png</thm_logo2_id>
 		<thm_favicon_id>files/Theme/demo/favicon.png</thm_favicon_id>
+		<thm_color1>#FFFFFF</thm_color1>
+		<thm_color2>#FFFFFF</thm_color2>
+		<thm_text2>#418cf0</thm_text2>
+		<thm_color3/>
+		<thm_text3>#418cf0</thm_text3>
+		<thm_base>light</thm_base>
+		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/demo/addon.less</thm_addon>
+		<thm_searchbox/>
+		<thm_active/>
+		<thm_font>Inter</thm_font>
+		<thm_iconset/>
+		<thm_menu_dom_c/>
+		<thm_menu_dom_t>#418cf0</thm_menu_dom_t>
+		<thm_menu_dact_c>#e3eef6</thm_menu_dact_c>
+		<thm_menu_dact_t>#418cf0</thm_menu_dact_t>
+		<thm_menu_sub_c/>
+		<thm_menu_sub_t/>
+		<thm_menu_sact_c/>
+		<thm_menu_sact_t>#418cf0</thm_menu_sact_t>
+		<thm_menu_sta_c/>
+		<thm_menu_sta_t>#8DA5C4</thm_menu_sta_t>
+		<thm_compact>0</thm_compact>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<thm_const>files/Theme/demo/const.less</thm_const>
+	</data>
+	<data>
+		<thm_name>demo_legacy</thm_name>
+		<thm_logo_id/>
+		<thm_logo_invert>1</thm_logo_invert>
+		<thm_logo2_id>files/Theme/demo_legacy/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/demo_legacy/favicon.png</thm_favicon_id>
 		<thm_color1>#F7F7F7</thm_color1>
 		<thm_color2>#418CF0</thm_color2>
 		<thm_text2>#FFFFFF</thm_text2>
 		<thm_color3>#418CF0</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
-		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
-		<thm_addon>files/Theme/demo/addon.less</thm_addon>
+		<thm_css_doc>files/Theme/demo_legacy/demo_legacy_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/demo_legacy/addon.less</thm_addon>
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font/>
@@ -140,7 +172,7 @@ mvn verify sonar:sonar
 		<thm_menu_sta_t>#202020</thm_menu_sta_t>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<thm_const>files/Theme/demo/const.less</thm_const>
+		<thm_const>files/Theme/demo_legacy/const.less</thm_const>
 	</data>
 </object>
 <object>
@@ -396,7 +428,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-07-22 11:05:41</usr_last_logon>
+		<usr_last_logon>2022-09-05 17:03:16</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -407,6 +439,16 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
