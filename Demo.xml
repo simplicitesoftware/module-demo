@@ -142,38 +142,6 @@ mvn verify sonar:sonar
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<thm_const>files/Theme/demo/const.less</thm_const>
 	</data>
-	<data>
-		<thm_name>demo_legacy</thm_name>
-		<thm_logo_id/>
-		<thm_logo_invert>1</thm_logo_invert>
-		<thm_logo2_id>files/Theme/demo_legacy/logo2.png</thm_logo2_id>
-		<thm_favicon_id>files/Theme/demo_legacy/favicon.png</thm_favicon_id>
-		<thm_color1>#F7F7F7</thm_color1>
-		<thm_color2>#418CF0</thm_color2>
-		<thm_text2>#FFFFFF</thm_text2>
-		<thm_color3>#418CF0</thm_color3>
-		<thm_text3>#FFFFFF</thm_text3>
-		<thm_base>light</thm_base>
-		<thm_css_doc>files/Theme/demo_legacy/demo_legacy_gen.css</thm_css_doc>
-		<thm_addon>files/Theme/demo_legacy/addon.less</thm_addon>
-		<thm_searchbox/>
-		<thm_active/>
-		<thm_font/>
-		<thm_iconset/>
-		<thm_menu_dom_c>#F7F7F7</thm_menu_dom_c>
-		<thm_menu_dom_t>#202020</thm_menu_dom_t>
-		<thm_menu_dact_c>#E7E7E7</thm_menu_dact_c>
-		<thm_menu_dact_t>#202020</thm_menu_dact_t>
-		<thm_menu_sub_c>#F7F7F7</thm_menu_sub_c>
-		<thm_menu_sub_t>#202020</thm_menu_sub_t>
-		<thm_menu_sact_c>#E7E7E7</thm_menu_sact_c>
-		<thm_menu_sact_t>#202020</thm_menu_sact_t>
-		<thm_menu_sta_c>#F7F7F7</thm_menu_sta_c>
-		<thm_menu_sta_t>#202020</thm_menu_sta_t>
-		<thm_compact>0</thm_compact>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<thm_const>files/Theme/demo_legacy/const.less</thm_const>
-	</data>
 </object>
 <object>
 	<name>View</name>
