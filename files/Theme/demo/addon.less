@@ -12,6 +12,19 @@
 #menu {
 	padding-top: 1rem;
 }
+.header .btn-header:hover, .header .btn-header:focus {
+    background: #e3eef6;
+}
+.card .card {
+    border-radius: 0.5rem;
+    border: solid 0.0625rem #e0e0e0;
+}
+.nav-tabs .nav-link {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.tabs-left > .nav-tabs .nav-link {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
 .list-shortcuts .item {
 	background: @theme-color-light;
 	color: @theme-color-dark;
@@ -24,4 +37,19 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 }
 .table > tbody > tr.selected > td, .table > tbody > tr.active > td {
     background-color: #f7f7f7 !important;
+}
+.metrics {
+	background: #ffffff;
+	box-shadow: 0 0 0.625rem #e0e0e0;
+    border: solid 0.0625rem #e0e0e0;
+    form {
+    	padding: 1rem;
+    }
+	.charts {
+		background: #ffffff;
+		padding: 0.625rem;
+		.chart {
+			background: inherit;
+		}
+	}
 }

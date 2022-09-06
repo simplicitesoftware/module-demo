@@ -124,7 +124,7 @@ mvn verify sonar:sonar
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
-		<thm_searchbox/>
+		<thm_searchbox>#e3eef6</thm_searchbox>
 		<thm_active/>
 		<thm_font>Inter</thm_font>
 		<thm_iconset/>
@@ -137,7 +137,7 @@ mvn verify sonar:sonar
 		<thm_menu_sact_c/>
 		<thm_menu_sact_t>#418cf0</thm_menu_sact_t>
 		<thm_menu_sta_c/>
-		<thm_menu_sta_t>#418cf0</thm_menu_sta_t>
+		<thm_menu_sta_t>#94B6E3</thm_menu_sta_t>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<thm_const>files/Theme/demo/const.less</thm_const>
@@ -428,7 +428,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-09-05 17:16:55</usr_last_logon>
+		<usr_last_logon>2022-09-05 17:34:28</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
