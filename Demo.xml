@@ -326,7 +326,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon>2021-04-13 10:51:31</usr_last_logon>
+		<usr_last_logon>2022-09-07 15:57:53</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -394,7 +394,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
-		<usr_last_logon>2021-02-03 15:07:42</usr_last_logon>
+		<usr_last_logon>2022-09-07 15:58:15</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_mfa_method/>
@@ -428,7 +428,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-09-07 15:45:49</usr_last_logon>
+		<usr_last_logon>2022-09-07 15:54:58</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -440,13 +440,35 @@ try {
 	<name>UserSysParam</name>
 	<action>upsert</action>
 	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
 		<usp_value/>
 		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
 		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
 		<usp_param_id.sys_value2/>
 		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY DemoAdminHome</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{"object":"DemoProduct","rowId":"5","label":"Product : REF006"},
+{"object":"DemoClient","rowId":"2","label":"Customer : Robert ZEBILDER"},
+{"object":"DemoSupplier","rowId":"1","label":"Supplier : BIM"}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY DemoUserHome</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{"object":"DemoClient","rowId":"2","label":"Client : Robert ZEBILDER"}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
