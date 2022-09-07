@@ -19,12 +19,21 @@
 .index {
     border: solid 0.0625rem @theme-color-light;
 }
+.btn-default, .btn-secondary, .btn-plus, .btn-icon, .btn-extend {
+	background: transparent;
+}
 .card .card {
     border-radius: 0.5rem;
     border: solid 0.0625rem @theme-color-grey;
+    .card-header {
+    	font-weight: bold;
+    }
 }
-.nav-tabs .nav-link {
-    border-radius: 0.5rem 0.5rem 0 0;
+.nav-tabs {
+	font-weight: bold;
+	.nav-link {
+    	border-radius: 0.5rem 0.5rem 0 0;
+	}
 }
 .tabs-left > .nav-tabs .nav-link {
     border-radius: 0.5rem 0 0 0.5rem;
@@ -35,9 +44,6 @@
 }
 ul.main-menu > li a:hover, ul.main-menu > li.active > a {
     border-radius: 0 1rem 1rem 0;
-}
-.btn-action:hover:not(.disabled):not([disabled]) {
-    color: @theme-color-dark;
 }
 .table > tbody > tr.selected > td, .table > tbody > tr.active > td {
     background-color: #f7f7f7 !important;
