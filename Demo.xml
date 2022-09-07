@@ -223,7 +223,7 @@ try {
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>demo</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>demo_alt</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 </object>
@@ -394,7 +394,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2016-08-25 14:17:12</usr_logout>
-		<usr_last_logon>2022-09-07 15:58:15</usr_last_logon>
+		<usr_last_logon>2022-09-07 17:34:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_mfa_method/>
@@ -464,7 +464,9 @@ try {
 	<data>
 		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
 		<usp_param_id.sys_code>HISTORY DemoUserHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"DemoClient","rowId":"2","label":"Client : Robert ZEBILDER"}]]]></usp_value>
+		<usp_value><![CDATA[[{"object":"DemoProduct","rowId":"1","label":"Produit : REF003"},
+{"object":"DemoOrder","rowId":"6","label":"Commande : Commande N°6"},
+{"object":"DemoClient","rowId":"2","label":"Client : Robert ZEBILDER"}]]]></usp_value>
 		<usp_param_id.sys_type/>
 		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
 		<usp_param_id.sys_value2/>
