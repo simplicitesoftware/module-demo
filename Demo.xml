@@ -124,13 +124,13 @@ mvn verify sonar:sonar
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/demo/demo_gen.css</thm_css_doc>
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
-		<thm_searchbox>#F7F7F7</thm_searchbox>
+		<thm_searchbox>#f7f7f7</thm_searchbox>
 		<thm_active/>
 		<thm_font>Roboto</thm_font>
 		<thm_iconset/>
 		<thm_menu_dom_c/>
 		<thm_menu_dom_t>#606060</thm_menu_dom_t>
-		<thm_menu_dact_c>#F7F7F7</thm_menu_dact_c>
+		<thm_menu_dact_c>#f7f7f7</thm_menu_dact_c>
 		<thm_menu_dact_t>#2481dd</thm_menu_dact_t>
 		<thm_menu_sub_c/>
 		<thm_menu_sub_t/>
