@@ -428,7 +428,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-09-16 14:27:45</usr_last_logon>
+		<usr_last_logon>2022-09-16 14:48:33</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -10332,6 +10332,16 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>RedoLog-R</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>RedoLog</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>UserFilters-CUD</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>UserFilters</grt_function_id.fct_object_id.obj_name>
@@ -13077,6 +13087,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<map_process_id.pcs_name/>
 		<map_order>70920</map_order>
 		<map_ext>0</map_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
+		<map_object_id.obj_name>RedoLog</map_object_id.obj_name>
+		<map_process_id.pcs_name/>
+		<map_order>70990</map_order>
+		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
