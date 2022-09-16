@@ -326,7 +326,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2019-04-09 11:33:13</usr_logout>
-		<usr_last_logon>2022-09-07 15:57:53</usr_last_logon>
+		<usr_last_logon>2022-09-16 13:37:21</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -428,7 +428,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-09-07 17:55:18</usr_last_logon>
+		<usr_last_logon>2022-09-16 14:27:45</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -441,20 +441,11 @@ try {
 	<action>upsert</action>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>HISTORY DemoAdminHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{"object":"DemoProduct","rowId":"5","label":"Product : REF006"},
-{"object":"DemoClient","rowId":"2","label":"Customer : Robert ZEBILDER"},
-{"object":"DemoSupplier","rowId":"1","label":"Supplier : BIM"}]]]></usp_value>
+		<usp_value><![CDATA[[{"object":"DemoOrder","rowId":"6","label":"Order : Order #6"},
+{"object":"DemoSupplier","rowId":"1","label":"Supplier : BIM"},
+{"object":"DemoProduct","rowId":"5","label":"Product : REF006"},
+{"object":"DemoClient","rowId":"2","label":"Customer : Robert ZEBILDER"}]]]></usp_value>
 		<usp_param_id.sys_type/>
 		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
 		<usp_param_id.sys_value2/>
@@ -810,6 +801,40 @@ try {
 	</data>
 </object>
 <object>
+	<name>LogEvent</name>
+	<action>upsert</action>
+	<data>
+		<lev_code>DEMO_ERR</lev_code>
+		<lev_type>M</lev_type>
+		<lev_level>W</lev_level>
+		<lev_canal>L;D</lev_canal>
+		<lev_label>Demo</lev_label>
+		<lev_enabled>1</lev_enabled>
+		<lev_depth>100</lev_depth>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lev_code>DEMO_INFO</lev_code>
+		<lev_type>M</lev_type>
+		<lev_level>I</lev_level>
+		<lev_canal>L;D</lev_canal>
+		<lev_label>Demo</lev_label>
+		<lev_enabled>1</lev_enabled>
+		<lev_depth>100</lev_depth>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lev_code>DEMO_WARN</lev_code>
+		<lev_type>M</lev_type>
+		<lev_level>W</lev_level>
+		<lev_canal>L;D</lev_canal>
+		<lev_label>Demo</lev_label>
+		<lev_enabled>1</lev_enabled>
+		<lev_depth>100</lev_depth>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>ListOfValue</name>
 	<action>upsert</action>
 	<data>
@@ -823,6 +848,24 @@ try {
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_ERR</lov_code>
+		<lov_lang>ANY</lov_lang>
+		<lov_value><![CDATA[Demo error: [1]]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code>DEMO_ERR</lov_event_id.lev_code>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_INFO</lov_code>
+		<lov_lang>ANY</lov_lang>
+		<lov_value><![CDATA[Demo info: [1]]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code>DEMO_INFO</lov_event_id.lev_code>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_USER</lov_code>
 		<lov_lang>ANY</lov_lang>
 		<lov_value><![CDATA[User]]></lov_value>
@@ -832,11 +875,11 @@ try {
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
-		<lov_code>DEMO_EVENT_001</lov_code>
-		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[[1]]]></lov_value>
+		<lov_code>DEMO_WARN</lov_code>
+		<lov_lang>ANY</lov_lang>
+		<lov_value><![CDATA[Demo warning: [1]]]></lov_value>
 		<lov_order_by>1</lov_order_by>
-		<lov_event_id.lev_code/>
+		<lov_event_id.lev_code>DEMO_WARN</lov_event_id.lev_code>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -936,15 +979,6 @@ try {
 		<lov_value><![CDATA[User interface debug: [1]]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code>DCOREUI001</lov_event_id.lev_code>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_name>TEXT</lov_name>
-		<lov_code>DEMO_EVENT_001</lov_code>
-		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[[1]]]></lov_value>
-		<lov_order_by>1</lov_order_by>
-		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3894,7 +3928,7 @@ try {
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>SB</fld_rendering>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
@@ -11779,7 +11813,7 @@ state transition to _shipped_ status.]]></act_comment>
 	<action>upsert</action>
 	<data>
 		<alt_name>DemoOrderCancellation</alt_name>
-		<alt_media>E</alt_media>
+		<alt_media>E;P</alt_media>
 		<alt_activ>1</alt_activ>
 		<alt_action>M</alt_action>
 		<alt_quantity>1</alt_quantity>
@@ -11788,7 +11822,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<alt_name>DemoOrderDelivery</alt_name>
-		<alt_media>E</alt_media>
+		<alt_media>E;P</alt_media>
 		<alt_activ>1</alt_activ>
 		<alt_action>M</alt_action>
 		<alt_quantity>1</alt_quantity>

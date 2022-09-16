@@ -29,12 +29,12 @@ public class DemoOrder extends ObjectDB {
 		List<String> msgs = new ArrayList<>();
 		// Order quantity checking
 		if (getField(QUANTITY_FIELDNAME).getInt(0) <= 0) {
-			AppLog.error("Order quantity <0 for order " + getFieldValue(NUMBER_FIELDNAME), null, getGrant());
+			AppLog.log("DEMO_ERR", getClass(), "postValidate", "Order quantity <0 for order " + getFieldValue(NUMBER_FIELDNAME), null, getGrant());
 			msgs.add(Message.formatError("ERR_DEMO_ORD_QUANTITY", null, QUANTITY_FIELDNAME));
 		}
 		// Quantity checking
 		if ("D".equals(getStatus()) && getField(STOCK_FIELDNAME).getInt(0) - getField(QUANTITY_FIELDNAME).getInt(0) <= 0) {
-			AppLog.error("Zero stock on " + getFieldValue(REFERENCE_FIELDNAME), null, getGrant());
+			AppLog.log("DEMO_ERR", getClass(), "postValidate", "Zero stock on " + getFieldValue(REFERENCE_FIELDNAME), getGrant());
 			msgs.add(Message.formatSimpleError("ERR_DEMO_PRD_STOCK"));
 		}
 		// Set order unit price only at creation
@@ -93,9 +93,10 @@ public class DemoOrder extends ObjectDB {
 	public String postSave() {
 		int stock = getField(STOCK_FIELDNAME).getInt(0);
 		if (DemoCommon.getInstance().isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
+			String ref = getFieldValue(REFERENCE_FIELDNAME);
+
 			// Notify responsible user if stock is low
 			try {
-				String ref = getFieldValue(REFERENCE_FIELDNAME);
 				new Mail(getGrant()).send(DEMO_EMAIL, DEMO_EMAIL,
 					"Low stock on " + ref,
 					"<html><body>" +
@@ -106,6 +107,9 @@ public class DemoOrder extends ObjectDB {
 			} catch (Exception e) {
 				AppLog.warning("Error sending low stock alert email", e, getGrant());
 			}
+
+			// Log
+			AppLog.log("DEMO_WARN", getClass(), "postSave", "Low stock on " + ref + ": " + stock, getGrant()); 
 
 			// User message
 			return Message.formatSimpleWarning("ERR_DEMO_PRD_LOWSTOCK");

@@ -48,7 +48,7 @@ public class DemoProduct extends ObjectDB {
 			s.setValue(s.getInt(0) + q);
 			save();
 			// Log
-			AppLog.info("Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
+			AppLog.log("DEMO_INFO", getClass(), "increaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 			// User message
 			return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
 		} else {
@@ -64,7 +64,7 @@ public class DemoProduct extends ObjectDB {
 		s.setValue(s.getInt() - q);
 		save();
 		// Log
-		AppLog.info("Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
+		AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 		// User message
 		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + q);
 	}
