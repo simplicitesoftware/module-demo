@@ -122,8 +122,8 @@ components:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -342,8 +342,8 @@ components:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoOrdQuantity:
@@ -449,8 +449,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -536,8 +536,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -579,8 +579,8 @@ components:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
@@ -915,8 +915,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -997,8 +997,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -1672,8 +1672,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -2257,8 +2257,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -3236,8 +3236,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
