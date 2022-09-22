@@ -1,20 +1,21 @@
 #DemoPlaceNewOrder {
 	.obj {
-		padding: 4px;
-		margin: 4px;
+		padding: .25rem .5rem;
+		margin: .25rem;
+		border-radius: .25rem;
 		cursor: pointer;
 	}
-	.obj:active, .obj:hover {
-		background: #ADADAD;
-	}
-	input {
-		border-radius: 5px;
-		border: solid 1px #E0E0E0;
-		padding: 8px;
+	.obj:active, .obj:hover, .sel {
+		background: #c8deef;
+		color: #202020;
 	}
 	.sel {
-		background: #ADADAD;
 		font-weight: bold;
+	}
+	input {
+		border-radius: .25rem;
+		border: solid .0625rem #e0e0e0;
+		padding: .25rem;
 	}
 	.row {
 		display: flex;
@@ -22,9 +23,9 @@
 	}
 	.col {
 		flex-grow: 1;
-		padding: 5px 15px;
+		padding: .25rem .75rem;
 	}
 	.panel-body {
-		padding: 8px;
+		padding: .5rempx;
 	}
 }
