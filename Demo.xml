@@ -578,6 +578,14 @@ try {
 	</data>
 	<data>
 		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
+		<rsp_group_id.grp_name>DEMO_PUBLIC</rsp_group_id.grp_name>
+		<rsp_start_dt>2020-01-01</rsp_start_dt>
+		<rsp_end_dt/>
+		<rsp_activ>1</rsp_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>DEMO_WEBSITE</rsp_group_id.grp_name>
 		<rsp_start_dt>2014-10-17</rsp_start_dt>
 		<rsp_end_dt/>
