@@ -329,8 +329,8 @@ try {
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2022-09-16 16:59:04</usr_logout>
-		<usr_last_logon>2022-10-11 12:52:33</usr_last_logon>
+		<usr_logout>2022-11-14 23:03:22</usr_logout>
+		<usr_last_logon>2022-12-16 11:12:26</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -363,7 +363,7 @@ try {
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2022-09-16 16:58:41</usr_logout>
+		<usr_logout>2022-11-14 23:00:20</usr_logout>
 		<usr_last_logon>2022-09-16 16:58:41</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -397,7 +397,7 @@ try {
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2016-08-25 14:17:12</usr_logout>
+		<usr_logout>2022-11-14 23:00:40</usr_logout>
 		<usr_last_logon>2022-09-07 17:34:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2022-10-28 11:34:47</usr_last_logon>
+		<usr_last_logon>2023-01-03 16:12:10</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -443,6 +443,16 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
@@ -552,47 +562,7 @@ try {
 	</data>
 	<data>
 		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>USER_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_PASSWORD</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>admin</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_USER</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>0</rsp_activ>
@@ -608,16 +578,8 @@ try {
 	</data>
 	<data>
 		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_PUBLIC</rsp_group_id.grp_name>
-		<rsp_start_dt>2015-02-10</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_PUBLIC</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-10-01</rsp_start_dt>
+		<rsp_group_id.grp_name>DEMO_WEBSITE</rsp_group_id.grp_name>
+		<rsp_start_dt>2014-10-17</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -631,56 +593,8 @@ try {
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_PASSWORD</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_enu</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>DEMO_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>SOCIAL_USER</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>USER_PASSWORD</rsp_group_id.grp_name>
-		<rsp_start_dt>2000-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>user_fra</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>WEB_USER</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
@@ -5184,7 +5098,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_exportorder/>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby>0</obo_groupby>
+		<obo_groupby/>
 		<obo_dfltref>DemoContactHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoContact</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -5201,12 +5115,12 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_title/>
 		<obo_icon>img/color/chat</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree>0</obo_tree>
+		<obo_tree/>
 		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>1;2;3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
-		<obo_mergeable>0</obo_mergeable>
+		<obo_mergeable/>
 		<obo_social>1</obo_social>
 		<obo_rowid_id.fld_name/>
 		<obo_extend_id.obj_name/>
@@ -11251,7 +11165,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<din_name>B-demoPrdBrochure</din_name>
-		<din_field_id.fld_name/>
+		<din_field_id.fld_name>demoPrdBrochure</din_field_id.fld_name>
 		<din_path/>
 		<din_min/>
 		<din_max/>
@@ -11296,6 +11210,72 @@ state transition to _shipped_ status.]]></act_comment>
 		<dim_docindex_id.din_name>B-demoCtcFile</dim_docindex_id.din_name>
 		<dim_mime_id.dmi_name>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dim_mime_id.dmi_name>
 		<dim_mime_id.dmi_ext>docx</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/msword</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>doc</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/pdf</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>pdf</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/vnd.ms-excel</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>xls</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/vnd.ms-powerpoint</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>ppt</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/vnd.openxmlformats-officedocument.presentationml.presentation</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>pptx</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>xlsx</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>docx</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>text/html</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>html</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>text/plain</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>txt</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>video/mp4</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>m4v</dim_mime_id.dmi_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<dim_docindex_id.din_name>B-demoPrdBrochure</dim_docindex_id.din_name>
+		<dim_mime_id.dmi_name>video/mp4</dim_mime_id.dmi_name>
+		<dim_mime_id.dmi_ext>mp4</dim_mime_id.dmi_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -17537,7 +17517,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeDocIndex>B</tsl_typeDocIndex>
 		<tsl_id.din_name>B-demoPrdBrochure</tsl_id.din_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>B-demo prd brochure</tsl_value>
+		<tsl_value>Product brochure</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -17565,7 +17545,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_typeDocIndex>B</tsl_typeDocIndex>
 		<tsl_id.din_name>B-demoPrdBrochure</tsl_id.din_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>B-demo prd brochure</tsl_value>
+		<tsl_value>Brochure produit</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>

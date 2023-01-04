@@ -18,6 +18,15 @@ public class DemoClient extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
 	@Override
+	public void postLoad() {
+		if (getGrant().hasResponsibility("DEMO_WEBSITE"))
+			// Hide all fields except name fields from website
+			for (ObjectField f : getFields())
+				if (!f.isTechnicalField() && !"demoCliFirstname".equals(f.getName()) && !"demoCliLastname".equals(f.getName()))
+					f.setVisibility(ObjectField.VIS_FORBIDDEN);
+	}
+
+	@Override
 	public List<String> postValidate() {
 		List<String> msgs = new ArrayList<>();
 

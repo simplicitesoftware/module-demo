@@ -11,6 +11,7 @@ import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
+import com.simplicite.util.annotations.BusinessObjectPublication;
 
 /**
  * Order business object
@@ -130,6 +131,7 @@ public class DemoOrder extends ObjectDB {
 	}
 
 	/** Publication: PDF receipt */
+	@BusinessObjectPublication
 	public Object printReceipt(PrintTemplate pt) {
 		try {
 			pt.setFilename(getDisplay() + "-" + getFieldValue(NUMBER_FIELDNAME) + ".pdf");
