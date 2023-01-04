@@ -15,6 +15,8 @@ import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
+import com.simplicite.util.annotations.BusinessObjectAction;
+import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.JUnitTool;
 
@@ -41,6 +43,7 @@ public class DemoProduct extends ObjectDB {
 	}
 
 	/** Action: increase stock */
+	@BusinessObjectAction
 	public String increaseStock(Map<String, String> params) {
 		int q = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
 		if (q > 0) {
@@ -57,6 +60,7 @@ public class DemoProduct extends ObjectDB {
 	}
 
 	/** Action: decrease stock */
+	@BusinessObjectAction
 	public String decreaseStock() {
 		// Decrease stock
 		int q = getIntParameter("QUANTITY", 0);
@@ -70,6 +74,7 @@ public class DemoProduct extends ObjectDB {
 	}
 
 	/** Publication: Microsoft Word(R) catalog */
+	@BusinessObjectPublication
 	public Object printCatalog(PrintTemplate pt) {
 		try {
 			DocxTool d = new DocxTool();

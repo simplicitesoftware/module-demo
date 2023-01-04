@@ -10,6 +10,7 @@ import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
+import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.ExcelTool;
 import com.simplicite.util.tools.ExcelTool.ExcelRow;
 import com.simplicite.util.tools.HTMLTool;
@@ -21,7 +22,7 @@ import com.simplicite.webapp.web.WebPage;
  */
 public class DemoContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
 	public void postLoad() {
 		// Comments are only visible to administrators and users
@@ -30,6 +31,7 @@ public class DemoContact extends ObjectDB {
 	}
 
 	/** Publication: HTML using Mustache(R) templating */
+	@BusinessObjectPublication
 	public Object printHTML(PrintTemplate pt) {
 		try {
 			WebPage wp = new WebPage(pt.getDisplay());
@@ -43,6 +45,7 @@ public class DemoContact extends ObjectDB {
 	}
 
 	/** Publication: Microsoft Excel(R) sheet */
+	@BusinessObjectPublication
 	public Object printExcel(PrintTemplate pt) {
 		try {
 			// Build rows from selected IDs or from current filters
