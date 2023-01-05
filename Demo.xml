@@ -126,7 +126,7 @@ mvn verify sonar:sonar
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox>#f7f7f7</thm_searchbox>
 		<thm_active/>
-		<thm_font>Roboto</thm_font>
+		<thm_font>Roboto:ital,wght@0,400;0,700;1,400;1,700</thm_font>
 		<thm_iconset/>
 		<thm_code_editor_theme/>
 		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-01-04 16:17:41</usr_last_logon>
+		<usr_last_logon>2023-01-05 13:12:58</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
