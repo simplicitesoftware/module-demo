@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-01-16 17:09:23</usr_last_logon>
+		<usr_last_logon>2023-02-03 11:41:58</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -5026,7 +5026,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_exportorder>3</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby/>
+		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>DemoOrder;demoOrdCliId</obo_dfltref>
 		<obo_template_id.tpl_name>DemoClient</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -5096,7 +5096,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_exportorder/>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby/>
+		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>DemoContactHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoContact</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -5118,7 +5118,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_historic>1;2;3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
-		<obo_mergeable/>
+		<obo_mergeable>0</obo_mergeable>
 		<obo_social>1</obo_social>
 		<obo_rowid_id.fld_name/>
 		<obo_extend_id.obj_name/>
@@ -11081,7 +11081,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<csi_object_prop/>
 		<csi_field_prop>U</csi_field_prop>
 		<csi_apply>F</csi_apply>
-		<csi_expr><![CDATA[true]]></csi_expr>
+		<csi_expr><![CDATA[[STATUS] != "D" && [STATUS] != "C"]]></csi_expr>
 		<csi_target/>
 		<csi_objfield_id.obf_object_id.obo_name>DemoOrder</csi_objfield_id.obf_object_id.obo_name>
 		<csi_objfield_id.obf_field_id.fld_name>demoOrdDeliveryDate</csi_objfield_id.obf_field_id.fld_name>
