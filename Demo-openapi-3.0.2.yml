@@ -662,6 +662,8 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
+servers:
+- url: /api
 openapi: 3.0.2
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-EMAIL:

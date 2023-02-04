@@ -22,10 +22,11 @@ import com.simplicite.util.ObjectField;
  */
 public class DemoTests {
 	/** Product's stock increment test */
-	/*@Test
+	@Test
 	public void testIncrement() {
+		Grant sys = Grant.getSystemAdmin();
 		try {
-			ObjectDB prd = Grant.getSystemAdmin().getObject("test_DemoProduct", "DemoProduct");
+			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
 			prd.setValues(prd.search().get(0), true);
 
 			ObjectField s = prd.getField(DemoProduct.STOCK_FIELDNAME);
@@ -33,15 +34,16 @@ public class DemoTests {
 
 			Map<String, String> params = new HashMap<>();
 			params.put(DemoProduct.INCREMENT_FIELDNAME, String.valueOf(DemoProduct.DEFAULT_INCREMENT));
-			prd.invokeAction("", params);
+			String res = prd.invokeAction("DEMO_INCSTOCK", params);
+			AppLog.info("Increment acton result: " + res, sys);
 
 			assertEquals(n + DemoProduct.DEFAULT_INCREMENT, s.getInt(0));
 		} catch (Throwable e) {
 			fail(e.getMessage());
 		}
-	}*/
+	}
 	
-	/** Create order test */
+	/** Order test */
 	@Test
 	public void testCreateOrder() {
 		Grant sys = Grant.getSystemAdmin();
@@ -62,7 +64,7 @@ public class DemoTests {
 				stock = ps.getInt(-1);
 				AppLog.info("Product stock increased to = " + stock, sys);
 			}
-			assertTrue(stock > quantity);
+			assertTrue(stock >= quantity);
 
 			ObjectDB cli = sys.getObject("test_DemoClient", "DemoClient");
 			cli.setValues(cli.search().get(0), true); // Select the first customer

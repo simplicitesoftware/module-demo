@@ -3,6 +3,7 @@
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
 #             |_| Module: Demo 5
+basePath: /api
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-EMAIL:
     get:
