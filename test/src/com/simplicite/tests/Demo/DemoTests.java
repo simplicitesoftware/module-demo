@@ -72,7 +72,7 @@ public class DemoTests {
 		
 			ObjectDB ord = sys.getObject("test_DemoOrder", "DemoOrder");
 			AppLog.info("Using " + ord.getDisplay(), sys);
-			ord.resetValues(true);
+			ord.getTool().getForCreate();
 			ObjectField q = ord.getField("demoOrdQuantity");
 			assertEquals(q.getDefaultValue(), q.getValue()); // Check the default quantity
 			ObjectField s = ord.getField("demoOrdStatus");
