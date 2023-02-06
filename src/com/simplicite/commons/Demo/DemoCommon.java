@@ -18,14 +18,15 @@ import com.simplicite.util.Tool;
 import com.simplicite.util.tools.PDFTool;
 
 /**
- * Demo commons
+ * Demo commons.
+ * Note that this class is a <b>singleton</b> to avoid static methods
  */
 public class DemoCommon implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private DemoCommon() {} // Hidden constructor
 
-	/** Sigleton */
+	/** Singleton */
 	private final static DemoCommon INSTANCE = new DemoCommon();
 
 	/** Get singleton */
