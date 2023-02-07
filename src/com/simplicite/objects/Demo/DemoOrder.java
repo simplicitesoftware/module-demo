@@ -25,18 +25,21 @@ public class DemoOrder extends ObjectDB {
 	public static final String REFERENCE_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.REFERENCE_FIELDNAME;
 	public static final String STOCK_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.STOCK_FIELDNAME;
 
+	public static final String QUANTITY_ERROR = "ERR_DEMO_ORD_QUANTITY";
+	public static final String STOCK_ERROR = "ERR_DEMO_PRD_STOCK";
+
 	@Override
 	public List<String> postValidate() {
 		List<String> msgs = new ArrayList<>();
 		// Order quantity checking
 		if (getField(QUANTITY_FIELDNAME).getInt(0) <= 0) {
 			AppLog.log("DEMO_ERR", getClass(), "postValidate", "Order quantity <0 for order " + getFieldValue(NUMBER_FIELDNAME), null, getGrant());
-			msgs.add(Message.formatError("ERR_DEMO_ORD_QUANTITY", null, QUANTITY_FIELDNAME));
+			msgs.add(Message.formatError(QUANTITY_ERROR, null, QUANTITY_FIELDNAME));
 		}
 		// Quantity checking
 		if ("D".equals(getStatus()) && getField(STOCK_FIELDNAME).getInt(0) - getField(QUANTITY_FIELDNAME).getInt(0) <= 0) {
 			AppLog.log("DEMO_ERR", getClass(), "postValidate", "Zero stock on " + getFieldValue(REFERENCE_FIELDNAME), getGrant());
-			msgs.add(Message.formatSimpleError("ERR_DEMO_PRD_STOCK"));
+			msgs.add(Message.formatSimpleError(STOCK_ERROR));
 		}
 		// Set order unit price only at creation
 		if (isNew())

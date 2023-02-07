@@ -11,11 +11,13 @@ import java.util.HashMap;
 import org.junit.Test;
 
 import com.simplicite.objects.Demo.DemoProduct;
+import com.simplicite.objects.Demo.DemoOrder;
 
 import com.simplicite.util.AppLog;
 import com.simplicite.util.Grant;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
+import com.simplicite.util.exceptions.ValidateException;
 
 /**
  * Demo unit tests
@@ -52,12 +54,13 @@ public class DemoTests {
 
 			int quantity = 5;
 
+			// Get first product
 			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
 			prd.setValues(prd.search().get(0), true); // Select the first product
 			ObjectField ps = prd.getField(DemoProduct.STOCK_FIELDNAME);
 			int stock = ps.getInt(-1);
 			AppLog.info("Product " + prd.getFieldValue("demoPrdReference") + " stock = " + stock, sys);
-
+			// Increase product quantity
 			if (stock < quantity) {
 				ps.setValue(stock + quantity);
 				prd.getTool().validateAndSave(); // Update product
@@ -66,24 +69,43 @@ public class DemoTests {
 			}
 			assertTrue(stock >= quantity);
 
+			// Get first customer
 			ObjectDB cli = sys.getObject("test_DemoClient", "DemoClient");
 			cli.setValues(cli.search().get(0), true); // Select the first customer
 			AppLog.info("Customer " + cli.getFieldValue("demoCliCode"), sys);
-		
+
+			// Get order for creation
 			ObjectDB ord = sys.getObject("test_DemoOrder", "DemoOrder");
 			AppLog.info("Using " + ord.getDisplay(), sys);
 			ord.getTool().getForCreate();
+
+			// Check default values
 			ObjectField q = ord.getField("demoOrdQuantity");
 			assertEquals(q.getDefaultValue(), q.getValue()); // Check the default quantity
 			ObjectField s = ord.getField("demoOrdStatus");
 			assertEquals("P", s.getValue()); // Check the default status
-			
+	
+			// Set order product
 			ObjectField p = ord.getField("demoOrdPrdId");
 			p.setValue(prd.getRowId());
 			ord.populateForeignKey(p.getName(), prd.getRowId()); // ZZZ populate the product's fields on the order
+
+			// Set order customer
 			ObjectField c = ord.getField("demoOrdCliId");
 			c.setValue(cli.getRowId());
 			ord.populateForeignKey(c.getName(), cli.getRowId()); // ZZZ populate the customer's fields on the order
+
+			// Try to create order with a 0 quantity
+			q.setValue(0);
+			try {
+				ord.getTool().validateAndSave();
+			} catch (Exception e) {
+				AppLog.error(sys.T(e.getMessage()), null, sys);
+				assertEquals(ValidateException.class, e.getClass());
+				assertEquals(DemoOrder.QUANTITY_ERROR, e.getMessage());
+			}
+
+			// Create order
 			q.setValue(quantity);
 			ord.getTool().validateAndSave(); // Create order
 			String n = ord.getFieldValue("demoOrdNumber");
