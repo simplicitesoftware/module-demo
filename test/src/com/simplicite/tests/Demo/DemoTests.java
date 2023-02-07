@@ -7,6 +7,8 @@ import static org.junit.Assert.fail;
 
 import java.util.Map;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.junit.Test;
 
@@ -145,6 +147,37 @@ public class DemoTests {
 			AppLog.info("Deleted order #" + n, sys);
 
 			AppLog.info("Success", sys);
+		} catch (Throwable e) {
+			AppLog.error("Failure:" + e.getMessage(), e, sys);
+			fail(e.getMessage());
+		}
+	}
+	
+	/** Supplier/product/customer codes validation test */
+	@Test
+	public void testCodes() {
+		Grant sys = Grant.getSystemAdmin();
+		try {
+			ObjectDB sup = sys.getObject("test_DemoSupplier", "DemoSupplier");
+			Pattern pattern = Pattern.compile(sup.getField("demoSupCode").getRegExp());
+			assertTrue(pattern.matcher("SUP001").matches());
+			assertTrue(pattern.matcher("SUP-001").matches());
+			assertFalse(pattern.matcher("SUP 001").matches());
+			assertFalse(pattern.matcher("SUP#001").matches());
+
+			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
+			pattern = Pattern.compile(prd.getField("demoPrdReference").getRegExp());
+			assertTrue(pattern.matcher("REF001").matches());
+			assertTrue(pattern.matcher("REF-001").matches());
+			assertFalse(pattern.matcher("REF 001").matches());
+			assertFalse(pattern.matcher("REF#001").matches());
+
+			ObjectDB cli = sys.getObject("test_DemoClient", "DemoClient");
+			pattern = Pattern.compile(cli.getField("demoCliCode").getRegExp());
+			assertTrue(pattern.matcher("CLI001").matches());
+			assertTrue(pattern.matcher("CLI-001").matches());
+			assertFalse(pattern.matcher("CLI 001").matches());
+			assertFalse(pattern.matcher("CLI#001").matches());
 		} catch (Throwable e) {
 			AppLog.error("Failure:" + e.getMessage(), e, sys);
 			fail(e.getMessage());

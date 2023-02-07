@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-02-06 20:04:43</usr_last_logon>
+		<usr_last_logon>2023-02-07 15:46:41</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -443,16 +443,6 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
@@ -2038,8 +2028,8 @@ try {
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
 		<fld_tray/>
-		<fld_type>3</fld_type>
-		<fld_type_id.flt_code/>
+		<fld_type>15</fld_type>
+		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -3703,8 +3693,8 @@ try {
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
 		<fld_tray/>
-		<fld_type>3</fld_type>
-		<fld_type_id.flt_code/>
+		<fld_type>15</fld_type>
+		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -3888,8 +3878,8 @@ try {
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
 		<fld_tray/>
-		<fld_type>3</fld_type>
-		<fld_type_id.flt_code/>
+		<fld_type>15</fld_type>
+		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>50</fld_size>
@@ -5585,7 +5575,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoClient</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>100</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order>1</obf_dfault_order>
@@ -6281,7 +6271,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>210</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order>2</obf_dfault_order>
@@ -6658,7 +6648,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>345</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -6745,7 +6735,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>361</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -6803,7 +6793,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdReference</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>370</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -7325,7 +7315,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>210</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -7615,7 +7605,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdReference</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>310</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -7760,7 +7750,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>350</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -8282,7 +8272,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>110</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order>1</obf_dfault_order>
@@ -8398,7 +8388,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdReference</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>200</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order>2</obf_dfault_order>
@@ -8862,7 +8852,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoProductHistoric</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdReference</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>200</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -8978,7 +8968,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>DemoSupplier</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>100</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order>1</obf_dfault_order>
@@ -9326,7 +9316,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 	<data>
 		<obf_object_id.obo_name>UserFilters</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
-		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>110</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -12701,7 +12691,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
-		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_objfield_id.obf_field_id.fld_type>15</cax_objfield_id.obf_field_id.fld_type>
 		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<cax_unitscale/>
@@ -12723,7 +12713,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
-		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_objfield_id.obf_field_id.fld_type>15</cax_objfield_id.obf_field_id.fld_type>
 		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<cax_unitscale/>
@@ -12811,7 +12801,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
-		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
+		<cax_objfield_id.obf_field_id.fld_type>15</cax_objfield_id.obf_field_id.fld_type>
 		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<cax_unitscale/>
