@@ -7,7 +7,6 @@ import static org.junit.Assert.fail;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.junit.Test;
@@ -46,7 +45,7 @@ public class DemoTests {
 			fail(e.getMessage());
 		}
 	}
-	
+
 	/** Order test */
 	@Test
 	public void testCreateOrder() {
@@ -86,7 +85,7 @@ public class DemoTests {
 			assertEquals(q.getDefaultValue(), q.getValue()); // Check the default quantity
 			ObjectField s = ord.getField("demoOrdStatus");
 			assertEquals("P", s.getValue()); // Check the default status
-	
+
 			// Set order product
 			ObjectField p = ord.getField("demoOrdPrdId");
 			p.setValue(prd.getRowId());
@@ -117,8 +116,8 @@ public class DemoTests {
 			assertEquals(quantity, q.getInt(-1)); // Check the quantity
 			assertEquals("P", s.getValue()); // Check the status value
 			ObjectField d = ord.getField("demoOrdDeliveryDate");
-			
-			s.setOldValue(s.getValue());			
+
+			s.setOldValue(s.getValue());
 			s.setValue("V"); // Validated
 			ord.getTool().validateAndSave();
 			AppLog.info("Validated order #" + n, sys);
@@ -130,7 +129,7 @@ public class DemoTests {
 			assertFalse(q.isUpdatable()); // Check that the quantity is not updatable anymore
 			assertTrue(d.isUpdatable()); // Check that the delivery date is still updatable
 
-			s.setOldValue(s.getValue());			
+			s.setOldValue(s.getValue());
 			s.setValue("D"); // Delivered
 			ord.getTool().validateAndSave();
 			AppLog.info("Delivered order #" + n, sys);
@@ -138,7 +137,7 @@ public class DemoTests {
 			ord.select(ord.getRowId()); // Reload the order's record
 			assertEquals("D", s.getValue()); // Check the status value
 			assertFalse(d.isUpdatable()); // Check that the delivery date is not updatable anymore
-			
+
 			prd.select(prd.getRowId()); // Reload the product's record
 			AppLog.info("Product stock was decreased to = " + ps.getInt(-1), sys);
 			assertEquals(ps.getInt(-1), stock - quantity);
@@ -152,7 +151,7 @@ public class DemoTests {
 			fail(e.getMessage());
 		}
 	}
-	
+
 	/** Supplier/product/customer codes validation test */
 	@Test
 	public void testCodes() {

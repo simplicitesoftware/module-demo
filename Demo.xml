@@ -218,10 +218,10 @@ try {
 	</data>
 	<data>
 		<viw_name>DemoUserHome</viw_name>
-		<viw_ui><![CDATA[<div class="row">
-	<div class="area col-sm-12" data-area="1,2:="></div>
-</div>
-<!-- Area 3 is not displayed on purpose -->]]></viw_ui>
+		<viw_ui><![CDATA[<div>
+	<div class="area" data-area="1:="></div><div class="row">
+	<div class="area col-sm-12" data-area="2,3:="></div>
+</div>]]></viw_ui>
 		<viw_order>120</viw_order>
 		<viw_icon>demo</viw_icon>
 		<viw_disp_id.dis_code/>
@@ -398,7 +398,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2022-09-07 17:34:11</usr_last_logon>
+		<usr_last_logon>2023-03-06 13:46:35</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_mfa_method/>
@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-03-01 14:43:30</usr_last_logon>
+		<usr_last_logon>2023-03-06 13:46:21</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -4302,7 +4302,7 @@ try {
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>icon/blank</sty_image>
+		<sty_image>icon/color/delete3</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13156,6 +13156,25 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
+		<vwi_type>U</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
+		<vwi_position>2</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
 		<vwi_research_id.rch_name>DemoOrder-S1</vwi_research_id.rch_name>
@@ -13174,7 +13193,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
-		<vwi_position>2</vwi_position>
+		<vwi_position>3</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
 		<vwi_research_id.rch_name>DemoContact-S1</vwi_research_id.rch_name>
@@ -13184,25 +13203,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<vwi_lov_code/>
 		<vwi_show>DemoContact</vwi_show>
 		<vwi_url/>
-		<vwi_image/>
-		<vwi_treeview_id.trv_name/>
-		<vwi_crosstab_id.ctb_name/>
-		<vwi_printtmpl_id.prt_name/>
-		<vwi_printtmpl_id.prt_lang/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
-		<vwi_position>3</vwi_position>
-		<vwi_type>E</vwi_type>
-		<vwi_title>0</vwi_title>
-		<vwi_research_id.rch_name/>
-		<vwi_research_id.rch_object_id.obo_name/>
-		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec/>
-		<vwi_lov_code/>
-		<vwi_show/>
-		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("SocialPosts")]]]></vwi_url>
 		<vwi_image/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
