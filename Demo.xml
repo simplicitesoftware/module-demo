@@ -304,21 +304,21 @@ try {
 	<name>User</name>
 	<action>upsert</action>
 	<data>
-		<usr_image_id>files/User/admin.png</usr_image_id>
 		<usr_login>admin</usr_login>
+		<usr_lang>ENU</usr_lang>
+		<usr_image_id>files/User/admin.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
+		<usr_active>1</usr_active>
 		<usr_title>MS</usr_title>
-		<usr_first_name>Barbara</usr_first_name>
 		<usr_last_name>SMITH</usr_last_name>
-		<usr_lang>ENU</usr_lang>
+		<usr_first_name>Barbara</usr_first_name>
 		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -330,7 +330,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2023-02-13 18:34:25</usr_last_logon>
+		<usr_last_logon>2023-03-24 18:37:27</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -338,21 +338,21 @@ try {
 		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
 	<data>
-		<usr_image_id>files/User/user_enu.png</usr_image_id>
 		<usr_login>user_enu</usr_login>
+		<usr_lang>ENU</usr_lang>
+		<usr_image_id>files/User/user_enu.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
+		<usr_active>1</usr_active>
 		<usr_title>MRS</usr_title>
-		<usr_first_name>Allison</usr_first_name>
 		<usr_last_name>MARTIN</usr_last_name>
-		<usr_lang>ENU</usr_lang>
+		<usr_first_name>Allison</usr_first_name>
 		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -372,21 +372,21 @@ try {
 		<usr_uuid>2156a498-bcdb-4e04-a68f-ebabdc4d223c</usr_uuid>
 	</data>
 	<data>
-		<usr_image_id>files/User/user_fra.png</usr_image_id>
 		<usr_login>user_fra</usr_login>
+		<usr_lang>FRA</usr_lang>
+		<usr_image_id>files/User/user_fra.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
+		<usr_active>1</usr_active>
 		<usr_title>MR</usr_title>
-		<usr_first_name>Pierre</usr_first_name>
 		<usr_last_name>DUPONT</usr_last_name>
-		<usr_lang>FRA</usr_lang>
+		<usr_first_name>Pierre</usr_first_name>
 		<usr_email>demo@simplicite.fr</usr_email>
+		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
-		<usr_active>1</usr_active>
-		<usr_home_id.viw_name>DemoUserHome</usr_home_id.viw_name>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -406,21 +406,21 @@ try {
 		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
 	</data>
 	<data>
-		<usr_image_id>files/User/website.png</usr_image_id>
 		<usr_login>website</usr_login>
+		<usr_lang>ENU</usr_lang>
+		<usr_image_id>files/User/website.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>25</usr_maxrows>
+		<usr_active>3</usr_active>
 		<usr_title/>
-		<usr_first_name/>
 		<usr_last_name>Website</usr_last_name>
-		<usr_lang>ENU</usr_lang>
+		<usr_first_name/>
 		<usr_email/>
+		<usr_home_id.viw_name/>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
-		<usr_active>3</usr_active>
-		<usr_home_id.viw_name/>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -432,26 +432,12 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-03-06 13:46:21</usr_last_logon>
+		<usr_last_logon>2023-04-11 13:17:18</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>

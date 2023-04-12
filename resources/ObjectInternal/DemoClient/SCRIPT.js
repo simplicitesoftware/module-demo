@@ -13,7 +13,7 @@ var DemoClient = DemoClient || (function() {
 			o.locals.ui.form.onload = function() {
 				try {
 					// Display Google Map
-					_map = function() {
+					const _map = function() {
 						const rowId = _val("row_id");
 						if (rowId && rowId != "0") {
 							const c = _val("demoCliCoords");

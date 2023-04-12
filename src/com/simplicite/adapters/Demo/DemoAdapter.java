@@ -22,7 +22,6 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 	private ObjectDB prd;
 	private transient BusinessObjectTool prdt;
 
-	private int nbLines = 0;
 	private int nbErrors = 0;
 
 	private static final int NB_COLS = 3; // Expected number of columns
@@ -81,6 +80,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 			appendLog(msg);
 			AppLog.error(msg, e, getGrant());
 			appendError(values); // Rejected line
+			nbErrors++;
 		}
 
 		nbLines++;

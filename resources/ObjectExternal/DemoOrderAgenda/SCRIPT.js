@@ -6,7 +6,7 @@ var DemoOrderAgenda = DemoOrderAgenda || (function() {
 
 const debug = false;
 
-let org;
+let ord;
 
 function render(url) {
 	$ui.loadCalendar(function() {
