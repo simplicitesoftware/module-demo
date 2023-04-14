@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-04-11 13:17:18</usr_last_logon>
+		<usr_last_logon>2023-04-14 16:54:36</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -9732,7 +9732,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>BCK</act_exec>
 		<act_count/>
-		<act_order/>
+		<act_order>2</act_order>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
@@ -9752,7 +9752,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<act_exec>BCK</act_exec>
 		<act_count/>
-		<act_order/>
+		<act_order>1</act_order>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-C</act_name>
@@ -9829,6 +9829,25 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>1</act_order>
+	</data>
+	<data>
+		<act_name>DEMO_PRD_EMAIL</act_name>
+		<act_type>O</act_type>
+		<act_async>0</act_async>
+		<act_job_depth/>
+		<act_method>sendEmail</act_method>
+		<act_script/>
+		<act_url/>
+		<act_image>fas/envelope</act_image>
+		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
+		<act_confirm_ui/>
+		<act_plus>1</act_plus>
+		<act_comment><![CDATA[Send product information by email]]></act_comment>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>BCK</act_exec>
+		<act_count/>
+		<act_order>3</act_order>
 	</data>
 </object>
 <object>
@@ -9995,6 +10014,15 @@ state transition to _shipped_ status.]]></act_comment>
 		<fct_object_id.obj_name>DemoProduct</fct_object_id.obj_name>
 		<fct_function>A</fct_function>
 		<fct_action_id.act_name>DEMO_DECSTOCK</fct_action_id.act_name>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>DEMO_PRD_EMAIL_A</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>DemoProduct</fct_object_id.obj_name>
+		<fct_function>A</fct_function>
+		<fct_action_id.act_name>DEMO_PRD_EMAIL</fct_action_id.act_name>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -10173,6 +10201,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>DemoProduct</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name>DEMO_DECSTOCK</grt_function_id.fct_action_id.act_name>
+		<grt_function_id.fct_function>A</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>DEMO_PRD_EMAIL_A</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>DemoProduct</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name>DEMO_PRD_EMAIL</grt_function_id.fct_action_id.act_name>
 		<grt_function_id.fct_function>A</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -13898,6 +13936,14 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>DEMO_PRD_EMAIL</tsl_id.act_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Send by email</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
 		<tsl_id.act_name>DEMO_CLIENTMAP</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Localiser sur une carte</tsl_value>
@@ -13973,6 +14019,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.act_name>DEMO_ORD_STATUS-V-D</tsl_id.act_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Envoyer</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>DEMO_PRD_EMAIL</tsl_id.act_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Envoyer par mail</tsl_value>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

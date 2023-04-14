@@ -356,6 +356,7 @@ Its reference is unique per supplier.
 
 * `DEMO_DECSTOCK`: Product stock **decrement** triggered by the order
 state transition to _shipped_ status.
+* `DEMO_PRD_EMAIL`: Send product information by email
 * `DEMO_INCSTOCK`: Sample action for product stock **increment**
 (by `N` specified in the product business object code).
 

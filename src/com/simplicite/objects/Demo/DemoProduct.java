@@ -18,6 +18,7 @@ import com.simplicite.util.Tool;
 import com.simplicite.util.annotations.BusinessObjectAction;
 import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.DocxTool;
+import com.simplicite.util.tools.MailTool;
 import com.simplicite.util.tools.JUnitTool;
 
 /**
@@ -71,6 +72,31 @@ public class DemoProduct extends ObjectDB {
 		AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 		// User message
 		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + q);
+	}
+
+	/** Action method: send product data in an email */
+	@BusinessObjectAction
+	public String sendEmail(Action a) {
+		try {
+			MailTool mt = new MailTool(getGrant());
+			mt.addRcpt(getGrant().getEmail());
+			String ref = getFieldValue("demoPrdReference");
+			mt.setSubject(getName() + " " + ref);
+			mt.addAttach(this, getField("demoPrdBrochure"));
+			String picCid = mt.addImage(this, getField("demoPrdPicture"));
+			mt.setBody(
+				"<h1>" + Tool.toHTML(ref) + "</h1>" +
+				"<img src=\"cid:" + picCid +  "\"/>" +
+				"<h3>" + Tool.toHTML(getFieldValue("demoPrdName")) + "</h3>" +
+				"<h5>" + Tool.toHTML(getFieldValue("demoPrdDescription")) + "</h5>" +
+				"<div>" + getFieldValue("demoPrdDocumentation") + "</div>"
+			);
+			mt.send();
+			return Message.formatSimpleInfo("OK");
+		} catch (Exception e) {
+			AppLog.error(null, e, getGrant());
+			return Message.formatSimpleError(e.getMessage());
+		}
 	}
 
 	/** Publication: Microsoft Word(R) catalog */
