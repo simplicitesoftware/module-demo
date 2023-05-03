@@ -11,11 +11,15 @@ import com.simplicite.util.exceptions.DBException;
 import org.junit.Test;
 
 /**
- * Random orders generation
+ * Random data generation
  */
-public class DemoRandomOrdersGeneration {
+public class DemoRandomDataGeneration {
 	@Test
-	public void test() {
+	public void generateData() {
+		generateOrders();
+	}
+
+	private void generateOrders() {
 		Grant g = Grant.getSystemAdmin();
 		ObjectDB ord = null;
 		try {

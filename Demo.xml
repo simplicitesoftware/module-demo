@@ -13754,8 +13754,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<scr_code>DemoRandomOrdersGeneration</scr_code>
-		<scr_file>test/src/com/simplicite/tests/Demo/DemoRandomOrdersGeneration.java</scr_file>
+		<scr_code>DemoRandomDataGeneration</scr_code>
+		<scr_file>test/src/com/simplicite/tests/Demo/DemoRandomDataGeneration.java</scr_file>
 		<scr_type>TST</scr_type>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
