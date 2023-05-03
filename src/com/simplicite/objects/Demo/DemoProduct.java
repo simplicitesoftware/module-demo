@@ -80,7 +80,7 @@ public class DemoProduct extends ObjectDB {
 		try {
 			MailTool mt = new MailTool(getGrant());
 			mt.addRcpt(getGrant().getEmail());
-			String ref = getFieldValue("demoPrdReference");
+			String ref = getFieldValue(REFERENCE_FIELDNAME);
 			mt.setSubject(getName() + " " + ref);
 			mt.addAttach(this, getField("demoPrdBrochure"));
 			String picCid = mt.addImage(this, getField("demoPrdPicture"));

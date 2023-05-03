@@ -432,26 +432,12 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-05-03 10:45:05</usr_last_logon>
+		<usr_last_logon>2023-05-03 16:10:05</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -2092,7 +2078,7 @@ try {
 		<fld_name>demoCliCoords</fld_name>
 		<fld_dbname>cli_coords</fld_dbname>
 		<fld_visible>2</fld_visible>
-		<fld_updatable>0</fld_updatable>
+		<fld_updatable>2</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>

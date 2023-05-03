@@ -2,6 +2,8 @@
 // Client-side logic for customer business object
 //----------------------------------------------------
 var DemoClient = DemoClient || (function() {
+	let _map; // Set in the UI hook
+
 	// UI hook
 	Simplicite.UI.hooks.DemoClient = function(o, cbk) {
 		function _val(name) {
@@ -13,7 +15,7 @@ var DemoClient = DemoClient || (function() {
 			o.locals.ui.form.onload = function() {
 				try {
 					// Display Google Map
-					const _map = function() {
+					_map = function() {
 						const rowId = _val("row_id");
 						if (rowId && rowId != "0") {
 							const c = _val("demoCliCoords");
