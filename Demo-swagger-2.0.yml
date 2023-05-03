@@ -459,7 +459,7 @@ paths:
       - DemoSupplier
   /rest/DemoClient/{row_id}:
     post:
-      summary: Create a new DemoClientbusiness object record
+      summary: Create a new DemoClient business object record
       security:
       - bearerAuth: []
       produces:
@@ -578,7 +578,7 @@ paths:
       tags:
       - DemoClient
     put:
-      summary: Update a DemoClientbusiness object record
+      summary: Update a DemoClient business object record
       security:
       - bearerAuth: []
       produces:
@@ -621,7 +621,7 @@ paths:
       - application/json
   /rest/DemoOrder/{row_id}:
     post:
-      summary: Create a new DemoOrderbusiness object record
+      summary: Create a new DemoOrder business object record
       security:
       - bearerAuth: []
       produces:
@@ -740,7 +740,7 @@ paths:
       tags:
       - DemoOrder
     put:
-      summary: Update a DemoOrderbusiness object record
+      summary: Update a DemoOrder business object record
       security:
       - bearerAuth: []
       produces:
@@ -1119,7 +1119,7 @@ paths:
       - DemoProduct
   /rest/DemoOrderHistoric/{row_id}:
     post:
-      summary: Create a new DemoOrderHistoricbusiness object record
+      summary: Create a new DemoOrderHistoric business object record
       security:
       - bearerAuth: []
       produces:
@@ -1238,7 +1238,7 @@ paths:
       tags:
       - DemoOrderHistoric
     put:
-      summary: Update a DemoOrderHistoricbusiness object record
+      summary: Update a DemoOrderHistoric business object record
       security:
       - bearerAuth: []
       produces:
@@ -1391,7 +1391,7 @@ paths:
       - DemoClient
   /rest/DemoContact/{row_id}:
     post:
-      summary: Create a new DemoContactbusiness object record
+      summary: Create a new DemoContact business object record
       security:
       - bearerAuth: []
       produces:
@@ -1510,7 +1510,7 @@ paths:
       tags:
       - DemoContact
     put:
-      summary: Update a DemoContactbusiness object record
+      summary: Update a DemoContact business object record
       security:
       - bearerAuth: []
       produces:
@@ -1642,7 +1642,7 @@ paths:
       - DemoProduct
   /rest/DemoProductHistoric/{row_id}:
     post:
-      summary: Create a new DemoProductHistoricbusiness object record
+      summary: Create a new DemoProductHistoric business object record
       security:
       - bearerAuth: []
       produces:
@@ -1761,7 +1761,7 @@ paths:
       tags:
       - DemoProductHistoric
     put:
-      summary: Update a DemoProductHistoricbusiness object record
+      summary: Update a DemoProductHistoric business object record
       security:
       - bearerAuth: []
       produces:
@@ -1804,7 +1804,7 @@ paths:
       - application/json
   /rest/DemoSupplier/{row_id}:
     post:
-      summary: Create a new DemoSupplierbusiness object record
+      summary: Create a new DemoSupplier business object record
       security:
       - bearerAuth: []
       produces:
@@ -1923,7 +1923,7 @@ paths:
       tags:
       - DemoSupplier
     put:
-      summary: Update a DemoSupplierbusiness object record
+      summary: Update a DemoSupplier business object record
       security:
       - bearerAuth: []
       produces:
@@ -2566,7 +2566,7 @@ paths:
       - DemoClient
   /rest/DemoContactHistoric/{row_id}:
     post:
-      summary: Create a new DemoContactHistoricbusiness object record
+      summary: Create a new DemoContactHistoric business object record
       security:
       - bearerAuth: []
       produces:
@@ -2685,7 +2685,7 @@ paths:
       tags:
       - DemoContactHistoric
     put:
-      summary: Update a DemoContactHistoricbusiness object record
+      summary: Update a DemoContactHistoric business object record
       security:
       - bearerAuth: []
       produces:
@@ -2766,7 +2766,7 @@ paths:
       - DemoProduct
   /rest/DemoProduct/{row_id}:
     post:
-      summary: Create a new DemoProductbusiness object record
+      summary: Create a new DemoProduct business object record
       security:
       - bearerAuth: []
       produces:
@@ -2885,7 +2885,7 @@ paths:
       tags:
       - DemoProduct
     put:
-      summary: Update a DemoProductbusiness object record
+      summary: Update a DemoProduct business object record
       security:
       - bearerAuth: []
       produces:
