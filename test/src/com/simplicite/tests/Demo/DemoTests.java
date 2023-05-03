@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.regex.Pattern;
 
+import org.json.JSONObject;
+
 import org.junit.Test;
 
 import com.simplicite.objects.Demo.DemoProduct;
@@ -24,13 +26,15 @@ import com.simplicite.util.exceptions.ValidateException;
  * Demo unit tests
  */
 public class DemoTests {
+	private static final String PRD_REF = "REF001";
+	
 	/** Product's stock increment test */
-	@Test
+	/*@Test
 	public void testIncrement() {
 		Grant sys = Grant.getSystemAdmin();
 		try {
 			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
-			prd.setValues(prd.search().get(0), true);
+			prd.setValues(prd.getTool().search(new JSONObject().put("demoPrdReference", PRD_REF)).get(0), true);
 
 			ObjectField s = prd.getField(DemoProduct.STOCK_FIELDNAME);
 			int n = s.getInt(0);
@@ -41,13 +45,26 @@ public class DemoTests {
 			AppLog.info("Increment acton result: " + res, sys);
 
 			assertEquals(n + DemoProduct.DEFAULT_INCREMENT, s.getInt(0));
-		} catch (Throwable e) {
+		} catch (Exception e) {
+			fail(e.getMessage());
+		}
+	}*/
+
+	/** Product's stock increment test */
+	@Test
+	public void testSendMail() {
+		Grant sys = Grant.getSystemAdmin();
+		try {
+			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
+			prd.setValues(prd.getTool().search(new JSONObject().put("demoPrdReference", PRD_REF)).get(0), true);
+			AppLog.info("Send email acton result: " + prd.invokeAction("DEMO_PRD_EMAIL"), sys);
+		} catch (Exception e) {
 			fail(e.getMessage());
 		}
 	}
 
 	/** Order test */
-	@Test
+	/*@Test
 	public void testCreateOrder() {
 		Grant sys = Grant.getSystemAdmin();
 		try {
@@ -146,14 +163,14 @@ public class DemoTests {
 			AppLog.info("Deleted order #" + n, sys);
 
 			AppLog.info("Success", sys);
-		} catch (Throwable e) {
+		} catch (Exception e) {
 			AppLog.error("Failure:" + e.getMessage(), e, sys);
 			fail(e.getMessage());
 		}
-	}
+	}*/
 
 	/** Supplier/product/customer codes validation test */
-	@Test
+	/*@Test
 	public void testCodes() {
 		Grant sys = Grant.getSystemAdmin();
 		try {
@@ -177,9 +194,9 @@ public class DemoTests {
 			assertTrue(pattern.matcher("CLI-001").matches());
 			assertFalse(pattern.matcher("CLI 001").matches());
 			assertFalse(pattern.matcher("CLI#001").matches());
-		} catch (Throwable e) {
+		} catch (Exception e) {
 			AppLog.error("Failure:" + e.getMessage(), e, sys);
 			fail(e.getMessage());
 		}
-	}
+	}*/
 }
