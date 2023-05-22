@@ -1,5 +1,6 @@
 #democounters {
 	.counter {
+		position: relative;
 		margin: .5rem;
 		padding: 1rem .5rem;
 		background-color: #ffffff;
@@ -20,22 +21,21 @@
 			font-size: 5rem;
 			opacity: 0.2;
 		}
-		.value {
+		.value, .label {
 			position: absolute;
-			right: 3rem;
+			display: block;
+			right: 1.5rem;
+		}
+		.value {
 			top: .75rem;
 			font-size: 3rem;
-			display: block;
 		}
 		.label {
-			position: absolute;
-			right: 3rem;
 			top: 4.25rem;
+			font-size: 1.5rem;
 			font-style: italic;
 			text-transform: capitalize;
 			opacity: 0.5;
-			display: block;
-			font-size: 1.5rem;
 		}
 	}
 }
