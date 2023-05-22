@@ -1,0 +1,41 @@
+#democounters {
+	.counter {
+		margin: .5rem;
+		padding: 1rem .5rem;
+		background-color: #ffffff;
+		color: #ffffff;
+		height: 6.5rem;
+		border-radius: .3rem;
+		transition: .3s linear all;
+		&.primary {
+			background-color: #74b9ff;
+		}
+		&.danger {
+    		background-color: #ef9580;
+		}  
+		&.success {
+			background-color: #a1c293;
+		}  
+		i {
+			font-size: 5rem;
+			opacity: 0.2;
+		}
+		.value {
+			position: absolute;
+			right: 3rem;
+			top: .75rem;
+			font-size: 3rem;
+			display: block;
+		}
+		.label {
+			position: absolute;
+			right: 3rem;
+			top: 4.25rem;
+			font-style: italic;
+			text-transform: capitalize;
+			opacity: 0.5;
+			display: block;
+			font-size: 1.5rem;
+		}
+	}
+}

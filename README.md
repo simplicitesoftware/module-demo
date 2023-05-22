@@ -421,6 +421,12 @@ His address is geolocalized using GoogleMaps&reg; API.
 Custom JSON web service for getting the product catalog
 
 
+`DemoCounters` external object definition
+-----------------------------------------
+
+Counters
+
+
 `DemoOrderAgenda` external object definition
 --------------------------------------------
 

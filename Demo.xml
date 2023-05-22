@@ -185,9 +185,9 @@ mvn verify sonar:sonar
 	<data>
 		<viw_name>DemoHome</viw_name>
 		<viw_ui><![CDATA[<div>
+	<div class="area" data-area="5">Loading...</div>
 	<div class="row"><div class="area col-sm-12" data-area="1,2,4:="></div></div>
 	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
-	<div class="row"><div class="area col-sm-12" data-area="5:=" style="min-height: 400px;"></div></div>
 </div>]]></viw_ui>
 		<viw_order>100</viw_order>
 		<viw_icon>demo</viw_icon>
@@ -432,12 +432,26 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-05-03 16:10:05</usr_last_logon>
+		<usr_last_logon>2023-05-22 14:31:09</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
 		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
+	</data>
+</object>
+<object>
+	<name>UserSysParam</name>
+	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -4966,6 +4980,17 @@ try {
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoCatalog.java</obe_script_id>
 		<obe_icon>box</obe_icon>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obe_name>DemoCounters</obe_name>
+		<obe_type>E</obe_type>
+		<obe_url/>
+		<obe_comment><![CDATA[Counters]]></obe_comment>
+		<obe_help/>
+		<obe_class/>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoCounters.java</obe_script_id>
+		<obe_icon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -9919,6 +9944,15 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fct_name>DEMO_COUNTERS_E</fct_name>
+		<fct_object_id.obj_type>E</fct_object_id.obj_type>
+		<fct_object_id.obj_name>DemoCounters</fct_object_id.obj_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fct_name>DEMO_CTC_CRU</fct_name>
 		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoContact</fct_object_id.obj_name>
@@ -10130,6 +10164,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO_CTCH_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>DemoContactHistoric</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>DEMO_COUNTERS_E</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>DemoCounters</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -10360,6 +10404,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_name>DEMO_CTCH_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
 		<grt_function_id.fct_object_id.obj_name>DemoContactHistoric</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>DEMO_COUNTERS_E</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>DemoCounters</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -13161,20 +13215,20 @@ state transition to _shipped_ status.]]></act_comment>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
 		<vwi_position>5</vwi_position>
-		<vwi_type>Z</vwi_type>
+		<vwi_type>E</vwi_type>
 		<vwi_title>0</vwi_title>
 		<vwi_research_id.rch_name/>
 		<vwi_research_id.rch_object_id.obo_name/>
 		<vwi_research_id.rch_user_id.usr_login/>
 		<vwi_search_spec/>
 		<vwi_lov_code/>
-		<vwi_show>DemoSupplier</vwi_show>
-		<vwi_url/>
+		<vwi_show/>
+		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoCounters")]]]></vwi_url>
 		<vwi_image/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
-		<vwi_printtmpl_id.prt_name>DemoSupplier-CATALOG</vwi_printtmpl_id.prt_name>
-		<vwi_printtmpl_id.prt_lang>ANY</vwi_printtmpl_id.prt_lang>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13639,6 +13693,57 @@ state transition to _shipped_ status.]]></act_comment>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/SCRIPT.js</res_file>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCounters</obe_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>CSS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>STYLES</res_code>
+		<res_cached>0</res_cached>
+		<res_file>resources/ObjectExternal/DemoCounters/STYLES.less</res_file>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCounters</obe_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>HTML</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>HTML</res_code>
+		<res_cached>0</res_cached>
+		<res_file>resources/ObjectExternal/DemoCounters/HTML.html</res_file>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCounters</obe_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>JS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>SCRIPT</res_code>
+		<res_cached>0</res_cached>
+		<res_file>resources/ObjectExternal/DemoCounters/SCRIPT.js</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16166,6 +16271,14 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obe_name>DemoCounters</tsl_id.obe_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Counters</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obe_name>DemoOrderAgenda</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Deliveries agenda</tsl_value>
@@ -16185,6 +16298,14 @@ state transition to _shipped_ status.]]></act_comment>
 		<tsl_id.obe_name>DemoCatalog</tsl_id.obe_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>API catalogue</tsl_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObject>O</tsl_typeObject>
+		<tsl_id.obe_name>DemoCounters</tsl_id.obe_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Compteurs</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
