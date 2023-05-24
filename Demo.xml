@@ -185,7 +185,7 @@ mvn verify sonar:sonar
 	<data>
 		<viw_name>DemoHome</viw_name>
 		<viw_ui><![CDATA[<div>
-	<div class="area" data-area="5">Loading...</div>
+	<div class="area" data-area="5">Loading...</div><div class="area" data-area="6"></div>
 	<div class="row"><div class="area col-sm-12" data-area="1,2,4:="></div></div>
 	<div class="row"><div class="area col-sm-12" data-area="3:="></div></div>
 </div>]]></viw_ui>
@@ -432,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-05-22 14:31:09</usr_last_logon>
+		<usr_last_logon>2023-05-24 19:08:38</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -12748,7 +12748,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
 		<cax_objfield_id.obf_field_id.fld_type>4</cax_objfield_id.obf_field_id.fld_type>
-		<cax_dategroup/>
+		<cax_dategroup>Q</cax_dategroup>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<cax_unitscale/>
 		<cax_unitfunct/>
@@ -13227,6 +13227,25 @@ state transition to _shipped_ status.]]></act_comment>
 		<vwi_image/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+		<vwi_position>6</vwi_position>
+		<vwi_type>X</vwi_type>
+		<vwi_title>1</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec><![CDATA[t.ord_status <> 'C']]></vwi_search_spec>
+		<vwi_lov_code/>
+		<vwi_show>DemoOrder</vwi_show>
+		<vwi_url><![CDATA[ztable=no&zstotal=no&zcontrol=no&zgraph_demoOrdTotal=&zgraph_demoOrdQuantity=bar&zcaption=no]]></vwi_url>
+		<vwi_image/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name>DemoOrder-TC2</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
