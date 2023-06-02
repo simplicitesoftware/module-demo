@@ -122,8 +122,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -1674,8 +1674,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query

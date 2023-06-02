@@ -49,24 +49,26 @@ public class DemoClient extends ObjectDB {
 	/** Hook override: geolocate from address fields */
 	@Override
 	public String preSave() {
-		if (!isBatchInstance()) try {
-			// Geocode address fields
-			ObjectField coords = getField("demoCliCoords");
-			ObjectField a1 = getField("demoCliAddress1");
-			ObjectField a2 = getField("demoCliAddress2");
-			ObjectField zc = getField("demoCliZipCode");
-			ObjectField ci = getField("demoCliCity");
-			ObjectField co = getField("demoCliCountry");
-
-			if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
-				String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
-				AppLog.info("Try to geocode " + a, getGrant());
-				Location c = new GMapTool(getGrant()).geocodeOne(a);
-				AppLog.info("Coordinates = " + c, getGrant());
-				coords.setValue(c==null ?  "" : c.toString());
+		if (isMainInstance()) { // Only done for the main UI instnce
+			try {
+				// Geocode address fields
+				ObjectField coords = getField("demoCliCoords");
+				ObjectField a1 = getField("demoCliAddress1");
+				ObjectField a2 = getField("demoCliAddress2");
+				ObjectField zc = getField("demoCliZipCode");
+				ObjectField ci = getField("demoCliCity");
+				ObjectField co = getField("demoCliCountry");
+	
+				if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
+					String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
+					AppLog.info("Try to geocode " + a, getGrant());
+					Location c = new GMapTool(getGrant()).geocodeOne(a);
+					AppLog.info("Coordinates = " + c, getGrant());
+					coords.setValue(c==null ?  "" : c.toString());
+				}
+			} catch (Exception e) {
+				AppLog.warning(null, e, getGrant());
 			}
-		} catch (Exception e) {
-			AppLog.error(null, e, getGrant());
 		}
 		return super.preSave();
 	}
