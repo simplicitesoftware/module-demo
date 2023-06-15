@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-06-02 14:19:17</usr_last_logon>
+		<usr_last_logon>2023-06-15 17:30:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -10608,7 +10608,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoContact-C1</cst_name>
 		<cst_object_id.obo_name>DemoContact</cst_object_id.obo_name>
 		<cst_order>10</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Fields not updatable by default]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10620,7 +10620,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoContact-C2</cst_name>
 		<cst_object_id.obo_name>DemoContact</cst_object_id.obo_name>
 		<cst_order>20</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Status field only updatable by the administrator]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10632,7 +10632,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoContact-C3</cst_name>
 		<cst_object_id.obo_name>DemoContact</cst_object_id.obo_name>
 		<cst_order>30</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Fields updatable at creation]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10653,10 +10653,22 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<cst_name>DemoContact-C5</cst_name>
+		<cst_object_id.obo_name>DemoContact</cst_object_id.obo_name>
+		<cst_order>50</cst_order>
+		<cst_desc><![CDATA[Allow order selection **after** customer selection]]></cst_desc>
+		<cst_type>E</cst_type>
+		<cst_effects>F</cst_effects>
+		<cst_field_id.fld_name/>
+		<cst_expr><![CDATA[true]]></cst_expr>
+		<cst_method/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<cst_name>DemoOrder-C1</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>10</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Fields not updatable by default]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10668,7 +10680,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoOrder-C2</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>20</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Status field only updatable by the administrator]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10680,7 +10692,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoOrder-C3</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>30</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Customer, product and quantity fields updatable at creation or when the order 
+is still in pending state]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10692,7 +10705,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoOrder-C4</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>40</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Delivery date field only updatable when the order is not delivered nor cancelled]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10704,7 +10717,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoOrder-C5</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>50</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Delivery order field mandatory at validation]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10716,7 +10729,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoOrder-C6</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>60</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Allow order deleteion only in pending state]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10728,7 +10741,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<cst_name>DemoOrder-C7</cst_name>
 		<cst_object_id.obo_name>DemoOrder</cst_object_id.obo_name>
 		<cst_order>70</cst_order>
-		<cst_desc/>
+		<cst_desc><![CDATA[Update order only if administrator or if responsible of the product's supplier]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
@@ -10966,6 +10979,21 @@ state transition to _shipped_ status.]]></act_comment>
 		<csi_field_prop>U</csi_field_prop>
 		<csi_apply>F</csi_apply>
 		<csi_expr><![CDATA[true]]></csi_expr>
+		<csi_target/>
+		<csi_objfield_id.obf_object_id.obo_name>DemoContact</csi_objfield_id.obf_object_id.obo_name>
+		<csi_objfield_id.obf_field_id.fld_name>demoCtcOrdId</csi_objfield_id.obf_field_id.fld_name>
+		<csi_objfield_id.obf_order>300</csi_objfield_id.obf_order>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<csi_const_id.cst_name>DemoContact-C5</csi_const_id.cst_name>
+		<csi_const_id.cst_object_id.obo_name>DemoContact</csi_const_id.cst_object_id.obo_name>
+		<csi_const_id.cst_order>50</csi_const_id.cst_order>
+		<csi_order>10</csi_order>
+		<csi_object_prop/>
+		<csi_field_prop>U</csi_field_prop>
+		<csi_apply>F</csi_apply>
+		<csi_expr><![CDATA[[ISNEW] && ![FIELD:demoCtcCliId].isEmpty()]]></csi_expr>
 		<csi_target/>
 		<csi_objfield_id.obf_object_id.obo_name>DemoContact</csi_objfield_id.obf_object_id.obo_name>
 		<csi_objfield_id.obf_field_id.fld_name>demoCtcOrdId</csi_objfield_id.obf_field_id.fld_name>
