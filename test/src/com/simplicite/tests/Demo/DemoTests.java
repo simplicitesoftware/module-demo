@@ -29,7 +29,7 @@ public class DemoTests {
 	private static final String PRD_REF = "REF001";
 	
 	/** Product's stock increment test */
-	/*@Test
+	@Test
 	public void testIncrement() {
 		Grant sys = Grant.getSystemAdmin();
 		try {
@@ -48,23 +48,10 @@ public class DemoTests {
 		} catch (Exception e) {
 			fail(e.getMessage());
 		}
-	}*/
-
-	/** Product's stock increment test */
-	@Test
-	public void testSendMail() {
-		Grant sys = Grant.getSystemAdmin();
-		try {
-			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
-			prd.setValues(prd.getTool().search(new JSONObject().put("demoPrdReference", PRD_REF)).get(0), true);
-			AppLog.info("Send email acton result: " + prd.invokeAction("DEMO_PRD_EMAIL"), sys);
-		} catch (Exception e) {
-			fail(e.getMessage());
-		}
 	}
 
 	/** Order test */
-	/*@Test
+	@Test
 	public void testCreateOrder() {
 		Grant sys = Grant.getSystemAdmin();
 		try {
@@ -117,8 +104,8 @@ public class DemoTests {
 			q.setValue(0);
 			try {
 				ord.getTool().validateAndSave();
-			} catch (Exception e) {
-				AppLog.error(sys.T(e.getMessage()), null, sys);
+			} catch (ValidateException e) {
+				AppLog.info("Expected validation error: " + sys.T(e.getMessage()), sys);
 				assertEquals(ValidateException.class, e.getClass());
 				assertEquals(DemoOrder.QUANTITY_ERROR, e.getMessage());
 			}
@@ -167,10 +154,10 @@ public class DemoTests {
 			AppLog.error("Failure:" + e.getMessage(), e, sys);
 			fail(e.getMessage());
 		}
-	}*/
+	}
 
 	/** Supplier/product/customer codes validation test */
-	/*@Test
+	@Test
 	public void testCodes() {
 		Grant sys = Grant.getSystemAdmin();
 		try {
@@ -198,5 +185,5 @@ public class DemoTests {
 			AppLog.error("Failure:" + e.getMessage(), e, sys);
 			fail(e.getMessage());
 		}
-	}*/
+	}
 }

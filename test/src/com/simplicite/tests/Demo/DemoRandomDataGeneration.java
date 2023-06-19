@@ -16,16 +16,17 @@ import org.junit.Test;
 public class DemoRandomDataGeneration {
 	@Test
 	public void generateData() {
-		generateOrders();
+		// ZZZ Disabled by default to avoid being processed when importing the module with unt tests processing
+		// generateOrders(100);
 	}
 
-	private void generateOrders() {
+	private void generateOrders(int n) {
 		Grant g = Grant.getSystemAdmin();
 		ObjectDB ord = null;
 		try {
 			ord = g.getIsolatedObject("DemoOrder");
 
-			for (int i = 0; i < 100; i++) {
+			for (int i = 0; i < n; i++) {
 				ord.resetValues();
 				ord.setFieldValue("demoOrdDate", getRandomDateInLastNDays(90));
 				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
@@ -43,12 +44,12 @@ public class DemoRandomDataGeneration {
 		}
 	}
 
-	private static String getRandomStatus(ObjectField f){
+	private static String getRandomStatus(ObjectField f) {
 		String[] codes = f.getList().getCodes(true);
 		return codes[Tool.randomInt(0, codes.length - 1)];
 	}
 
-	private static String getRandomDateInLastNDays(int n){
+	private static String getRandomDateInLastNDays(int n) {
 		return Tool.shiftDays(Tool.getCurrentDate(), Tool.randomInt(-n, 0));
 	}
 
