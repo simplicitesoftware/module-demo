@@ -20,7 +20,7 @@ public class DemoRandomDataGeneration {
 		// generateOrders(100);
 	}
 
-	private void generateOrders(int n) {
+	protected void generateOrders(int n) {
 		Grant g = Grant.getSystemAdmin();
 		ObjectDB ord = null;
 		try {

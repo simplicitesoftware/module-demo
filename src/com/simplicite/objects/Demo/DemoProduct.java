@@ -39,39 +39,41 @@ public class DemoProduct extends ObjectDB {
 	public void initAction(Action action) {
 		if ("DEMO_INCSTOCK".equals(action.getName())) {
 			ObjectField f = action.getConfirmField(getGrant().getLang(), INCREMENT_FIELDNAME);
-			if (f!=null) f.setDefaultValue(String.valueOf(DEFAULT_INCREMENT));
+			if (f!=null) {
+				String def = String.valueOf(DEFAULT_INCREMENT);
+				f.setDefaultValue(def);
+			}
 		}
 	}
 
 	/** Action: increase stock */
 	@BusinessObjectAction
 	public String increaseStock(Map<String, String> params) {
-		int q = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
-		if (q > 0) {
+		int inc = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
+		if (inc > 0) {
 			ObjectField s = getField(STOCK_FIELDNAME);
-			s.setValue(s.getInt(0) + q);
+			s.setValue(s.getInt(0) + inc);
 			save();
 			// Log
 			AppLog.log("DEMO_INFO", getClass(), "increaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 			// User message
 			return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
 		} else {
-			return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + q);
+			return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + inc);
 		}
 	}
 
 	/** Action: decrease stock */
 	@BusinessObjectAction
 	public String decreaseStock() {
-		// Decrease stock
-		int q = getIntParameter("QUANTITY", 0);
+		int dec = getIntParameter("QUANTITY", 0);
 		ObjectField s = getField(STOCK_FIELDNAME);
-		s.setValue(s.getInt() - q);
+		s.setValue(s.getInt() - dec);
 		save();
 		// Log
 		AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 		// User message
-		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + q);
+		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + dec);
 	}
 
 	/** Action method: send product data in an email */
@@ -103,12 +105,12 @@ public class DemoProduct extends ObjectDB {
 	@BusinessObjectPublication
 	public Object printCatalog(PrintTemplate pt) {
 		try {
-			DocxTool d = new DocxTool();
-			d.newDocument();
-			d.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue(REFERENCE_FIELDNAME) + ")");
-			d.addParagraph(getFieldValue("demoPrdDescription"));
-			d.addHTML(getFieldValue("demoPrdDocumentation"));
-			return d.toByteArray();
+			DocxTool dt = new DocxTool();
+			dt.newDocument();
+			dt.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue(REFERENCE_FIELDNAME) + ")");
+			dt.addParagraph(getFieldValue("demoPrdDescription"));
+			dt.addHTML(getFieldValue("demoPrdDocumentation"));
+			return dt.toByteArray();
 		} catch (Exception e) {
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();
@@ -135,11 +137,11 @@ public class DemoProduct extends ObjectDB {
 			try {
 				ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
 				prd.setValues(prd.search().get(0), true);
-				ObjectField s = prd.getField(STOCK_FIELDNAME);
-				int n = s.getInt(0);
+				ObjectField f = prd.getField(STOCK_FIELDNAME);
+				int n = f.getInt(0);
 				prd.setParameter("QUANTITY", 10);
 				prd.invokeAction("DEMO_DECSTOCK");
-				assertEquals((long)n - 10, s.getInt(0));
+				assertEquals((long)n - 10, f.getInt(0));
 			} catch (Exception e) {
 				fail(e.getMessage());
 			}
@@ -149,9 +151,9 @@ public class DemoProduct extends ObjectDB {
 	/** Hook override: launch JUnit tests classes */
 	@Override
 	public String unitTests() {
-		JUnitTool t = new JUnitTool(getGrant());
+		JUnitTool jut = new JUnitTool(getGrant());
 		return
-			t.run("com.simplicite.tests.Demo.DemoTests") + // Shared code unit tests class
-			t.run(DemoProductTest.class); // Nested test class
+			jut.run("com.simplicite.tests.Demo.DemoTests") + // Shared code unit tests class
+			jut.run(DemoProductTest.class); // Nested test class
 	}
 }
