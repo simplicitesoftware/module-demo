@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-06-22 17:33:09</usr_last_logon>
+		<usr_last_logon>2023-09-11 09:58:25</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
@@ -3362,7 +3362,7 @@ try {
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>SLIDE</fld_rendering>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
