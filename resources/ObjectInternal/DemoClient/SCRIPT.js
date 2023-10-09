@@ -35,11 +35,11 @@ var DemoClient = DemoClient || (function() {
 				} catch(el) {
 					console.error(el);
 				}
-			}
+			};
 		} catch(e) {
 			console.error(e.message);
 		} finally {
-			cbk && cbk();
+			if (cbk) cbk();
 		}
 	};
 
@@ -51,5 +51,5 @@ var DemoClient = DemoClient || (function() {
 				onload: _map
 			});
 		}
-	}
+	};
 })();

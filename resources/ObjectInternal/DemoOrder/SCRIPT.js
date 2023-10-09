@@ -15,7 +15,7 @@ var DemoOrder = DemoOrder || (function() {
 		} catch(e) {
 			console.error(e.message);
 		} finally {
-			cbk && cbk();
+			if (cbk) cbk();
 		}
 	};
 })();

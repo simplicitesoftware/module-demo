@@ -98,7 +98,7 @@ function selSup() {
 }
 
 function selPrd() {
-	prd.item = $(this).data("item")
+	prd.item = $(this).data("item");
 	$("#DemoPlaceNewOrder-prd").find("p").removeClass("sel");
 	$("#DemoPlaceNewOrder-prd_" + prd.item.row_id).addClass("sel");
 	$("#DemoPlaceNewOrder-selprd").empty()
