@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-10-06 13:39:36</usr_last_logon>
+		<usr_last_logon>2023-10-11 22:49:26</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -445,6 +445,15 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -3545,14 +3554,14 @@ try {
 	<data>
 		<fld_name>demoPrdDescription</fld_name>
 		<fld_dbname>prd_description</fld_dbname>
-		<fld_visible>2</fld_visible>
-		<fld_updatable>2</fld_updatable>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>C</fld_sort>
-		<fld_more>1</fld_more>
+		<fld_more>0</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum>0</fld_listsum>
 		<fld_exportable>1</fld_exportable>
@@ -3563,7 +3572,7 @@ try {
 		<fld_copy>1</fld_copy>
 		<fld_size>1000000</fld_size>
 		<fld_minsize/>
-		<fld_precision>50</fld_precision>
+		<fld_precision>hf=10</fld_precision>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
@@ -3602,7 +3611,7 @@ try {
 		<fld_copy>1</fld_copy>
 		<fld_size>1000000</fld_size>
 		<fld_minsize/>
-		<fld_precision>w=80 h=10</fld_precision>
+		<fld_precision>hf=15</fld_precision>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>1</fld_indexable>
@@ -3616,6 +3625,84 @@ try {
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Product documentation]]></fld_comment>
+		<fld_classification/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
+	</data>
+	<data>
+		<fld_name>demoPrdEan13</fld_name>
+		<fld_dbname>demo_prd_ean13</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>1</fld_listmore>
+		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
+		<fld_tray/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code>EAN13</fld_type_id.flt_code>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>13</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering>SCAN</fld_rendering>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[EAN13 code]]></fld_comment>
+		<fld_classification/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
+	</data>
+	<data>
+		<fld_name>demoPrdEan13Image</fld_name>
+		<fld_dbname>demo_prd_ean13_image</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>0</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research/>
+		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>1</fld_listmore>
+		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
+		<fld_tray/>
+		<fld_type>20</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>11</fld_size>
+		<fld_minsize/>
+		<fld_precision>75</fld_precision>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[EAN13 code image]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
@@ -4979,8 +5066,22 @@ try {
       <div class="field" data-field="demoPrdType"></div>
     </div>
   </div>
-  <div class="field" data-field="demoPrdDescription"></div>
-  <div class="field" data-field="demoPrdPicture"></div>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="field" data-field="demoPrdDescription"></div>
+    </div>
+    <div class="col-sm-5">
+      <div class="field" data-field="demoPrdPicture"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="field" data-field="demoPrdEan13"></div>
+    </div>
+    <div class="col-sm-5">
+      <div class="field" data-field="demoPrdEan13Image"></div>
+    </div>
+  </div>
 </div>]]></ofa_ui>
 		<ofa_icon>img/color/box</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -8978,6 +9079,70 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdEan13</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>250</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdEan13Image</obf_field_id.fld_name>
+		<obf_field_id.fld_type>20</obf_field_id.fld_type>
+		<obf_order>260</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdStock</obf_field_id.fld_name>
 		<obf_field_id.fld_type>1</obf_field_id.fld_type>
 		<obf_order>300</obf_order>
@@ -11821,6 +11986,15 @@ is still in pending state]]></cst_desc>
 	<data>
 		<din_name>B-demoPrdBrochure</din_name>
 		<din_field_id.fld_name>demoPrdBrochure</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<din_name>B-demoPrdEan13Image</din_name>
+		<din_field_id.fld_name>demoPrdEan13Image</din_field_id.fld_name>
 		<din_path/>
 		<din_min/>
 		<din_max/>
@@ -15382,6 +15556,30 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdEan13</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>EAN 13 barcode</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdEan13Image</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>EAN 13 barcode image</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdIncrement</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Increment quantity?</tsl_value>
@@ -16141,6 +16339,30 @@ is still in pending state]]></cst_desc>
 		<tsl_id.fld_name>demoPrdDocumentation</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Documentation</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdEan13</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code barre EAN 13</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdEan13Image</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Image du code barre EAN 13</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -18294,6 +18516,13 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-demoPrdEan13Image</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-demo prd ean 13image</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
 		<tsl_id.din_name>B-demoPrdPicture</tsl_id.din_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>B-demo prd picture</tsl_value>
@@ -18318,6 +18547,13 @@ is still in pending state]]></cst_desc>
 		<tsl_id.din_name>B-demoPrdBrochure</tsl_id.din_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Brochure produit</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-demoPrdEan13Image</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-demo prd ean 13image</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -18517,7 +18753,7 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<dt_name>Demo-data</dt_name>
 		<dt_file>data/Demo-data.zip</dt_file>
-		<dt_desc><![CDATA[Demo test data]]></dt_desc>
+		<dt_desc><![CDATA[Created by module's data export on 2023-10-11 23:05:30]]></dt_desc>
 	</data>
 </object>
 </simplicite>

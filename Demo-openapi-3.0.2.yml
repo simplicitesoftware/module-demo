@@ -122,8 +122,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -342,8 +342,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdQuantity:
@@ -383,9 +383,15 @@ components:
         demoPrdDocumentation:
           description: Product documentation
           type: string
+        demoPrdEan13:
+          description: EAN13 code
+          type: string
         demoPrdOnlineDoc:
           description: Online product documentation URL
           type: string
+        demoPrdEan13Image:
+          description: EAN13 code image
+          type: object
         demoPrdSupId:
           description: Product supplier
           type: string
@@ -449,8 +455,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -536,8 +542,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -579,8 +585,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
@@ -917,8 +923,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -999,8 +1005,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -1674,8 +1680,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -2259,8 +2265,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -3285,8 +3291,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3591,6 +3597,18 @@ paths:
         in: query
         name: demoPrdPicture
         description: Search filter for Product picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdEan13
+        description: Search filter for EAN13 code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdEan13Image
+        description: Search filter for EAN13 code image
         required: false
       - schema:
           type: integer

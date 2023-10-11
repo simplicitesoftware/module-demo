@@ -17,6 +17,7 @@ import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
 import com.simplicite.util.annotations.BusinessObjectAction;
 import com.simplicite.util.annotations.BusinessObjectPublication;
+import com.simplicite.util.tools.BarcodeTool;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.MailTool;
 import com.simplicite.util.tools.JUnitTool;
@@ -115,6 +116,14 @@ public class DemoProduct extends ObjectDB {
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			return e.getMessage();
 		}
+	}
+
+	@Override
+	public String preSave() {
+		ObjectField ean13 = getField("demoPrdEan13");
+		if (!ean13.isEmpty() /*&& (isNew() || ean13.hasChanged())*/)
+			getField("demoPrdEan13Image").setDocument(this, ean13.getValue() + ".png", BarcodeTool.ean13Image(ean13.getValue()));
+		return null;
 	}
 
 	/** Hook override: custom short label */
