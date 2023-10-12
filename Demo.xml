@@ -3630,7 +3630,7 @@ try {
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>C</fld_sort>
-		<fld_more>0</fld_more>
+		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum/>
 		<fld_exportable>1</fld_exportable>
@@ -3669,7 +3669,7 @@ try {
 		<fld_research/>
 		<fld_researchreq/>
 		<fld_sort>C</fld_sort>
-		<fld_more>0</fld_more>
+		<fld_more>1</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum/>
 		<fld_exportable>1</fld_exportable>
