@@ -120,9 +120,13 @@ public class DemoProduct extends ObjectDB {
 
 	@Override
 	public String preSave() {
+		// Manage the EAN13 image
 		ObjectField ean13 = getField("demoPrdEan13");
-		if (!ean13.isEmpty() /*&& (isNew() || ean13.hasChanged())*/)
-			getField("demoPrdEan13Image").setDocument(this, ean13.getValue() + ".png", BarcodeTool.ean13Image(ean13.getValue()));
+		ObjectField ean13Img = getField("demoPrdEan13Image");
+		if (ean13.isEmpty())
+			ean13Img.setValue(""); // Remove image if EAN13 is empty
+		else if (isNew() || ean13.hasChanged())
+			ean13Img.setDocument(this, ean13.getValue() + ".png", BarcodeTool.ean13Image(ean13.getValue())); // (Re)generate image if ENA13 has changed
 		return null;
 	}
 
