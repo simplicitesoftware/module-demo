@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-10-16 10:18:21</usr_last_logon>
+		<usr_last_logon>2023-10-27 14:33:05</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -445,6 +445,15 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
+		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -2841,6 +2850,45 @@ try {
 		<fld_incrementsyntax/>
 	</data>
 	<data>
+		<fld_name>demoCtcPicture</fld_name>
+		<fld_dbname>demo_ctc_picture</fld_dbname>
+		<fld_visible>2</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research/>
+		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
+		<fld_tray/>
+		<fld_type>20</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>11</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering>PICTE</fld_rendering>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
+	</data>
+	<data>
 		<fld_name>demoCtcPriority</fld_name>
 		<fld_dbname>ctc_priority</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -4871,11 +4919,14 @@ try {
 		<ofa_title>0</ofa_title>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-4">
       <div class="field" data-field="demoCtcMessages"></div>
     </div>
     <div class="col-sm-4">
       <div class="field" data-field="demoCtcFile"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="field" data-field="demoCtcPicture"></div>
     </div>
   </div>
   <div class="field" data-field="demoCtcComments"></div>
@@ -7310,9 +7361,41 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoCtcPicture</obf_field_id.fld_name>
+		<obf_field_id.fld_type>20</obf_field_id.fld_type>
+		<obf_order>420</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoContact-4</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCtcMessages</obf_field_id.fld_name>
 		<obf_field_id.fld_type>21</obf_field_id.fld_type>
-		<obf_order>420</obf_order>
+		<obf_order>490</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -11975,6 +12058,15 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<din_name>B-demoCtcPicture</din_name>
+		<din_field_id.fld_name>demoCtcPicture</din_field_id.fld_name>
+		<din_path/>
+		<din_min/>
+		<din_max/>
+		<din_grant>0</din_grant>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<din_name>B-demoPrdBrochure</din_name>
 		<din_field_id.fld_name>demoPrdBrochure</din_field_id.fld_name>
 		<din_path/>
@@ -15307,6 +15399,18 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoCtcPicture</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Picture</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoCtcPriority</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Priority</tsl_value>
@@ -16090,6 +16194,18 @@ is still in pending state]]></cst_desc>
 		<tsl_id.fld_name>demoCtcOrdId</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Commande</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoCtcPicture</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Photo</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -18500,6 +18616,13 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-demoCtcPicture</tsl_id.din_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-demo ctc picture</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
 		<tsl_id.din_name>B-demoPrdBrochure</tsl_id.din_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Product brochure</tsl_value>
@@ -18531,6 +18654,13 @@ is still in pending state]]></cst_desc>
 		<tsl_id.din_name>B-demoCtcFile</tsl_id.din_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>B-demoCtcFile</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeDocIndex>B</tsl_typeDocIndex>
+		<tsl_id.din_name>B-demoCtcPicture</tsl_id.din_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-demo ctc picture</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
