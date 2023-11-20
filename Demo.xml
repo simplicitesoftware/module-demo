@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-10-27 14:33:05</usr_last_logon>
+		<usr_last_logon>2023-11-20 11:16:07</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -3692,7 +3692,7 @@ try {
 		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
-		<fld_indexable>0</fld_indexable>
+		<fld_indexable>1</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
