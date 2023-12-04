@@ -7,7 +7,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
-  <version>5-SNAPSHOT</version>
+  <version>6-SNAPSHOT</version>
   <artifactId>Demo</artifactId>
   <name>Demo</name>
   <description>Simplicite module: Demo</description>
@@ -19,7 +19,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <maven.compiler.target>11</maven.compiler.target>
     <sonar.projectKey>simplicite-modules-Demo</sonar.projectKey>
     <sonar.projectName>Demo</sonar.projectName>
-    <sonar.projectVersion>5</sonar.projectVersion>
+    <sonar.projectVersion>6</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
     <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>

@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Demo</mdl_name>
-		<mdl_version>5</mdl_version>
+		<mdl_version>6</mdl_version>
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
