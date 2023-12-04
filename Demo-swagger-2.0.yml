@@ -1350,8 +1350,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -2207,8 +2207,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcType
         description: Search filter for Contact type
@@ -2488,6 +2488,11 @@ paths:
       - in: query
         name: demoPrdAvailable
         description: Search filter for Available product?
+        type: boolean
+        required: false
+      - in: query
+        name: demoPrdFeatured
+        description: Search filter for Featured product?
         type: boolean
         required: false
       - in: query
@@ -3286,8 +3291,8 @@ definitions:
         type: string
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoOrdQuantity:
@@ -3363,6 +3368,9 @@ definitions:
       demoPrdStock:
         description: Current stock for product
         type: integer
+      demoPrdFeatured:
+        description: Featured product?
+        type: boolean
       row_id:
         description: Unique technical row ID
         type: string
@@ -3399,8 +3407,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcType:
         description: Contact type
         type: string

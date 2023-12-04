@@ -342,8 +342,8 @@ components:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoOrdQuantity:
@@ -419,6 +419,9 @@ components:
         demoPrdStock:
           description: Current stock for product
           type: integer
+        demoPrdFeatured:
+          description: Featured product?
+          type: boolean
         row_id:
           description: Unique technical row ID
           type: string
@@ -455,8 +458,8 @@ components:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         demoCtcType:
           description: Contact type
           type: string
@@ -2274,8 +2277,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -3300,8 +3303,8 @@ paths:
           type: string
           enum:
           - O
-          - P
           - C
+          - P
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3636,6 +3639,12 @@ paths:
         in: query
         name: demoPrdAvailable
         description: Search filter for Available product?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdFeatured
+        description: Search filter for Featured product?
         required: false
       - schema:
           type: string

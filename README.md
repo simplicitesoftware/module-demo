@@ -341,6 +341,7 @@ Its reference is unique per supplier.
 | `demoPrdStock`                                               | int(11)                                  | yes      | yes       |          | Current stock for product                                                        |
 | `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
+| `demoPrdFeatured`                                            | boolean                                  | yes      | yes       |          | Featured product?                                                                |
 | `demoPrdDocumentation`                                       | html(1000000)                            |          | yes       |          | Product documentation                                                            |
 | `demoPrdBrochure`                                            | document                                 |          | yes       |          | Product brochure                                                                 |
 | `demoPrdOnlineDoc`                                           | url(255)                                 |          | yes       |          | Online product documentation URL                                                 |
@@ -417,6 +418,12 @@ His address is geolocalized using GoogleMaps&reg; API.
 * `ProductSelect`: Selected supplier's product selection activity
 * `OrderCreate`: Order creation form activity
 * `End`: End activity
+
+`DemoCarousel` external object definition
+-----------------------------------------
+
+Featured products carousel
+
 
 `DemoCatalog` external object definition
 ----------------------------------------
