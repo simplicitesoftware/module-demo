@@ -216,8 +216,8 @@ try {
 	</data>
 	<data>
 		<viw_name>DemoUserHome</viw_name>
-		<viw_ui><![CDATA[<div>
-	<div class="area" data-area="1:="></div><div class="row">
+		<viw_ui><![CDATA[<div class="area" data-area="1:="></div>
+<div class="row">
 	<div class="area col-sm-12" data-area="2,3:="></div>
 </div>]]></viw_ui>
 		<viw_order>120</viw_order>
@@ -225,7 +225,7 @@ try {
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>demo_alt</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>ThemeEtat</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 </object>
@@ -327,7 +327,7 @@ try {
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2022-11-14 23:03:22</usr_logout>
+		<usr_logout>2023-11-27 16:19:47</usr_logout>
 		<usr_last_logon>2023-04-20 12:32:58</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
@@ -398,7 +398,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2023-03-06 13:46:35</usr_last_logon>
+		<usr_last_logon>2023-12-03 17:03:14</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2023-11-20 11:16:07</usr_last_logon>
+		<usr_last_logon>2023-12-05 13:25:06</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -445,15 +445,6 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -3747,6 +3738,45 @@ try {
 		<fld_incrementsyntax/>
 	</data>
 	<data>
+		<fld_name>demoPrdFeatured</fld_name>
+		<fld_dbname>demo_prd_featured</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>1</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>1</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
+		<fld_tray/>
+		<fld_type>8</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>1</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault><![CDATA[0]]></fld_dfault>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering>SLIDE</fld_rendering>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[Featured product?]]></fld_comment>
+		<fld_classification/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
+	</data>
+	<data>
 		<fld_name>demoPrdIncrement</fld_name>
 		<fld_dbname/>
 		<fld_visible>3</fld_visible>
@@ -4570,6 +4600,26 @@ try {
 		<sty_image>icon/tick</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<sty_object>DemoProduct</sty_object>
+		<sty_field>demoPrdFeatured</sty_field>
+		<sty_value>0</sty_value>
+		<sty_vmin/>
+		<sty_vmax/>
+		<sty_style/>
+		<sty_image>icon/blank</sty_image>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<sty_object>DemoProduct</sty_object>
+		<sty_field>demoPrdFeatured</sty_field>
+		<sty_value>1</sty_value>
+		<sty_vmin/>
+		<sty_vmax/>
+		<sty_style/>
+		<sty_image>icon/color/eyeon</sty_image>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>Template</name>
@@ -4668,7 +4718,7 @@ try {
     <div class="area col-sm-7" data-area="2"></div>
     <div class="area col-sm-5">
       <div class="row">
-        <div class="area col-sm-12" data-area="3"></div>
+        <div class="area col-sm-12 compact" data-area="3"></div>
       </div>
       <div class="row">
         <div class="area col-sm-12" data-area="4"></div>
@@ -5132,14 +5182,28 @@ try {
 		<ofa_name>DemoProduct-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_ui><![CDATA[<div class="row">
-  <div class="col-sm-6">
-    <div class="field" data-field="demoPrdStock"></div>
-    <div class="field" data-field="demoPrdUnitPrice"></div>
+		<ofa_ui><![CDATA[<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoPrdStock"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="action" data-action="DEMO_INCSTOCK"></div>
+    </div>
   </div>
-  <div class="col-sm-6">
-    <div class="action" data-action="DEMO_INCSTOCK"></div>
-    <div class="field" data-field="demoPrdAvailable"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoPrdUnitPrice"></div>
+    </div>
+    <div class="col-sm-6"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="demoPrdAvailable"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="demoPrdFeatured"></div>
+    </div>
   </div>
 </div>]]></ofa_ui>
 		<ofa_icon>img/color/money</ofa_icon>
@@ -9304,6 +9368,38 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[1]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoProduct-3</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProduct</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdFeatured</obf_field_id.fld_name>
+		<obf_field_id.fld_type>8</obf_field_id.fld_type>
+		<obf_order>330</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault><![CDATA[0]]></obf_field_id.fld_dfault>
 		<obf_fld_exportable/>
 		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
 		<obf_fld_uk/>
@@ -15675,6 +15771,18 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdFeatured</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Featured</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdIncrement</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Increment quantity?</tsl_value>
@@ -16470,6 +16578,18 @@ is still in pending state]]></cst_desc>
 		<tsl_id.fld_name>demoPrdEan13Image</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Image du code barre EAN 13</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>demoPrdFeatured</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Demo prd featured</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>

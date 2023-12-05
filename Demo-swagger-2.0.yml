@@ -2491,6 +2491,11 @@ paths:
         type: boolean
         required: false
       - in: query
+        name: demoPrdFeatured
+        description: Search filter for Featured product?
+        type: boolean
+        required: false
+      - in: query
         name: demoPrdDocumentation
         description: Search filter for Product documentation
         type: string
@@ -3363,6 +3368,9 @@ definitions:
       demoPrdStock:
         description: Current stock for product
         type: integer
+      demoPrdFeatured:
+        description: Featured product?
+        type: boolean
       row_id:
         description: Unique technical row ID
         type: string

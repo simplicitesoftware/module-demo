@@ -419,6 +419,9 @@ components:
         demoPrdStock:
           description: Current stock for product
           type: integer
+        demoPrdFeatured:
+          description: Featured product?
+          type: boolean
         row_id:
           description: Unique technical row ID
           type: string
@@ -3636,6 +3639,12 @@ paths:
         in: query
         name: demoPrdAvailable
         description: Search filter for Available product?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: demoPrdFeatured
+        description: Search filter for Featured product?
         required: false
       - schema:
           type: string
