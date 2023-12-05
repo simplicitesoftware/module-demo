@@ -339,7 +339,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2023-04-20 12:32:58</usr_last_logon>
+		<usr_last_logon>2023-12-04 23:21:57</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -409,7 +409,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2023-03-06 13:46:35</usr_last_logon>
+		<usr_last_logon>2023-12-05 08:57:00</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -665,7 +665,7 @@ mvn verify sonar:sonar
 		<shc_name>DemoDoc</shc_name>
 		<shc_url><![CDATA[[EXPR:HTMLPage.getExternalObjectURL("MDViewer", "doc=DEMO")]]]></shc_url>
 		<shc_target>_blank</shc_target>
-		<shc_order>140</shc_order>
+		<shc_order>190</shc_order>
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>fas/book</shc_icon>
 		<shc_keys/>
