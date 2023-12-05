@@ -144,6 +144,41 @@ A contact can be linked or not a an order of the selelcted client
     - `D` Shipped status
     - `C` Canceled status
 
+`DemoContactHistoric` business object definition
+------------------------------------------------
+
+**Contact** object history, tracks changes on:
+
+- Status
+- Type and/or subtype
+- Comments
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
+| `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
+| `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
+
+### Lists
+
+* `DEMO_CTC_STATUS`
+    - `O` Open
+    - `C` Closed
+    - `P` Processing
+* `DEMO_CTC_TYPE`
+    - `INF` Information
+    - `REQ` Request
+    - `CMP` Complaint
+    - `OTH` Other
+* `DEMO_CTC_SUBTYPE`
+    - `EMPTY` 
+
 `DemoOrder` business object definition
 --------------------------------------
 
@@ -206,41 +241,6 @@ An order is for one single product.
     - `TABLET` Tablet
     - `SMARTPHONE` Smartphone
     - `OTHER` Other
-
-`DemoContactHistoric` business object definition
-------------------------------------------------
-
-**Contact** object history, tracks changes on:
-
-- Status
-- Type and/or subtype
-- Comments
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
-| `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
-| `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
-| `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
-
-### Lists
-
-* `DEMO_CTC_STATUS`
-    - `O` Open
-    - `C` Closed
-    - `P` Processing
-* `DEMO_CTC_TYPE`
-    - `INF` Information
-    - `REQ` Request
-    - `CMP` Complaint
-    - `OTH` Other
-* `DEMO_CTC_SUBTYPE`
-    - `EMPTY` 
 
 `DemoOrderHistoric` business object definition
 ----------------------------------------------
