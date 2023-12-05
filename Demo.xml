@@ -15689,7 +15689,7 @@ is still in pending state]]></cst_desc>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdAvailable</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Available</tsl_value>
+		<tsl_value>Available?</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -15773,7 +15773,7 @@ is still in pending state]]></cst_desc>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdFeatured</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Featured</tsl_value>
+		<tsl_value>Featured?</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -16589,7 +16589,7 @@ is still in pending state]]></cst_desc>
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>demoPrdFeatured</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Demo prd featured</tsl_value>
+		<tsl_value>En vedette ?</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
