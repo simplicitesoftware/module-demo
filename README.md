@@ -437,6 +437,12 @@ Custom JSON web service for getting the product catalog
 Counters
 
 
+`DemoNews` external object definition
+-------------------------------------
+
+News scroller
+
+
 `DemoOrderAgenda` external object definition
 --------------------------------------------
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1201" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1209" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -201,7 +201,15 @@ mvn verify sonar:sonar
 	<data>
 		<viw_name>DemoAdminHome</viw_name>
 		<viw_type>H</viw_type>
-		<viw_ui><![CDATA[<div><div class="area" data-area="1"></div><div class="area" data-area="4"></div>
+		<viw_ui><![CDATA[<div class="area" data-area="1"></div>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="area" data-area="4"></div>
+	</div>
+	<div class="col-sm-6">
+		<div class="area" data-area="5"></div>
+	</div>
+</div>
 <div class="row">
 	<div class="col-sm-6">
 		<div class="area" data-area="2"></div>
@@ -209,7 +217,7 @@ mvn verify sonar:sonar
 	<div class="col-sm-6">
 		<div class="area" data-area="3"></div>
 	</div>
-</div></div>]]></viw_ui>
+</div>]]></viw_ui>
 		<viw_order>110</viw_order>
 		<viw_icon>demo</viw_icon>
 		<viw_disp_id.dis_code/>
@@ -5302,7 +5310,7 @@ mvn verify sonar:sonar
   "name": "DemoProduct",
   "descriptionField": "demoPrdDescription",
   "filters": {"demoPrdFeatured": true},
-  "height": "15rem"
+  "height": "18rem"
 }]]></obe_settings>
 		<obe_comment><![CDATA[Featured products carousel]]></obe_comment>
 		<obe_help/>
@@ -5360,6 +5368,29 @@ mvn verify sonar:sonar
 		<obe_class>com.simplicite.webapp.web.widgets.CountersExternalObject</obe_class>
 		<obe_script_id/>
 		<obe_icon>fas/cash-register</obe_icon>
+		<obe_permalink/>
+		<obe_widget>1</obe_widget>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obe_name>DemoNews</obe_name>
+		<obe_type>E</obe_type>
+		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
+		<obe_url/>
+		<obe_settings><![CDATA[{
+  "subTitleField": "nws_date",
+  "imageField": "nws_image",
+  "titleField": "nws_title",
+  "name": "WebNews",
+  "cardWidth": "15rem",
+  "rowClasses": "row-horizontal",
+  "descriptionField": "nws_description"
+}]]></obe_settings>
+		<obe_comment><![CDATA[News scroller]]></obe_comment>
+		<obe_help/>
+		<obe_class>com.simplicite.webapp.web.widgets.CardsExternalObject</obe_class>
+		<obe_script_id/>
+		<obe_icon/>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -11623,6 +11654,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>WebNews-L</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obo_type>O</grt_function_id.fct_object_id.obo_type>
+		<grt_function_id.fct_object_id.obo_name>WebNews</grt_function_id.fct_object_id.obo_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<grt_group_id.grp_name>DEMO_PUBLIC</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DEMO_PRD_R</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obo_type>O</grt_function_id.fct_object_id.obo_type>
@@ -11759,6 +11800,16 @@ state transition to _shipped_ status.]]></act_comment>
 		<grt_function_id.fct_object_id.obo_name>UserFilters</grt_function_id.fct_object_id.obo_name>
 		<grt_function_id.fct_action_id.act_name>UserFilter-Year</grt_function_id.fct_action_id.act_name>
 		<grt_function_id.fct_function>A</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
+		<grt_function_id.fct_name>WebNews-L</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obo_type>O</grt_function_id.fct_object_id.obo_type>
+		<grt_function_id.fct_object_id.obo_name>WebNews</grt_function_id.fct_object_id.obo_name>
+		<grt_function_id.fct_action_id.act_name/>
+		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -14460,7 +14511,7 @@ is still in pending state]]></cst_desc>
 		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
 		<vwi_position>4</vwi_position>
 		<vwi_type>E</vwi_type>
-		<vwi_title>1</vwi_title>
+		<vwi_title>0</vwi_title>
 		<vwi_research_id.rch_name/>
 		<vwi_research_id.rch_object_id.obo_name/>
 		<vwi_research_id.rch_user_id.usr_login/>
@@ -14468,6 +14519,26 @@ is still in pending state]]></cst_desc>
 		<vwi_lov_code/>
 		<vwi_show/>
 		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoCarousel")]]]></vwi_url>
+		<vwi_image/>
+		<vwi_subview_id.viw_name/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
+		<vwi_position>5</vwi_position>
+		<vwi_type>E</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoNews")]]]></vwi_url>
 		<vwi_image/>
 		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
@@ -19453,6 +19524,36 @@ is still in pending state]]></cst_desc>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>News</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Informations</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateShortcut</name>
@@ -22291,6 +22392,23 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
 		<prm_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
 				<name>PrintTemplate</name>
 				<data>
 					<prt_name>DemoOrder-XML</prt_name>
@@ -22568,6 +22686,23 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoCarousel</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
 				</data>
 			</object>
 		</prm_object>
