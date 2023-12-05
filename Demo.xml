@@ -5485,7 +5485,7 @@ A contact can be linked or not a an order of the selelcted client
 (when linked to an order the `demoCtcOrdId` field is set).]]></obo_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
-		<obo_exportorder/>
+		<obo_exportorder>-1</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -5632,7 +5632,7 @@ product orders placed by clients.
 An order is for one single product.]]></obo_comment>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
-		<obo_exportorder/>
+		<obo_exportorder>-1</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -22059,8 +22059,8 @@ is still in pending state]]></cst_desc>
 	<data>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<dt_name>Demo-data</dt_name>
-		<dt_file>data/Demo-data.zip</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2023-10-12 17:32:01]]></dt_desc>
+		<dt_file>data/Demo-data.xml</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2023-12-05 17:05:43]]></dt_desc>
 	</data>
 </object>
 <object>
