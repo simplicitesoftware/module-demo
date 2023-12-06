@@ -422,36 +422,69 @@ His address is geolocalized using GoogleMaps&reg; API.
 `DemoCarousel` external object definition
 -----------------------------------------
 
-Featured products carousel
+Products carousel
+-----------------
+
+This UI widget is only displaying **featured** products.
 
 
 `DemoCatalog` external object definition
 ----------------------------------------
 
-Custom JSON web service for getting the product catalog
+Products catalog page
+---------------------
+
+This UI widget/page is only displaying **available** products.
+
+
+`DemoCatalogAPI` external object definition
+-------------------------------------------
+
+Custom catalog REST web service
+-------------------------------
+
+This custom API returns the available products only.
 
 
 `DemoCounters` external object definition
 -----------------------------------------
 
 Counters
+--------
+
+This UI widget is displaying various counters.
 
 
 `DemoNews` external object definition
 -------------------------------------
 
-News scroller
+News widget
+-----------
+
+This UI widget is diplaying the standard platform news data.
+
+Note that the instance name `web_WebNews` is on purpose. Using this instance name applies
+the date-based, language-based and rights filterings.
 
 
 `DemoOrderAgenda` external object definition
 --------------------------------------------
 
-Order delivery agenda
+Custom order delivery agenda
+-----------------------------
+
+This custom UI page is didicated to display orders on an agenda.
+
+Note that the same features are also available using the
+standard object calendar.
 
 
 `DemoPlaceNewOrder` external object definition
 ----------------------------------------------
 
-Place new order internal page
+Custom place new order page
+---------------------------
+
+This custom Ui page is dedicated to place orders using simplified UX.
 
 

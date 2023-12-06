@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1209" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1215" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -5312,7 +5312,10 @@ mvn verify sonar:sonar
   "filters": {"demoPrdFeatured": true},
   "height": "18rem"
 }]]></obe_settings>
-		<obe_comment><![CDATA[Featured products carousel]]></obe_comment>
+		<obe_comment><![CDATA[Products carousel
+-----------------
+
+This UI widget is only displaying **featured** products.]]></obe_comment>
 		<obe_help/>
 		<obe_class>com.simplicite.webapp.web.widgets.CarouselExternalObject</obe_class>
 		<obe_script_id/>
@@ -5326,14 +5329,45 @@ mvn verify sonar:sonar
 		<obe_type>E</obe_type>
 		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
 		<obe_url/>
-		<obe_settings/>
-		<obe_comment><![CDATA[Custom JSON web service for getting the product catalog]]></obe_comment>
+		<obe_settings><![CDATA[{
+  "subTitleField": "demoPrdReference",
+  "cardHeight": "20rem",
+  "imageField": "demoPrdPicture",
+  "titleField": "demoPrdName",
+  "cardImgWidth": "75%",
+  "name": "DemoProduct",
+  "cardClasses": "text-center",
+  "descriptionField": "demoPrdDescription",
+  "filters": {"demoPrdAvailable": true}
+}]]></obe_settings>
+		<obe_comment><![CDATA[Products catalog page
+---------------------
+
+This UI widget/page is only displaying **available** products.]]></obe_comment>
 		<obe_help/>
-		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoCatalog.java</obe_script_id>
-		<obe_icon>box</obe_icon>
+		<obe_class>com.simplicite.webapp.web.widgets.CardsExternalObject</obe_class>
+		<obe_script_id/>
+		<obe_icon>icon/color/box</obe_icon>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obe_name>DemoCatalogAPI</obe_name>
+		<obe_type>E</obe_type>
+		<obe_nature>com_simplicite_webapp_services_RESTServiceExternalObject</obe_nature>
+		<obe_url/>
+		<obe_settings/>
+		<obe_comment><![CDATA[Custom catalog REST web service
+-------------------------------
+
+This custom API returns the available products only.]]></obe_comment>
+		<obe_help/>
+		<obe_class/>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoCatalogAPI.java</obe_script_id>
+		<obe_icon>box</obe_icon>
+		<obe_permalink/>
+		<obe_widget>0</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -5363,7 +5397,10 @@ mvn verify sonar:sonar
     "icon": "fas/comments"
   }
 ]}]]></obe_settings>
-		<obe_comment><![CDATA[Counters]]></obe_comment>
+		<obe_comment><![CDATA[Counters
+--------
+
+This UI widget is displaying various counters.]]></obe_comment>
 		<obe_help/>
 		<obe_class>com.simplicite.webapp.web.widgets.CountersExternalObject</obe_class>
 		<obe_script_id/>
@@ -5381,12 +5418,19 @@ mvn verify sonar:sonar
   "subTitleField": "nws_date",
   "imageField": "nws_image",
   "titleField": "nws_title",
+  "onclick": false,
   "name": "WebNews",
   "cardWidth": "15rem",
   "rowClasses": "row-horizontal",
   "descriptionField": "nws_description"
 }]]></obe_settings>
-		<obe_comment><![CDATA[News scroller]]></obe_comment>
+		<obe_comment><![CDATA[News widget
+-----------
+
+This UI widget is diplaying the standard platform news data.
+
+Note that the instance name `web_WebNews` is on purpose. Using this instance name applies
+the date-based, language-based and rights filterings.]]></obe_comment>
 		<obe_help/>
 		<obe_class>com.simplicite.webapp.web.widgets.CardsExternalObject</obe_class>
 		<obe_script_id/>
@@ -5401,7 +5445,13 @@ mvn verify sonar:sonar
 		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
 		<obe_url/>
 		<obe_settings/>
-		<obe_comment><![CDATA[Order delivery agenda]]></obe_comment>
+		<obe_comment><![CDATA[Custom order delivery agenda
+-----------------------------
+
+This custom UI page is didicated to display orders on an agenda.
+
+Note that the same features are also available using the
+standard object calendar.]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoOrderAgenda.java</obe_script_id>
@@ -5416,7 +5466,10 @@ mvn verify sonar:sonar
 		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
 		<obe_url/>
 		<obe_settings/>
-		<obe_comment><![CDATA[Place new order internal page]]></obe_comment>
+		<obe_comment><![CDATA[Custom place new order page
+---------------------------
+
+This custom Ui page is dedicated to place orders using simplified UX.]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoPlaceNewOrder.java</obe_script_id>
@@ -14414,6 +14467,22 @@ is still in pending state]]></cst_desc>
 		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</map_object>
+		<map_order>70925</map_order>
+		<map_ext>1</map_ext>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
+		<map_object_id.obj_name/>
+		<map_process_id.pcs_name/>
+		<map_object>
+			<object>
 				<name>ObjectInternal</name>
 				<data>
 					<obo_name>RedoLog</obo_name>
@@ -19379,7 +19448,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCatalog</obe_name>
+					<obe_name>DemoCatalogAPI</obe_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -19394,7 +19463,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCatalog</obe_name>
+					<obe_name>DemoCatalogAPI</obe_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -19550,6 +19619,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Informations</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Available products</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produits disponibles</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22309,7 +22408,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCatalog</obe_name>
+					<obe_name>DemoCatalogAPI</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -22395,6 +22494,23 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -22515,7 +22631,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCatalog</obe_name>
+					<obe_name>DemoCatalogAPI</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -22717,6 +22833,23 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
 		<prm_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoClientNew</shc_name>
@@ -22753,7 +22886,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCatalog</obe_name>
+					<obe_name>DemoCatalogAPI</obe_name>
 				</data>
 			</object>
 		</prm_object>
