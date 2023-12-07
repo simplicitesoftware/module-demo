@@ -234,6 +234,7 @@ An order is for one single product.
 * `DEMO_COUNTRY`
     - `FR` France
     - `UK` United Kingdom
+    - `IT` Italy
     - `SP` Spain
 * `DEMO_PRD_TYPE`
     - `LAPTOP` Laptop
@@ -399,6 +400,7 @@ His address is geolocalized using GoogleMaps&reg; API.
 * `DEMO_COUNTRY`
     - `FR` France
     - `UK` United Kingdom
+    - `IT` Italy
     - `SP` Spain
 * `DEMO_CLI_TYPE`
     - `T1` Code T1

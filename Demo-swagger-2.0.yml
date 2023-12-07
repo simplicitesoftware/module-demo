@@ -923,6 +923,7 @@ paths:
         enum:
         - FR
         - UK
+        - IT
         - SP
       - in: query
         name: demoOrdPrdId
@@ -2314,6 +2315,7 @@ paths:
         enum:
         - FR
         - UK
+        - IT
         - SP
       - in: query
         name: demoCliCoords
@@ -3021,6 +3023,7 @@ definitions:
         enum:
         - FR
         - UK
+        - IT
         - SP
       demoCliAddress1:
         description: Customer address (line 1)
@@ -3139,6 +3142,7 @@ definitions:
         enum:
         - FR
         - UK
+        - IT
         - SP
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
