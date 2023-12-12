@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1222" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1225" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -359,7 +359,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2023-12-04 23:21:57</usr_last_logon>
+		<usr_last_logon>2023-12-08 10:27:12</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -5097,6 +5097,10 @@ mvn verify sonar:sonar
       <div class="field" data-field="demoOrdPrdId__demoPrdName"></div>
     </div>
   </div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdPicture"></div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdEan13"></div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdEan13Image"></div>
+  <div class="field" data-field="demoOrdPrdId__demoPrdSupId__demoSupLogo"></div>
   <div class="field" data-field="demoOrdPrdId__demoPrdSupId"></div>
   <div class="row">
     <div class="col-sm-5">
@@ -8713,11 +8717,81 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_visible>4</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research>0</obf_fld_research>
+		<obf_fld_more>0</obf_fld_more>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
+		<obf_joined_id.obf_field_id.fld_name>demoOrdPrdId</obf_joined_id.obf_field_id.fld_name>
+		<obf_joined_id.obf_order>300</obf_joined_id.obf_order>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdEan13</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>335</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>demoOrdPrdId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>DemoProduct</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research>0</obf_fld_research>
 		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
+		<obf_joined_id.obf_field_id.fld_name>demoOrdPrdId</obf_joined_id.obf_field_id.fld_name>
+		<obf_joined_id.obf_order>300</obf_joined_id.obf_order>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdEan13Image</obf_field_id.fld_name>
+		<obf_field_id.fld_type>20</obf_field_id.fld_type>
+		<obf_order>336</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>demoOrdPrdId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>DemoProduct</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible>4</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research>0</obf_fld_research>
+		<obf_fld_more>1</obf_fld_more>
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
@@ -12638,7 +12712,7 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<din_name>B-demoPrdPicture</din_name>
-		<din_field_id.fld_name/>
+		<din_field_id.fld_name>demoPrdPicture</din_field_id.fld_name>
 		<din_path/>
 		<din_min/>
 		<din_max/>
@@ -21435,6 +21509,26 @@ is still in pending state]]></cst_desc>
 		<tsl_placeholder/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdEan13Image</obf_field_id.fld_name>
+					<obf_order>336</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Product EAN 13 barcode image</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateLink</name>
@@ -22343,8 +22437,8 @@ is still in pending state]]></cst_desc>
 	<data>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<dt_name>Demo-data</dt_name>
-		<dt_file>data/Demo-data.zip</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2023-12-07 21:56:53]]></dt_desc>
+		<dt_file>data/Demo-data.xml</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2023-12-12 17:13:22]]></dt_desc>
 	</data>
 </object>
 <object>

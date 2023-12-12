@@ -72,8 +72,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -99,6 +99,9 @@ components:
           - TABLET
           - SMARTPHONE
           - OTHER
+        demoOrdPrdId__demoPrdEan13:
+          description: EAN13 code
+          type: string
         demoOrdPrdId__demoPrdUnitPrice:
           description: Unit price of product
           type: number
@@ -170,6 +173,9 @@ components:
         demoOrdPrdId:
           description: Order product
           type: string
+        demoOrdPrdId__demoPrdEan13Image:
+          description: EAN13 code image
+          type: object
         demoOrdVAT:
           description: VAT for order
           type: number
@@ -191,8 +197,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -1767,8 +1773,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -1808,6 +1814,18 @@ paths:
         in: query
         name: demoOrdPrdId__demoPrdPicture
         description: Search filter for Product picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdEan13
+        description: Search filter for EAN13 code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdPrdId__demoPrdEan13Image
+        description: Search filter for EAN13 code image
         required: false
       - schema:
           type: string
@@ -3431,8 +3449,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoCliCountry
         description: Search filter for Customer country

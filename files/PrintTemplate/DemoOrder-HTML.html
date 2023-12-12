@@ -19,6 +19,7 @@
 				<th>Date</th>
 				<th>Status</th>
 				<th>Product</th>
+				<th>Product EAN</th>
 				<th>Supplier</th>
 				<th>Total</th>
 			</tr>
@@ -29,6 +30,7 @@
 				<td>[VALUE:demoOrdDate]</td>
 				<td>[VALUE:demoOrdStatus]</td>
 				<td>[VALUE:demoOrdPrdId.demoPrdReference]<br/><span class="small">[VALUE:demoOrdPrdId.demoPrdName]</span></td>
+				<td><img style="width: 128px;" src="[VALUE:demoOrdPrdId.demoPrdEan13Image]"/></td>
 				<td>[VALUE:demoOrdPrdId.demoPrdSupId.demoSupName]</td>
 				<td style="text-align: right;">[VALUE:demoOrdTotal]</td>
 			</tr>
