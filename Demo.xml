@@ -433,7 +433,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2023-12-19 13:26:00</usr_logout>
-		<usr_last_logon>2024-01-04 17:07:39</usr_last_logon>
+		<usr_last_logon>2024-01-05 14:17:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -445,15 +445,6 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -13627,6 +13618,19 @@ is still in pending state]]></cst_desc>
 		<ctb_caption>L</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<ctb_name>DemoProduct-T1</ctb_name>
+		<ctb_object_id.obo_name>DemoProduct</ctb_object_id.obo_name>
+		<ctb_function>S</ctb_function>
+		<ctb_grantable>0</ctb_grantable>
+		<ctb_visible>1</ctb_visible>
+		<ctb_fixedcolors>1</ctb_fixedcolors>
+		<ctb_precision>0</ctb_precision>
+		<ctb_subtotal>0</ctb_subtotal>
+		<ctb_totalcolor>#E4E4E4</ctb_totalcolor>
+		<ctb_caption/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>CrosstabAxis</name>
@@ -13909,6 +13913,50 @@ is still in pending state]]></cst_desc>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
 		<cax_objfield_id.obf_field_id.fld_type>2</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
+	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoProduct-T1</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoProduct</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>220</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoPrdType</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>C</cax_type>
+		<cax_order>1</cax_order>
+		<cax_function/>
+		<cax_chart/>
+		<cax_precision/>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>7</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
+	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoProduct-T1</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoProduct</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>120</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoSupName</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>L</cax_type>
+		<cax_order>1</cax_order>
+		<cax_function/>
+		<cax_chart/>
+		<cax_precision/>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>3</cax_objfield_id.obf_field_id.fld_type>
 		<cax_dategroup/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<cax_unitscale/>
@@ -15144,6 +15192,13 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<tsl_typeCrosstab>C</tsl_typeCrosstab>
+		<tsl_id.ctb_name>DemoProduct-T1</tsl_id.ctb_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Products by suppliers and types</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeCrosstab>C</tsl_typeCrosstab>
 		<tsl_id.ctb_name>DemoOrder-TC1</tsl_id.ctb_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Activité</tsl_value>
@@ -15168,6 +15223,13 @@ is still in pending state]]></cst_desc>
 		<tsl_id.ctb_name>DemoOrder-TC4</tsl_id.ctb_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>CA par pays</tsl_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeCrosstab>C</tsl_typeCrosstab>
+		<tsl_id.ctb_name>DemoProduct-T1</tsl_id.ctb_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produits par fournisseurs et types</tsl_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>

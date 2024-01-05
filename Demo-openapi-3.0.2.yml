@@ -3546,6 +3546,20 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - DemoProduct-T1
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        required: false
+      - schema:
+          type: string
         in: query
         name: demoPrdSupId
         description: Search filter for Product supplier

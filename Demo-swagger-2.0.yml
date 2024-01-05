@@ -2410,6 +2410,18 @@ paths:
         type: string
         required: false
       - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - DemoProduct-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
         name: demoPrdSupId
         description: Search filter for Product supplier
         type: string
