@@ -923,8 +923,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -2325,8 +2325,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -2420,6 +2420,18 @@ paths:
         name: _indexsearch
         description: Index search query
         type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - DemoProduct-T1
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
         required: false
       - in: query
         name: demoPrdSupId
@@ -3033,8 +3045,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3158,8 +3170,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object

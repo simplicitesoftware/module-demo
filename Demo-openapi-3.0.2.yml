@@ -72,8 +72,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -197,8 +197,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -1773,8 +1773,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -3449,8 +3449,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoCliCountry
         description: Search filter for Customer country
@@ -3565,6 +3565,20 @@ paths:
         in: query
         name: _indexsearch
         description: Index search query
+        required: false
+      - schema:
+          type: string
+          enum:
+          - DemoProduct-T1
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
         required: false
       - schema:
           type: string

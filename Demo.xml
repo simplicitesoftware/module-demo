@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1230" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1235" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -13339,6 +13339,18 @@ is still in pending state]]></cst_desc>
 		<ctb_caption>L</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<ctb_name>DemoProduct-T1</ctb_name>
+		<ctb_object_id.obo_name>DemoProduct</ctb_object_id.obo_name>
+		<ctb_function>S</ctb_function>
+		<ctb_visible>1</ctb_visible>
+		<ctb_fixedcolors>1</ctb_fixedcolors>
+		<ctb_precision>0</ctb_precision>
+		<ctb_subtotal>0</ctb_subtotal>
+		<ctb_totalcolor>#E4E4E4</ctb_totalcolor>
+		<ctb_caption/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>CrosstabAxis</name>
@@ -13605,6 +13617,48 @@ is still in pending state]]></cst_desc>
 		<cax_function>S</cax_function>
 		<cax_chart>pie</cax_chart>
 		<cax_precision>2</cax_precision>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
+	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoProduct-T1</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoProduct</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>220</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoPrdType</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>C</cax_type>
+		<cax_order>1</cax_order>
+		<cax_function/>
+		<cax_chart/>
+		<cax_precision/>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
+	</data>
+	<data>
+		<cax_crosstab_id.ctb_name>DemoProduct-T1</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>DemoProduct</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>120</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>demoSupName</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>L</cax_type>
+		<cax_order>1</cax_order>
+		<cax_function/>
+		<cax_chart/>
+		<cax_precision/>
 		<cax_subtotal>0</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
@@ -15171,6 +15225,34 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>CA par pays</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Crosstab</name>
+				<data>
+					<ctb_name>DemoProduct-T1</ctb_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Products by suppliers and types</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Crosstab</name>
+				<data>
+					<ctb_name>DemoProduct-T1</ctb_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produits par fournisseurs et types</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
