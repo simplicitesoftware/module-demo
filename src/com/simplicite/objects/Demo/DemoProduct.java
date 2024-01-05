@@ -50,32 +50,40 @@ public class DemoProduct extends ObjectDB {
 	/** Action: increase stock */
 	@BusinessObjectAction
 	public String increaseStock(Map<String, String> params) {
+		try {
 		int inc = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
-		if (inc > 0) {
-			ObjectField s = getField(STOCK_FIELDNAME);
-			s.setValue(s.getInt(0) + inc);
-			save();
-			// Log
-			AppLog.log("DEMO_INFO", getClass(), "increaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
-			// User message
-			return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
-		} else {
-			return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + inc);
+			if (inc > 0) {
+				ObjectField s = getField(STOCK_FIELDNAME);
+				s.setValue(s.getInt(0) + inc);
+				getTool().validateAndSave();
+				// Log
+				AppLog.log("DEMO_INFO", getClass(), "increaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
+				// User message
+				return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
+			} else {
+				return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + inc);
+			}
+		} catch (Exception e) {
+			return Message.formatSimpleError(e);
 		}
 	}
 
 	/** Action: decrease stock */
 	@BusinessObjectAction
 	public String decreaseStock() {
-		int dec = getIntParameter("QUANTITY", 0);
-		ObjectField s = getField(STOCK_FIELDNAME);
-		s.setValue(s.getInt() - dec);
-		save();
-		// Log
-		AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
-		// User message
-		return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + dec);
-	}
+		try {
+			int dec = getIntParameter("QUANTITY", 0);
+			ObjectField s = getField(STOCK_FIELDNAME);
+			s.setValue(s.getInt() - dec);
+			getTool().validateAndSave();
+			// Log
+			AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
+			// User message
+			return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + dec);
+		} catch (Exception e) {
+			return Message.formatSimpleError(e);
+		}
+}
 
 	/** Action method: send product data in an email */
 	@BusinessObjectAction
