@@ -42,7 +42,7 @@ public class DemoTests {
 			Map<String, String> params = new HashMap<>();
 			params.put(DemoProduct.INCREMENT_FIELDNAME, String.valueOf(DemoProduct.DEFAULT_INCREMENT));
 			String res = prd.invokeAction("DEMO_INCSTOCK", params);
-			AppLog.info("Increment acton result: " + res, sys);
+			AppLog.info("Increment action result: " + res, sys);
 
 			assertEquals(n + DemoProduct.DEFAULT_INCREMENT, s.getInt(0));
 		} catch (Exception e) {
