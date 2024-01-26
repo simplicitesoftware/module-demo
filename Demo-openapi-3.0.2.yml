@@ -72,8 +72,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -126,8 +126,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -197,8 +197,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -350,8 +350,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdQuantity:
@@ -466,8 +466,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcType:
           description: Contact type
           type: string
@@ -553,8 +553,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -596,8 +596,8 @@ components:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoCtcPicture:
@@ -937,8 +937,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -1019,8 +1019,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -1700,8 +1700,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -1773,8 +1773,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -2298,8 +2298,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -3324,8 +3324,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -3449,8 +3449,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoCliCountry
         description: Search filter for Customer country

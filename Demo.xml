@@ -458,7 +458,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-01-05 17:30:01</usr_last_logon>
+		<usr_last_logon>2024-01-05 18:11:09</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -470,6 +470,12 @@ mvn verify sonar:sonar
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -3932,8 +3938,8 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdReference</fld_name>
 		<fld_dbname>prd_code</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
-		<fld_required>1</fld_required>
+		<fld_updatable>0</fld_updatable>
+		<fld_required>0</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -3946,7 +3952,7 @@ mvn verify sonar:sonar
 		<fld_type>15</fld_type>
 		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
+		<fld_copy>0</fld_copy>
 		<fld_size>10</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
@@ -3956,7 +3962,7 @@ mvn verify sonar:sonar
 		<fld_autocomp>1</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
-		<fld_case>U</fld_case>
+		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
 		<fld_speech/>
@@ -3965,7 +3971,7 @@ mvn verify sonar:sonar
 		<fld_comment><![CDATA[Product reference]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<fld_incrementsyntax/>
+		<fld_incrementsyntax>REF&lt;000&gt;</fld_incrementsyntax>
 	</data>
 	<data>
 		<fld_name>demoPrdStock</fld_name>
@@ -14394,23 +14400,6 @@ is still in pending state]]></cst_desc>
 				</data>
 			</object>
 		</res_object>
-		<res_type>ICO</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>FAVICON</res_code>
-		<res_cached>0</res_cached>
-		<res_file/>
-		<res_image>resources/Disposition/default/FAVICON.png</res_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>Disposition</name>
-				<data>
-					<dis_code>default</dis_code>
-				</data>
-			</object>
-		</res_object>
 		<res_type>IMG</res_type>
 		<res_lang>ANY</res_lang>
 		<res_code>demo-module</res_code>
@@ -17315,7 +17304,7 @@ is still in pending state]]></cst_desc>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
-		<tsl_placeholder/>
+		<tsl_placeholder>Auto-incremented</tsl_placeholder>
 		<tsl_listhelp/>
 		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -17334,7 +17323,7 @@ is still in pending state]]></cst_desc>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
-		<tsl_placeholder/>
+		<tsl_placeholder>Auto-incrémenté</tsl_placeholder>
 		<tsl_listhelp/>
 		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>

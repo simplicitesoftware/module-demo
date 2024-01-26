@@ -222,8 +222,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -291,8 +291,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -861,8 +861,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -923,8 +923,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -1361,8 +1361,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -2218,8 +2218,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcType
         description: Search filter for Contact type
@@ -2325,8 +2325,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3045,8 +3045,8 @@ definitions:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3099,8 +3099,8 @@ definitions:
         type: string
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoOrdCliId__demoCliCode:
@@ -3170,8 +3170,8 @@ definitions:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object
@@ -3323,8 +3323,8 @@ definitions:
         type: string
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoOrdQuantity:
@@ -3439,8 +3439,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcType:
         description: Contact type
         type: string
@@ -3526,8 +3526,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcDatetime:
         description: Contcat date and time
         type: string
@@ -3569,8 +3569,8 @@ definitions:
         type: string
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoCtcPicture:
