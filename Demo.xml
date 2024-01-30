@@ -110,7 +110,7 @@ mvn verify sonar:sonar
 	<action>upsert</action>
 	<data>
 		<thm_name>demo</thm_name>
-		<thm_logo_id/>
+		<thm_logo_id>files/Theme/demo/logo.svg</thm_logo_id>
 		<thm_logo_invert>0</thm_logo_invert>
 		<thm_logo2_id>files/Theme/demo/logo2.png</thm_logo2_id>
 		<thm_favicon_id>files/Theme/demo/favicon.png</thm_favicon_id>
@@ -458,7 +458,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-01-05 18:11:09</usr_last_logon>
+		<usr_last_logon>2024-01-29 10:47:47</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>

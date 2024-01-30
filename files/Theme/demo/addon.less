@@ -3,6 +3,8 @@
 @theme-mediumgrey: #f0f0f0;
 @theme-darkgrey: #e0e0e0;
 
+@outline-color: rgba(0, 123, 255, .25);
+
 .content-wrapper {
 	border: solid .0625rem @theme-lightgrey;
 	box-shadow: inset .125rem .125rem 1rem @theme-mediumgrey;
@@ -12,13 +14,50 @@
 }
 #menu {
 	padding-top: .75rem;
+	.search-bar {
+		border-radius: .25rem;
+		input {
+			border: none 0;
+			&:focus {
+				background-color: @theme-lightgrey;
+				outline: solid .0625rem @outline-color;
+			}
+		}
+	}
 }
 ul.main-menu > li > a {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.header .btn-header:hover, .header .btn-header:focus {
-	background: @theme-lightgrey;
+.header {
+	.btn-header:hover, .btn-header:focus {
+		background: @theme-lightgrey;
+	}
+	.main-nav-toggle, .btn-shortcut {
+		color: #C0C0C0;
+		&:hover {
+			background: #D0D0D0;
+			color: #000000;
+			border-radius: 50%;
+		}
+	}
+	.btn-shortcut {
+		padding: 0 5px;
+		&:hover, &:focus {
+			background: #D0D0D0;
+			color: #000000;
+			border-radius: 50%;
+		}
+	}
+	.searchbox {
+		&.focus {
+			input {
+				background-color: @theme-lightgrey;
+				outline: solid .0625rem @outline-color;
+			}
+		}
+	}
+
 }
 .btn-default, .btn-secondary, .btn-plus, .btn-icon, .btn-extend {
 	background: transparent;
@@ -80,7 +119,10 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	border-radius: 0 1rem 1rem 0;
 }
 .table {
-	--bs-table-striped-bg: transparent;
+	--bs-table-hover-bg: rgba(0, 0, 0, 0.11);
+	--bs-table-striped-bg: rgba(0, 0, 0, 0.025);
+}
+.table {
 	border: none 0;
 	td.actions .btn-action {
 		background-color: transparent;
@@ -98,6 +140,9 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	td {
 		padding: 1rem;
 	}
+}
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+	background-color: inherit;
 }
 .form-control, .select2-container--bootstrap .select2-selection {
 	background: none;
