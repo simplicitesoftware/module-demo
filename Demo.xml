@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1233" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1230" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -124,7 +124,7 @@ mvn verify sonar:sonar
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox>#f7f7f7</thm_searchbox>
 		<thm_active/>
-		<thm_font>Roboto:ital,wght@0,400;0,700;1,400;1,700</thm_font>
+		<thm_font>Roboto</thm_font>
 		<thm_iconset/>
 		<thm_code_editor_theme/>
 		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
@@ -158,7 +158,7 @@ mvn verify sonar:sonar
 		<thm_addon>files/Theme/demo_alt/addon.less</thm_addon>
 		<thm_searchbox>#ebf2f7</thm_searchbox>
 		<thm_active/>
-		<thm_font>Inter</thm_font>
+		<thm_font>Comfortaa</thm_font>
 		<thm_iconset/>
 		<thm_code_editor_theme/>
 		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
@@ -353,7 +353,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2024-01-05 17:32:26</usr_last_logon>
+		<usr_last_logon>2024-01-30 17:45:18</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -423,7 +423,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2024-01-26 16:25:59</usr_last_logon>
+		<usr_last_logon>2024-01-30 17:47:32</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -470,28 +470,6 @@ mvn verify sonar:sonar
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
-		<usp_value><![CDATA[[{
- "dt": "2024-01-26 16:26:00",
- "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
- "id": "u9qkfu64fmazpxfrzj6yuwn7ki74cwxhtvvqej4g09cq2r7u8i7u0ds4cfylbn7r1698680226522"
-}]]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>HISTORY DemoUserHome</usp_param_id.sys_code>
-		<usp_value><![CDATA[[]]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
