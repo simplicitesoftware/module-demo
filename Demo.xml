@@ -124,7 +124,7 @@ mvn verify sonar:sonar
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox>#f7f7f7</thm_searchbox>
 		<thm_active/>
-		<thm_font>Roboto</thm_font>
+		<thm_font>Varela Round</thm_font>
 		<thm_iconset/>
 		<thm_code_editor_theme/>
 		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
@@ -353,7 +353,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2024-01-30 19:44:15</usr_last_logon>
+		<usr_last_logon>2024-02-02 15:13:50</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -423,7 +423,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2024-01-30 19:44:22</usr_last_logon>
+		<usr_last_logon>2024-02-02 15:18:06</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -10572,7 +10572,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_job_depth/>
 		<act_method/>
 		<act_script/>
-		<act_url><![CDATA[javascript:DemoClient.map()]]></act_url>
+		<act_url><![CDATA[javascript:obj.map()]]></act_url>
 		<act_image>img/color/map</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
@@ -14549,9 +14549,9 @@ is still in pending state]]></cst_desc>
 		</res_object>
 		<res_type>JS</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>SCRIPT</res_code>
+		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectInternal/DemoClient/SCRIPT.js</res_file>
+		<res_file>resources/ObjectInternal/DemoClient/CLASS.js</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -14583,9 +14583,9 @@ is still in pending state]]></cst_desc>
 		</res_object>
 		<res_type>JS</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>SCRIPT</res_code>
+		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectInternal/DemoOrder/SCRIPT.js</res_file>
+		<res_file>resources/ObjectInternal/DemoOrder/CLASS.js</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
