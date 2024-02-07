@@ -83,7 +83,7 @@ public class DemoProduct extends ObjectDB {
 		} catch (Exception e) {
 			return Message.formatSimpleError(e);
 		}
-}
+	}
 
 	/** Action method: send product data in an email */
 	@BusinessObjectAction

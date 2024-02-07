@@ -242,7 +242,7 @@ mvn verify sonar:sonar
 		<viw_name>DemoUserHome</viw_name>
 		<viw_type>H</viw_type>
 		<viw_ui><![CDATA[<div>
-	<div class="area" data-area="1:="></div><div class="row">
+	<div class="area" data-area="1:="></div>
 	<div class="area col-sm-12" data-area="2,3:="></div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
