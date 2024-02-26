@@ -38,7 +38,6 @@ function getCli() {
 	$ui.getUIObject("DemoClient", "pno_DemoClient", function(c) {
 		cli = c;
 		cli.item = null;
-		console.log(cli);
 		cli.search(function() {
 			const div = $("<div/>");
 			for (const item of cli.list) {
