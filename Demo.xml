@@ -124,7 +124,8 @@ mvn verify sonar:sonar
 		<thm_addon>files/Theme/demo/addon.less</thm_addon>
 		<thm_searchbox>#f7f7f7</thm_searchbox>
 		<thm_active/>
-		<thm_font>Varela Round</thm_font>
+		<thm_font>Raleway</thm_font>
+		<thm_font_mono/>
 		<thm_iconset/>
 		<thm_code_editor_theme/>
 		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
@@ -158,7 +159,8 @@ mvn verify sonar:sonar
 		<thm_addon>files/Theme/demo_alt/addon.less</thm_addon>
 		<thm_searchbox>#ebf2f7</thm_searchbox>
 		<thm_active/>
-		<thm_font>Comfortaa</thm_font>
+		<thm_font>Ubuntu</thm_font>
+		<thm_font_mono/>
 		<thm_iconset/>
 		<thm_code_editor_theme/>
 		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
@@ -353,7 +355,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2024-02-02 15:13:50</usr_last_logon>
+		<usr_last_logon>2024-02-15 17:43:43</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -423,7 +425,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2024-02-02 15:18:06</usr_last_logon>
+		<usr_last_logon>2024-02-15 17:45:52</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -458,7 +460,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-01-30 22:57:41</usr_last_logon>
+		<usr_last_logon>2024-02-19 10:23:21</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -5427,7 +5429,8 @@ This UI widget is displaying various counters.]]></obe_comment>
 		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
 		<obe_url/>
 		<obe_settings><![CDATA[{
-  "subTitleField": "nws_date",
+  "subTitleField": "nws_human_readable_date",
+  "instance": "web_WebNews",
   "imageField": "nws_image",
   "titleField": "nws_title",
   "onclick": false,
@@ -13264,7 +13267,7 @@ is still in pending state]]></cst_desc>
 		<ctb_fixedcolors>1</ctb_fixedcolors>
 		<ctb_precision>0</ctb_precision>
 		<ctb_subtotal>0</ctb_subtotal>
-		<ctb_totalcolor>#CFE2F3</ctb_totalcolor>
+		<ctb_totalcolor>#D9D2E9</ctb_totalcolor>
 		<ctb_caption>B</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13276,7 +13279,7 @@ is still in pending state]]></cst_desc>
 		<ctb_fixedcolors>1</ctb_fixedcolors>
 		<ctb_precision>2</ctb_precision>
 		<ctb_subtotal>1</ctb_subtotal>
-		<ctb_totalcolor>#E4E4E4</ctb_totalcolor>
+		<ctb_totalcolor>#C9DAF8</ctb_totalcolor>
 		<ctb_caption>B</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13300,7 +13303,7 @@ is still in pending state]]></cst_desc>
 		<ctb_fixedcolors>1</ctb_fixedcolors>
 		<ctb_precision>0</ctb_precision>
 		<ctb_subtotal>0</ctb_subtotal>
-		<ctb_totalcolor>#D9D2E9</ctb_totalcolor>
+		<ctb_totalcolor>#F4CCCC</ctb_totalcolor>
 		<ctb_caption>L</ctb_caption>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -13872,8 +13875,7 @@ is still in pending state]]></cst_desc>
  "zcontrol": "no",
  "zstotal": "no",
  "ztable": "no",
- "zgraph": "bar",
- "zstcolor": "#D9D2E9"
+ "zgraph": "bar"
 }]]></vwi_url>
 		<vwi_image/>
 		<vwi_subview_id.viw_name/>
@@ -13895,15 +13897,13 @@ is still in pending state]]></cst_desc>
 		<vwi_lov_code/>
 		<vwi_show>DemoOrder</vwi_show>
 		<vwi_url><![CDATA[{
- "zpalette": "Sea",
  "zwidth": "100%",
  "zheight": "350px",
  "zcaption": "no",
  "zcontrol": "no",
  "zstotal": "no",
  "ztable": "no",
- "zgraph": "pie",
- "zstcolor": "#E4E4E4"
+ "zgraph": "pie"
 }]]></vwi_url>
 		<vwi_image/>
 		<vwi_subview_id.viw_name/>
