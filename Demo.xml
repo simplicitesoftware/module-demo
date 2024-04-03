@@ -10599,7 +10599,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/times</act_image>
+		<act_image>fas/check-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10622,7 +10622,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/chevron-right</act_image>
+		<act_image>fas/play-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10645,7 +10645,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/times</act_image>
+		<act_image>fas/check-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
