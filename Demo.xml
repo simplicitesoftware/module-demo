@@ -10535,7 +10535,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url><![CDATA[javascript:DemoClient.map(obj)]]></act_url>
-		<act_image>img/color/map</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10547,6 +10546,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>img/color/map</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-O-C</act_name>
@@ -10556,7 +10556,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/check-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10568,6 +10567,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/check-circle</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-O-P</act_name>
@@ -10577,7 +10577,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/play-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10589,6 +10588,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/play-circle</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_CTC_STATUS-P-C</act_name>
@@ -10598,7 +10598,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/check-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10610,6 +10609,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/check-circle</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_DECSTOCK</act_name>
@@ -10619,7 +10619,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method>decreaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/minus</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10632,6 +10631,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>2</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/minus</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
@@ -10641,7 +10641,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method>increaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/plus</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10654,6 +10653,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>1</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/plus</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-C</act_name>
@@ -10663,7 +10663,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_red</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10675,6 +10674,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>2</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_red</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-P-V</act_name>
@@ -10684,7 +10684,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_orange</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10696,6 +10695,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>1</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_orange</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-V-C</act_name>
@@ -10705,7 +10705,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_red</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10717,6 +10716,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>2</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_red</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_ORD_STATUS-V-D</act_name>
@@ -10726,7 +10726,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_green</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10738,6 +10737,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>1</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_green</act_image>
 	</data>
 	<data>
 		<act_name>DEMO_PRD_EMAIL</act_name>
@@ -10747,7 +10747,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method>sendEmail</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/envelope</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10759,6 +10758,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>3</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/envelope</act_image>
 	</data>
 </object>
 <object>
