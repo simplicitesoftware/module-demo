@@ -355,7 +355,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2022-11-14 23:03:22</usr_logout>
-		<usr_last_logon>2024-02-15 17:43:43</usr_last_logon>
+		<usr_last_logon>2024-04-05 11:59:00</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -10576,7 +10576,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url><![CDATA[javascript:obj.map()]]></act_url>
-		<act_image>img/color/map</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10588,6 +10587,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>img/color/map</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10599,7 +10599,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/check-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10611,6 +10610,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/check-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10622,7 +10622,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/play-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10634,6 +10633,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/play-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10645,7 +10645,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/check-circle</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10657,6 +10656,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_order/>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/check-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10668,7 +10668,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_method>decreaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/minus</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10681,6 +10680,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>2</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/minus</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10692,7 +10692,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method>increaseStock</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/plus</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10705,6 +10704,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>1</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/plus</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10716,7 +10716,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_red</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10728,6 +10727,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>2</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_red</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10739,7 +10739,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_orange</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10751,6 +10750,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>1</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_orange</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10762,7 +10762,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_red</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10774,6 +10773,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>2</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_red</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10785,7 +10785,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image>icon/color/btn_green</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10797,6 +10796,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>1</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>icon/color/btn_green</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -10808,7 +10808,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_method>sendEmail</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/envelope</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -10820,6 +10819,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_order>3</act_order>
 		<act_color/>
 		<act_color_bg/>
+		<act_image>fas/envelope</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
