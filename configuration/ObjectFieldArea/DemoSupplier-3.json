@@ -1,8 +1,0 @@
-{
- "ofa_name": "DemoSupplier-3",
- "ofa_position": 3,
- "ofa_title": true,
- "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"demoSupUsrId\"><\/div>\n  <div class=\"field\" data-field=\"demoSupUsrId__usr_login\"><\/div>\n  <div class=\"field\" data-field=\"demoSupComments\"><\/div>\n<\/div>",
- "ofa_icon": "img/color/info_squared",
- "row_module_id__mdl_name": "Demo"
-}

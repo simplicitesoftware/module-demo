@@ -1,7 +1,0 @@
-{
- "atc_alert_id__alt_name": "DemoOrderCancellation",
- "atc_lang": "FRA",
- "atc_subject": "Commande [VALUE:demoOrdNumber] annulée",
- "atc_message": "<p>Bonjour [VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]<\/p>\n<p>Votre commande [VALUE:demoOrdNumber] du [VALUE:demoOrdDate] a été annulée<\/p>",
- "row_module_id__mdl_name": "Demo"
-}

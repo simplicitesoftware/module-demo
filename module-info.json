@@ -2,7 +2,7 @@
     "date": "2024-05-06 16:22:53",
     "name": "Demo",
     "format": "json",
-    "files": ["configuration/**.json"],
+    "files": ["Demo.json"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo.git"}},
     "version": "6",
     "platform": "6.0.10-preview"

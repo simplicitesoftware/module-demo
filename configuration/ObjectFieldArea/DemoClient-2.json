@@ -1,8 +1,0 @@
-{
- "ofa_name": "DemoClient-2",
- "ofa_position": 2,
- "ofa_title": false,
- "ofa_ui": "<div class=\"row\">\n  <div class=\"col-sm-8\">\n    <div class=\"field\" data-field=\"demoCliAddress1\"><\/div>\n    <div class=\"field\" data-field=\"demoCliAddress2\"><\/div>\n    <div class=\"row\">\n      <div class=\"col-sm-4\">\n        <div class=\"field\" data-field=\"demoCliZipCode\"><\/div>\n      <\/div>\n      <div class=\"col-sm-4\">\n        <div class=\"field\" data-field=\"demoCliCity\"><\/div>\n      <\/div>\n      <div class=\"col-sm-4\">\n        <div class=\"field\" data-field=\"demoCliCountry\"><\/div>\n      <\/div>\n    <\/div>\n    <div class=\"field\" data-field=\"demoCliCoords\"><\/div>\n  <\/div>\n  <div class=\"col-sm-4\">\n    <div class=\"action\" data-action=\"DEMO_CLIENTMAP\"><\/div>\n    <div id=\"client-map\" style=\"display: none; min-height: 300px;\">\n      <iframe frameborder=\"0\" name=\"gmap\" scrolling=\"no\" style=\"width: 100%; height: 100%;\"><\/iframe>\n    <\/div>\n  <\/div>\n<\/div>",
- "ofa_icon": "img/color/map",
- "row_module_id__mdl_name": "Demo"
-}

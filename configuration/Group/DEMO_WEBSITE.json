@@ -1,8 +1,0 @@
-{
- "grp_name": "DEMO_WEBSITE",
- "grp_comment": "Website",
- "grp_type": ["G"],
- "grp_parent_id__grp_name": null,
- "grp_home_id__viw_name": null,
- "row_module_id__mdl_name": "Demo"
-}

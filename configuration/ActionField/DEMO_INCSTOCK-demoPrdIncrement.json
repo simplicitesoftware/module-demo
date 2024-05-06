@@ -1,8 +1,0 @@
-{
- "afd_action_id__act_name": "DEMO_INCSTOCK",
- "afd_field_id__fld_name": "demoPrdIncrement",
- "afd_order": 2,
- "afd_ref_field_id__fld_name": null,
- "afd_ref_object_id__obo_name": null,
- "row_module_id__mdl_name": "Demo"
-}

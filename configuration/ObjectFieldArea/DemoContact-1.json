@@ -1,8 +1,0 @@
-{
- "ofa_name": "DemoContact-1",
- "ofa_position": 1,
- "ofa_title": true,
- "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoCtcDatetime\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoCtcCanal\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoCtcType\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoCtcSubType\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-8\">\n      <div class=\"field\" data-field=\"demoCtcStatus\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoCtcPriority\"><\/div>\n    <\/div>\n  <\/div>\n<\/div>",
- "ofa_icon": "img/color/chat",
- "row_module_id__mdl_name": "Demo"
-}

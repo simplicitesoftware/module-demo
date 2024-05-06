@@ -1,7 +1,0 @@
-{
- "och_object_id__obo_name": "DemoOrder",
- "och_context": ["S"],
- "och_lang": "FRA",
- "och_help": "La meilleure manière de trouver la bonne commande est de chercher de préférence le <u>numéro de commande<\/u>.<br/>Vous pouvez aussi utiser la recherche globale",
- "row_module_id__mdl_name": "Demo"
-}

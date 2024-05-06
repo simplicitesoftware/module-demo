@@ -1,9 +1,0 @@
-{
- "hlp_activity_id__acy_process_id__pcs_name": "DemoOrderCreate",
- "hlp_activity_id__acy_step": "ORDC-200",
- "hlp_activity_id__acy_name": "SupplierSelect",
- "hlp_lang": "FRA",
- "hlp_abstract": "Veuillez choisir un <b>fournisseur<\/b>",
- "hlp_content": null,
- "row_module_id__mdl_name": "Demo"
-}

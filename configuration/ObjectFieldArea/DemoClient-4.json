@@ -1,8 +1,0 @@
-{
- "ofa_name": "DemoClient-4",
- "ofa_position": 4,
- "ofa_title": false,
- "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"demoCliType\"><\/div>\n  <div class=\"field\" data-field=\"demoCliComments\"><\/div>\n<\/div>",
- "ofa_icon": "img/color/info_squared",
- "row_module_id__mdl_name": "Demo"
-}

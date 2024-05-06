@@ -1,8 +1,0 @@
-{
- "viw_name": "DemoAdminHome",
- "viw_type": "H",
- "viw_ui": "<div class=\"area\" data-area=\"1\"><\/div>\n<div class=\"row\">\n\t<div class=\"col-sm-6\">\n\t\t<div class=\"area\" data-area=\"4\"><\/div>\n\t<\/div>\n\t<div class=\"col-sm-6\">\n\t\t<div class=\"area\" data-area=\"5\"><\/div>\n\t<\/div>\n<\/div>\n<div class=\"row\">\n\t<div class=\"col-sm-6\">\n\t\t<div class=\"area\" data-area=\"2\"><\/div>\n\t<\/div>\n\t<div class=\"col-sm-6\">\n\t\t<div class=\"area\" data-area=\"3\"><\/div>\n\t<\/div>\n<\/div>",
- "viw_order": 1,
- "viw_icon": "demo",
- "row_module_id__mdl_name": "Demo"
-}

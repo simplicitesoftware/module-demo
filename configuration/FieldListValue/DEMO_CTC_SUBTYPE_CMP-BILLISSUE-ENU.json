@@ -1,7 +1,0 @@
-{
- "lov_code_id__lov_list_id__lov_name": "DEMO_CTC_SUBTYPE_CMP",
- "lov_code_id__lov_code": "BILLISSUE",
- "lov_lang": "ENU",
- "lov_value": "Billing issue",
- "row_module_id__mdl_name": "Demo"
-}

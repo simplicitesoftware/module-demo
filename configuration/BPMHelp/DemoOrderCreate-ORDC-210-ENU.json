@@ -1,9 +1,0 @@
-{
- "hlp_activity_id__acy_process_id__pcs_name": "DemoOrderCreate",
- "hlp_activity_id__acy_step": "ORDC-210",
- "hlp_activity_id__acy_name": "ProductSelect",
- "hlp_lang": "ENU",
- "hlp_abstract": "Please select a <b>product<\/b>",
- "hlp_content": null,
- "row_module_id__mdl_name": "Demo"
-}

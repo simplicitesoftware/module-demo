@@ -1,8 +1,0 @@
-{
- "tpl_name": "DemoProduct-EMAIL-ENU",
- "tpl_ui": "<h3>Hello,<\/h3>\n<p>The stock is low for product: \n<b>[VALUE:demoPrdReference]<\/b> = [VALUE:demoPrdStock]\n<br/>Please order new ones!<\/p>",
- "tpl_min": null,
- "tpl_image": null,
- "tpl_grid": null,
- "row_module_id__mdl_name": "Demo"
-}

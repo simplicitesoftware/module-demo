@@ -1,9 +1,0 @@
-{
- "lov_name": "TEXT",
- "lov_code": "ERR_DEMO_INVALID_PHONE_NUMBER",
- "lov_lang": "ENU",
- "lov_value": "This phone number is not valid",
- "lov_order_by": 1,
- "lov_event_id__lev_code": null,
- "row_module_id__mdl_name": "Demo"
-}

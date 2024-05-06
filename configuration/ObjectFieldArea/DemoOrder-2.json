@@ -1,8 +1,0 @@
-{
- "ofa_name": "DemoOrder-2",
- "ofa_position": 2,
- "ofa_title": true,
- "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"demoOrdCliId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliCode\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliFirstname\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"demoOrdCliId__demoCliEmail\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliAddress1\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliAddress2\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliZipCode\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliCity\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdCliId__demoCliCountry\"><\/div>\n    <\/div>\n  <\/div>\n<\/div>",
- "ofa_icon": "img/color/view_user",
- "row_module_id__mdl_name": "Demo"
-}

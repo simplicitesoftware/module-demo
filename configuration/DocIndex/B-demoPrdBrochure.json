@@ -1,9 +1,0 @@
-{
- "din_name": "B-demoPrdBrochure",
- "din_field_id__fld_name": "demoPrdBrochure",
- "din_path": null,
- "din_min": null,
- "din_max": null,
- "din_grant": false,
- "row_module_id__mdl_name": "Demo"
-}

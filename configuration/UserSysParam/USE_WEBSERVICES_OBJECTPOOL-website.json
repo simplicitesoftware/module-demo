@@ -1,9 +1,0 @@
-{
- "usp_user_id__usr_login": "website",
- "usp_param_id__sys_code": "USE_WEBSERVICES_OBJECTPOOL",
- "usp_value": "yes",
- "usp_param_id__sys_type": "PRV",
- "usp_param_id__sys_value": "no",
- "usp_param_id__sys_desc": "Use business object pool for the API endpoint ?",
- "row_module_id__mdl_name": "Demo"
-}

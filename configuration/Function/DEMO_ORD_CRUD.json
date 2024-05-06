@@ -1,9 +1,0 @@
-{
- "fct_name": "DEMO_ORD_CRUD",
- "fct_object_id__obo_type": "O",
- "fct_object_id__obo_name": "DemoOrder",
- "fct_function": "CMS",
- "fct_action_id__act_name": null,
- "fct_view_id__viw_name": null,
- "row_module_id__mdl_name": "Demo"
-}

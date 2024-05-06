@@ -1,7 +1,0 @@
-{
- "och_object_id__obo_name": "DemoOrder",
- "och_context": ["L"],
- "och_lang": "ENU",
- "och_help": "Orders are, by default, displayed by descending number",
- "row_module_id__mdl_name": "Demo"
-}

@@ -1,7 +1,0 @@
-{
- "atc_alert_id__alt_name": "DemoOrderCancellation",
- "atc_lang": "ENU",
- "atc_subject": "Order [VALUE:demoOrdNumber] cancelled",
- "atc_message": "<p>Hello [VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]<\/p>\n<p>Your order [VALUE:demoOrdNumber] dated [VALUE:demoOrdDate] has been cancelled<\/p>",
- "row_module_id__mdl_name": "Demo"
-}

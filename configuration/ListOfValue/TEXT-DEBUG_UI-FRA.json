@@ -1,9 +1,0 @@
-{
- "lov_name": "TEXT",
- "lov_code": "DEBUG_UI",
- "lov_lang": "FRA",
- "lov_value": "User interface debug: [1]",
- "lov_order_by": 1,
- "lov_event_id__lev_code": "DCOREUI001",
- "row_module_id__mdl_name": "Demo"
-}

@@ -1,8 +1,0 @@
-{
- "ofa_name": "DemoClient-1",
- "ofa_position": 1,
- "ofa_title": true,
- "ofa_ui": "<div class=\"row\">\n  <div class=\"col-sm-2\">\n    <div class=\"field\" data-field=\"demoCliCode\"><\/div>\n  <\/div>\n  <div class=\"col-sm-5\">\n    <div class=\"field\" data-field=\"demoCliFirstname\"><\/div>\n  <\/div>\n  <div class=\"col-sm-5\">\n    <div class=\"field\" data-field=\"demoCliLastname\"><\/div>\n  <\/div>\n<\/div>",
- "ofa_icon": "img/color/view_user",
- "row_module_id__mdl_name": "Demo"
-}

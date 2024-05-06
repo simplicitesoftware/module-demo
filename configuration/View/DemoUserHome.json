@@ -1,8 +1,0 @@
-{
- "viw_name": "DemoUserHome",
- "viw_type": "H",
- "viw_ui": "<div>\n\t<div class=\"area\" data-area=\"1:=\"><\/div>\n\t<div class=\"area col-sm-12\" data-area=\"2,3:=\"><\/div>\n<\/div>",
- "viw_order": 1,
- "viw_icon": "demo",
- "row_module_id__mdl_name": "Demo"
-}

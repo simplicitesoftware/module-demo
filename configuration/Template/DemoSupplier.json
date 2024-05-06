@@ -1,8 +1,0 @@
-{
- "tpl_name": "DemoSupplier",
- "tpl_ui": "<div>\n  <div class=\"row\">\n    <div class=\"area col-sm-8\" data-area=\"1\"><\/div>\n    <div class=\"area col-sm-4\" data-area=\"2\"><\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"area col-sm-12\" data-area=\"3:-\"><\/div>\n  <\/div>\n<\/div>",
- "tpl_min": null,
- "tpl_image": null,
- "tpl_grid": null,
- "row_module_id__mdl_name": "Demo"
-}

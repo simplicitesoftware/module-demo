@@ -1,9 +1,0 @@
-{
- "fct_name": "DEMO_CLI_CRU",
- "fct_object_id__obo_type": "O",
- "fct_object_id__obo_name": "DemoClient",
- "fct_function": "CM",
- "fct_action_id__act_name": null,
- "fct_view_id__viw_name": null,
- "row_module_id__mdl_name": "Demo"
-}
