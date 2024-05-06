@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "DemoSupplier"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "DemoSupplier",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Fournisseur",
+ "tsl_plural_value": "Fournisseurs",
+ "tsl_help": "<p>Ceci est l'aide longue sur le fournisseur<\/p>",
+ "row_module_id__mdl_name": "Demo"
+}

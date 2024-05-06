@@ -1,0 +1,10 @@
+{
+ "lov_name": "DEMO_CTC_STATUS",
+ "row_module_id__mdl_name": "Demo",
+ "lov_model_id__mod_name": "DemoContactStates",
+ "lov_model_id__mod_image": {
+  "path": "files/Model/DemoContactStates.png",
+  "mime": "image/png",
+  "name": "DemoContactStates.png"
+ }
+}

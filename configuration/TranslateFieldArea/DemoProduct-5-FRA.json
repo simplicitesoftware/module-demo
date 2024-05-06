@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ofa_name": "DemoProduct-5"},
+  "icon": "img/system/field_area",
+  "label": "Fields area",
+  "userkeylabel": "DemoProduct-5",
+  "object": "ObjectFieldArea"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Détails",
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,11 @@
+{
+ "lov_list_id__lov_name": "DEMO_CTC_SUBTYPE",
+ "lov_code": "EMPTY",
+ "lov_order_by": 0,
+ "lov_label": null,
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": null,
+ "lov_color_bg": null,
+ "lov_icon": null,
+ "lov_display": ["L"]
+}

@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"act_name": "DEMO_PRD_EMAIL"},
+  "icon": "img/system/action_btn",
+  "label": "Action",
+  "userkeylabel": "DEMO_PRD_EMAIL",
+  "object": "Action"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Send by email",
+ "tsl_simplehelp": null,
+ "row_module_id__mdl_name": "Demo"
+}

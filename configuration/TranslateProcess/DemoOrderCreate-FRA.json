@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"pcs_name": "DemoOrderCreate"},
+  "icon": "img/system/process",
+  "label": "Business process",
+  "userkeylabel": "DemoOrderCreate",
+  "object": "BPMProcess"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Processus nouvelle commande",
+ "row_module_id__mdl_name": "Demo"
+}

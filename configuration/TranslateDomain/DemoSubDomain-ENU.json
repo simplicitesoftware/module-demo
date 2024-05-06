@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"obd_name": "DemoSubDomain"},
+  "icon": "img/system/domain",
+  "label": "Domain",
+  "userkeylabel": "DemoSubDomain",
+  "object": "Domain"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Others",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Demo"
+}

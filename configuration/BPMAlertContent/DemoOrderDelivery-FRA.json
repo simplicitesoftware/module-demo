@@ -1,0 +1,7 @@
+{
+ "atc_alert_id__alt_name": "DemoOrderDelivery",
+ "atc_lang": "FRA",
+ "atc_subject": "Commande [VALUE:demoOrdNumber] envoyée",
+ "atc_message": "<p>Bonjour [VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname],<\/p>\n<p>Votre commande [VALUE:demoOrdNumber] du [VALUE:demoOrdDate] a &eacute;t&eacute; envoy&eacute;e.<\/p>\n<p>Vous allez recevoir rapidement une invitation de calendrier pour la livraison.<\/p>",
+ "row_module_id__mdl_name": "Demo"
+}

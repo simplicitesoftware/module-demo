@@ -1,0 +1,20 @@
+{
+ "vwi_view_id__viw_name": "DemoAdminHome",
+ "vwi_position": 3,
+ "vwi_type": "X",
+ "vwi_title": true,
+ "vwi_research_id__rch_name": null,
+ "vwi_research_id__rch_object_id__obo_name": null,
+ "vwi_research_id__rch_user_id__usr_login": null,
+ "vwi_search_spec": null,
+ "vwi_lov_code": null,
+ "vwi_show": "DemoOrder",
+ "vwi_url": "{\n \"zwidth\": \"100%\",\n \"zheight\": \"350px\",\n \"zcaption\": \"no\",\n \"zcontrol\": \"no\",\n \"zstotal\": \"no\",\n \"ztable\": \"no\",\n \"zgraph\": \"pie\"\n}",
+ "vwi_image": null,
+ "vwi_subview_id__viw_name": null,
+ "vwi_treeview_id__trv_name": null,
+ "vwi_crosstab_id__ctb_name": "DemoOrder-TC1",
+ "vwi_printtmpl_id__prt_name": null,
+ "vwi_printtmpl_id__prt_lang": null,
+ "row_module_id__mdl_name": "Demo"
+}

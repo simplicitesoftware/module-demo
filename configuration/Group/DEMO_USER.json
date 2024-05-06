@@ -1,0 +1,13 @@
+{
+ "grp_name": "DEMO_USER",
+ "grp_comment": "User",
+ "grp_type": [
+  "G",
+  "D",
+  "W",
+  "R"
+ ],
+ "grp_parent_id__grp_name": null,
+ "grp_home_id__viw_name": "DemoUserHome",
+ "row_module_id__mdl_name": "Demo"
+}

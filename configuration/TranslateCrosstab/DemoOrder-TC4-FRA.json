@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ctb_name": "DemoOrder-TC4"},
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table",
+  "userkeylabel": "DemoOrder-TC4",
+  "object": "Crosstab"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "CA par pays",
+ "row_module_id__mdl_name": "Demo"
+}

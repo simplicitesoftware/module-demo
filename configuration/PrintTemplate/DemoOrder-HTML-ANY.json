@@ -1,0 +1,19 @@
+{
+ "prt_object_id__obo_name": "DemoOrder",
+ "prt_name": "DemoOrder-HTML",
+ "prt_usage": "L",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Demo",
+ "prt_lang": "ANY",
+ "prt_translation": "Listing",
+ "prt_filename": null,
+ "prt_mimetype": "html",
+ "prt_type": "TMPL",
+ "prt_method": null,
+ "prt_file": {
+  "path": "files/PrintTemplate/DemoOrder-HTML.html",
+  "mime": "text/html",
+  "name": "DemoOrder-HTML.html"
+ },
+ "prt_template_id__tpl_name": null
+}

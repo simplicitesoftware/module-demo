@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"viw_name": "DemoPublicHome"},
+  "icon": "img/system/view",
+  "label": "View",
+  "userkeylabel": "DemoPublicHome",
+  "object": "View"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Public home",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Demo"
+}

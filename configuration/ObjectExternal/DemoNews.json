@@ -1,0 +1,25 @@
+{
+ "obe_name": "DemoNews",
+ "obe_type": "E",
+ "obe_nature": "com_simplicite_webapp_web_ResponsiveExternalObject",
+ "obe_url": null,
+ "obe_settings": {
+  "subTitleField": "nws_human_readable_date",
+  "instance": "web_WebNews",
+  "imageField": "nws_image",
+  "titleField": "nws_title",
+  "onclick": false,
+  "name": "WebNews",
+  "cardWidth": "15rem",
+  "rowClasses": "row-horizontal",
+  "descriptionField": "nws_description"
+ },
+ "obe_comment": "News widget\n-----------\n\nThis UI widget is diplaying the standard platform news data.\n\nNote that the instance name `web_WebNews` is on purpose. Using this instance name applies\nthe date-based, language-based and rights filterings.",
+ "obe_help": null,
+ "obe_class": "com.simplicite.webapp.web.widgets.CardsExternalObject",
+ "obe_script_id": null,
+ "obe_icon": null,
+ "obe_permalink": null,
+ "obe_widget": true,
+ "row_module_id__mdl_name": "Demo"
+}

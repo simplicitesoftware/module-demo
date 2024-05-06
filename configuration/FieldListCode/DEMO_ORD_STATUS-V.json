@@ -1,0 +1,14 @@
+{
+ "lov_list_id__lov_name": "DEMO_ORD_STATUS",
+ "lov_code": "V",
+ "lov_order_by": 2,
+ "lov_label": "Validated status",
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": "#FFFFFF",
+ "lov_color_bg": "#F6B26B",
+ "lov_icon": "icon/color/btn_orange",
+ "lov_display": [
+  "I",
+  "L"
+ ]
+}

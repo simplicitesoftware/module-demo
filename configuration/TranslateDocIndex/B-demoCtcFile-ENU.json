@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"din_name": "B-demoCtcFile"},
+  "icon": "img/system/bookshelf",
+  "label": "Bookshelf",
+  "userkeylabel": "B-demoCtcFile",
+  "object": "DocIndex"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "B-demoCtcFile",
+ "row_module_id__mdl_name": "Demo"
+}

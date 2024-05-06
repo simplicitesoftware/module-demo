@@ -1,0 +1,16 @@
+{
+ "tsl_object": {
+  "item": {
+   "cax_type": "V",
+   "cax_crosstab_id__ctb_name": "DemoOrder-TC4",
+   "cax_order": 1
+  },
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table axis",
+  "userkeylabel": "DemoOrder-TC4 Value 1",
+  "object": "CrosstabAxis"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Revenue",
+ "row_module_id__mdl_name": "Demo"
+}

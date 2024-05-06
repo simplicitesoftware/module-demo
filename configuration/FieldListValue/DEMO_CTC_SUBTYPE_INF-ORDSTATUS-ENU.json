@@ -1,0 +1,7 @@
+{
+ "lov_code_id__lov_list_id__lov_name": "DEMO_CTC_SUBTYPE_INF",
+ "lov_code_id__lov_code": "ORDSTATUS",
+ "lov_lang": "ENU",
+ "lov_value": "Order status",
+ "row_module_id__mdl_name": "Demo"
+}

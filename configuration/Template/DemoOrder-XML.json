@@ -1,0 +1,8 @@
+{
+ "tpl_name": "DemoOrder-XML",
+ "tpl_ui": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<orders>\n\t[BEGIN]<order number=\"[VALUE:demoOrdNumber]\">\n\t\t<date>[VALUE:demoOrdDate]<\/date>\n\t\t<status>[VALUE:demoOrdStatus]<\/status>\n\t\t<product>\n\t\t\t<reference>[VALUE:demoOrdPrdId.demoPrdReference]<\/reference>\n\t\t\t<name>[VALUE:demoOrdPrdId.demoPrdName]<\/name>\n\t\t\t<supplier>[VALUE:demoPrdSupId.demoSupCode]<\/supplier>\n\t\t<\/product>\n\t\t<quantity>[VALUE:demoOrdQuantity]<\/quantity>\n\t\t<total>[VALUE:demoOrdTotal]<\/total>\n\t\t<tax>[VALUE:demoOrdVAT]<\/tax>\n\t\t<client>\n\t\t\t<code>[VALUE:demoOrdCliId.demoCliCode]<\/code>\n\t\t\t<name>[VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]<\/name>\n\t\t\t<address>[VALUE:demoOrdCliId.demoCliAddress1]; [VALUE:demoOrdCliId.demoCliAddress2]; [VALUE:demoOrdCliId.demoCliZipCode]; [VALUE:demoOrdCliId.demoCliCity]; [VALUE:demoOrdCliId.demoCliCountry]<\/address>\n\t\t<\/client>\n\t\t<history>\n\t\t\t[BEGIN:DemoOrderHistoric:row_ref_id]<change date=\"[VALUE:created_by_hist]\" login=\"[VALUE:created_dt_hist]\">\n\t\t\t\t<status>[VALUE:demoOrdStatus]<\/status>\n\t\t\t\t<quantity>[VALUE:demoOrdQuantity]<\/quantity>\n\t\t\t<\/change>[END:DemoOrderHistoric]\n\t\t<\/history>\n\t<\/order>[END]\t\n<\/orders>",
+ "tpl_min": null,
+ "tpl_image": null,
+ "tpl_grid": null,
+ "row_module_id__mdl_name": "Demo"
+}

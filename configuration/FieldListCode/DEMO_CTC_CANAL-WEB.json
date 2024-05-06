@@ -1,0 +1,11 @@
+{
+ "lov_list_id__lov_name": "DEMO_CTC_CANAL",
+ "lov_code": "WEB",
+ "lov_order_by": 4,
+ "lov_label": "Code WEB",
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": null,
+ "lov_color_bg": null,
+ "lov_icon": "icon/url",
+ "lov_display": ["I"]
+}

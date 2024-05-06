@@ -1,0 +1,12 @@
+{
+ "cst_name": "DemoOrder-C4",
+ "cst_object_id__obo_name": "DemoOrder",
+ "cst_order": 40,
+ "cst_desc": "Delivery date field only updatable when the order is not delivered nor cancelled",
+ "cst_type": "E",
+ "cst_effects": ["B"],
+ "cst_field_id__fld_name": null,
+ "cst_expr": "![ISNEW] && [STATUS] != \"C\"",
+ "cst_method": null,
+ "row_module_id__mdl_name": "Demo"
+}

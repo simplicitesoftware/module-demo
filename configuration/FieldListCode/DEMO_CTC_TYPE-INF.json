@@ -1,0 +1,14 @@
+{
+ "lov_list_id__lov_name": "DEMO_CTC_TYPE",
+ "lov_code": "INF",
+ "lov_order_by": 1,
+ "lov_label": "Information",
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": null,
+ "lov_color_bg": null,
+ "lov_icon": null,
+ "lov_display": [
+  "L",
+  "T"
+ ]
+}

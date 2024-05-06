@@ -1,0 +1,8 @@
+{
+ "ofa_name": "DemoProduct-5",
+ "ofa_position": 5,
+ "ofa_title": true,
+ "ofa_ui": "<div class=\"field\" data-field=\"demoPrdComments\"><\/div>",
+ "ofa_icon": "img/color/info_squared",
+ "row_module_id__mdl_name": "Demo"
+}

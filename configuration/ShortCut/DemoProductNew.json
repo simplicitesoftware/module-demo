@@ -1,0 +1,13 @@
+{
+ "shc_name": "DemoProductNew",
+ "shc_url": "[EXPR:HTMLTool.getFormURL(\"DemoProduct\", null, ObjectField.DEFAULT_ROW_ID, null)]",
+ "shc_target": "frame_work",
+ "shc_order": 100,
+ "shc_visible": [
+  "P",
+  "H"
+ ],
+ "shc_icon": "img/color/box",
+ "shc_keys": null,
+ "row_module_id__mdl_name": "Demo"
+}

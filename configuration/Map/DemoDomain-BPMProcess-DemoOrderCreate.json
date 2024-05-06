@@ -1,0 +1,15 @@
+{
+ "map_domain_id__obd_name": "DemoDomain",
+ "map_object_id__obj_name": null,
+ "map_process_id__pcs_name": null,
+ "map_object": {
+  "item": {"pcs_name": "DemoOrderCreate"},
+  "icon": "img/system/process",
+  "label": "Business process",
+  "userkeylabel": "DemoOrderCreate",
+  "object": "BPMProcess"
+ },
+ "map_order": 70800,
+ "map_ext": false,
+ "row_module_id__mdl_name": "Demo"
+}

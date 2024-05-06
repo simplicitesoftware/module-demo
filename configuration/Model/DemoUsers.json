@@ -1,0 +1,17 @@
+{
+ "mod_name": "DemoUsers",
+ "mod_template_id__mtp_name": "ModelUser",
+ "mod_template_id__mtp_type": "R",
+ "mod_json": null,
+ "mod_doc": {
+  "path": "files/Model/DemoUsers.svg",
+  "mime": "image/svg+xml",
+  "name": "model.svg"
+ },
+ "mod_image": {
+  "path": "files/Model/DemoUsers.png",
+  "mime": "image/png",
+  "name": "DemoUsers.png"
+ },
+ "row_module_id__mdl_name": "Demo"
+}

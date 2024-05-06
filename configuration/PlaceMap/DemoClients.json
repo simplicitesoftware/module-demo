@@ -1,0 +1,10 @@
+{
+ "pcm_name": "DemoClients",
+ "pcm_object_id__obo_name": "DemoClient",
+ "pcm_address_id__fld_name": null,
+ "pcm_coords_id__fld_name": "demoCliCoords",
+ "pcm_label1_id__fld_name": "demoCliPlacemapLabel",
+ "pcm_label2_id__fld_name": "demoCliAddress1",
+ "pcm_label3_id__fld_name": "demoCliCity",
+ "row_module_id__mdl_name": "Demo"
+}

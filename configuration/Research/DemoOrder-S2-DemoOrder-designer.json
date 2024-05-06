@@ -1,0 +1,9 @@
+{
+ "rch_object_id__obo_name": "DemoOrder",
+ "rch_user_id__usr_login": "designer",
+ "rch_name": "DemoOrder-S2",
+ "rch_public": true,
+ "rch_request": {"demoOrdStatus": "V"},
+ "rch_permalink": null,
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,17 @@
+{
+ "mtp_name": "DemoModel",
+ "mtp_type": "M",
+ "mtp_class": null,
+ "mtp_script_id": {
+  "path": "files/ModelTemplate/DemoModel.js",
+  "mime": "text/javascript",
+  "name": "DemoModel.js"
+ },
+ "mtp_use_grid": true,
+ "mtp_use_title": true,
+ "mtp_use_note": true,
+ "mtp_use_bkg": true,
+ "mtp_use_ctn": true,
+ "mtp_use_tree": true,
+ "row_module_id__mdl_name": "Demo"
+}

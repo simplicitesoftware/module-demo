@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"shc_name": "DemoProductNew"},
+  "icon": "img/system/shortcut",
+  "label": "Shortcut",
+  "userkeylabel": "DemoProductNew",
+  "object": "ShortCut"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Nouveau produit",
+ "tsl_tooltip": null,
+ "row_module_id__mdl_name": "Demo"
+}

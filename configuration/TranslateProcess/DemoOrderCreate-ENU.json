@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"pcs_name": "DemoOrderCreate"},
+  "icon": "img/system/process",
+  "label": "Business process",
+  "userkeylabel": "DemoOrderCreate",
+  "object": "BPMProcess"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Place a new order workflow",
+ "row_module_id__mdl_name": "Demo"
+}

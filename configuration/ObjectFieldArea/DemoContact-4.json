@@ -1,0 +1,8 @@
+{
+ "ofa_name": "DemoContact-4",
+ "ofa_position": 4,
+ "ofa_title": false,
+ "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoCtcMessages\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoCtcFile\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoCtcPicture\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"demoCtcComments\"><\/div>\n<\/div>",
+ "ofa_icon": "message",
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,15 @@
+{
+ "prt_object_id__obo_name": "DemoOrder",
+ "prt_name": "DemoOrder-XML",
+ "prt_usage": "E",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Demo",
+ "prt_lang": "ANY",
+ "prt_translation": "Custom XML publication",
+ "prt_filename": null,
+ "prt_mimetype": "xml",
+ "prt_type": "TMPL",
+ "prt_method": null,
+ "prt_file": null,
+ "prt_template_id__tpl_name": "DemoOrder-XML"
+}

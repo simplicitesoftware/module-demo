@@ -1,0 +1,10 @@
+{
+ "lov_name": "DEMO_ORD_STATUS",
+ "row_module_id__mdl_name": "Demo",
+ "lov_model_id__mod_name": "DemoOrderStates",
+ "lov_model_id__mod_image": {
+  "path": "files/Model/DemoOrderStates.png",
+  "mime": "image/png",
+  "name": "DemoOrderStates.png"
+ }
+}

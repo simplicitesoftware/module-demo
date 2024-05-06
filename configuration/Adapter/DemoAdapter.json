@@ -1,0 +1,13 @@
+{
+ "adp_name": "DemoAdapter",
+ "adp_atomic": true,
+ "adp_type": "JAVA",
+ "adp_script": null,
+ "adp_class": null,
+ "adp_script_id": {
+  "path": "src/com/simplicite/adapters/Demo/DemoAdapter.java",
+  "mime": "text/plain",
+  "name": "DemoAdapter.java"
+ },
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,10 @@
+{
+ "scr_code": "DemoRandomDataGeneration",
+ "scr_file": {
+  "path": "test/src/com/simplicite/tests/Demo/DemoRandomDataGeneration.java",
+  "mime": "text/plain",
+  "name": "DemoRandomDataGeneration.java"
+ },
+ "scr_type": "TST",
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,9 @@
+{
+ "din_name": "B-demoCtcFile",
+ "din_field_id__fld_name": "demoCtcFile",
+ "din_path": null,
+ "din_min": null,
+ "din_max": null,
+ "din_grant": false,
+ "row_module_id__mdl_name": "Demo"
+}

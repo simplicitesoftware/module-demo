@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "DemoContactHistoric"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "DemoContactHistoric",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Contact (hist.)",
+ "tsl_plural_value": null,
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Demo"
+}

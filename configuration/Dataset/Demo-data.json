@@ -1,0 +1,10 @@
+{
+ "row_module_id__mdl_name": "Demo",
+ "dt_name": "Demo-data",
+ "dt_file": {
+  "path": "data/Demo-data.xml",
+  "mime": "text/xml",
+  "name": "Demo-data-20240326164903.xml"
+ },
+ "dt_desc": "Created by module's data export on 2024-03-26 16:49:03"
+}

@@ -1,0 +1,14 @@
+{
+ "lov_list_id__lov_name": "DEMO_CTC_STATUS",
+ "lov_code": "C",
+ "lov_order_by": 2,
+ "lov_label": "Closed",
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": "#393939",
+ "lov_color_bg": "#d9ead3",
+ "lov_icon": "icon/color/btn_green",
+ "lov_display": [
+  "L",
+  "T"
+ ]
+}

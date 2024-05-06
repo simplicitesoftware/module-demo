@@ -1,0 +1,20 @@
+{
+ "vwi_view_id__viw_name": "DemoUserHome",
+ "vwi_position": 2,
+ "vwi_type": "S",
+ "vwi_title": true,
+ "vwi_research_id__rch_name": "DemoOrder-S1",
+ "vwi_research_id__rch_object_id__obo_name": "DemoOrder",
+ "vwi_research_id__rch_user_id__usr_login": "designer",
+ "vwi_search_spec": "t_demoPrdSupId.sup_usr_id = [userid]",
+ "vwi_lov_code": null,
+ "vwi_show": "DemoOrder",
+ "vwi_url": null,
+ "vwi_image": null,
+ "vwi_subview_id__viw_name": null,
+ "vwi_treeview_id__trv_name": null,
+ "vwi_crosstab_id__ctb_name": null,
+ "vwi_printtmpl_id__prt_name": null,
+ "vwi_printtmpl_id__prt_lang": null,
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,59 @@
+{
+ "thm_name": "demo",
+ "thm_logo_id": {
+  "path": "files/Theme/demo/logo.svg",
+  "mime": "image/svg+xml",
+  "name": "simplicite-blue.svg"
+ },
+ "thm_logo_invert": false,
+ "thm_logo2_id": {
+  "path": "files/Theme/demo/logo2.png",
+  "mime": "image/png",
+  "name": "demo-128.png"
+ },
+ "thm_favicon_id": {
+  "path": "files/Theme/demo/favicon.png",
+  "mime": "image/png",
+  "name": "demo-256.png"
+ },
+ "thm_color1": "#f4f7fc",
+ "thm_color2": "#ffffff",
+ "thm_text2": "#404040",
+ "thm_color3": "#ffffff",
+ "thm_text3": "#404040",
+ "thm_base": "light",
+ "thm_css_doc": {
+  "path": "files/Theme/demo/demo_gen.css",
+  "mime": "text/css",
+  "name": "demo_gen.css"
+ },
+ "thm_addon": {
+  "path": "files/Theme/demo/addon.less",
+  "mime": "text/less",
+  "name": "addon.less"
+ },
+ "thm_searchbox": "#f7f7f7",
+ "thm_active": null,
+ "thm_font": "Raleway",
+ "thm_font_mono": null,
+ "thm_iconset": null,
+ "thm_code_editor_theme": null,
+ "thm_html_editor_theme": "LIGHT",
+ "thm_menu_dom_c": null,
+ "thm_menu_dom_t": "#606060",
+ "thm_menu_dact_c": "#f7f7f7",
+ "thm_menu_dact_t": "#2481dd",
+ "thm_menu_sub_c": null,
+ "thm_menu_sub_t": null,
+ "thm_menu_sact_c": null,
+ "thm_menu_sact_t": "#2481dd",
+ "thm_menu_sta_c": null,
+ "thm_menu_sta_t": "#909090",
+ "thm_compact": false,
+ "row_module_id__mdl_name": "Demo",
+ "thm_const": {
+  "path": "files/Theme/demo/const.less",
+  "mime": "text/less",
+  "name": "const.less"
+ }
+}

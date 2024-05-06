@@ -1,0 +1,15 @@
+{
+ "map_domain_id__obd_name": "DemoDomain",
+ "map_object_id__obj_name": null,
+ "map_process_id__pcs_name": null,
+ "map_object": {
+  "item": {"obo_name": "DemoContact"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "DemoContact",
+  "object": "ObjectInternal"
+ },
+ "map_order": 70040,
+ "map_ext": false,
+ "row_module_id__mdl_name": "Demo"
+}

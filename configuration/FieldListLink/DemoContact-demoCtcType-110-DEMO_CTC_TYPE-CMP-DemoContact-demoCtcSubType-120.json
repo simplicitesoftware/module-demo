@@ -1,0 +1,13 @@
+{
+ "fll_objfield_id__obf_object_id__obo_name": "DemoContact",
+ "fll_objfield_id__obf_field_id__fld_name": "demoCtcType",
+ "fll_objfield_id__obf_order": 110,
+ "fll_code_id__lov_list_id__lov_name": "DEMO_CTC_TYPE",
+ "fll_code_id__lov_code": "CMP",
+ "fll_code_id__lov_label": "Complaint",
+ "fll_linked_id__obf_object_id__obo_name": "DemoContact",
+ "fll_linked_id__obf_field_id__fld_name": "demoCtcSubType",
+ "fll_linked_id__obf_order": 120,
+ "fll_list_id__lov_name": "DEMO_CTC_SUBTYPE_CMP",
+ "row_module_id__mdl_name": "Demo"
+}

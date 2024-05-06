@@ -1,0 +1,8 @@
+{
+ "ofa_name": "DemoOrder-1",
+ "ofa_position": 1,
+ "ofa_title": true,
+ "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoOrdNumber\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoOrdDate\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoOrdStatus\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"demoOrdDeliveryDate\"><\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+ "ofa_icon": "folderitem",
+ "row_module_id__mdl_name": "Demo"
+}

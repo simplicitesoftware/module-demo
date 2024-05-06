@@ -1,0 +1,8 @@
+{
+ "ofa_name": "DemoOrder-3",
+ "ofa_position": 3,
+ "ofa_title": true,
+ "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"demoOrdPrdId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-5\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdReference\"><\/div>\n    <\/div>\n    <div class=\"col-sm-7\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdName\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdPicture\"><\/div>\n  <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdEan13\"><\/div>\n  <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdEan13Image\"><\/div>\n  <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdSupId__demoSupLogo\"><\/div>\n  <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdSupId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-5\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdSupId__demoSupCode\"><\/div>\n    <\/div>\n    <div class=\"col-sm-7\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdSupId__demoSupName\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdSupId__demoSupUsrId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdStock\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdUnitPrice\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"demoOrdPrdId__demoPrdType\"><\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+ "ofa_icon": "img/color/box",
+ "row_module_id__mdl_name": "Demo"
+}

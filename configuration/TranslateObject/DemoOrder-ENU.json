@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "DemoOrder"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "DemoOrder",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Order",
+ "tsl_plural_value": "Orders",
+ "tsl_help": "<p>This is a <strong>detailled help<\/strong> on how to place orders:<\/p>\n<ul>\n<li>Select a customer<\/li>\n<li>Select a product<\/li>\n<li>Enter a strictly positive quantity<\/li>\n<\/ul>",
+ "row_module_id__mdl_name": "Demo"
+}

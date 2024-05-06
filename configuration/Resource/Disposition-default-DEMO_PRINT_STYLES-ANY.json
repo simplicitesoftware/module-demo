@@ -1,0 +1,20 @@
+{
+ "res_object": {
+  "item": {"dis_code": "default"},
+  "icon": "img/system/disposition",
+  "label": "Disposition",
+  "userkeylabel": "default",
+  "object": "Disposition"
+ },
+ "res_type": "CSS",
+ "res_lang": "ANY",
+ "res_code": "DEMO_PRINT_STYLES",
+ "res_cached": false,
+ "res_file": {
+  "path": "resources/Disposition/default/DEMO_PRINT_STYLES.less",
+  "mime": "text/less",
+  "name": "DEMO_PRINT_STYLES.less"
+ },
+ "res_image": null,
+ "row_module_id__mdl_name": "Demo"
+}

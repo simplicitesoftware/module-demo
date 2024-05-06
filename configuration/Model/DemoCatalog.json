@@ -1,0 +1,17 @@
+{
+ "mod_name": "DemoCatalog",
+ "mod_template_id__mtp_name": "DemoModel",
+ "mod_template_id__mtp_type": "M",
+ "mod_json": null,
+ "mod_doc": {
+  "path": "files/Model/DemoCatalog.svg",
+  "mime": "image/svg+xml",
+  "name": "model.svg"
+ },
+ "mod_image": {
+  "path": "files/Model/DemoCatalog.png",
+  "mime": "image/png",
+  "name": "DemoCatalog.png"
+ },
+ "row_module_id__mdl_name": "Demo"
+}

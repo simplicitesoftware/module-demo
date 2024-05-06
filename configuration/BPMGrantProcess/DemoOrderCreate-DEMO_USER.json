@@ -1,0 +1,10 @@
+{
+ "gtp_group_id__grp_name": "DEMO_USER",
+ "gtp_process_id__pcs_name": "DemoOrderCreate",
+ "gtp_grant": [
+  "N",
+  "R",
+  "C"
+ ],
+ "row_module_id__mdl_name": "Demo"
+}

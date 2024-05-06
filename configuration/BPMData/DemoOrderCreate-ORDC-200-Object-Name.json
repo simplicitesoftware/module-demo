@@ -1,0 +1,11 @@
+{
+ "dta_activity_id__acy_process_id__pcs_name": "DemoOrderCreate",
+ "dta_activity_id__acy_step": "ORDC-200",
+ "dta_activity_id__acy_name": "SupplierSelect",
+ "dta_group": "Object",
+ "dta_name": "Name",
+ "dta_order": 1,
+ "dta_value": "DemoSupplier",
+ "dta_field_id__fld_name": null,
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,36 @@
+{
+ "obe_name": "DemoCounters",
+ "obe_type": "E",
+ "obe_nature": "com_simplicite_webapp_web_ResponsiveExternalObject",
+ "obe_url": null,
+ "obe_settings": {"objects": [
+  {
+   "color": "violet",
+   "name": "DemoProduct",
+   "icon": "fas/box"
+  },
+  {
+   "color": "blue",
+   "name": "DemoClient",
+   "icon": "fas/user"
+  },
+  {
+   "color": "green",
+   "name": "DemoOrder",
+   "icon": "fas/folder-open"
+  },
+  {
+   "color": "red",
+   "name": "DemoContact",
+   "icon": "fas/comments"
+  }
+ ]},
+ "obe_comment": "Counters\n--------\n\nThis UI widget is displaying various counters.",
+ "obe_help": null,
+ "obe_class": "com.simplicite.webapp.web.widgets.CountersExternalObject",
+ "obe_script_id": null,
+ "obe_icon": "fas/cash-register",
+ "obe_permalink": null,
+ "obe_widget": true,
+ "row_module_id__mdl_name": "Demo"
+}

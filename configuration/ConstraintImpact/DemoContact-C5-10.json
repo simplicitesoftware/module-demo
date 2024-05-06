@@ -1,0 +1,15 @@
+{
+ "csi_const_id__cst_name": "DemoContact-C5",
+ "csi_const_id__cst_object_id__obo_name": "DemoContact",
+ "csi_const_id__cst_order": 50,
+ "csi_order": 10,
+ "csi_object_prop": null,
+ "csi_field_prop": "U",
+ "csi_apply": "F",
+ "csi_expr": "[ISNEW] && ![FIELD:demoCtcCliId].isEmpty()",
+ "csi_target": null,
+ "csi_objfield_id__obf_object_id__obo_name": "DemoContact",
+ "csi_objfield_id__obf_field_id__fld_name": "demoCtcOrdId",
+ "csi_objfield_id__obf_order": 300,
+ "row_module_id__mdl_name": "Demo"
+}

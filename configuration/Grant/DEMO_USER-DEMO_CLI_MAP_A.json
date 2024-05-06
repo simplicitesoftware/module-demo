@@ -1,0 +1,10 @@
+{
+ "grt_group_id__grp_name": "DEMO_USER",
+ "grt_function_id__fct_name": "DEMO_CLI_MAP_A",
+ "grt_function_id__fct_object_id__obo_type": "O",
+ "grt_function_id__fct_object_id__obo_name": "DemoClient",
+ "grt_function_id__fct_action_id__act_name": "DEMO_CLIENTMAP",
+ "grt_function_id__fct_function": "A",
+ "grt_activ": true,
+ "row_module_id__mdl_name": "Demo"
+}

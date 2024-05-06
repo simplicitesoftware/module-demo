@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "DemoClient"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "DemoClient",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Client",
+ "tsl_plural_value": "Clients",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,16 @@
+{
+ "prm_group_id__grp_name": "DEMO_ADMIN",
+ "prm_object": {
+  "item": {"ctb_name": "DemoOrder-TC2"},
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table",
+  "userkeylabel": "DemoOrder-TC2",
+  "object": "Crosstab"
+ },
+ "prm_perm": true,
+ "prm_upd": false,
+ "prm_req": null,
+ "prm_prop": null,
+ "prm_value": null,
+ "row_module_id__mdl_name": "Demo"
+}

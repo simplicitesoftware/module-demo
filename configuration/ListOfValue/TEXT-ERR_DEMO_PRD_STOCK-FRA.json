@@ -1,0 +1,9 @@
+{
+ "lov_name": "TEXT",
+ "lov_code": "ERR_DEMO_PRD_STOCK",
+ "lov_lang": "FRA",
+ "lov_value": "Le stock est insuffisant",
+ "lov_order_by": 1,
+ "lov_event_id__lev_code": null,
+ "row_module_id__mdl_name": "Demo"
+}

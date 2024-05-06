@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ctb_name": "DemoOrder-TC3"},
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table",
+  "userkeylabel": "DemoOrder-TC3",
+  "object": "Crosstab"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Quantities",
+ "row_module_id__mdl_name": "Demo"
+}

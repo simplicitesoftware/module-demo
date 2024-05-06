@@ -1,0 +1,15 @@
+{
+ "map_domain_id__obd_name": "DemoDomain",
+ "map_object_id__obj_name": null,
+ "map_process_id__pcs_name": null,
+ "map_object": {
+  "item": {"obe_name": "DemoOrderAgenda"},
+  "icon": "img/system/external_object",
+  "label": "External object",
+  "userkeylabel": "DemoOrderAgenda",
+  "object": "ObjectExternal"
+ },
+ "map_order": 70920,
+ "map_ext": false,
+ "row_module_id__mdl_name": "Demo"
+}

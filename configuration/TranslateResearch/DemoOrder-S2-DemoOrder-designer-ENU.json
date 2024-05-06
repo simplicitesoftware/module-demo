@@ -1,0 +1,16 @@
+{
+ "tsl_object": {
+  "item": {
+   "rch_name": "DemoOrder-S2",
+   "rch_user_id__usr_login": "designer",
+   "rch_object_id__obo_name": "DemoOrder"
+  },
+  "icon": "img/system/search",
+  "label": "Search",
+  "userkeylabel": "DemoOrder designer DemoOrder-S2",
+  "object": "Research"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Validated orders",
+ "row_module_id__mdl_name": "Demo"
+}

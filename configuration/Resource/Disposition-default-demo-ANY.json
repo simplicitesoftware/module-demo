@@ -1,0 +1,20 @@
+{
+ "res_object": {
+  "item": {"dis_code": "default"},
+  "icon": "img/system/disposition",
+  "label": "Disposition",
+  "userkeylabel": "default",
+  "object": "Disposition"
+ },
+ "res_type": "ICO",
+ "res_lang": "ANY",
+ "res_code": "demo",
+ "res_cached": true,
+ "res_file": null,
+ "res_image": {
+  "path": "resources/Disposition/default/demo.png",
+  "mime": "image/png",
+  "name": "demo-128.png"
+ },
+ "row_module_id__mdl_name": "Demo"
+}

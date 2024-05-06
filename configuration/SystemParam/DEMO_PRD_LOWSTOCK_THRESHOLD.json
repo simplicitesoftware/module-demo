@@ -1,0 +1,7 @@
+{
+ "sys_code": "DEMO_PRD_LOWSTOCK_THRESHOLD",
+ "sys_value": "10",
+ "sys_type": null,
+ "sys_desc": null,
+ "row_module_id__mdl_name": "Demo"
+}

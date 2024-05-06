@@ -1,0 +1,14 @@
+{
+ "sta_lovname": "DEMO_CTC_STATUS",
+ "sta_state_id__lov_list_id__lov_name": "DEMO_CTC_STATUS",
+ "sta_state_id__lov_code": "P",
+ "sta_state": "P",
+ "sta_label": "Processing",
+ "sta_activ": true,
+ "sta_terminal": false,
+ "sta_read": false,
+ "sta_access": true,
+ "sta_timeout": null,
+ "sta_alert_id__alt_name": null,
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,6 @@
+{
+ "trv_name": "DemoSupplierTreeview",
+ "trv_autosearch": "0",
+ "row_module_id__mdl_name": "Demo",
+ "trv_layout": "layout-chevron"
+}

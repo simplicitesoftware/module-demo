@@ -1,0 +1,9 @@
+{
+ "lov_name": "TEXT",
+ "lov_code": "DEMO_ADMIN",
+ "lov_lang": "ANY",
+ "lov_value": "Administrator",
+ "lov_order_by": 1,
+ "lov_event_id__lev_code": null,
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,15 @@
+{
+ "acy_process_id__pcs_name": "DemoOrderCreate",
+ "acy_step": "ORDC-210",
+ "acy_name": "ProductSelect",
+ "acy_comment": "Selected supplier's product selection activity",
+ "acy_type": "C",
+ "acy_posx": null,
+ "acy_posy": null,
+ "acy_reversible": "E",
+ "acy_max_duration": null,
+ "acy_duration_unit": null,
+ "acy_alert_id__alt_name": null,
+ "acy_user_dlg": true,
+ "row_module_id__mdl_name": "Demo"
+}

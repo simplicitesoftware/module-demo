@@ -1,0 +1,15 @@
+{
+ "prt_object_id__obo_name": "DemoContact",
+ "prt_name": "DemoContact-Excel",
+ "prt_usage": "L",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Demo",
+ "prt_lang": "ANY",
+ "prt_translation": "Excel publication example",
+ "prt_filename": null,
+ "prt_mimetype": "xlsx",
+ "prt_type": "METH",
+ "prt_method": "printExcel",
+ "prt_file": null,
+ "prt_template_id__tpl_name": null
+}

@@ -1,0 +1,7 @@
+{
+ "och_object_id__obo_name": "DemoOrder",
+ "och_context": ["L"],
+ "och_lang": "FRA",
+ "och_help": "Les commandes sont ordonnées par défaut par numéro de commande décroissant",
+ "row_module_id__mdl_name": "Demo"
+}

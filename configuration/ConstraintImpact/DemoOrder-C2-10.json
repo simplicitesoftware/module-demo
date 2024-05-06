@@ -1,0 +1,15 @@
+{
+ "csi_const_id__cst_name": "DemoOrder-C2",
+ "csi_const_id__cst_object_id__obo_name": "DemoOrder",
+ "csi_const_id__cst_order": 20,
+ "csi_order": 10,
+ "csi_object_prop": null,
+ "csi_field_prop": "U",
+ "csi_apply": "F",
+ "csi_expr": "true",
+ "csi_target": null,
+ "csi_objfield_id__obf_object_id__obo_name": "DemoOrder",
+ "csi_objfield_id__obf_field_id__fld_name": "demoOrdStatus",
+ "csi_objfield_id__obf_order": 120,
+ "row_module_id__mdl_name": "Demo"
+}

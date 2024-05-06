@@ -1,0 +1,15 @@
+{
+ "tsl_object": {
+  "item": {
+   "acy_process_id__pcs_name": "DemoOrderCreate",
+   "acy_step": "ORDC-999"
+  },
+  "icon": "img/system/activity",
+  "label": "Activity",
+  "userkeylabel": "DemoOrderCreate ORDC-999",
+  "object": "BPMActivity"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "End",
+ "row_module_id__mdl_name": "Demo"
+}

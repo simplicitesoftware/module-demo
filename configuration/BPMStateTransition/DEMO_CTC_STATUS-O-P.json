@@ -1,0 +1,14 @@
+{
+ "stm_name": "DEMO_CTC_STATUS-O-P",
+ "stm_from_id__sta_state_id__lov_list_id__lov_name": "DEMO_CTC_STATUS",
+ "stm_from_id__sta_state_id__lov_code": "O",
+ "stm_to_id__sta_state_id__lov_list_id__lov_name": "DEMO_CTC_STATUS",
+ "stm_to_id__sta_state_id__lov_code": "P",
+ "stm_callbackscript": null,
+ "stm_callback": null,
+ "stm_condition": null,
+ "stm_activ": true,
+ "stm_notif_id__alt_name": null,
+ "stm_action_id__act_name": "DEMO_CTC_STATUS-O-P",
+ "row_module_id__mdl_name": "Demo"
+}

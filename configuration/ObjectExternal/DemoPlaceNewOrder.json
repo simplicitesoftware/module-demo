@@ -1,0 +1,15 @@
+{
+ "obe_name": "DemoPlaceNewOrder",
+ "obe_type": "E",
+ "obe_nature": "com_simplicite_webapp_web_ResponsiveExternalObject",
+ "obe_url": null,
+ "obe_settings": null,
+ "obe_comment": "Custom place new order page\n---------------------------\n\nThis custom Ui page is dedicated to place orders using simplified UX.",
+ "obe_help": null,
+ "obe_class": "com.simplicite.webapp.web.ResponsiveExternalObject",
+ "obe_script_id": null,
+ "obe_icon": "img/color/documents_folder",
+ "obe_permalink": null,
+ "obe_widget": false,
+ "row_module_id__mdl_name": "Demo"
+}

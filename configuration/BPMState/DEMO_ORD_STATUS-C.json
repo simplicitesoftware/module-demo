@@ -1,0 +1,14 @@
+{
+ "sta_lovname": "DEMO_ORD_STATUS",
+ "sta_state_id__lov_list_id__lov_name": "DEMO_ORD_STATUS",
+ "sta_state_id__lov_code": "C",
+ "sta_state": "C",
+ "sta_label": "Cancelled state",
+ "sta_activ": true,
+ "sta_terminal": true,
+ "sta_read": true,
+ "sta_access": true,
+ "sta_timeout": null,
+ "sta_alert_id__alt_name": null,
+ "row_module_id__mdl_name": "Demo"
+}

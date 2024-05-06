@@ -1,0 +1,12 @@
+{
+ "cst_name": "DemoOrder-C1",
+ "cst_object_id__obo_name": "DemoOrder",
+ "cst_order": 10,
+ "cst_desc": "Fields not updatable by default",
+ "cst_type": "E",
+ "cst_effects": ["B"],
+ "cst_field_id__fld_name": null,
+ "cst_expr": "true",
+ "cst_method": null,
+ "row_module_id__mdl_name": "Demo"
+}

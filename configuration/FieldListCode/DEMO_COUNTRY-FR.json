@@ -1,0 +1,14 @@
+{
+ "lov_list_id__lov_name": "DEMO_COUNTRY",
+ "lov_code": "FR",
+ "lov_order_by": 1,
+ "lov_label": "France",
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": null,
+ "lov_color_bg": null,
+ "lov_icon": "lang/FRA",
+ "lov_display": [
+  "I",
+  "L"
+ ]
+}

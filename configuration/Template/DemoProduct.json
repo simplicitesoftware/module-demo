@@ -1,0 +1,8 @@
+{
+ "tpl_name": "DemoProduct",
+ "tpl_ui": "<div>\n  <div class=\"row\">\n    <div class=\"area col-sm-12\" data-area=\"1\"><\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"area col-sm-7\" data-area=\"2\"><\/div>\n    <div class=\"area col-sm-5\">\n      <div class=\"row\">\n        <div class=\"area col-sm-12 compact\" data-area=\"3\"><\/div>\n      <\/div>\n      <div class=\"row\">\n        <div class=\"area col-sm-12\" data-area=\"4\"><\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"area col-sm-12\" data-area=\"5:-\"><\/div>\n  <\/div>\n<\/div>",
+ "tpl_min": null,
+ "tpl_image": null,
+ "tpl_grid": null,
+ "row_module_id__mdl_name": "Demo"
+}

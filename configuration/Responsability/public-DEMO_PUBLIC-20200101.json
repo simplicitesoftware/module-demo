@@ -1,0 +1,8 @@
+{
+ "rsp_login_id__usr_login": "public",
+ "rsp_group_id__grp_name": "DEMO_PUBLIC",
+ "rsp_start_dt": "2020-01-01",
+ "rsp_end_dt": null,
+ "rsp_activ": true,
+ "row_module_id__mdl_name": "Demo"
+}

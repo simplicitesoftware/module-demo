@@ -1,0 +1,10 @@
+{
+ "grt_group_id__grp_name": "DEMO_ADMIN",
+ "grt_function_id__fct_name": "DEMO_CTCH_R",
+ "grt_function_id__fct_object_id__obo_type": "O",
+ "grt_function_id__fct_object_id__obo_name": "DemoContactHistoric",
+ "grt_function_id__fct_action_id__act_name": null,
+ "grt_function_id__fct_function": "L",
+ "grt_activ": true,
+ "row_module_id__mdl_name": "Demo"
+}

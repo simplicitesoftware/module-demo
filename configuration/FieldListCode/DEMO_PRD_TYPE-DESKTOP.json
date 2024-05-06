@@ -1,0 +1,15 @@
+{
+ "lov_list_id__lov_name": "DEMO_PRD_TYPE",
+ "lov_code": "DESKTOP",
+ "lov_order_by": 20,
+ "lov_label": "Desktop",
+ "row_module_id__mdl_name": "Demo",
+ "lov_color": null,
+ "lov_color_bg": null,
+ "lov_icon": "fas/desktop",
+ "lov_display": [
+  "I",
+  "L",
+  "T"
+ ]
+}

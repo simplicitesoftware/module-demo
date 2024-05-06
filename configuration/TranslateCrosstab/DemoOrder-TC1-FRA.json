@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ctb_name": "DemoOrder-TC1"},
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table",
+  "userkeylabel": "DemoOrder-TC1",
+  "object": "Crosstab"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Activité",
+ "row_module_id__mdl_name": "Demo"
+}

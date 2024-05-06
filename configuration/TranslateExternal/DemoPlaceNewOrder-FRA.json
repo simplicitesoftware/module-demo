@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obe_name": "DemoPlaceNewOrder"},
+  "icon": "img/system/external_object",
+  "label": "External object",
+  "userkeylabel": "DemoPlaceNewOrder",
+  "object": "ObjectExternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Page nouvelle commande",
+ "tsl_plural_value": null,
+ "tsl_help": "Cette page vous permet de saisir une nouvelle commande",
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,22 @@
+{
+ "cax_crosstab_id__ctb_name": "DemoOrder-TC2",
+ "cax_objfield_id__obf_object_id__obo_name": "DemoOrder",
+ "cax_objfield_id__obf_order": 310,
+ "cax_objfield_id__obf_field_id__fld_name": "demoPrdReference",
+ "cax_type": "L",
+ "cax_order": 2,
+ "cax_function": null,
+ "cax_chart": null,
+ "cax_precision": 2,
+ "cax_subtotal": true,
+ "cax_formula": null,
+ "cax_hidden": false,
+ "cax_objfield_id__obf_field_id__fld_type": "15",
+ "cax_dategroup": null,
+ "row_module_id__mdl_name": "Demo",
+ "cax_unitscale": null,
+ "cax_unitfunct": null,
+ "cax_unitlabel": null,
+ "cax_yaxis": "L",
+ "cax_palette": null
+}

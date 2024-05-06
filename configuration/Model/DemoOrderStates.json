@@ -1,0 +1,17 @@
+{
+ "mod_name": "DemoOrderStates",
+ "mod_template_id__mtp_name": "ModelState",
+ "mod_template_id__mtp_type": "S",
+ "mod_json": null,
+ "mod_doc": {
+  "path": "files/Model/DemoOrderStates.svg",
+  "mime": "image/svg+xml",
+  "name": "model.svg"
+ },
+ "mod_image": {
+  "path": "files/Model/DemoOrderStates.png",
+  "mime": "image/png",
+  "name": "DemoOrderStates.png"
+ },
+ "row_module_id__mdl_name": "Demo"
+}

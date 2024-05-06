@@ -1,0 +1,7 @@
+{
+ "och_object_id__obo_name": "DemoOrder",
+ "och_context": ["S"],
+ "och_lang": "ENU",
+ "och_help": "Best approach to find the appropriate order is to search on the <u>order number.<\/u><br/>You can also use the global search",
+ "row_module_id__mdl_name": "Demo"
+}

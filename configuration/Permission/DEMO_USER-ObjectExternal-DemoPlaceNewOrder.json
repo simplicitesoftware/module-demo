@@ -1,0 +1,16 @@
+{
+ "prm_group_id__grp_name": "DEMO_USER",
+ "prm_object": {
+  "item": {"obe_name": "DemoPlaceNewOrder"},
+  "icon": "img/system/external_object",
+  "label": "External object",
+  "userkeylabel": "DemoPlaceNewOrder",
+  "object": "ObjectExternal"
+ },
+ "prm_perm": true,
+ "prm_upd": null,
+ "prm_req": null,
+ "prm_prop": null,
+ "prm_value": null,
+ "row_module_id__mdl_name": "Demo"
+}

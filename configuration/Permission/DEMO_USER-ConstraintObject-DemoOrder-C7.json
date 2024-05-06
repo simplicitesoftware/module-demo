@@ -1,0 +1,16 @@
+{
+ "prm_group_id__grp_name": "DEMO_USER",
+ "prm_object": {
+  "item": {"cst_name": "DemoOrder-C7"},
+  "icon": "img/system/constraint",
+  "label": "Constraint",
+  "userkeylabel": "DemoOrder-C7",
+  "object": "ConstraintObject"
+ },
+ "prm_perm": true,
+ "prm_upd": null,
+ "prm_req": null,
+ "prm_prop": null,
+ "prm_value": null,
+ "row_module_id__mdl_name": "Demo"
+}

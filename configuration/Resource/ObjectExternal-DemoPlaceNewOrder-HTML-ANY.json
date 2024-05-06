@@ -1,0 +1,20 @@
+{
+ "res_object": {
+  "item": {"obe_name": "DemoPlaceNewOrder"},
+  "icon": "img/system/external_object",
+  "label": "External object",
+  "userkeylabel": "DemoPlaceNewOrder",
+  "object": "ObjectExternal"
+ },
+ "res_type": "HTML",
+ "res_lang": "ANY",
+ "res_code": "HTML",
+ "res_cached": false,
+ "res_file": {
+  "path": "resources/ObjectExternal/DemoPlaceNewOrder/HTML.html",
+  "mime": "text/html",
+  "name": "HTML.html"
+ },
+ "res_image": null,
+ "row_module_id__mdl_name": "Demo"
+}

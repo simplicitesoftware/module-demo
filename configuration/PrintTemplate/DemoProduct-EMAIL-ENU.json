@@ -1,0 +1,15 @@
+{
+ "prt_object_id__obo_name": "DemoProduct",
+ "prt_name": "DemoProduct-EMAIL",
+ "prt_usage": "X",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Demo",
+ "prt_lang": "ENU",
+ "prt_translation": "Low stock email",
+ "prt_filename": null,
+ "prt_mimetype": null,
+ "prt_type": "TMPL",
+ "prt_method": null,
+ "prt_file": null,
+ "prt_template_id__tpl_name": "DemoProduct-EMAIL-ENU"
+}

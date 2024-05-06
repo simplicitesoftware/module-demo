@@ -1,0 +1,19 @@
+{
+ "prt_object_id__obo_name": "DemoSupplier",
+ "prt_name": "DemoSupplier-CATALOG",
+ "prt_usage": "L",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Demo",
+ "prt_lang": "ANY",
+ "prt_translation": "Catalog",
+ "prt_filename": null,
+ "prt_mimetype": "html",
+ "prt_type": "FILE",
+ "prt_method": null,
+ "prt_file": {
+  "path": "files/PrintTemplate/DemoSupplier-CATALOG.html",
+  "mime": "text/html",
+  "name": "DemoSupplier-CATALOG.html"
+ },
+ "prt_template_id__tpl_name": null
+}

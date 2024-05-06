@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "DemoProduct"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "DemoProduct",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Produit",
+ "tsl_plural_value": "Produits",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Demo"
+}

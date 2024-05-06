@@ -1,0 +1,18 @@
+{
+ "tsl_object": {
+  "item": {"fld_name": "demoPrdReference"},
+  "icon": "img/system/field",
+  "label": "Field",
+  "userkeylabel": "demoPrdReference",
+  "object": "Field"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Reference",
+ "tsl_simplehelp": null,
+ "tsl_plural_value": null,
+ "tsl_short_value": null,
+ "tsl_placeholder": "Auto-incremented",
+ "tsl_listhelp": null,
+ "tsl_tooltip": null,
+ "row_module_id__mdl_name": "Demo"
+}

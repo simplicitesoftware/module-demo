@@ -1,0 +1,9 @@
+{
+ "fct_name": "DEMO_CLI_MAP_A",
+ "fct_object_id__obo_type": "O",
+ "fct_object_id__obo_name": "DemoClient",
+ "fct_function": "A",
+ "fct_action_id__act_name": "DEMO_CLIENTMAP",
+ "fct_view_id__viw_name": null,
+ "row_module_id__mdl_name": "Demo"
+}

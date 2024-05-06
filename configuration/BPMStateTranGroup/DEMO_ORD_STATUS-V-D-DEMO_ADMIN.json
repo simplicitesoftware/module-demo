@@ -1,0 +1,7 @@
+{
+ "stg_transition_id__stm_name": "DEMO_ORD_STATUS-V-D",
+ "stg_group_id__grp_name": "DEMO_ADMIN",
+ "stg_activ": true,
+ "stg_object_id__obo_name": "DemoOrder",
+ "row_module_id__mdl_name": "Demo"
+}

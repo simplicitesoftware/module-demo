@@ -1,0 +1,9 @@
+{
+ "lov_name": "TEXT",
+ "lov_code": "DEMO_WARN",
+ "lov_lang": "ANY",
+ "lov_value": "Demo warning: [1]",
+ "lov_order_by": 1,
+ "lov_event_id__lev_code": "DEMO_WARN",
+ "row_module_id__mdl_name": "Demo"
+}

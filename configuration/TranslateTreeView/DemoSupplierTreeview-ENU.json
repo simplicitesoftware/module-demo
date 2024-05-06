@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"trv_name": "DemoSupplierTreeview"},
+  "icon": "img/system/treeview",
+  "label": "Tree view",
+  "userkeylabel": "DemoSupplierTreeview",
+  "object": "TreeView"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Supplier tree view",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Demo"
+}

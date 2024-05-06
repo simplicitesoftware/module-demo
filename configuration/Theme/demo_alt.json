@@ -1,0 +1,59 @@
+{
+ "thm_name": "demo_alt",
+ "thm_logo_id": {
+  "path": "files/Theme/demo_alt/logo.svg",
+  "mime": "image/svg+xml",
+  "name": "logo.svg"
+ },
+ "thm_logo_invert": false,
+ "thm_logo2_id": {
+  "path": "files/Theme/demo_alt/logo2.png",
+  "mime": "image/png",
+  "name": "logo2.png"
+ },
+ "thm_favicon_id": {
+  "path": "files/Theme/demo_alt/favicon.png",
+  "mime": "image/png",
+  "name": "favicon.png"
+ },
+ "thm_color1": "#ffffff",
+ "thm_color2": "#ffffff",
+ "thm_text2": "#418cf0",
+ "thm_color3": "#ffffff",
+ "thm_text3": "#418cf0",
+ "thm_base": "light",
+ "thm_css_doc": {
+  "path": "files/Theme/demo_alt/demo_alt_gen.css",
+  "mime": "text/css",
+  "name": "demo_alt_gen.css"
+ },
+ "thm_addon": {
+  "path": "files/Theme/demo_alt/addon.less",
+  "mime": "text/less",
+  "name": "addon.less"
+ },
+ "thm_searchbox": "#ebf2f7",
+ "thm_active": null,
+ "thm_font": "Ubuntu",
+ "thm_font_mono": null,
+ "thm_iconset": null,
+ "thm_code_editor_theme": null,
+ "thm_html_editor_theme": "LIGHT",
+ "thm_menu_dom_c": null,
+ "thm_menu_dom_t": "#418cf0",
+ "thm_menu_dact_c": "#ebf2f7",
+ "thm_menu_dact_t": "#418cf0",
+ "thm_menu_sub_c": null,
+ "thm_menu_sub_t": null,
+ "thm_menu_sact_c": null,
+ "thm_menu_sact_t": "#418cf0",
+ "thm_menu_sta_c": null,
+ "thm_menu_sta_t": "#8bb2e5",
+ "thm_compact": false,
+ "row_module_id__mdl_name": "Demo",
+ "thm_const": {
+  "path": "files/Theme/demo_alt/const.less",
+  "mime": "text/less",
+  "name": "const.less"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ctb_name": "DemoProduct-T1"},
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table",
+  "userkeylabel": "DemoProduct-T1",
+  "object": "Crosstab"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Products by suppliers and types",
+ "row_module_id__mdl_name": "Demo"
+}

@@ -1,0 +1,7 @@
+{
+ "atc_alert_id__alt_name": "DemoOrderDelivery",
+ "atc_lang": "ENU",
+ "atc_subject": "Order [VALUE:demoOrdNumber] shipped",
+ "atc_message": "<p>Hello [VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname],<\/p>\n<p>Your order [VALUE:demoOrdNumber] dated [VALUE:demoOrdDate] has been shipped.<\/p>\n<p>You will shortly receive a calendar invitation for delivery.<\/p>",
+ "row_module_id__mdl_name": "Demo"
+}
