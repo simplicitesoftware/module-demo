@@ -214,7 +214,7 @@
      "item": {
       "viw_name": "DemoHome",
       "viw_type": "D",
-      "viw_ui": "<div class=\"area\" data-area=\"5\"><\/div>\n<div class=\"row\">\n\t<div class=\"area col-sm-12\" data-area=\"1,2,4:=\"><\/div>\n<\/div>\n<div class=\"row\">\n\t<div class=\"area col-sm-12\" data-area=\"3:=\"><\/div>\n<\/div>",
+      "viw_ui": "<div>\n  <div class=\"area\" data-area=\"5\"><\/div>\n  <div class=\"row\">\n    <div class=\"area col-sm-12\" data-area=\"1,2,4:=\"><\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"area col-sm-12\" data-area=\"3:=\"><\/div>\n  <\/div>\n<\/div>",
       "viw_order": 1,
       "viw_icon": "demo",
       "row_module_id__mdl_name": "Demo"
@@ -26573,7 +26573,7 @@
        "object": "View"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "Demo",
+      "tsl_value": "Demo (user)",
       "tsl_help": null,
       "row_module_id__mdl_name": "Demo"
      }
@@ -26590,7 +26590,7 @@
        "object": "View"
       },
       "tsl_lang": "FRA",
-      "tsl_value": "Démo",
+      "tsl_value": "Démo (utilisateur)",
       "tsl_help": null,
       "row_module_id__mdl_name": "Demo"
      }
@@ -26607,7 +26607,7 @@
        "object": "View"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "Public home",
+      "tsl_value": "Demo (public)",
       "tsl_help": null,
       "row_module_id__mdl_name": "Demo"
      }
@@ -26624,7 +26624,7 @@
        "object": "View"
       },
       "tsl_lang": "FRA",
-      "tsl_value": "Accueil public",
+      "tsl_value": "Démo (public)",
       "tsl_help": null,
       "row_module_id__mdl_name": "Demo"
      }
@@ -26675,7 +26675,7 @@
        "object": "View"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "Demo",
+      "tsl_value": "Demo (administrator)",
       "tsl_help": null,
       "row_module_id__mdl_name": "Demo"
      }
@@ -26692,7 +26692,7 @@
        "object": "View"
       },
       "tsl_lang": "FRA",
-      "tsl_value": "Démo",
+      "tsl_value": "Démo (admininstrateur)",
       "tsl_help": null,
       "row_module_id__mdl_name": "Demo"
      }
