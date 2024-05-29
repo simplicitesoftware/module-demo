@@ -54,7 +54,7 @@ function selCli() {
 	$("#DemoPlaceNewOrder-cli").find("p").removeClass("sel");
 	$("#DemoPlaceNewOrder-cli_" + cli.item.row_id).addClass("sel");
 	$("#DemoPlaceNewOrder-selcli").empty().append($("<strong/>").text(cli.item.demoCliCode + " - " + cli.item.demoCliFirstname + " " + cli.item.demoCliLastname));
-	if (prd && prd.item) {
+	if (prd?.item) {
 		$("#DemoPlaceNewOrder-ok").attr("disabled", false);
 		$("#DemoPlaceNewOrder-qty").select();
 	}
@@ -103,7 +103,7 @@ function selPrd() {
 	$("#DemoPlaceNewOrder-selprd").empty()
 		.append($("<img/>", { src: "data:" + prd.item.demoPrdPicture.mime + ";base64," + prd.item.demoPrdPicture.content })
 		.append("<br/>").append($("<strong/>").text(prd.item.demoPrdReference + " " + prd.item.demoPrdName)));
-	if (cli.item) {
+	if (cli?.item) {
 		$("#DemoPlaceNewOrder-ok").attr("disabled", false);
 		$("#DemoPlaceNewOrder-qty").select();
 	}
