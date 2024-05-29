@@ -63,7 +63,7 @@ public class DemoCommon implements java.io.Serializable {
 
 		// Stock is considered low if less than X% of total ordered quantity
 		AppLog.info("Current stock = " + stock, grant);
-		int threshold = Math.round(((float)grant.getIntParameter("DEMO_PRD_LOWSTOCK_THRESHOLD", 10) / 100) * quantity);
+		long threshold = Math.round(((double)grant.getIntParameter("DEMO_PRD_LOWSTOCK_THRESHOLD", 10) / 100) * quantity);
 		AppLog.info("Low stock threshold " + threshold, grant);
 		boolean lowStock = stock < threshold;
 		AppLog.info("Low stock " + lowStock, grant);
