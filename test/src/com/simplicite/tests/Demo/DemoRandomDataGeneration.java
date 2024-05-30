@@ -7,6 +7,8 @@ import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.Tool;
 import com.simplicite.util.exceptions.DBException;
+import com.simplicite.util.exceptions.SaveException;
+import com.simplicite.util.exceptions.ValidateException;
 
 import org.junit.Test;
 
@@ -17,16 +19,15 @@ public class DemoRandomDataGeneration {
 	@Test
 	public void generateData() {
 		// ZZZ Disabled by default to avoid being processed when importing the module with unt tests processing
-		// generateOrders(100);
+		// [sca 30/05/24] reenabled for cicd purposes, waiting for feature "DataSet schema & script"
+		// https://community.simplicite.io/t/dataset-schema/7635
+		generateOrders(100);
 	}
 
 	protected void generateOrders(int n) {
-		Grant g = Grant.getSystemAdmin();
-		ObjectDB ord = null;
-		try {
-			ord = g.getIsolatedObject("DemoOrder");
-
-			for (int i = 0; i < n; i++) {
+		ObjectDB ord = Grant.getSystemAdmin().getIsolatedObject("DemoOrder");
+		for (int i = 0; i < n; i++) {
+			try{
 				ord.resetValues();
 				ord.setFieldValue("demoOrdDate", getRandomDateInLastNDays(90));
 				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
@@ -36,12 +37,12 @@ public class DemoRandomDataGeneration {
 				ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
 				ord.getTool().validateAndSave();
 			}
-		} catch (Exception e) {
-			AppLog.error(e.getMessage(), e, g);
-		} finally {
-			if (ord != null)
-				ord.destroy();
+			catch(ValidateException|SaveException|DBException e){
+				AppLog.simpleWarning(e);
+			}
 		}
+		if (ord != null)
+			ord.destroy();
 	}
 
 	private static String getRandomStatus(ObjectField f) {
