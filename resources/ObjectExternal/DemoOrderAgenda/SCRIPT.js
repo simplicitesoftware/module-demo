@@ -19,85 +19,17 @@ function render(url) {
 
 // Choose appropriate calendar function for current FullCalendar version
 function calendar() {
-	const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 3;
+	const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
 	if (debug) console.log("FullCalendar version = " + fc);
-	if (fc == 5)
-		calendar5();
+	if (fc < 4)
+		$('#demoOrderAgenda').text(`Fullcalendar version ${fc} is not supported`);
 	else if (fc == 4)
 		calendar4();
 	else
-		calendar3();
+		calendar5();
 }
 
-// For FullCalendar version 3
-function calendar3() {
-	$("#demoOrderAgenda").fullCalendar({
-		header: {
-			left: "prev,next today",
-			center: "title",
-			right: "month,agendaWeek"
-		},
-		timezone: $ui.grant.timezone || "local",
-		locale: $ui.grant.langiso || "en",
-		defaultView: "agendaWeek",
-		editable: true,
-		firstDay: 1,
-		minTime: "08:00:00",
-		maxTime: "20:00:00",
-		businessHours: {
-			dow: [ 1, 2, 3, 4, 5 ],
-			start: "09:00",
-			end: "18:00"
-		},
-		eventClick: function(e) {
-			if (debug) console.log("Order " + e.id + " clicked");
-			$ui.displayForm(null, "DemoOrder", e.id, { nav: "add" });
-		},
-		eventDrop: function(e) {
-			const s = e.start.format( "YYYY-MM-DD HH:mm:ss");
-			if (debug) console.log("Order " + e.id + " dropped to " + s);
-			e.data.demoOrdDeliveryDate = s;
-			ord.update(function() {
-				e.data = ord.item;
-				if (debug) console.log("Order " + e.data.demoOrdNumber + " delivery date updated to " + s);
-			}, e.data);
-		},
-		events: function(start, end, tz, callback) {
-			const f = "YYYY-MM-DD HH:mm:ss Z";
-			const dmin = start.format(f);
-			const dmax = end.format(f);
-			if (debug) console.log("Calendar view range = " + dmin + " to " + dmax);
-			ord.search(function() {
-				if (debug) console.log(ord.list.length + " orders found between " + dmin + " and " + dmax);
-				const status = ord.getField("demoOrdStatus");
-				const evts = [];
-				for (const item of ord.list) {
-					if (item.demoOrdDeliveryDate !== "") { // ZZZ When using intervals empty values are included !
-						const s = moment(item.demoOrdDeliveryDate);
-						const e = s.add(2, "h");
-						const st = status.getEnumItem(item.demoOrdStatus);
-						evts.push({
-							id: item.row_id,
-							data: item,
-							title: item.demoOrdNumber + ":" + item.demoOrdCliId__demoCliCode + " / " + item.demoOrdPrdId__demoPrdReference + "\n" + status.getDisplay() + ": " + status.displayValue(item.demoOrdStatus),
-							start: s.toDate(),
-							end: e.toDate(),
-							editable: item.demoOrdStatus == "P" || item.demoOrdStatus == "V",
-							durationEditable: false,
-							color: st.bgcolor,
-							borderColor: st.bgcolor,
-							textColor: st.color
-						});
-					}
-				}
-				if (debug) console.log(evts.length + " orders displayed between " + dmin + " and " + dmax);
-				callback(evts);
-			}, { demoOrdDeliveryDate: dmin + ";" + dmax, demoOrdStatus: "P;V;D" }, { inlineDocs: false });
-		}
-	});
-}
-
-// For FullCalendar version 4
+// For legacy FullCalendar version 4
 function calendar4() {
 	new FullCalendar.Calendar($("#demoOrderAgenda")[0], {
 		plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
