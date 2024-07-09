@@ -7,8 +7,6 @@ import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
 import com.simplicite.util.Tool;
 import com.simplicite.util.exceptions.DBException;
-import com.simplicite.util.exceptions.SaveException;
-import com.simplicite.util.exceptions.ValidateException;
 
 import org.junit.Test;
 
@@ -18,31 +16,34 @@ import org.junit.Test;
 public class DemoRandomDataGeneration {
 	@Test
 	public void generateData() {
-		// ZZZ Disabled by default to avoid being processed when importing the module with unt tests processing
-		// [sca 30/05/24] reenabled for cicd purposes, waiting for feature "DataSet schema & script"
-		// https://community.simplicite.io/t/dataset-schema/7635
-		generateOrders(100);
+		generateOrders(Tool.parseInt(System.getenv("DEMO_NB_ORDERS"), 0));
 	}
 
 	protected void generateOrders(int n) {
-		ObjectDB ord = Grant.getSystemAdmin().getIsolatedObject("DemoOrder");
-		for (int i = 0; i < n; i++) {
-			try{
+		if (n <= 0)
+			return;
+
+		Grant g = Grant.getSystemAdmin();
+		ObjectDB ord = null;
+		try {
+			ord = g.getIsolatedObject("DemoOrder");
+
+			for (int i = 0; i < n; i++) {
 				ord.resetValues();
 				ord.setFieldValue("demoOrdDate", getRandomDateInLastNDays(90));
 				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
 				ord.setFieldValue("demoOrdCliId", getRandomRowId("demo_client"));
 				ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
-				ord.setFieldValue("demoOrdQuantity", Tool.randomInt(0, 10));
+				ord.setFieldValue("demoOrdQuantity", Tool.randomInt(1, 5));
 				ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
 				ord.getTool().validateAndSave();
 			}
-			catch(ValidateException|SaveException|DBException e){
-				AppLog.simpleWarning(e);
-			}
+		} catch (Exception e) {
+			AppLog.error(e.getMessage(), e, g);
+		} finally {
+			if (ord != null)
+				ord.destroy();
 		}
-		if (ord != null)
-			ord.destroy();
 	}
 
 	private static String getRandomStatus(ObjectField f) {
