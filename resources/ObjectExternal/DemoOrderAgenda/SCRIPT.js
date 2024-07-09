@@ -19,17 +19,17 @@ function render(url) {
 
 // Choose appropriate calendar function for current FullCalendar version
 function calendar() {
-	const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 3;
+	const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
 	if (debug) console.log("FullCalendar version = " + fc);
-	if (fc == 5)
-		calendar5();
+	if (fc <= 3)
+		calendar3();
 	else if (fc == 4)
 		calendar4();
 	else
-		calendar3();
+		calendar5();
 }
 
-// For FullCalendar version 3
+// For legacy FullCalendar version 3
 function calendar3() {
 	$("#demoOrderAgenda").fullCalendar({
 		header: {
@@ -97,7 +97,7 @@ function calendar3() {
 	});
 }
 
-// For FullCalendar version 4
+// For legacy FullCalendar version 4
 function calendar4() {
 	new FullCalendar.Calendar($("#demoOrderAgenda")[0], {
 		plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
