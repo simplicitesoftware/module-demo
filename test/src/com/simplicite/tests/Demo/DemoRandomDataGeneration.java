@@ -16,8 +16,7 @@ import org.junit.Test;
 public class DemoRandomDataGeneration {
 	@Test
 	public void generateData() {
-		// ZZZ Disabled by default to avoid being processed when importing the module with unt tests processing
-		// generateOrders(100);
+		generateOrders(Tool.parseInt(System.getenv("DEMO_NB_ORDERS"), 0));
 	}
 
 	protected void generateOrders(int n) {
@@ -32,7 +31,7 @@ public class DemoRandomDataGeneration {
 				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
 				ord.setFieldValue("demoOrdCliId", getRandomRowId("demo_client"));
 				ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
-				ord.setFieldValue("demoOrdQuantity", Tool.randomInt(0, 10));
+				ord.setFieldValue("demoOrdQuantity", Tool.randomInt(1, 5));
 				ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
 				ord.getTool().validateAndSave();
 			}

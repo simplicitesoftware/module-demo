@@ -21,7 +21,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <sonar.projectName>Demo</sonar.projectName>
     <sonar.projectVersion>5</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
-    <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
+    <sonar.exclusions>Demo.xml,Demo.json,Demo-*.yml,configuration/**,**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
   </properties>
   <packaging>jar</packaging>
@@ -79,12 +79,6 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <artifactId>simplicite-api</artifactId>
       <version>${simplicite.version}</version>
       <classifier>javadoc</classifier>
-    </dependency>
-    <dependency>
-      <groupId>com.simplicite</groupId>
-      <artifactId>simplicite-api</artifactId>
-      <version>${simplicite.version}</version>
-      <classifier>sources</classifier>
     </dependency>
   </dependencies>
 </project>
