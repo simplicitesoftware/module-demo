@@ -20,6 +20,9 @@ public class DemoRandomDataGeneration {
 	}
 
 	protected void generateOrders(int n) {
+		if (n <= 0)
+			return;
+
 		Grant g = Grant.getSystemAdmin();
 		ObjectDB ord = null;
 		try {
