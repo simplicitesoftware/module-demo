@@ -30,7 +30,9 @@ public class DemoRandomDataGeneration {
 
 			for (int i = 0; i < n; i++) {
 				ord.resetValues();
-				ord.setFieldValue("demoOrdDate", getRandomDateInLastNDays(90));
+				String d = getRandomDateInLastNDays(90);
+				ord.setFieldValue("demoOrdDate", d);
+				ord.setFieldValue("demoOrdDeliveryDate", getRandomDeliveryDate(d));
 				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
 				ord.setFieldValue("demoOrdCliId", getRandomRowId("demo_client"));
 				ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
@@ -53,6 +55,12 @@ public class DemoRandomDataGeneration {
 
 	private static String getRandomDateInLastNDays(int n) {
 		return Tool.shiftDays(Tool.getCurrentDate(), Tool.randomInt(-n, 0));
+	}
+
+	private static String getRandomDeliveryDate(String orderDate){
+		String d = Tool.shiftDays(orderDate, Tool.randomInt(0, 5));
+		String h = String.format("%02d", Tool.randomInt(8, 17));
+		return d+" "+h+":00:00";
 	}
 
 	private static String getRandomRowId(String tableName) throws DBException {
