@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1229" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1231" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -2150,7 +2150,7 @@ mvn verify sonar:sonar
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
 		<fld_exportable>1</fld_exportable>
-		<fld_tray/>
+		<fld_tray>2;3</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_COUNTRY</fld_list_id.lov_name>
@@ -4061,7 +4061,7 @@ mvn verify sonar:sonar
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
 		<fld_exportable>1</fld_exportable>
-		<fld_tray>2</fld_tray>
+		<fld_tray>2;3</fld_tray>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name>DEMO_PRD_TYPE</fld_list_id.lov_name>
@@ -5449,7 +5449,7 @@ the date-based, language-based and rights filterings.]]></obe_comment>
 		<obe_help/>
 		<obe_class>com.simplicite.webapp.web.widgets.CardsExternalObject</obe_class>
 		<obe_script_id/>
-		<obe_icon/>
+		<obe_icon>fas/rss</obe_icon>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -17466,11 +17466,11 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Code</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>Aide sur le code (formulaire)</p>]]></tsl_simplehelp>
 		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
+		<tsl_short_value>Code (liste)</tsl_short_value>
+		<tsl_placeholder>Code (indication)</tsl_placeholder>
+		<tsl_listhelp><![CDATA[<p>Aide sur le code (liste)</p>]]></tsl_listhelp>
 		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -20337,6 +20337,46 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Image produit</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
+					<obf_order>325</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Product type</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
+					<obf_order>325</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Type produit</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
