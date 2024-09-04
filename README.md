@@ -218,10 +218,10 @@ An order is for one single product.
 | _Ref. `demoPrdSupId.demoSupLogo`_                            | _image_                                  |          |           |          | _Supplier logo_                                                                  |
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
 | _Ref. `demoOrdPrdId.demoPrdStock`_                           | _int(11)_                                |          |           |          | _Current stock for product_                                                      |
-| _Ref. `demoOrdPrdId.demoPrdUnitPrice`_                       | _float(11, 2)_                           |          |           |          | _Unit price of product_                                                          |
+| _Ref. `demoOrdPrdId.demoPrdUnitPrice`_                       | _float(11, 0)_                           |          |           |          | _Unit price of product_                                                          |
 | `demoOrdUnitPrice`                                           | float(11, 2)                             |          |           |          | Product unit price for order                                                     |
 | `demoOrdQuantity`                                            | int(11)                                  | yes      | yes       |          | Product quantity ordered                                                         |
-| `demoOrdTotal`                                               | float(11, 2)                             |          |           |          | Total order amount                                                               |
+| `demoOrdTotal`                                               | float(11, 0)                             |          |           |          | Total order amount                                                               |
 | `demoOrdVAT`                                                 | float(11, 2)                             |          |           |          | VAT for order                                                                    |
 | `demoOrdComments`                                            | notepad(50000)                           |          | yes       |          | Comments on order                                                                |
 
@@ -292,7 +292,7 @@ An order is for one single product.
 | `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
 | `demoPrdReference`                                           | regexp(10)                               | *        |           |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
-| `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
+| `demoPrdUnitPrice`                                           | float(11, 0)                             | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
 
 `DemoSupplier` business object definition
@@ -342,7 +342,7 @@ Its reference is unique per supplier.
 | `demoPrdEan13`                                               | char(13)                                 |          | yes       |          | EAN13 code                                                                       |
 | `demoPrdEan13Image`                                          | image                                    |          |           |          | EAN13 code image                                                                 |
 | `demoPrdStock`                                               | int(11)                                  | yes      | yes       |          | Current stock for product                                                        |
-| `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
+| `demoPrdUnitPrice`                                           | float(11, 0)                             | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
 | `demoPrdFeatured`                                            | boolean                                  | yes      | yes       |          | Featured product?                                                                |
 | `demoPrdDocumentation`                                       | html(1000000)                            |          | yes       |          | Product documentation                                                            |

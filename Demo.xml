@@ -1594,7 +1594,7 @@ mvn verify sonar:sonar
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>C</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Closed]]></lov_value>
+		<lov_value><![CDATA[Fermé]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1671,7 +1671,7 @@ mvn verify sonar:sonar
 		<lov_code_id.lov_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>ORDSTATUS</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Order status]]></lov_value>
+		<lov_value><![CDATA[Statut de la commande]]></lov_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3366,7 +3366,7 @@ mvn verify sonar:sonar
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
-		<fld_precision>2</fld_precision>
+		<fld_precision>0</fld_precision>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[0]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
@@ -3377,7 +3377,7 @@ mvn verify sonar:sonar
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_speech/>
-		<fld_calc><![CDATA[[VALUE:demoOrdQuantity] * [VALUE:demoOrdUnitPrice]]]></fld_calc>
+		<fld_calc><![CDATA[[STATUS] != "C" ? [VALUE:demoOrdQuantity] * [VALUE:demoOrdUnitPrice] : 0]]></fld_calc>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Total order amount]]></fld_comment>
 		<fld_classification/>
@@ -4107,7 +4107,7 @@ mvn verify sonar:sonar
 		<fld_copy>1</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
-		<fld_precision>2</fld_precision>
+		<fld_precision>0</fld_precision>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[0]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
@@ -5401,14 +5401,24 @@ This custom API returns the available products only.]]></obe_comment>
     "icon": "fas/user"
   },
   {
-    "color": "green",
-    "name": "DemoOrder",
-    "icon": "fas/folder-open"
-  },
-  {
     "color": "red",
     "name": "DemoContact",
     "icon": "fas/comments"
+  },
+  {
+    "color": "green",
+    "field": "demoOrdTotal",
+    "name": "DemoOrder",
+    "icon": "fas/folder-open",
+    "helps": {
+      "FRA": "Les commandes annulées et suspendues ne sont pas commtablisées",
+      "ANY": "The cancelled and on-hold orders are not taken into account"
+    },
+    "filters": {"demoOrdStatus": "<>'C' and <>'H'"},
+    "labels": {
+      "FRA": "CA total",
+      "ANY": "Total revenue"
+    }
   }
 ]}]]></obe_settings>
 		<obe_comment><![CDATA[Counters
@@ -16743,7 +16753,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Total commande</tsl_value>
+		<tsl_value>Total</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
