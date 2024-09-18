@@ -81,12 +81,16 @@ public class DemoCommon implements java.io.Serializable {
 		try (ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream()) {
 			Document pdf = PDFTool.open(bos);
 
+			ObjectField f = ord.getField("demoOrdNumber");
+
+			// Title
+			pdf.addTitle(ord.getDisplay() + " " + f.getValue());
+
 			// Logo
 			pdf.add(PDFTool.getImageFromResource(ord.getGrant(), "DEMO_PRINT_LOGO"));
 
 			pdf.add(new Paragraph(ord.getGrant().T("DEMO_RECEIPT"), PDFTool.TITLE1));
 
-			ObjectField f = ord.getField("demoOrdNumber");
 			pdf.add(new Paragraph(f.getDisplay() + ": " + f.getValue(), PDFTool.TITLE2));
 			f = ord.getField("demoOrdDate");
 			pdf.add(new Paragraph(f.getDisplay() + ": " + ord.getGrant().toFormattedDate(f.getValue())));
