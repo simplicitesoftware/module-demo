@@ -84,12 +84,12 @@ public class DemoCommon implements java.io.Serializable {
 
 			ObjectField f = ord.getField("demoOrdNumber");
 			String receipt = ord.getGrant().T("DEMO_RECEIPT");
-			String title = ord.getDisplay() + " " + f.getDisplay() + " " + f.getValue();
+			String title = ord.getDisplay() + " " + f.getDisplay().toLowerCase() + " " + f.getValue();
 
 			// Properties
 			pdf.addTitle(title);
 			pdf.addSubject(receipt + ": " + title);
-			pdf.addAuthor(Globals.getPlatformName());
+			pdf.addAuthor(Globals.getPlatformName() + " / " + ord.getModuleName());
 			pdf.addCreator(Globals.getPlatformVendor());
 			pdf.addKeywords(receipt.toLowerCase() + " " + ord.getDisplay().toLowerCase());
 			
