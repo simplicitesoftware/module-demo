@@ -962,56 +962,78 @@ mvn verify sonar:sonar
 	<action>upsert</action>
 	<data>
 		<lov_name>DEMO_CLI_TYPE</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_COUNTRY</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_CANAL</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_STATUS</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE_CMP</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE_INF</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE_REQ</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_TYPE</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
 	<data>
 		<lov_name>DEMO_ORD_STATUS</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoOrderStates</lov_model_id.mod_name>
 	</data>
 	<data>
 		<lov_name>DEMO_PRD_TYPE</lov_name>
+		<lov_navbar/>
+		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
 	</data>
@@ -1984,7 +2006,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliCity</fld_name>
 		<fld_dbname>cli_city</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2023,7 +2045,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliCode</fld_name>
 		<fld_dbname>cli_code</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2140,7 +2162,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliCountry</fld_name>
 		<fld_dbname>cli_country</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2179,7 +2201,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliEmail</fld_name>
 		<fld_dbname>cli_email</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2257,7 +2279,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliFirstname</fld_name>
 		<fld_dbname>cli_firstname</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2335,7 +2357,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliLastname</fld_name>
 		<fld_dbname>cli_lastname</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2413,7 +2435,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliPlacemapLabel</fld_name>
 		<fld_dbname/>
 		<fld_visible>0</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
@@ -2452,7 +2474,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliType</fld_name>
 		<fld_dbname>cli_type</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2530,7 +2552,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCliZipCode</fld_name>
 		<fld_dbname>cli_zipcode</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2608,7 +2630,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCtcCliId</fld_name>
 		<fld_dbname>ctc_cli_id</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2647,7 +2669,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCtcComments</fld_name>
 		<fld_dbname>ctc_comments</fld_dbname>
 		<fld_visible>4</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
@@ -2803,7 +2825,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCtcOrdId</fld_name>
 		<fld_dbname>ctc_ord_id</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2842,7 +2864,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCtcPicture</fld_name>
 		<fld_dbname>demo_ctc_picture</fld_dbname>
 		<fld_visible>2</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
@@ -2881,7 +2903,7 @@ mvn verify sonar:sonar
 		<fld_name>demoCtcPriority</fld_name>
 		<fld_dbname>ctc_priority</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -3037,7 +3059,7 @@ mvn verify sonar:sonar
 		<fld_name>demoOrdCliId</fld_name>
 		<fld_dbname>ord_cli_id</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -3232,7 +3254,7 @@ mvn verify sonar:sonar
 		<fld_name>demoOrdPrdId</fld_name>
 		<fld_dbname>ord_prd_id</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -3271,7 +3293,7 @@ mvn verify sonar:sonar
 		<fld_name>demoOrdQuantity</fld_name>
 		<fld_dbname>ord_quantity</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>4</fld_research>
@@ -3583,7 +3605,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdDescription</fld_name>
 		<fld_dbname>prd_description</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
@@ -3661,7 +3683,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdEan13</fld_name>
 		<fld_dbname>demo_prd_ean13</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -3739,7 +3761,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdFeatured</fld_name>
 		<fld_dbname>demo_prd_featured</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -3778,7 +3800,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdIncrement</fld_name>
 		<fld_dbname/>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
@@ -3817,7 +3839,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdName</fld_name>
 		<fld_dbname>prd_name</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -3856,7 +3878,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdOnlineDoc</fld_name>
 		<fld_dbname>prd_onlinedoc</fld_dbname>
 		<fld_visible>2</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
@@ -3973,7 +3995,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdStock</fld_name>
 		<fld_dbname>prd_stock</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4012,7 +4034,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdSupId</fld_name>
 		<fld_dbname>prd_sup_id</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4051,7 +4073,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdType</fld_name>
 		<fld_dbname>prd_type</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4090,7 +4112,7 @@ mvn verify sonar:sonar
 		<fld_name>demoPrdUnitPrice</fld_name>
 		<fld_dbname>prd_unitprice</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4129,7 +4151,7 @@ mvn verify sonar:sonar
 		<fld_name>demoSupCode</fld_name>
 		<fld_dbname>sup_code</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4363,7 +4385,7 @@ mvn verify sonar:sonar
 		<fld_name>demoSupName</fld_name>
 		<fld_dbname>sup_name</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4480,7 +4502,7 @@ mvn verify sonar:sonar
 		<fld_name>demoSupWebsite</fld_name>
 		<fld_dbname>sup_website</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
@@ -4519,7 +4541,7 @@ mvn verify sonar:sonar
 		<fld_name>uft_demoSupId</fld_name>
 		<fld_dbname>uft_demos_sup_id</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>1</fld_updatable>
+		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -4635,6 +4657,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4653,6 +4676,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4675,6 +4699,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4708,6 +4733,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4734,6 +4760,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4745,6 +4772,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4756,6 +4784,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4772,6 +4801,7 @@ mvn verify sonar:sonar
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
+		<tpl_context/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -5527,6 +5557,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>DemoOrder;demoOrdCliId</obo_dfltref>
 		<obo_template_id.tpl_name>DemoClient</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5600,6 +5631,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>DemoContactHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoContact</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5674,6 +5706,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>0</obo_copy>
 		<obo_export/>
 		<obo_pagine>1</obo_pagine>
@@ -5747,6 +5780,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>DemoOrderHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoOrder</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5820,6 +5854,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>0</obo_copy>
 		<obo_export/>
 		<obo_pagine>1</obo_pagine>
@@ -5893,6 +5928,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_groupby>1</obo_groupby>
 		<obo_dfltref>DemoProductHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoProduct</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5967,6 +6003,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>0</obo_copy>
 		<obo_export/>
 		<obo_pagine>1</obo_pagine>
@@ -6038,6 +6075,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>DemoProduct;demoPrdSupId</obo_dfltref>
 		<obo_template_id.tpl_name>DemoSupplier</obo_template_id.tpl_name>
+		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -6825,7 +6863,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>20</obf_ref_order>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>1</obf_fld_required>
-		<obf_fld_updatable>1</obf_fld_updatable>
+		<obf_fld_updatable>2;3</obf_fld_updatable>
 		<obf_fld_research>1</obf_fld_research>
 		<obf_fld_more>0</obf_fld_more>
 		<obf_fld_listmore>0</obf_fld_listmore>
@@ -7104,7 +7142,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order>10</obf_ref_order>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>0</obf_fld_required>
-		<obf_fld_updatable>1</obf_fld_updatable>
+		<obf_fld_updatable>2;3</obf_fld_updatable>
 		<obf_fld_research>1</obf_fld_research>
 		<obf_fld_more>0</obf_fld_more>
 		<obf_fld_listmore>0</obf_fld_listmore>
@@ -12768,10 +12806,9 @@ is still in pending state]]></cst_desc>
 	<name>BPMState</name>
 	<action>upsert</action>
 	<data>
-		<sta_lovname>DEMO_CTC_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_CTC_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>C</sta_state_id.lov_code>
-		<sta_state>C</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Closed</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>1</sta_terminal>
@@ -12782,10 +12819,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_CTC_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_CTC_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>O</sta_state_id.lov_code>
-		<sta_state>O</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Open</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
@@ -12796,10 +12832,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_CTC_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_CTC_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>P</sta_state_id.lov_code>
-		<sta_state>P</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Processing</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
@@ -12810,10 +12845,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>C</sta_state_id.lov_code>
-		<sta_state>C</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Cancelled state</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>1</sta_terminal>
@@ -12824,10 +12858,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>D</sta_state_id.lov_code>
-		<sta_state>D</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Shipped state</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>1</sta_terminal>
@@ -12838,10 +12871,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>H</sta_state_id.lov_code>
-		<sta_state>H</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>On hold</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
@@ -12852,10 +12884,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>P</sta_state_id.lov_code>
-		<sta_state>P</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Pending state</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
@@ -12866,10 +12897,9 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<sta_lovname>DEMO_ORD_STATUS</sta_lovname>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>V</sta_state_id.lov_code>
-		<sta_state>V</sta_state>
+		<sta_role>M</sta_role>
 		<sta_label>Validated state</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
@@ -13685,8 +13715,6 @@ is still in pending state]]></cst_desc>
 	<action>upsert</action>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectInternal</name>
@@ -13701,8 +13729,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectInternal</name>
@@ -13717,8 +13743,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectInternal</name>
@@ -13733,8 +13757,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectInternal</name>
@@ -13749,8 +13771,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectInternal</name>
@@ -13765,8 +13785,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>BPMProcess</name>
@@ -13781,8 +13799,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectExternal</name>
@@ -13797,8 +13813,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectExternal</name>
@@ -13813,8 +13827,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectExternal</name>
@@ -13829,8 +13841,6 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name/>
-		<map_process_id.pcs_name/>
 		<map_object>
 			<object>
 				<name>ObjectInternal</name>
