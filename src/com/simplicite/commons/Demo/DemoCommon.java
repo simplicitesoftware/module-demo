@@ -11,6 +11,7 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.simplicite.util.AppLog;
+import com.simplicite.util.Globals;
 import com.simplicite.util.Grant;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
@@ -82,14 +83,20 @@ public class DemoCommon implements java.io.Serializable {
 			Document pdf = PDFTool.open(bos);
 
 			ObjectField f = ord.getField("demoOrdNumber");
+			String receipt = ord.getGrant().T("DEMO_RECEIPT");
+			String title = ord.getDisplay() + " " + f.getDisplay() + " " + f.getValue();
 
-			// Title
-			pdf.addTitle(ord.getDisplay() + " " + f.getValue());
-
+			// Properties
+			pdf.addTitle(title);
+			pdf.addSubject(receipt + ": " + title);
+			pdf.addAuthor(Globals.getPlatformName());
+			pdf.addCreator(Globals.getPlatformVendor());
+			pdf.addKeywords(receipt.toLowerCase() + " " + ord.getDisplay().toLowerCase());
+			
 			// Logo
 			pdf.add(PDFTool.getImageFromResource(ord.getGrant(), "DEMO_PRINT_LOGO"));
 
-			pdf.add(new Paragraph(ord.getGrant().T("DEMO_RECEIPT"), PDFTool.TITLE1));
+			pdf.add(new Paragraph(receipt, PDFTool.TITLE1));
 
 			pdf.add(new Paragraph(f.getDisplay() + ": " + f.getValue(), PDFTool.TITLE2));
 			f = ord.getField("demoOrdDate");
