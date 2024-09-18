@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+<style type="text/css">
+[CSSRESOURCE:DEMO_PRINT_STYLES]
+</style>
+</head>
+<body class="demo">
+	<header class="head"><img src="[IMGRESOURCE:DEMO_PRINT_LOGO]" alt="Logo"/></header>
+[BEGIN]
+	<section>
+		<h1>[VALUE:demoSupName]</h1>
+		<div class="desc">[VALUE:demoSupDescription]</div>
+[BEGIN:DemoProduct:demoPrdSupId]
+		<article>
+			<h2>[VALUE:demoPrdReference] - [VALUE:demoPrdName]</h2>
+			<div class="desc">[VALUE:demoPrdDescription]</div>
+			<div class="doccnt">
+				<div><img src="[VALUE:demoPrdPicture]" alt="[VALUE:demoPrdName]"/></div>
+				<div class="doc">[VALUE:demoPrdDocumentation]</div>
+			</div>
+		</article>
+[END:DemoProduct]
+	</section>
+[END]
+</body>
+</html>

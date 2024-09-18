@@ -9,9 +9,7 @@ import com.simplicite.util.AppLog;
 import com.simplicite.util.Mail;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
-import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
-import com.simplicite.util.annotations.BusinessObjectPublication;
 
 /**
  * Order business object
@@ -133,23 +131,11 @@ public class DemoOrder extends ObjectDB {
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
 	}
 
-	/** Publication: PDF receipt */
-	@BusinessObjectPublication
-	public Object printReceipt(PrintTemplate pt) {
-		try {
-			pt.setFilename(getDisplay() + "-" + getFieldValue(NUMBER_FIELDNAME) + ".pdf");
-			return DemoCommon.getInstance().orderReceipt(this); // Implemented in common class
-		} catch (Exception e) {
-			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
-			return e.getMessage();
-		}
-	}
-
-	/** Hook override: Allow custom publication only if status is validated or shipped */
+	/** Hook override: allow receipt publication only if status is validated or shipped */
 	@Override
 	public boolean isPrintTemplateEnable(String[] row, String ptName) {
-		if ("DemoOrder-PDF".equals(ptName)) {
-			String s = row!=null ? row[getStatusIndex()] : getStatus();
+		if ("DemoOrder-Receipt".equals(ptName)) {
+			String s = getStatus(row);
 			return "V".equals(s) || "D".equals(s);
 		}
 		return super.isPrintTemplateEnable(row, ptName);

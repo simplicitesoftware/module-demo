@@ -12132,7 +12132,7 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
-		<prt_name>DemoOrder-HTML</prt_name>
+		<prt_name>DemoOrder-Listing</prt_name>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12142,22 +12142,22 @@ is still in pending state]]></cst_desc>
 		<prt_mimetype>html</prt_mimetype>
 		<prt_type>TMPL</prt_type>
 		<prt_method/>
-		<prt_file>files/PrintTemplate/DemoOrder-HTML.html</prt_file>
+		<prt_file>files/PrintTemplate/DemoOrder-Listing.html</prt_file>
 		<prt_template_id.tpl_name/>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
-		<prt_name>DemoOrder-PDF</prt_name>
+		<prt_name>DemoOrder-Receipt</prt_name>
 		<prt_usage>O</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Receipt</prt_translation>
-		<prt_filename><![CDATA[Order-[VALUE:demoOrdNumber].pdf]]></prt_filename>
+		<prt_filename><![CDATA[Order-[VALUE:demoOrdNumber]]]></prt_filename>
 		<prt_mimetype>pdf</prt_mimetype>
-		<prt_type>METH</prt_type>
-		<prt_method>printReceipt</prt_method>
-		<prt_file/>
+		<prt_type>FILE</prt_type>
+		<prt_method/>
+		<prt_file>files/PrintTemplate/DemoOrder-Receipt.html</prt_file>
 		<prt_template_id.tpl_name/>
 	</data>
 	<data>
@@ -12177,7 +12177,7 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
-		<prt_name>DemoProduct-EMAIL</prt_name>
+		<prt_name>DemoProduct-Email</prt_name>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12192,7 +12192,7 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
-		<prt_name>DemoProduct-EMAIL</prt_name>
+		<prt_name>DemoProduct-Email</prt_name>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12222,7 +12222,7 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoSupplier</prt_object_id.obo_name>
-		<prt_name>DemoSupplier-CATALOG</prt_name>
+		<prt_name>DemoSupplier-Catalog</prt_name>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -12232,7 +12232,7 @@ is still in pending state]]></cst_desc>
 		<prt_mimetype>html</prt_mimetype>
 		<prt_type>FILE</prt_type>
 		<prt_method/>
-		<prt_file>files/PrintTemplate/DemoSupplier-CATALOG.html</prt_file>
+		<prt_file>files/PrintTemplate/DemoSupplier-Catalog.html</prt_file>
 		<prt_template_id.tpl_name/>
 	</data>
 </object>
