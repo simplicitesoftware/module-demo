@@ -82,7 +82,7 @@ public class DemoCommon implements java.io.Serializable {
 			Document pdf = PDFTool.open(bos);
 
 			// Logo
-			pdf.add(PDFTool.getImageFromResource(ord.getGrant(), "DEMO_LOGO"));
+			pdf.add(PDFTool.getImageFromResource(ord.getGrant(), "DEMO_PRINT_LOGO"));
 
 			pdf.add(new Paragraph(ord.getGrant().T("DEMO_RECEIPT"), PDFTool.TITLE1));
 

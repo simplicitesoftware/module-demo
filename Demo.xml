@@ -14450,10 +14450,10 @@ is still in pending state]]></cst_desc>
 		</res_object>
 		<res_type>IMG</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>DEMO_LOGO</res_code>
+		<res_code>DEMO_PRINT_LOGO</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
-		<res_image>resources/Disposition/default/DEMO_LOGO.png</res_image>
+		<res_image>resources/Disposition/default/DEMO_PRINT_LOGO.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
