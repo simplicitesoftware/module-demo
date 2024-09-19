@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
-<title>[EXPR:obj.getLabel() + " " + obj.getField("demoOrdNumber").getLabel().toLowerCase()] [VALUE:demoOrdNumber]</title>
+<title>[LABEL:DemoOrder:-] [EXPR:"[LABEL:DemoOrder:demoOrdNumber]".toLowerCase()] [VALUE:demoOrdNumber]</title>
 <style type="text/css">
 [CSSRESOURCE:DEMO_PRINT_STYLES]
 @page { size: portrait; margin: 1cm; }
@@ -54,7 +54,7 @@
 			<b>[LABEL:DemoOrder:demoOrdUnitPrice]</b>: [VALUE:demoOrdUnitPrice]
 		</p>
 		<h3>[LABEL:DemoOrder:demoOrdTotal]: [VALUE:demoOrdTotal] EUR</h3>
-		<p><b>[LABEL:DemoOrder:demoOrdVAT] ([EXPR:grant.getParameter("DEMO_VAT")] %)</b>: [VALUE:demoOrdVAT] EUR</p>
+		<p><b>[LABEL:DemoOrder:demoOrdVAT] ([SYSPARAM:DEMO_VAT] %)</b>: [VALUE:demoOrdVAT] EUR</p>
 	</section>
 </body>
 </html>

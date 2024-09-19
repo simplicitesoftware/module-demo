@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
-<title>Listing</title>
+<title>[LABEL:DemoOrder:+]</title>
 <style type="text/css">
 [CSSRESOURCE:DEMO_PRINT_STYLES]
 @page { size: landscape; }
@@ -15,13 +15,13 @@
 		<table>
 			<thead>
 				<tr>
-					<th>Number</th>
-					<th>Date</th>
-					<th>Status</th>
-					<th>Product</th>
-					<th>Product EAN</th>
-					<th>Supplier</th>
-					<th>Total</th>
+					<th>[LABEL:DemoOrder:demoOrdNumber]</th>
+					<th>[LABEL:DemoOrder:demoOrdDate]</th>
+					<th>[LABEL:DemoOrder:demoOrdStatus]</th>
+					<th>[LABEL:DemoOrder:demoOrdPrdId.demoPrdName]</th>
+					<th>EAN13</th>
+					<th>[LABEL:DemoOrder:demoOrdPrdId.demoPrdSupId]</th>
+					<th>[LABEL:DemoOrder:demoOrdTotal]</th>
 				</tr>
 			</thead>
 			<tbody>[BEGIN]
@@ -32,7 +32,7 @@
 					<td>[VALUE:demoOrdPrdId.demoPrdReference]<br/><span class="small">[VALUE:demoOrdPrdId.demoPrdName]</span></td>
 					<td><img style="width: 128px;" src="[VALUE:demoOrdPrdId.demoPrdEan13Image]"/></td>
 					<td>[VALUE:demoOrdPrdId.demoPrdSupId.demoSupName]</td>
-					<td style="text-align: right;">[VALUE:demoOrdTotal]</td>
+					<td style="text-align: right;">[VALUE:demoOrdTotal] EUR</td>
 				</tr>
 			[END]</tbody>
 		</table>
