@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1231" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1230" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -12124,10 +12124,10 @@ is still in pending state]]></cst_desc>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Mustache publication example</prt_translation>
 		<prt_filename/>
-		<prt_mimetype>html</prt_mimetype>
+		<prt_mimetype/>
 		<prt_type>METH</prt_type>
-		<prt_method>printHTML</prt_method>
-		<prt_file/>
+		<prt_method>printMustache</prt_method>
+		<prt_file>files/PrintTemplate/DemoContact-Mustache.html</prt_file>
 		<prt_template_id.tpl_name/>
 	</data>
 	<data>
@@ -14572,23 +14572,6 @@ is still in pending state]]></cst_desc>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoClient/CLASS.js</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>DemoContact</obo_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>HTML</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>PRINT</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectInternal/DemoContact/PRINT.html</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

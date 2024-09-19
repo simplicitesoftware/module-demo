@@ -32,11 +32,13 @@ public class DemoContact extends ObjectDB {
 
 	/** Publication: HTML using Mustache(R) templating */
 	@BusinessObjectPublication
-	public Object printHTML(PrintTemplate pt) {
+	public Object printMustache(PrintTemplate pt) {
 		try {
 			WebPage wp = new WebPage(pt.getDisplay());
+			wp.setBodyCSSClass("demo");
+			wp.setTitle(getDisplay());
 			wp.appendCSS(HTMLTool.getResourceCSSContent(getGrant(), "DEMO_PRINT_STYLES")); // Inlined styles
-			wp.append(MustacheTool.apply(this, "PRINT"));
+			wp.append(MustacheTool.apply(pt));
 			return wp.toString();
 		} catch (Exception e) {
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
