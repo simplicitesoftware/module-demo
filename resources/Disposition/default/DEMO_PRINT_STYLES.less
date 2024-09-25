@@ -13,7 +13,7 @@
 	h1 { font-size: 1.8rem; color: #5BC0DE; }
 	h2 { font-size: 1.6rem; color: #5CB85C; }
 	h3 { font-size: 1.4rem; color: #F0AD4E; }
-	h4 { font-size: 1.2rem color: #808080; }
+	h4 { font-size: 1.2rem; color: #808080; }
 	h5 { font-size: 1rem; color: #A0A0A0; }
 	table { width: 100%; }
 	table, tr, td { border-collapse: collapse; border: dotted .0625rem #F0F0F0; }
@@ -31,6 +31,7 @@
 		th { text-align: center; }
 	}
 }
+@page { size: A4 portrait; margin: .5cm; }
 @media screen {
 	body { background: #E0E0E0; width: 1024px; margin: 0 auto; }
 	.demo {
@@ -38,7 +39,6 @@
 	}
 }
 @media print {
-	@page { size: auto A4 portrait; margin: .5cm; }
 	.demo {
 		.pagebreak { page-break-after: always; }
 	}
