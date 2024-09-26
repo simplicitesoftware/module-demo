@@ -2862,7 +2862,7 @@ mvn verify sonar:sonar
 	</data>
 	<data>
 		<fld_name>demoCtcPicture</fld_name>
-		<fld_dbname>demo_ctc_picture</fld_dbname>
+		<fld_dbname>ctc_picture</fld_dbname>
 		<fld_visible>2</fld_visible>
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
@@ -3681,7 +3681,7 @@ mvn verify sonar:sonar
 	</data>
 	<data>
 		<fld_name>demoPrdEan13</fld_name>
-		<fld_dbname>demo_prd_ean13</fld_dbname>
+		<fld_dbname>prd_ean13</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>0</fld_required>
@@ -3720,7 +3720,7 @@ mvn verify sonar:sonar
 	</data>
 	<data>
 		<fld_name>demoPrdEan13Image</fld_name>
-		<fld_dbname>demo_prd_ean13_image</fld_dbname>
+		<fld_dbname>prd_ean13_image</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>0</fld_updatable>
 		<fld_required>0</fld_required>
@@ -3759,7 +3759,7 @@ mvn verify sonar:sonar
 	</data>
 	<data>
 		<fld_name>demoPrdFeatured</fld_name>
-		<fld_dbname>demo_prd_featured</fld_dbname>
+		<fld_dbname>prd_featured</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
