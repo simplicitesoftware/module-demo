@@ -29,6 +29,9 @@ ul.main-menu > li > a {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+ul.sub-menu a.menu-sel::before {
+	background: @theme-blue;
+}
 .header {
 	.btn-header:hover, .btn-header:focus {
 		background: @theme-lightgrey;
@@ -75,6 +78,7 @@ ul.main-menu > li > a {
 	border: none 0;
 	padding: 1rem;
 	.card {
+		border: none 0;
 		padding: 0;
 		.card-header {
 			color: @theme-blue;
@@ -91,11 +95,16 @@ ul.main-menu > li > a {
 	font-weight: bold;
 	font-size: 1rem;
 }
+.tab-content {
+	border: none 0;
+	border-bottom: solid .0625rem @theme-darkgrey;
+}
 .nav-tabs .nav-link {
 	border-radius: .5rem .5rem 0 0;
 }
-.tabs-left > .nav-tabs .nav-link {
-	border-radius: .5rem 0 0 .5rem;
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border-color: transparent;
+	border-bottom: solid .0625rem @theme-darkgrey;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
 	background-color: white;
@@ -103,9 +112,22 @@ ul.main-menu > li > a {
 	border: none 0;
 	border-bottom: solid .15rem @theme-blue;
 }
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-	border-color: transparent;
-	border-bottom: solid .0625rem @theme-darkgrey;
+.tabs-left {
+	.tab-content {
+		border: none 0;
+		border-left: solid .0625rem @theme-darkgrey;
+	}
+	.nav-tabs .nav-link {
+		border-radius: .5rem 0 0 .5rem;
+	}
+	.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+		border-bottom: none 0;
+		border-right: inset .0625rem @theme-darkgrey;
+	}
+	.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
+		border: none 0;
+		border-right: solid .15rem @theme-blue;
+	}
 }
 .list-shortcuts .item {
 	background: white;
