@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 import org.junit.Test;
 
+import com.simplicite.commons.Demo.DemoCommon;
 import com.simplicite.objects.Demo.DemoProduct;
 import com.simplicite.objects.Demo.DemoOrder;
 
@@ -73,6 +74,9 @@ public class DemoTests {
 				AppLog.info("Product stock increased to = " + stock, sys);
 			}
 			assertTrue(stock >= quantity);
+
+			// Low stock check test
+			assertFalse(DemoCommon.getInstance().isLowStock(sys, prd.getRowId(), 1000000));
 
 			// Get first customer
 			ObjectDB cli = sys.getObject("test_DemoClient", "DemoClient");

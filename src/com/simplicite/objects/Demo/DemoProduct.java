@@ -1,11 +1,6 @@
 package com.simplicite.objects.Demo;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import java.util.Map;
-
-import org.junit.Test;
 
 import com.simplicite.util.Action;
 import com.simplicite.util.AppLog;
@@ -20,7 +15,6 @@ import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.BarcodeTool;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.MailTool;
-import com.simplicite.util.tools.JUnitTool;
 
 /**
  * Product business object
@@ -148,33 +142,5 @@ public class DemoProduct extends ObjectDB {
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
 		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
-	}
-
-	/** JUnit test class */
-	public static class DemoProductTest {
-		/** Decrement test */
-		@Test
-		public void testDecrement() {
-			try {
-				ObjectDB prd = Grant.getSystemAdmin().getTmpObject("DemoProduct");
-				prd.setValues(prd.search().get(0), true);
-				ObjectField f = prd.getField(STOCK_FIELDNAME);
-				int n = f.getInt(0);
-				prd.setParameter("QUANTITY", 10);
-				prd.invokeAction("DEMO_DECSTOCK");
-				assertEquals((long)n - 10, f.getInt(0));
-			} catch (Exception e) {
-				fail(e.getMessage());
-			}
-		}
-	}
-
-	/** Hook override: launch JUnit tests classes */
-	@Override
-	public String unitTests() {
-		JUnitTool jut = new JUnitTool(getGrant());
-		return
-			jut.run("com.simplicite.tests.Demo.DemoTests") + // Shared code unit tests class
-			jut.run(DemoProductTest.class); // Nested test class
 	}
 }
