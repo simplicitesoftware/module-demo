@@ -5605,7 +5605,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_minrows/>
 		<obo_maxrows/>
 		<obo_sortable>1</obo_sortable>
-		<obo_list_areas>1</obo_list_areas>
+		<obo_list_areas>0</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
 		<obo_permalink/>
@@ -6123,7 +6123,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_minrows/>
 		<obo_maxrows/>
 		<obo_sortable>1</obo_sortable>
-		<obo_list_areas>1</obo_list_areas>
+		<obo_list_areas>0</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
 		<obo_permalink/>
