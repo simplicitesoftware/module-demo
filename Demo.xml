@@ -8411,12 +8411,12 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>2</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
 		<obf_fld_more/>
-		<obf_fld_listmore/>
+		<obf_fld_listmore>1</obf_fld_listmore>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
