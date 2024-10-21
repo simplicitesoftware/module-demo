@@ -4607,7 +4607,7 @@ mvn verify sonar:sonar
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>icon/color/delete3</sty_image>
+		<sty_image>img/color/delete</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4617,7 +4617,7 @@ mvn verify sonar:sonar
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>icon/tick</sty_image>
+		<sty_image>img/color/check</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4637,7 +4637,7 @@ mvn verify sonar:sonar
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style/>
-		<sty_image>icon/color/eyeon</sty_image>
+		<sty_image>fas/eye</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
