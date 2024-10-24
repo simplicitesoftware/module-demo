@@ -12015,7 +12015,7 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<din_name>B-demoSupLogo</din_name>
-		<din_field_id.fld_name/>
+		<din_field_id.fld_name>demoSupLogo</din_field_id.fld_name>
 		<din_path/>
 		<din_min/>
 		<din_max/>
@@ -21716,7 +21716,13 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<dt_name>Demo-data</dt_name>
 		<dt_file>data/Demo-data.xml</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2024-03-26 16:49:03]]></dt_desc>
+		<dt_desc><![CDATA[Demo data:
+
+- Suppliers
+- Products
+- Customers
+
+> _Note: To generate random orders you can used the dedicated unit test class._]]></dt_desc>
 	</data>
 </object>
 <object>
