@@ -12847,7 +12847,7 @@ is still in pending state]]></cst_desc>
 	<data>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>C</sta_state_id.lov_code>
-		<sta_role>M</sta_role>
+		<sta_role>E</sta_role>
 		<sta_label>Cancelled state</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>1</sta_terminal>
@@ -12873,7 +12873,7 @@ is still in pending state]]></cst_desc>
 	<data>
 		<sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</sta_state_id.lov_list_id.lov_name>
 		<sta_state_id.lov_code>H</sta_state_id.lov_code>
-		<sta_role>M</sta_role>
+		<sta_role>O</sta_role>
 		<sta_label>On hold</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
