@@ -1168,10 +1168,10 @@ mvn verify sonar:sonar
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Open</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#393939</lov_color>
-		<lov_color_bg>#F4CCCC</lov_color_bg>
+		<lov_color/>
+		<lov_color_bg/>
 		<lov_icon>icon/color/btn_red</lov_icon>
-		<lov_display>L;T</lov_display>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1179,10 +1179,10 @@ mvn verify sonar:sonar
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Closed</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#393939</lov_color>
-		<lov_color_bg>#d9ead3</lov_color_bg>
+		<lov_color/>
+		<lov_color_bg/>
 		<lov_icon>icon/color/btn_green</lov_icon>
-		<lov_display>L;T</lov_display>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1190,10 +1190,10 @@ mvn verify sonar:sonar
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Processing</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#393939</lov_color>
-		<lov_color_bg>#FCE5CD</lov_color_bg>
+		<lov_color/>
+		<lov_color_bg/>
 		<lov_icon>icon/color/btn_orange</lov_icon>
-		<lov_display>L;T</lov_display>
+		<lov_display>I;L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_list_id.lov_name>
@@ -1212,8 +1212,8 @@ mvn verify sonar:sonar
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Order issue</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F4CCCC</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1223,8 +1223,8 @@ mvn verify sonar:sonar
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Billing issue</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F4CCCC</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1234,8 +1234,8 @@ mvn verify sonar:sonar
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Order status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#D9EAD3</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1245,8 +1245,8 @@ mvn verify sonar:sonar
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Product information</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#D9EAD3</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1256,8 +1256,8 @@ mvn verify sonar:sonar
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Order cancelation</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#FCE5CD</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1267,8 +1267,8 @@ mvn verify sonar:sonar
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Order change</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#FCE5CD</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1278,8 +1278,8 @@ mvn verify sonar:sonar
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Information</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#D9EAD3</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1289,8 +1289,8 @@ mvn verify sonar:sonar
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Request</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#FCE5CD</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1300,8 +1300,8 @@ mvn verify sonar:sonar
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Complaint</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F4CCCC</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1311,8 +1311,8 @@ mvn verify sonar:sonar
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Other</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#CFE2F3</lov_color_bg>
 		<lov_icon/>
 		<lov_display>L;T</lov_display>
 	</data>
@@ -1377,8 +1377,8 @@ mvn verify sonar:sonar
 		<lov_order_by>10</lov_order_by>
 		<lov_label>Laptop</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#C9DAF8</lov_color_bg>
 		<lov_icon>fas/laptop</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -1388,8 +1388,8 @@ mvn verify sonar:sonar
 		<lov_order_by>20</lov_order_by>
 		<lov_label>Desktop</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#D9D2E9</lov_color_bg>
 		<lov_icon>fas/desktop</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -1399,8 +1399,8 @@ mvn verify sonar:sonar
 		<lov_order_by>30</lov_order_by>
 		<lov_label>Tablet</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#EAD1DC</lov_color_bg>
 		<lov_icon>fas/tablet-alt</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -1410,8 +1410,8 @@ mvn verify sonar:sonar
 		<lov_order_by>40</lov_order_by>
 		<lov_label>Smartphone</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#D9EAD3</lov_color_bg>
 		<lov_icon>fas/mobile-alt</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>
@@ -1421,8 +1421,8 @@ mvn verify sonar:sonar
 		<lov_order_by>50</lov_order_by>
 		<lov_label>Other</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#F4CCCC</lov_color_bg>
 		<lov_icon>fas/archive</lov_icon>
 		<lov_display>I;L;T</lov_display>
 	</data>

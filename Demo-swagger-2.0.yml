@@ -2252,8 +2252,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcType
         description: Search filter for Contact type
@@ -3439,8 +3439,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcType:
         description: Contact type
         type: string
