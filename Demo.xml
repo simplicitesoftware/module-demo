@@ -5777,7 +5777,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_exportorder>-1</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
-		<obo_groupby>0</obo_groupby>
+		<obo_groupby>1</obo_groupby>
 		<obo_dfltref>DemoOrderHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoOrder</obo_template_id.tpl_name>
 		<obo_tpl_list_id.tpl_name/>
@@ -8276,7 +8276,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoCliCountry</obf_field_id.fld_name>
 		<obf_order>255</obf_order>
-		<obf_group_by/>
+		<obf_group_by>1</obf_group_by>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name>demoOrdCliId</obf_ref_field_id.fld_name>
@@ -12140,7 +12140,7 @@ is still in pending state]]></cst_desc>
 		<prt_translation>Listing</prt_translation>
 		<prt_filename/>
 		<prt_mimetype/>
-		<prt_type>TMPL</prt_type>
+		<prt_type>FILE</prt_type>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoOrder-Listing.html</prt_file>
 		<prt_template_id.tpl_name/>
