@@ -183,21 +183,23 @@ mvn verify sonar:sonar
 	<data>
 		<viw_name>DemoAdminHome</viw_name>
 		<viw_type>H</viw_type>
-		<viw_ui><![CDATA[<div class="area" data-area="1"></div>
-<div class="row">
-	<div class="col-sm-6">
-		<div class="area" data-area="4"></div>
+		<viw_ui><![CDATA[<div>
+	<div class="area" data-area="1"></div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="area" data-area="4"></div>
+		</div>
+		<div class="col-sm-6">
+			<div class="area" data-area="5"></div>
+		</div>
 	</div>
-	<div class="col-sm-6">
-		<div class="area" data-area="5"></div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-sm-6">
-		<div class="area" data-area="2"></div>
-	</div>
-	<div class="col-sm-6">
-		<div class="area" data-area="3"></div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="area" data-area="2"></div>
+		</div>
+		<div class="col-sm-6">
+			<div class="area" data-area="3"></div>
+		</div>
 	</div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
@@ -13885,7 +13887,7 @@ is still in pending state]]></cst_desc>
 		<vwi_research_id.rch_name/>
 		<vwi_research_id.rch_object_id.obo_name/>
 		<vwi_research_id.rch_user_id.usr_login/>
-		<vwi_search_spec><![CDATA[t.ord_status <> 'C']]></vwi_search_spec>
+		<vwi_search_spec><![CDATA[t.ord_status <> 'C' and t.ord_status <> 'H']]></vwi_search_spec>
 		<vwi_lov_code/>
 		<vwi_show>DemoOrder</vwi_show>
 		<vwi_url><![CDATA[{
@@ -13895,7 +13897,8 @@ is still in pending state]]></cst_desc>
  "zcontrol": "no",
  "zstotal": "no",
  "ztable": "no",
- "zgraph": "bar"
+ "zgraph": "bar",
+ "zstcolor": "#F4CCCC"
 }]]></vwi_url>
 		<vwi_image/>
 		<vwi_subview_id.viw_name/>
