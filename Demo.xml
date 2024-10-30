@@ -19067,5 +19067,11 @@ is still in pending state]]></cst_desc>
 		<dt_file>data/Demo-data.zip</dt_file>
 		<dt_desc><![CDATA[Created by module's data export on 2023-12-05 17:02:51]]></dt_desc>
 	</data>
+	<data>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<dt_name>Demo-data-20241022175749</dt_name>
+		<dt_file>data/Demo-data-20241022175749.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2024-10-22 17:57:49]]></dt_desc>
+	</data>
 </object>
 </simplicite>
