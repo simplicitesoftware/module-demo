@@ -5,6 +5,7 @@
 /tmp
 /temp
 /effective.pom
+/checkstyle-report.xml
 /.gradle
 /.m2
 /.scannerwork
