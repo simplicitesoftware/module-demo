@@ -4,7 +4,6 @@ import java.util.Map;
 
 import com.simplicite.util.Action;
 import com.simplicite.util.AppLog;
-import com.simplicite.util.Grant;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
