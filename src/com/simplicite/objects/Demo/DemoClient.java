@@ -64,7 +64,7 @@ public class DemoClient extends ObjectDB {
 					AppLog.info("Try to geocode " + a, getGrant());
 					Location c = new GMapTool(getGrant()).geocodeOne(a);
 					AppLog.info("Coordinates = " + c, getGrant());
-					coords.setValue(c==null ?  "" : c.toString());
+					coords.setValue(c == null ?  "" : c.toString());
 				}
 			} catch (Exception e) {
 				AppLog.warning(null, e, getGrant());

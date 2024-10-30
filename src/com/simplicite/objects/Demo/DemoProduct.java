@@ -33,7 +33,7 @@ public class DemoProduct extends ObjectDB {
 	public void initAction(Action action) {
 		if ("DEMO_INCSTOCK".equals(action.getName())) {
 			ObjectField f = action.getConfirmField(getGrant().getLang(), INCREMENT_FIELDNAME);
-			if (f!=null) {
+			if (f != null) {
 				String def = String.valueOf(DEFAULT_INCREMENT);
 				f.setDefaultValue(def);
 			}
