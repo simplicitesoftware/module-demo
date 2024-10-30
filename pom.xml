@@ -62,7 +62,6 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
         <configuration>
           <configLocation>${project.basedir}/.checkstyle.xml</configLocation>
           <outputFileFormat>plain</outputFileFormat>
-          <outputFile>checkstyle-report.xml</outputFile>
         </configuration>
         <dependencies>
           <dependency>
