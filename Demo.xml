@@ -8,10 +8,12 @@
 		<mdl_version>5</mdl_version>
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
-	"type": "git",
-	"origin": {
-		"uri": "https://github.com/simplicitesoftware/module-demo.git"
-	}
+    "maven": {
+        "checkstyle": true,
+        "repositoryUrl": "https://platform.simplicite.io/5.3/maven"
+    },
+    "origin": {"uri": "https://github.com/simplicitesoftware/module-demo.git"},
+    "type": "git"
 }]]></mdl_url>
 		<mdl_type>A</mdl_type>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
