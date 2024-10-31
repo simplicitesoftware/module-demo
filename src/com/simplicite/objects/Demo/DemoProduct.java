@@ -4,7 +4,6 @@ import java.util.Map;
 
 import com.simplicite.util.Action;
 import com.simplicite.util.AppLog;
-import com.simplicite.util.Grant;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
@@ -15,7 +14,6 @@ import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.BarcodeTool;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.MailTool;
-import com.simplicite.util.tools.JUnitTool;
 
 /**
  * Product business object
@@ -35,7 +33,7 @@ public class DemoProduct extends ObjectDB {
 	public void initAction(Action action) {
 		if ("DEMO_INCSTOCK".equals(action.getName())) {
 			ObjectField f = action.getConfirmField(getGrant().getLang(), INCREMENT_FIELDNAME);
-			if (f!=null) {
+			if (f != null) {
 				String def = String.valueOf(DEFAULT_INCREMENT);
 				f.setDefaultValue(def);
 			}

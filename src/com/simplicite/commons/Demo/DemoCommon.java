@@ -24,7 +24,9 @@ import com.simplicite.util.tools.PDFTool;
 public class DemoCommon implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private DemoCommon() {} // Hidden constructor
+	// Hidden constructor
+	private DemoCommon() {
+	}
 
 	/** Singleton */
 	private final static DemoCommon INSTANCE = new DemoCommon();

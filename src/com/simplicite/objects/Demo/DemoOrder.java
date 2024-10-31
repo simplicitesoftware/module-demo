@@ -59,7 +59,7 @@ public class DemoOrder extends ObjectDB {
 				String name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
 				String desc = "Hello " + name + ". Your order " + n + " delivery is scheduled";
 				new Mail(getGrant()).sendInvitation(
-					d, Tool.shiftSeconds(d, 2*3600),
+					d, Tool.shiftSeconds(d, 2 * 3600),
 					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2")
 						+ getFieldValue("demoOrdCliId.demoCliZipCode") + getFieldValue("demoOrdCliId.demoCliCity"),
 					DEMO_EMAIL, "Simplicité demo",
@@ -149,7 +149,7 @@ public class DemoOrder extends ObjectDB {
 	@Override
 	public boolean isPrintTemplateEnable(String[] row, String ptName) {
 		if ("DemoOrder-PDF".equals(ptName)) {
-			String s = row!=null ? row[getStatusIndex()] : getStatus();
+			String s = row != null ? row[getStatusIndex()] : getStatus();
 			return "V".equals(s) || "D".equals(s);
 		}
 		return super.isPrintTemplateEnable(row, ptName);
