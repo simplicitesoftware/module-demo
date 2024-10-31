@@ -60,8 +60,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.6.0</version>
         <configuration>
-          <configLocation>${project.basedir}/.checkstyle.xml</configLocation>
-          <outputFileFormat>plain</outputFileFormat>
+          <configLocation>${project.basedir}/.checkstyle-configuration</configLocation>
         </configuration>
         <dependencies>
           <dependency>
