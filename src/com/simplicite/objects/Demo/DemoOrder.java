@@ -45,8 +45,6 @@ public class DemoOrder extends ObjectDB {
 		return msgs;
 	}
 
-	private static final String DEMO_EMAIL = "demo@simplicite.fr";
-
 	/** Hook override: invitation for delivery + stock decrease on shipment */
 	@Override
 	public String postUpdate() {
@@ -60,7 +58,7 @@ public class DemoOrder extends ObjectDB {
 					d, Tool.shiftSeconds(d, 2 * 3600),
 					getFieldValue("demoOrdCliId.demoCliAddress1") + " " + getFieldValue("demoOrdCliId.demoCliAddress2")
 						+ getFieldValue("demoOrdCliId.demoCliZipCode") + getFieldValue("demoOrdCliId.demoCliCity"),
-					DEMO_EMAIL, "Simplicité demo",
+					null, null,
 					getFieldValue("demoOrdCliId.demoCliEmail"), name,
 					"Order " + n + " delivery schedule",
 					desc, desc);
@@ -99,13 +97,15 @@ public class DemoOrder extends ObjectDB {
 
 			// Notify responsible user if stock is low
 			try {
-				new Mail(getGrant()).send(DEMO_EMAIL, DEMO_EMAIL,
-					"Low stock on " + ref,
-					"<html><body>" +
-					"<h3>Hello,</h3>" +
-					"<p>The stock is low for product <b>" + ref + "</b> " +
-					"(" + stock + ")<br/>Please order new ones !</p>" +
-					"</body></html>");
+				String to = getGrant().getEmail();
+				if (!Tool.isEmpty(to))
+					new Mail(getGrant()).send(to, null,
+						"Low stock on " + ref,
+						"<html><body>" +
+						"<h3>Hello,</h3>" +
+						"<p>The stock is low for product <b>" + ref + "</b> " +
+						"(" + stock + ")<br/>Please order new ones !</p>" +
+						"</body></html>");
 			} catch (Exception e) {
 				AppLog.warning("Error sending low stock alert email", e, getGrant());
 			}
