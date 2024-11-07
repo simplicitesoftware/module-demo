@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1233" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1230" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -4731,40 +4731,6 @@ mvn verify sonar:sonar
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<tpl_name>DemoOrder-XML</tpl_name>
-		<tpl_ui><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<orders>
-	[BEGIN]<order number="[VALUE:demoOrdNumber]">
-		<date>[VALUE:demoOrdDate]</date>
-		<status>[VALUE:demoOrdStatus]</status>
-		<product>
-			<reference>[VALUE:demoOrdPrdId.demoPrdReference]</reference>
-			<name>[VALUE:demoOrdPrdId.demoPrdName]</name>
-			<supplier>[VALUE:demoPrdSupId.demoSupCode]</supplier>
-		</product>
-		<quantity>[VALUE:demoOrdQuantity]</quantity>
-		<total>[VALUE:demoOrdTotal]</total>
-		<tax>[VALUE:demoOrdVAT]</tax>
-		<client>
-			<code>[VALUE:demoOrdCliId.demoCliCode]</code>
-			<name>[VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]</name>
-			<address>[VALUE:demoOrdCliId.demoCliAddress1]; [VALUE:demoOrdCliId.demoCliAddress2]; [VALUE:demoOrdCliId.demoCliZipCode]; [VALUE:demoOrdCliId.demoCliCity]; [VALUE:demoOrdCliId.demoCliCountry]</address>
-		</client>
-		<history>
-			[BEGIN:DemoOrderHistoric:row_ref_id]<change date="[VALUE:created_by_hist]" login="[VALUE:created_dt_hist]">
-				<status>[VALUE:demoOrdStatus]</status>
-				<quantity>[VALUE:demoOrdQuantity]</quantity>
-			</change>[END:DemoOrderHistoric]
-		</history>
-	</order>[END]	
-</orders>]]></tpl_ui>
-		<tpl_min/>
-		<tpl_image/>
-		<tpl_grid/>
-		<tpl_context/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
 		<tpl_name>DemoProduct</tpl_name>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
@@ -4785,30 +4751,6 @@ mvn verify sonar:sonar
     <div class="area col-sm-12" data-area="5:-"></div>
   </div>
 </div>]]></tpl_ui>
-		<tpl_min/>
-		<tpl_image/>
-		<tpl_grid/>
-		<tpl_context/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tpl_name>DemoProduct-EMAIL-ENU</tpl_name>
-		<tpl_ui><![CDATA[<h3>Hello,</h3>
-<p>The stock is low for product: 
-<b>[VALUE:demoPrdReference]</b> = [VALUE:demoPrdStock]
-<br/>Please order new ones!</p>]]></tpl_ui>
-		<tpl_min/>
-		<tpl_image/>
-		<tpl_grid/>
-		<tpl_context/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tpl_name>DemoProduct-EMAIL-FRA</tpl_name>
-		<tpl_ui><![CDATA[<h3>Bonjour,</h3>
-<p>Le stock est bas pour le produit:
-<b>[VALUE:demoPrdReference]</b> = [VALUE:demoPrdStock]
-<br/>Merci d'en commander de nouveaux!</p>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
@@ -12152,7 +12094,7 @@ is still in pending state]]></cst_desc>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Mustache publication example</prt_translation>
 		<prt_filename/>
-		<prt_mimetype/>
+		<prt_mimetype>html</prt_mimetype>
 		<prt_type>METH</prt_type>
 		<prt_method>printMustache</prt_method>
 		<prt_file>files/PrintTemplate/DemoContact-Mustache.html</prt_file>
@@ -12167,7 +12109,7 @@ is still in pending state]]></cst_desc>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Listing</prt_translation>
 		<prt_filename/>
-		<prt_mimetype/>
+		<prt_mimetype>html</prt_mimetype>
 		<prt_type>FILE</prt_type>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoOrder-Listing.html</prt_file>
@@ -12198,10 +12140,10 @@ is still in pending state]]></cst_desc>
 		<prt_translation>Custom XML publication</prt_translation>
 		<prt_filename/>
 		<prt_mimetype>xml</prt_mimetype>
-		<prt_type>TMPL</prt_type>
+		<prt_type>FILE</prt_type>
 		<prt_method/>
-		<prt_file/>
-		<prt_template_id.tpl_name>DemoOrder-XML</prt_template_id.tpl_name>
+		<prt_file>files/PrintTemplate/DemoOrder-XML.xml</prt_file>
+		<prt_template_id.tpl_name/>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
@@ -12212,11 +12154,11 @@ is still in pending state]]></cst_desc>
 		<prt_lang>FRA</prt_lang>
 		<prt_translation>Email stock bas</prt_translation>
 		<prt_filename/>
-		<prt_mimetype/>
-		<prt_type>TMPL</prt_type>
+		<prt_mimetype>html</prt_mimetype>
+		<prt_type>FILE</prt_type>
 		<prt_method/>
-		<prt_file/>
-		<prt_template_id.tpl_name>DemoProduct-EMAIL-FRA</prt_template_id.tpl_name>
+		<prt_file>files/PrintTemplate/DemoProduct-Email-FRA.html</prt_file>
+		<prt_template_id.tpl_name/>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
@@ -12227,11 +12169,11 @@ is still in pending state]]></cst_desc>
 		<prt_lang>ENU</prt_lang>
 		<prt_translation>Low stock email</prt_translation>
 		<prt_filename/>
-		<prt_mimetype/>
-		<prt_type>TMPL</prt_type>
+		<prt_mimetype>html</prt_mimetype>
+		<prt_type>FILE</prt_type>
 		<prt_method/>
-		<prt_file/>
-		<prt_template_id.tpl_name>DemoProduct-EMAIL-ENU</prt_template_id.tpl_name>
+		<prt_file>files/PrintTemplate/DemoProduct-Email-ENU.html</prt_file>
+		<prt_template_id.tpl_name/>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
@@ -12257,7 +12199,7 @@ is still in pending state]]></cst_desc>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Catalog</prt_translation>
 		<prt_filename/>
-		<prt_mimetype/>
+		<prt_mimetype>html</prt_mimetype>
 		<prt_type>FILE</prt_type>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoSupplier-Catalog.html</prt_file>
@@ -22018,7 +21960,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>PrintTemplate</name>
 				<data>
-					<prt_name>DemoOrder-XML</prt_name>
+					<prt_name>DemoProduct-Word</prt_name>
 					<prt_lang>ANY</prt_lang>
 				</data>
 			</object>
@@ -22036,14 +21978,14 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>PrintTemplate</name>
 				<data>
-					<prt_name>DemoProduct-Word</prt_name>
+					<prt_name>DemoOrder-XML</prt_name>
 					<prt_lang>ANY</prt_lang>
 				</data>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>

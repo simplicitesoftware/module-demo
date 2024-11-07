@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+	[BEGIN]<order number="[VALUE:demoOrdNumber]">
+		<date>[VALUE:demoOrdDate]</date>
+		<status>[VALUE:demoOrdStatus]</status>
+		<product>
+			<reference>[VALUE:demoOrdPrdId.demoPrdReference]</reference>
+			<name>[VALUE:demoOrdPrdId.demoPrdName]</name>
+			<supplier>[VALUE:demoPrdSupId.demoSupCode]</supplier>
+		</product>
+		<quantity>[VALUE:demoOrdQuantity]</quantity>
+		<total>[VALUE:demoOrdTotal]</total>
+		<tax>[VALUE:demoOrdVAT]</tax>
+		<client>
+			<code>[VALUE:demoOrdCliId.demoCliCode]</code>
+			<name>[VALUE:demoOrdCliId.demoCliFirstname] [VALUE:demoOrdCliId.demoCliLastname]</name>
+			<address>[VALUE:demoOrdCliId.demoCliAddress1]; [VALUE:demoOrdCliId.demoCliAddress2]; [VALUE:demoOrdCliId.demoCliZipCode]; [VALUE:demoOrdCliId.demoCliCity]; [VALUE:demoOrdCliId.demoCliCountry]</address>
+		</client>
+		<history>
+			[BEGIN:DemoOrderHistoric:row_ref_id]<change date="[VALUE:created_by_hist]" login="[VALUE:created_dt_hist]">
+				<status>[VALUE:demoOrdStatus]</status>
+				<quantity>[VALUE:demoOrdQuantity]</quantity>
+			</change>[END:DemoOrderHistoric]
+		</history>
+	</order>[END]	
+</orders>
