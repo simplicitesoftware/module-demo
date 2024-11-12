@@ -135,27 +135,16 @@ public class DemoOrder extends ObjectDB {
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
 	}
 
-	/** Publication: PDF listing (from an HTML template) */
-	@BusinessObjectPublication
-	public Object printListing(PrintTemplate pt) {
-		try {
-			pt.setMIMEType(HTTPTool.MIME_TYPE_PDF);
-			return HTMLToPDFTool.toPDF(pt.fillTemplate(this, pt.getTemplate(true), getCurrentList()));
-		} catch (Throwable e) {
-			AppLog.error(e.getMessage(), e, getGrant());
-			pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
-			return e.getMessage();
-		}
-	}
-
-	/** Publication: PDF receipt (using native PDF library) */
+	/** Publication: PDF receipt (from an HTML template) */
 	@BusinessObjectPublication
 	public Object printReceipt(PrintTemplate pt) {
 		try {
-			pt.setFilename(getDisplay() + "-" + getFieldValue(NUMBER_FIELDNAME) + ".pdf");
-			return DemoCommon.getInstance().orderReceipt(this); // Implemented in common class
-		} catch (Exception e) {
-			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+			pt.setMIMEType(HTTPTool.MIME_TYPE_PDF);
+			pt.setFilename(getDisplay() + "-" + getFieldValue("demoOrdNumber") + ".pdf");
+			return HTMLToPDFTool.toPDF(pt.fillTemplate(this, pt.getTemplate(true), getValues()));
+		} catch (Throwable e) {
+			AppLog.error(e.getMessage(), e, getGrant());
+			pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
 			return e.getMessage();
 		}
 	}

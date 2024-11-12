@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>[LABEL:DemoOrder:-] [EXPR:"[LABEL:DemoOrder:demoOrdNumber]".toLowerCase()] [VALUE:demoOrdNumber]</title>
+<style type="text/css">[CSSRESOURCE:DEMO_PRINT_STYLES]</style>
+</head>
+<body class="demo">
+	<header><img src="[IMGRESOURCE:DEMO_PRINT_LOGO]" alt="Logo"/></header>
+	<section>
+		<h1>[TEXT:DEMO_RECEIPT]</h1>
+		<h2>[LABEL:DemoOrder:demoOrdNumber]: [VALUE:demoOrdNumber]</h2>
+		<p>
+			<b>[LABEL:DemoOrder:demoOrdStatus]</b>: [VALUE:demoOrdStatus]<br/>
+			<b>[LABEL:DemoOrder:demoOrdDate]</b>: [VALUE:demoOrdDate]<br/>
+			<b>[LABEL:DemoOrder:demoOrdDeliveryDate]</b>: [VALUE:demoOrdDeliveryDate]
+		</p>
+		<table class="receipt">
+			<thead>
+				<tr>
+					<th width="50%">[LABEL:demoOrdCliId]</th>
+					<th width="50%">[LABEL:demoOrdPrdId]</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliCode]</b>: [VALUE:demoOrdCliId.demoCliCode]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliFirstname]</b>: [VALUE:demoOrdCliId.demoCliFirstname]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliLastname]</b>: [VALUE:demoOrdCliId.demoCliLastname]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliEmail]</b>: [VALUE:demoOrdCliId.demoCliEmail]</p>
+						<br/>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliAddress1]</b>: [VALUE:demoOrdCliId.demoCliAddress1]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliAddress2]</b>: [VALUE:demoOrdCliId.demoCliAddress2]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliZipCode]</b>: [VALUE:demoOrdCliId.demoCliZipCode]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliCity]</b>: [VALUE:demoOrdCliId.demoCliCity]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdCliId.demoCliCountry]</b>: [VALUE:demoOrdCliId.demoCliCountry]</p>
+					</td>
+					<td>
+						<p><b>[LABEL:DemoOrder:demoOrdPrdId.demoPrdReference]</b>: [VALUE:demoOrdPrdId.demoPrdReference]</p>
+						<p><b>[LABEL:DemoOrder:demoOrdPrdId.demoPrdName]</b>: [VALUE:demoOrdPrdId.demoPrdName]</p>
+						<img src="[VALUE:demoPrdPicture]" style="width: 150px;">
+						<p><b>[LABEL:DemoOrder:demoOrdPrdId.demoPrdSupId.demoSupName]</b>: [VALUE:demoOrdPrdId.demoPrdSupId.demoSupName]</p>
+						<img src="[VALUE:demoPrdSupId.demoSupLogo]" style="width: 75px;"/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			<b>[LABEL:DemoOrder:demoOrdQuantity]</b>: [VALUE:demoOrdQuantity]<br/>
+			<b>[LABEL:DemoOrder:demoOrdUnitPrice]</b>: [VALUE:demoOrdUnitPrice]
+		</p>
+		<h3>[LABEL:DemoOrder:demoOrdTotal]: [VALUE:demoOrdTotal] EUR</h3>
+		<p><b>[LABEL:DemoOrder:demoOrdVAT] ([SYSPARAM:DEMO_VAT] %)</b>: [VALUE:demoOrdVAT] EUR</p>
+	</section>
+</body>
+</html>
