@@ -12334,9 +12334,9 @@ is still in pending state]]></cst_desc>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Listing</prt_translation>
 		<prt_filename/>
-		<prt_mimetype>html</prt_mimetype>
-		<prt_type>TMPL</prt_type>
-		<prt_method/>
+		<prt_mimetype/>
+		<prt_type>METH</prt_type>
+		<prt_method>printListing</prt_method>
 		<prt_file>files/PrintTemplate/DemoOrder-HTML.html</prt_file>
 		<prt_template_id.tpl_name/>
 	</data>

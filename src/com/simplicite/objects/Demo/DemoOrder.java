@@ -11,6 +11,8 @@ import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
+import com.simplicite.util.tools.HTTPTool;
+import com.simplicite.util.tools.HTMLToPDFTool;
 import com.simplicite.util.annotations.BusinessObjectPublication;
 
 /**
@@ -133,7 +135,20 @@ public class DemoOrder extends ObjectDB {
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
 	}
 
-	/** Publication: PDF receipt */
+	/** Publication: PDF listing (from an HTML template) */
+	@BusinessObjectPublication
+	public Object printListing(PrintTemplate pt) {
+		try {
+			pt.setMIMEType(HTTPTool.MIME_TYPE_PDF);
+			return HTMLToPDFTool.toPDF(pt.fillTemplate(this, pt.getTemplate(true), getCurrentList()));
+		} catch (Throwable e) {
+			AppLog.error(e.getMessage(), e, getGrant());
+			pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
+			return e.getMessage();
+		}
+	}
+
+	/** Publication: PDF receipt (using native PDF library) */
 	@BusinessObjectPublication
 	public Object printReceipt(PrintTemplate pt) {
 		try {
