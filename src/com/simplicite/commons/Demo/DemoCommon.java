@@ -1,21 +1,11 @@
 package com.simplicite.commons.Demo;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.util.List;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Image;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPTable;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.Grant;
 import com.simplicite.util.ObjectDB;
-import com.simplicite.util.ObjectField;
 import com.simplicite.util.Tool;
-import com.simplicite.util.tools.PDFTool;
 
 /**
  * Demo commons.
