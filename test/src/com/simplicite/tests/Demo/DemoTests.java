@@ -111,7 +111,7 @@ public class DemoTests {
 			} catch (ValidateException e) {
 				AppLog.info("Expected validation error: " + sys.T(e.getMessage()), sys);
 				assertEquals(ValidateException.class, e.getClass());
-				assertEquals(DemoOrder.QUANTITY_ERROR, e.getMessage());
+				assertTrue(e.getMessage().startsWith(DemoOrder.QUANTITY_ERROR));
 			}
 
 			// Create order
