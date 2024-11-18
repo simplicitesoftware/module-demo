@@ -5,6 +5,40 @@
 #             |_| Module: Demo 6
 basePath: /api
 paths:
+  /rest/DemoProduct/{row_id}/publication:DemoProduct-Brochure:
+    get:
+      summary: Call a custom publication for a DemoProduct business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-publication-demoproduct-brochure
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
   /login:
     get:
       summary: Login (obtain bearer token)
@@ -923,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -1724,40 +1758,6 @@ paths:
         required: true
       tags:
       - DemoProduct
-  /rest/DemoProduct/{row_id}/publication:DemoProduct-Word:
-    get:
-      summary: Call a custom publication for a DemoProduct business object record
-        or for all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-demoproduct-publication-demoproduct-word
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/PublicationResult'
-          description: Success in calling the custom publication
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - DemoProduct
   /rest/DemoProductHistoric/{row_id}:
     post:
       summary: Create a new DemoProductHistoric business object record
@@ -2359,8 +2359,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3045,8 +3045,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3170,8 +3170,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object

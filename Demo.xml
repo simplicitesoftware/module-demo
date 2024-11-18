@@ -361,7 +361,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2024-09-19 09:20:38</usr_logout>
-		<usr_last_logon>2024-10-29 21:20:57</usr_last_logon>
+		<usr_last_logon>2024-11-13 11:21:54</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -12147,6 +12147,21 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
+		<prt_name>DemoProduct-Brochure</prt_name>
+		<prt_usage>O</prt_usage>
+		<prt_visible>P</prt_visible>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Brochure</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>docx</prt_mimetype>
+		<prt_type>METH</prt_type>
+		<prt_method>printBrochure</prt_method>
+		<prt_file/>
+		<prt_template_id.tpl_name/>
+	</data>
+	<data>
+		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
 		<prt_name>DemoProduct-Email</prt_name>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
@@ -12173,21 +12188,6 @@ is still in pending state]]></cst_desc>
 		<prt_type>FILE</prt_type>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoProduct-Email-ENU.html</prt_file>
-		<prt_template_id.tpl_name/>
-	</data>
-	<data>
-		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
-		<prt_name>DemoProduct-Word</prt_name>
-		<prt_usage>O</prt_usage>
-		<prt_visible>P</prt_visible>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_lang>ANY</prt_lang>
-		<prt_translation>Brochure</prt_translation>
-		<prt_filename/>
-		<prt_mimetype>docx</prt_mimetype>
-		<prt_type>METH</prt_type>
-		<prt_method>printCatalog</prt_method>
-		<prt_file/>
 		<prt_template_id.tpl_name/>
 	</data>
 	<data>
@@ -21960,7 +21960,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>PrintTemplate</name>
 				<data>
-					<prt_name>DemoProduct-Word</prt_name>
+					<prt_name>DemoProduct-Brochure</prt_name>
 					<prt_lang>ANY</prt_lang>
 				</data>
 			</object>
