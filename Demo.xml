@@ -12416,7 +12416,7 @@ is still in pending state]]></cst_desc>
 		<prt_filename/>
 		<prt_mimetype>docx</prt_mimetype>
 		<prt_type>METH</prt_type>
-		<prt_method>printCatalog</prt_method>
+		<prt_method>printBrochure</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
 	</data>

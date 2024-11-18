@@ -103,9 +103,9 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
-	/** Publication: Microsoft Word(R) catalog */
+	/** Publication: Microsoft Word(R) brochure */
 	@BusinessObjectPublication
-	public Object printCatalog(PrintTemplate pt) {
+	public Object printBrochure(PrintTemplate pt) {
 		try {
 			DocxTool dt = new DocxTool();
 			dt.newDocument();
