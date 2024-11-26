@@ -6,6 +6,7 @@
 /tmp
 /temp
 /effective.pom
+/effective-pom.xml
 /.gradle
 /.m2
 /.scannerwork
@@ -17,6 +18,7 @@
 /.classpath
 /.settings
 /.project
+/.apt_generated*
 
 # -- IntelliJ --
 /.idea
@@ -31,4 +33,3 @@
 
 # -- GitHub --
 /.github
-/.apt_generated*
