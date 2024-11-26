@@ -2,6 +2,7 @@
 /build
 /target
 /node_modules
+/package-lock.json
 /tmp
 /temp
 /effective.pom
@@ -30,5 +31,4 @@
 
 # -- GitHub --
 /.github
-/.apt_generated/
-/.apt_generated_tests/
+/.apt_generated*
