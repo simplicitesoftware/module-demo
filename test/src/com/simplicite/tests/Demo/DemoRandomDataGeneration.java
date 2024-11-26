@@ -57,14 +57,14 @@ public class DemoRandomDataGeneration {
 		return Tool.shiftDays(Tool.getCurrentDate(), Tool.randomInt(-n, 0));
 	}
 
-	private static String getRandomDeliveryDate(String orderDate){
+	private static String getRandomDeliveryDate(String orderDate) {
 		String d = Tool.shiftDays(orderDate, Tool.randomInt(0, 5));
 		String h = String.format("%02d", Tool.randomInt(8, 17));
 		return d+" "+h+":00:00";
 	}
 
 	private static String getRandomRowId(String tableName) throws DBException {
-		return Grant.getSystemAdmin().simpleQuery("SELECT row_id FROM " + tableName +" ORDER BY " + getSqlRand() + " LIMIT 1");
+		return Grant.getSystemAdmin().simpleQuery("SELECT row_id FROM " + tableName + " ORDER BY " + getSqlRand() + " LIMIT 1");
 	}
 
 	private static String getSqlRand() throws DBException {

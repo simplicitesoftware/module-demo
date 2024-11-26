@@ -18,3 +18,18 @@ Sonar analysis
 mvn sonar:sonar
 ```
 
+Checkstyle
+----------
+
+``` text
+mvn checkstyle:check
+```
+
+JSHint (requires node.js)
+-------------------------
+
+``` text
+npm install
+npm run jshint
+```
+
