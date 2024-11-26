@@ -56,7 +56,7 @@ public class DemoRandomDataGeneration {
 	}
 
 	private static String getRandomRowId(String tableName) throws DBException {
-		return Grant.getSystemAdmin().simpleQuery("SELECT row_id FROM " + tableName +" ORDER BY " + getSqlRand() + " LIMIT 1");
+		return Grant.getSystemAdmin().simpleQuery("SELECT row_id FROM " + tableName + " ORDER BY " + getSqlRand() + " LIMIT 1");
 	}
 
 	private static String getSqlRand() throws DBException {

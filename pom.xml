@@ -61,6 +61,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
         <version>3.6.0</version>
         <configuration>
           <configLocation>${project.basedir}/.checkstyle-configuration</configLocation>
+          <includeTestSourceDirectory>true</includeTestSourceDirectory>
         </configuration>
         <dependencies>
           <dependency>
