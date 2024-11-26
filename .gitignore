@@ -6,7 +6,6 @@
 /tmp
 /temp
 /effective.pom
-/checkstyle-report.xml
 /.gradle
 /.m2
 /.scannerwork
@@ -32,5 +31,4 @@
 
 # -- GitHub --
 /.github
-/.apt_generated/
-/.apt_generated_tests/
+/.apt_generated*
