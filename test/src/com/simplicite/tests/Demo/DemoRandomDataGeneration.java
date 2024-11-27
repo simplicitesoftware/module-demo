@@ -60,7 +60,7 @@ public class DemoRandomDataGeneration {
 	private static String getRandomDeliveryDate(String orderDate) {
 		String d = Tool.shiftDays(orderDate, Tool.randomInt(0, 5));
 		String h = String.format("%02d", Tool.randomInt(8, 17));
-		return d+" "+h+":00:00";
+		return d + " " + h + ":00:00";
 	}
 
 	private static String getRandomRowId(String tableName) throws DBException {
