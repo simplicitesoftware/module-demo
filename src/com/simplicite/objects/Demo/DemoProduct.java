@@ -24,7 +24,10 @@ public class DemoProduct extends ObjectDB {
 	/** Default increment */
 	public static final int DEFAULT_INCREMENT = 10;
 
+	public static final String NAME_FIELDNAME = "demoPrdName";
 	public static final String REFERENCE_FIELDNAME = "demoPrdReference";
+	public static final String DESCRIPTION_FIELDNAME = "demoPrdDescription";
+	public static final String DOCUMENTATION_FIELDNAME = "demoPrdDocumentation";
 	public static final String STOCK_FIELDNAME = "demoPrdStock";
 	public static final String INCREMENT_FIELDNAME = "demoPrdIncrement";
 
@@ -91,9 +94,9 @@ public class DemoProduct extends ObjectDB {
 			mt.setBody(
 				"<h1>" + Tool.toHTML(ref) + "</h1>" +
 				"<img src=\"cid:" + picCid +  "\"/>" +
-				"<h3>" + Tool.toHTML(getFieldValue("demoPrdName")) + "</h3>" +
-				"<h5>" + Tool.toHTML(getFieldValue("demoPrdDescription")) + "</h5>" +
-				"<div>" + getFieldValue("demoPrdDocumentation") + "</div>"
+				"<h3>" + Tool.toHTML(getFieldValue(NAME_FIELDNAME)) + "</h3>" +
+				"<h5>" + Tool.toHTML(getFieldValue(DESCRIPTION_FIELDNAME)) + "</h5>" +
+				"<div>" + getFieldValue(DOCUMENTATION_FIELDNAME) + "</div>"
 			);
 			mt.send();
 			return Message.formatSimpleInfo("OK");
@@ -107,11 +110,19 @@ public class DemoProduct extends ObjectDB {
 	@BusinessObjectPublication
 	public Object printBrochure(PrintTemplate pt) {
 		try {
-			DocxTool dt = new DocxTool();
+			// Build a Docx document from scratch:
+			/* DocxTool dt = new DocxTool();
 			dt.newDocument();
-			dt.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue("demoPrdName") + " (" + getFieldValue(REFERENCE_FIELDNAME) + ")");
-			dt.addParagraph(getFieldValue("demoPrdDescription"));
-			dt.addHTML(getFieldValue("demoPrdDocumentation"));
+			dt.addStyledParagraph(DocxTool.STYLE_TITLE, getFieldValue(NAME_FIELDNAME) + " (" + getFieldValue(REFERENCE_FIELDNAME) + ")");
+			dt.addParagraph(getFieldValue(DESCRIPTION_FIELDNAME));
+			dt.addHTML(getFieldValue(DOCUMENTATION_FIELDNAME));
+			return dt.toByteArray(); */
+			// Build by filling a Docx template:
+			DocxTool dt = new DocxTool(pt.getDocument(getGrant()).getFile());
+			dt.replace("productName", getFieldValue(NAME_FIELDNAME));
+			dt.replace("productReference", getFieldValue(REFERENCE_FIELDNAME));
+			dt.replace("productDescription", getFieldValue(DESCRIPTION_FIELDNAME));
+			dt.addHTML(getFieldValue(DOCUMENTATION_FIELDNAME));
 			return dt.toByteArray();
 		} catch (Exception e) {
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());

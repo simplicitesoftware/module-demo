@@ -467,7 +467,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-11-27 14:07:07</usr_last_logon>
+		<usr_last_logon>2024-11-27 17:05:31</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -12132,11 +12132,11 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Brochure</prt_translation>
-		<prt_filename/>
+		<prt_filename><![CDATA[[VALUE:demoPrdReference].docx]]></prt_filename>
 		<prt_mimetype>docx</prt_mimetype>
 		<prt_type>METH</prt_type>
 		<prt_method>printBrochure</prt_method>
-		<prt_file/>
+		<prt_file>files/PrintTemplate/DemoProduct-Brochure.docx</prt_file>
 		<prt_template_id.tpl_name/>
 	</data>
 	<data>
