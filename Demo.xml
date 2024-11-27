@@ -9,6 +9,7 @@
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
     "maven": {
+        "jshint": true,
         "checkstyle": true,
         "repositoryUrl": "https://platform.simplicite.io/6.1/maven"
     },
@@ -466,7 +467,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-11-26 21:59:58</usr_last_logon>
+		<usr_last_logon>2024-11-27 14:07:07</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
