@@ -9,6 +9,7 @@
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
     "maven": {
+        "eslint": true,
         "jshint": true,
         "checkstyle": true,
         "repositoryUrl": "https://platform.simplicite.io/6.1/maven"
@@ -362,7 +363,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2024-09-19 09:20:38</usr_logout>
-		<usr_last_logon>2024-11-20 20:49:06</usr_last_logon>
+		<usr_last_logon>2024-12-05 12:43:25</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -467,7 +468,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-11-27 17:05:31</usr_last_logon>
+		<usr_last_logon>2024-12-12 23:47:41</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -2172,7 +2173,7 @@ mvn verify sonar:sonar
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>2</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>0</fld_sort>
 		<fld_more>0</fld_more>
@@ -2484,7 +2485,7 @@ mvn verify sonar:sonar
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>2</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>L</fld_sort>
 		<fld_more>0</fld_more>
@@ -4083,7 +4084,7 @@ mvn verify sonar:sonar
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>2</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>L</fld_sort>
 		<fld_more>0</fld_more>

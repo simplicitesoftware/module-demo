@@ -1,6 +1,13 @@
 {
-  "devDependencies": {"jshint": "latest"},
+  "devDependencies": {
+    "eslint": "latest",
+    "jshint": "latest",
+    "globals": "latest"
+  },
   "name": "Demo",
-  "scripts": {"jshint": "jshint --config .jshint-configuration --reporter=jslint resources"},
+  "scripts": {
+    "eslint": "eslint --config=.eslint-configuration --no-color resources/**/*.js",
+    "jshint": "jshint --config=.jshint-configuration --reporter=jslint resources"
+  },
   "version": "6"
 }
