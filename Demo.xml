@@ -468,7 +468,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-12-12 23:47:41</usr_last_logon>
+		<usr_last_logon>2024-12-13 00:14:36</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
