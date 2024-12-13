@@ -36,7 +36,6 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
 		$ui.getUIObject('DemoClient', 'pno_DemoClient', function(c) {
 			cli = c;
 			cli.item = null;
-			console.log(cli);
 			cli.search(function() {
 				const div = $('<div/>');
 				for (const item of cli.list) {
@@ -100,8 +99,8 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
 		$('#DemoPlaceNewOrder-prd').find('p').removeClass('sel');
 		$('#DemoPlaceNewOrder-prd_' + prd.item.row_id).addClass('sel');
 		$('#DemoPlaceNewOrder-selprd').empty()
-			.append($('<img/>', { src: 'data:' + prd.item.demoPrdPicture.mime + ';base64,' + prd.item.demoPrdPicture.content })
-			.append('<br/>').append($('<strong/>').text(prd.item.demoPrdReference + ' ' + prd.item.demoPrdName)));
+			.append($('<img/>', { src: 'data:' + prd.item.demoPrdPicture.mime + ';base64,' + prd.item.demoPrdPicture.content }))
+			.append('<br/>').append($('<strong/>').text(prd.item.demoPrdReference + ' ' + prd.item.demoPrdName));
 		if (cli?.item) {
 			$('#DemoPlaceNewOrder-ok').attr('disabled', false);
 			$('#DemoPlaceNewOrder-qty').select();
