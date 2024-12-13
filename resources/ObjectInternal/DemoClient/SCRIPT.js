@@ -1,6 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for customer business object
 //----------------------------------------------------
+
 var DemoClient = DemoClient || (() => {
 	// Action function
 	function map(obj) {
