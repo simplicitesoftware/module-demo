@@ -31,7 +31,7 @@ Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessO
 						const inf = new google.maps.InfoWindow({
 							content: `<div style="color: #000; width: 200px;"><b>${name}</b><br/>${addr}</div>`
 						});
-						google.maps.event.addListener(mrk, "click", () => { inf.open(map, mrk); });
+						google.maps.event.addListener(mrk, 'click', () => { inf.open(map, mrk); });
 						return true;
 					}
 					return false;
