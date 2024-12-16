@@ -1,6 +1,7 @@
 //----------------------------------------------------
 // Client-side logic for order business object
 //----------------------------------------------------
+
 Simplicite.UI.BusinessObjects.DemoOrder = class extends Simplicite.UI.BusinessObject {
 	onLoadForm(ctn, obj, p) {
 		super.onLoadForm(ctn, obj, p);

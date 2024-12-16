@@ -2,6 +2,7 @@
   "devDependencies": {
     "eslint": "latest",
     "stylelint": "latest",
+    "@eslint/js": "latest",
     "jshint": "latest",
     "globals": "latest",
     "stylelint-config-standard": "latest",
