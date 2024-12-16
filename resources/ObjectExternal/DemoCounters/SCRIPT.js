@@ -1,4 +1,4 @@
-var DemoCounters = (() => {
+var DemoCounters = DemoCounters || (() => {
 	return {
 		render: (params, data) => {
 			$('#democounters-clients').click(() => { $ui.displayList(null, 'DemoClient'); });

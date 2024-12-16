@@ -2,6 +2,8 @@
 // Client-side logic for customer business object
 //----------------------------------------------------
 
+/* global google */
+
 var DemoClient = DemoClient || (() => {
 	// Action function
 	function map(obj) {

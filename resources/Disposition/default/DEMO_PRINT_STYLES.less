@@ -3,38 +3,115 @@
 	font-family: Verdana,Helvetica,Arial,sans-serif;
 	font-size: .8rem;
 	line-height: 1.75;
-	.small { font-size: .7rem; }
-	.big { font-size: 1.1rem; }
-	a { color: inherit; text-decoration: none; }
-	a:hover, a:active, a:visited { border-bottom: dotted .0625rem #808080; }
-	p, ul, ol { margin: .5rem 0; }
-	h1, h2, h3, h4, h5 { font-weight: normal; margin: .5rem 0 0 0; }
-	h1 { font-size: 1.8rem; color: #5BC0DE; }
-	h2 { font-size: 1.6rem; color: #5CB85C; }
-	h3 { font-size: 1.4rem; color: #F0AD4E; }
-	h4 { font-size: 1.2rem; color: #808080; }
-	h5 { font-size: 1rem; color: #A0A0A0; }
-	table { width: 100%; }
-	table, tr, td { border-collapse: collapse; border: dotted .0625rem #F0F0F0; }
-	th, td { vertical-align: top; padding: .25rem; }
-	th { max-width: 33%; background: #F0F0F0; }
-	header, footer { background: #F7F7F7; padding: .25rem; }
-	section { padding: .5rem; }
-	article { margin-left: 1rem; }
-	.desc { background: #FFFFDD; border-left: solid .125rem #F6B73F; padding: .5rem;  }
-	.doccnt { display: flex; padding: .25rem; }
-	.doc { padding: .5rem; }
+	.small {
+		font-size: .7rem;
+	}
+	.big {
+		font-size: 1.1rem;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	a:hover, a:active, a:visited {
+		border-bottom: dotted .0625rem #808080;
+	}
+	p, ul, ol {
+		margin: .5rem 0;
+	}
+	h1, h2, h3, h4, h5 {
+		font-weight: normal;
+		margin: .5rem 0 0;
+	}
+	h1 {
+		font-size: 1.8rem;
+		color: #5BC0DE;
+	}
+	h2 {
+		font-size: 1.6rem;
+		color: #5CB85C;
+	}
+	h3 {
+		font-size: 1.4rem;
+		color: #F0AD4E;
+	}
+	h4 {
+		font-size: 1.2rem;
+		color: #808080;
+	}
+	h5 {
+		font-size: 1rem;
+		color: #A0A0A0;
+	}
+	table {
+		width: 100%;
+	}
+	table, tr, td {
+		border-collapse: collapse;
+		border: dotted .0625rem #F0F0F0;
+	}
+	th, td {
+		vertical-align: top;
+		padding: .25rem;
+	}
+	th { max-width: 33%;
+		background: #F0F0F0;
+	}
+	header, footer {
+		background: #F7F7F7;
+		padding: .25rem;
+	}
+	section {
+		padding: .5rem;
+	}
+	article {
+		margin-left: 1rem;
+	}
+	.desc {
+		background: #FFD;
+		border-left: solid .125rem #F6B73F;
+		padding: .5rem;
+	}
+	.doccnt {
+		display: flex;
+		padding: .25rem;
+	}
+	.doc {
+		padding: .5rem;
+	}
 	table.receipt {
 		border: solid .0625rem #202020;
-		th, td { border: solid .0625rem #202020; }
-		th { text-align: center; }
+		th, td {
+			border: solid .0625rem #202020;
+		}
+		th {
+			text-align: center;
+		}
 	}
 }
-@page { size: A4 portrait; margin: .5cm; }
-@media screen {
-	body { background: #E0E0E0; width: 1024px; margin: 0 auto; }
-	.demo { section { background: #FFFFFF; } }
+
+@page {
+	size: a4 portrait;
+	margin: .5cm;
 }
+
+@media screen {
+	body {
+		background: #E0E0E0;
+		width: 1024px;
+		margin: 0 auto;
+	}
+	.demo {
+		section {
+			background: #FFF;
+		}
+	}
+}
+
 @media print {
-	.demo { .pagebreak { page-break-after: always; } }
+	.demo {
+		.pagebreak {
+			page-break-after: always;
+		}
+	}
 }
