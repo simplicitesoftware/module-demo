@@ -2,7 +2,7 @@
 // Client side JavaScript for place new order external object
 //-----------------------------------------------------------
 
-var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
+var DemoPlaceNewOrder = DemoPlaceNewOrder || (() => {
 	let cli, sup, prd, ord;
 
 	function render() {
@@ -14,17 +14,17 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
 
 		$('#demoplaceneworder-ord').append($ui.view.tools.panel({ title: 'Order', content: $('<div/>')
 			.append($('<div/>').append('Selected customer:'))
-			.append($('<div/>', { id: 'DemoPlaceNewOrder-selcli' }).append('&lt;none&gt;')).append('<br/>')
+			.append($('<div/>', { id: 'demoplaceneworder-selcli' }).append('&lt;none&gt;')).append('<br/>')
 			.append($('<div/>').append('Selected product:'))
-			.append($('<div/>', { id: 'DemoPlaceNewOrder-selprd' }).append('&lt;none&gt;')).append('<br/>')
+			.append($('<div/>', { id: 'demoplaceneworder-selprd' }).append('&lt;none&gt;')).append('<br/>')
 			.append($('<div/>')
-				.append($('<input/>', { id: 'DemoPlaceNewOrder-qty', type: 'text'}).val(1).change(total))
+				.append($('<input/>', { id: 'demoplaceneworder-qty', type: 'text'}).val(1).change(total))
 				.append('&nbsp;Total:&nbsp;')
-				.append($('<span/>', { id: 'DemoPlaceNewOrder-total' }).append('0.00'))
+				.append($('<span/>', { id: 'demoplaceneworder-total' }).append('0.00'))
 				.append('&nbsp;&euro;&nbsp;')
-				.append($('<button/>', { id: 'DemoPlaceNewOrder-ok', disabled: true }).addClass('btn btn-primary').text('OK').click(order))
+				.append($('<button/>', { id: 'demoplaceneworder-ok', disabled: true }).addClass('btn btn-primary').text('OK').click(order))
 			)
-			.append($('<div/>', { id: 'DemoPlaceNewOrder-err', style: 'color: red; display: none; font-weight: bold;' }))
+			.append($('<div/>', { id: 'demoplaceneworder-err', style: 'color: red; display: none; font-weight: bold;' }))
 		}));
 
 		getCli();
@@ -40,7 +40,7 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
 				const div = $('<div/>');
 				for (const item of cli.list) {
 					const label = `${item.demoCliCode} - ${item.demoCliFirstname} ${item.demoCliLastname}`;
-					div.append($('<p/>', { id: `DemoPlaceNewOrder-cli_${item.row_id}` }).addClass('obj').data('item', item).click(selCli).text(label));
+					div.append($('<p/>', { id: `demoplaceneworder-cli_${item.row_id}` }).addClass('obj').data('item', item).click(selCli).text(label));
 				}
 				$('#demoplaceneworder-cli').append($ui.view.tools.panel({ title: 'Select customer', content: div })).slideDown();
 			});
@@ -66,7 +66,7 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
 				const div = $('<div/>');
 				for (const item of sup.list) {
 					const label = `${item.demoSupCode} - ${item.demoSupName}`;
-					div.append($('<p/>', { id: `DemoPlaceNewOrder-sup_${item.row_id}` }).addClass('obj').data('item', item).click(selSup).text(label));
+					div.append($('<p/>', { id: `demoplaceneworder-sup_${item.row_id}` }).addClass('obj').data('item', item).click(selSup).text(label));
 				}
 				$('#demoplaceneworder-sup').append($ui.view.tools.panel({ title: 'Select supplier', content: div })).slideDown();
 			});
@@ -85,7 +85,7 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (function() {
 				const div = $('<div/>');
 				for (const item of prd.list) {
 					const label = `${item.demoPrdReference} - ${item.demoPrdName}`;
-					div.append($('<p/>', { id: `DemoPlaceNewOrder-prd_${item.row_id}` }).addClass('obj').data('item', item).click(selPrd)
+					div.append($('<p/>', { id: `demoplaceneworder-prd_${item.row_id}` }).addClass('obj').data('item', item).click(selPrd)
 						.append($('<img/>', { src: `data:${item.demoPrdPicture.mime};base64,${item.demoPrdPicture.content}` }).css('width', '50px'))
 						.append($('<span/>').text(label)));
 				}
