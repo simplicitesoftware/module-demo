@@ -1,12 +1,16 @@
 {
   "devDependencies": {
     "eslint": "latest",
+    "stylelint": "latest",
     "jshint": "latest",
-    "globals": "latest"
+    "globals": "latest",
+    "stylelint-config-standard": "latest",
+    "postcss-less": "latest"
   },
   "name": "Demo",
   "scripts": {
     "eslint": "eslint --config=.eslint-configuration --no-color resources/**/*.js",
+    "stylelint": "stylelint --config=.stylelint-configuration --no-color resources/**/*.css resources/**/*.less",
     "jshint": "jshint --config=.jshint-configuration --reporter=jslint resources"
   },
   "version": "6"

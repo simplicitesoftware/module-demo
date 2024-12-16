@@ -41,3 +41,11 @@ npm install
 npm run eslint
 ```
 
+StyleLint (optional, requires node.js)
+--------------------------------------
+
+``` text
+npm install
+npm run stylelint
+```
+
