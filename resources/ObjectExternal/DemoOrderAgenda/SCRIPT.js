@@ -2,11 +2,13 @@
 // Client side JavaScript for order agenda
 //-----------------------------------------------------------
 
+/* global FullCalendar */
+
 var DemoOrderAgenda = DemoOrderAgenda || (function() {
 	const debug = false;
 	let ord;
 
-	function render(url) {
+	function render() {
 		$ui.loadCalendar(function() {
 			$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', function(o) {
 				ord = o;
@@ -64,7 +66,7 @@ var DemoOrderAgenda = DemoOrderAgenda || (function() {
 					if (debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
 				}, d);
 			},
-			events: function(info, success, failure) {
+			events: function(info, success, _failure) {
 				const start = moment(info.start);
 				const end = moment(info.end);
 				const f = 'YYYY-MM-DD HH:mm:ss Z';
@@ -137,7 +139,7 @@ var DemoOrderAgenda = DemoOrderAgenda || (function() {
 					if (debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
 				}, d);
 			},
-			events: function(info, success, failure) {
+			events: function(info, success, _failure) {
 				const start = moment(info.start);
 				const end = moment(info.end);
 				const f = 'YYYY-MM-DD HH:mm:ss Z';
