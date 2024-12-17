@@ -4,7 +4,7 @@
 
 /* global FullCalendar */
 
-var DemoOrderAgenda = DemoOrderAgenda || (function() {
+var DemoOrderAgenda = DemoOrderAgenda || (() => {
 	const debug = false;
 	let ord;
 
