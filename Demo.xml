@@ -17,7 +17,7 @@
     },
     "origin": {"uri": "https://github.com/simplicitesoftware/module-demo.git"},
     "sonar": {
-        "organization": "simplicitesoftware-projects",
+        "organization": "simplicitesoftware",
         "host.url": "https://sonarcloud.io"
     },
     "type": "git",
