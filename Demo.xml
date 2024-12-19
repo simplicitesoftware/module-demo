@@ -23,9 +23,7 @@
     "type": "git"
 }]]></mdl_url>
 		<mdl_type>A</mdl_type>
-		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
-
-### Introduction
+		<mdl_comment><![CDATA[### Introduction
 
 This is a demo **order management** application (backend and frontend).
 
@@ -76,16 +74,7 @@ Some sample data is provided as a module's dataset. It contains:
 - Sample products
 - Sample customers
 
-Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
-
-### Quality
-
-This module can be analysed by the **SonarQube** analysis tool
-using this command:
-
-```bash
-mvn verify sonar:sonar
-```]]></mdl_comment>
+Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -442,7 +431,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2023-12-19 13:26:00</usr_logout>
-		<usr_last_logon>2024-12-17 18:10:23</usr_last_logon>
+		<usr_last_logon>2024-12-19 17:11:15</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -454,15 +443,6 @@ try {
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[default]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[Webapp disposition, ex: default, myapp, ...]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
