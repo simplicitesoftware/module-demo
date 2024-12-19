@@ -24,9 +24,7 @@
     "branch": "v6"
 }]]></mdl_url>
 		<mdl_type>A</mdl_type>
-		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
-
-### Introduction
+		<mdl_comment><![CDATA[### Introduction
 
 This is a demo **order management** application (backend and frontend).
 
@@ -41,7 +39,8 @@ To import this module:
 {
 	"type": "git",
 	"origin": {
-		"uri": "https://github.com/simplicitesoftware/module-demo.git"
+		"uri": "https://github.com/simplicitesoftware/module-demo.git",
+		"branch": "v6"
 	}
 }
 ```
@@ -77,16 +76,7 @@ Some sample data is provided as a module's dataset. It contains:
 - Sample products
 - Sample customers
 
-Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
-
-### Quality
-
-This module can be analysed by the **SonarQube** analysis tool
-using this command:
-
-```bash
-mvn verify sonar:sonar
-```]]></mdl_comment>
+Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -473,7 +463,7 @@ mvn verify sonar:sonar
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2024-12-17 18:14:12</usr_last_logon>
+		<usr_last_logon>2024-12-19 12:15:22</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>

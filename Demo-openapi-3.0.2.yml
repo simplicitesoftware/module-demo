@@ -197,8 +197,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -1814,8 +1814,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country

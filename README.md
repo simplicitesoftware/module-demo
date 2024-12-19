@@ -11,8 +11,6 @@
 `Demo` module definition
 ========================
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
-
 ### Introduction
 
 This is a demo **order management** application (backend and frontend).
@@ -28,7 +26,8 @@ To import this module:
 {
 	"type": "git",
 	"origin": {
-		"uri": "https://github.com/simplicitesoftware/module-demo.git"
+		"uri": "https://github.com/simplicitesoftware/module-demo.git",
+		"branch": "v6"
 	}
 }
 ```
@@ -65,15 +64,6 @@ Some sample data is provided as a module's dataset. It contains:
 - Sample customers
 
 Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
-
-### Quality
-
-This module can be analysed by the **SonarQube** analysis tool
-using this command:
-
-```bash
-mvn verify sonar:sonar
-```
 
 `DemoContact` business object definition
 ----------------------------------------
