@@ -25,10 +25,8 @@ To import this module:
 ```json
 {
 	"type": "git",
-	"origin": {
-		"uri": "https://github.com/simplicitesoftware/module-demo.git",
-		"branch": "v6"
-	}
+	"branch": "v6",
+	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo.git" }
 }
 ```
 
