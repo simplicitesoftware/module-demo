@@ -957,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -3170,8 +3170,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object
