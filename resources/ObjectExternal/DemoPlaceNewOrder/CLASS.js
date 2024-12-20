@@ -2,7 +2,7 @@
 // Client side JavaScript for place new this.order external object
 //-----------------------------------------------------------
 
-class DemoPlaceNewOrder extends Simplicite.UI.ExternalObject {
+class DemoPlaceNewOrder extends Simplicite.UI.ExternalObject { // eslint-disable-line no-unused-vars
 	/** @override */
 	async render(_params, _data) {
 		// Override default error handler
@@ -119,7 +119,7 @@ class DemoPlaceNewOrder extends Simplicite.UI.ExternalObject {
 			}, { demoPrdSupId: supId }, { inlineDocs: true });
 		});
 	}
-	
+
 	/**
 	 * Select one product
 	 * @param {object} item Product item
