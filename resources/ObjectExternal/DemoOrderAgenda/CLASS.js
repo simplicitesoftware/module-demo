@@ -4,33 +4,34 @@
 
 /* global FullCalendar */
 
-var DemoOrderAgenda = DemoOrderAgenda || (() => {
-	const debug = false;
-	let ord;
-
-	function render() {
-		$ui.loadCalendar(function() {
-			$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', function(o) {
-				ord = o;
-				ord.getMetaData(calendar);
+// As of version 6.2: Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
+class DemoOrderAgenda extends Simplicite.UI.ExternalObject { // eslint-disable-line no-unused-vars
+	/** @override */
+	async render(_params, _data) {
+		this.debug = false;
+		$ui.loadCalendar(() => {
+			$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', obj => {
+				this.ord = obj;
+				this.ord.getMetaData(() => this.calendar());
 			});
 		});
 	}
 
-	// Choose appropriate calendar function for current FullCalendar version
-	function calendar() {
+	/** Choose appropriate calendar function for current FullCalendar version */
+	calendar() {
 		const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
-		if (debug) $app.info(`FullCalendar version = ${fc}`);
+		if (this.debug) $app.info(`FullCalendar version = ${fc}`);
 		if (fc < 4)
 			$('#demoOrderAgenda').text(`Fullcalendar version ${fc} is not supported`);
 		else if (fc == 4)
-			calendar4();
+			this.calendar4();
 		else
-			calendar5();
+			this.calendar5();
 	}
 
-	// For legacy FullCalendar version 4
-	function calendar4() {
+	/** Calendar for legacy FullCalendar version 4 */
+	calendar4() {
+		const self = this;
 		new FullCalendar.Calendar($('#demoOrderAgenda')[0], {
 			plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
 			header: {
@@ -51,33 +52,33 @@ var DemoOrderAgenda = DemoOrderAgenda || (() => {
 				start: '09:00',
 				end: '18:00'
 			},
-			eventClick: function(info) {
+			eventClick: info => {
 				const id = info.event.id;
-				if (debug) $app.info(`Order ${id} clicked`);
+				if (self.debug) $app.info(`Order ${id} clicked`);
 				$ui.displayForm(null, 'DemoOrder', id, { nav: 'add' });
 			},
-			eventDrop: function(info) {
+			eventDrop: info => {
 				const s = moment(info.event.start).utc().format('YYYY-MM-DD HH:mm:ss');
 				let d = info.event.extendedProps.data;
-				if (debug) $app.info(`Order ${info.event.id} dropped to ${s}`);
+				if (self.debug) $app.info(`Order ${info.event.id} dropped to ${s}`);
 				d.demoOrdDeliveryDate = s;
-				ord.update(function() {
-					d = ord.item;
-					if (debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
+				this.ord.update(() => {
+					d = self.ord.item;
+					if (self.debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
 				}, d);
 			},
-			events: function(info, success, _failure) {
+			events: (info, success, _failure) => {
 				const start = moment(info.start);
 				const end = moment(info.end);
 				const f = 'YYYY-MM-DD HH:mm:ss Z';
 				const dmin = start.format(f);
 				const dmax = end.format(f);
-				if (debug) $app.info(`Calendar view range = ${dmin} to ${dmax}`);
-				ord.search(function() {
-					if (debug) $app.info(`${ord.list.length} orders found between ${dmin} and ${dmax}`);
-					const status = ord.getField('demoOrdStatus');
+				if (self.debug) $app.info(`Calendar view range = ${dmin} to ${dmax}`);
+				self.ord.search(list => {
+					if (self.debug) $app.info(`${list.length} orders found between ${dmin} and ${dmax}`);
+					const status = self.ord.getField('demoOrdStatus');
 					const evts = [];
-					for (const item of ord.list) {
+					for (const item of list) {
 						if (item.demoOrdDeliveryDate !== '') { // ZZZ When using intervals empty values are included !
 							const s = moment(item.demoOrdDeliveryDate);
 							const e = s.add(2, 'h');
@@ -96,15 +97,16 @@ var DemoOrderAgenda = DemoOrderAgenda || (() => {
 							});
 						}
 					}
-					if (debug) $app.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
+					if (self.debug) $app.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
 					success(evts);
 				}, { demoOrdDeliveryDate: `${dmin};${dmax}`, demoOrdStatus: 'P;V;D' }, { inlineDocs: false });
 			}
 		}).render();
 	}
 
-	// For FullCalendar version 5
-	function calendar5() {
+	/** Calendar for FullCalendar version 5 */
+	calendar5() {
+		const self = this;
 		new FullCalendar.Calendar($('#demoOrderAgenda')[0], {
 			headerToolbar: {
 				start: 'prev,next today',
@@ -124,33 +126,33 @@ var DemoOrderAgenda = DemoOrderAgenda || (() => {
 				startTime: '09:00',
 				endTime: '18:00'
 			},
-			eventClick: function(info) {
+			eventClick: info => {
 				const id = info.event.id;
-				if (debug) $app.info(`Order ${id} clicked`);
+				if (self.debug) $app.info(`Order ${id} clicked`);
 				$ui.displayForm(null, 'DemoOrder', id, { nav: 'add' });
 			},
-			eventDrop: function(info) {
+			eventDrop: info => {
 				const s = moment(info.event.start).utc().format('YYYY-MM-DD HH:mm:ss');
 				let d = info.event.extendedProps.data;
-				if (debug) $app.info(`Order ${info.event.id} dropped to ${s}`);
+				if (self.debug) $app.info(`Order ${info.event.id} dropped to ${s}`);
 				d.demoOrdDeliveryDate = s;
-				ord.update(function() {
-					d = ord.item;
-					if (debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
+				self.ord.update(function() {
+					d = self.ord.item;
+					if (self.debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
 				}, d);
 			},
-			events: function(info, success, _failure) {
+			events: (info, success, _failure) => {
 				const start = moment(info.start);
 				const end = moment(info.end);
 				const f = 'YYYY-MM-DD HH:mm:ss Z';
 				const dmin = start.format(f);
 				const dmax = end.format(f);
-				if (debug) $app.info(`Calendar view range = ${dmin} to ${dmax}`);
-				ord.search(function() {
-					if (debug) $app.info(`${ord.list.length} orders found between ${dmin} and ${dmax}`);
-					const status = ord.getField('demoOrdStatus');
+				if (self.debug) $app.info(`Calendar view range = ${dmin} to ${dmax}`);
+				self.ord.search(list => {
+					if (self.debug) $app.info(`${list.length} orders found between ${dmin} and ${dmax}`);
+					const status = self.ord.getField('demoOrdStatus');
 					const evts = [];
-					for (const item of ord.list) {
+					for (const item of list) {
 						if (item.demoOrdDeliveryDate !== '') { // ZZZ When using intervals empty values are included !
 							const s = moment(item.demoOrdDeliveryDate);
 							const e = s.add(2, 'h');
@@ -169,12 +171,10 @@ var DemoOrderAgenda = DemoOrderAgenda || (() => {
 							});
 						}
 					}
-					if (debug) $app.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
+					if (self.debug) $app.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
 					success(evts);
 				}, { demoOrdDeliveryDate: `${dmin};${dmax}`, demoOrdStatus: 'P;V;D' }, { inlineDocs: false });
 			}
 		}).render();
 	}
-
-	return { render: render };
-})();
+}
