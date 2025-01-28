@@ -461,7 +461,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-01-07 14:34:05</usr_last_logon>
+		<usr_last_logon>2025-01-28 11:20:31</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -14560,14 +14560,14 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<scr_code>DemoTests</scr_code>
-		<scr_file>test/src/com/simplicite/tests/Demo/DemoTests.java</scr_file>
+		<scr_code>DemoRandomDataGeneration</scr_code>
+		<scr_file>test/src/com/simplicite/tests/Demo/DemoRandomDataGeneration.java</scr_file>
 		<scr_type>TST</scr_type>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<scr_code>DemoRandomDataGeneration</scr_code>
-		<scr_file>test/src/com/simplicite/tests/Demo/DemoRandomDataGeneration.java</scr_file>
+		<scr_code>DemoTests</scr_code>
+		<scr_file>test/src/com/simplicite/tests/Demo/DemoTests.java</scr_file>
 		<scr_type>TST</scr_type>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

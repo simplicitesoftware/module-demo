@@ -29,8 +29,8 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 
 		setSeparator('\t'); // Tab is the separator
 
-		sup = getGrant().getObject("adp", "DemoSupplier");
-		prd = getGrant().getObject("adp", "DemoProduct");
+		sup = getGrant().getObject("demo_adapter", "DemoSupplier");
+		prd = getGrant().getObject("demo_adapter", "DemoProduct");
 
 		debug = getBooleanParameter("debug", debug); // Enable debug mode with "debug=true"
 
