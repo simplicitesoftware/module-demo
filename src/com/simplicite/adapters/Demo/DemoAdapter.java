@@ -17,10 +17,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 	private boolean debug = false;
 
 	private ObjectDB sup;
-	private transient BusinessObjectTool supt;
-
 	private ObjectDB prd;
-	private transient BusinessObjectTool prdt;
 
 	private int nbErrors = 0;
 
@@ -33,10 +30,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 		setSeparator('\t'); // Tab is the separator
 
 		sup = getGrant().getObject("adp", "DemoSupplier");
-		supt = new BusinessObjectTool(sup); // or sup.getTool(); in versions 5.0+
-
-		prd = getGrant().getObject("inlog", "DemoProduct");
-		prdt = new BusinessObjectTool(prd); // or prd.getTool();
+		prd = getGrant().getObject("adp", "DemoProduct");
 
 		debug = getBooleanParameter("debug", debug); // Enable debug mode with "debug=true"
 
@@ -46,7 +40,8 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 	@Override
 	public String processValues(long n, String[] values) {
 		try {
-			if (n == 1) return null; // First line with column headers is ignored
+			if (n == 1)
+				return null; // First line with column headers is ignored
 			if (debug) appendLog("Processling line " + n + " = " + String.join(String.valueOf(getSeparator()), values));
 
 			/* Line format: <supplier code><tab><product reference><tab><product name> */
@@ -57,14 +52,14 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 			// Get supplier row ID from supplier code code
 			String supId;
 			try {
-				supId = supt.get(new JSONObject().put("demoSupCode", values[0]));
+				supId = sup.getTool().get(new JSONObject().put("demoSupCode", values[0]));
 				if (debug) appendLog("Supplier " + values[0] + " found, row ID = " + supId);
 			} catch (GetException e) {
 				throw new PlatformException("No supplier found for " + values[0]);
 			}
 
 			// Product upsert (= create or update)
-			boolean exists = prdt.getForUpsert(
+			boolean exists = prd.getTool().getForUpsert(
 				new JSONObject()
 					.put("demoPrdSupId", supId)
 					.put("demoPrdReference", values[1]));
@@ -73,7 +68,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 				prd.setFieldValue("demoPrdReference", values[1]);
 			}
 			prd.setFieldValue("demoPrdName", values[2]);
-			prdt.validateAndSave();
+			prd.getTool().validateAndSave();
 			if (debug) appendLog("Product " + values[1] + " " + (exists ? "updated" : "created"));
 		} catch (PlatformException e) {
 			String msg = "Line " + n + " error: " + e.getMessage();
