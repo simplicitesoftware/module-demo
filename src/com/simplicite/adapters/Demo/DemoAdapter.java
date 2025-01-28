@@ -35,7 +35,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 		sup = getGrant().getObject("adp", "DemoSupplier");
 		supt = new BusinessObjectTool(sup); // or sup.getTool(); in versions 5.0+
 
-		prd = getGrant().getObject("inlog", "DemoProduct");
+		prd = getGrant().getObject("adp", "DemoProduct");
 		prdt = new BusinessObjectTool(prd); // or prd.getTool();
 
 		debug = getBooleanParameter("debug", debug); // Enable debug mode with "debug=true"
@@ -46,10 +46,11 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 	@Override
 	public String processValues(long n, String[] values) {
 		try {
-			if (n == 1) return null; // First line with column headers is ignored
+			if (n == 1)
+				return null; // First line with column headers is ignored
 			if (debug) appendLog("Processling line " + n + " = " + String.join(String.valueOf(getSeparator()), values));
 
-			/* Line format: <supplier code><tab><product reference><tab><product name> */
+			// Line format: <supplier code><tab><product reference><tab><product name>
 
 			if (values.length != NB_COLS)
 				throw new PlatformException("Line " + n + " has " + values.length + " columns instead of " + NB_COLS + ", ignored");
