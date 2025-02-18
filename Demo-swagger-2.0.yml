@@ -222,8 +222,8 @@ paths:
         required: false
         enum:
         - O
-        - C
         - P
+        - C
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -957,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -2359,8 +2359,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3045,8 +3045,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3170,8 +3170,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object
@@ -3526,8 +3526,8 @@ definitions:
         type: string
         enum:
         - O
-        - C
         - P
+        - C
       demoCtcDatetime:
         description: Contcat date and time
         type: string
