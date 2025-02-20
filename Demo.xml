@@ -461,7 +461,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-02-18 18:07:59</usr_last_logon>
+		<usr_last_logon>2025-02-20 19:55:14</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -3400,7 +3400,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_speech/>
-		<fld_calc><![CDATA[[STATUS] != "C" ? [VALUE:demoOrdQuantity] * [VALUE:demoOrdUnitPrice] : 0]]></fld_calc>
+		<fld_calc><![CDATA[[VALUE:demoOrdQuantity] * [VALUE:demoOrdUnitPrice]]]></fld_calc>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Total order amount]]></fld_comment>
 		<fld_classification/>
@@ -3439,7 +3439,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering>EURO</fld_rendering>
 		<fld_speech/>
-		<fld_calc><![CDATA[[STATUS] == "P" ? [VALUE:demoOrdPrdId.demoPrdUnitPrice] : ([STATUS] == "C" ? 0 : [[VALUE:demoOrdUnitPrice]])]]></fld_calc>
+		<fld_calc><![CDATA[[STATUS] == "P" ? [VALUE:demoOrdPrdId.demoPrdUnitPrice] : ([STATUS] == "C" ? 0 : [VALUE:demoOrdUnitPrice])]]></fld_calc>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Product unit price for order]]></fld_comment>
 		<fld_classification/>
