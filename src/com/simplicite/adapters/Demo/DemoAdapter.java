@@ -6,7 +6,6 @@ import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.exceptions.GetException;
 import com.simplicite.util.exceptions.PlatformException;
-import com.simplicite.util.tools.BusinessObjectTool;
 
 /**
  * Custom CSV (TSV here) adapter (using the demo objects)
