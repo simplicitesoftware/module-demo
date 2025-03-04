@@ -30,9 +30,13 @@ public class DemoContact extends ObjectDB {
 			getField("demoCtcComments").setVisibility(ObjectField.VIS_FORM);
 	}
 
-	@BusinessObjectPublication
+	/**
+	 * HTML publication (using Mustache(R) templating) method
+	 * @param pt Publication template
+	 * @return Publication result
+ 	 */
+ 	@BusinessObjectPublication
 	public Object printMustache(PrintTemplate pt) {
-		// HTML publication using Mustache(R) templating
 		try {
 			WebPage wp = new WebPage(pt.getDisplay());
 			wp.setBodyCSSClass("demo");
@@ -46,9 +50,13 @@ public class DemoContact extends ObjectDB {
 		}
 	}
 
+	/**
+	 * Microsoft Excel(R) sheet publication method
+	 * @param pt Publication template
+	 * @return Publication result
+ 	 */
 	@BusinessObjectPublication
 	public Object printExcel(PrintTemplate pt) {
-		// Microsoft Excel(R) sheet publication
 		try {
 			// Build rows from selected IDs or from current filters
 			List<String[]>rows = new ArrayList<>();

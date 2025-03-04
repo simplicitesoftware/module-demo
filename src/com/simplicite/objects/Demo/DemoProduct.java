@@ -49,9 +49,13 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
+	/**
+	 * Increase stock action method
+	 * @param params Action parameters, includes increment 
+	 * @return Action result message
+ 	 */
 	@BusinessObjectAction
 	public String increaseStock(Map<String, String> params) {
-		// Increase stock action
 		try {
 			int inc = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
 			if (inc > 0) {
@@ -70,9 +74,12 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
+	/**
+	 * Decrease stock action method
+	 * @return Action result message
+ 	 */
 	@BusinessObjectAction
 	public String decreaseStock() {
-		// Decrease stock action
 		try {
 			int dec = getIntParameter("QUANTITY", 0);
 			ObjectField s = getField(STOCK_FIELDNAME);
@@ -87,9 +94,12 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
+	/**
+	 * Send product data in an email action method
+	 * @return Action result message
+ 	 */
 	@BusinessObjectAction
-	public String sendEmail(Action a) {
-		// Action to send product data in an email
+	public String sendEmail() {
 		try {
 			MailTool mt = new MailTool(getGrant());
 			mt.addRcpt(getGrant().getEmail());
@@ -112,9 +122,13 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
+	/**
+	 * Microsoft Word(R) brochure publication method
+	 * @param pt Publication template
+	 * @return Publication result
+ 	 */
 	@BusinessObjectPublication
 	public Object printBrochure(PrintTemplate pt) {
-		// Microsoft Word(R) brochure publication
 		try {
 			// Build a Docx document from scratch:
 			/* DocxTool dt = new DocxTool();
