@@ -30,9 +30,9 @@ public class DemoContact extends ObjectDB {
 			getField("demoCtcComments").setVisibility(ObjectField.VIS_FORM);
 	}
 
-	/** Publication: HTML using Mustache(R) templating */
 	@BusinessObjectPublication
 	public Object printMustache(PrintTemplate pt) {
+		// HTML publication using Mustache(R) templating
 		try {
 			WebPage wp = new WebPage(pt.getDisplay());
 			wp.setBodyCSSClass("demo");
@@ -46,9 +46,9 @@ public class DemoContact extends ObjectDB {
 		}
 	}
 
-	/** Publication: Microsoft Excel(R) sheet */
 	@BusinessObjectPublication
 	public Object printExcel(PrintTemplate pt) {
+		// Microsoft Excel(R) sheet publication
 		try {
 			// Build rows from selected IDs or from current filters
 			List<String[]>rows = new ArrayList<>();
@@ -79,9 +79,9 @@ public class DemoContact extends ObjectDB {
 		}
 	}
 
-	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
+		// Hide history records on tree view
 		return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
 	}
 }

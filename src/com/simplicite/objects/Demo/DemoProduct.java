@@ -24,16 +24,22 @@ public class DemoProduct extends ObjectDB {
 	/** Default increment */
 	public static final int DEFAULT_INCREMENT = 10;
 
+	/** Name field name */
 	public static final String NAME_FIELDNAME = "demoPrdName";
+	/** Reference field name */
 	public static final String REFERENCE_FIELDNAME = "demoPrdReference";
+	/** Description field name */
 	public static final String DESCRIPTION_FIELDNAME = "demoPrdDescription";
+	/** Documentation field name */
 	public static final String DOCUMENTATION_FIELDNAME = "demoPrdDocumentation";
+	/** Stock field name */
 	public static final String STOCK_FIELDNAME = "demoPrdStock";
+	/** Stock increment field name */
 	public static final String INCREMENT_FIELDNAME = "demoPrdIncrement";
 
-	/** Init default increment */
 	@Override
 	public void initAction(Action action) {
+		// Init default increment for increment action
 		if ("DEMO_INCSTOCK".equals(action.getName())) {
 			ObjectField f = action.getConfirmField(getGrant().getLang(), INCREMENT_FIELDNAME);
 			if (f != null) {
@@ -43,11 +49,11 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
-	/** Action: increase stock */
 	@BusinessObjectAction
 	public String increaseStock(Map<String, String> params) {
+		// Increase stock action
 		try {
-		int inc = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
+			int inc = Tool.parseInt(params.get(INCREMENT_FIELDNAME), DEFAULT_INCREMENT);
 			if (inc > 0) {
 				ObjectField s = getField(STOCK_FIELDNAME);
 				s.setValue(s.getInt(0) + inc);
@@ -64,9 +70,9 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
-	/** Action: decrease stock */
 	@BusinessObjectAction
 	public String decreaseStock() {
+		// Decrease stock action
 		try {
 			int dec = getIntParameter("QUANTITY", 0);
 			ObjectField s = getField(STOCK_FIELDNAME);
@@ -81,9 +87,9 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
-	/** Action method: send product data in an email */
 	@BusinessObjectAction
 	public String sendEmail(Action a) {
+		// Action to send product data in an email
 		try {
 			MailTool mt = new MailTool(getGrant());
 			mt.addRcpt(getGrant().getEmail());
@@ -106,9 +112,9 @@ public class DemoProduct extends ObjectDB {
 		}
 	}
 
-	/** Publication: Microsoft Word(R) brochure */
 	@BusinessObjectPublication
 	public Object printBrochure(PrintTemplate pt) {
+		// Microsoft Word(R) brochure publication
 		try {
 			// Build a Docx document from scratch:
 			/* DocxTool dt = new DocxTool();
@@ -142,15 +148,15 @@ public class DemoProduct extends ObjectDB {
 		return null;
 	}
 
-	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
+		// Custom short label
 		return getFieldValue(REFERENCE_FIELDNAME, row);
 	}
 
-	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
+		// Hide history records on tree view
 		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
 	}
 }

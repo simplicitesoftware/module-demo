@@ -22,6 +22,7 @@ public class DemoCatalogAPI extends com.simplicite.webapp.services.RESTServiceEx
 
 	/**
 	 * Product catalog service.
+	 * @param ref Product reference
 	 * @return JSON array of products
 	 */
 	@RESTServiceOperation(method = "get", desc = "Available products")

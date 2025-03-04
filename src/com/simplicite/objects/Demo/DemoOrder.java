@@ -17,13 +17,21 @@ import com.simplicite.util.Tool;
 public class DemoOrder extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 
-	public static final String QUANTITY_FIELDNAME = "demoOrdQuantity";
-	public static final String NUMBER_FIELDNAME = "demoOrdNumber";
-	public static final String PRODUCT_FIELDNAME = "demoOrdPrdId";
-	public static final String REFERENCE_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.REFERENCE_FIELDNAME;
-	public static final String STOCK_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.STOCK_FIELDNAME;
+	/** Quantity field name */
+	private static final String QUANTITY_FIELDNAME = "demoOrdQuantity";
+	/** Numer field name */
+	private static final String NUMBER_FIELDNAME = "demoOrdNumber";
+	/** Product field name */
+	private static final String PRODUCT_FIELDNAME = "demoOrdPrdId";
+	/** Reference field name (from product object) */
+	private static final String REFERENCE_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.REFERENCE_FIELDNAME;
+	/** Stock field name (from product object) */
+	private static final String STOCK_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.STOCK_FIELDNAME;
 
+	/** Error message text code for invalid quantity */
 	public static final String QUANTITY_ERROR = "ERR_DEMO_ORD_QUANTITY";
+
+	/** Error message text code for low stock */
 	public static final String STOCK_ERROR = "ERR_DEMO_PRD_STOCK";
 
 	@Override
@@ -45,11 +53,11 @@ public class DemoOrder extends ObjectDB {
 		return msgs;
 	}
 
-	/** Hook override: invitation for delivery + stock decrease on shipment */
 	@Override
 	public String postUpdate() {
 		if ("V".equals(getOldStatus()) && "D".equals(getStatus())) { // Upon state transition to delivered
 			try {
+				// Send invitation
 				String n = getFieldValue(NUMBER_FIELDNAME);
 				Date d = Tool.fromDateTime(getFieldValue("demoOrdDeliveryDate"));
 				String name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
@@ -67,6 +75,7 @@ public class DemoOrder extends ObjectDB {
 			}
 
 			try {
+				// Decrease stock
 				ObjectDB prd = getGrant().getTmpObject("DemoProduct");
 				prd.select(getFieldValue(PRODUCT_FIELDNAME));
 				int q = getField(QUANTITY_FIELDNAME).getInt(0);
@@ -88,9 +97,9 @@ public class DemoOrder extends ObjectDB {
 		return super.postUpdate();
 	}
 
-	/** Hook override: check low stock */
 	@Override
 	public String postSave() {
+		// 
 		int stock = getField(STOCK_FIELDNAME).getInt(0);
 		if (DemoCommon.getInstance().isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
 			String ref = getFieldValue(REFERENCE_FIELDNAME);
@@ -119,21 +128,21 @@ public class DemoOrder extends ObjectDB {
 		return super.postSave();
 	}
 
-	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
+		// Custom short label
 		return getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row);
 	}
 
-	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
+		// Hide history records on tree view
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
 	}
 
-	/** Hook override: allow receipt publication only if status is validated or shipped */
 	@Override
 	public boolean isPrintTemplateEnable(String[] row, String ptName) {
+		// Allow receipt publication only if status is validated or shipped
 		if ("DemoOrder-Receipt".equals(ptName)) {
 			String s = getStatus(row);
 			return "V".equals(s) || "D".equals(s);

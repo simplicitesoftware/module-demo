@@ -13,14 +13,19 @@ import com.simplicite.util.exceptions.PlatformException;
 public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAdapter {
 	private static final long serialVersionUID = 1L;
 
+	/** Debug mode? */
 	private boolean debug = false;
 
+	/** Supplier object */
 	private ObjectDB sup;
+	/** Product object */
 	private ObjectDB prd;
 
+	/** Number of errors */
 	private int nbErrors = 0;
 
-	private static final int NB_COLS = 3; // Expected number of columns
+	/** Expected number of columns per line */
+	private static final int NB_COLS = 3;
 
 	@Override
 	public String preProcess() {
