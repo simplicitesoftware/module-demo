@@ -358,7 +358,7 @@ state transition to _shipped_ status.
 `DemoClient` business object definition
 ---------------------------------------
 
-The **client** business object corresponds
+The **customer** business object corresponds
 to the customer who places order.
 
 His address is geolocalized using GoogleMaps&reg; API.

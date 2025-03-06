@@ -197,8 +197,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -553,8 +553,8 @@ components:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         demoCtcDatetime:
           description: Contcat date and time
           type: string
@@ -937,8 +937,8 @@ paths:
           type: string
           enum:
           - O
-          - C
           - P
+          - C
         in: query
         name: demoCtcStatus
         description: Search filter for Contact status
@@ -1814,8 +1814,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
