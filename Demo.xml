@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1228" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1224" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -461,7 +461,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-03-12 15:23:21</usr_last_logon>
+		<usr_last_logon>2025-03-12 15:29:03</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -475,12 +475,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<action>upsert</action>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
 		<usp_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -10595,7 +10589,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_queue_id.acq_name/>
 	</data>
 	<data>
-		<act_name>DEMO_CTC_STATUS-O-C</act_name>
+		<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
 		<act_type>F</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
@@ -10618,7 +10612,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_queue_id.acq_name/>
 	</data>
 	<data>
-		<act_name>DEMO_CTC_STATUS-O-P</act_name>
+		<act_name>DEMO_CTC_STATUS-PROCESS</act_name>
 		<act_type>F</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
@@ -10637,29 +10631,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_color/>
 		<act_color_bg/>
 		<act_image>fas/play-circle</act_image>
-		<act_group_id.acg_name/>
-		<act_queue_id.acq_name/>
-	</data>
-	<data>
-		<act_name>DEMO_CTC_STATUS-P-C</act_name>
-		<act_type>F</act_type>
-		<act_async>0</act_async>
-		<act_job_depth/>
-		<act_method/>
-		<act_script/>
-		<act_url/>
-		<act_confirm>0</act_confirm>
-		<act_confirm_expr/>
-		<act_confirm_ui/>
-		<act_plus>0</act_plus>
-		<act_comment/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<act_exec>NUL</act_exec>
-		<act_count/>
-		<act_order/>
-		<act_color/>
-		<act_color_bg/>
-		<act_image>fas/check-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -12870,7 +12841,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name/>
-		<stm_action_id.act_name>DEMO_CTC_STATUS-O-C</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_CTC_STATUS-CLOSE</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12884,7 +12855,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name/>
-		<stm_action_id.act_name>DEMO_CTC_STATUS-O-P</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_CTC_STATUS-PROCESS</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12898,7 +12869,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name/>
-		<stm_action_id.act_name>DEMO_CTC_STATUS-P-C</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_CTC_STATUS-CLOSE</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14722,7 +14693,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_CTC_STATUS-O-P</act_name>
+					<act_name>DEMO_CTC_STATUS-PROCESS</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14737,7 +14708,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_CTC_STATUS-O-P</act_name>
+					<act_name>DEMO_CTC_STATUS-PROCESS</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14752,7 +14723,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_CTC_STATUS-O-C</act_name>
+					<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14767,7 +14738,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_CTC_STATUS-O-C</act_name>
+					<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14803,36 +14774,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Diminuer le stock</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>DEMO_CTC_STATUS-P-C</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Close</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>DEMO_CTC_STATUS-P-C</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Clore</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
