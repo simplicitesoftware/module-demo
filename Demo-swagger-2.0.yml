@@ -2359,8 +2359,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3045,8 +3045,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoCliAddress1:
         description: Customer address (line 1)
         type: string

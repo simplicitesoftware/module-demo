@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1227" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1228" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -356,7 +356,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2024-09-19 09:20:38</usr_logout>
-		<usr_last_logon>2025-02-18 12:10:35</usr_last_logon>
+		<usr_last_logon>2025-03-11 22:27:28</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -461,7 +461,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-03-06 15:12:50</usr_last_logon>
+		<usr_last_logon>2025-03-12 15:23:21</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -473,6 +473,18 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -1026,8 +1038,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_name>DEMO_ORD_STATUS</lov_name>
-		<lov_navbar/>
-		<lov_navbar_opt/>
+		<lov_navbar>METRO</lov_navbar>
+		<lov_navbar_opt>DATE;USER</lov_navbar_opt>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoOrderStates</lov_model_id.mod_name>
 	</data>
@@ -8230,12 +8242,12 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible>0</obf_fld_visible>
+		<obf_fld_visible>1</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
-		<obf_fld_research>0</obf_fld_research>
+		<obf_fld_research/>
 		<obf_fld_more/>
-		<obf_fld_listmore/>
+		<obf_fld_listmore>1</obf_fld_listmore>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
@@ -8359,7 +8371,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
 		<obf_fld_more/>
-		<obf_fld_listmore>1</obf_fld_listmore>
+		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
@@ -10700,7 +10712,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_queue_id.acq_name/>
 	</data>
 	<data>
-		<act_name>DEMO_ORD_STATUS-P-C</act_name>
+		<act_name>DEMO_ORD_STATUS-CANCEL</act_name>
 		<act_type>O</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
@@ -10723,7 +10735,30 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_queue_id.acq_name/>
 	</data>
 	<data>
-		<act_name>DEMO_ORD_STATUS-P-V</act_name>
+		<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
+		<act_type>O</act_type>
+		<act_async>0</act_async>
+		<act_job_depth/>
+		<act_method/>
+		<act_script/>
+		<act_url/>
+		<act_confirm>0</act_confirm>
+		<act_confirm_expr/>
+		<act_confirm_ui/>
+		<act_plus>0</act_plus>
+		<act_comment/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<act_exec>NUL</act_exec>
+		<act_count/>
+		<act_order>3</act_order>
+		<act_color/>
+		<act_color_bg/>
+		<act_image>icon/color/btn_green</act_image>
+		<act_group_id.acg_name/>
+		<act_queue_id.acq_name/>
+	</data>
+	<data>
+		<act_name>DEMO_ORD_STATUS-VALIDATE</act_name>
 		<act_type>O</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
@@ -10742,52 +10777,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_color/>
 		<act_color_bg/>
 		<act_image>icon/color/btn_orange</act_image>
-		<act_group_id.acg_name/>
-		<act_queue_id.acq_name/>
-	</data>
-	<data>
-		<act_name>DEMO_ORD_STATUS-V-C</act_name>
-		<act_type>O</act_type>
-		<act_async>0</act_async>
-		<act_job_depth/>
-		<act_method/>
-		<act_script/>
-		<act_url/>
-		<act_confirm>1</act_confirm>
-		<act_confirm_expr/>
-		<act_confirm_ui/>
-		<act_plus>0</act_plus>
-		<act_comment/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<act_exec>NUL</act_exec>
-		<act_count/>
-		<act_order>2</act_order>
-		<act_color/>
-		<act_color_bg/>
-		<act_image>icon/color/btn_red</act_image>
-		<act_group_id.acg_name/>
-		<act_queue_id.acq_name/>
-	</data>
-	<data>
-		<act_name>DEMO_ORD_STATUS-V-D</act_name>
-		<act_type>O</act_type>
-		<act_async>0</act_async>
-		<act_job_depth/>
-		<act_method/>
-		<act_script/>
-		<act_url/>
-		<act_confirm>0</act_confirm>
-		<act_confirm_expr/>
-		<act_confirm_ui/>
-		<act_plus>0</act_plus>
-		<act_comment/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<act_exec>NUL</act_exec>
-		<act_count/>
-		<act_order>1</act_order>
-		<act_color/>
-		<act_color_bg/>
-		<act_image>icon/color/btn_green</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
 	</data>
@@ -12955,6 +12944,20 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<stm_name>DEMO_ORD_STATUS-H-C</stm_name>
+		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
+		<stm_from_id.sta_state_id.lov_code>H</stm_from_id.sta_state_id.lov_code>
+		<stm_to_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_to_id.sta_state_id.lov_list_id.lov_name>
+		<stm_to_id.sta_state_id.lov_code>C</stm_to_id.sta_state_id.lov_code>
+		<stm_callbackscript/>
+		<stm_callback/>
+		<stm_condition/>
+		<stm_activ>1</stm_activ>
+		<stm_notif_id.alt_name/>
+		<stm_action_id.act_name>DEMO_ORD_STATUS-CANCEL</stm_action_id.act_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<stm_name>DEMO_ORD_STATUS-H-P</stm_name>
 		<stm_from_id.sta_state_id.lov_list_id.lov_name>DEMO_ORD_STATUS</stm_from_id.sta_state_id.lov_list_id.lov_name>
 		<stm_from_id.sta_state_id.lov_code>H</stm_from_id.sta_state_id.lov_code>
@@ -12979,7 +12982,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name/>
-		<stm_action_id.act_name/>
+		<stm_action_id.act_name>DEMO_ORD_STATUS-VALIDATE</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -12993,7 +12996,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name>DemoOrderCancellation</stm_notif_id.alt_name>
-		<stm_action_id.act_name>DEMO_ORD_STATUS-P-C</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_ORD_STATUS-CANCEL</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13021,7 +13024,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name/>
-		<stm_action_id.act_name>DEMO_ORD_STATUS-P-V</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_ORD_STATUS-VALIDATE</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13035,7 +13038,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name>DemoOrderCancellation</stm_notif_id.alt_name>
-		<stm_action_id.act_name>DEMO_ORD_STATUS-V-C</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_ORD_STATUS-CANCEL</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13049,7 +13052,7 @@ is still in pending state]]></cst_desc>
 		<stm_condition/>
 		<stm_activ>1</stm_activ>
 		<stm_notif_id.alt_name>DemoOrderDelivery</stm_notif_id.alt_name>
-		<stm_action_id.act_name>DEMO_ORD_STATUS-V-D</stm_action_id.act_name>
+		<stm_action_id.act_name>DEMO_ORD_STATUS-DELIVER</stm_action_id.act_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13149,6 +13152,13 @@ is still in pending state]]></cst_desc>
 	</data>
 	<data>
 		<stg_transition_id.stm_name>DEMO_ORD_STATUS-C-V</stg_transition_id.stm_name>
+		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
+		<stg_activ>1</stg_activ>
+		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<stg_transition_id.stm_name>DEMO_ORD_STATUS-H-C</stg_transition_id.stm_name>
 		<stg_group_id.grp_name>DEMO_ADMIN</stg_group_id.grp_name>
 		<stg_activ>1</stg_activ>
 		<stg_object_id.obo_name>DemoOrder</stg_object_id.obo_name>
@@ -14832,7 +14842,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-P-C</act_name>
+					<act_name>DEMO_ORD_STATUS-CANCEL</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14847,7 +14857,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-P-C</act_name>
+					<act_name>DEMO_ORD_STATUS-CANCEL</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14892,7 +14902,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-P-V</act_name>
+					<act_name>DEMO_ORD_STATUS-VALIDATE</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14907,7 +14917,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-P-V</act_name>
+					<act_name>DEMO_ORD_STATUS-VALIDATE</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14922,37 +14932,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-V-C</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Cancel</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>DEMO_ORD_STATUS-V-C</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Annuler</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>DEMO_ORD_STATUS-V-D</act_name>
+					<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -14967,7 +14947,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-V-D</act_name>
+					<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
 				</data>
 			</object>
 		</tsl_object>
