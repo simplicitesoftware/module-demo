@@ -1285,8 +1285,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
 		<lov_color_bg>#D9EAD3</lov_color_bg>
-		<lov_icon/>
-		<lov_display>L;T</lov_display>
+		<lov_icon>fas/info-circle</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1296,8 +1296,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
 		<lov_color_bg>#FCE5CD</lov_color_bg>
-		<lov_icon/>
-		<lov_display>L;T</lov_display>
+		<lov_icon>fas/question-circle</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1307,8 +1307,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
 		<lov_color_bg>#F4CCCC</lov_color_bg>
-		<lov_icon/>
-		<lov_display>L;T</lov_display>
+		<lov_icon>fas/exclamation-triangle</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_TYPE</lov_list_id.lov_name>
@@ -1318,8 +1318,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_color>#000000</lov_color>
 		<lov_color_bg>#CFE2F3</lov_color_bg>
-		<lov_icon/>
-		<lov_display>L;T</lov_display>
+		<lov_icon>fas/comment</lov_icon>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_ORD_STATUS</lov_list_id.lov_name>
