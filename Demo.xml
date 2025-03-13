@@ -988,7 +988,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_STATUS</lov_name>
-		<lov_navbar/>
+		<lov_navbar>ARROW</lov_navbar>
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
@@ -1180,17 +1180,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
-		<lov_code>C</lov_code>
-		<lov_order_by>2</lov_order_by>
-		<lov_label>Closed</lov_label>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
-		<lov_icon>icon/color/btn_green</lov_icon>
-		<lov_display>I;L</lov_display>
-	</data>
-	<data>
-		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
 		<lov_code>P</lov_code>
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Processing</lov_label>
@@ -1198,6 +1187,17 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_color/>
 		<lov_color_bg/>
 		<lov_icon>icon/color/btn_orange</lov_icon>
+		<lov_display>I;L</lov_display>
+	</data>
+	<data>
+		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
+		<lov_code>C</lov_code>
+		<lov_order_by>3</lov_order_by>
+		<lov_label>Closed</lov_label>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon>icon/color/btn_green</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
 	<data>

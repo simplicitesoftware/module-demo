@@ -123,8 +123,8 @@ A contact can be linked or not a an order of the selelcted client
     - `WEB` Code WEB
 * `DEMO_CTC_STATUS`
     - `O` Open
-    - `C` Closed
     - `P` Processing
+    - `C` Closed
 * `DEMO_ORD_STATUS`
     - `P` Pending status
     - `H` On hold
@@ -157,8 +157,8 @@ A contact can be linked or not a an order of the selelcted client
 
 * `DEMO_CTC_STATUS`
     - `O` Open
-    - `C` Closed
     - `P` Processing
+    - `C` Closed
 * `DEMO_CTC_TYPE`
     - `INF` Information
     - `REQ` Request
