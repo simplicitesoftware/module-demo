@@ -461,7 +461,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-03-12 15:29:03</usr_last_logon>
+		<usr_last_logon>2025-03-13 13:40:37</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -475,6 +475,12 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<action>upsert</action>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
 		<usp_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -602,14 +608,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>DEMO_PUBLIC</rsp_group_id.grp_name>
 		<rsp_start_dt>2020-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>DEMO_WEBSITE</rsp_group_id.grp_name>
-		<rsp_start_dt>2014-10-17</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
