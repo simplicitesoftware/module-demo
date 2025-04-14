@@ -58,7 +58,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 			try {
 				supId = sup.getTool().get(new JSONObject().put("demoSupCode", values[0]));
 				if (debug) appendLog("Supplier " + values[0] + " found, row ID = " + supId);
-			} catch (GetException e) {
+			} catch (@SuppressWarnings("unused") GetException e) {
 				throw new PlatformException("No supplier found for " + values[0]);
 			}
 

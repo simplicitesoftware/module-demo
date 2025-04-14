@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1224" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1223" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -461,7 +461,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-03-20 15:30:44</usr_last_logon>
+		<usr_last_logon>2025-04-14 12:29:49</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -475,12 +475,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<action>upsert</action>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
 		<usp_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -6005,7 +5999,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_searchform>1</obo_btn_searchform>
 	</data>
 	<data>
-		<obo_name>DemoSupplier</obo_name>
+		<obo_name oldvalue="DemoxSupplier">DemoSupplier</obo_name>
 		<obo_dbtable>demo_supplier</obo_dbtable>
 		<obo_role>OBJ</obo_role>
 		<obo_class/>
