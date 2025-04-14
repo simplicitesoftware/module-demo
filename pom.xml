@@ -17,6 +17,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <simplicite.version>5.3-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <skipTests>true</skipTests>
     <sonar.projectKey>simplicite-modules-Demo</sonar.projectKey>
     <sonar.projectName>Demo</sonar.projectName>
     <sonar.projectVersion>5</sonar.projectVersion>

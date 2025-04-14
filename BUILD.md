@@ -11,6 +11,13 @@ Build
 mvn -U -DskipTests=true clean package
 ```
 
+Javadoc
+-------
+
+``` text
+mvn javadoc:javadoc
+```
+
 Sonar analysis
 --------------
 
