@@ -27,7 +27,7 @@ import com.simplicite.util.exceptions.ValidateException;
  */
 public class DemoTests {
 	private static final String PRD_REF = "REF001";
-	
+
 	/** Product's stock increment test */
 	@Test
 	public void testIncrement() {

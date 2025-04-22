@@ -11,7 +11,7 @@ import com.simplicite.util.tools.Parameters;
  */
 public class DemoCounters extends com.simplicite.webapp.web.ResponsiveExternalObject {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
 	public JSONObject data(Parameters params) {
 		ObjectDB cli = getGrant().getTmpObject("DemoClient");

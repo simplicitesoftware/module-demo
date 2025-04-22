@@ -95,6 +95,7 @@ public class DemoOrder extends ObjectDB {
 	/** Hook override: check low stock */
 	@Override
 	public String postSave() {
+		// Check stock level
 		int stock = getField(STOCK_FIELDNAME).getInt(0);
 		if (DemoCommon.getInstance().isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
 			String ref = getFieldValue(REFERENCE_FIELDNAME);
@@ -115,7 +116,7 @@ public class DemoOrder extends ObjectDB {
 			}
 
 			// Log
-			AppLog.log("DEMO_WARN", getClass(), "postSave", "Low stock on " + ref + ": " + stock, getGrant()); 
+			AppLog.log("DEMO_WARN", getClass(), "postSave", "Low stock on " + ref + ": " + stock, getGrant());
 
 			// User message
 			return Message.formatSimpleWarning("ERR_DEMO_PRD_LOWSTOCK");

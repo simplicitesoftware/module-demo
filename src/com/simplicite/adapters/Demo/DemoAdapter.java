@@ -48,7 +48,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
 		try {
 			if (n == 1)
 				return null; // First line with column headers is ignored
-			if (debug) appendLog("Processling line " + n + " = " + String.join(String.valueOf(getSeparator()), values));
+			if (debug) appendLog("Processing line " + n + " = " + String.join(String.valueOf(getSeparator()), values));
 
 			// Line format: <supplier code><tab><product reference><tab><product name>
 
