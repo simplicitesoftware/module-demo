@@ -51,7 +51,7 @@ public class DemoProduct extends ObjectDB {
 
 	/**
 	 * Increase stock action method
-	 * @param params Action parameters, includes increment 
+	 * @param params Action parameters, includes increment
 	 * @return Action result message
  	 */
 	@BusinessObjectAction

@@ -37,7 +37,7 @@ public class DemoCatalogAPI extends com.simplicite.webapp.services.RESTServiceEx
 		prd.getField("demoPrdAvailable").setFilter(Tool.TRUE);
 		if (!Tool.isEmpty(ref))
 			prd.getField("demoPrdReference").setFilter(ref);
-			
+
 		List<String[]> rows = prd.search();
 		for (int i = 0; i < rows.size(); i++) {
 			prd.setValues(rows.get(i), false);
@@ -50,7 +50,7 @@ public class DemoCatalogAPI extends com.simplicite.webapp.services.RESTServiceEx
 
 		return new JSONObject().put("count", res.length()).put("products", res);
 	}
-	
+
 	@Override
 	public Object get(Parameters params) throws HTTPException {
 		if (params.getParameter("openapi") != null)

@@ -34,7 +34,7 @@ public class DemoCommon implements java.io.Serializable {
 	 * @param grant Grant
 	 * @param prdId Product row ID
 	 * @param stock Current stock for product
-	 * @return true if the specified produt's stock is low
+	 * @return true if the specified product's stock is low
 	 */
 	public boolean isLowStock(Grant grant, String prdId, int stock) {
 		// Get work instance for DemoOrder object

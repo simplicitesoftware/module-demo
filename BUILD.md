@@ -8,7 +8,7 @@ Build
 -----
 
 ``` text
-mvn -U -DskipTests=true clean package
+mvn clean package
 ```
 
 Javadoc

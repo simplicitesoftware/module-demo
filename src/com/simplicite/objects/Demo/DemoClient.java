@@ -46,10 +46,10 @@ public class DemoClient extends ObjectDB {
 		return msgs;
 	}
 
-	/** Hook override: geolocate from address fields */
+	/** Hook override: geo-locate from address fields */
 	@Override
 	public String preSave() {
-		if (isMainInstance()) { // Only done for the main UI instnce
+		if (isMainInstance()) { // Only done for the main UI instance
 			try {
 				// Geocode address fields
 				ObjectField coords = getField("demoCliCoords");
@@ -58,7 +58,7 @@ public class DemoClient extends ObjectDB {
 				ObjectField zc = getField("demoCliZipCode");
 				ObjectField ci = getField("demoCliCity");
 				ObjectField co = getField("demoCliCountry");
-	
+
 				if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
 					String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
 					AppLog.info("Try to geocode " + a, getGrant());
