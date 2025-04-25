@@ -291,8 +291,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -895,8 +895,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -957,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -1463,8 +1463,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -2359,8 +2359,8 @@ paths:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3045,8 +3045,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3099,8 +3099,8 @@ definitions:
         type: string
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoOrdCliId__demoCliCode:
@@ -3170,8 +3170,8 @@ definitions:
         enum:
         - FR
         - UK
-        - IT
         - SP
+        - IT
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object
@@ -3323,8 +3323,8 @@ definitions:
         type: string
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoOrdQuantity:
@@ -3569,8 +3569,8 @@ definitions:
         type: string
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoCtcPicture:
