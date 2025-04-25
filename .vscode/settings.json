@@ -1,0 +1,10 @@
+{
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "cSpell.enabled": false,
+    "java.checkstyle.configuration": "${workspaceFolder}/.checkstyle-configuration",
+    "jshint.config": "${workspaceFolder}/.jshint-configuration",
+    "eslint.options": { "overrideConfigFile": "${workspaceFolder}/.eslint-configuration" },
+    "stylelint.configFile": "${workspaceFolder}/.stylelint-configuration"
+}
