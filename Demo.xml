@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1228" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1229" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -217,7 +217,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>ThemeMondrian-Light</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>demo</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 	<data>
@@ -264,7 +264,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>ThemeMondrian-Light</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>demo_alt</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 </object>
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-04-22 17:01:37</usr_last_logon>
+		<usr_last_logon>2025-04-25 11:50:23</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -506,6 +506,12 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
 		<usp_value><![CDATA[yes]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -6034,7 +6040,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_searchform>1</obo_btn_searchform>
 	</data>
 	<data>
-		<obo_name>DemoSupplier</obo_name>
+		<obo_name oldvalue="DemoxSupplier">DemoSupplier</obo_name>
 		<obo_dbtable>demo_supplier</obo_dbtable>
 		<obo_role>OBJ</obo_role>
 		<obo_class/>
@@ -10557,11 +10563,11 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<fll_objfield_id.obf_field_id.fld_name>demoCtcType</fll_objfield_id.obf_field_id.fld_name>
 		<fll_objfield_id.obf_order>110</fll_objfield_id.obf_order>
 		<fll_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</fll_code_id.lov_list_id.lov_name>
-		<fll_code_id.lov_code>INF</fll_code_id.lov_code>
+		<fll_code_id.lov_code>REQ</fll_code_id.lov_code>
 		<fll_linked_id.obf_object_id.obo_name>DemoContact</fll_linked_id.obf_object_id.obo_name>
 		<fll_linked_id.obf_field_id.fld_name>demoCtcSubType</fll_linked_id.obf_field_id.fld_name>
 		<fll_linked_id.obf_order>120</fll_linked_id.obf_order>
-		<fll_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</fll_list_id.lov_name>
+		<fll_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</fll_list_id.lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -10569,11 +10575,11 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<fll_objfield_id.obf_field_id.fld_name>demoCtcType</fll_objfield_id.obf_field_id.fld_name>
 		<fll_objfield_id.obf_order>110</fll_objfield_id.obf_order>
 		<fll_code_id.lov_list_id.lov_name>DEMO_CTC_TYPE</fll_code_id.lov_list_id.lov_name>
-		<fll_code_id.lov_code>REQ</fll_code_id.lov_code>
+		<fll_code_id.lov_code>INF</fll_code_id.lov_code>
 		<fll_linked_id.obf_object_id.obo_name>DemoContact</fll_linked_id.obf_object_id.obo_name>
 		<fll_linked_id.obf_field_id.fld_name>demoCtcSubType</fll_linked_id.obf_field_id.fld_name>
 		<fll_linked_id.obf_order>120</fll_linked_id.obf_order>
-		<fll_list_id.lov_name>DEMO_CTC_SUBTYPE_REQ</fll_list_id.lov_name>
+		<fll_list_id.lov_name>DEMO_CTC_SUBTYPE_INF</fll_list_id.lov_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14720,36 +14726,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Close</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Clore</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
 					<act_name>DEMO_CTC_STATUS-PROCESS</act_name>
 				</data>
 			</object>
@@ -14771,6 +14747,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>A traiter</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Action</name>
+				<data>
+					<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Close</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Action</name>
+				<data>
+					<act_name>DEMO_CTC_STATUS-CLOSE</act_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Clore</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -14810,36 +14816,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_INCSTOCK</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Increase stock</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp><![CDATA[<p>This action does a stock increment</p>]]></tsl_simplehelp>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>DEMO_INCSTOCK</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Augmenter le stock</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp><![CDATA[<p>Cette action r&eacute;alise un incr&eacute;ment de stock</p>]]></tsl_simplehelp>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
 					<act_name>DEMO_ORD_STATUS-CANCEL</act_name>
 				</data>
 			</object>
@@ -14870,14 +14846,14 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
+					<act_name>DEMO_INCSTOCK</act_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Ship</tsl_value>
+		<tsl_value>Increase stock</tsl_value>
 		<tsl_plural_value/>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>This action does a stock increment</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14885,14 +14861,14 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
+					<act_name>DEMO_INCSTOCK</act_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Envoyer</tsl_value>
+		<tsl_value>Augmenter le stock</tsl_value>
 		<tsl_plural_value/>
-		<tsl_simplehelp/>
+		<tsl_simplehelp><![CDATA[<p>Cette action r&eacute;alise un incr&eacute;ment de stock</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14921,6 +14897,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Valider</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Action</name>
+				<data>
+					<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Ship</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Action</name>
+				<data>
+					<act_name>DEMO_ORD_STATUS-DELIVER</act_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Envoyer</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -15360,158 +15366,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoCliComments</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Comments</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliComments</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Commentaires</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliCoords</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Coordinates</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliCoords</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Coordonnées</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliCountry</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Country</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliCountry</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Pays</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliEmail</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>E-mail</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCliEmail</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>E-mail</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoCliFax</fld_name>
 				</data>
 			</object>
@@ -15537,6 +15391,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Fax</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliComments</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Comments</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliComments</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Commentaires</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -15626,6 +15518,82 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>demoCliEmail</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>E-mail</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliEmail</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>E-mail</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliCountry</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Country</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliCountry</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Pays</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>demoCliLastname</fld_name>
 				</data>
 			</object>
@@ -15651,6 +15619,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Nom</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliCoords</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Coordinates</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCliCoords</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Coordonnées</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -15892,44 +15898,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoCtcCliId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCtcCliId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Client</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoCtcComments</fld_name>
 				</data>
 			</object>
@@ -15955,6 +15923,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Commentaires</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCtcCliId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Customer</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCtcCliId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Client</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16069,44 +16075,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Messages</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCtcOrdId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Order</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCtcOrdId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Commande</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16272,44 +16240,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoCtcType</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Type</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder>Choose type</tsl_placeholder>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoCtcType</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Type</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder>Choisir le type</tsl_placeholder>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoOrdCliId</fld_name>
 				</data>
 			</object>
@@ -16335,6 +16265,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Client</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCtcOrdId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Order</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCtcOrdId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Commande</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16386,6 +16354,44 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>demoCtcType</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Type</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder>Choose type</tsl_placeholder>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoCtcType</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Type</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder>Choisir le type</tsl_placeholder>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>demoOrdDate</fld_name>
 				</data>
 			</object>
@@ -16424,12 +16430,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoOrdDeliveryDate</fld_name>
+					<fld_name>demoOrdVAT</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Delivery date</tsl_value>
+		<tsl_value>VAT</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16443,12 +16449,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoOrdDeliveryDate</fld_name>
+					<fld_name>demoOrdVAT</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Date de livraison</tsl_value>
+		<tsl_value>TVA</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16538,44 +16544,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoOrdQuantity</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Quantity</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoOrdQuantity</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Quantité</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoOrdStatus</fld_name>
 				</data>
 			</object>
@@ -16601,6 +16569,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Etat</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoOrdQuantity</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Quantity</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoOrdQuantity</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Quantité</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16690,44 +16696,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoOrdVAT</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>VAT</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoOrdVAT</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>TVA</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoPrdAvailable</fld_name>
 				</data>
 			</object>
@@ -16753,6 +16721,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Disponible ?</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoOrdDeliveryDate</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Delivery date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoOrdDeliveryDate</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Date de livraison</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16994,44 +17000,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoPrdFeatured</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Featured?</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoPrdFeatured</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>En vedette ?</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoPrdIncrement</fld_name>
 				</data>
 			</object>
@@ -17095,6 +17063,44 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Nom</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoPrdStock</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Stock</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoPrdStock</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Stock</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17222,44 +17228,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoPrdStock</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Stock</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoPrdStock</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Stock</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoPrdSupId</fld_name>
 				</data>
 			</object>
@@ -17298,12 +17266,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoPrdType</fld_name>
+					<fld_name>demoSupDescription</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Type</tsl_value>
+		<tsl_value>Description</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17317,12 +17285,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoPrdType</fld_name>
+					<fld_name>demoSupDescription</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Type</tsl_value>
+		<tsl_value>Description</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17450,44 +17418,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>demoSupDescription</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Description</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoSupDescription</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Description</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>demoSupEmail</fld_name>
 				</data>
 			</object>
@@ -17513,82 +17443,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>E-mail</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoSupFax</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fax</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoSupFax</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fax</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoSupLogo</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Logo</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>demoSupLogo</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Logo</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17665,6 +17519,120 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Téléphone</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoSupLogo</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Logo</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoSupLogo</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Logo</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoSupFax</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Fax</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoSupFax</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fax</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoPrdType</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Type</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoPrdType</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Type</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17787,6 +17755,44 @@ is still in pending state]]></cst_desc>
 		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoPrdFeatured</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Featured?</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>demoPrdFeatured</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>En vedette ?</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateFieldArea</name>
@@ -17824,12 +17830,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>DemoClient-2</ofa_name>
+					<ofa_name>DemoContact-1</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Address</tsl_value>
+		<tsl_value>Identification</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -17838,40 +17844,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>DemoClient-2</ofa_name>
+					<ofa_name>DemoContact-1</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Adresse</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>DemoClient-3</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Means of contact</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>DemoClient-3</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Moyens de contact</tsl_value>
+		<tsl_value>Identification</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -17908,12 +17886,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>DemoContact-1</ofa_name>
+					<ofa_name>DemoClient-3</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Identification</tsl_value>
+		<tsl_value>Means of contact</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -17922,12 +17900,40 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>DemoContact-1</ofa_name>
+					<ofa_name>DemoClient-3</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Identification</tsl_value>
+		<tsl_value>Moyens de contact</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoContact-4</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Details</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoContact-4</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Details</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -17992,12 +17998,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>DemoContact-4</ofa_name>
+					<ofa_name>DemoClient-2</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Details</tsl_value>
+		<tsl_value>Address</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -18006,12 +18012,40 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>DemoContact-4</ofa_name>
+					<ofa_name>DemoClient-2</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Details</tsl_value>
+		<tsl_value>Adresse</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoOrder-3</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Product</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoOrder-3</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produit</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -18068,34 +18102,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Client</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>DemoOrder-3</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Product</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>DemoOrder-3</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Produit</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -18216,6 +18222,34 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
+					<ofa_name>DemoProduct-4</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Marketing</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoProduct-4</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Marketing</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
 					<ofa_name>DemoProduct-3</ofa_name>
 				</data>
 			</object>
@@ -18236,34 +18270,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Stock et prix</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>DemoProduct-4</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Marketing</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>DemoProduct-4</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Marketing</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -18642,36 +18648,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>DemoProductHistoric</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Product (hist.)</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>DemoProductHistoric</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Produit (hist.)</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
 					<obo_name>DemoSupplier</obo_name>
 				</data>
 			</object>
@@ -18697,70 +18673,40 @@ is still in pending state]]></cst_desc>
 		<tsl_help><![CDATA[<p>Ceci est l'aide longue sur le fournisseur</p>]]></tsl_help>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>DemoProductHistoric</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Product (hist.)</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>DemoProductHistoric</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produit (hist.)</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateExternal</name>
 	<action>upsert</action>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCarousel</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Featured products</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCarousel</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Produits en vedette</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCatalog</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Available products</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCatalog</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Produits disponibles</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<tsl_object>
 			<object>
@@ -18826,36 +18772,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoNews</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>News</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoNews</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Informations</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
 			</object>
@@ -18909,6 +18825,96 @@ is still in pending state]]></cst_desc>
 		<tsl_value>Page nouvelle commande</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help><![CDATA[Cette page vous permet de saisir une nouvelle commande]]></tsl_help>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCarousel</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Featured products</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCarousel</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produits en vedette</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>News</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Informations</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Available products</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produits disponibles</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -19045,126 +19051,6 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
-					<obf_order>210</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer code</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
-					<obf_order>210</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Code client</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliFirstname</obf_field_id.fld_name>
-					<obf_order>220</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer first name</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliFirstname</obf_field_id.fld_name>
-					<obf_order>220</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Prénom client</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliLastname</obf_field_id.fld_name>
-					<obf_order>230</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer last name</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliLastname</obf_field_id.fld_name>
-					<obf_order>230</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Nom client</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 					<obf_field_id.fld_name>demoCliEmail</obf_field_id.fld_name>
 					<obf_order>240</obf_order>
 				</data>
@@ -19192,166 +19078,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>E-mail</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliHomePhone</obf_field_id.fld_name>
-					<obf_order>250</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Home phone number</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliHomePhone</obf_field_id.fld_name>
-					<obf_order>250</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Téléphone domicile</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliWorkPhone</obf_field_id.fld_name>
-					<obf_order>260</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Work phone number</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliWorkPhone</obf_field_id.fld_name>
-					<obf_order>260</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Téléphone travail</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliMobilePhone</obf_field_id.fld_name>
-					<obf_order>270</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Mobile phone number</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliMobilePhone</obf_field_id.fld_name>
-					<obf_order>270</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Téléphone mobile</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliFax</obf_field_id.fld_name>
-					<obf_order>280</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fax number</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliFax</obf_field_id.fld_name>
-					<obf_order>280</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fax</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19405,6 +19131,86 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliFax</obf_field_id.fld_name>
+					<obf_order>280</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Fax number</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliFax</obf_field_id.fld_name>
+					<obf_order>280</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fax</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
+					<obf_order>210</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Customer code</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliCode</obf_field_id.fld_name>
+					<obf_order>210</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code client</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 					<obf_field_id.fld_name>demoOrdDate</obf_field_id.fld_name>
 					<obf_order>320</obf_order>
 				</data>
@@ -19432,6 +19238,206 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Date commande</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliHomePhone</obf_field_id.fld_name>
+					<obf_order>250</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Home phone number</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliHomePhone</obf_field_id.fld_name>
+					<obf_order>250</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Téléphone domicile</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoOrdPrdId</obf_field_id.fld_name>
+					<obf_order>350</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Order product</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoOrdPrdId</obf_field_id.fld_name>
+					<obf_order>350</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Produit commande</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliFirstname</obf_field_id.fld_name>
+					<obf_order>220</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Customer first name</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliFirstname</obf_field_id.fld_name>
+					<obf_order>220</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Prénom client</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
+					<obf_order>360</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Order product supplier</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
+					<obf_order>360</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fournisseur produit commande</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliLastname</obf_field_id.fld_name>
+					<obf_order>230</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Customer last name</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliLastname</obf_field_id.fld_name>
+					<obf_order>230</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Nom client</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19525,13 +19531,13 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoOrdPrdId</obf_field_id.fld_name>
-					<obf_order>350</obf_order>
+					<obf_field_id.fld_name>demoCliWorkPhone</obf_field_id.fld_name>
+					<obf_order>260</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Order product</tsl_value>
+		<tsl_value>Work phone number</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19545,13 +19551,13 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoOrdPrdId</obf_field_id.fld_name>
-					<obf_order>350</obf_order>
+					<obf_field_id.fld_name>demoCliWorkPhone</obf_field_id.fld_name>
+					<obf_order>260</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Produit commande</tsl_value>
+		<tsl_value>Téléphone travail</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19565,13 +19571,13 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
-					<obf_order>360</obf_order>
+					<obf_field_id.fld_name>demoCliMobilePhone</obf_field_id.fld_name>
+					<obf_order>270</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Order product supplier</tsl_value>
+		<tsl_value>Mobile phone number</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19585,13 +19591,13 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
-					<obf_order>360</obf_order>
+					<obf_field_id.fld_name>demoCliMobilePhone</obf_field_id.fld_name>
+					<obf_order>270</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fournisseur produit commande</tsl_value>
+		<tsl_value>Téléphone mobile</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19685,46 +19691,6 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdName</obf_field_id.fld_name>
-					<obf_order>380</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Order product name</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdName</obf_field_id.fld_name>
-					<obf_order>380</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Nom produit commande</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
 					<obf_field_id.fld_name>demoOrdQuantity</obf_field_id.fld_name>
 					<obf_order>390</obf_order>
 				</data>
@@ -19752,6 +19718,46 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Quantité commande</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdName</obf_field_id.fld_name>
+					<obf_order>380</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Order product name</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoContact</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdName</obf_field_id.fld_name>
+					<obf_order>380</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Nom produit commande</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -19885,46 +19891,6 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliEmail</obf_field_id.fld_name>
-					<obf_order>240</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer e-mail</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliEmail</obf_field_id.fld_name>
-					<obf_order>240</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>E-mail client</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 					<obf_field_id.fld_name>demoCliAddress1</obf_field_id.fld_name>
 					<obf_order>250</obf_order>
 				</data>
@@ -19992,46 +19958,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Complément adresse client</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliZipCode</obf_field_id.fld_name>
-					<obf_order>253</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Customer postal code</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoCliZipCode</obf_field_id.fld_name>
-					<obf_order>253</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Code postal client</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -20125,6 +20051,46 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliZipCode</obf_field_id.fld_name>
+					<obf_order>253</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Customer postal code</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoCliZipCode</obf_field_id.fld_name>
+					<obf_order>253</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code postal client</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 					<obf_field_id.fld_name>demoPrdReference</obf_field_id.fld_name>
 					<obf_order>310</obf_order>
 				</data>
@@ -20205,13 +20171,13 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
-					<obf_order>325</obf_order>
+					<obf_field_id.fld_name>demoCliEmail</obf_field_id.fld_name>
+					<obf_order>240</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Product type</tsl_value>
+		<tsl_value>Customer e-mail</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -20225,13 +20191,13 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
-					<obf_order>325</obf_order>
+					<obf_field_id.fld_name>demoCliEmail</obf_field_id.fld_name>
+					<obf_order>240</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Type produit</tsl_value>
+		<tsl_value>E-mail client</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -20285,13 +20251,33 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoPrdEan13Image</obf_field_id.fld_name>
-					<obf_order>336</obf_order>
+					<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
+					<obf_order>325</obf_order>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Product EAN 13 barcode image</tsl_value>
+		<tsl_value>Product type</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdType</obf_field_id.fld_name>
+					<obf_order>325</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Type produit</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -20465,46 +20451,6 @@ is still in pending state]]></cst_desc>
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoSupUsrId</obf_field_id.fld_name>
-					<obf_order>375</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Responsible user</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
-					<obf_field_id.fld_name>demoSupUsrId</obf_field_id.fld_name>
-					<obf_order>375</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Utilisateur responsable</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
 					<obf_field_id.fld_name>demoPrdUnitPrice</obf_field_id.fld_name>
 					<obf_order>390</obf_order>
 				</data>
@@ -20532,6 +20478,46 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Prix unitaire courant</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoSupUsrId</obf_field_id.fld_name>
+					<obf_order>375</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Responsible user</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoSupUsrId</obf_field_id.fld_name>
+					<obf_order>375</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Utilisateur responsable</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -20692,6 +20678,26 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Utilisateur responsable</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoOrder</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoPrdEan13Image</obf_field_id.fld_name>
+					<obf_order>336</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Product EAN 13 barcode image</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -20948,12 +20954,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>View</name>
 				<data>
-					<viw_name>DemoAdminHome</viw_name>
+					<viw_name>DemoUserHome</viw_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo (administrator)</tsl_value>
+		<tsl_value>Demo (user)</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -20963,42 +20969,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>View</name>
 				<data>
-					<viw_name>DemoAdminHome</viw_name>
+					<viw_name>DemoUserHome</viw_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Démo (admininstrateur)</tsl_value>
-		<tsl_help/>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>View</name>
-				<data>
-					<viw_name>DemoHome</viw_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo</tsl_value>
-		<tsl_help/>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>View</name>
-				<data>
-					<viw_name>DemoHome</viw_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Démo</tsl_value>
+		<tsl_value>Démo (utilisateur)</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21038,12 +21014,12 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>View</name>
 				<data>
-					<viw_name>DemoUserHome</viw_name>
+					<viw_name>DemoHome</viw_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo (user)</tsl_value>
+		<tsl_value>Demo</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21053,12 +21029,42 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>View</name>
 				<data>
-					<viw_name>DemoUserHome</viw_name>
+					<viw_name>DemoHome</viw_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Démo (utilisateur)</tsl_value>
+		<tsl_value>Démo</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>View</name>
+				<data>
+					<viw_name>DemoAdminHome</viw_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Demo (administrator)</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>View</name>
+				<data>
+					<viw_name>DemoAdminHome</viw_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Démo (admininstrateur)</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21192,6 +21198,62 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>DocIndex</name>
 				<data>
+					<din_name>B-demoSupLogo</din_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-demo sup logo</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>DocIndex</name>
+				<data>
+					<din_name>B-demoSupLogo</din_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-demo sup logo</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>DocIndex</name>
+				<data>
+					<din_name>B-demoPrdEan13Image</din_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-demo prd ean 13image</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>DocIndex</name>
+				<data>
+					<din_name>B-demoPrdEan13Image</din_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-demo prd ean 13image</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>DocIndex</name>
+				<data>
 					<din_name>B-demoPrdBrochure</din_name>
 				</data>
 			</object>
@@ -21220,34 +21282,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>DocIndex</name>
 				<data>
-					<din_name>B-demoPrdEan13Image</din_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>B-demo prd ean 13image</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>DocIndex</name>
-				<data>
-					<din_name>B-demoPrdEan13Image</din_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>B-demo prd ean 13image</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>DocIndex</name>
-				<data>
 					<din_name>B-demoPrdPicture</din_name>
 				</data>
 			</object>
@@ -21268,34 +21302,6 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>B-demo prd picture</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>DocIndex</name>
-				<data>
-					<din_name>B-demoSupLogo</din_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>B-demo sup logo</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>DocIndex</name>
-				<data>
-					<din_name>B-demoSupLogo</din_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>B-demo sup logo</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -21369,36 +21375,6 @@ is still in pending state]]></cst_desc>
 				<name>BPMActivity</name>
 				<data>
 					<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-					<acy_step>ORDC-200</acy_step>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Select supplier</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>BPMActivity</name>
-				<data>
-					<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
-					<acy_step>ORDC-200</acy_step>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Sélection du fournisseur</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>BPMActivity</name>
-				<data>
-					<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
 					<acy_step>ORDC-210</acy_step>
 				</data>
 			</object>
@@ -21420,6 +21396,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Sélection du produit</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>BPMActivity</name>
+				<data>
+					<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
+					<acy_step>ORDC-200</acy_step>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Select supplier</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>BPMActivity</name>
+				<data>
+					<acy_process_id.pcs_name>DemoOrderCreate</acy_process_id.pcs_name>
+					<acy_step>ORDC-200</acy_step>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Sélection du fournisseur</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -21524,36 +21530,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>Group</name>
 				<data>
-					<grp_name>DEMO_ADMIN</grp_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Demo administrator</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Group</name>
-				<data>
-					<grp_name>DEMO_ADMIN</grp_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Administrateur de la démo</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Group</name>
-				<data>
 					<grp_name>DEMO_USER</grp_name>
 				</data>
 			</object>
@@ -21575,6 +21551,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Utilisateur de la démo</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Group</name>
+				<data>
+					<grp_name>DEMO_ADMIN</grp_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Demo administrator</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Group</name>
+				<data>
+					<grp_name>DEMO_ADMIN</grp_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Administrateur de la démo</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21762,40 +21768,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCarousel</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCatalog</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>DemoCatalogAPI</obe_name>
 				</data>
 			</object>
@@ -21814,23 +21786,6 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoCounters</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoNews</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -21879,10 +21834,43 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
 		<prm_object>
 			<object>
-				<name>PrintTemplate</name>
+				<name>ObjectExternal</name>
 				<data>
-					<prt_name>DemoOrder-XML</prt_name>
-					<prt_lang>ANY</prt_lang>
+					<obe_name>DemoCarousel</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -21900,6 +21888,24 @@ is still in pending state]]></cst_desc>
 				<name>PrintTemplate</name>
 				<data>
 					<prt_name>DemoProduct-Brochure</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoOrder-XML</prt_name>
 					<prt_lang>ANY</prt_lang>
 				</data>
 			</object>
@@ -22104,58 +22110,7 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCarousel</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCatalog</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>DemoCounters</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoNews</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -22190,6 +22145,57 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCarousel</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoNews</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoCatalog</obe_name>
 				</data>
 			</object>
 		</prm_object>
