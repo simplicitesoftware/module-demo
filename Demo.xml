@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1223" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1229" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -99,6 +99,17 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sys_value><![CDATA[20.0]]></sys_value>
 		<sys_type/>
 		<sys_desc/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<sys_code>MAP_SETTINGS</sys_code>
+		<sys_value><![CDATA[{
+   "tileLayer":"https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+   "attribution":"&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+   "maxZoom":19
+}]]></sys_value>
+		<sys_type>APP</sys_type>
+		<sys_desc><![CDATA[Map settings (for the Customer map)]]></sys_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -477,6 +488,36 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
 		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
 		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
+		<usp_value><![CDATA[yes]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
+		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
+		<usp_value><![CDATA[yes]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
+		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
+		<usp_value><![CDATA[yes]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
+		<usp_value><![CDATA[yes]]></usp_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -5512,7 +5553,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_title/>
 		<obo_icon>img/color/view_user</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree/>
+		<obo_tree>0</obo_tree>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>3</obo_historic>
 		<obo_printable>1</obo_printable>
@@ -5586,7 +5627,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_title/>
 		<obo_icon>img/color/chat</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree/>
+		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
 		<obo_historic>1;2;3</obo_historic>
 		<obo_printable>1</obo_printable>
@@ -5649,7 +5690,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
 		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>0</obo_copy>
-		<obo_export/>
+		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>0</obo_selrow>
@@ -5797,7 +5838,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
 		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>0</obo_copy>
-		<obo_export/>
+		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>0</obo_selrow>
@@ -5883,7 +5924,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_title/>
 		<obo_icon>img/color/box</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree/>
+		<obo_tree>0</obo_tree>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;3</obo_historic>
 		<obo_printable>1</obo_printable>
@@ -5946,7 +5987,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
 		<obo_tpl_list_id.tpl_name/>
 		<obo_copy>0</obo_copy>
-		<obo_export/>
+		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>1</obo_srh_predef>
 		<obo_selrow>1</obo_selrow>
@@ -14662,7 +14703,7 @@ is still in pending state]]></cst_desc>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Locate on a map</tsl_value>
 		<tsl_plural_value/>
-		<tsl_simplehelp><![CDATA[<p>This custom action displays a <strong>Google Map&reg;</strong> with the customer's address</p>]]></tsl_simplehelp>
+		<tsl_simplehelp><![CDATA[<p>This custom action displays a Map with the customer's address</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -14677,7 +14718,7 @@ is still in pending state]]></cst_desc>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Localiser sur une carte</tsl_value>
 		<tsl_plural_value/>
-		<tsl_simplehelp><![CDATA[<p>Cette action sp&eacute;cifique affiche une carte <strong>Google Map&reg;</strong> avec l'adresse du client</p>]]></tsl_simplehelp>
+		<tsl_simplehelp><![CDATA[<p>Cette action sp&eacute;cifique affiche une carte avec l'adresse du client</p>]]></tsl_simplehelp>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -21596,8 +21637,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21613,8 +21654,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21631,7 +21672,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21648,7 +21689,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21665,7 +21706,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21682,7 +21723,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21698,8 +21739,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21715,8 +21756,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21732,8 +21773,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21749,8 +21790,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21766,8 +21807,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21783,8 +21824,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21852,8 +21893,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21887,8 +21928,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21904,8 +21945,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21921,8 +21962,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21938,8 +21979,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21955,8 +21996,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21972,8 +22013,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21990,7 +22031,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22007,7 +22048,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22024,7 +22065,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22041,7 +22082,7 @@ is still in pending state]]></cst_desc>
 		</prm_object>
 		<prm_perm>1</prm_perm>
 		<prm_upd>0</prm_upd>
-		<prm_req/>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22057,8 +22098,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22074,8 +22115,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22091,8 +22132,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22108,8 +22149,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22176,8 +22217,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22193,8 +22234,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22210,8 +22251,8 @@ is still in pending state]]></cst_desc>
 			</object>
 		</prm_object>
 		<prm_perm>1</prm_perm>
-		<prm_upd/>
-		<prm_req/>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
