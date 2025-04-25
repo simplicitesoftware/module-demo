@@ -25,7 +25,7 @@
 /*.iml
 
 # -- VSCode --
-/.vscode
+#/.vscode
 
 # -- Theia --
 /.theia
