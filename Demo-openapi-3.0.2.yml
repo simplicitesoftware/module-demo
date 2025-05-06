@@ -72,8 +72,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -3490,8 +3490,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoCliCountry
         description: Search filter for Customer country

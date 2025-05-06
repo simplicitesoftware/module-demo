@@ -24,7 +24,7 @@ Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessO
 
 		// A Promise to get the client's coordinates and data in a convenient format
 		const loadData = new Promise((resolve, reject) => {
-			let data = {};
+			const data = {};
 			data.row_id = $ui.getUIField(null, this, 'row_id').ui.val();
 			if (data.row_id && data.row_id != '0') {
 				const coords = $ui.getUIField(null, this, 'demoCliCoords').ui.val().replace(';', ',').split(',');
@@ -57,7 +57,7 @@ Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessO
 				$('#client-map').show();
 
 				// Add a map to that container, centered on the client's coords
-				var map = L.map('client-map').setView([data.latitude,data.longitude], 13);
+				const map = L.map('client-map').setView([ data.latitude, data.longitude ], 13);
 
 				// Hide the attribution prefix (Leaflet branding on the map)
 				map.attributionControl.setPrefix(false);
@@ -69,10 +69,10 @@ Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessO
 				}).addTo(map);
 
 				// Add a marker on the map
-				var marker = L.marker([data.latitude, data.longitude]).addTo(map);
+				const marker = L.marker([data.latitude, data.longitude]).addTo(map);
 
 				// Show popup with extra info on marker click
-				marker.bindPopup(`<b>${data.name}</b><br>${data.address}`);
+				marker.bindPopup(`<b>${data.name}</b><br/>${data.address}`);
 			});
 	}
 };
