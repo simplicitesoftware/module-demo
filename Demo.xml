@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-05-19 18:12:02</usr_last_logon>
+		<usr_last_logon>2025-05-19 21:39:22</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -506,6 +506,12 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
 		<usp_value><![CDATA[yes]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -10919,14 +10925,6 @@ state transition to _shipped_ status.]]></act_comment>
 		<fct_name>DEMO_ORDH_R</fct_name>
 		<fct_object_id.obo_name>DemoOrderHistoric</fct_object_id.obo_name>
 		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>DEMO_PRD_CR</fct_name>
-		<fct_object_id.obo_name>DemoProduct</fct_object_id.obo_name>
-		<fct_function>C</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
