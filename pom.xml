@@ -151,7 +151,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <repositories>
     <repository>
       <id>simplicite</id>
-      <url>https://platform.simplicite.io/6.1/maven</url>
+      <url>https://platform.simplicite.io/6.2/maven</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>

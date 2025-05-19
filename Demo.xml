@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1231" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1230" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -13,7 +13,7 @@
         "stylelint": true,
         "jshint": true,
         "checkstyle": true,
-        "repositoryUrl": "https://platform.simplicite.io/6.1/maven"
+        "repositoryUrl": "https://platform.simplicite.io/6.2/maven"
     },
     "origin": {"uri": "https://github.com/simplicitesoftware/module-demo.git"},
     "sonar": {
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-05-19 14:23:57</usr_last_logon>
+		<usr_last_logon>2025-05-19 18:12:02</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -506,12 +506,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
 		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
 		<usp_value><![CDATA[yes]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
