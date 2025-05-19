@@ -65,9 +65,9 @@ public class DemoProduct extends ObjectDB {
 				// Log
 				AppLog.log("DEMO_INFO", getClass(), "increaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
 				// User message
-				return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED:" + s.getValue());
+				return Message.formatSimpleInfo("DEMO_PRD_STOCK_INCREASED", s.getValue());
 			} else {
-				return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT:" + inc);
+				return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT", String.valueOf(inc));
 			}
 		} catch (Exception e) {
 			return Message.formatSimpleError(e);
@@ -82,13 +82,17 @@ public class DemoProduct extends ObjectDB {
 	public String decreaseStock() {
 		try {
 			int dec = getIntParameter("QUANTITY", 0);
-			ObjectField s = getField(STOCK_FIELDNAME);
-			s.setValue(s.getInt() - dec);
-			getTool().validateAndSave();
-			// Log
-			AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
-			// User message
-			return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED:" + dec);
+			if (dec > 0) {
+				ObjectField s = getField(STOCK_FIELDNAME);
+				s.setValue(s.getInt() - dec);
+				getTool().validateAndSave();
+				// Log
+				AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
+				// User message
+				return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED", s.getValue());
+			} else {
+				return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT", String.valueOf(dec));
+			}
 		} catch (Exception e) {
 			return Message.formatSimpleError(e);
 		}

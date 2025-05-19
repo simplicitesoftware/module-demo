@@ -80,12 +80,12 @@ public class DemoOrder extends ObjectDB {
 				prd.select(getFieldValue(PRODUCT_FIELDNAME));
 				int q = getField(QUANTITY_FIELDNAME).getInt(0);
 				prd.setParameter("QUANTITY", q);
-				prd.invokeAction("DEMO_DECSTOCK");
+				String res = prd.invokeAction("DEMO_DECSTOCK");
 				prd.removeParameter("QUANTITY");
 				// Log
 				AppLog.info("Stock decreased by " + q + " on " + getFieldValue(REFERENCE_FIELDNAME), getGrant());
 				// User message
-				return Message.formatSimpleInfo("DEMO_PRD_STOCK_DECREASED");
+				return res;
 			} catch (Exception e) {
 				String msg = "Error decreasing stock: " + e.getMessage();
 				// Log

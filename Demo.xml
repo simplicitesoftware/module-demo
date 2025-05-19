@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1229" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1231" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-05-05 14:44:46</usr_last_logon>
+		<usr_last_logon>2025-05-19 14:23:57</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -809,6 +809,15 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_PRD_ERR_DECREMENT</lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Value for decrement is not valid]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_ERR_INCREMENT</lov_code>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Value for increment is not valid]]></lov_value>
@@ -820,7 +829,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_DECREASED</lov_code>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Stock has been decreased]]></lov_value>
+		<lov_value><![CDATA[Stock has been decreased to]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -908,6 +917,15 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_PRD_ERR_DECREMENT</lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[La valeur pour le décrément n'est pas valide]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_ERR_INCREMENT</lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[La valeur pour l'incrément n'est pas valide]]></lov_value>
@@ -919,7 +937,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_DECREASED</lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Le stock a été diminué]]></lov_value>
+		<lov_value><![CDATA[Le stock a été diminué à]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -5730,7 +5748,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>0</obo_tray>
-		<obo_dashboard>0</obo_dashboard>
+		<obo_dashboard/>
 		<obo_prefix>ctch</obo_prefix>
 		<obo_search_ts/>
 		<obo_minrows/>
@@ -5878,7 +5896,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>0</obo_tray>
-		<obo_dashboard>0</obo_dashboard>
+		<obo_dashboard/>
 		<obo_prefix>ordh</obo_prefix>
 		<obo_search_ts/>
 		<obo_minrows/>
@@ -6027,7 +6045,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>0</obo_tray>
-		<obo_dashboard>0</obo_dashboard>
+		<obo_dashboard/>
 		<obo_prefix>prdh</obo_prefix>
 		<obo_search_ts/>
 		<obo_minrows/>
@@ -12050,6 +12068,7 @@ is still in pending state]]></cst_desc>
 		<prt_method>printExcel</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoContact</prt_object_id.obo_name>
@@ -12065,6 +12084,7 @@ is still in pending state]]></cst_desc>
 		<prt_method>printMustache</prt_method>
 		<prt_file>files/PrintTemplate/DemoContact-Mustache.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
@@ -12080,6 +12100,7 @@ is still in pending state]]></cst_desc>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoOrder-Listing.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
@@ -12095,6 +12116,7 @@ is still in pending state]]></cst_desc>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoOrder-Receipt.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoOrder</prt_object_id.obo_name>
@@ -12110,6 +12132,7 @@ is still in pending state]]></cst_desc>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoOrder-XML.xml</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
@@ -12125,6 +12148,7 @@ is still in pending state]]></cst_desc>
 		<prt_method>printBrochure</prt_method>
 		<prt_file>files/PrintTemplate/DemoProduct-Brochure.docx</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
@@ -12140,6 +12164,7 @@ is still in pending state]]></cst_desc>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoProduct-Email-FRA.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoProduct</prt_object_id.obo_name>
@@ -12155,6 +12180,7 @@ is still in pending state]]></cst_desc>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoProduct-Email-ENU.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>DemoSupplier</prt_object_id.obo_name>
@@ -12170,6 +12196,7 @@ is still in pending state]]></cst_desc>
 		<prt_method/>
 		<prt_file>files/PrintTemplate/DemoSupplier-Catalog.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 </object>
 <object>
@@ -12641,6 +12668,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_ADMIN</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-000</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>Begin</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12648,6 +12676,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_ADMIN</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-100</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>ClientSelect</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12655,6 +12684,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_ADMIN</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-200</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>SupplierSelect</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12662,6 +12692,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_ADMIN</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-210</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>ProductSelect</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12669,6 +12700,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_ADMIN</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-300</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>OrderCreate</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12676,6 +12708,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_ADMIN</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-999</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>End</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12683,6 +12716,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_USER</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-000</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>Begin</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12690,6 +12724,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_USER</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-100</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>ClientSelect</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12697,6 +12732,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_USER</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-200</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>SupplierSelect</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12704,6 +12740,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_USER</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-210</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>ProductSelect</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12711,6 +12748,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_USER</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-300</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>OrderCreate</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12718,6 +12756,7 @@ is still in pending state]]></cst_desc>
 		<gta_group_id.grp_name>DEMO_USER</gta_group_id.grp_name>
 		<gta_activity_id.acy_process_id.pcs_name>DemoOrderCreate</gta_activity_id.acy_process_id.pcs_name>
 		<gta_activity_id.acy_step>ORDC-999</gta_activity_id.acy_step>
+		<gta_activity_id.acy_name>End</gta_activity_id.acy_name>
 		<gta_grant>R;W</gta_grant>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

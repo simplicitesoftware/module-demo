@@ -957,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -2979,6 +2979,7 @@ securityDefinitions:
     type: apiKey
 definitions:
   Error404:
+    description: Not found
     type: object
     properties:
       error:
@@ -2990,21 +2991,32 @@ definitions:
         enum:
         - 404
   DemoClient:
+    description: |-
+      Customer:
+
+      The **customer** business object corresponds
+      to the customer who places order.
+
+      His address is geolocalized using GoogleMaps&reg; API.
     type: object
     properties:
       demoCliCity:
         description: Customer city
         type: string
+        maxLength: 50
       demoCliCode:
         description: Customer code
         type: string
+        maxLength: 10
       demoCliCoords:
         description: Customer geoccordinates
         type: string
+        maxLength: 50
         example: latitude;longitude
       demoCliType:
         description: Customer type
         type: string
+        maxLength: 30
         enum:
         - T1
         - T2
@@ -3012,36 +3024,47 @@ definitions:
       demoCliLastname:
         description: Customer last name
         type: string
+        maxLength: 100
       demoCliHomePhone:
         description: Customer home phone number
         type: string
+        maxLength: 20
       demoCliZipCode:
         description: Customer postal code
         type: string
+        maxLength: 10
       demoCliFirstname:
         description: Customer first name
         type: string
+        maxLength: 100
       demoCliComments:
         description: Useful comments on customer
         type: string
+        maxLength: 1000000
       demoCliEmail:
         description: Customer email address
         type: string
+        maxLength: 50
       demoCliPlacemapLabel:
         description: Customer place map label
         type: string
+        maxLength: 100
       demoCliFax:
         description: Customer fax number
         type: string
+        maxLength: 20
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       demoCliWorkPhone:
         description: Customer work phone number
         type: string
+        maxLength: 20
       demoCliCountry:
         description: Customer country
         type: string
+        maxLength: 30
         enum:
         - FR
         - UK
@@ -3050,22 +3073,34 @@ definitions:
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
+        maxLength: 100
       demoCliMobilePhone:
         description: Customer mobile phone number
         type: string
+        maxLength: 20
       demoCliAddress2:
         description: Customer address (line 2)
         type: string
+        maxLength: 100
   ArrayOfDemoOrderHistoric:
+    description: List of Order (hist.)
     type: array
     items:
       $ref: '#/definitions/DemoOrderHistoric'
   DemoOrder:
+    description: |-
+      Order:
+
+      The **order** business object corresponds to the
+      product orders placed by clients.
+
+      An order is for one single product.
     type: object
     properties:
       demoOrdPrdId__demoPrdType:
         description: Product type
         type: string
+        maxLength: 50
         enum:
         - LAPTOP
         - DESKTOP
@@ -3075,28 +3110,34 @@ definitions:
       demoOrdPrdId__demoPrdEan13:
         description: EAN13 code
         type: string
+        maxLength: 13
       demoOrdPrdId__demoPrdUnitPrice:
         description: Unit price of product
         type: number
       demoOrdCliId__demoCliFirstname:
         description: Customer first name
         type: string
+        maxLength: 100
       demoOrdDate:
         description: Order date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       demoOrdPrdId__demoPrdSupId__demoSupUsrId:
         description: User responsible of supplier
         type: string
+        maxLength: 11
       demoOrdPrdId__demoPrdSupId:
         description: Product supplier
         type: string
+        maxLength: 11
       demoOrdPrdId__demoPrdStock:
         description: Current stock for product
         type: integer
       demoOrdStatus:
         description: Order status
         type: string
+        maxLength: 30
         enum:
         - P
         - H
@@ -3106,46 +3147,56 @@ definitions:
       demoOrdCliId__demoCliCode:
         description: Customer code
         type: string
+        maxLength: 10
       demoOrdCliId__demoCliCity:
         description: Customer city
         type: string
+        maxLength: 50
       demoOrdCliId__demoCliZipCode:
         description: Customer postal code
         type: string
+        maxLength: 10
       demoOrdPrdId__demoPrdSupId__demoSupName:
         description: Supplier name
         type: string
+        maxLength: 100
       demoOrdUnitPrice:
         description: Product unit price for order
         type: number
       demoOrdDeliveryDate:
         description: Order delivery date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       demoOrdCliId__demoCliLastname:
         description: Customer last name
         type: string
+        maxLength: 100
       demoOrdPrdId__demoPrdSupId__demoSupCode:
         description: Supplier unique code (e.g. `MYSUP`)
         type: string
+        maxLength: 50
       demoOrdQuantity:
         description: Product quantity ordered
         type: integer
       demoOrdCliId:
         description: Order customer
         type: string
+        maxLength: 11
       demoOrdNumber:
         description: Order number (automatically calculated at creation)
         type: integer
       demoOrdComments:
         description: Comments on order
         type: string
+        maxLength: 50000
       demoOrdTotal:
         description: Total order amount
         type: number
       demoOrdPrdId:
         description: Order product
         type: string
+        maxLength: 11
       demoOrdPrdId__demoPrdEan13Image:
         description: EAN13 code image
         type: object
@@ -3155,36 +3206,44 @@ definitions:
       demoOrdCliId__demoCliAddress2:
         description: Customer address (line 2)
         type: string
+        maxLength: 100
       demoOrdCliId__demoCliEmail:
         description: Customer email address
         type: string
+        maxLength: 50
       demoOrdCliId__demoCliAddress1:
         description: Customer address (line 1)
         type: string
+        maxLength: 100
       demoOrdPrdId__demoPrdReference:
         description: Product reference
         type: string
+        maxLength: 10
       demoOrdCliId__demoCliCountry:
         description: Customer country
         type: string
+        maxLength: 30
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       demoOrdPrdId__demoPrdSupId__demoSupLogo:
         description: Supplier logo
         type: object
       demoOrdPrdId__demoPrdName:
         description: Product name
         type: string
+        maxLength: 100
   PublicationResult:
+    description: Publication result
     type: object
     properties:
       mime:
@@ -3194,6 +3253,7 @@ definitions:
         description: Content (plain text or base64 encoded)
         type: string
   PlaceData:
+    description: Place data
     type: object
     properties:
       coord:
@@ -3215,6 +3275,7 @@ definitions:
         description: 'Label #3'
         type: string
   PlaceMapData:
+    description: Places map data
     type: object
     properties:
       places:
@@ -3226,14 +3287,24 @@ definitions:
         description: Name
         type: string
   ArrayOfDemoSupplier:
+    description: List of Suppliers
     type: array
     items:
       $ref: '#/definitions/DemoSupplier'
   ArrayOfDemoContactHistoric:
+    description: List of Contact (hist.)
     type: array
     items:
       $ref: '#/definitions/DemoContactHistoric'
   DemoProductHistoric:
+    description: |-
+      Product (hist.):
+
+      **Product** object history, tracks changes on:
+
+      - Product name
+      - Unit price
+      - Availability
     type: object
     properties:
       row_idx:
@@ -3245,6 +3316,7 @@ definitions:
       created_dt_hist:
         description: Created date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       demoPrdUnitPrice:
         description: Unit price of product
@@ -3252,19 +3324,25 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       demoPrdName:
         description: Product name
         type: string
+        maxLength: 100
       created_by_hist:
         description: Created by
         type: string
+        maxLength: 100
       row_ref_id:
         description: Record row ID
         type: string
+        maxLength: 11
       demoPrdReference:
         description: Product reference
         type: string
+        maxLength: 10
   Error400:
+    description: Bad request
     type: object
     properties:
       error:
@@ -3276,6 +3354,7 @@ definitions:
         enum:
         - 400
   Error401:
+    description: Unauthorized
     type: object
     properties:
       error:
@@ -3287,6 +3366,7 @@ definitions:
         enum:
         - 401
   Error500:
+    description: Internal server error
     type: object
     properties:
       error:
@@ -3298,6 +3378,7 @@ definitions:
         enum:
         - 500
   Error403:
+    description: Forbidden
     type: object
     properties:
       error:
@@ -3309,10 +3390,18 @@ definitions:
         enum:
         - 403
   ArrayOfDemoOrder:
+    description: List of Orders
     type: array
     items:
       $ref: '#/definitions/DemoOrder'
   DemoOrderHistoric:
+    description: |-
+      Order (hist.):
+
+      **Order** object history, tracks changes on:
+
+      - Status
+      - Quantity
     type: object
     properties:
       row_idx:
@@ -3321,6 +3410,7 @@ definitions:
       demoOrdStatus:
         description: Order status
         type: string
+        maxLength: 30
         enum:
         - P
         - H
@@ -3333,22 +3423,34 @@ definitions:
       created_dt_hist:
         description: Created date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       created_by_hist:
         description: Created by
         type: string
+        maxLength: 100
       row_ref_id:
         description: Record row ID
         type: string
+        maxLength: 11
   DemoProduct:
+    description: |-
+      Product:
+
+      The **product** business object corresponds to the
+      products that can be ordered.
+
+      Its reference is unique per supplier.
     type: object
     properties:
       demoPrdType:
         description: Product type
         type: string
+        maxLength: 50
         enum:
         - LAPTOP
         - DESKTOP
@@ -3358,33 +3460,40 @@ definitions:
       demoPrdSupId__demoSupCode:
         description: Supplier unique code (e.g. `MYSUP`)
         type: string
+        maxLength: 50
       demoPrdAvailable:
         description: Available product?
         type: boolean
       demoPrdDocumentation:
         description: Product documentation
         type: string
+        maxLength: 1000000
       demoPrdEan13:
         description: EAN13 code
         type: string
+        maxLength: 13
       demoPrdOnlineDoc:
         description: Online product documentation URL
         type: string
+        maxLength: 255
       demoPrdEan13Image:
         description: EAN13 code image
         type: object
       demoPrdSupId:
         description: Product supplier
         type: string
+        maxLength: 11
       demoPrdUnitPrice:
         description: Unit price of product
         type: number
       demoPrdSupId__demoSupUsrId:
         description: User responsible of supplier
         type: string
+        maxLength: 11
       demoPrdReference:
         description: Product reference
         type: string
+        maxLength: 10
       demoPrdPicture:
         description: Product picture
         type: object
@@ -3394,9 +3503,11 @@ definitions:
       demoPrdComments:
         description: Comments on product
         type: string
+        maxLength: 50000
       demoPrdDescription:
         description: Product description
         type: string
+        maxLength: 1000000
       demoPrdStock:
         description: Current stock for product
         type: integer
@@ -3406,24 +3517,37 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       demoPrdName:
         description: Product name
         type: string
+        maxLength: 100
       demoPrdSupId__demoSupLogo:
         description: Supplier logo
         type: object
       demoPrdSupId__demoSupName:
         description: Supplier name
         type: string
+        maxLength: 100
   ArrayOfDemoProduct:
+    description: List of Products
     type: array
     items:
       $ref: '#/definitions/DemoProduct'
   ArrayOfDemoContact:
+    description: List of Contacts
     type: array
     items:
       $ref: '#/definitions/DemoContact'
   DemoContactHistoric:
+    description: |-
+      Contact (hist.):
+
+      **Contact** object history, tracks changes on:
+
+      - Status
+      - Type and/or subtype
+      - Comments
     type: object
     properties:
       row_idx:
@@ -3432,11 +3556,13 @@ definitions:
       demoCtcSubType:
         description: Contact sub type
         type: string
+        maxLength: 10
         enum:
         - EMPTY
       demoCtcStatus:
         description: Contact status
         type: string
+        maxLength: 1
         enum:
         - O
         - P
@@ -3444,6 +3570,7 @@ definitions:
       demoCtcType:
         description: Contact type
         type: string
+        maxLength: 10
         enum:
         - INF
         - REQ
@@ -3452,40 +3579,58 @@ definitions:
       created_dt_hist:
         description: Created date
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       created_by_hist:
         description: Created by
         type: string
+        maxLength: 100
       row_ref_id:
         description: Record row ID
         type: string
+        maxLength: 11
   DemoContact:
+    description: |-
+      Contact:
+
+      The **contact** object holds the interactions with the clients.
+
+      A contact can be linked or not a an order of the selelcted client
+      (when linked to an order the `demoCtcOrdId` field is set).
     type: object
     properties:
       demoCtcCliId__demoCliLastname:
         description: Customer last name
         type: string
+        maxLength: 100
       demoCtcCliId__demoCliFirstname:
         description: Customer first name
         type: string
+        maxLength: 100
       demoCtcCliId:
         description: Contact customer
         type: string
+        maxLength: 11
       demoCtcOrdId__demoOrdCliId__demoCliCode:
         description: Customer code
         type: string
+        maxLength: 10
       demoCtcCliId__demoCliWorkPhone:
         description: Customer work phone number
         type: string
+        maxLength: 20
       demoCtcComments:
         description: Comments on contact
         type: string
+        maxLength: 50000
       demoCtcCanal:
         description: Canal used for contact
         type: string
+        maxLength: 10
         enum:
         - PHONE
         - EMAIL
@@ -3494,12 +3639,14 @@ definitions:
       demoCtcCliId__demoCliFax:
         description: Customer fax number
         type: string
+        maxLength: 20
       demoCtcFile:
         description: Contact attached file
         type: object
       demoCtcOrdId__demoOrdDate:
         description: Order date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       demoCtcOrdId__demoOrdNumber:
         description: Order number (automatically calculated at creation)
@@ -3507,23 +3654,29 @@ definitions:
       demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId:
         description: User responsible of supplier
         type: string
+        maxLength: 11
       demoCtcOrdId__demoOrdPrdId__demoPrdName:
         description: Product name
         type: string
+        maxLength: 100
       demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupCode:
         description: Supplier unique code (e.g. `MYSUP`)
         type: string
+        maxLength: 50
       demoCtcSubType:
         description: Contact sub type
         type: string
+        maxLength: 10
         enum:
         - EMPTY
       demoCtcCliId__demoCliHomePhone:
         description: Customer home phone number
         type: string
+        maxLength: 20
       demoCtcStatus:
         description: Contact status
         type: string
+        maxLength: 1
         enum:
         - O
         - P
@@ -3531,10 +3684,12 @@ definitions:
       demoCtcDatetime:
         description: Contcat date and time
         type: string
+        maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
       demoCtcType:
         description: Contact type
         type: string
+        maxLength: 10
         enum:
         - INF
         - REQ
@@ -3546,27 +3701,34 @@ definitions:
       demoCtcCliId__demoCliMobilePhone:
         description: Customer mobile phone number
         type: string
+        maxLength: 20
       demoCtcPriority:
         description: Contact priority
         type: boolean
       demoCtcCliId__demoCliCode:
         description: Customer code
         type: string
+        maxLength: 10
       demoCtcCliId__demoCliEmail:
         description: Customer email address
         type: string
+        maxLength: 50
       demoCtcOrdId__demoOrdCliId:
         description: Order customer
         type: string
+        maxLength: 11
       demoCtcOrdId__demoOrdPrdId:
         description: Order product
         type: string
+        maxLength: 11
       demoCtcMessages:
         description: Messages
         type: string
+        maxLength: 50000
       demoCtcOrdId__demoOrdStatus:
         description: Order status
         type: string
+        maxLength: 30
         enum:
         - P
         - H
@@ -3579,16 +3741,21 @@ definitions:
       demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
         description: Product supplier
         type: string
+        maxLength: 11
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       demoCtcOrdId:
         description: Contact order
         type: string
+        maxLength: 11
       demoCtcOrdId__demoOrdPrdId__demoPrdReference:
         description: Product reference
         type: string
+        maxLength: 10
   ActionResult:
+    description: Action result
     type: object
     properties:
       result:
@@ -3601,49 +3768,67 @@ definitions:
         description: Object item with lists of linked objects' items
         type: object
   ArrayOfDemoProductHistoric:
+    description: List of Product (hist.)
     type: array
     items:
       $ref: '#/definitions/DemoProductHistoric'
   DemoSupplier:
+    description: |-
+      Supplier:
+
+      The **supplier** business object corresponds to the
+      suppliers of products that can be ordered.
     type: object
     properties:
       demoSupDescription:
         description: Supplier description
         type: string
+        maxLength: 1000000
       demoSupPhone:
         description: Supplier phone number
         type: string
+        maxLength: 20
       demoSupCode:
         description: Supplier unique code (e.g. `MYSUP`)
         type: string
+        maxLength: 50
       demoSupName:
         description: Supplier name
         type: string
+        maxLength: 100
       demoSupFax:
         description: Supplier fax number
         type: string
+        maxLength: 20
       demoSupEmail:
         description: Supplier email address
         type: string
+        maxLength: 20
       demoSupLogo:
         description: Supplier logo
         type: object
       demoSupUsrId:
         description: User responsible of supplier
         type: string
+        maxLength: 11
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       demoSupWebsite:
         description: Supplier website URL
         type: string
+        maxLength: 100
       demoSupUsrId__usr_login:
         description: Login
         type: string
+        maxLength: 100
       demoSupComments:
         description: Comments on supplier
         type: string
+        maxLength: 50000
   ArrayOfDemoClient:
+    description: List of Customers
     type: array
     items:
       $ref: '#/definitions/DemoClient'
