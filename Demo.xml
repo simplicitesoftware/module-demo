@@ -431,7 +431,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2023-12-19 13:26:00</usr_logout>
-		<usr_last_logon>2025-04-22 17:03:06</usr_last_logon>
+		<usr_last_logon>2025-05-19 14:21:32</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -783,6 +783,15 @@ try {
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_PRD_ERR_DECREMENT</lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Value for decrement is not valid]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_ERR_INCREMENT</lov_code>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Value for increment is not valid]]></lov_value>
@@ -794,7 +803,7 @@ try {
 		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_DECREASED</lov_code>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Stock has been decreased]]></lov_value>
+		<lov_value><![CDATA[Stock has been decreased to]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -882,6 +891,15 @@ try {
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_PRD_ERR_DECREMENT</lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[La valeur pour le décrément n'est pas valide]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_ERR_INCREMENT</lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[La valeur pour l'incrément n'est pas valide]]></lov_value>
@@ -893,7 +911,7 @@ try {
 		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_PRD_STOCK_DECREASED</lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Le stock a été diminué]]></lov_value>
+		<lov_value><![CDATA[Le stock a été diminué à]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
