@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1230" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1225" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -342,7 +342,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<action>upsert</action>
 	<data>
 		<usr_login>admin</usr_login>
-		<usr_lang>ENU</usr_lang>
+		<usr_lang>FRA</usr_lang>
 		<usr_image_id>files/User/admin.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
@@ -366,8 +366,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2024-09-19 09:20:38</usr_logout>
-		<usr_last_logon>2025-03-11 22:27:28</usr_last_logon>
+		<usr_logout>2025-05-21 18:19:08</usr_logout>
+		<usr_last_logon>2025-05-26 11:44:13</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -377,7 +377,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
-		<usr_lang>ENU</usr_lang>
+		<usr_lang>FRA</usr_lang>
 		<usr_image_id>files/User/user_enu.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
@@ -401,8 +401,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2022-11-14 23:00:20</usr_logout>
-		<usr_last_logon>2022-09-16 16:58:41</usr_last_logon>
+		<usr_logout>2025-05-21 18:32:40</usr_logout>
+		<usr_last_logon>2025-05-21 18:36:56</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -436,8 +436,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2022-11-14 23:00:40</usr_logout>
-		<usr_last_logon>2024-11-20 20:49:21</usr_last_logon>
+		<usr_logout>2025-05-21 18:32:59</usr_logout>
+		<usr_last_logon>2025-05-21 18:33:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-05-19 21:39:22</usr_last_logon>
+		<usr_last_logon>2025-05-26 11:20:00</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -484,42 +484,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
-		<usp_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<usp_user_id.usr_login>website</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -4761,6 +4725,31 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<tpl_name>DemoOrderHistoric-row</tpl_name>
+		<tpl_ui><![CDATA[<div>
+  <div class="actions"></div>
+  <div class="row compact">
+    <div class="col-sm-3">
+      <div class="field" data-field="created_dt_hist"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="created_by_hist"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="demoOrdStatus"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="demoOrdQuantity"></div>
+    </div>
+  </div>
+</div>]]></tpl_ui>
+		<tpl_min/>
+		<tpl_image/>
+		<tpl_grid/>
+		<tpl_context>M;P</tpl_context>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<tpl_name>DemoProduct</tpl_name>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
@@ -5854,7 +5843,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
-		<obo_tpl_list_id.tpl_name/>
+		<obo_tpl_list_id.tpl_name>DemoOrderHistoric-row</obo_tpl_list_id.tpl_name>
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -5862,8 +5851,8 @@ An order is for one single product.]]></obo_comment>
 		<obo_selrow>0</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>0</obo_delall>
-		<obo_listsearch>1</obo_listsearch>
-		<obo_list_edit>N;L;E</obo_list_edit>
+		<obo_listsearch>0</obo_listsearch>
+		<obo_list_edit>U</obo_list_edit>
 		<obo_useform>0</obo_useform>
 		<obo_title/>
 		<obo_icon>icon/color/clock</obo_icon>
@@ -5878,12 +5867,12 @@ An order is for one single product.]]></obo_comment>
 		<obo_rowid_id.fld_name/>
 		<obo_extend_id.obj_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<obo_btn_reload>P</obo_btn_reload>
-		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_reload>0</obo_btn_reload>
+		<obo_btn_prefs>0</obo_btn_prefs>
 		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
-		<obo_btn_export>P</obo_btn_export>
+		<obo_btn_export>0</obo_btn_export>
 		<obo_btn_listadd>1</obo_btn_listadd>
 		<obo_btn_listedit>1</obo_btn_listedit>
 		<obo_btn_listupsert>1</obo_btn_listupsert>
@@ -8894,19 +8883,19 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
-		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
-		<obf_order>1</obf_order>
+		<obf_field_id.fld_name>row_idx</obf_field_id.fld_name>
+		<obf_order>-2</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>1</obf_dfault_order>
+		<obf_dfault_order>2</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name>DemoOrder</obf_ref_object_id.obo_name>
-		<obf_cascad>C</obf_cascad>
-		<obf_card>0,n</obf_card>
-		<obf_visible>1</obf_visible>
-		<obf_ref_export>0</obf_ref_export>
-		<obf_copy>0</obf_copy>
-		<obf_ref_order>99990</obf_ref_order>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8925,19 +8914,19 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
-		<obf_field_id.fld_name>row_idx</obf_field_id.fld_name>
-		<obf_order>2</obf_order>
+		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
+		<obf_order>1</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>2</obf_dfault_order>
+		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
+		<obf_ref_object_id.obo_name>DemoOrder</obf_ref_object_id.obo_name>
+		<obf_cascad>C</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_visible>1</obf_visible>
+		<obf_ref_export>0</obf_ref_export>
+		<obf_copy>0</obf_copy>
+		<obf_ref_order>99990</obf_ref_order>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>

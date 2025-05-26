@@ -245,8 +245,8 @@ An order is for one single product.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes*     |           |          | Record row ID                                                                    |
 | `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes*     |           |          | Record row ID                                                                    |
 | `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
 | `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
 | `demoOrdStatus`                                              | enum(30) using `DEMO_ORD_STATUS` list    | yes      | yes       |          | Order status                                                                     |
