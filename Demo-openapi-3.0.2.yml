@@ -431,6 +431,9 @@ components:
         - Quantity
       type: object
       properties:
+        row_idx:
+          description: History record index
+          type: integer
         demoOrdStatus:
           description: Order status
           type: string
@@ -2580,6 +2583,12 @@ paths:
         in: query
         name: row_ref_id
         description: Search filter for Record row ID
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Search filter for History record index
         required: false
       - schema:
           type: string

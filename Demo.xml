@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-05-26 11:20:00</usr_last_logon>
+		<usr_last_logon>2025-05-26 18:06:43</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -8883,19 +8883,19 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
-		<obf_field_id.fld_name>row_idx</obf_field_id.fld_name>
-		<obf_order>-2</obf_order>
+		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
+		<obf_order>1</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>2</obf_dfault_order>
+		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
+		<obf_ref_object_id.obo_name>DemoOrder</obf_ref_object_id.obo_name>
+		<obf_cascad>C</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_visible>1</obf_visible>
+		<obf_ref_export>0</obf_ref_export>
+		<obf_copy>0</obf_copy>
+		<obf_ref_order>99990</obf_ref_order>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8914,19 +8914,19 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
-		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
-		<obf_order>1</obf_order>
+		<obf_field_id.fld_name>row_idx</obf_field_id.fld_name>
+		<obf_order>2</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>1</obf_dfault_order>
+		<obf_dfault_order>2</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name>DemoOrder</obf_ref_object_id.obo_name>
-		<obf_cascad>C</obf_cascad>
-		<obf_card>0,n</obf_card>
-		<obf_visible>1</obf_visible>
-		<obf_ref_export>0</obf_ref_export>
-		<obf_copy>0</obf_copy>
-		<obf_ref_order>99990</obf_ref_order>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
