@@ -194,23 +194,23 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<viw_name>DemoAdminHome</viw_name>
 		<viw_type>H</viw_type>
 		<viw_ui><![CDATA[<div>
-	<div class="area" data-area="1"></div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div class="area" data-area="4"></div>
-		</div>
-		<div class="col-sm-6">
-			<div class="area" data-area="5"></div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div class="area" data-area="2"></div>
-		</div>
-		<div class="col-sm-6">
-			<div class="area" data-area="3"></div>
-		</div>
-	</div>
+  <div class="area" data-area="1"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="area" data-area="4"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="area" data-area="5"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="area" data-area="2"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="area" data-area="3"></div>
+    </div>
+  </div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
 		<viw_icon>demo</viw_icon>
@@ -352,7 +352,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_last_name>SMITH</usr_last_name>
 		<usr_first_name>Barbara</usr_first_name>
 		<usr_email>demo@simplicite.fr</usr_email>
-		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
+		<usr_home_id.viw_name>ViewGrant</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
@@ -367,7 +367,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:19:08</usr_logout>
-		<usr_last_logon>2025-05-26 11:44:13</usr_last_logon>
+		<usr_last_logon>2025-06-25 16:17:20</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-05-26 18:06:43</usr_last_logon>
+		<usr_last_logon>2025-06-24 17:10:29</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -584,7 +584,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<rsp_group_id.grp_name>DEMO_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
+		<rsp_activ>0</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -592,7 +592,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<rsp_group_id.grp_name>USER_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
+		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13872,8 +13872,7 @@ is still in pending state]]></cst_desc>
  "zcontrol": "no",
  "zstotal": "no",
  "ztable": "no",
- "zgraph": "bar",
- "zstcolor": "#F4CCCC"
+ "zgraph": "bar"
 }]]></vwi_url>
 		<vwi_image/>
 		<vwi_subview_id.viw_name/>
@@ -21634,13 +21633,7 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<dt_name>Demo-data</dt_name>
 		<dt_file>data/Demo-data.xml</dt_file>
-		<dt_desc><![CDATA[Demo data:
-
-- Suppliers
-- Products
-- Customers
-
-> _Note: To generate random orders you can used the dedicated unit test class._]]></dt_desc>
+		<dt_desc><![CDATA[Created by module's data export on 2025-06-25 17:13:13]]></dt_desc>
 	</data>
 </object>
 <object>
