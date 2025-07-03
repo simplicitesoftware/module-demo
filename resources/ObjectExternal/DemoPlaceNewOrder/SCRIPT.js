@@ -78,6 +78,8 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (() => {
 		$('#demoplaceneworder-sup').find('p').removeClass('sel');
 		$('#demoplaceneworder-sup-' + sup.item.row_id).addClass('sel');
 		$('#demoplaceneworder-prd').hide().empty();
+		$('#demoplaceneworder-selprd').empty();
+		$('#demoplaceneworder-ok').attr('disabled', true);
 		$ui.getUIObject('DemoProduct', 'pno_DemoProduct', function(p) {
 			prd = p;
 			prd.item = null;
