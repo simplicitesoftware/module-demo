@@ -437,7 +437,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:32:59</usr_logout>
-		<usr_last_logon>2025-05-21 18:33:11</usr_last_logon>
+		<usr_last_logon>2025-07-02 11:52:02</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-06-24 17:10:29</usr_last_logon>
+		<usr_last_logon>2025-07-03 14:29:32</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -12833,7 +12833,7 @@ is still in pending state]]></cst_desc>
 		<sta_label>On hold</sta_label>
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
-		<sta_read>0</sta_read>
+		<sta_read>1</sta_read>
 		<sta_access>1</sta_access>
 		<sta_timeout/>
 		<sta_alert_id.alt_name/>

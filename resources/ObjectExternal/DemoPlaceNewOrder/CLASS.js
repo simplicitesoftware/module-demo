@@ -96,6 +96,8 @@ class DemoPlaceNewOrder extends Simplicite.UI.ExternalObject { // eslint-disable
 		$('#demoplaceneworder-sup').find('p').removeClass('sel');
 		$(`#demoplaceneworder-sup-${this.sup.item.row_id}`).addClass('sel');
 		$('#demoplaceneworder-prd').hide().empty();
+		$('#demoplaceneworder-selprd').empty();
+		$('#demoplaceneworder-ok').attr('disabled', true);
 		this.getProducts(this.sup.item.row_id);
 	}
 
