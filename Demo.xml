@@ -367,7 +367,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:19:08</usr_logout>
-		<usr_last_logon>2025-06-25 16:17:20</usr_last_logon>
+		<usr_last_logon>2025-07-08 15:52:53</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -472,7 +472,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-07-03 14:29:32</usr_last_logon>
+		<usr_last_logon>2025-07-18 15:23:09</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -5770,7 +5770,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_dfltref>DemoOrderHistoric;row_ref_id</obo_dfltref>
 		<obo_template_id.tpl_name>DemoOrder</obo_template_id.tpl_name>
 		<obo_tpl_list_id.tpl_name/>
-		<obo_copy>1</obo_copy>
+		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
 		<obo_srh_predef>1</obo_srh_predef>
