@@ -480,3 +480,9 @@ Custom place new order page
 This custom Ui page is dedicated to place orders using simplified UX.
 
 
+`DemoSupplierStats` external object definition
+----------------------------------------------
+
+
+
+

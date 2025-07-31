@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1225" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1238" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -226,10 +226,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<viw_ui><![CDATA[<div>
   <div class="area" data-area="5"></div>
   <div class="row">
-    <div class="area col-sm-12" data-area="1,2,4:="></div>
-  </div>
-  <div class="row">
-    <div class="area col-sm-12" data-area="3:="></div>
+    <div class="area col-sm-12" data-area="1,2,3,4,6:="></div>
   </div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
@@ -472,7 +469,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-07-18 15:23:09</usr_last_logon>
+		<usr_last_logon>2025-07-29 09:46:39</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -818,6 +815,24 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_SUPPLIER_STATS_COUNT</lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Number of delivered orders]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_SUPPLIER_STATS_QUANTITIES</lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Quantities delivered]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
 		<lov_code>DEMO_TREEVIEW</lov_code>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Demo]]></lov_value>
@@ -920,6 +935,24 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_code>DEMO_RECEIPT</lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Reçu]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_SUPPLIER_STATS_COUNT</lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Nombre de commandes livrées]]></lov_value>
+		<lov_order_by>1</lov_order_by>
+		<lov_event_id.lev_code/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_name>TEXT</lov_name>
+		<lov_code>DEMO_SUPPLIER_STATS_QUANTITIES</lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Quantités livrées]]></lov_value>
 		<lov_order_by>1</lov_order_by>
 		<lov_event_id.lev_code/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -4784,7 +4817,12 @@ Open this dataset and click on the _Apply_ button after having imported the modu
     <div class="area col-sm-4" data-area="2"></div>
   </div>
   <div class="row">
-    <div class="area col-sm-12" data-area="3:-"></div>
+    <div class="col-sm-8">
+      <div class="area" data-area="3:-"></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="area" data-area="4:-"></div>
+    </div>
   </div>
 </div>]]></tpl_ui>
 		<tpl_min/>
@@ -5301,6 +5339,14 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<ofa_icon>img/color/info_squared</ofa_icon>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<ofa_name>DemoSupplier-4</ofa_name>
+		<ofa_position>4</ofa_position>
+		<ofa_title>1</ofa_title>
+		<ofa_ui><![CDATA[<div class="extern" data-embedded="true" data-extern="DemoSupplierStats" data-title="false" style="width: 100%; height: 100%;"></div>]]></ofa_ui>
+		<ofa_icon>bars</ofa_icon>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>Domain</name>
@@ -5520,6 +5566,27 @@ This custom Ui page is dedicated to place orders using simplified UX.]]></obe_co
 		<obe_icon>img/color/documents_folder</obe_icon>
 		<obe_permalink/>
 		<obe_widget>0</obe_widget>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obe_name>DemoSupplierStats</obe_name>
+		<obe_type>E</obe_type>
+		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
+		<obe_url/>
+		<obe_settings><![CDATA[{
+  "options": {
+    "indexAxis": "y",
+    "plugins": {"legend": {"position": "bottom"}}
+  },
+  "type": "bar"
+}]]></obe_settings>
+		<obe_comment/>
+		<obe_help/>
+		<obe_class/>
+		<obe_script_id>src/com/simplicite/extobjects/Demo/DemoSupplierStats.java</obe_script_id>
+		<obe_icon/>
+		<obe_permalink/>
+		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
@@ -14051,6 +14118,26 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+		<vwi_position>6</vwi_position>
+		<vwi_type>E</vwi_type>
+		<vwi_title>1</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url><![CDATA[{"extobject": "DemoSupplierStats"}]]></vwi_url>
+		<vwi_image/>
+		<vwi_subview_id.viw_name/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
 		<vwi_type>U</vwi_type>
@@ -18404,6 +18491,34 @@ is still in pending state]]></cst_desc>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoSupplier-4</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Orders statistics</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>DemoSupplier-4</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Statistiques de commandes</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateDomain</name>
@@ -18932,6 +19047,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Produits disponibles</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoSupplierStats</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Orders statistics</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoSupplierStats</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Statistiques de commandes</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21898,6 +22043,23 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
 		<prm_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoSupplierStats</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
 				<name>PrintTemplate</name>
 				<data>
 					<prt_name>DemoProduct-Brochure</prt_name>
@@ -22209,6 +22371,23 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoCatalog</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoSupplierStats</obe_name>
 				</data>
 			</object>
 		</prm_object>
