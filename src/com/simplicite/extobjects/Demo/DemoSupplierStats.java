@@ -7,7 +7,6 @@ import org.json.JSONObject;
 
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
-import com.simplicite.util.Tool;
 import com.simplicite.util.tools.Parameters;
 
 public class DemoSupplierStats extends com.simplicite.webapp.web.widgets.ChartjsExternalObject {
