@@ -2165,6 +2165,16 @@ paths:
         type: string
         required: false
       - in: query
+        name: demoPrdSupId
+        description: Search filter for Product supplier
+        type: string
+        required: false
+      - in: query
+        name: demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        type: string
+        required: false
+      - in: query
         name: demoPrdReference
         description: Search filter for Product reference
         type: string
@@ -3310,6 +3320,10 @@ definitions:
       row_idx:
         description: History record index
         type: integer
+      demoPrdSupId__demoSupCode:
+        description: Supplier unique code (e.g. `MYSUP`)
+        type: string
+        maxLength: 50
       demoPrdAvailable:
         description: Available product?
         type: boolean
@@ -3318,6 +3332,10 @@ definitions:
         type: string
         maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
+      demoPrdSupId:
+        description: Product supplier
+        type: string
+        maxLength: 11
       demoPrdUnitPrice:
         description: Unit price of product
         type: number

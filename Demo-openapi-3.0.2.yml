@@ -337,6 +337,10 @@ components:
         row_idx:
           description: History record index
           type: integer
+        demoPrdSupId__demoSupCode:
+          description: Supplier unique code (e.g. `MYSUP`)
+          type: string
+          maxLength: 50
         demoPrdAvailable:
           description: Available product?
           type: boolean
@@ -345,6 +349,10 @@ components:
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
+        demoPrdSupId:
+          description: Product supplier
+          type: string
+          maxLength: 11
         demoPrdUnitPrice:
           description: Unit price of product
           type: number
@@ -3449,6 +3457,18 @@ paths:
         in: query
         name: created_dt_hist
         description: Search filter for Created date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId
+        description: Search filter for Product supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
         required: false
       - schema:
           type: string

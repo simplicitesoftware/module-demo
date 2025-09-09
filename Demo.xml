@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1238" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1244" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -469,7 +469,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-07-29 09:46:39</usr_last_logon>
+		<usr_last_logon>2025-09-09 17:38:42</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -481,6 +481,12 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>website</usp_user_id.usr_login>
+		<usp_param_id.sys_code>DISPOSITION</usp_param_id.sys_code>
+		<usp_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
@@ -9880,6 +9886,68 @@ suppliers of products that can be ordered.]]></obo_comment>
 	</data>
 	<data>
 		<obf_object_id.obo_name>DemoProductHistoric</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
+		<obf_order>100</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name>DemoSupplier</obf_ref_object_id.obo_name>
+		<obf_cascad>C</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_visible>0</obf_visible>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy>0</obf_copy>
+		<obf_ref_order>99980</obf_ref_order>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name/>
+		<obf_joined_id.obf_field_id.fld_name/>
+		<obf_joined_id.obf_order/>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProductHistoric</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
+		<obf_order>110</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order>1</obf_dfault_order>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>demoPrdSupId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>DemoSupplier</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name>DemoProduct</obf_joined_id.obf_object_id.obo_name>
+		<obf_joined_id.obf_field_id.fld_name>demoPrdSupId</obf_joined_id.obf_field_id.fld_name>
+		<obf_joined_id.obf_order>100</obf_joined_id.obf_order>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoProductHistoric</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoPrdReference</obf_field_id.fld_name>
 		<obf_order>200</obf_order>
 		<obf_group_by/>
@@ -10584,6 +10652,26 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_copy>0</obf_copy>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
+		<obf_rendering/>
+		<obf_treedepth/>
+		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_ref_object_id.obo_name>DemoSupplier</obf_ref_object_id.obo_name>
+		<obf_order>100</obf_order>
+		<obf_ref_order>99980</obf_ref_order>
+		<obf_object_id.obj_name>DemoProductHistoric</obf_object_id.obj_name>
+		<obf_field_id.fld_name>demoPrdSupId</obf_field_id.fld_name>
+		<obf_cascad>C</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_query/>
+		<obf_filters/>
+		<obf_visible>0</obf_visible>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy>0</obf_copy>
+		<obf_associate/>
+		<obf_inline/>
 		<obf_rendering/>
 		<obf_treedepth/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
@@ -17478,7 +17566,7 @@ is still in pending state]]></cst_desc>
 		<tsl_short_value>Code (liste)</tsl_short_value>
 		<tsl_placeholder>Code (indication)</tsl_placeholder>
 		<tsl_listhelp><![CDATA[<p>Aide sur le code (liste)</p>]]></tsl_listhelp>
-		<tsl_tooltip/>
+		<tsl_tooltip><![CDATA[<p>Aide sur le code (info-bulle)</p>]]></tsl_tooltip>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -20865,6 +20953,46 @@ is still in pending state]]></cst_desc>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoProductHistoric</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
+					<obf_order>110</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Supplier code</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value>Supplier</tsl_short_value>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>DemoProductHistoric</obf_object_id.obo_name>
+					<obf_field_id.fld_name>demoSupCode</obf_field_id.fld_name>
+					<obf_order>110</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code fournisseur</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value>Fournisseur</tsl_short_value>
 		<tsl_listhelp/>
 		<tsl_placeholder/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
