@@ -2,8 +2,7 @@
 // Client side JavaScript for place new this.order external object
 //-----------------------------------------------------------
 
-// As of version 6.1.19: Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.ExternalObject {
-class DemoPlaceNewOrder extends Simplicite.UI.ExternalObject { // eslint-disable-line no-unused-vars
+Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(_params, _data) {
 		// Override default error handler
@@ -173,4 +172,4 @@ class DemoPlaceNewOrder extends Simplicite.UI.ExternalObject { // eslint-disable
 			});
 		});
 	}
-}
+};

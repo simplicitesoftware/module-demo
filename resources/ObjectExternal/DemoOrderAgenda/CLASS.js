@@ -4,8 +4,7 @@
 
 /* global FullCalendar */
 
-// As of version 6.1.19: Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
-class DemoOrderAgenda extends Simplicite.UI.ExternalObject { // eslint-disable-line no-unused-vars
+Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(_params, _data) {
 		this.debug = false;
@@ -177,4 +176,4 @@ class DemoOrderAgenda extends Simplicite.UI.ExternalObject { // eslint-disable-l
 			}
 		}).render();
 	}
-}
+};
