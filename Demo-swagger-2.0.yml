@@ -1442,6 +1442,41 @@ paths:
         type: string
         required: false
       - in: query
+        name: row_ref_id__demoOrdNumber
+        description: Search filter for Order number (automatically calculated at creation)
+        type: integer
+        required: false
+      - in: query
+        name: row_ref_id__demoOrdCliId
+        description: Search filter for Order customer
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoOrdCliId__demoCliCode
+        description: Search filter for Customer code
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoOrdPrdId
+        description: Search filter for Order product
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoOrdPrdId__demoPrdReference
+        description: Search filter for Product reference
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoOrdPrdId__demoPrdSupId
+        description: Search filter for Product supplier
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoOrdPrdId__demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        type: string
+        required: false
+      - in: query
         name: row_idx
         description: Search filter for History record index
         type: integer
@@ -2150,6 +2185,21 @@ paths:
         type: string
         required: false
       - in: query
+        name: row_ref_id__demoPrdSupId
+        description: Search filter for Product supplier
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoPrdSupId__demoSupCode
+        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoPrdReference
+        description: Search filter for Product reference
+        type: string
+        required: false
+      - in: query
         name: row_idx
         description: Search filter for History record index
         type: integer
@@ -2162,16 +2212,6 @@ paths:
       - in: query
         name: created_dt_hist
         description: Search filter for Created date
-        type: string
-        required: false
-      - in: query
-        name: demoPrdSupId
-        description: Search filter for Product supplier
-        type: string
-        required: false
-      - in: query
-        name: demoPrdSupId__demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
         type: string
         required: false
       - in: query
@@ -2238,6 +2278,21 @@ paths:
       - in: query
         name: row_ref_id
         description: Search filter for Record row ID
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoCtcDatetime
+        description: Search filter for Contcat date and time
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoCtcCliId
+        description: Search filter for Contact customer
+        type: string
+        required: false
+      - in: query
+        name: row_ref_id__demoCtcCliId__demoCliCode
+        description: Search filter for Customer code
         type: string
         required: false
       - in: query
@@ -3317,25 +3372,29 @@ definitions:
       - Availability
     type: object
     properties:
-      row_idx:
-        description: History record index
-        type: integer
-      demoPrdSupId__demoSupCode:
+      row_ref_id__demoPrdSupId__demoSupCode:
         description: Supplier unique code (e.g. `MYSUP`)
         type: string
         maxLength: 50
+      row_ref_id__demoPrdReference:
+        description: Product reference
+        type: string
+        maxLength: 10
+      row_idx:
+        description: History record index
+        type: integer
       demoPrdAvailable:
         description: Available product?
         type: boolean
+      row_ref_id__demoPrdSupId:
+        description: Product supplier
+        type: string
+        maxLength: 11
       created_dt_hist:
         description: Created date
         type: string
         maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
-      demoPrdSupId:
-        description: Product supplier
-        type: string
-        maxLength: 11
       demoPrdUnitPrice:
         description: Unit price of product
         type: number
@@ -3422,6 +3481,37 @@ definitions:
       - Quantity
     type: object
     properties:
+      row_ref_id__demoOrdCliId__demoCliCode:
+        description: Customer code
+        type: string
+        maxLength: 10
+      demoOrdQuantity:
+        description: Product quantity ordered
+        type: integer
+      row_ref_id__demoOrdPrdId__demoPrdSupId:
+        description: Product supplier
+        type: string
+        maxLength: 11
+      row_ref_id__demoOrdPrdId__demoPrdReference:
+        description: Product reference
+        type: string
+        maxLength: 10
+      created_dt_hist:
+        description: Created date
+        type: string
+        maxLength: 19
+        example: yyyy-MM-dd HH:mm:ss
+      row_ref_id__demoOrdCliId:
+        description: Order customer
+        type: string
+        maxLength: 11
+      row_ref_id:
+        description: Record row ID
+        type: string
+        maxLength: 11
+      row_ref_id__demoOrdNumber:
+        description: Order number (automatically calculated at creation)
+        type: integer
       row_idx:
         description: History record index
         type: integer
@@ -3435,14 +3525,14 @@ definitions:
         - V
         - D
         - C
-      demoOrdQuantity:
-        description: Product quantity ordered
-        type: integer
-      created_dt_hist:
-        description: Created date
+      row_ref_id__demoOrdPrdId:
+        description: Order product
         type: string
-        maxLength: 19
-        example: yyyy-MM-dd HH:mm:ss
+        maxLength: 11
+      row_ref_id__demoOrdPrdId__demoPrdSupId__demoSupCode:
+        description: Supplier unique code (e.g. `MYSUP`)
+        type: string
+        maxLength: 50
       row_id:
         description: Unique technical row ID
         type: string
@@ -3451,10 +3541,6 @@ definitions:
         description: Created by
         type: string
         maxLength: 100
-      row_ref_id:
-        description: Record row ID
-        type: string
-        maxLength: 11
   DemoProduct:
     description: |-
       Product:
@@ -3577,6 +3663,14 @@ definitions:
         maxLength: 10
         enum:
         - EMPTY
+      row_ref_id__demoCtcCliId__demoCliCode:
+        description: Customer code
+        type: string
+        maxLength: 10
+      row_ref_id__demoCtcCliId:
+        description: Contact customer
+        type: string
+        maxLength: 11
       demoCtcStatus:
         description: Contact status
         type: string
@@ -3603,6 +3697,11 @@ definitions:
         description: Unique technical row ID
         type: string
         maxLength: 11
+      row_ref_id__demoCtcDatetime:
+        description: Contcat date and time
+        type: string
+        maxLength: 19
+        example: yyyy-MM-dd HH:mm:ss
       created_by_hist:
         description: Created by
         type: string
