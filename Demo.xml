@@ -349,7 +349,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_last_name>SMITH</usr_last_name>
 		<usr_first_name>Barbara</usr_first_name>
 		<usr_email>demo@simplicite.fr</usr_email>
-		<usr_home_id.viw_name>ViewGrant</usr_home_id.viw_name>
+		<usr_home_id.viw_name>DemoAdminHome</usr_home_id.viw_name>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
@@ -364,7 +364,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:19:08</usr_logout>
-		<usr_last_logon>2025-07-08 15:52:53</usr_last_logon>
+		<usr_last_logon>2025-10-10 10:27:30</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -434,7 +434,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:32:59</usr_logout>
-		<usr_last_logon>2025-09-12 11:01:16</usr_last_logon>
+		<usr_last_logon>2025-09-29 17:53:07</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>FRA</usr_lang_pref>
@@ -469,7 +469,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2025-09-29 17:17:09</usr_last_logon>
+		<usr_last_logon>2025-10-10 10:25:57</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -581,7 +581,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<rsp_group_id.grp_name>DEMO_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
+		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -589,7 +589,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<rsp_group_id.grp_name>USER_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2000-01-01</rsp_start_dt>
 		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
+		<rsp_activ>0</rsp_activ>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>

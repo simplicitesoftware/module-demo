@@ -27,5 +27,6 @@
     <module name="StaticVariableName"/>
     <module name="ParameterName"/>
     <module name="WhitespaceAround"/>
+    	<module name="MissingOverride"/>
   </module>
 </module>
