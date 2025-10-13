@@ -11,7 +11,7 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 		$ui.loadCalendar(() => {
 			$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', obj => {
 				this.ord = obj;
-				this.ord.getMetaData(() => this.calendar());
+				this.ord.getMetaData().then(_ => this.calendar());
 			});
 		});
 	}
@@ -19,7 +19,7 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 	/** Choose appropriate calendar function for current FullCalendar version */
 	calendar() {
 		const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
-		if (this.debug) $app.info(`FullCalendar version = ${fc}`);
+		if (this.debug) $console.info(`FullCalendar version = ${fc}`);
 		if (fc < 4)
 			$('#demoOrderAgenda').text(`Fullcalendar version ${fc} is not supported`);
 		else if (fc == 4)
@@ -53,18 +53,18 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 			},
 			eventClick: info => {
 				const id = info.event.id;
-				if (self.debug) $app.info(`Order ${id} clicked`);
+				if (self.debug) $console.info(`Order ${id} clicked`);
 				$ui.displayForm(null, 'DemoOrder', id, { nav: 'add' });
 			},
 			eventDrop: info => {
 				const s = moment(info.event.start).utc().format('YYYY-MM-DD HH:mm:ss');
 				let d = info.event.extendedProps.data;
-				if (self.debug) $app.info(`Order ${info.event.id} dropped to ${s}`);
+				if (self.debug) $console.info(`Order ${info.event.id} dropped to ${s}`);
 				d.demoOrdDeliveryDate = s;
-				this.ord.update(() => {
+				this.ord.update(d).then(_ => {
 					d = self.ord.item;
-					if (self.debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
-				}, d);
+					if (self.debug) $console.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
+				});
 			},
 			events: (info, success, _failure) => {
 				const start = moment(info.start);
@@ -72,9 +72,12 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 				const f = 'YYYY-MM-DD HH:mm:ss Z';
 				const dmin = start.format(f);
 				const dmax = end.format(f);
-				if (self.debug) $app.info(`Calendar view range = ${dmin} to ${dmax}`);
-				self.ord.search(list => {
-					if (self.debug) $app.info(`${list.length} orders found between ${dmin} and ${dmax}`);
+				if (self.debug) $console.info(`Calendar view range = ${dmin} to ${dmax}`);
+				self.ord.search(
+					{ demoOrdDeliveryDate: `${dmin};${dmax}`, demoOrdStatus: 'P;V;D' },
+					{ inlineDocs: false }
+				).then(list => {
+					if (self.debug) $console.info(`${list.length} orders found between ${dmin} and ${dmax}`);
 					const status = self.ord.getField('demoOrdStatus');
 					const evts = [];
 					for (const item of list) {
@@ -96,9 +99,9 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 							});
 						}
 					}
-					if (self.debug) $app.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
+					if (self.debug) $console.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
 					success(evts);
-				}, { demoOrdDeliveryDate: `${dmin};${dmax}`, demoOrdStatus: 'P;V;D' }, { inlineDocs: false });
+				});
 			}
 		}).render();
 	}
@@ -127,18 +130,18 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 			},
 			eventClick: info => {
 				const id = info.event.id;
-				if (self.debug) $app.info(`Order ${id} clicked`);
+				if (self.debug) $console.info(`Order ${id} clicked`);
 				$ui.displayForm(null, 'DemoOrder', id, { nav: 'add' });
 			},
 			eventDrop: info => {
 				const s = moment(info.event.start).utc().format('YYYY-MM-DD HH:mm:ss');
 				let d = info.event.extendedProps.data;
-				if (self.debug) $app.info(`Order ${info.event.id} dropped to ${s}`);
+				if (self.debug) $console.info(`Order ${info.event.id} dropped to ${s}`);
 				d.demoOrdDeliveryDate = s;
-				self.ord.update(function() {
+				self.ord.update(d).then(_ => {
 					d = self.ord.item;
-					if (self.debug) $app.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
-				}, d);
+					if (self.debug) $console.info(`Order ${d.demoOrdNumber} delivery date updated to ${s}`);
+				});
 			},
 			events: (info, success, _failure) => {
 				const start = moment(info.start);
@@ -146,9 +149,12 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 				const f = 'YYYY-MM-DD HH:mm:ss Z';
 				const dmin = start.format(f);
 				const dmax = end.format(f);
-				if (self.debug) $app.info(`Calendar view range = ${dmin} to ${dmax}`);
-				self.ord.search(list => {
-					if (self.debug) $app.info(`${list.length} orders found between ${dmin} and ${dmax}`);
+				if (self.debug) $console.info(`Calendar view range = ${dmin} to ${dmax}`);
+				self.ord.search(
+					{ demoOrdDeliveryDate: `${dmin};${dmax}`, demoOrdStatus: 'P;V;D' },
+					{ inlineDocs: false }
+				).then(list => {
+					if (self.debug) $console.info(`${list.length} orders found between ${dmin} and ${dmax}`);
 					const status = self.ord.getField('demoOrdStatus');
 					const evts = [];
 					for (const item of list) {
@@ -170,9 +176,9 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 							});
 						}
 					}
-					if (self.debug) $app.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
+					if (self.debug) $console.info(`${evts.length} orders displayed between ${dmin} and ${dmax}`);
 					success(evts);
-				}, { demoOrdDeliveryDate: `${dmin};${dmax}`, demoOrdStatus: 'P;V;D' }, { inlineDocs: false });
+				});
 			}
 		}).render();
 	}
