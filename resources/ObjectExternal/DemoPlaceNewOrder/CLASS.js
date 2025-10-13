@@ -5,12 +5,6 @@
 Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(_params, _data) {
-		// Override default error handler
-		const ajax = $ui.getAjax();
-		ajax.setErrorHandler(err => {
-			$('#demoplaceneworder-err').append($('<p/>').text(ajax.getErrorMessage(err))).show();
-		});
-
 		const self = this;
 		$('#demoplaceneworder-ord').append($ui.view.tools.panel({ title: 'Order', content: $('<div/>')
 			.append($('<div/>').append('Selected customer:'))
@@ -153,15 +147,19 @@ Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.Ex
 			this.ord = obj;
 			this.ord.item = null;
 			// ZZZ Get for create must be called to set default values
-			await this.ord.getForCreate();
-			this.ord.item.demoOrdCliId = this.cli.item.row_id;
-			this.ord.item.demoOrdPrdId = this.prd.item.row_id;
-			// ZZZ populate must be called to set all referred fields from this.client and product before creation
-			await this.ord.populate();
-			this.ord.item.demoOrdQuantity = $('#demoplaceneworder-qty').val();
-			await this.ord.create();
-			$('#demoplaceneworder').html(`<p>Order created with number ${this.ord.item.demoOrdNumber}<br/>Thank you !</p>`);
-			$ui.view.notify({ type: 'create', object: this.ord, rowId: this.ord.item.row_id }); // Notify UI components (e.g. menu)
+			try {
+				await this.ord.getForCreate();
+				this.ord.item.demoOrdCliId = this.cli.item.row_id;
+				this.ord.item.demoOrdPrdId = this.prd.item.row_id;
+				// ZZZ populate must be called to set all referred fields from this.client and product before creation
+				await this.ord.populate();
+				this.ord.item.demoOrdQuantity = $('#demoplaceneworder-qty').val();
+				await this.ord.create();
+				$('#demoplaceneworder').html(`<p>Order created with number ${this.ord.item.demoOrdNumber}<br/>Thank you !</p>`);
+				$ui.view.notify({ type: 'create', object: this.ord, rowId: this.ord.item.row_id }); // Notify UI components (e.g. menu)
+			} catch (err) {
+				$('#demoplaceneworder-err').append($('<p/>').text($ui.getAjax().getErrorMessage(err))).show();
+			}
 		});
 	}
 };
