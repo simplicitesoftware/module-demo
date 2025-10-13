@@ -957,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -2424,8 +2424,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3133,8 +3133,8 @@ definitions:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3291,8 +3291,8 @@ definitions:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object

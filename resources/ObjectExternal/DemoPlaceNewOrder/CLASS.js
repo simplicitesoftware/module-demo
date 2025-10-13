@@ -37,18 +37,17 @@ Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.Ex
 	 * Get all customers
  	 */
 	getClients() {
-		$ui.getUIObject('DemoClient', 'pno_DemoClient', obj => {
+		$ui.getUIObject('DemoClient', 'pno_DemoClient', async obj => {
 			this.cli = obj;
 			this.cli.item = null;
 			const click = evt => this.selectClient(evt.data);
-			this.cli.search(list => {
-				const div = $('<div/>');
-				for (const item of list) {
-					const label = `${item.demoCliCode} - ${item.demoCliFirstname} ${item.demoCliLastname}`;
-					div.append($('<p/>', { id: `demoplaceneworder-cli-${item.row_id}` }).addClass('obj').on('click', item, click).text(label));
-				}
-				$('#demoplaceneworder-cli').append($ui.view.tools.panel({ title: 'Select customer', content: div })).slideDown();
-			});
+			const list = await this.cli.search();
+			const div = $('<div/>');
+			for (const item of list) {
+				const label = `${item.demoCliCode} - ${item.demoCliFirstname} ${item.demoCliLastname}`;
+				div.append($('<p/>', { id: `demoplaceneworder-cli-${item.row_id}` }).addClass('obj').on('click', item, click).text(label));
+			}
+			$('#demoplaceneworder-cli').append($ui.view.tools.panel({ title: 'Select customer', content: div })).slideDown();
 		});
 	}
 
@@ -71,18 +70,17 @@ Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.Ex
 	 * Get all suppliers
  	 */
 	getSuppliers() {
-		$ui.getUIObject('DemoSupplier', 'pno_DemoSupplier', obj => {
+		$ui.getUIObject('DemoSupplier', 'pno_DemoSupplier', async obj => {
 			this.sup = obj;
 			this.sup.item = null;
 			const click = evt => this.selectSupplier(evt.data);
-			this.sup.search(list => {
-				const div = $('<div/>');
-				for (const item of list) {
-					const label = `${item.demoSupCode} - ${item.demoSupName}`;
-					div.append($('<p/>', { id: `demoplaceneworder-sup-${item.row_id}` }).addClass('obj').on('click', item, click).text(label));
-				}
-				$('#demoplaceneworder-sup').append($ui.view.tools.panel({ title: 'Select supplier', content: div })).slideDown();
-			});
+			const list = await this.sup.search();
+			const div = $('<div/>');
+			for (const item of list)
+				div.append($('<p/>', { id: `demoplaceneworder-sup-${item.row_id}` })
+					.addClass('obj').on('click', item, click)
+					.text(`${item.demoSupCode} - ${item.demoSupName}`));
+			$('#demoplaceneworder-sup').append($ui.view.tools.panel({ title: 'Select supplier', content: div })).slideDown();
 		});
 	}
 
@@ -105,20 +103,17 @@ Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.Ex
 	 * @param {string} supId Supplier ID
  	 */
 	getProducts(supId) {
-		$ui.getUIObject('DemoProduct', 'pno_DemoProduct', obj => {
+		$ui.getUIObject('DemoProduct', 'pno_DemoProduct', async obj => {
 			this.prd = obj;
 			this.prd.item = null;
 			const click = evt => this.selectProduct(evt.data);
-			this.prd.search(list => {
-				const div = $('<div/>');
-				for (const item of list) {
-					const label = `${item.demoPrdReference} - ${item.demoPrdName}`;
-					div.append($('<p/>', { id: `demoplaceneworder-prd-${item.row_id}` }).addClass('obj').on('click', item, click)
-						.append($('<img/>', { src: `data:${item.demoPrdPicture.mime};base64,${item.demoPrdPicture.content}` }).css('width', '50px'))
-						.append($('<span/>').text(label)));
-				}
-				$('#demoplaceneworder-prd').append($ui.view.tools.panel({ title: 'Select product', content: div })).slideDown();
-			}, { demoPrdSupId: supId }, { inlineDocs: true });
+			const list = await this.prd.search({ demoPrdSupId: supId }, { inlineDocs: true });
+			const div = $('<div/>');
+			for (const item of list)
+				div.append($('<p/>', { id: `demoplaceneworder-prd-${item.row_id}` }).addClass('obj').on('click', item, click)
+					.append($('<img/>', { src: `data:${item.demoPrdPicture.mime};base64,${item.demoPrdPicture.content}` }).css('width', '50px'))
+					.append($('<span/>').text(`${item.demoPrdReference} - ${item.demoPrdName}`)));
+			$('#demoplaceneworder-prd').append($ui.view.tools.panel({ title: 'Select product', content: div })).slideDown();
 		});
 	}
 
@@ -154,22 +149,19 @@ Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.Ex
  	 */
 	placeOrder() {
 		$('#demoplaceneworder-err').empty().hide();
-		$ui.getUIObject('DemoOrder', 'pno_DemoOrder', obj => {
+		$ui.getUIObject('DemoOrder', 'pno_DemoOrder', async obj => {
 			this.ord = obj;
 			this.ord.item = null;
 			// ZZZ Get for create must be called to set default values
-			this.ord.getForCreate(() => {
-				this.ord.item.demoOrdCliId = this.cli.item.row_id;
-				this.ord.item.demoOrdPrdId = this.prd.item.row_id;
-				// ZZZ populate must be called to set all referred fields from this.client and product before creation
-				this.ord.populate(() => {
-					this.ord.item.demoOrdQuantity = $('#demoplaceneworder-qty').val();
-					this.ord.create(() => {
-						$('#demoplaceneworder').html(`<p>Order created with number ${this.ord.item.demoOrdNumber}<br/>Thank you !</p>`);
-						$ui.view.notify({ type: 'create', object: this.ord, rowId: this.ord.item.row_id }); // Notify UI components (e.g. menu)
-					});
-				});
-			});
+			await this.ord.getForCreate();
+			this.ord.item.demoOrdCliId = this.cli.item.row_id;
+			this.ord.item.demoOrdPrdId = this.prd.item.row_id;
+			// ZZZ populate must be called to set all referred fields from this.client and product before creation
+			await this.ord.populate();
+			this.ord.item.demoOrdQuantity = $('#demoplaceneworder-qty').val();
+			await this.ord.create();
+			$('#demoplaceneworder').html(`<p>Order created with number ${this.ord.item.demoOrdNumber}<br/>Thank you !</p>`);
+			$ui.view.notify({ type: 'create', object: this.ord, rowId: this.ord.item.row_id }); // Notify UI components (e.g. menu)
 		});
 	}
 };
