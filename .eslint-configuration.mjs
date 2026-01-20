@@ -1,0 +1,38 @@
+import globals from 'globals';
+import js from '@eslint/js';
+
+export default [
+  js.configs.recommended,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        '$': true,
+        'jQuery': true,
+        'bootstrap': true,
+        'moment': true,
+        'Simplicite': true,
+        '$T': true,
+        '$ui': true,
+        '$app': true,
+        '$nav': true,
+        '$grant': true,
+        '$root': true,
+        '$tools': true,
+        '$console': true,
+        '$view': true,
+      }
+    },
+    rules: {
+      'indent': ['error', 'tab'],
+      'quotes': ['error', 'single'],
+      'semi': ['error', 'always'],
+      'no-multiple-empty-lines': ['error', { 'max': 1 }],
+      'no-multi-spaces': 'error',
+      'no-trailing-spaces': ['error', { 'skipBlankLines': false }],
+      'no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
+      'no-console': 'error',
+      'no-debugger': 'error'
+    }
+  }
+];

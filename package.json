@@ -7,13 +7,13 @@
     "jshint": "latest",
     "globals": "latest",
     "stylelint-config-standard": "latest",
-    "postcss-less": "latest"
+    "@stylistic/stylelint-plugin": "latest"
   },
   "name": "Demo",
   "scripts": {
-    "eslint": "eslint --config=.eslint-configuration --no-color --no-error-on-unmatched-pattern resources/**/*.js",
-    "stylelint": "stylelint --config=.stylelint-configuration --no-color --allow-empty-input resources/**/*.css resources/**/*.less",
-    "jshint": "jshint --config=.jshint-configuration --reporter=jslint resources"
+    "eslint": "eslint --config=.eslint-configuration.mjs --no-color --no-error-on-unmatched-pattern resources/**/*.js",
+    "stylelint": "stylelint --config=.stylelint-configuration.mjs --no-color --allow-empty-input resources/**/*.css resources/**/*.less",
+    "jshint": "jshint --config=.jshint-configuration.json --reporter=jslint resources"
   },
-  "version": "6"
+  "version": "7"
 }

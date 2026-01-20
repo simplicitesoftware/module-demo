@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Demo 6
+#             |_| Module: Demo 7
 components:
   schemas:
     Error404:
@@ -95,8 +95,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -167,8 +167,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -216,7 +216,7 @@ components:
         demoOrdComments:
           description: Comments on order
           type: string
-          maxLength: 50000
+          maxLength: 2147483647
         demoOrdTotal:
           description: Total order amount
           type: number
@@ -253,8 +253,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -334,24 +334,13 @@ components:
         - Availability
       type: object
       properties:
-        row_ref_id__demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
-          type: string
-          maxLength: 50
         row_ref_id__demoPrdReference:
           description: Product reference
           type: string
           maxLength: 10
-        row_idx:
-          description: History record index
-          type: integer
         demoPrdAvailable:
           description: Available product?
           type: boolean
-        row_ref_id__demoPrdSupId:
-          description: Product supplier
-          type: string
-          maxLength: 11
         created_dt_hist:
           description: Created date
           type: string
@@ -360,18 +349,6 @@ components:
         demoPrdUnitPrice:
           description: Unit price of product
           type: number
-        row_id:
-          description: Unique technical row ID
-          type: string
-          maxLength: 11
-        demoPrdName:
-          description: Product name
-          type: string
-          maxLength: 100
-        created_by_hist:
-          description: Created by
-          type: string
-          maxLength: 100
         row_ref_id:
           description: Record row ID
           type: string
@@ -380,6 +357,34 @@ components:
           description: Product reference
           type: string
           maxLength: 10
+        row_ref_id__demoPrdSupId__demoSupCode:
+          description: Supplier unique code (e.g. `MYSUP`)
+          type: string
+          maxLength: 50
+        row_idx:
+          description: History record index
+          type: integer
+        row_ref_id__demoPrdSupId:
+          description: Product supplier
+          type: string
+          maxLength: 11
+        row_id:
+          description: Unique technical row ID
+          type: string
+          maxLength: 11
+        demoPrdName:
+          description: Product name
+          type: string
+          maxLength: 100
+        row_diff:
+          description: Calculated difference between two sibling rows of historic
+            object
+          type: string
+          maxLength: 2000000
+        created_by_hist:
+          description: Created by
+          type: string
+          maxLength: 100
     Error400:
       description: Bad request
       type: object
@@ -483,8 +488,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         row_ref_id__demoOrdPrdId:
@@ -499,6 +504,11 @@ components:
           description: Unique technical row ID
           type: string
           maxLength: 11
+        row_diff:
+          description: Calculated difference between two sibling rows of historic
+            object
+          type: string
+          maxLength: 2000000
         created_by_hist:
           description: Created by
           type: string
@@ -569,7 +579,7 @@ components:
         demoPrdComments:
           description: Comments on product
           type: string
-          maxLength: 50000
+          maxLength: 2147483647
         demoPrdDescription:
           description: Product description
           type: string
@@ -664,6 +674,11 @@ components:
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
+        row_diff:
+          description: Calculated difference between two sibling rows of historic
+            object
+          type: string
+          maxLength: 2000000
         created_by_hist:
           description: Created by
           type: string
@@ -705,7 +720,7 @@ components:
         demoCtcComments:
           description: Comments on contact
           type: string
-          maxLength: 50000
+          maxLength: 2147483647
         demoCtcCanal:
           description: Canal used for contact
           type: string
@@ -803,15 +818,15 @@ components:
         demoCtcMessages:
           description: Messages
           type: string
-          maxLength: 50000
+          maxLength: 2147483647
         demoCtcOrdId__demoOrdStatus:
           description: Order status
           type: string
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoCtcPicture:
@@ -905,7 +920,7 @@ components:
         demoSupComments:
           description: Comments on supplier
           type: string
-          maxLength: 50000
+          maxLength: 2147483647
     ArrayOfDemoClient:
       description: List of Customers
       type: array
@@ -1256,8 +1271,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -1978,8 +1993,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -2051,8 +2066,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -2633,6 +2648,13 @@ paths:
       - schema:
           type: string
         in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
+        required: false
+      - schema:
+          type: string
+        in: query
         name: row_ref_id
         description: Search filter for Record row ID
         required: false
@@ -2700,8 +2722,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -3523,6 +3545,13 @@ paths:
       - schema:
           type: string
         in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
+        required: false
+      - schema:
+          type: string
+        in: query
         name: row_ref_id
         description: Search filter for Record row ID
         required: false
@@ -3633,6 +3662,13 @@ paths:
         in: query
         name: _doc
         description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
         required: false
       - schema:
           type: string
@@ -3805,8 +3841,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoCliCountry
         description: Search filter for Customer country
@@ -4551,7 +4587,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Demo
   title: Demo
-  version: '6'
+  version: '7'
 tags:
 - name: DemoClient
   description: Customer

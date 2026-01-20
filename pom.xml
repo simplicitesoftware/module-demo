@@ -7,21 +7,21 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
-  <version>6-SNAPSHOT</version>
+  <version>7-SNAPSHOT</version>
   <artifactId>Demo</artifactId>
   <name>Demo</name>
   <description>Simplicite module: Demo</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <simplicite.url>https://dev6.dev2.simplicite.io</simplicite.url>
-    <simplicite.version>6.2-SNAPSHOT</simplicite.version>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <simplicite.url>https://dev7.dev2.simplicite.io</simplicite.url>
+    <simplicite.version>7.0-SNAPSHOT</simplicite.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.proc>full</maven.compiler.proc>
     <skipTests>true</skipTests>
     <sonar.projectKey>simplicite-modules-Demo</sonar.projectKey>
     <sonar.projectName>Demo</sonar.projectName>
-    <sonar.projectVersion>6</sonar.projectVersion>
+    <sonar.projectVersion>7</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
     <sonar.exclusions>Demo.xml,Demo.json,Demo-*.yml,configuration/**,**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
@@ -43,7 +43,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.4.2</version>
+        <version>3.5.0</version>
         <configuration>
           <excludes>
             <exclude>.gitkeep</exclude>
@@ -64,18 +64,19 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.6.0</version>
         <configuration>
-          <configLocation>${project.basedir}/.checkstyle-configuration</configLocation>
+          <configLocation>${project.basedir}/.checkstyle-configuration.xml</configLocation>
           <includeTestSourceDirectory>true</includeTestSourceDirectory>
         </configuration>
         <dependencies>
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>12.1.1</version>
+            <version>12.1.2</version>
           </dependency>
         </dependencies>
         <executions>
           <execution>
+            <?m2e ignore?>
             <id>checkstyle-validation</id>
             <phase>validate</phase>
             <goals>
@@ -90,6 +91,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
         <version>3.6.0</version>
         <executions>
           <execution>
+            <?m2e ignore?>
             <id>npm-install</id>
             <phase>validate</phase>
             <goals>
@@ -103,6 +105,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </configuration>
           </execution>
           <execution>
+            <?m2e ignore?>
             <id>jshint-validation</id>
             <phase>validate</phase>
             <goals>
@@ -117,6 +120,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </configuration>
           </execution>
           <execution>
+            <?m2e ignore?>
             <id>eslint-validation</id>
             <phase>validate</phase>
             <goals>
@@ -131,6 +135,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </configuration>
           </execution>
           <execution>
+            <?m2e ignore?>
             <id>stylelint-validation</id>
             <phase>validate</phase>
             <goals>
@@ -151,7 +156,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <repositories>
     <repository>
       <id>simplicite</id>
-      <url>https://platform.simplicite.io/6.2/maven</url>
+      <url>https://platform.simplicite.io/7.0/maven</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>

@@ -105,7 +105,7 @@ A contact can be linked or not a an order of the selelcted client
 | _Ref. `demoCtcOrdId.demoOrdQuantity`_                        | _int(11)_                                |          |           |          | _Product quantity ordered_                                                       |
 | `demoCtcFile`                                                | document                                 |          | yes       |          | Contact attached file                                                            |
 | `demoCtcPicture`                                             | image                                    |          | yes       |          | -                                                                                |
-| `demoCtcMessages`                                            | notepad(50000)                           | yes      | yes       |          | Messages                                                                         |
+| `demoCtcMessages`                                            | notepad(2147483647)                      | yes      | yes       |          | Messages                                                                         |
 
 ### Lists
 
@@ -214,7 +214,7 @@ An order is for one single product.
 | `demoOrdQuantity`                                            | int(11)                                  | yes      | yes       |          | Product quantity ordered                                                         |
 | `demoOrdTotal`                                               | float(11, 0)                             |          |           |          | Total order amount                                                               |
 | `demoOrdVAT`                                                 | float(11, 2)                             |          |           |          | VAT for order                                                                    |
-| `demoOrdComments`                                            | notepad(50000)                           |          | yes       |          | Comments on order                                                                |
+| `demoOrdComments`                                            | notepad(2147483647)                      |          | yes       |          | Comments on order                                                                |
 
 ### Lists
 
@@ -316,7 +316,7 @@ suppliers of products that can be ordered.
 | `demoSupLogo`                                                | image                                    |          | yes       |          | Supplier logo                                                                    |
 | `demoSupUsrId` link to **`User`**                            | id                                       |          | yes       |          | User responsible of supplier                                                     |
 | _Ref. `demoSupUsrId.usr_login`_                              | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
-| `demoSupComments`                                            | notepad(50000)                           |          | yes       |          | Comments on supplier                                                             |
+| `demoSupComments`                                            | notepad(2147483647)                      |          | yes       |          | Comments on supplier                                                             |
 
 `DemoProduct` business object definition
 ----------------------------------------
@@ -349,7 +349,7 @@ Its reference is unique per supplier.
 | `demoPrdDocumentation`                                       | html(1000000)                            |          | yes       |          | Product documentation                                                            |
 | `demoPrdBrochure`                                            | document                                 |          | yes       |          | Product brochure                                                                 |
 | `demoPrdOnlineDoc`                                           | url(255)                                 |          | yes       |          | Online product documentation URL                                                 |
-| `demoPrdComments`                                            | notepad(50000)                           |          | yes       |          | Comments on product                                                              |
+| `demoPrdComments`                                            | notepad(2147483647)                      |          | yes       |          | Comments on product                                                              |
 
 ### Lists
 

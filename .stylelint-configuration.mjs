@@ -1,0 +1,19 @@
+/** @type {import('stylelint').Config} */
+export default {
+  extends: [
+    "stylelint-config-standard",
+    "stylelint-config-standard-less"
+  ],
+  plugins: [
+    "@stylistic/stylelint-plugin"
+  ],
+  rules: {
+    "@stylistic/indentation": "tab",
+    "@stylistic/max-empty-lines": 1,
+    "color-hex-length": "short",
+    "declaration-empty-line-before": "never",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "rule-empty-line-before": "never",
+    "selector-class-pattern": "[a-zA-Z0-9_-]+"
+  }
+}
