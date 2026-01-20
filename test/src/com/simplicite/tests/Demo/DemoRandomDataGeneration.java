@@ -14,66 +14,66 @@ import org.junit.Test;
  * Random data generation
  */
 public class DemoRandomDataGeneration {
-	@Test
-	public void generateData() {
-		generateOrders(Tool.parseInt(System.getenv("DEMO_NB_ORDERS"), 0));
-	}
+    @Test
+    public void generateData() {
+        generateOrders(Tool.parseInt(System.getenv("DEMO_NB_ORDERS"), 0));
+    }
 
-	protected void generateOrders(int n) {
-		if (n <= 0)
-			return;
+    protected void generateOrders(int n) {
+        if (n <= 0)
+            return;
 
-		Grant g = Grant.getSystemAdmin();
-		ObjectDB ord = null;
-		try {
-			ord = g.getIsolatedObject("DemoOrder");
+        Grant g = Grant.getSystemAdmin();
+        ObjectDB ord = null;
+        try {
+            ord = g.getIsolatedObject("DemoOrder");
 
-			for (int i = 0; i < n; i++) {
-				ord.resetValues();
-				String d = getRandomDateInLastNDays(90);
-				ord.setFieldValue("demoOrdDate", d);
-				ord.setFieldValue("demoOrdDeliveryDate", getRandomDeliveryDate(d));
-				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
-				ord.setFieldValue("demoOrdCliId", getRandomRowId("demo_client"));
-				ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
-				ord.setFieldValue("demoOrdQuantity", Tool.randomInt(1, 5));
-				ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
-				ord.getTool().validateAndSave();
-			}
-		} catch (Exception e) {
-			AppLog.error(e.getMessage(), e, g);
-		} finally {
-			if (ord != null)
-				ord.destroy();
-		}
-	}
+            for (int i = 0; i < n; i++) {
+                ord.resetValues();
+                String d = getRandomDateInLastNDays(90);
+                ord.setFieldValue("demoOrdDate", d);
+                ord.setFieldValue("demoOrdDeliveryDate", getRandomDeliveryDate(d));
+                ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
+                ord.setFieldValue("demoOrdCliId", getRandomRowId("demo_client"));
+                ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
+                ord.setFieldValue("demoOrdQuantity", Tool.randomInt(1, 5));
+                ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
+                ord.getTool().validateAndSave();
+            }
+        } catch (Exception e) {
+            AppLog.error(e.getMessage(), e, g);
+        } finally {
+            if (ord != null)
+                ord.destroy();
+        }
+    }
 
-	private static String getRandomStatus(ObjectField f) {
-		String[] codes = f.getList().getCodes(true);
-		return codes[Tool.randomInt(0, codes.length - 1)];
-	}
+    private static String getRandomStatus(ObjectField f) {
+        String[] codes = f.getList().getCodes(true);
+        return codes[Tool.randomInt(0, codes.length - 1)];
+    }
 
-	private static String getRandomDateInLastNDays(int n) {
-		return Tool.shiftDays(Tool.getCurrentDate(), Tool.randomInt(-n, 0));
-	}
+    private static String getRandomDateInLastNDays(int n) {
+        return Tool.shiftDays(Tool.getCurrentDate(), Tool.randomInt(-n, 0));
+    }
 
-	private static String getRandomDeliveryDate(String orderDate) {
-		String d = Tool.shiftDays(orderDate, Tool.randomInt(0, 5));
-		String h = String.format("%02d", Tool.randomInt(8, 17));
-		return d + " " + h + ":00:00";
-	}
+    private static String getRandomDeliveryDate(String orderDate) {
+        String d = Tool.shiftDays(orderDate, Tool.randomInt(0, 5));
+        String h = String.format("%02d", Tool.randomInt(8, 17));
+        return d + " " + h + ":00:00";
+    }
 
-	private static String getRandomRowId(String tableName) throws DBException {
-		return Grant.getSystemAdmin().simpleQuery("SELECT row_id FROM " + tableName + " ORDER BY " + getSqlRand() + " LIMIT 1");
-	}
+    private static String getRandomRowId(String tableName) throws DBException {
+        return Grant.getSystemAdmin().simpleQuery("SELECT row_id FROM " + tableName + " ORDER BY " + getSqlRand() + " LIMIT 1");
+    }
 
-	private static String getSqlRand() throws DBException {
-		int dbv = Grant.getSystemAdmin().getDBVendor();
-		if (dbv == Globals.DB_HSQLDB || dbv == Globals.DB_MYSQL)
-			return "RAND()";
-		else if (dbv == Globals.DB_POSTGRESQL)
-			return "RANDOM()";
-		else
-			throw new DBException("This function doesn't support this database (only HSQLDB, MySQL/MariaDB, PostgreSQL)");
-	}
+    private static String getSqlRand() throws DBException {
+        int dbv = Grant.getSystemAdmin().getDBVendor();
+        if (dbv == Globals.DB_HSQLDB || dbv == Globals.DB_MYSQL)
+            return "RAND()";
+        else if (dbv == Globals.DB_POSTGRESQL)
+            return "RANDOM()";
+        else
+            throw new DBException("This function doesn't support this database (only HSQLDB, MySQL/MariaDB, PostgreSQL)");
+    }
 }

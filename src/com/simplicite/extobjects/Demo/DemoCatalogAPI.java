@@ -18,43 +18,43 @@ import com.simplicite.util.annotations.RESTServiceOperation;
  */
 @RESTService(title = "catalog", desc = "Product catalog API", auth = false)
 public class DemoCatalogAPI extends com.simplicite.webapp.services.RESTServiceExternalObject {
-	private static final long serialVersionUID = 1L;
+    public static final long serialVersionUID = 1L;
 
-	/**
-	 * Product catalog service.
-	 * @param ref Product reference
-	 * @return JSON array of products
-	 */
-	@RESTServiceOperation(method = "get", desc = "Available products")
-	public JSONObject catalog(
-		@RESTServiceParam(name = "ref", desc = "Product reference", required = false)
-		String ref
-	) {
-		JSONArray res = new JSONArray();
+    /**
+     * Product catalog service.
+     * @param ref Product reference
+     * @return JSON array of products
+     */
+    @RESTServiceOperation(method = "get", desc = "Available products")
+    public JSONObject catalog(
+        @RESTServiceParam(name = "ref", desc = "Product reference", required = false)
+        String ref
+    ) {
+        JSONArray res = new JSONArray();
 
-		ObjectDB prd = getGrant().getTmpObject("DemoProduct");
-		prd.resetFilters();
-		prd.getField("demoPrdAvailable").setFilter(Tool.TRUE);
-		if (!Tool.isEmpty(ref))
-			prd.getField("demoPrdReference").setFilter(ref);
+        ObjectDB prd = getGrant().getTmpObject("DemoProduct");
+        prd.resetFilters();
+        prd.getField("demoPrdAvailable").setFilter(Tool.TRUE);
+        if (!Tool.isEmpty(ref))
+            prd.getField("demoPrdReference").setFilter(ref);
 
-		List<String[]> rows = prd.search();
-		for (int i = 0; i < rows.size(); i++) {
-			prd.setValues(rows.get(i), false);
+        List<String[]> rows = prd.search();
+        for (int i = 0; i < rows.size(); i++) {
+            prd.setValues(rows.get(i), false);
 
-			res.put(new JSONObject()
-				.put("ref", prd.getFieldValue("demoPrdReference"))
-				.put("name", prd.getFieldValue("demoPrdName"))
-			);
-		}
+            res.put(new JSONObject()
+                .put("ref", prd.getFieldValue("demoPrdReference"))
+                .put("name", prd.getFieldValue("demoPrdName"))
+            );
+        }
 
-		return new JSONObject().put("count", res.length()).put("products", res);
-	}
+        return new JSONObject().put("count", res.length()).put("products", res);
+    }
 
-	@Override
-	public Object get(Parameters params) throws HTTPException {
-		if (params.getParameter("openapi") != null)
-			return openapi();
-		return catalog(params.getParameter("ref"));
-	}
+    @Override
+    public Object get(Parameters params) throws HTTPException {
+        if (params.getParameter("openapi") != null)
+            return openapi();
+        return catalog(params.getParameter("ref"));
+    }
 }

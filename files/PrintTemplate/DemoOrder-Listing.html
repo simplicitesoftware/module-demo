@@ -10,33 +10,33 @@
 </head>
 <body>
 <div class="demo">
-	<header><img src="[IMGRESOURCE:DEMO_PRINT_LOGO]" alt="Logo"/></header>
-	<section>
-		<table>
-			<thead>
-				<tr>
-					<th>[LABEL:DemoOrder:demoOrdNumber]</th>
-					<th>[LABEL:DemoOrder:demoOrdDate]</th>
-					<th>[LABEL:DemoOrder:demoOrdStatus]</th>
-					<th>[LABEL:DemoOrder:demoOrdPrdId.demoPrdName]</th>
-					<th>EAN13</th>
-					<th>[LABEL:DemoOrder:demoOrdPrdId.demoPrdSupId]</th>
-					<th>[LABEL:DemoOrder:demoOrdTotal]</th>
-				</tr>
-			</thead>
-			<tbody>[BEGIN]
-				<tr>
-					<td>[VALUE:demoOrdNumber]</td>
-					<td>[VALUE:demoOrdDate]</td>
-					<td>[VALUE:demoOrdStatus]</td>
-					<td>[VALUE:demoOrdPrdId.demoPrdReference]<br/><span class="small">[VALUE:demoOrdPrdId.demoPrdName]</span></td>
-					<td><img style="width: 128px;" src="[VALUE:demoOrdPrdId.demoPrdEan13Image]"/></td>
-					<td>[VALUE:demoOrdPrdId.demoPrdSupId.demoSupName]</td>
-					<td style="text-align: right;">[VALUE:demoOrdTotal] EUR</td>
-				</tr>
-			[END]</tbody>
-		</table>
-	</section>
+    <header><img src="[IMGRESOURCE:DEMO_PRINT_LOGO]" alt="Logo"/></header>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>[LABEL:DemoOrder:demoOrdNumber]</th>
+                    <th>[LABEL:DemoOrder:demoOrdDate]</th>
+                    <th>[LABEL:DemoOrder:demoOrdStatus]</th>
+                    <th>[LABEL:DemoOrder:demoOrdPrdId.demoPrdName]</th>
+                    <th>EAN13</th>
+                    <th>[LABEL:DemoOrder:demoOrdPrdId.demoPrdSupId]</th>
+                    <th>[LABEL:DemoOrder:demoOrdTotal]</th>
+                </tr>
+            </thead>
+            <tbody>[BEGIN]
+                <tr>
+                    <td>[VALUE:demoOrdNumber]</td>
+                    <td>[VALUE:demoOrdDate]</td>
+                    <td>[VALUE:demoOrdStatus]</td>
+                    <td>[VALUE:demoOrdPrdId.demoPrdReference]<br/><span class="small">[VALUE:demoOrdPrdId.demoPrdName]</span></td>
+                    <td><img style="width: 128px;" src="[VALUE:demoOrdPrdId.demoPrdEan13Image]"/></td>
+                    <td>[VALUE:demoOrdPrdId.demoPrdSupId.demoSupName]</td>
+                    <td style="text-align: right;">[VALUE:demoOrdTotal] EUR</td>
+                </tr>
+            [END]</tbody>
+        </table>
+    </section>
 </div>
 </body>
 </html>

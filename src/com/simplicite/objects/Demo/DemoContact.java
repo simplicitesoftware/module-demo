@@ -21,75 +21,75 @@ import com.simplicite.webapp.web.WebPage;
  * Contact business object
  */
 public class DemoContact extends ObjectDB {
-	private static final long serialVersionUID = 1L;
+    public static final long serialVersionUID = 1L;
 
-	@Override
-	public void postLoad() {
-		// Comments are only visible to administrators and users
-		if (getGrant().hasResponsibility("DEMO_ADMIN") || getGrant().hasResponsibility("DEMO_USER"))
-			getField("demoCtcComments").setVisibility(ObjectField.VIS_FORM);
-	}
+    @Override
+    public void postLoad() {
+        // Comments are only visible to administrators and users
+        if (getGrant().hasResponsibility("DEMO_ADMIN") || getGrant().hasResponsibility("DEMO_USER"))
+            getField("demoCtcComments").setVisibility(ObjectField.VIS_FORM);
+    }
 
-	/**
-	 * HTML publication (using Mustache(R) templating) method
-	 * @param pt Publication template
-	 * @return Publication result
+    /**
+     * HTML publication (using Mustache(R) templating) method
+     * @param pt Publication template
+     * @return Publication result
  	 */
  	@BusinessObjectPublication
-	public Object printMustache(PrintTemplate pt) {
-		try {
-			WebPage wp = new WebPage(pt.getDisplay());
-			wp.setBodyCSSClass("demo");
-			wp.setTitle(getDisplay());
-			wp.appendCSS(HTMLTool.getResourceCSSContent(getGrant(), "DEMO_PRINT_STYLES")); // Inlined styles
-			wp.append(MustacheTool.apply(pt));
-			return wp.toString();
-		} catch (Exception e) {
-			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
-			return e.getMessage();
-		}
-	}
+    public Object printMustache(PrintTemplate pt) {
+        try {
+            WebPage wp = new WebPage(pt.getDisplay());
+            wp.setBodyCSSClass("demo");
+            wp.setTitle(getDisplay());
+            wp.appendCSS(HTMLTool.getResourceCSSContent(getGrant(), "DEMO_PRINT_STYLES")); // Inlined styles
+            wp.append(MustacheTool.apply(pt));
+            return wp.toString();
+        } catch (Exception e) {
+            AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+            return e.getMessage();
+        }
+    }
 
-	/**
-	 * Microsoft Excel(R) sheet publication method
-	 * @param pt Publication template
-	 * @return Publication result
+    /**
+     * Microsoft Excel(R) sheet publication method
+     * @param pt Publication template
+     * @return Publication result
  	 */
-	@BusinessObjectPublication
-	public Object printExcel(PrintTemplate pt) {
-		try {
-			// Build rows from selected IDs or from current filters
-			List<String[]>rows = new ArrayList<>();
-			List<String> ids = getSelectedIds();
-			if (!Tool.isEmpty(ids)) {
-				for (int k = 0; k < ids.size(); k++)
-					if (select(ids.get(k)))
-						rows.add(getValues());
-			} else {
-				rows = search(false);
-			}
+    @BusinessObjectPublication
+    public Object printExcel(PrintTemplate pt) {
+        try {
+            // Build rows from selected IDs or from current filters
+            List<String[]>rows = new ArrayList<>();
+            List<String> ids = getSelectedIds();
+            if (!Tool.isEmpty(ids)) {
+                for (int k = 0; k < ids.size(); k++)
+                    if (select(ids.get(k)))
+                        rows.add(getValues());
+            } else {
+                rows = search(false);
+            }
 
-			ExcelTool xls = new ExcelTool(true); // true = XLSX format
-			Sheet sheet = xls.addSheet("Contacts");
-			for (int i = 0; i < rows.size(); i++) {
-				ExcelRow r = new ExcelRow(i);
-				String[] row = rows.get(i);
-				for (int j = 0; j < row.length; j++) {
-					r.add(xls.newCell(j, row[j]));
-				}
-				xls.addRow(sheet, r);
-			}
+            ExcelTool xls = new ExcelTool(true); // true = XLSX format
+            Sheet sheet = xls.addSheet("Contacts");
+            for (int i = 0; i < rows.size(); i++) {
+                ExcelRow r = new ExcelRow(i);
+                String[] row = rows.get(i);
+                for (int j = 0; j < row.length; j++) {
+                    r.add(xls.newCell(j, row[j]));
+                }
+                xls.addRow(sheet, r);
+            }
 
-			return xls.generateToByteArray();
-		} catch (Exception e) {
-			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
-			return e.getMessage();
-		}
-	}
+            return xls.generateToByteArray();
+        } catch (Exception e) {
+            AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+            return e.getMessage();
+        }
+    }
 
-	@Override
-	public boolean canReference(String objName, String fkFieldName) {
-		// Hide history records on tree view
-		return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
-	}
+    @Override
+    public boolean canReference(String objName, String fkFieldName) {
+        // Hide history records on tree view
+        return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
+    }
 }
