@@ -15,7 +15,7 @@ import com.simplicite.util.tools.PhoneNumTool;
  * Customer business object
  */
 public class DemoClient extends ObjectDB {
-	private static final long serialVersionUID = 1L;
+	public static final long serialVersionUID = 1L;
 
 	@Override
 	public void postLoad() {

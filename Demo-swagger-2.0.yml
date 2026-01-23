@@ -957,8 +957,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoOrdPrdId
         description: Search filter for Order product
@@ -1435,6 +1435,12 @@ paths:
         name: _doc
         description: Documentation?
         type: boolean
+        required: false
+      - in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
+        type: string
         required: false
       - in: query
         name: row_ref_id
@@ -2180,6 +2186,12 @@ paths:
         type: boolean
         required: false
       - in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
+        type: string
+        required: false
+      - in: query
         name: row_ref_id
         description: Search filter for Record row ID
         type: string
@@ -2274,6 +2286,12 @@ paths:
         name: _doc
         description: Documentation?
         type: boolean
+        required: false
+      - in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
+        type: string
         required: false
       - in: query
         name: row_ref_id
@@ -2424,8 +2442,8 @@ paths:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       - in: query
         name: demoCliCoords
         description: Search filter for Customer geoccordinates
@@ -3133,8 +3151,8 @@ definitions:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoCliAddress1:
         description: Customer address (line 1)
         type: string
@@ -3291,8 +3309,8 @@ definitions:
         enum:
         - FR
         - UK
-        - SP
         - IT
+        - SP
       demoOrdPrdId__demoPrdPicture:
         description: Product picture
         type: object
@@ -3372,24 +3390,13 @@ definitions:
       - Availability
     type: object
     properties:
-      row_ref_id__demoPrdSupId__demoSupCode:
-        description: Supplier unique code (e.g. `MYSUP`)
-        type: string
-        maxLength: 50
       row_ref_id__demoPrdReference:
         description: Product reference
         type: string
         maxLength: 10
-      row_idx:
-        description: History record index
-        type: integer
       demoPrdAvailable:
         description: Available product?
         type: boolean
-      row_ref_id__demoPrdSupId:
-        description: Product supplier
-        type: string
-        maxLength: 11
       created_dt_hist:
         description: Created date
         type: string
@@ -3398,18 +3405,6 @@ definitions:
       demoPrdUnitPrice:
         description: Unit price of product
         type: number
-      row_id:
-        description: Unique technical row ID
-        type: string
-        maxLength: 11
-      demoPrdName:
-        description: Product name
-        type: string
-        maxLength: 100
-      created_by_hist:
-        description: Created by
-        type: string
-        maxLength: 100
       row_ref_id:
         description: Record row ID
         type: string
@@ -3418,6 +3413,33 @@ definitions:
         description: Product reference
         type: string
         maxLength: 10
+      row_ref_id__demoPrdSupId__demoSupCode:
+        description: Supplier unique code (e.g. `MYSUP`)
+        type: string
+        maxLength: 50
+      row_idx:
+        description: History record index
+        type: integer
+      row_ref_id__demoPrdSupId:
+        description: Product supplier
+        type: string
+        maxLength: 11
+      row_id:
+        description: Unique technical row ID
+        type: string
+        maxLength: 11
+      demoPrdName:
+        description: Product name
+        type: string
+        maxLength: 100
+      row_diff:
+        description: Calculated difference between two sibling rows of historic object
+        type: string
+        maxLength: 2000000
+      created_by_hist:
+        description: Created by
+        type: string
+        maxLength: 100
   Error400:
     description: Bad request
     type: object
@@ -3537,6 +3559,10 @@ definitions:
         description: Unique technical row ID
         type: string
         maxLength: 11
+      row_diff:
+        description: Calculated difference between two sibling rows of historic object
+        type: string
+        maxLength: 2000000
       created_by_hist:
         description: Created by
         type: string
@@ -3702,6 +3728,10 @@ definitions:
         type: string
         maxLength: 19
         example: yyyy-MM-dd HH:mm:ss
+      row_diff:
+        description: Calculated difference between two sibling rows of historic object
+        type: string
+        maxLength: 2000000
       created_by_hist:
         description: Created by
         type: string

@@ -95,8 +95,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -253,8 +253,8 @@ components:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -334,24 +334,13 @@ components:
         - Availability
       type: object
       properties:
-        row_ref_id__demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
-          type: string
-          maxLength: 50
         row_ref_id__demoPrdReference:
           description: Product reference
           type: string
           maxLength: 10
-        row_idx:
-          description: History record index
-          type: integer
         demoPrdAvailable:
           description: Available product?
           type: boolean
-        row_ref_id__demoPrdSupId:
-          description: Product supplier
-          type: string
-          maxLength: 11
         created_dt_hist:
           description: Created date
           type: string
@@ -360,18 +349,6 @@ components:
         demoPrdUnitPrice:
           description: Unit price of product
           type: number
-        row_id:
-          description: Unique technical row ID
-          type: string
-          maxLength: 11
-        demoPrdName:
-          description: Product name
-          type: string
-          maxLength: 100
-        created_by_hist:
-          description: Created by
-          type: string
-          maxLength: 100
         row_ref_id:
           description: Record row ID
           type: string
@@ -380,6 +357,34 @@ components:
           description: Product reference
           type: string
           maxLength: 10
+        row_ref_id__demoPrdSupId__demoSupCode:
+          description: Supplier unique code (e.g. `MYSUP`)
+          type: string
+          maxLength: 50
+        row_idx:
+          description: History record index
+          type: integer
+        row_ref_id__demoPrdSupId:
+          description: Product supplier
+          type: string
+          maxLength: 11
+        row_id:
+          description: Unique technical row ID
+          type: string
+          maxLength: 11
+        demoPrdName:
+          description: Product name
+          type: string
+          maxLength: 100
+        row_diff:
+          description: Calculated difference between two sibling rows of historic
+            object
+          type: string
+          maxLength: 2000000
+        created_by_hist:
+          description: Created by
+          type: string
+          maxLength: 100
     Error400:
       description: Bad request
       type: object
@@ -499,6 +504,11 @@ components:
           description: Unique technical row ID
           type: string
           maxLength: 11
+        row_diff:
+          description: Calculated difference between two sibling rows of historic
+            object
+          type: string
+          maxLength: 2000000
         created_by_hist:
           description: Created by
           type: string
@@ -664,6 +674,11 @@ components:
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
+        row_diff:
+          description: Calculated difference between two sibling rows of historic
+            object
+          type: string
+          maxLength: 2000000
         created_by_hist:
           description: Created by
           type: string
@@ -2051,8 +2066,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -2629,6 +2644,13 @@ paths:
         in: query
         name: _doc
         description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
         required: false
       - schema:
           type: string
@@ -3523,6 +3545,13 @@ paths:
       - schema:
           type: string
         in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
+        required: false
+      - schema:
+          type: string
+        in: query
         name: row_ref_id
         description: Search filter for Record row ID
         required: false
@@ -3633,6 +3662,13 @@ paths:
         in: query
         name: _doc
         description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_diff
+        description: Search filter for Calculated difference between two sibling rows
+          of historic object
         required: false
       - schema:
           type: string
@@ -3805,8 +3841,8 @@ paths:
           enum:
           - FR
           - UK
-          - SP
           - IT
+          - SP
         in: query
         name: demoCliCountry
         description: Search filter for Customer country

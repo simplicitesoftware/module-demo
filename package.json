@@ -7,7 +7,7 @@
     "jshint": "latest",
     "globals": "latest",
     "stylelint-config-standard": "latest",
-    "postcss-less": "latest"
+    "@stylistic/stylelint-plugin": "latest"
   },
   "name": "Demo",
   "scripts": {

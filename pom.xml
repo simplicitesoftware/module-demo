@@ -14,7 +14,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simplicite.url>https://dev6.dev2.simplicite.io</simplicite.url>
-    <simplicite.version>6.2-SNAPSHOT</simplicite.version>
+    <simplicite.version>6.3-SNAPSHOT</simplicite.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.proc>full</maven.compiler.proc>
@@ -43,7 +43,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.4.2</version>
+        <version>3.5.0</version>
         <configuration>
           <excludes>
             <exclude>.gitkeep</exclude>
@@ -71,11 +71,12 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>12.1.1</version>
+            <version>12.3.1</version>
           </dependency>
         </dependencies>
         <executions>
           <execution>
+            <?m2e ignore?>
             <id>checkstyle-validation</id>
             <phase>validate</phase>
             <goals>
@@ -87,9 +88,10 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.6.0</version>
+        <version>3.6.3</version>
         <executions>
           <execution>
+            <?m2e ignore?>
             <id>npm-install</id>
             <phase>validate</phase>
             <goals>
@@ -103,6 +105,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </configuration>
           </execution>
           <execution>
+            <?m2e ignore?>
             <id>jshint-validation</id>
             <phase>validate</phase>
             <goals>
@@ -117,6 +120,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </configuration>
           </execution>
           <execution>
+            <?m2e ignore?>
             <id>eslint-validation</id>
             <phase>validate</phase>
             <goals>
@@ -131,6 +135,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </configuration>
           </execution>
           <execution>
+            <?m2e ignore?>
             <id>stylelint-validation</id>
             <phase>validate</phase>
             <goals>
@@ -151,7 +156,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <repositories>
     <repository>
       <id>simplicite</id>
-      <url>https://platform.simplicite.io/6.2/maven</url>
+      <url>https://platform.simplicite.io/6.3/maven</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
