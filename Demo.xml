@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1264" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1267" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -514,6 +514,24 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 <object>
 	<name>UserSysParam</name>
 	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>MENU_SEARCHABLE</usp_param_id.sys_code>
+		<usp_value><![CDATA[no]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
+		<usp_param_id.sys_code>MENU_SEARCHABLE</usp_param_id.sys_code>
+		<usp_value><![CDATA[no]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
+		<usp_param_id.sys_code>MENU_SEARCHABLE</usp_param_id.sys_code>
+		<usp_value><![CDATA[no]]></usp_value>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<usp_user_id.usr_login>website</usp_user_id.usr_login>
 		<usp_param_id.sys_code>USE_WEBSERVICES_OBJECTPOOL</usp_param_id.sys_code>
