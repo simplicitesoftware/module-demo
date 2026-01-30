@@ -2109,6 +2109,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliAddress2</fld_name>
@@ -2151,6 +2152,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliCity</fld_name>
@@ -2193,6 +2195,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliCode</fld_name>
@@ -2235,6 +2238,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliComments</fld_name>
@@ -2277,6 +2281,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliCoords</fld_name>
@@ -2319,6 +2324,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliCountry</fld_name>
@@ -2361,6 +2367,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliEmail</fld_name>
@@ -2403,6 +2410,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliFax</fld_name>
@@ -2445,6 +2453,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliFirstname</fld_name>
@@ -2487,6 +2496,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliHomePhone</fld_name>
@@ -2529,6 +2539,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliLastname</fld_name>
@@ -2571,6 +2582,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliMobilePhone</fld_name>
@@ -2613,6 +2625,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliPlacemapLabel</fld_name>
@@ -2655,6 +2668,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliType</fld_name>
@@ -2697,6 +2711,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliWorkPhone</fld_name>
@@ -2739,6 +2754,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCliZipCode</fld_name>
@@ -2781,6 +2797,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcCanal</fld_name>
@@ -2823,6 +2840,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcCliId</fld_name>
@@ -2865,6 +2883,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcComments</fld_name>
@@ -2907,6 +2926,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcDatetime</fld_name>
@@ -2949,6 +2969,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcFile</fld_name>
@@ -2991,6 +3012,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcMessages</fld_name>
@@ -3033,6 +3055,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcOrdId</fld_name>
@@ -3075,6 +3098,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcPicture</fld_name>
@@ -3117,6 +3141,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcPriority</fld_name>
@@ -3159,6 +3184,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcStatus</fld_name>
@@ -3201,6 +3227,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcSubType</fld_name>
@@ -3243,6 +3270,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoCtcType</fld_name>
@@ -3285,6 +3313,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdCliId</fld_name>
@@ -3327,6 +3356,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdComments</fld_name>
@@ -3369,6 +3399,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdDate</fld_name>
@@ -3411,6 +3442,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdDeliveryDate</fld_name>
@@ -3453,6 +3485,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdNumber</fld_name>
@@ -3495,6 +3528,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdPrdId</fld_name>
@@ -3537,6 +3571,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdQuantity</fld_name>
@@ -3579,6 +3614,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdStatus</fld_name>
@@ -3621,6 +3657,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdTotal</fld_name>
@@ -3663,6 +3700,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdUnitPrice</fld_name>
@@ -3705,6 +3743,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoOrdVAT</fld_name>
@@ -3747,6 +3786,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdAvailable</fld_name>
@@ -3789,6 +3829,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdBrochure</fld_name>
@@ -3831,6 +3872,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdComments</fld_name>
@@ -3873,6 +3915,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdDescription</fld_name>
@@ -3915,6 +3958,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdDocumentation</fld_name>
@@ -3957,6 +4001,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdEan13</fld_name>
@@ -3999,6 +4044,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdEan13Image</fld_name>
@@ -4041,6 +4087,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdFeatured</fld_name>
@@ -4083,6 +4130,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdIncrement</fld_name>
@@ -4125,6 +4173,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdName</fld_name>
@@ -4167,6 +4216,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdOnlineDoc</fld_name>
@@ -4209,6 +4259,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdPicture</fld_name>
@@ -4251,6 +4302,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdReference</fld_name>
@@ -4293,6 +4345,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax>REF&lt;000&gt;</fld_incrementsyntax>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdStock</fld_name>
@@ -4335,6 +4388,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdSupId</fld_name>
@@ -4377,6 +4431,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdType</fld_name>
@@ -4419,6 +4474,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoPrdUnitPrice</fld_name>
@@ -4461,6 +4517,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupCode</fld_name>
@@ -4503,6 +4560,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupComments</fld_name>
@@ -4545,6 +4603,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupDescription</fld_name>
@@ -4587,6 +4646,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupEmail</fld_name>
@@ -4629,6 +4689,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupFax</fld_name>
@@ -4671,6 +4732,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupLogo</fld_name>
@@ -4713,6 +4775,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupName</fld_name>
@@ -4755,6 +4818,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupPhone</fld_name>
@@ -4797,6 +4861,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupUsrId</fld_name>
@@ -4839,6 +4904,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>demoSupWebsite</fld_name>
@@ -4881,6 +4947,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 	<data>
 		<fld_name>uft_demoSupId</fld_name>
@@ -4923,6 +4990,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<fld_incrementsyntax/>
+		<fld_deprecated/>
 	</data>
 </object>
 <object>
@@ -5957,7 +6025,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_list_areas>0</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/customers-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>1</obo_search_column>
@@ -6037,7 +6105,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/contacts-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>C</obo_search_column>
@@ -6198,7 +6266,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/orders-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>1</obo_search_index>
 		<obo_search_column>C</obo_search_column>
@@ -6358,7 +6426,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/products-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>1</obo_search_column>
@@ -6517,7 +6585,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_list_areas>0</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/suppliers-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>1</obo_search_column>
