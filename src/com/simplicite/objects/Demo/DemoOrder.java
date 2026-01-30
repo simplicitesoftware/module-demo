@@ -130,13 +130,15 @@ public class DemoOrder extends ObjectDB {
 
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		// Custom short label
-		return getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row);
+        // Custom short label on tree views
+        return isTreeviewInstance()
+            ? getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row)
+            : super.getUserKeyLabel(row);
 	}
 
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
-		// Hide history records on tree view
+		// Hide history records on tree views
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
 	}
 

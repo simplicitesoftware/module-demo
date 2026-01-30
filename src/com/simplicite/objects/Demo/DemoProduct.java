@@ -168,13 +168,15 @@ public class DemoProduct extends ObjectDB {
 
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		// Custom short label
-		return getFieldValue(REFERENCE_FIELDNAME, row);
+        // Custom short label on tree views
+        return isTreeviewInstance()
+            ? getFieldValue(REFERENCE_FIELDNAME, row)
+            : super.getUserKeyLabel(row);
 	}
 
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
-		// Hide history records on tree view
+		// Hide history records on tree views
 		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
 	}
 }

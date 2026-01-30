@@ -5753,7 +5753,7 @@ His address is geolocalized using GoogleMaps&reg; API.]]></obo_comment>
 		<obo_list_areas>0</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/customers-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>1</obo_search_column>
@@ -5833,7 +5833,7 @@ A contact can be linked or not a an order of the selelcted client
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/contacts-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>C</obo_search_column>
@@ -5994,7 +5994,7 @@ An order is for one single product.]]></obo_comment>
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/orders-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>1</obo_search_index>
 		<obo_search_column>C</obo_search_column>
@@ -6154,7 +6154,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/products-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>1</obo_search_column>
@@ -6313,7 +6313,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obo_list_areas>0</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
 		<obo_minified>0</obo_minified>
-		<obo_permalink/>
+		<obo_permalink><![CDATA[/suppliers-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
 		<obo_search_column>1</obo_search_column>

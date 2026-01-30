@@ -89,7 +89,7 @@ public class DemoContact extends ObjectDB {
 
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
-		// Hide history records on tree view
+        // Hide history records on tree views
 		return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
 	}
 }

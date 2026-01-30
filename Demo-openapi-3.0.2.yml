@@ -31,6 +31,10 @@ components:
           description: Customer city
           type: string
           maxLength: 50
+        row_permalink:
+          description: Record permanent link relative path
+          type: string
+          maxLength: 500
         demoCliCode:
           description: Customer code
           type: string
@@ -124,6 +128,10 @@ components:
         An order is for one single product.
       type: object
       properties:
+        row_permalink:
+          description: Record permanent link relative path
+          type: string
+          maxLength: 500
         demoOrdPrdId__demoPrdType:
           description: Product type
           type: string
@@ -533,6 +541,10 @@ components:
           - TABLET
           - SMARTPHONE
           - OTHER
+        row_permalink:
+          description: Record permanent link relative path
+          type: string
+          maxLength: 500
         demoPrdSupId__demoSupCode:
           description: Supplier unique code (e.g. `MYSUP`)
           type: string
@@ -697,6 +709,10 @@ components:
         (when linked to an order the `demoCtcOrdId` field is set).
       type: object
       properties:
+        row_permalink:
+          description: Record permanent link relative path
+          type: string
+          maxLength: 500
         demoCtcCliId__demoCliLastname:
           description: Customer last name
           type: string
@@ -874,22 +890,30 @@ components:
         suppliers of products that can be ordered.
       type: object
       properties:
-        demoSupDescription:
-          description: Supplier description
-          type: string
-          maxLength: 1000000
         demoSupPhone:
           description: Supplier phone number
           type: string
           maxLength: 20
-        demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+        row_permalink:
+          description: Record permanent link relative path
           type: string
-          maxLength: 50
+          maxLength: 500
         demoSupName:
           description: Supplier name
           type: string
           maxLength: 100
+        demoSupUsrId:
+          description: User responsible of supplier
+          type: string
+          maxLength: 11
+        demoSupDescription:
+          description: Supplier description
+          type: string
+          maxLength: 1000000
+        demoSupCode:
+          description: Supplier unique code (e.g. `MYSUP`)
+          type: string
+          maxLength: 50
         demoSupFax:
           description: Supplier fax number
           type: string
@@ -901,10 +925,6 @@ components:
         demoSupLogo:
           description: Supplier logo
           type: object
-        demoSupUsrId:
-          description: User responsible of supplier
-          type: string
-          maxLength: 11
         row_id:
           description: Unique technical row ID
           type: string
@@ -1357,6 +1377,12 @@ paths:
         name: demoCtcMessages
         description: Search filter for Messages
         required: false
+      - schema:
+          type: string
+        in: query
+        name: row_permalink
+        description: Search filter for Record permanent link relative path
+        required: false
       tags:
       - DemoContact
   /rest/DemoSupplier:
@@ -1475,6 +1501,12 @@ paths:
         in: query
         name: demoSupComments
         description: Search filter for Comments on supplier
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_permalink
+        description: Search filter for Record permanent link relative path
         required: false
       tags:
       - DemoSupplier
@@ -2191,6 +2223,12 @@ paths:
         in: query
         name: demoOrdComments
         description: Search filter for Comments on order
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_permalink
+        description: Search filter for Record permanent link relative path
         required: false
       tags:
       - DemoOrder
@@ -3905,6 +3943,12 @@ paths:
         name: demoCliPlacemapLabel
         description: Search filter for Customer place map label
         required: false
+      - schema:
+          type: string
+        in: query
+        name: row_permalink
+        description: Search filter for Record permanent link relative path
+        required: false
       tags:
       - DemoClient
   /rest/DemoProduct:
@@ -4097,6 +4141,12 @@ paths:
         in: query
         name: demoPrdComments
         description: Search filter for Comments on product
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_permalink
+        description: Search filter for Record permanent link relative path
         required: false
       tags:
       - DemoProduct
