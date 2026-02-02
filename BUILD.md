@@ -1,4 +1,4 @@
-![](https://platform.simplicite.io/logos/standard/logo250.png)
+![Logo](https://platform.simplicite.io/logos/standard/logo250.png)
 * * *
 
 Apache Maven
