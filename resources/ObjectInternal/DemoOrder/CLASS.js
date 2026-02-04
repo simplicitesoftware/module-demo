@@ -1,8 +1,9 @@
-//----------------------------------------------------
-// Client-side logic for order business object
-//----------------------------------------------------
-
+/**
+ * Order business object
+ * @class
+ */
 Simplicite.UI.BusinessObjects.DemoOrder = class extends Simplicite.UI.BusinessObject {
+	/** @override */
 	onLoadForm(ctn, obj, p) {
 		super.onLoadForm(ctn, obj, p);
 

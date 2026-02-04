@@ -1,11 +1,11 @@
-//----------------------------------------------------
-// Client-side logic for order business object
-//----------------------------------------------------
-
 /* global L */
 
+/**
+ * Customer business object
+ * @class
+ */
 Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessObject {
-	// Action function
+	/** Map action */
 	map() {
 		// A Promise to load the Leaflet library
 		const loadLeafLet = new Promise((resolve, _reject) => {

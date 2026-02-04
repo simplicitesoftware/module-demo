@@ -4,6 +4,3 @@
 Module `Demo`
 =============
 
-This is the main module for the demo application.
-
-Check the `Demo.md` file for details.

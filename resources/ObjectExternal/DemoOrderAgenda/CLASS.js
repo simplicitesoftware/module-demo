@@ -1,9 +1,8 @@
-//-----------------------------------------------------------
-// Client side JavaScript for order agenda
-//-----------------------------------------------------------
-
 /* global FullCalendar */
 
+/**
+ * Order agenda external object
+ */
 Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(_params, _data) {

@@ -1,7 +1,7 @@
-//-----------------------------------------------------------
-// Client side JavaScript for place new this.order external object
-//-----------------------------------------------------------
-
+/**
+ * Place new order external object
+ * @class
+ */
 Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(_params, _data) {
