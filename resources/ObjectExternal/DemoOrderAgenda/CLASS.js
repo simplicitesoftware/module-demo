@@ -2,10 +2,14 @@
 
 /**
  * Order agenda external object
+ * @class
  */
 Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
 	/** @override */
-	async render(_params, _data) {
+	async render(ctn, params, data) {
+		// ZZZ temporary ZZZ compatibility with v7, in v6 render has no ctn argument
+		if (ctn?.baselocation) { data = params; params = ctn; }
+
 		this.debug = false;
 		$ui.loadCalendar(() => {
 			$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', obj => {
