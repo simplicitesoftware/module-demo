@@ -7,7 +7,7 @@
 Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(ctn, params, data) {
-		// ZZZ temporary ZZZ compatibility with v7, in v6 render has no ctn argument
+		// ZZZ temporary ZZZ compatibility with previous versions
 		if (ctn?.baselocation) { data = params; params = ctn; }
 
 		this.debug = false;
