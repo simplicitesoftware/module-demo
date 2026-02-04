@@ -1,18 +1,17 @@
-//-----------------------------------------------------------
-// Client side JavaScript for order agenda
-//-----------------------------------------------------------
-
 /* global FullCalendar */
 
+/**
+ * Order agenda external object
+ * @class
+ */
 Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
     /** @override */
-    async render(_params, _data) {
+    async render(_ctn, _params, _data) {debugger;
         this.debug = false;
-        $ui.loadCalendar(() => {
-            $ui.getUIObject('DemoOrder', 'agenda_DemoOrder', obj => {
-                this.ord = obj;
-                this.ord.getMetaData().then(_ => this.calendar());
-            });
+        await $factory.Calendar();
+        $ui.getUIObject('DemoOrder', 'agenda_DemoOrder', obj => {
+            this.ord = obj;
+            this.ord.getMetaData().then(_ => this.calendar());
         });
     }
 

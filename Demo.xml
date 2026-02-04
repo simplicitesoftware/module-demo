@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1267" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.simplicite.fr/base" xsi:schemaLocation="https://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1267" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -397,7 +397,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_scope_id.sco_home_id.viw_name>DemoAdminHome</usr_scope_id.sco_home_id.viw_name>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
@@ -434,7 +433,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_scope_id.sco_home_id.viw_name>DemoUserHome</usr_scope_id.sco_home_id.viw_name>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>2156a498-bcdb-4e04-a68f-ebabdc4d223c</usr_uuid>
 	</data>
 	<data>
 		<usr_login>user_fra</usr_login>
@@ -471,7 +469,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_scope_id.sco_home_id.viw_name>DemoUserHome</usr_scope_id.sco_home_id.viw_name>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
 	</data>
 	<data>
 		<usr_login>website</usr_login>
@@ -508,7 +505,6 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_scope_id.sco_home_id.viw_name/>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
 </object>
 <object>
@@ -5716,6 +5712,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obd_name>DemoDomain</obd_name>
 		<obd_comment/>
 		<obd_type>D</obd_type>
+		<obd_menu/>
 		<obd_view_id.viw_name>DemoHome</obd_view_id.viw_name>
 		<obd_nohome>0</obd_nohome>
 		<obd_icon>demo</obd_icon>
@@ -5727,6 +5724,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<obd_name>DemoSubDomain</obd_name>
 		<obd_comment/>
 		<obd_type>D</obd_type>
+		<obd_menu/>
 		<obd_view_id.viw_name/>
 		<obd_nohome>1</obd_nohome>
 		<obd_icon>demo</obd_icon>
@@ -14901,6 +14899,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
@@ -14929,6 +14928,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
@@ -14957,6 +14957,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
@@ -14977,6 +14978,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
@@ -14997,6 +14999,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
@@ -15017,6 +15020,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
@@ -15037,6 +15041,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
@@ -15057,6 +15062,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
@@ -15077,6 +15083,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
@@ -15097,6 +15104,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
@@ -15117,6 +15125,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
@@ -15137,6 +15146,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
@@ -15157,6 +15167,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoUserHome</vwi_view_id.viw_name>
@@ -15177,6 +15188,7 @@ is still in pending state]]></cst_desc>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<vwi_shortcuts/>
 	</data>
 </object>
 <object>
