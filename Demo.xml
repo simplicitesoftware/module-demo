@@ -332,7 +332,6 @@ try {
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>38b4491d-5c9d-4483-8689-b1857c04ab0c</usr_uuid>
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
@@ -367,7 +366,6 @@ try {
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>2156a498-bcdb-4e04-a68f-ebabdc4d223c</usr_uuid>
 	</data>
 	<data>
 		<usr_login>user_fra</usr_login>
@@ -402,7 +400,6 @@ try {
 		<usr_lang_pref>FRA</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>b4f0678d-8f37-40ab-ba88-86291cbc0273</usr_uuid>
 	</data>
 	<data>
 		<usr_login>website</usr_login>
@@ -431,13 +428,12 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2023-12-19 13:26:00</usr_logout>
-		<usr_last_logon>2025-09-09 17:28:01</usr_last_logon>
+		<usr_last_logon>2025-10-14 22:38:15</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
-		<usr_uuid>e3a51753-9f1b-4a3d-b830-b8a68295a12b</usr_uuid>
 	</data>
 </object>
 <object>

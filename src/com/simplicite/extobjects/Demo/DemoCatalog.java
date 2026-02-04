@@ -16,10 +16,6 @@ import com.simplicite.util.tools.Parameters;
 public class DemoCatalog extends com.simplicite.webapp.services.RESTServiceExternalObject {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * GET method
-	 * @param params Request parameters
-	 */
 	@Override
 	public Object get(Parameters params) throws HTTPException {
 		JSONArray res = new JSONArray();
