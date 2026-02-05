@@ -4,10 +4,7 @@
  */
 Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.ExternalObject {
 	/** @override */
-	async render(ctn, params, data) {
-		// ZZZ temporary ZZZ compatibility with previous versions
-		if (ctn?.baselocation) { data = params; params = ctn; }
-
+	async render(_params, _data) {
 		const self = this;
 		$('#demoplaceneworder-ord').append($ui.view.tools.panel({ title: 'Order', content: $('<div/>')
 			.append($('<div/>').append('Selected customer:'))
