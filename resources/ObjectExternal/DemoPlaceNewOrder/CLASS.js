@@ -5,14 +5,13 @@
 Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.ExternalObject {
 	/** @override */
 	async render(_params, _data) {
-		const self = this;
 		$('#demoplaceneworder-ord').append($ui.view.tools.panel({ title: 'Order', content: $('<div/>')
 			.append($('<div/>').append('Selected customer:'))
 			.append($('<div/>', { id: 'demoplaceneworder-selcli' }).append('&lt;none&gt;')).append('<br/>')
 			.append($('<div/>').append('Selected product:'))
 			.append($('<div/>', { id: 'demoplaceneworder-selprd' }).append('&lt;none&gt;')).append('<br/>')
 			.append($('<div/>')
-				.append($('<input/>', { id: 'demoplaceneworder-qty', type: 'text'}).val(1).on('change', () => self.calculateTotal()))
+				.append($('<input/>', { id: 'demoplaceneworder-qty', type: 'text'}).val(1).on('change', () => this.calculateTotal()))
 				.append('&nbsp;Total:&nbsp;')
 				.append($('<span/>', { id: 'demoplaceneworder-total' }).append('0.00'))
 				.append('&nbsp;&euro;&nbsp;')
