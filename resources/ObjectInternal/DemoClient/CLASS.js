@@ -1,9 +1,9 @@
-//----------------------------------------------------
-// Client-side logic for order business object
-//----------------------------------------------------
-
 /* global L */
 
+/**
+ * Customer business object
+ * @class
+ */
 Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessObject {
     // Action function
     map() {

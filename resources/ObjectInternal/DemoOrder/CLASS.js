@@ -1,12 +1,14 @@
-//----------------------------------------------------
-// Client-side logic for order business object
-//----------------------------------------------------
-
+/**
+ * Order business object
+ * @class
+ */
 Simplicite.UI.BusinessObjects.DemoOrder = class extends Simplicite.UI.BusinessObject {
+    /** @override */
     onLoadForm(ctn, obj, p) {
         super.onLoadForm(ctn, obj, p);
 
-        // Dynamic client-side logic (overridden anyway by server-side logic at save)
+        // Note that this client-side logic will be overridden
+        // anyway by server-side logic at save
 
         const pup = $ui.getUIField(ctn, obj, 'demoOrdPrdId.demoPrdUnitPrice').ui;
         const up = $ui.getUIField(ctn, obj, 'demoOrdUnitPrice').ui;
