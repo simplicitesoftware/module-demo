@@ -6,7 +6,7 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
     /** @override */
     constructor(app, name) {
         super(app, name);
-        this.debug = true;
+        this.debug = false; // set to true to enable debug traces
     }
 
     /** @override */
