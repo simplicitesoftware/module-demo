@@ -6,26 +6,29 @@
  */
 Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
 	/** @override */
-	async render(_params, _data) {
-		this.debug = false;
-		$ui.loadCalendar(() => {
-			$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', obj => {
-				this.ord = obj;
-				this.ord.getMetaData().then(_ => this.calendar());
-			});
-		});
+	constructor(app, name) {
+		super(app, name);
+		this.debug = false; // set to true to enable debug traces
 	}
 
-	/** Choose appropriate calendar function for current FullCalendar version */
-	calendar() {
+	/** @override */
+	async render(_params, _data) {
 		const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
-		if (this.debug) $console.info(`FullCalendar version = ${fc}`);
-		if (fc < 4)
-			$('#demoOrderAgenda').text(`Fullcalendar version ${fc} is not supported`);
-		else if (fc == 4)
-			this.calendar4();
-		else
-			this.calendar5();
+		if (this.debug) $console.info(`Calendar version = ${fc}`);
+		if (fc < 4) {
+			$('#demoOrderAgenda').text(`Calendar version ${fc} is not supported`);
+		} else {
+			$ui.loadCalendar(() => {
+				$ui.getUIObject('DemoOrder', 'agenda_DemoOrder', async obj => {
+					this.ord = obj;
+					await this.ord.getMetaData();
+					if (fc == 4)
+						this.calendar4();
+					else
+						this.calendar5();
+				});
+			});
+		}
 	}
 
 	/** Calendar for legacy FullCalendar version 4 */
