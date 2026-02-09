@@ -1,30 +1,35 @@
-/* global FullCalendar */
-
 /**
  * Order agenda external object
  * @class
  */
 Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.ExternalObject {
     /** @override */
+    constructor(app, name) {
+        super(app, name);
+        this.debug = true;
+    }
+
+    /** @override */
     async render(_params, _data) {
-        this.debug = false;
-        await $factory.Calendar();
-        $ui.getUIObject('DemoOrder', 'order_agenda_DemoOrder', obj => {
-            this.ord = obj;
-            this.ord.getMetaData().then(_ => this.calendar());
-        });
+        const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
+        if (this.debug) $console.info(`Calendar version = ${fc}`);
+
+        if (fc <= 4) {
+            $('#demoOrderAgenda').text(`Calendar version ${fc} is not supported`);
+        } else {
+            this.Calendar = await $factory.Calendar();
+            $ui.getUIObject('DemoOrder', 'order_agenda_DemoOrder', async obj => {
+                this.ord = obj;
+                await this.ord.getMetaData();
+                this.calendar();
+            });
+        }
     }
 
     /** Calendar */
     calendar() {
-        const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
-        if (this.debug) $console.info(`FullCalendar version = ${fc}`);
-
-        if (fc <= 4)
-            $('#demoOrderAgenda').text(`Fullcalendar version ${fc} is not supported`);
-
         const self = this;
-        new FullCalendar.Calendar($('#demoOrderAgenda')[0], {
+        new this.Calendar($('#demoOrderAgenda')[0], {
             headerToolbar: {
                 start: 'prev,next today',
                 center: 'title',
