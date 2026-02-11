@@ -1,9 +1,9 @@
 {
-    "date": "2026-02-09 13:55:19",
+    "date": "2026-02-11 12:34:38",
     "name": "Demo",
     "format": "xml",
     "files": ["Demo.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo.git"}},
     "version": "6",
-    "platform": "6.3.3-preview"
+    "platform": "6.3.4-preview"
 }
