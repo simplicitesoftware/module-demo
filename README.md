@@ -1,11 +1,16 @@
 ![Logo](https://platform.simplicite.io/logos/standard/logo250.png)
 * * *
 
-### Introduction
+Demo
+====
 
-This is a demo **order management** application (backend and frontend).
+Introduction
+------------
 
-### Import
+This is a demo **order management** application.
+
+Import
+------
 
 To import this module:
 
@@ -22,7 +27,8 @@ To import this module:
 
 - Click on the _Import module_ button
 
-### Configure
+Configure
+---------
 
 In order to have the frontend examples working the password for the
 webservices-only user `website` must be `simplicite`.
@@ -43,7 +49,8 @@ This can be achieved by importing the following XML:
 </simplicite>
 ```
 
-### Load data
+Load data
+---------
 
 Some sample data is provided as a module's dataset. It contains:
 
