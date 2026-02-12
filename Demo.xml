@@ -23,11 +23,13 @@
     "type": "git"
 }]]></mdl_url>
 		<mdl_type>A</mdl_type>
-		<mdl_comment><![CDATA[### Introduction
+		<mdl_comment><![CDATA[Introduction
+------------
 
-This is a demo **order management** application (backend and frontend).
+This is a demo **order management** application.
 
-### Import
+Import
+------
 
 To import this module:
 
@@ -45,7 +47,8 @@ To import this module:
 
 - Click on the _Import module_ button
 
-### Configure
+Configure
+---------
 
 In order to have the frontend examples working the password for the
 webservices-only user `website` must be `simplicite`.
@@ -66,7 +69,8 @@ This can be achieved by importing the following XML:
 </simplicite>
 ```
 
-### Load data
+Load data
+---------
 
 Some sample data is provided as a module's dataset. It contains:
 
@@ -428,7 +432,7 @@ try {
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2023-12-19 13:26:00</usr_logout>
-		<usr_last_logon>2025-10-14 22:38:15</usr_last_logon>
+		<usr_last_logon>2026-02-04 14:27:34</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>

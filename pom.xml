@@ -97,6 +97,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
             <configuration>
               <executable>npm</executable>
               <arguments>
+                <argument>--legacy-peer-deps</argument>
                 <argument>install</argument>
               </arguments>
             </configuration>

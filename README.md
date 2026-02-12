@@ -11,11 +11,13 @@
 `Demo` module definition
 ========================
 
-### Introduction
+Introduction
+------------
 
-This is a demo **order management** application (backend and frontend).
+This is a demo **order management** application.
 
-### Import
+Import
+------
 
 To import this module:
 
@@ -33,7 +35,8 @@ To import this module:
 
 - Click on the _Import module_ button
 
-### Configure
+Configure
+---------
 
 In order to have the frontend examples working the password for the
 webservices-only user `website` must be `simplicite`.
@@ -54,7 +57,8 @@ This can be achieved by importing the following XML:
 </simplicite>
 ```
 
-### Load data
+Load data
+---------
 
 Some sample data is provided as a module's dataset. It contains:
 
