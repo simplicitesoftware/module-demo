@@ -175,8 +175,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -496,8 +496,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         row_ref_id__demoOrdPrdId:
@@ -841,8 +841,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoCtcPicture:
@@ -1291,8 +1291,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -2025,8 +2025,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -2760,8 +2760,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query

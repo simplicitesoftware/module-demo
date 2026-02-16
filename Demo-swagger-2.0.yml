@@ -291,8 +291,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -905,8 +905,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -1519,8 +1519,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -3256,8 +3256,8 @@ definitions:
         maxLength: 30
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoOrdCliId__demoCliCode:
@@ -3576,8 +3576,8 @@ definitions:
         maxLength: 30
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       row_ref_id__demoOrdPrdId:
@@ -3919,8 +3919,8 @@ definitions:
         maxLength: 30
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoCtcPicture:

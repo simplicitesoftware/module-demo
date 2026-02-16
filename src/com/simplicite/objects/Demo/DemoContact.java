@@ -14,6 +14,7 @@ import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.ExcelTool;
 import com.simplicite.util.tools.ExcelTool.ExcelRow;
 import com.simplicite.util.tools.HTMLTool;
+import com.simplicite.util.tools.HTTPTool;
 import com.simplicite.util.tools.MustacheTool;
 import com.simplicite.webapp.web.WebPage;
 
@@ -44,9 +45,11 @@ public class DemoContact extends ObjectDB {
             wp.appendCSS(HTMLTool.getResourceCSSContent(getGrant(), "DEMO_PRINT_STYLES")); // Inlined styles
             wp.append(MustacheTool.apply(pt));
             return wp.toString();
-        } catch (Exception e) {
-            AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
-            return e.getMessage();
+      } catch (Exception e) { // Unexpected error => text file with error message
+          AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+          pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
+          pt.setFilename(getGrant().T("ERROR") + ".txt");
+          return e.getMessage();
         }
     }
 
@@ -81,9 +84,11 @@ public class DemoContact extends ObjectDB {
             }
 
             return xls.generateToByteArray();
-        } catch (Exception e) {
-            AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
-            return e.getMessage();
+      } catch (Exception e) { // Unexpected error => text file with error message
+          AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+          pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
+          pt.setFilename(getGrant().T("ERROR") + ".txt");
+          return e.getMessage();
         }
     }
 
