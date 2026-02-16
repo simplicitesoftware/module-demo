@@ -143,9 +143,10 @@ public class DemoOrder extends ObjectDB {
 			pt.setMIMEType(HTTPTool.MIME_TYPE_PDF);
 			pt.setFilename(getDisplay() + "-" + getFieldValue("demoOrdNumber") + ".pdf");
 			return HTMLToPDFTool.toPDF(pt.fillTemplate(this, pt.getTemplate(true), getValues()));
-		} catch (Throwable e) {
-			AppLog.error(e.getMessage(), e, getGrant());
+		} catch (Exception e) { // Unexpected error => text file with error message
+			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
 			pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
+			pt.setFilename(getGrant().T("ERROR") + ".txt");
 			return e.getMessage();
 		}
 	}

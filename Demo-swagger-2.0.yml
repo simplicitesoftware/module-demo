@@ -222,8 +222,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcCliId
         description: Search filter for Contact customer
@@ -291,8 +291,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -861,8 +861,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -1350,8 +1350,8 @@ paths:
         required: false
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       - in: query
@@ -2207,8 +2207,8 @@ paths:
         required: false
         enum:
         - O
-        - P
         - C
+        - P
       - in: query
         name: demoCtcType
         description: Search filter for Contact type
@@ -3083,8 +3083,8 @@ definitions:
         type: string
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoOrdCliId__demoCliCode:
@@ -3303,8 +3303,8 @@ definitions:
         type: string
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoOrdQuantity:
@@ -3419,8 +3419,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcType:
         description: Contact type
         type: string
@@ -3506,8 +3506,8 @@ definitions:
         type: string
         enum:
         - O
-        - P
         - C
+        - P
       demoCtcDatetime:
         description: Contcat date and time
         type: string
@@ -3549,8 +3549,8 @@ definitions:
         type: string
         enum:
         - P
-        - V
         - H
+        - V
         - D
         - C
       demoCtcPicture:

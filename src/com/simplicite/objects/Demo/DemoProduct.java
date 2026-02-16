@@ -13,6 +13,7 @@ import com.simplicite.util.annotations.BusinessObjectAction;
 import com.simplicite.util.annotations.BusinessObjectPublication;
 import com.simplicite.util.tools.BarcodeTool;
 import com.simplicite.util.tools.DocxTool;
+import com.simplicite.util.tools.HTTPTool;
 import com.simplicite.util.tools.MailTool;
 
 /**
@@ -132,8 +133,10 @@ public class DemoProduct extends ObjectDB {
 			dt.replace("productDescription", getFieldValue(DESCRIPTION_FIELDNAME));
 			dt.addHTML(getFieldValue(DOCUMENTATION_FIELDNAME));
 			return dt.toByteArray();
-		} catch (Exception e) {
+		} catch (Exception e) { // Unexpected error => text file with error message
 			AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+			pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
+			pt.setFilename(getGrant().T("ERROR") + ".txt");
 			return e.getMessage();
 		}
 	}
