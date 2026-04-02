@@ -462,7 +462,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2026-02-09 18:07:50</usr_last_logon>
+		<usr_last_logon>2026-03-31 21:02:13</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -15561,7 +15561,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>A traiter</tsl_value>
+		<tsl_value>À traiter</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -15952,7 +15952,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Quantié commandée</tsl_value>
+		<tsl_value>Quantité commandée</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -16072,7 +16072,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Address complement</tsl_value>
+		<tsl_value>Additional address</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -16680,7 +16680,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Canal</tsl_value>
+		<tsl_value>Channel</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17003,7 +17003,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Etat</tsl_value>
+		<tsl_value>État</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -17383,7 +17383,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Etat</tsl_value>
+		<tsl_value>État</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -18748,7 +18748,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Details</tsl_value>
+		<tsl_value>Détails</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -18972,7 +18972,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Details</tsl_value>
+		<tsl_value>Détails</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -19210,7 +19210,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Orders statistics</tsl_value>
+		<tsl_value>Order statistics</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -19620,7 +19620,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Deliveries agenda</tsl_value>
+		<tsl_value>Deliveries schedule</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -19770,7 +19770,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Orders statistics</tsl_value>
+		<tsl_value>Order statistics</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -20350,7 +20350,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Etat commande</tsl_value>
+		<tsl_value>État commande</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
