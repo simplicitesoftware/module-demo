@@ -99,8 +99,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -175,8 +175,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -261,8 +261,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -496,8 +496,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         row_ref_id__demoOrdPrdId:
@@ -841,8 +841,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoCtcPicture:
@@ -956,7 +956,7 @@ components:
       type: http
 servers:
 - url: /api
-openapi: 3.0.2
+openapi: 3.1.2
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-Brochure:
     get:
@@ -1291,8 +1291,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -2025,8 +2025,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -2098,8 +2098,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -2760,8 +2760,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -3879,8 +3879,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoCliCountry
         description: Search filter for Customer country

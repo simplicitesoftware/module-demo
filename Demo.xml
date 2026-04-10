@@ -15,7 +15,7 @@
         "eslint": true,
         "stylelint": true,
         "checkstyle": true,
-        "repositoryUrl": "https://platform.simplicite.io/7.0/maven"
+        "repositoryUrl": "public"
     },
     "sonar": {
         "organization": "simplicitesoftware",
@@ -1118,6 +1118,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_COUNTRY</lov_name>
@@ -1125,6 +1126,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_CANAL</lov_name>
@@ -1132,6 +1134,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_STATUS</lov_name>
@@ -1139,6 +1142,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE</lov_name>
@@ -1146,6 +1150,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE_CMP</lov_name>
@@ -1153,6 +1158,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE_INF</lov_name>
@@ -1160,6 +1166,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_SUBTYPE_REQ</lov_name>
@@ -1167,6 +1174,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_TYPE</lov_name>
@@ -1174,6 +1182,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_ORD_STATUS</lov_name>
@@ -1181,6 +1190,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt>DATE;USER</lov_navbar_opt>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoOrderStates</lov_model_id.mod_name>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 	<data>
 		<lov_name>DEMO_PRD_TYPE</lov_name>
@@ -1188,6 +1198,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_navbar_opt/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
+		<lov_selectall_opt>0</lov_selectall_opt>
 	</data>
 </object>
 <object>
