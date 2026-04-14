@@ -199,15 +199,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<viw_name>DemoAdminHome</viw_name>
-		<viw_ui><![CDATA[<script type="text/javascript">
-try {
-	$ui.view.showLoading(null);
-	$ui.displayStatusMetrics(null, 'DemoOrder', { nav: 'new' }, function() { $ui.view.hideLoading(null); });
-} catch (e) {
-	console.error(e);
-	$ui.view.hideLoading(null);
-}
-</script>]]></viw_ui>
+		<viw_ui><![CDATA[<div>
+  <div class="area" data-area="1:="></div>
+  <div class="area" data-area="2"></div>
+</div>]]></viw_ui>
 		<viw_order>110</viw_order>
 		<viw_icon/>
 		<viw_disp_id.dis_code/>
@@ -3333,7 +3328,7 @@ try {
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>2</fld_research>
 		<fld_researchreq>0</fld_researchreq>
-		<fld_sort>L</fld_sort>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>0</fld_listsum>
@@ -14141,6 +14136,46 @@ is still in pending state]]></cst_desc>
 <object>
 	<name>ViewItem</name>
 	<action>upsert</action>
+	<data>
+		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
+		<vwi_position>1</vwi_position>
+		<vwi_type>U</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_subview_id.viw_name/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>DemoAdminHome</vwi_view_id.viw_name>
+		<vwi_position>2</vwi_position>
+		<vwi_type>N</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url/>
+		<vwi_image/>
+		<vwi_subview_id.viw_name/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 	<data>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
