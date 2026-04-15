@@ -51,7 +51,7 @@ public class DemoTests {
 		}
 	}
 
-	/** Order test */
+	/** Order lifecycle test */
 	@Test
 	public void testCreateOrder() {
 		Grant sys = Grant.getSystemAdmin();

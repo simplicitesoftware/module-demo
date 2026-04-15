@@ -74,9 +74,9 @@ public class DemoClient extends ObjectDB {
 
 	@Override
 	public String getUserKeyLabel(String[] row) {
-        // Custom short label on tree views
-        return isTreeviewInstance()
-            ? getFieldValue("demoCliFirstname", row) + " " + getFieldValue("demoCliLastname", row)
-            : super.getUserKeyLabel(row);
+		// Custom short label on tree views
+		return isTreeviewInstance()
+			? getFieldValue("demoCliFirstname", row) + " " + getFieldValue("demoCliLastname", row)
+			: super.getUserKeyLabel(row);
 	}
 }

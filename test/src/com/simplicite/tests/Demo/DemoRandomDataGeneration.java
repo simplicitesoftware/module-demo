@@ -36,6 +36,7 @@ public class DemoRandomDataGeneration {
 				ord.setFieldValue("demoOrdStatus", getRandomStatus(ord.getStatusField()));
 				ord.setFieldValue("demoOrdCliId", getRandomRowId("demo_client"));
 				ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
+				ord.setFieldValue("demoOrdPrdId.demoPrdStock", 5); // Avoid issue on zero stock check
 				ord.setFieldValue("demoOrdQuantity", Tool.randomInt(1, 5));
 				ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
 				ord.getTool().validateAndSave();

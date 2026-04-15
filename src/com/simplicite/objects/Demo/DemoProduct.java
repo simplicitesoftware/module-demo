@@ -78,7 +78,7 @@ public class DemoProduct extends ObjectDB {
 	/**
 	 * Decrease stock action method
 	 * @return Action result message
- 	 */
+	 */
 	@BusinessObjectAction
 	public String decreaseStock() {
 		try {
@@ -102,7 +102,7 @@ public class DemoProduct extends ObjectDB {
 	/**
 	 * Send product data in an email action method
 	 * @return Action result message
- 	 */
+	 */
 	@BusinessObjectAction
 	public String sendEmail() {
 		try {
@@ -131,7 +131,7 @@ public class DemoProduct extends ObjectDB {
 	 * Microsoft Word(R) brochure publication method
 	 * @param pt Publication template
 	 * @return Publication result
- 	 */
+	 */
 	@BusinessObjectPublication
 	public Object printBrochure(PrintTemplate pt) {
 		try {
@@ -171,10 +171,10 @@ public class DemoProduct extends ObjectDB {
 
 	@Override
 	public String getUserKeyLabel(String[] row) {
-        // Custom short label on tree views
-        return isTreeviewInstance()
-            ? getFieldValue(REFERENCE_FIELDNAME, row)
-            : super.getUserKeyLabel(row);
+		// Custom short label on tree views
+		return isTreeviewInstance()
+			? getFieldValue(REFERENCE_FIELDNAME, row)
+			: super.getUserKeyLabel(row);
 	}
 
 	@Override
