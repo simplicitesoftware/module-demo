@@ -81,9 +81,9 @@ public class DemoContact extends ObjectDB {
 		}
 	}
 
-	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
+		// Hide history records on tree view
 		return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
 	}
 }

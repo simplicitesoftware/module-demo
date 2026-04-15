@@ -49,11 +49,11 @@ public class DemoOrder extends ObjectDB {
 		return msgs;
 	}
 
-	/** Hook override: invitation for delivery + stock decrease on shipment */
 	@Override
 	public String postUpdate() {
 		if ("V".equals(getOldStatus()) && "D".equals(getStatus())) { // Upon state transition to delivered
 			try {
+				// send invitation for delivery
 				String n = getFieldValue(NUMBER_FIELDNAME);
 				Date d = Tool.fromDateTime(getFieldValue("demoOrdDeliveryDate"));
 				String name = getFieldValue("demoOrdCliId.demoCliFirstname") + " " + getFieldValue("demoOrdCliId.demoCliLastname");
@@ -71,6 +71,7 @@ public class DemoOrder extends ObjectDB {
 			}
 
 			try {
+				// decrease stock
 				ObjectDB prd = getGrant().getTmpObject("DemoProduct");
 				prd.select(getFieldValue(PRODUCT_FIELDNAME));
 				int q = getField(QUANTITY_FIELDNAME).getInt(0);
@@ -92,7 +93,6 @@ public class DemoOrder extends ObjectDB {
 		return super.postUpdate();
 	}
 
-	/** Hook override: check low stock */
 	@Override
 	public String postSave() {
 		// Check stock level
@@ -124,15 +124,17 @@ public class DemoOrder extends ObjectDB {
 		return super.postSave();
 	}
 
-	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		return getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row);
+		// Custom short label on tree views
+		return isTreeviewInstance()
+			? getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row)
+			: super.getUserKeyLabel(row);
 	}
 
-	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
+		// Hide history records on tree view
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
 	}
 
@@ -151,9 +153,9 @@ public class DemoOrder extends ObjectDB {
 		}
 	}
 
-	/** Hook override: Allow custom publication only if status is validated or shipped */
 	@Override
 	public boolean isPrintTemplateEnable(String[] row, String ptName) {
+		// Allow custom publication only if status is validated or shipped
 		if ("DemoOrder-PDF".equals(ptName)) {
 			String s = row != null ? row[getStatusIndex()] : getStatus();
 			return "V".equals(s) || "D".equals(s);

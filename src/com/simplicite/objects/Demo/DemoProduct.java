@@ -32,9 +32,9 @@ public class DemoProduct extends ObjectDB {
 	public static final String STOCK_FIELDNAME = "demoPrdStock";
 	public static final String INCREMENT_FIELDNAME = "demoPrdIncrement";
 
-	/** Init default increment */
 	@Override
 	public void initAction(Action action) {
+		// Init default increment
 		if ("DEMO_INCSTOCK".equals(action.getName())) {
 			ObjectField f = action.getConfirmField(getGrant().getLang(), INCREMENT_FIELDNAME);
 			if (f != null) {
@@ -153,15 +153,17 @@ public class DemoProduct extends ObjectDB {
 		return null;
 	}
 
-	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		return getFieldValue(REFERENCE_FIELDNAME, row);
+		// Custom short label on tree views
+		return isTreeviewInstance()
+			? getFieldValue(REFERENCE_FIELDNAME, row)
+			: super.getUserKeyLabel(row);
 	}
 
-	/** Hook override: hide history records on tree view */
 	@Override
 	public boolean canReference(String objName, String fkFieldName) {
+		// Hide history records on tree view
 		return !isTreeviewInstance() || "DemoProductHistoric".equals(objName);
 	}
 }

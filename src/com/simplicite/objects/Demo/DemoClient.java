@@ -46,7 +46,6 @@ public class DemoClient extends ObjectDB {
 		return msgs;
 	}
 
-	/** Hook override: geo-locate from address fields */
 	@Override
 	public String preSave() {
 		if (isMainInstance()) { // Only done for the main UI instance
@@ -73,9 +72,11 @@ public class DemoClient extends ObjectDB {
 		return super.preSave();
 	}
 
-	/** Hook override: custom short label */
 	@Override
 	public String getUserKeyLabel(String[] row) {
-		return getFieldValue("demoCliFirstname", row) + " " + getFieldValue("demoCliLastname", row);
+		// Custom short label on tree views
+		return isTreeviewInstance()
+			? getFieldValue("demoCliFirstname", row) + " " + getFieldValue("demoCliLastname", row)
+			: super.getUserKeyLabel(row);
 	}
 }
