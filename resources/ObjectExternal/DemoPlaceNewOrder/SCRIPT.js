@@ -112,7 +112,7 @@ var DemoPlaceNewOrder = DemoPlaceNewOrder || (() => {
 
 	function total() {
 		$('#demoplaceneworder-err').empty();
-		const t = parseFloat(prd.item.demoPrdUnitPrice) * parseFloat($('#demoplaceneworder-qty').val());
+		const t = Number.parseFloat(prd.item.demoPrdUnitPrice) * Number.parseFloat($('#demoplaceneworder-qty').val());
 		$('#demoplaceneworder-total').text(t.toFixed(2));
 	}
 

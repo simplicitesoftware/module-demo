@@ -19,7 +19,7 @@ var DemoOrderAgenda = DemoOrderAgenda || (() => {
 
 	// Choose appropriate calendar function for current FullCalendar version
 	function calendar() {
-		const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
+		const fc = Number.parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
 		if (debug) $app.info('FullCalendar version = ' + fc);
 		if (fc <= 3)
 			calendar3();
