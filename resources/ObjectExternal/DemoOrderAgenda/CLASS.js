@@ -13,7 +13,7 @@ Simplicite.UI.ExternalObjects.DemoOrderAgenda = class extends Simplicite.UI.Exte
 
 	/** @override */
 	async render(_params, _data) {
-		const fc = parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
+		const fc = Number.parseInt($ui.grant.sysparams.FULLCALENDAR_VERSION) || 5;
 		if (this.debug) $console.info(`Calendar version = ${fc}`);
 		if (fc < 4) {
 			$('#demoOrderAgenda').text(`Calendar version ${fc} is not supported`);

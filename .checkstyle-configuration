@@ -30,5 +30,6 @@
     <module name="ParameterName"/>
     <module name="WhitespaceAround"/>
     <module name="MissingOverride"/>
+    <module name="Indentation"><property name="severity" value="warning"/></module>
   </module>
 </module>

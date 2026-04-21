@@ -133,7 +133,7 @@ Simplicite.UI.ExternalObjects.DemoPlaceNewOrder = class extends Simplicite.UI.Ex
  	 */
 	calculateTotal() {
 		$('#demoplaceneworder-err').empty();
-		const t = parseFloat(this.prd.item.demoPrdUnitPrice) * parseFloat($('#demoplaceneworder-qty').val());
+		const t = Number.parseFloat(this.prd.item.demoPrdUnitPrice) * Number.parseFloat($('#demoplaceneworder-qty').val());
 		$('#demoplaceneworder-total').text(t.toFixed(2));
 	}
 

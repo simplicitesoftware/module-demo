@@ -18,7 +18,7 @@ Simplicite.UI.BusinessObjects.DemoOrder = class extends Simplicite.UI.BusinessOb
 
 		const calcTotal = () => {
 			t.val(q.val() * up.val());
-			v.val(t.val() * parseFloat($grant.sysparams.DEMO_VAT) / 100);
+			v.val(t.val() * Number.parseFloat($grant.sysparams.DEMO_VAT) / 100);
 		};
 
 		// Change unit price if product is changed

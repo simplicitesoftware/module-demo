@@ -41,9 +41,8 @@ Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessO
 					$ui.getUIField(null, this, 'demoCliCountry').ui.val()
 				);
 				resolve(data);
-			}
-			else{
-				reject();
+			} else {
+				reject(new Error('No record'));
 			}
 		});
 
