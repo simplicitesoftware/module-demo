@@ -359,8 +359,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2025-05-21 18:19:08</usr_logout>
-		<usr_last_logon>2026-02-09 13:02:21</usr_last_logon>
+		<usr_logout>2026-05-07 14:56:35</usr_logout>
+		<usr_last_logon>2026-05-07 15:00:28</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -462,7 +462,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2026-04-20 13:03:39</usr_last_logon>
+		<usr_last_logon>2026-05-10 18:13:11</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -5565,7 +5565,7 @@ This custom API returns the available products only.]]></obe_comment>
     "name": "DemoOrder",
     "icon": "fas/folder-open",
     "helps": {
-      "FRA": "Les commandes annulées et suspendues ne sont pas commtablisées",
+      "FRA": "Les commandes annulées et suspendues ne sont pas comptablisées",
       "ANY": "The cancelled and on-hold orders are not taken into account"
     },
     "filters": {"demoOrdStatus": "<>'C' and <>'H'"},
@@ -6117,12 +6117,12 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_title/>
 		<obo_icon>img/color/box</obo_icon>
 		<obo_refcount>1</obo_refcount>
-		<obo_tree>0</obo_tree>
+		<obo_tree/>
 		<obo_viewmode>T</obo_viewmode>
 		<obo_historic>1;3</obo_historic>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
-		<obo_mergeable>0</obo_mergeable>
+		<obo_mergeable/>
 		<obo_social>1</obo_social>
 		<obo_rowid_id.fld_name/>
 		<obo_extend_id.obj_name/>
@@ -6153,7 +6153,7 @@ Its reference is unique per supplier.]]></obo_comment>
 		<obo_sortable>1</obo_sortable>
 		<obo_list_areas>1</obo_list_areas>
 		<obo_minifiable>M</obo_minifiable>
-		<obo_minified>0</obo_minified>
+		<obo_minified/>
 		<obo_permalink><![CDATA[/products-[USERKEY]]]></obo_permalink>
 		<obo_btn_searchform>1</obo_btn_searchform>
 		<obo_search_index>0</obo_search_index>
