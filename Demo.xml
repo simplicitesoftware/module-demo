@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1267" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1270" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -356,6 +356,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sco_icon>demo</sco_icon>
 		<sco_permalink/>
 		<sco_disp_id.dis_code/>
+		<sco_workarea>1</sco_workarea>
 		<sco_home_id.viw_name>DemoAdminHome</sco_home_id.viw_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -367,6 +368,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sco_icon>demo</sco_icon>
 		<sco_permalink/>
 		<sco_disp_id.dis_code/>
+		<sco_workarea>1</sco_workarea>
 		<sco_home_id.viw_name>DemoUserHome</sco_home_id.viw_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -741,7 +743,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>img/color/box</shc_icon>
 		<shc_keys/>
+		<shc_home_style/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<shc_width/>
+		<shc_height/>
 	</data>
 	<data>
 		<shc_name>DemoClientNew</shc_name>
@@ -751,7 +756,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>img/color/view_user</shc_icon>
 		<shc_keys/>
+		<shc_home_style/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<shc_width/>
+		<shc_height/>
 	</data>
 	<data>
 		<shc_name>DemoOrderNew</shc_name>
@@ -761,7 +769,23 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>img/color/documents_folder</shc_icon>
 		<shc_keys/>
+		<shc_home_style/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<shc_width/>
+		<shc_height/>
+	</data>
+	<data>
+		<shc_name>DemoOrderAgenda</shc_name>
+		<shc_url><![CDATA[javascript:$ui.displayCalendar(null, 'DemoOrder', 'DemoOrderAgenda', { nav: 'new', showNav: true })]]></shc_url>
+		<shc_target>frame_work</shc_target>
+		<shc_order>130</shc_order>
+		<shc_visible>P;H</shc_visible>
+		<shc_icon>img/color/calendar</shc_icon>
+		<shc_keys/>
+		<shc_home_style>CM</shc_home_style>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<shc_width/>
+		<shc_height/>
 	</data>
 	<data>
 		<shc_name>DemoDoc</shc_name>
@@ -771,7 +795,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>fas/book</shc_icon>
 		<shc_keys/>
+		<shc_home_style/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<shc_width/>
+		<shc_height/>
 	</data>
 </object>
 <object>
@@ -5784,6 +5811,8 @@ This UI widget is only displaying **featured** products.]]></obe_comment>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoCatalog</obe_name>
@@ -5812,6 +5841,8 @@ This UI widget/page is only displaying **available** products.]]></obe_comment>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoCatalogAPI</obe_name>
@@ -5830,6 +5861,8 @@ This custom API returns the available products only.]]></obe_comment>
 		<obe_permalink/>
 		<obe_widget>0</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoCounters</obe_name>
@@ -5879,6 +5912,8 @@ This UI widget is displaying various counters.]]></obe_comment>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoNews</obe_name>
@@ -5910,12 +5945,14 @@ the date-based, language-based and rights filterings.]]></obe_comment>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoOrderAgenda</obe_name>
 		<obe_type>E</obe_type>
-		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
-		<obe_url/>
+		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
+		<obe_url><![CDATA[javascript:$ui.displayCalendar(null, 'DemoOrder', 'DemoOrderAgenda'), { nav: 'new', showNav: true };]]></obe_url>
 		<obe_settings/>
 		<obe_comment><![CDATA[Custom order delivery agenda
 -----------------------------
@@ -5925,12 +5962,14 @@ This custom UI page is didicated to display orders on an agenda.
 Note that the same features are also available using the
 standard object calendar.]]></obe_comment>
 		<obe_help/>
-		<obe_class>com.simplicite.webapp.web.ResponsiveExternalObject</obe_class>
+		<obe_class/>
 		<obe_script_id/>
 		<obe_icon>img/color/calendar</obe_icon>
 		<obe_permalink/>
-		<obe_widget>0</obe_widget>
+		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoPlaceNewOrder</obe_name>
@@ -5949,6 +5988,8 @@ This custom Ui page is dedicated to place orders using simplified UX.]]></obe_co
 		<obe_permalink/>
 		<obe_widget>0</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 	<data>
 		<obe_name>DemoSupplierStats</obe_name>
@@ -5970,6 +6011,8 @@ This custom Ui page is dedicated to place orders using simplified UX.]]></obe_co
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 </object>
 <object>
@@ -14881,7 +14924,7 @@ is still in pending state]]></cst_desc>
 				</data>
 			</object>
 		</map_object>
-		<map_order>70925</map_order>
+		<map_order>70930</map_order>
 		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15520,40 +15563,6 @@ is still in pending state]]></cst_desc>
 		<res_cached>1</res_cached>
 		<res_file/>
 		<res_image>resources/Disposition/default/DEMO_PRINT_LOGO.png</res_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>HTML</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>HTML</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoOrderAgenda/HTML.html</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>JS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>CLASS</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoOrderAgenda/CLASS.js</res_file>
-		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -19998,36 +20007,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Deliveries agenda</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Calendrier des livraisons</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
 			</object>
@@ -20079,6 +20058,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Statistiques de commandes</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoOrderAgenda</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Deliveries calendar</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoOrderAgenda</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Calendrier des livraisons</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -20203,6 +20212,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Doc démo</tsl_value>
+		<tsl_tooltip/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ShortCut</name>
+				<data>
+					<shc_name>DemoOrderAgenda</shc_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Deliveries calendar</tsl_value>
+		<tsl_tooltip/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ShortCut</name>
+				<data>
+					<shc_name>DemoOrderAgenda</shc_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Calendrier des livraisons</tsl_value>
 		<tsl_tooltip/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -23143,23 +23182,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
 			</object>
@@ -23178,6 +23200,23 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoSupplierStats</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -23282,6 +23321,23 @@ is still in pending state]]></cst_desc>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoDoc</shc_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ShortCut</name>
+				<data>
+					<shc_name>DemoOrderAgenda</shc_name>
 				</data>
 			</object>
 		</prm_object>
@@ -23485,23 +23541,6 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>DemoPlaceNewOrder</obe_name>
 				</data>
 			</object>
@@ -23520,6 +23559,23 @@ is still in pending state]]></cst_desc>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>DemoSupplierStats</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoOrderAgenda</obe_name>
 				</data>
 			</object>
 		</prm_object>
@@ -23554,6 +23610,23 @@ is still in pending state]]></cst_desc>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoOrderNew</shc_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>ShortCut</name>
+				<data>
+					<shc_name>DemoOrderAgenda</shc_name>
 				</data>
 			</object>
 		</prm_object>

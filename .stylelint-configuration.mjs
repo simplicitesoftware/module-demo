@@ -8,7 +8,7 @@ export default {
     "@stylistic/stylelint-plugin"
   ],
   rules: {
-    "@stylistic/indentation": "tab",
+    "@stylistic/indentation": 4,
     "@stylistic/max-empty-lines": 1,
     "color-hex-length": "short",
     "declaration-empty-line-before": "never",
