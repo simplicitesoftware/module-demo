@@ -768,7 +768,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<shc_order>120</shc_order>
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>img/color/documents_folder</shc_icon>
-		<shc_keys/>
+		<shc_keys>Alt+O</shc_keys>
 		<shc_home_style/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<shc_width/>
