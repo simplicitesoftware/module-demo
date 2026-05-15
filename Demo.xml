@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1282" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1283" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -15230,7 +15230,7 @@ is still in pending state]]></cst_desc>
 		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
 		<vwi_position>7</vwi_position>
 		<vwi_type>E</vwi_type>
-		<vwi_title>0</vwi_title>
+		<vwi_title>1</vwi_title>
 		<vwi_research_id.rch_name/>
 		<vwi_research_id.rch_object_id.obo_name/>
 		<vwi_research_id.rch_user_id.usr_login/>
@@ -22460,6 +22460,26 @@ is still in pending state]]></cst_desc>
 		<tsl_value>Démo (utilisateur)</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateViewItem</name>
+	<action>upsert</action>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ViewItem</name>
+				<data>
+					<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+					<vwi_position>7</vwi_position>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>All contacts</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
