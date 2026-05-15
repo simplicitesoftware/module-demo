@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1258" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1274" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -222,7 +222,12 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<viw_ui><![CDATA[<div>
   <div class="area" data-area="5"></div>
   <div class="row">
-    <div class="area col-sm-12" data-area="1,2,3,4,6:="></div>
+    <div class="col-sm-9">
+      <div class="area" data-area="1,2,3,4,6:="></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="area" data-area="7"></div>
+    </div>
   </div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
@@ -673,6 +678,16 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<shc_order>120</shc_order>
 		<shc_visible>P;H</shc_visible>
 		<shc_icon>img/color/documents_folder</shc_icon>
+		<shc_keys>Alt+O</shc_keys>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<shc_name>DemoOrderAgenda</shc_name>
+		<shc_url><![CDATA[javascript:$ui.displayCalendar(null, 'DemoOrder', 'DemoOrderAgenda', { nav: 'new', showNav: true })]]></shc_url>
+		<shc_target>frame_work</shc_target>
+		<shc_order>130</shc_order>
+		<shc_visible>P;H</shc_visible>
+		<shc_icon>calendar</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -1244,10 +1259,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Open</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#f4cccc</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1255,10 +1270,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Processing</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#fff2cc</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_STATUS</lov_list_id.lov_name>
@@ -1266,10 +1281,10 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>3</lov_order_by>
 		<lov_label>Closed</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color/>
-		<lov_color_bg/>
+		<lov_color>#000000</lov_color>
+		<lov_color_bg>#d9ead3</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
-		<lov_display>I;L</lov_display>
+		<lov_display>I;L;T</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>DEMO_CTC_SUBTYPE</lov_list_id.lov_name>
@@ -5539,6 +5554,32 @@ This custom API returns the available products only.]]></obe_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
+		<obe_name>DemoContacts</obe_name>
+		<obe_type>E</obe_type>
+		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
+		<obe_url/>
+		<obe_settings><![CDATA[{
+  "subTitleField": "demoCtcCliId__demoCliCode",
+  "instance": "cards_DemoContact",
+  "statusField": "demoCtcStatus",
+  "titleField": "demoCtcDatetime",
+  "name": "DemoContact",
+  "rowClasses": "row-vertical",
+  "descriptionField": "demoCtcMessages"
+}]]></obe_settings>
+		<obe_comment><![CDATA[Contacts widget
+---------------
+
+This UI widget is diplaying the list of contacts.]]></obe_comment>
+		<obe_help/>
+		<obe_class>com.simplicite.webapp.web.widgets.CardsExternalObject</obe_class>
+		<obe_script_id/>
+		<obe_icon/>
+		<obe_permalink/>
+		<obe_widget>1</obe_widget>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
 		<obe_name>DemoCounters</obe_name>
 		<obe_type>E</obe_type>
 		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
@@ -6342,6 +6383,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6351,7 +6393,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6374,6 +6415,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6383,7 +6425,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6406,6 +6447,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6415,7 +6457,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6438,6 +6479,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6447,7 +6489,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6470,6 +6511,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6479,7 +6521,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6502,6 +6543,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6511,7 +6553,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6534,6 +6575,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6543,7 +6585,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6566,6 +6607,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6575,7 +6617,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6598,6 +6639,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6607,7 +6649,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6630,6 +6671,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6639,7 +6681,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6662,6 +6703,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6671,7 +6713,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6694,6 +6735,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6703,7 +6745,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6726,6 +6767,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6735,7 +6777,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6758,6 +6799,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6767,7 +6809,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6790,6 +6831,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6799,7 +6841,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6822,6 +6863,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6831,7 +6873,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6854,6 +6895,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -6863,7 +6905,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoClient-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6886,6 +6927,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>1</obf_fld_required>
 		<obf_fld_updatable>0</obf_fld_updatable>
@@ -6895,7 +6937,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6918,6 +6959,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>1</obf_fld_required>
 		<obf_fld_updatable>2</obf_fld_updatable>
@@ -6927,7 +6969,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6950,6 +6991,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>0</obf_fld_required>
 		<obf_fld_updatable>2</obf_fld_updatable>
@@ -6959,7 +7001,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -6982,6 +7023,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>1</obf_fld_required>
 		<obf_fld_updatable>2</obf_fld_updatable>
@@ -6991,7 +7033,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7014,6 +7055,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7023,7 +7065,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7046,6 +7087,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>1</obf_fld_required>
 		<obf_fld_updatable>2</obf_fld_updatable>
@@ -7055,7 +7097,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7078,6 +7119,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>20</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>1</obf_fld_required>
 		<obf_fld_updatable>2;3</obf_fld_updatable>
@@ -7087,7 +7129,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7110,6 +7151,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7119,7 +7161,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7142,6 +7183,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7151,7 +7193,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7174,6 +7215,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7183,7 +7225,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7206,6 +7247,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7215,7 +7257,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7238,6 +7279,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7247,7 +7289,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7270,6 +7311,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7279,7 +7321,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7302,6 +7343,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7311,7 +7353,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7334,6 +7375,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7343,7 +7385,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7366,6 +7407,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>10</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required>0</obf_fld_required>
 		<obf_fld_updatable>2;3</obf_fld_updatable>
@@ -7375,7 +7417,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7398,6 +7439,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7407,7 +7449,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7430,6 +7471,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7439,7 +7481,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7462,6 +7503,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7471,7 +7513,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7494,6 +7535,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7503,7 +7545,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7526,6 +7567,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7535,7 +7577,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7558,6 +7599,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7567,7 +7609,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7590,6 +7631,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7599,7 +7641,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7622,6 +7663,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7631,7 +7673,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7654,6 +7695,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7663,7 +7705,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7686,6 +7727,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7695,7 +7737,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7718,6 +7759,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7727,7 +7769,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7750,6 +7791,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7759,7 +7801,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContact</obf_joined_id.obf_object_id.obo_name>
@@ -7782,6 +7823,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required>0</obf_fld_required>
 		<obf_fld_updatable>2</obf_fld_updatable>
@@ -7791,7 +7833,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7814,6 +7855,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required>0</obf_fld_required>
 		<obf_fld_updatable>2</obf_fld_updatable>
@@ -7823,7 +7865,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq>0</obf_fld_researchreq>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7846,6 +7887,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7855,7 +7897,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7878,6 +7919,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7887,7 +7929,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoContact-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7910,6 +7951,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>99990</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7919,7 +7961,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -7942,6 +7983,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7951,7 +7993,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContactHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -7974,6 +8015,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -7983,7 +8025,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContactHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -8006,6 +8047,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8015,7 +8057,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoContactHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -8038,6 +8079,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8047,7 +8089,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8070,6 +8111,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8079,7 +8121,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8102,6 +8143,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8111,7 +8153,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8134,6 +8175,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8143,7 +8185,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8166,6 +8207,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8175,7 +8217,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8198,6 +8239,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8207,7 +8249,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8230,6 +8271,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8239,7 +8281,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8262,6 +8303,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8271,7 +8313,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8294,6 +8335,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8303,7 +8345,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8326,6 +8367,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8335,7 +8377,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8358,6 +8399,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>10</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8367,7 +8409,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8390,6 +8431,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8399,7 +8441,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8422,6 +8463,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8431,7 +8473,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8454,6 +8495,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8463,7 +8505,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8486,6 +8527,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8495,7 +8537,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8518,6 +8559,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8527,7 +8569,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8550,6 +8591,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8559,7 +8601,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8582,6 +8623,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8591,7 +8633,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8614,6 +8655,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8623,7 +8665,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8646,6 +8687,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>1</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8655,7 +8697,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8678,6 +8719,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>10</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8687,7 +8729,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -8710,6 +8751,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8719,7 +8761,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8742,6 +8783,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8751,7 +8793,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8774,6 +8815,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8783,7 +8825,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8806,6 +8847,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8815,7 +8857,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8838,6 +8879,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8847,7 +8889,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8870,6 +8911,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8879,7 +8921,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8902,6 +8943,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8911,7 +8953,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8934,6 +8975,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8943,7 +8985,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8966,6 +9007,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -8975,7 +9017,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -8998,6 +9039,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9007,7 +9049,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -9030,6 +9071,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9039,7 +9081,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -9062,6 +9103,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9071,7 +9113,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -9094,6 +9135,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9103,7 +9145,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrder</obf_joined_id.obf_object_id.obo_name>
@@ -9126,6 +9167,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9135,7 +9177,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9158,6 +9199,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9167,7 +9209,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9190,6 +9231,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9199,7 +9241,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9222,6 +9263,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9231,7 +9273,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9254,6 +9295,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9263,7 +9305,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoOrder-5</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9286,6 +9327,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>99990</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9295,7 +9337,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9318,6 +9359,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9327,7 +9369,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9350,6 +9391,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9359,7 +9401,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9382,6 +9423,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9391,7 +9433,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9414,6 +9455,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9423,7 +9465,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9446,6 +9487,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9455,7 +9497,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9478,6 +9519,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9487,7 +9529,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9510,6 +9551,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9519,7 +9561,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoOrderHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -9542,6 +9583,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9551,7 +9593,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9574,6 +9615,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9583,7 +9625,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9606,6 +9647,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9615,7 +9657,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9638,6 +9679,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9647,7 +9689,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9670,6 +9711,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9679,7 +9721,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9702,6 +9743,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>10</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9711,7 +9753,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9734,6 +9775,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9743,7 +9785,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProduct</obf_joined_id.obf_object_id.obo_name>
@@ -9766,6 +9807,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9775,7 +9817,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProduct</obf_joined_id.obf_object_id.obo_name>
@@ -9798,6 +9839,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>4</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9807,7 +9849,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProduct</obf_joined_id.obf_object_id.obo_name>
@@ -9830,6 +9871,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9839,7 +9881,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProduct</obf_joined_id.obf_object_id.obo_name>
@@ -9862,6 +9903,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9871,7 +9913,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9894,6 +9935,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9903,7 +9945,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9926,6 +9967,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9935,7 +9977,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9958,6 +9999,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9967,7 +10009,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -9990,6 +10031,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -9999,7 +10041,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10022,6 +10063,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10031,7 +10073,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10054,6 +10095,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10063,7 +10105,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10086,6 +10127,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10095,7 +10137,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10118,6 +10159,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10127,7 +10169,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10150,6 +10191,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10159,7 +10201,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10182,6 +10223,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10191,7 +10233,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10214,6 +10255,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10223,7 +10265,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10246,6 +10287,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10255,7 +10297,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10278,6 +10319,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10287,7 +10329,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-4</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10310,6 +10351,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10319,7 +10361,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoProduct-5</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10342,6 +10383,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>99990</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10351,7 +10393,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10374,6 +10415,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10383,7 +10425,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProductHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -10406,6 +10447,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10415,7 +10457,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProductHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -10438,6 +10479,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10447,7 +10489,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoProductHistoric</obf_joined_id.obf_object_id.obo_name>
@@ -10470,6 +10511,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10479,7 +10521,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10502,6 +10543,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10511,7 +10553,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10534,6 +10575,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10543,7 +10585,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10566,6 +10607,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10575,7 +10617,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10598,6 +10639,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10607,7 +10649,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10630,6 +10671,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10639,7 +10681,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10662,6 +10703,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>0</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10671,7 +10713,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10694,6 +10735,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10703,7 +10745,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10726,6 +10767,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10735,7 +10777,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10758,6 +10799,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10767,7 +10809,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10790,6 +10831,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10799,7 +10841,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10822,6 +10863,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10831,7 +10873,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10854,6 +10895,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10863,7 +10905,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10886,6 +10927,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10895,7 +10937,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10918,6 +10959,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10927,7 +10969,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10950,6 +10991,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order>1000</obf_ref_order>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10959,7 +11001,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -10982,6 +11023,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible>2</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -10991,7 +11033,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>DemoSupplier</obf_joined_id.obf_object_id.obo_name>
@@ -11014,6 +11055,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -11023,7 +11065,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>DemoSupplier-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -11046,6 +11087,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -11055,7 +11097,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>UserFilters-Field</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name/>
@@ -11078,6 +11119,7 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
+		<obf_fld_uk/>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -11087,7 +11129,6 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
-		<obf_fld_uk/>
 		<obf_area_id.ofa_name>UserFilters-Field</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>UserFilters</obf_joined_id.obf_object_id.obo_name>
@@ -14838,6 +14879,26 @@ is still in pending state]]></cst_desc>
 		<vwi_lov_code/>
 		<vwi_show/>
 		<vwi_url><![CDATA[{"extobject": "DemoSupplierStats"}]]></vwi_url>
+		<vwi_image/>
+		<vwi_subview_id.viw_name/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+		<vwi_position>7</vwi_position>
+		<vwi_type>E</vwi_type>
+		<vwi_title>1</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url><![CDATA[{"extobject": "DemoContacts"}]]></vwi_url>
 		<vwi_image/>
 		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
@@ -19620,7 +19681,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Deliveries schedule</tsl_value>
+		<tsl_value>Deliveries calendar</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -19790,6 +19851,36 @@ is still in pending state]]></cst_desc>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoContacts</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>All contacts</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoContacts</obe_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Tous les contacts</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateShortcut</name>
@@ -19910,6 +20001,36 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Doc démo</tsl_value>
+		<tsl_tooltip/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ShortCut</name>
+				<data>
+					<shc_name>DemoOrderAgenda</shc_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Order calendar</tsl_value>
+		<tsl_tooltip/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ShortCut</name>
+				<data>
+					<shc_name>DemoOrderAgenda</shc_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Calendrier des livraisons</tsl_value>
 		<tsl_tooltip/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -21984,6 +22105,26 @@ is still in pending state]]></cst_desc>
 	</data>
 </object>
 <object>
+	<name>TranslateViewItem</name>
+	<action>upsert</action>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ViewItem</name>
+				<data>
+					<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+					<vwi_position>7</vwi_position>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Tous les contacts</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>TranslateTreeView</name>
 	<action>upsert</action>
 	<data>
@@ -22835,6 +22976,23 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
 		<prm_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoContacts</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
 				<name>PrintTemplate</name>
 				<data>
 					<prt_name>DemoProduct-Brochure</prt_name>
@@ -23177,6 +23335,23 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
 		<prm_object>
 			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoContacts</obe_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoClientNew</shc_name>
@@ -23222,6 +23397,85 @@ is still in pending state]]></cst_desc>
 		<prm_req>0</prm_req>
 		<prm_prop/>
 		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>NotiConfig</name>
+	<action>upsert</action>
+	<data>
+		<notiConfName>DemoContactCreation</notiConfName>
+		<notiConfAction>3</notiConfAction>
+		<notiConfObjectinternalId.obo_name>DemoContact</notiConfObjectinternalId.obo_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<notiConfExpression><![CDATA[true]]></notiConfExpression>
+	</data>
+</object>
+<object>
+	<name>NotiConfChan</name>
+	<action>upsert</action>
+	<data>
+		<notiConfchanConfId.notiConfName>DemoContactCreation</notiConfchanConfId.notiConfName>
+		<notiConfchanChanId.notiChanType>MAIL</notiConfchanChanId.notiChanType>
+		<notiConfchanMandatory>1</notiConfchanMandatory>
+		<notiConfchanMethod/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>NotiConfigContent</name>
+	<action>upsert</action>
+	<data>
+		<tsl_lang>ENU</tsl_lang>
+		<notiContContent><![CDATA[<p>Hello,</p>
+<p>A new <b>contact</b> of type [VALUE:demoCtcType] (sub-type [VALUE:demoCtcSubType]) has been posted
+by customer [VALUE:demoCtcCliId.demoCliCode] ([VALUE:demoCtcCliId.demoCliFirstname] [VALUE:demoCtcCliId.demoCliLastname])
+using [VALUE:demoCtcCanal]:</p>
+<pre>[VALUE:demoCtcMessages]</pre>]]></notiContContent>
+		<notiContConfId.notiConfName>DemoContactCreation</notiContConfId.notiConfName>
+		<notiContConfchanId.notiConfchanConfId.notiConfName/>
+		<notiContConfchanId.notiConfchanChanId.notiChanType/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<notiContSubject><![CDATA[New contact from [VALUE:demoCtcCliId.demoCliCode]]]></notiContSubject>
+	</data>
+	<data>
+		<tsl_lang>FRA</tsl_lang>
+		<notiContContent><![CDATA[<p>Bonjour,</p>
+<p>Un nouveau <b>contact</b> de type [VALUE:demoCtcType] (sous-type [VALUE:demoCtcSubType]) a été posté
+par le client [VALUE:demoCtcCliId.demoCliCode] ([VALUE:demoCtcCliId.demoCliFirstname] [VALUE:demoCtcCliId.demoCliLastname])
+via [VALUE:demoCtcCanal]:</p>
+<pre>[VALUE:demoCtcMessages]</pre>]]></notiContContent>
+		<notiContConfId.notiConfName>DemoContactCreation</notiContConfId.notiConfName>
+		<notiContConfchanId.notiConfchanConfId.notiConfName/>
+		<notiContConfchanId.notiConfchanChanId.notiChanType/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<notiContSubject><![CDATA[Nouveau contact de  [VALUE:demoCtcCliId.demoCliCode]]]></notiContSubject>
+	</data>
+</object>
+<object>
+	<name>NotiConfigDest</name>
+	<action>upsert</action>
+	<data>
+		<notiCdOrder>1</notiCdOrder>
+		<notiCdConfigId.notiConfName>DemoContactCreation</notiCdConfigId.notiConfName>
+		<notiCdGroupId.grp_name/>
+		<notiCdQuery/>
+		<notiCdUserId.usr_login>admin</notiCdUserId.usr_login>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<notiCdType>USER</notiCdType>
+	</data>
+</object>
+<object>
+	<name>NotiGroupChannels</name>
+	<action>upsert</action>
+	<data>
+		<notiGcCdId.notiCdOrder>1</notiGcCdId.notiCdOrder>
+		<notiGcCdId.notiCdConfigId.notiConfName>DemoContactCreation</notiGcCdId.notiCdConfigId.notiConfName>
+		<notiGcCdId.notiCdGroupId.grp_name/>
+		<notiGcCdId.notiCdUserId.usr_login>admin</notiGcCdId.notiCdUserId.usr_login>
+		<notiGcConfchanId.notiConfchanConfId.notiConfName>DemoContactCreation</notiGcConfchanId.notiConfchanConfId.notiConfName>
+		<notiGcConfchanId.notiConfchanChanId.notiChanType>MAIL</notiGcConfchanId.notiConfchanChanId.notiChanType>
+		<notiGcSubscribed>1</notiGcSubscribed>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>

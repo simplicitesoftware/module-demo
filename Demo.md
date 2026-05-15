@@ -426,6 +426,15 @@ Custom catalog REST web service
 This custom API returns the available products only.
 
 
+`DemoContacts` external object definition
+-----------------------------------------
+
+Contacts widget
+---------------
+
+This UI widget is diplaying the list of contacts.
+
+
 `DemoCounters` external object definition
 -----------------------------------------
 
