@@ -252,12 +252,16 @@ stateDiagram-v2
     - Impacts:
         - demoCtcOrdId.updatable = `[ISNEW] && ![FIELD:demoCtcCliId].isEmpty()`
 
+### Description (from code)
+
+> Contact business object
+
 ### Implemented hooks
 
 * `printMustache`: HTML publication (using Mustache(R) templating) method
 * `printExcel`: Microsoft Excel(R) sheet publication method
-* `postLoad`: _no javadoc_
-* `canReference`: _no javadoc_
+* `postLoad`
+* `canReference`
 
 `DemoContactHistoric` (Contact (hist.)) business object definition
 ------------------------------------------------------------------
@@ -434,14 +438,18 @@ stateDiagram-v2
         - object.update = `[VALUE:demoOrdPrdId.demoPrdSupId.demoSupUsrId] == [USERID]+""`
         - object.delete = `[VALUE:demoOrdPrdId.demoPrdSupId.demoSupUsrId] == [USERID]+""`
 
+### Description (from code)
+
+> Order business object
+
 ### Implemented hooks
 
-* `isPrintTemplateEnable`: _no javadoc_
-* `getUserKeyLabel`: _no javadoc_
-* `postValidate`: _no javadoc_
-* `postUpdate`: _no javadoc_
-* `postSave`: _no javadoc_
-* `canReference`: _no javadoc_
+* `isPrintTemplateEnable`
+* `getUserKeyLabel`
+* `postValidate`
+* `postUpdate`
+* `postSave`
+* `canReference`
 
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------
@@ -597,15 +605,19 @@ Its reference is unique per supplier.
 state transition to _shipped_ status.
 * `DEMO_PRD_EMAIL`: Send product information by email
 
+### Description (from code)
+
+> Product business object
+
 ### Implemented hooks
 
 * `increaseStock`: Increase stock action method
 * `decreaseStock`: Decrease stock action method
 * `printBrochure`: Microsoft Word(R) brochure publication method
-* `getUserKeyLabel`: _no javadoc_
-* `initAction`: _no javadoc_
-* `preSave`: _no javadoc_
-* `canReference`: _no javadoc_
+* `getUserKeyLabel`
+* `initAction`
+* `preSave`
+* `canReference`
 * `sendEmail`: Send product data in an email action method
 
 `DemoClient` (Customer) business object definition
@@ -657,12 +669,16 @@ His address is geolocalized using GoogleMaps&reg; API.
     - `T2` Code T2
     - `T3` Code T3
 
+### Description (from code)
+
+> Customer business object
+
 ### Implemented hooks
 
-* `getUserKeyLabel`: _no javadoc_
-* `postLoad`: _no javadoc_
-* `postValidate`: _no javadoc_
-* `preSave`: _no javadoc_
+* `getUserKeyLabel`
+* `postLoad`
+* `postValidate`
+* `preSave`
 
 ## Process: DemoOrderCreate
 
@@ -683,6 +699,7 @@ External objects
 * `DemoCarousel`: Products carousel ----------------- This UI widget is only displaying **featured** products.
 * `DemoCatalog`: Products catalog page --------------------- This UI widget/page is only displaying **available** products.
 * `DemoCatalogAPI`: Custom catalog REST web service ------------------------------- This custom API returns the available products only.
+* `DemoContacts`: Contacts widget --------------- This UI widget is diplaying the list of contacts.
 * `DemoCounters`: Counters -------- This UI widget is displaying various counters.
 * `DemoNews`: News widget ----------- This UI widget is diplaying the standard platform news data. Note that the instance name `web_WebNews` is on purpose. Using this instance name applies the date-based, language-based and rights filterings.
 * `DemoOrderAgenda`: Custom order delivery agenda ----------------------------- This custom UI page is didicated to display orders on an agenda. Note that the same features are also available using the standard object calendar.
