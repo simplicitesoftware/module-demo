@@ -18616,7 +18616,7 @@ is still in pending state]]></cst_desc>
 		<tsl_short_value>Code (on list)</tsl_short_value>
 		<tsl_placeholder>Code (placeholder)</tsl_placeholder>
 		<tsl_listhelp><![CDATA[<p>Supplier code help (on list)</p>]]></tsl_listhelp>
-		<tsl_tooltip><![CDATA[<p>Supplier code tooltip</p>]]></tsl_tooltip>
+		<tsl_tooltip><![CDATA[<p>Supplier code hemp (tooltip)</p>]]></tsl_tooltip>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
