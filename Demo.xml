@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1274" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1280" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -2013,6 +2013,22 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 </object>
 <object>
+	<name>FieldType</name>
+	<action>upsert</action>
+	<data>
+		<flt_code>DEMO_CLIENT_CODE</flt_code>
+		<flt_method/>
+		<flt_regexp><![CDATA[CLI[0-9]{3}]]></flt_regexp>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<flt_code>DEMO_PRODUCT_CODE</flt_code>
+		<flt_method/>
+		<flt_regexp><![CDATA[REF[0-9]{3}]]></flt_regexp>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>Field</name>
 	<action>upsert</action>
 	<data>
@@ -2139,7 +2155,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_name>demoCliCode</fld_name>
 		<fld_dbname>cli_code</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>2;3</fld_updatable>
+		<fld_updatable>0</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
@@ -2151,7 +2167,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>15</fld_type>
-		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
+		<fld_type_id.flt_code>DEMO_CLIENT_CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
@@ -2163,7 +2179,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_autocomp>1</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
-		<fld_case>U</fld_case>
+		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
 		<fld_speech/>
@@ -2173,7 +2189,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_classification/>
 		<fld_anon/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<fld_incrementsyntax/>
+		<fld_incrementsyntax>CLI&lt;000&gt;</fld_incrementsyntax>
 	</data>
 	<data>
 		<fld_name>demoCliComments</fld_name>
@@ -4111,7 +4127,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>15</fld_type>
-		<fld_type_id.flt_code>CODE</fld_type_id.flt_code>
+		<fld_type_id.flt_code>DEMO_PRODUCT_CODE</fld_type_id.flt_code>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
 		<fld_size>10</fld_size>
@@ -16213,7 +16229,7 @@ is still in pending state]]></cst_desc>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
-		<tsl_placeholder/>
+		<tsl_placeholder>Auto-incremented</tsl_placeholder>
 		<tsl_listhelp/>
 		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -16232,7 +16248,7 @@ is still in pending state]]></cst_desc>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
-		<tsl_placeholder/>
+		<tsl_placeholder>Auto-incrémenté</tsl_placeholder>
 		<tsl_listhelp/>
 		<tsl_tooltip/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -18071,7 +18087,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Reference</tsl_value>
+		<tsl_value>Product reference</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -18090,7 +18106,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Référence</tsl_value>
+		<tsl_value>Référence produit</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -18229,7 +18245,7 @@ is still in pending state]]></cst_desc>
 		<tsl_short_value>Code (on list)</tsl_short_value>
 		<tsl_placeholder>Code (placeholder)</tsl_placeholder>
 		<tsl_listhelp><![CDATA[<p>Supplier code help (on list)</p>]]></tsl_listhelp>
-		<tsl_tooltip><![CDATA[<p>Supplier code tooltip</p>]]></tsl_tooltip>
+		<tsl_tooltip><![CDATA[<p>Supplier code hemp (tooltip)</p>]]></tsl_tooltip>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -19286,6 +19302,66 @@ is still in pending state]]></cst_desc>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Statistiques de commandes</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateFieldType</name>
+	<action>upsert</action>
+	<data>
+		<tsl_object>
+			<object>
+				<name>FieldType</name>
+				<data>
+					<flt_code>DEMO_CLIENT_CODE</flt_code>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Customer code</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>FieldType</name>
+				<data>
+					<flt_code>DEMO_CLIENT_CODE</flt_code>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code client</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>FieldType</name>
+				<data>
+					<flt_code>DEMO_PRODUCT_CODE</flt_code>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>PRODUCT CODE</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>FieldType</name>
+				<data>
+					<flt_code>DEMO_PRODUCT_CODE</flt_code>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>PRODUCT CODE</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

@@ -355,7 +355,7 @@ His address is geolocalized using GoogleMaps&reg; API.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoCliCode`                                                | regexp(10)                               | yes\*    | yes       |          | Customer code                                                                    |
+| `demoCliCode`                                                | regexp(10)                               | yes\*    |           |          | Customer code                                                                    |
 | `demoCliFirstname`                                           | char(100)                                | yes      | yes       | yes      | Customer first name                                                              |
 | `demoCliLastname`                                            | char(100)                                | yes      | yes       | yes      | Customer last name                                                               |
 | `demoCliAddress1`                                            | char(100)                                | yes      | yes       | yes      | Customer address (line 1)                                                        |
