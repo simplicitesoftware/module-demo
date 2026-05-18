@@ -4360,7 +4360,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_dbname>prd_code</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>0</fld_updatable>
-		<fld_required>0</fld_required>
+		<fld_required>1</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -4447,7 +4447,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_visible>3</fld_visible>
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
-		<fld_fonctid>1</fld_fonctid>
+		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>C</fld_sort>
