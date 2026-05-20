@@ -11,7 +11,7 @@
 `Demo` module definition
 ========================
 
-**Packages**: DemoDashboard, DemoAPIs
+**Packages**: DemoDashboard, DemoAPIs, DemoCustomDisp
 
 Demo
 ====
