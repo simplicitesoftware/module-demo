@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1290" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1293" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -408,7 +408,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:19:08</usr_logout>
-		<usr_last_logon>2025-10-10 10:27:30</usr_last_logon>
+		<usr_last_logon>2026-05-27 15:09:19</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -444,7 +444,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2025-05-21 18:32:40</usr_logout>
-		<usr_last_logon>2025-05-21 18:36:56</usr_last_logon>
+		<usr_last_logon>2026-05-25 23:46:37</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -531,20 +531,44 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<action>upsert</action>
 	<data>
 		<usp_user_id.usr_login>admin</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MENU_SEARCHABLE</usp_param_id.sys_code>
-		<usp_value><![CDATA[no]]></usp_value>
+		<usp_param_id.sys_code>MENU_SETTINGS</usp_param_id.sys_code>
+		<usp_value><![CDATA[{
+    "top": {
+    	"active": true
+    },
+    "left" : {
+        "active": true,
+        "collapse": "icons-expand",
+        "style": "standard",
+        "searchable": false
+    }
+}]]></usp_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<usp_user_id.usr_login>user_enu</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MENU_SEARCHABLE</usp_param_id.sys_code>
-		<usp_value><![CDATA[no]]></usp_value>
+		<usp_param_id.sys_code>MENU_SETTINGS</usp_param_id.sys_code>
+		<usp_value><![CDATA[{
+    "top": {
+    	"active": true
+    },
+    "left" : {
+        "active": false
+    }
+}]]></usp_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<usp_user_id.usr_login>user_fra</usp_user_id.usr_login>
-		<usp_param_id.sys_code>MENU_SEARCHABLE</usp_param_id.sys_code>
-		<usp_value><![CDATA[no]]></usp_value>
+		<usp_param_id.sys_code>MENU_SETTINGS</usp_param_id.sys_code>
+		<usp_value><![CDATA[{
+    "top": {
+    	"active": true
+    },
+    "left" : {
+        "active": false
+    }
+}]]></usp_value>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -609,6 +633,11 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<data>
 		<prf_profile_id.grp_name>DEMO_ADMIN</prf_profile_id.grp_name>
 		<prf_group_id.grp_name>MODELER</prf_group_id.grp_name>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prf_profile_id.grp_name>DEMO_ADMIN</prf_profile_id.grp_name>
+		<prf_group_id.grp_name>NOTI_READER</prf_group_id.grp_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1170,8 +1199,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<lov_name>DEMO_CTC_STATUS</lov_name>
-		<lov_navbar>ARROW</lov_navbar>
-		<lov_navbar_opt/>
+		<lov_navbar>BREAD</lov_navbar>
+		<lov_navbar_opt>DATE;USER</lov_navbar_opt>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<lov_model_id.mod_name>DemoContactStates</lov_model_id.mod_name>
 		<lov_selectall_opt>0</lov_selectall_opt>
@@ -5035,7 +5064,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_clipboard>0</fld_clipboard>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
+		<fld_copy>0</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
@@ -23909,6 +23938,13 @@ is still in pending state]]></cst_desc>
 		<notiConfchanMethod/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
+	<data>
+		<notiConfchanConfId.notiConfName>DemoContactCreation</notiConfchanConfId.notiConfName>
+		<notiConfchanChanId.notiChanType>INT</notiConfchanChanId.notiChanType>
+		<notiConfchanMandatory>1</notiConfchanMandatory>
+		<notiConfchanMethod/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>NotiConfigContent</name>
@@ -23963,6 +23999,16 @@ via [VALUE:demoCtcCanal]:</p>
 		<notiGcCdId.notiCdUserId.usr_login>admin</notiGcCdId.notiCdUserId.usr_login>
 		<notiGcConfchanId.notiConfchanConfId.notiConfName>DemoContactCreation</notiGcConfchanId.notiConfchanConfId.notiConfName>
 		<notiGcConfchanId.notiConfchanChanId.notiChanType>MAIL</notiGcConfchanId.notiConfchanChanId.notiChanType>
+		<notiGcSubscribed>1</notiGcSubscribed>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<notiGcCdId.notiCdOrder>1</notiGcCdId.notiCdOrder>
+		<notiGcCdId.notiCdConfigId.notiConfName>DemoContactCreation</notiGcCdId.notiCdConfigId.notiConfName>
+		<notiGcCdId.notiCdGroupId.grp_name/>
+		<notiGcCdId.notiCdUserId.usr_login>admin</notiGcCdId.notiCdUserId.usr_login>
+		<notiGcConfchanId.notiConfchanConfId.notiConfName>DemoContactCreation</notiGcConfchanId.notiConfchanConfId.notiConfName>
+		<notiGcConfchanId.notiConfchanChanId.notiChanType>INT</notiGcConfchanId.notiConfchanChanId.notiChanType>
 		<notiGcSubscribed>1</notiGcSubscribed>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
