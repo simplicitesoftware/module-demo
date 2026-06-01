@@ -80,13 +80,13 @@ A contact can be linked or not a an order of the selelcted client
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoCtcDatetime`                                            | datetime                                 | yes*     |           |          | Contcat date and time                                                            |
+| `demoCtcDatetime`                                            | datetime                                 | yes\*    |           |          | Contcat date and time                                                            |
 | `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
 | `demoCtcCanal`                                               | enum(10) using `DEMO_CTC_CANAL` list     | yes      | yes       |          | Canal used for contact                                                           |
 | `demoCtcPriority`                                            | boolean                                  | yes      | yes       |          | Contact priority                                                                 |
 | `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
-| `demoCtcCliId` link to **`DemoClient`**                      | id                                       | yes*     | yes       |          | Contact customer                                                                 |
+| `demoCtcCliId` link to **`DemoClient`**                      | id                                       | yes\*    | yes       |          | Contact customer                                                                 |
 | _Ref. `demoCtcCliId.demoCliCode`_                            | _regexp(10)_                             |          |           |          | _Customer code_                                                                  |
 | _Ref. `demoCtcCliId.demoCliFirstname`_                       | _char(100)_                              |          |           | yes      | _Customer first name_                                                            |
 | _Ref. `demoCtcCliId.demoCliLastname`_                        | _char(100)_                              |          |           | yes      | _Customer last name_                                                             |
@@ -150,10 +150,10 @@ A contact can be linked or not a an order of the selelcted client
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `row_ref_id` link to **`DemoContact`**                       | id                                       | yes\*    |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes\*    | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes\*    |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes\*    |           |          | Created date                                                                     |
 | `demoCtcStatus`                                              | enum(1) using `DEMO_CTC_STATUS` list     | yes      | yes       |          | Contact status                                                                   |
 | `demoCtcType`                                                | enum(10) using `DEMO_CTC_TYPE` list      | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(10) using `DEMO_CTC_SUBTYPE` list   |          | yes       |          | Contact sub type                                                                 |
@@ -184,11 +184,11 @@ An order is for one single product.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoOrdNumber`                                              | int(11)                                  | yes*     |           |          | Order number (automatically calculated at creation)                              |
+| `demoOrdNumber`                                              | int(11)                                  | yes\*    |           |          | Order number (automatically calculated at creation)                              |
 | `demoOrdDate`                                                | date                                     |          |           |          | Order date                                                                       |
 | `demoOrdStatus`                                              | enum(30) using `DEMO_ORD_STATUS` list    | yes      | yes       |          | Order status                                                                     |
 | `demoOrdDeliveryDate`                                        | datetime                                 |          | yes       |          | Order delivery date                                                              |
-| `demoOrdCliId` link to **`DemoClient`**                      | id                                       | yes*     | yes       |          | Order customer                                                                   |
+| `demoOrdCliId` link to **`DemoClient`**                      | id                                       | yes\*    | yes       |          | Order customer                                                                   |
 | _Ref. `demoOrdCliId.demoCliCode`_                            | _regexp(10)_                             |          |           |          | _Customer code_                                                                  |
 | _Ref. `demoOrdCliId.demoCliFirstname`_                       | _char(100)_                              |          |           | yes      | _Customer first name_                                                            |
 | _Ref. `demoOrdCliId.demoCliLastname`_                        | _char(100)_                              |          |           | yes      | _Customer last name_                                                             |
@@ -198,7 +198,7 @@ An order is for one single product.
 | _Ref. `demoOrdCliId.demoCliZipCode`_                         | _char(10)_                               |          |           | yes      | _Customer postal code_                                                           |
 | _Ref. `demoOrdCliId.demoCliCity`_                            | _char(50)_                               |          |           | yes      | _Customer city_                                                                  |
 | _Ref. `demoOrdCliId.demoCliCountry`_                         | _enum(30) using `DEMO_COUNTRY` list_     |          |           | yes      | _Customer country_                                                               |
-| `demoOrdPrdId` link to **`DemoProduct`**                     | id                                       | yes*     | yes       |          | Order product                                                                    |
+| `demoOrdPrdId` link to **`DemoProduct`**                     | id                                       | yes\*    | yes       |          | Order product                                                                    |
 | _Ref. `demoOrdPrdId.demoPrdReference`_                       | _regexp(10)_                             |          |           |          | _Product reference_                                                              |
 | _Ref. `demoOrdPrdId.demoPrdName`_                            | _char(100)_                              |          |           |          | _Product name_                                                                   |
 | _Ref. `demoOrdPrdId.demoPrdType`_                            | _enum(50) using `DEMO_PRD_TYPE` list_    |          |           |          | _Product type_                                                                   |
@@ -247,10 +247,10 @@ An order is for one single product.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes*     |           |          | Record row ID                                                                    |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `row_ref_id` link to **`DemoOrder`**                         | id                                       | yes\*    |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes\*    | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes\*    |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes\*    |           |          | Created date                                                                     |
 | `demoOrdStatus`                                              | enum(30) using `DEMO_ORD_STATUS` list    | yes      | yes       |          | Order status                                                                     |
 | `demoOrdQuantity`                                            | int(11)                                  | yes      | yes       |          | Product quantity ordered                                                         |
 
@@ -276,11 +276,11 @@ An order is for one single product.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `row_ref_id` link to **`DemoProduct`**                       | id                                       | yes*     |           |          | Record row ID                                                                    |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
-| `demoPrdReference`                                           | regexp(10)                               | yes*     | yes       |          | Product reference                                                                |
+| `row_ref_id` link to **`DemoProduct`**                       | id                                       | yes\*    |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes\*    | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes\*    |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes\*    |           |          | Created date                                                                     |
+| `demoPrdReference`                                           | regexp(10)                               | yes\*    | yes       |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
 | `demoPrdUnitPrice`                                           | float(11, 2)                             | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | yes      | yes       |          | Available product?                                                               |
@@ -295,7 +295,7 @@ suppliers of products that can be ordered.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoSupCode`                                                | regexp(50)                               | yes*     | yes       |          | Supplier unique code (e.g. `MYSUP`)                                              |
+| `demoSupCode`                                                | regexp(50)                               | yes\*    | yes       |          | Supplier unique code (e.g. `MYSUP`)                                              |
 | `demoSupName`                                                | char(100)                                | yes      | yes       |          | Supplier name                                                                    |
 | `demoSupDescription`                                         | html(1000000)                            |          | yes       |          | Supplier description                                                             |
 | `demoSupPhone`                                               | phone(20)                                |          | yes       |          | Supplier phone number                                                            |
@@ -319,12 +319,12 @@ Its reference is unique per supplier.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoPrdSupId` link to **`DemoSupplier`**                    | id                                       | yes*     | yes       |          | Product supplier                                                                 |
+| `demoPrdSupId` link to **`DemoSupplier`**                    | id                                       | yes\*    | yes       |          | Product supplier                                                                 |
 | _Ref. `demoPrdSupId.demoSupCode`_                            | _regexp(50)_                             |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
 | _Ref. `demoPrdSupId.demoSupName`_                            | _char(100)_                              |          |           |          | _Supplier name_                                                                  |
 | _Ref. `demoPrdSupId.demoSupLogo`_                            | _image_                                  |          |           |          | _Supplier logo_                                                                  |
 | _Ref. `demoPrdSupId.demoSupUsrId`_                           | _id_                                     |          |           |          | _User responsible of supplier_                                                   |
-| `demoPrdReference`                                           | regexp(10)                               | yes*     | yes       |          | Product reference                                                                |
+| `demoPrdReference`                                           | regexp(10)                               | yes\*    | yes       |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | yes      | yes       |          | Product name                                                                     |
 | `demoPrdType`                                                | enum(50) using `DEMO_PRD_TYPE` list      | yes      | yes       |          | Product type                                                                     |
 | `demoPrdDescription`                                         | text(1000000)                            |          | yes       |          | Product description                                                              |
@@ -369,7 +369,7 @@ His address is geolocalized using GoogleMaps&reg; API.
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoCliCode`                                                | regexp(10)                               | yes*     | yes       |          | Customer code                                                                    |
+| `demoCliCode`                                                | regexp(10)                               | yes\*    | yes       |          | Customer code                                                                    |
 | `demoCliFirstname`                                           | char(100)                                | yes      | yes       | yes      | Customer first name                                                              |
 | `demoCliLastname`                                            | char(100)                                | yes      | yes       | yes      | Customer last name                                                               |
 | `demoCliAddress1`                                            | char(100)                                | yes      | yes       | yes      | Customer address (line 1)                                                        |
