@@ -25,6 +25,10 @@
         "agentsInstructions": "default",
         "claudeInstructions": "default",
         "copilotInstructions": "default"
+    },
+    "export": {
+        "format": "xml",
+        "exploded": false
     }
 }]]></mdl_url>
 		<mdl_type>A</mdl_type>
