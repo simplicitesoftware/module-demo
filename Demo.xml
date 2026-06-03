@@ -5112,8 +5112,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sty_value>1</sty_value>
 		<sty_vmin/>
 		<sty_vmax/>
-		<sty_style/>
-		<sty_image>icon/tick</sty_image>
+		<sty_style>redbg</sty_style>
+		<sty_image>fas/exclamation-circle</sty_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
