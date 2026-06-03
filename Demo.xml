@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1293" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1294" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -5930,7 +5930,11 @@ This custom API returns the available products only.]]></obe_comment>
   "titleField": "demoCtcDatetime",
   "name": "DemoContact",
   "rowClasses": "row-vertical",
-  "descriptionField": "demoCtcMessages"
+  "descriptionField": "demoCtcMessages",
+  "filters": {
+    "demoCtcPriority": true,
+    "demoCtcStatus": "O"
+  }
 }]]></obe_settings>
 		<obe_comment><![CDATA[Contacts widget
 ---------------
@@ -14858,16 +14862,19 @@ is still in pending state]]></cst_desc>
 	<data>
 		<rch_object_id.obo_name>DemoContact</rch_object_id.obo_name>
 		<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-		<rch_name>DemoContact-S1</rch_name>
+		<rch_name>DemoOpenOrProcessingContacts</rch_name>
 		<rch_public>1</rch_public>
-		<rch_request><![CDATA[{"demoCtcStatus": "='O' or ='P'"}]]></rch_request>
+		<rch_request><![CDATA[{"demoCtcStatus": [
+    "O",
+    "P"
+]}]]></rch_request>
 		<rch_permalink/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<rch_object_id.obo_name>DemoOrder</rch_object_id.obo_name>
 		<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-		<rch_name>DemoOrder-S1</rch_name>
+		<rch_name>DemoPendingOrders</rch_name>
 		<rch_public>1</rch_public>
 		<rch_request><![CDATA[{"demoOrdStatus": "P"}]]></rch_request>
 		<rch_permalink/>
@@ -14876,7 +14883,7 @@ is still in pending state]]></cst_desc>
 	<data>
 		<rch_object_id.obo_name>DemoOrder</rch_object_id.obo_name>
 		<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-		<rch_name>DemoOrder-S2</rch_name>
+		<rch_name>DemoValidatedOrders</rch_name>
 		<rch_public>1</rch_public>
 		<rch_request><![CDATA[{"demoOrdStatus": "V"}]]></rch_request>
 		<rch_permalink/>
@@ -15156,7 +15163,7 @@ is still in pending state]]></cst_desc>
 		<vwi_position>1</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name>DemoOrder-S1</vwi_research_id.rch_name>
+		<vwi_research_id.rch_name>DemoPendingOrders</vwi_research_id.rch_name>
 		<vwi_research_id.rch_object_id.obo_name>DemoOrder</vwi_research_id.rch_object_id.obo_name>
 		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
 		<vwi_search_spec/>
@@ -15177,7 +15184,7 @@ is still in pending state]]></cst_desc>
 		<vwi_position>2</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name>DemoOrder-S2</vwi_research_id.rch_name>
+		<vwi_research_id.rch_name>DemoValidatedOrders</vwi_research_id.rch_name>
 		<vwi_research_id.rch_object_id.obo_name>DemoOrder</vwi_research_id.rch_object_id.obo_name>
 		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
 		<vwi_search_spec/>
@@ -15198,7 +15205,7 @@ is still in pending state]]></cst_desc>
 		<vwi_position>3</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name>DemoContact-S1</vwi_research_id.rch_name>
+		<vwi_research_id.rch_name>DemoOpenOrProcessingContacts</vwi_research_id.rch_name>
 		<vwi_research_id.rch_object_id.obo_name>DemoContact</vwi_research_id.rch_object_id.obo_name>
 		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
 		<vwi_search_spec/>
@@ -15324,7 +15331,7 @@ is still in pending state]]></cst_desc>
 		<vwi_position>2</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name>DemoOrder-S1</vwi_research_id.rch_name>
+		<vwi_research_id.rch_name>DemoPendingOrders</vwi_research_id.rch_name>
 		<vwi_research_id.rch_object_id.obo_name>DemoOrder</vwi_research_id.rch_object_id.obo_name>
 		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
 		<vwi_search_spec><![CDATA[t_demoPrdSupId.sup_usr_id = [userid]]]></vwi_search_spec>
@@ -15345,7 +15352,7 @@ is still in pending state]]></cst_desc>
 		<vwi_position>3</vwi_position>
 		<vwi_type>S</vwi_type>
 		<vwi_title>1</vwi_title>
-		<vwi_research_id.rch_name>DemoContact-S1</vwi_research_id.rch_name>
+		<vwi_research_id.rch_name>DemoOpenOrProcessingContacts</vwi_research_id.rch_name>
 		<vwi_research_id.rch_object_id.obo_name>DemoContact</vwi_research_id.rch_object_id.obo_name>
 		<vwi_research_id.rch_user_id.usr_login>designer</vwi_research_id.rch_user_id.usr_login>
 		<vwi_search_spec><![CDATA[t.ctc_ord_id is not null and t_demoPrdSupId.sup_usr_id = [userid]]]></vwi_search_spec>
@@ -20284,7 +20291,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>All contacts</tsl_value>
+		<tsl_value>Open and priority contacts</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -20299,7 +20306,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Tous les contacts</tsl_value>
+		<tsl_value>Contacts ouverts et prioritaires</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -22313,7 +22320,7 @@ is still in pending state]]></cst_desc>
 				<data>
 					<rch_object_id.obo_name>DemoOrder</rch_object_id.obo_name>
 					<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-					<rch_name>DemoOrder-S1</rch_name>
+					<rch_name>DemoPendingOrders</rch_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -22329,7 +22336,7 @@ is still in pending state]]></cst_desc>
 				<data>
 					<rch_object_id.obo_name>DemoOrder</rch_object_id.obo_name>
 					<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-					<rch_name>DemoOrder-S1</rch_name>
+					<rch_name>DemoPendingOrders</rch_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -22345,7 +22352,7 @@ is still in pending state]]></cst_desc>
 				<data>
 					<rch_object_id.obo_name>DemoContact</rch_object_id.obo_name>
 					<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-					<rch_name>DemoContact-S1</rch_name>
+					<rch_name>DemoOpenOrProcessingContacts</rch_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -22361,7 +22368,7 @@ is still in pending state]]></cst_desc>
 				<data>
 					<rch_object_id.obo_name>DemoContact</rch_object_id.obo_name>
 					<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-					<rch_name>DemoContact-S1</rch_name>
+					<rch_name>DemoOpenOrProcessingContacts</rch_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -22377,7 +22384,7 @@ is still in pending state]]></cst_desc>
 				<data>
 					<rch_object_id.obo_name>DemoOrder</rch_object_id.obo_name>
 					<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-					<rch_name>DemoOrder-S2</rch_name>
+					<rch_name>DemoValidatedOrders</rch_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -22393,7 +22400,7 @@ is still in pending state]]></cst_desc>
 				<data>
 					<rch_object_id.obo_name>DemoOrder</rch_object_id.obo_name>
 					<rch_user_id.usr_login>designer</rch_user_id.usr_login>
-					<rch_name>DemoOrder-S2</rch_name>
+					<rch_name>DemoValidatedOrders</rch_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -22605,7 +22612,23 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>All contacts</tsl_value>
+		<tsl_value>Open and priority contacts</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ViewItem</name>
+				<data>
+					<vwi_view_id.viw_name>DemoHome</vwi_view_id.viw_name>
+					<vwi_position>7</vwi_position>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Contacts ouverts et prioritaires</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
