@@ -368,6 +368,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sco_workarea>1</sco_workarea>
 		<sco_home_id.viw_name>DemoAdminHome</sco_home_id.viw_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<sco_comment/>
 	</data>
 	<data>
 		<sco_name>DemoUserHome</sco_name>
@@ -380,6 +381,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<sco_workarea>1</sco_workarea>
 		<sco_home_id.viw_name>DemoUserHome</sco_home_id.viw_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<sco_comment/>
 	</data>
 </object>
 <object>
@@ -23142,7 +23144,7 @@ is still in pending state]]></cst_desc>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<dt_name>Demo-data</dt_name>
 		<dt_file>data/Demo-data.xml</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2025-06-25 17:13:13]]></dt_desc>
+		<dt_desc><![CDATA[Demo reference test data]]></dt_desc>
 		<dt_exportdate_from/>
 		<dt_exportdate_to/>
 		<dt_export_format>xml</dt_export_format>

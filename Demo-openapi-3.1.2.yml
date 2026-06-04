@@ -28,24 +28,24 @@ components:
       type: object
       properties:
         demoCliCity:
-          description: Customer city
+          description: City
           type: string
           maxLength: 50
         row_permalink:
-          description: Record permanent link relative path
+          description: Permalink
           type: string
           maxLength: 500
         demoCliCode:
-          description: Customer code
+          description: Code
           type: string
           maxLength: 10
         demoCliCoords:
-          description: Customer geoccordinates
+          description: Coordinates
           type: string
           maxLength: 50
           example: latitude;longitude
         demoCliType:
-          description: Customer type
+          description: Type
           type: string
           maxLength: 30
           enum:
@@ -53,47 +53,47 @@ components:
           - T2
           - T3
         demoCliLastname:
-          description: Customer last name
+          description: Last name
           type: string
           maxLength: 100
         demoCliHomePhone:
-          description: Customer home phone number
+          description: Home phone number
           type: string
           maxLength: 20
         demoCliZipCode:
-          description: Customer postal code
+          description: Postal code
           type: string
           maxLength: 10
         demoCliFirstname:
-          description: Customer first name
+          description: First name
           type: string
           maxLength: 100
         demoCliComments:
-          description: Useful comments on customer
+          description: Comments
           type: string
           maxLength: 1000000
         demoCliEmail:
-          description: Customer email address
+          description: E-mail
           type: string
           maxLength: 50
         demoCliPlacemapLabel:
-          description: Customer place map label
+          description: Placemap label
           type: string
           maxLength: 100
         demoCliFax:
-          description: Customer fax number
+          description: Fax number
           type: string
           maxLength: 20
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         demoCliWorkPhone:
-          description: Customer work phone number
+          description: Work phone number
           type: string
           maxLength: 20
         demoCliCountry:
-          description: Customer country
+          description: Country
           type: string
           maxLength: 30
           enum:
@@ -102,15 +102,15 @@ components:
           - IT
           - SP
         demoCliAddress1:
-          description: Customer address (line 1)
+          description: Address
           type: string
           maxLength: 100
         demoCliMobilePhone:
-          description: Customer mobile phone number
+          description: Mobile phone number
           type: string
           maxLength: 20
         demoCliAddress2:
-          description: Customer address (line 2)
+          description: Address complement
           type: string
           maxLength: 100
     ArrayOfDemoOrderHistoric:
@@ -129,7 +129,7 @@ components:
       type: object
       properties:
         row_permalink:
-          description: Record permanent link relative path
+          description: Permalink
           type: string
           maxLength: 500
         demoOrdPrdId__demoPrdType:
@@ -143,34 +143,34 @@ components:
           - SMARTPHONE
           - OTHER
         demoOrdPrdId__demoPrdEan13:
-          description: EAN13 code
+          description: Product EAN 13 barcode
           type: string
           maxLength: 13
         demoOrdPrdId__demoPrdUnitPrice:
-          description: Unit price of product
+          description: Current unit price
           type: number
         demoOrdCliId__demoCliFirstname:
           description: Customer first name
           type: string
           maxLength: 100
         demoOrdDate:
-          description: Order date
+          description: Date
           type: string
           maxLength: 10
           example: yyyy-MM-dd
         demoOrdPrdId__demoPrdSupId__demoSupUsrId:
-          description: User responsible of supplier
+          description: Responsible user
           type: string
           maxLength: 11
         demoOrdPrdId__demoPrdSupId:
-          description: Product supplier
+          description: Supplier
           type: string
           maxLength: 11
         demoOrdPrdId__demoPrdStock:
-          description: Current stock for product
+          description: Product Stock
           type: integer
         demoOrdStatus:
-          description: Order status
+          description: Status
           type: string
           maxLength: 30
           enum:
@@ -196,10 +196,10 @@ components:
           type: string
           maxLength: 100
         demoOrdUnitPrice:
-          description: Product unit price for order
+          description: Unit price
           type: number
         demoOrdDeliveryDate:
-          description: Order delivery date
+          description: Delivery date
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
@@ -208,46 +208,46 @@ components:
           type: string
           maxLength: 100
         demoOrdPrdId__demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+          description: Supplier code
           type: string
           maxLength: 50
         demoOrdQuantity:
-          description: Product quantity ordered
+          description: Quantity
           type: integer
         demoOrdCliId:
-          description: Order customer
+          description: Customer
           type: string
           maxLength: 11
         demoOrdNumber:
-          description: Order number (automatically calculated at creation)
+          description: Number
           type: integer
         demoOrdComments:
-          description: Comments on order
+          description: Comments
           type: string
           maxLength: 2147483647
         demoOrdTotal:
-          description: Total order amount
+          description: Total
           type: number
         demoOrdPrdId:
-          description: Order product
+          description: Product
           type: string
           maxLength: 11
         demoOrdPrdId__demoPrdEan13Image:
-          description: EAN13 code image
+          description: Product EAN 13 barcode image
           type: object
         demoOrdVAT:
-          description: VAT for order
+          description: VAT
           type: number
         demoOrdCliId__demoCliAddress2:
-          description: Customer address (line 2)
+          description: Customer address compl.
           type: string
           maxLength: 100
         demoOrdCliId__demoCliEmail:
-          description: Customer email address
+          description: Customer e-mail
           type: string
           maxLength: 50
         demoOrdCliId__demoCliAddress1:
-          description: Customer address (line 1)
+          description: Customer address
           type: string
           maxLength: 100
         demoOrdPrdId__demoPrdReference:
@@ -267,7 +267,7 @@ components:
           description: Product picture
           type: object
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         demoOrdPrdId__demoPrdSupId__demoSupLogo:
@@ -343,22 +343,22 @@ components:
       type: object
       properties:
         row_ref_id__demoPrdReference:
-          description: Product reference
+          description: Reference Product reference
           type: string
           maxLength: 10
         demoPrdAvailable:
-          description: Available product?
+          description: Available
           type: boolean
         created_dt_hist:
-          description: Created date
+          description: Date
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
         demoPrdUnitPrice:
-          description: Unit price of product
+          description: Unit price
           type: number
         row_ref_id:
-          description: Record row ID
+          description: Reference
           type: string
           maxLength: 11
         demoPrdReference:
@@ -366,31 +366,30 @@ components:
           type: string
           maxLength: 10
         row_ref_id__demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+          description: Reference Supplier Code
           type: string
           maxLength: 50
         row_idx:
-          description: History record index
+          description: Version
           type: integer
         row_ref_id__demoPrdSupId:
-          description: Product supplier
+          description: Reference Supplier
           type: string
           maxLength: 11
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         demoPrdName:
-          description: Product name
+          description: Name
           type: string
           maxLength: 100
         row_diff:
-          description: Calculated difference between two sibling rows of historic
-            object
+          description: Summary of updates
           type: string
           maxLength: 2000000
         created_by_hist:
-          description: Created by
+          description: User
           type: string
           maxLength: 100
     Error400:
@@ -457,41 +456,41 @@ components:
       type: object
       properties:
         row_ref_id__demoOrdCliId__demoCliCode:
-          description: Customer code
+          description: Reference Customer Code
           type: string
           maxLength: 10
         demoOrdQuantity:
-          description: Product quantity ordered
+          description: Quantity
           type: integer
         row_ref_id__demoOrdPrdId__demoPrdSupId:
-          description: Product supplier
+          description: Reference Product Supplier
           type: string
           maxLength: 11
         row_ref_id__demoOrdPrdId__demoPrdReference:
-          description: Product reference
+          description: Reference Product Product reference
           type: string
           maxLength: 10
         created_dt_hist:
-          description: Created date
+          description: Date
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
         row_ref_id__demoOrdCliId:
-          description: Order customer
+          description: Reference Customer
           type: string
           maxLength: 11
         row_ref_id:
-          description: Record row ID
+          description: Reference
           type: string
           maxLength: 11
         row_ref_id__demoOrdNumber:
-          description: Order number (automatically calculated at creation)
+          description: Reference Number
           type: integer
         row_idx:
-          description: History record index
+          description: Version
           type: integer
         demoOrdStatus:
-          description: Order status
+          description: Status
           type: string
           maxLength: 30
           enum:
@@ -501,24 +500,23 @@ components:
           - D
           - C
         row_ref_id__demoOrdPrdId:
-          description: Order product
+          description: Reference Product
           type: string
           maxLength: 11
         row_ref_id__demoOrdPrdId__demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+          description: Reference Product Supplier Code
           type: string
           maxLength: 50
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         row_diff:
-          description: Calculated difference between two sibling rows of historic
-            object
+          description: Summary of updates
           type: string
           maxLength: 2000000
         created_by_hist:
-          description: Created by
+          description: User
           type: string
           maxLength: 100
     DemoProduct:
@@ -532,7 +530,7 @@ components:
       type: object
       properties:
         demoPrdType:
-          description: Product type
+          description: Type
           type: string
           maxLength: 50
           enum:
@@ -542,40 +540,40 @@ components:
           - SMARTPHONE
           - OTHER
         row_permalink:
-          description: Record permanent link relative path
+          description: Permalink
           type: string
           maxLength: 500
         demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+          description: Supplier code
           type: string
           maxLength: 50
         demoPrdAvailable:
-          description: Available product?
+          description: Available
           type: boolean
         demoPrdDocumentation:
-          description: Product documentation
+          description: Documentation
           type: string
           maxLength: 1000000
         demoPrdEan13:
-          description: EAN13 code
+          description: EAN 13 barcode
           type: string
           maxLength: 13
         demoPrdOnlineDoc:
-          description: Online product documentation URL
+          description: Online doc
           type: string
           maxLength: 255
         demoPrdEan13Image:
-          description: EAN13 code image
+          description: EAN 13 barcode image
           type: object
         demoPrdSupId:
-          description: Product supplier
+          description: Supplier
           type: string
           maxLength: 11
         demoPrdUnitPrice:
-          description: Unit price of product
+          description: Unit price
           type: number
         demoPrdSupId__demoSupUsrId:
-          description: User responsible of supplier
+          description: Responsible user
           type: string
           maxLength: 11
         demoPrdReference:
@@ -583,35 +581,35 @@ components:
           type: string
           maxLength: 10
         demoPrdPicture:
-          description: Product picture
+          description: Picture
           type: object
         demoPrdBrochure:
-          description: Product brochure
+          description: Brochure
           type: object
         demoPrdComments:
-          description: Comments on product
+          description: Comments
           type: string
           maxLength: 2147483647
         demoPrdDescription:
-          description: Product description
+          description: Description
           type: string
           maxLength: 1000000
         demoPrdStock:
-          description: Current stock for product
+          description: Stock
           type: integer
         demoPrdFeatured:
-          description: Featured product?
+          description: Featured?
           type: boolean
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         demoPrdName:
-          description: Product name
+          description: Name
           type: string
           maxLength: 100
         demoPrdSupId__demoSupLogo:
-          description: Supplier logo
+          description: Supplier Logo
           type: object
         demoPrdSupId__demoSupName:
           description: Supplier name
@@ -639,24 +637,24 @@ components:
       type: object
       properties:
         row_idx:
-          description: History record index
+          description: Version
           type: integer
         demoCtcSubType:
-          description: Contact sub type
+          description: Sub-type
           type: string
           maxLength: 10
           enum:
           - EMPTY
         row_ref_id__demoCtcCliId__demoCliCode:
-          description: Customer code
+          description: Reference Customer Code
           type: string
           maxLength: 10
         row_ref_id__demoCtcCliId:
-          description: Contact customer
+          description: Reference Customer
           type: string
           maxLength: 11
         demoCtcStatus:
-          description: Contact status
+          description: Status
           type: string
           maxLength: 1
           enum:
@@ -664,7 +662,7 @@ components:
           - P
           - C
         demoCtcType:
-          description: Contact type
+          description: Type
           type: string
           maxLength: 10
           enum:
@@ -673,30 +671,29 @@ components:
           - CMP
           - OTH
         created_dt_hist:
-          description: Created date
+          description: Date
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         row_ref_id__demoCtcDatetime:
-          description: Contcat date and time
+          description: Reference Date
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
         row_diff:
-          description: Calculated difference between two sibling rows of historic
-            object
+          description: Summary of updates
           type: string
           maxLength: 2000000
         created_by_hist:
-          description: Created by
+          description: User
           type: string
           maxLength: 100
         row_ref_id:
-          description: Record row ID
+          description: Reference
           type: string
           maxLength: 11
     DemoContact:
@@ -710,7 +707,7 @@ components:
       type: object
       properties:
         row_permalink:
-          description: Record permanent link relative path
+          description: Permalink
           type: string
           maxLength: 500
         demoCtcCliId__demoCliLastname:
@@ -722,23 +719,23 @@ components:
           type: string
           maxLength: 100
         demoCtcCliId:
-          description: Contact customer
+          description: Customer
           type: string
           maxLength: 11
         demoCtcOrdId__demoOrdCliId__demoCliCode:
-          description: Customer code
+          description: Order Customer Code
           type: string
           maxLength: 10
         demoCtcCliId__demoCliWorkPhone:
-          description: Customer work phone number
+          description: Work phone number
           type: string
           maxLength: 20
         demoCtcComments:
-          description: Comments on contact
+          description: Comments
           type: string
           maxLength: 2147483647
         demoCtcCanal:
-          description: Canal used for contact
+          description: Canal
           type: string
           maxLength: 10
           enum:
@@ -747,11 +744,11 @@ components:
           - CHAT
           - WEB
         demoCtcCliId__demoCliFax:
-          description: Customer fax number
+          description: Fax number
           type: string
           maxLength: 20
         demoCtcFile:
-          description: Contact attached file
+          description: Files
           type: object
         demoCtcOrdId__demoOrdDate:
           description: Order date
@@ -759,32 +756,32 @@ components:
           maxLength: 10
           example: yyyy-MM-dd
         demoCtcOrdId__demoOrdNumber:
-          description: Order number (automatically calculated at creation)
+          description: Order number
           type: integer
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId:
-          description: User responsible of supplier
+          description: Order product supplier responsible
           type: string
           maxLength: 11
         demoCtcOrdId__demoOrdPrdId__demoPrdName:
-          description: Product name
+          description: Order product name
           type: string
           maxLength: 100
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+          description: Order Product Supplier Code
           type: string
           maxLength: 50
         demoCtcSubType:
-          description: Contact sub type
+          description: Sub-type
           type: string
           maxLength: 10
           enum:
           - EMPTY
         demoCtcCliId__demoCliHomePhone:
-          description: Customer home phone number
+          description: Home phone number
           type: string
           maxLength: 20
         demoCtcStatus:
-          description: Contact status
+          description: Status
           type: string
           maxLength: 1
           enum:
@@ -792,12 +789,12 @@ components:
           - P
           - C
         demoCtcDatetime:
-          description: Contcat date and time
+          description: Date
           type: string
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
         demoCtcType:
-          description: Contact type
+          description: Type
           type: string
           maxLength: 10
           enum:
@@ -806,21 +803,21 @@ components:
           - CMP
           - OTH
         demoCtcOrdId__demoOrdQuantity:
-          description: Product quantity ordered
+          description: Order quantity
           type: integer
         demoCtcCliId__demoCliMobilePhone:
-          description: Customer mobile phone number
+          description: Mobile phone number
           type: string
           maxLength: 20
         demoCtcPriority:
-          description: Contact priority
+          description: Priority
           type: boolean
         demoCtcCliId__demoCliCode:
           description: Customer code
           type: string
           maxLength: 10
         demoCtcCliId__demoCliEmail:
-          description: Customer email address
+          description: E-mail
           type: string
           maxLength: 50
         demoCtcOrdId__demoOrdCliId:
@@ -849,19 +846,19 @@ components:
           description: Picture
           type: object
         demoCtcOrdId__demoOrdPrdId__demoPrdSupId:
-          description: Product supplier
+          description: Order product supplier
           type: string
           maxLength: 11
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         demoCtcOrdId:
-          description: Contact order
+          description: Order
           type: string
           maxLength: 11
         demoCtcOrdId__demoOrdPrdId__demoPrdReference:
-          description: Product reference
+          description: Order product reference
           type: string
           maxLength: 10
     ActionResult:
@@ -891,54 +888,54 @@ components:
       type: object
       properties:
         demoSupPhone:
-          description: Supplier phone number
+          description: Phone
           type: string
           maxLength: 20
         row_permalink:
-          description: Record permanent link relative path
+          description: Permalink
           type: string
           maxLength: 500
         demoSupName:
-          description: Supplier name
+          description: Name
           type: string
           maxLength: 100
         demoSupUsrId:
-          description: User responsible of supplier
+          description: Responsible user
           type: string
           maxLength: 11
         demoSupDescription:
-          description: Supplier description
+          description: Description
           type: string
           maxLength: 1000000
         demoSupCode:
-          description: Supplier unique code (e.g. `MYSUP`)
+          description: Code
           type: string
           maxLength: 50
         demoSupFax:
-          description: Supplier fax number
+          description: Fax
           type: string
           maxLength: 20
         demoSupEmail:
-          description: Supplier email address
+          description: Email
           type: string
           maxLength: 20
         demoSupLogo:
-          description: Supplier logo
+          description: Logo
           type: object
         row_id:
-          description: Unique technical row ID
+          description: ID
           type: string
           maxLength: 11
         demoSupWebsite:
-          description: Supplier website URL
+          description: Website
           type: string
           maxLength: 100
         demoSupUsrId__usr_login:
-          description: Login
+          description: Responsible user
           type: string
           maxLength: 100
         demoSupComments:
-          description: Comments on supplier
+          description: Comments
           type: string
           maxLength: 2147483647
     ArrayOfDemoClient:
@@ -1167,7 +1164,7 @@ paths:
           type: string
         in: query
         name: demoCtcDatetime
-        description: Search filter for Contcat date and time
+        description: Search filter for Date
         required: false
       - schema:
           type: string
@@ -1178,7 +1175,7 @@ paths:
           - OTH
         in: query
         name: demoCtcType
-        description: Search filter for Contact type
+        description: Search filter for Type
         required: false
       - schema:
           type: string
@@ -1186,7 +1183,7 @@ paths:
           - EMPTY
         in: query
         name: demoCtcSubType
-        description: Search filter for Contact sub type
+        description: Search filter for Sub-type
         required: false
       - schema:
           type: string
@@ -1197,13 +1194,13 @@ paths:
           - WEB
         in: query
         name: demoCtcCanal
-        description: Search filter for Canal used for contact
+        description: Search filter for Canal
         required: false
       - schema:
           type: boolean
         in: query
         name: demoCtcPriority
-        description: Search filter for Contact priority
+        description: Search filter for Priority
         required: false
       - schema:
           type: string
@@ -1213,13 +1210,13 @@ paths:
           - C
         in: query
         name: demoCtcStatus
-        description: Search filter for Contact status
+        description: Search filter for Status
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcCliId
-        description: Search filter for Contact customer
+        description: Search filter for Customer
         required: false
       - schema:
           type: string
@@ -1243,43 +1240,43 @@ paths:
           type: string
         in: query
         name: demoCtcCliId__demoCliEmail
-        description: Search filter for Customer email address
+        description: Search filter for E-mail
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcCliId__demoCliHomePhone
-        description: Search filter for Customer home phone number
+        description: Search filter for Home phone number
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcCliId__demoCliWorkPhone
-        description: Search filter for Customer work phone number
+        description: Search filter for Work phone number
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcCliId__demoCliMobilePhone
-        description: Search filter for Customer mobile phone number
+        description: Search filter for Mobile phone number
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcCliId__demoCliFax
-        description: Search filter for Customer fax number
+        description: Search filter for Fax number
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcOrdId
-        description: Search filter for Contact order
+        description: Search filter for Order
         required: false
       - schema:
           type: integer
         in: query
         name: demoCtcOrdId__demoOrdNumber
-        description: Search filter for Order number (automatically calculated at creation)
+        description: Search filter for Order number
         required: false
       - schema:
           type: string
@@ -1309,7 +1306,7 @@ paths:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdCliId__demoCliCode
-        description: Search filter for Customer code
+        description: Search filter for Order Customer Code
         required: false
       - schema:
           type: string
@@ -1321,49 +1318,49 @@ paths:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId
-        description: Search filter for Product supplier
+        description: Search filter for Order product supplier
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        description: Search filter for Order Product Supplier Code
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: Search filter for User responsible of supplier
+        description: Search filter for Order product supplier responsible
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdReference
-        description: Search filter for Product reference
+        description: Search filter for Order product reference
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcOrdId__demoOrdPrdId__demoPrdName
-        description: Search filter for Product name
+        description: Search filter for Order product name
         required: false
       - schema:
           type: integer
         in: query
         name: demoCtcOrdId__demoOrdQuantity
-        description: Search filter for Product quantity ordered
+        description: Search filter for Order quantity
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcComments
-        description: Search filter for Comments on contact
+        description: Search filter for Comments
         required: false
       - schema:
           type: string
         in: query
         name: demoCtcFile
-        description: Search filter for Contact attached file
+        description: Search filter for Files
         required: false
       - schema:
           type: string
@@ -1381,7 +1378,7 @@ paths:
           type: string
         in: query
         name: row_permalink
-        description: Search filter for Record permanent link relative path
+        description: Search filter for Permalink
         required: false
       tags:
       - DemoContact
@@ -1440,73 +1437,73 @@ paths:
           type: string
         in: query
         name: demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        description: Search filter for Code
         required: false
       - schema:
           type: string
         in: query
         name: demoSupName
-        description: Search filter for Supplier name
+        description: Search filter for Name
         required: false
       - schema:
           type: string
         in: query
         name: demoSupDescription
-        description: Search filter for Supplier description
+        description: Search filter for Description
         required: false
       - schema:
           type: string
         in: query
         name: demoSupPhone
-        description: Search filter for Supplier phone number
+        description: Search filter for Phone
         required: false
       - schema:
           type: string
         in: query
         name: demoSupFax
-        description: Search filter for Supplier fax number
+        description: Search filter for Fax
         required: false
       - schema:
           type: string
         in: query
         name: demoSupWebsite
-        description: Search filter for Supplier website URL
+        description: Search filter for Website
         required: false
       - schema:
           type: string
         in: query
         name: demoSupEmail
-        description: Search filter for Supplier email address
+        description: Search filter for Email
         required: false
       - schema:
           type: string
         in: query
         name: demoSupLogo
-        description: Search filter for Supplier logo
+        description: Search filter for Logo
         required: false
       - schema:
           type: string
         in: query
         name: demoSupUsrId
-        description: Search filter for User responsible of supplier
+        description: Search filter for Responsible user
         required: false
       - schema:
           type: string
         in: query
         name: demoSupUsrId__usr_login
-        description: Search filter for Login
+        description: Search filter for Responsible user
         required: false
       - schema:
           type: string
         in: query
         name: demoSupComments
-        description: Search filter for Comments on supplier
+        description: Search filter for Comments
         required: false
       - schema:
           type: string
         in: query
         name: row_permalink
-        description: Search filter for Record permanent link relative path
+        description: Search filter for Permalink
         required: false
       tags:
       - DemoSupplier
@@ -2013,13 +2010,13 @@ paths:
           type: integer
         in: query
         name: demoOrdNumber
-        description: Search filter for Order number (automatically calculated at creation)
+        description: Search filter for Number
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdDate
-        description: Search filter for Order date
+        description: Search filter for Date
         required: false
       - schema:
           type: string
@@ -2031,19 +2028,19 @@ paths:
           - C
         in: query
         name: demoOrdStatus
-        description: Search filter for Order status
+        description: Search filter for Status
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdDeliveryDate
-        description: Search filter for Order delivery date
+        description: Search filter for Delivery date
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdCliId
-        description: Search filter for Order customer
+        description: Search filter for Customer
         required: false
       - schema:
           type: string
@@ -2067,19 +2064,19 @@ paths:
           type: string
         in: query
         name: demoOrdCliId__demoCliEmail
-        description: Search filter for Customer email address
+        description: Search filter for Customer e-mail
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdCliId__demoCliAddress1
-        description: Search filter for Customer address (line 1)
+        description: Search filter for Customer address
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdCliId__demoCliAddress2
-        description: Search filter for Customer address (line 2)
+        description: Search filter for Customer address compl.
         required: false
       - schema:
           type: string
@@ -2108,7 +2105,7 @@ paths:
           type: string
         in: query
         name: demoOrdPrdId
-        description: Search filter for Order product
+        description: Search filter for Product
         required: false
       - schema:
           type: string
@@ -2144,25 +2141,25 @@ paths:
           type: string
         in: query
         name: demoOrdPrdId__demoPrdEan13
-        description: Search filter for EAN13 code
+        description: Search filter for Product EAN 13 barcode
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdPrdId__demoPrdEan13Image
-        description: Search filter for EAN13 code image
+        description: Search filter for Product EAN 13 barcode image
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdPrdId__demoPrdSupId
-        description: Search filter for Product supplier
+        description: Search filter for Supplier
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdPrdId__demoPrdSupId__demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        description: Search filter for Supplier code
         required: false
       - schema:
           type: string
@@ -2180,55 +2177,55 @@ paths:
           type: string
         in: query
         name: demoOrdPrdId__demoPrdSupId__demoSupUsrId
-        description: Search filter for User responsible of supplier
+        description: Search filter for Responsible user
         required: false
       - schema:
           type: integer
         in: query
         name: demoOrdPrdId__demoPrdStock
-        description: Search filter for Current stock for product
+        description: Search filter for Product Stock
         required: false
       - schema:
           type: number
         in: query
         name: demoOrdPrdId__demoPrdUnitPrice
-        description: Search filter for Unit price of product
+        description: Search filter for Current unit price
         required: false
       - schema:
           type: number
         in: query
         name: demoOrdUnitPrice
-        description: Search filter for Product unit price for order
+        description: Search filter for Unit price
         required: false
       - schema:
           type: integer
         in: query
         name: demoOrdQuantity
-        description: Search filter for Product quantity ordered
+        description: Search filter for Quantity
         required: false
       - schema:
           type: number
         in: query
         name: demoOrdTotal
-        description: Search filter for Total order amount
+        description: Search filter for Total
         required: false
       - schema:
           type: number
         in: query
         name: demoOrdVAT
-        description: Search filter for VAT for order
+        description: Search filter for VAT
         required: false
       - schema:
           type: string
         in: query
         name: demoOrdComments
-        description: Search filter for Comments on order
+        description: Search filter for Comments
         required: false
       - schema:
           type: string
         in: query
         name: row_permalink
-        description: Search filter for Record permanent link relative path
+        description: Search filter for Permalink
         required: false
       tags:
       - DemoOrder
@@ -2687,74 +2684,73 @@ paths:
           type: string
         in: query
         name: row_diff
-        description: Search filter for Calculated difference between two sibling rows
-          of historic object
+        description: Search filter for Summary of updates
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Record row ID
+        description: Search filter for Reference
         required: false
       - schema:
           type: integer
         in: query
         name: row_ref_id__demoOrdNumber
-        description: Search filter for Order number (automatically calculated at creation)
+        description: Search filter for Reference Number
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoOrdCliId
-        description: Search filter for Order customer
+        description: Search filter for Reference Customer
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoOrdCliId__demoCliCode
-        description: Search filter for Customer code
+        description: Search filter for Reference Customer Code
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoOrdPrdId
-        description: Search filter for Order product
+        description: Search filter for Reference Product
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoOrdPrdId__demoPrdReference
-        description: Search filter for Product reference
+        description: Search filter for Reference Product Product reference
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoOrdPrdId__demoPrdSupId
-        description: Search filter for Product supplier
+        description: Search filter for Reference Product Supplier
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoOrdPrdId__demoPrdSupId__demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        description: Search filter for Reference Product Supplier Code
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for History record index
+        description: Search filter for Version
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for Created by
+        description: Search filter for User
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Created date
+        description: Search filter for Date
         required: false
       - schema:
           type: string
@@ -2766,13 +2762,13 @@ paths:
           - C
         in: query
         name: demoOrdStatus
-        description: Search filter for Order status
+        description: Search filter for Status
         required: false
       - schema:
           type: integer
         in: query
         name: demoOrdQuantity
-        description: Search filter for Product quantity ordered
+        description: Search filter for Quantity
         required: false
       tags:
       - DemoOrderHistoric
@@ -3584,50 +3580,49 @@ paths:
           type: string
         in: query
         name: row_diff
-        description: Search filter for Calculated difference between two sibling rows
-          of historic object
+        description: Search filter for Summary of updates
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Record row ID
+        description: Search filter for Reference
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoPrdSupId
-        description: Search filter for Product supplier
+        description: Search filter for Reference Supplier
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoPrdSupId__demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        description: Search filter for Reference Supplier Code
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoPrdReference
-        description: Search filter for Product reference
+        description: Search filter for Reference Product reference
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for History record index
+        description: Search filter for Version
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for Created by
+        description: Search filter for User
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Created date
+        description: Search filter for Date
         required: false
       - schema:
           type: string
@@ -3639,19 +3634,19 @@ paths:
           type: string
         in: query
         name: demoPrdName
-        description: Search filter for Product name
+        description: Search filter for Name
         required: false
       - schema:
           type: number
         in: query
         name: demoPrdUnitPrice
-        description: Search filter for Unit price of product
+        description: Search filter for Unit price
         required: false
       - schema:
           type: boolean
         in: query
         name: demoPrdAvailable
-        description: Search filter for Available product?
+        description: Search filter for Available
         required: false
       tags:
       - DemoProductHistoric
@@ -3705,50 +3700,49 @@ paths:
           type: string
         in: query
         name: row_diff
-        description: Search filter for Calculated difference between two sibling rows
-          of historic object
+        description: Search filter for Summary of updates
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id
-        description: Search filter for Record row ID
+        description: Search filter for Reference
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoCtcDatetime
-        description: Search filter for Contcat date and time
+        description: Search filter for Reference Date
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoCtcCliId
-        description: Search filter for Contact customer
+        description: Search filter for Reference Customer
         required: false
       - schema:
           type: string
         in: query
         name: row_ref_id__demoCtcCliId__demoCliCode
-        description: Search filter for Customer code
+        description: Search filter for Reference Customer Code
         required: false
       - schema:
           type: integer
         in: query
         name: row_idx
-        description: Search filter for History record index
+        description: Search filter for Version
         required: false
       - schema:
           type: string
         in: query
         name: created_by_hist
-        description: Search filter for Created by
+        description: Search filter for User
         required: false
       - schema:
           type: string
         in: query
         name: created_dt_hist
-        description: Search filter for Created date
+        description: Search filter for Date
         required: false
       - schema:
           type: string
@@ -3758,7 +3752,7 @@ paths:
           - C
         in: query
         name: demoCtcStatus
-        description: Search filter for Contact status
+        description: Search filter for Status
         required: false
       - schema:
           type: string
@@ -3769,7 +3763,7 @@ paths:
           - OTH
         in: query
         name: demoCtcType
-        description: Search filter for Contact type
+        description: Search filter for Type
         required: false
       - schema:
           type: string
@@ -3777,7 +3771,7 @@ paths:
           - EMPTY
         in: query
         name: demoCtcSubType
-        description: Search filter for Contact sub type
+        description: Search filter for Sub-type
         required: false
       tags:
       - DemoContactHistoric
@@ -3836,43 +3830,43 @@ paths:
           type: string
         in: query
         name: demoCliCode
-        description: Search filter for Customer code
+        description: Search filter for Code
         required: false
       - schema:
           type: string
         in: query
         name: demoCliFirstname
-        description: Search filter for Customer first name
+        description: Search filter for First name
         required: false
       - schema:
           type: string
         in: query
         name: demoCliLastname
-        description: Search filter for Customer last name
+        description: Search filter for Last name
         required: false
       - schema:
           type: string
         in: query
         name: demoCliAddress1
-        description: Search filter for Customer address (line 1)
+        description: Search filter for Address
         required: false
       - schema:
           type: string
         in: query
         name: demoCliAddress2
-        description: Search filter for Customer address (line 2)
+        description: Search filter for Address complement
         required: false
       - schema:
           type: string
         in: query
         name: demoCliZipCode
-        description: Search filter for Customer postal code
+        description: Search filter for Postal code
         required: false
       - schema:
           type: string
         in: query
         name: demoCliCity
-        description: Search filter for Customer city
+        description: Search filter for City
         required: false
       - schema:
           type: string
@@ -3883,43 +3877,43 @@ paths:
           - SP
         in: query
         name: demoCliCountry
-        description: Search filter for Customer country
+        description: Search filter for Country
         required: false
       - schema:
           type: string
         in: query
         name: demoCliCoords
-        description: Search filter for Customer geoccordinates
+        description: Search filter for Coordinates
         required: false
       - schema:
           type: string
         in: query
         name: demoCliEmail
-        description: Search filter for Customer email address
+        description: Search filter for E-mail
         required: false
       - schema:
           type: string
         in: query
         name: demoCliHomePhone
-        description: Search filter for Customer home phone number
+        description: Search filter for Home phone number
         required: false
       - schema:
           type: string
         in: query
         name: demoCliWorkPhone
-        description: Search filter for Customer work phone number
+        description: Search filter for Work phone number
         required: false
       - schema:
           type: string
         in: query
         name: demoCliMobilePhone
-        description: Search filter for Customer mobile phone number
+        description: Search filter for Mobile phone number
         required: false
       - schema:
           type: string
         in: query
         name: demoCliFax
-        description: Search filter for Customer fax number
+        description: Search filter for Fax number
         required: false
       - schema:
           type: string
@@ -3929,25 +3923,25 @@ paths:
           - T3
         in: query
         name: demoCliType
-        description: Search filter for Customer type
+        description: Search filter for Type
         required: false
       - schema:
           type: string
         in: query
         name: demoCliComments
-        description: Search filter for Useful comments on customer
+        description: Search filter for Comments
         required: false
       - schema:
           type: string
         in: query
         name: demoCliPlacemapLabel
-        description: Search filter for Customer place map label
+        description: Search filter for Placemap label
         required: false
       - schema:
           type: string
         in: query
         name: row_permalink
-        description: Search filter for Record permanent link relative path
+        description: Search filter for Permalink
         required: false
       tags:
       - DemoClient
@@ -4020,13 +4014,13 @@ paths:
           type: string
         in: query
         name: demoPrdSupId
-        description: Search filter for Product supplier
+        description: Search filter for Supplier
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdSupId__demoSupCode
-        description: Search filter for Supplier unique code (e.g. `MYSUP`)
+        description: Search filter for Supplier code
         required: false
       - schema:
           type: string
@@ -4038,13 +4032,13 @@ paths:
           type: string
         in: query
         name: demoPrdSupId__demoSupLogo
-        description: Search filter for Supplier logo
+        description: Search filter for Supplier Logo
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdSupId__demoSupUsrId
-        description: Search filter for User responsible of supplier
+        description: Search filter for Responsible user
         required: false
       - schema:
           type: string
@@ -4056,7 +4050,7 @@ paths:
           type: string
         in: query
         name: demoPrdName
-        description: Search filter for Product name
+        description: Search filter for Name
         required: false
       - schema:
           type: string
@@ -4068,85 +4062,85 @@ paths:
           - OTHER
         in: query
         name: demoPrdType
-        description: Search filter for Product type
+        description: Search filter for Type
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdDescription
-        description: Search filter for Product description
+        description: Search filter for Description
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdPicture
-        description: Search filter for Product picture
+        description: Search filter for Picture
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdEan13
-        description: Search filter for EAN13 code
+        description: Search filter for EAN 13 barcode
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdEan13Image
-        description: Search filter for EAN13 code image
+        description: Search filter for EAN 13 barcode image
         required: false
       - schema:
           type: integer
         in: query
         name: demoPrdStock
-        description: Search filter for Current stock for product
+        description: Search filter for Stock
         required: false
       - schema:
           type: number
         in: query
         name: demoPrdUnitPrice
-        description: Search filter for Unit price of product
+        description: Search filter for Unit price
         required: false
       - schema:
           type: boolean
         in: query
         name: demoPrdAvailable
-        description: Search filter for Available product?
+        description: Search filter for Available
         required: false
       - schema:
           type: boolean
         in: query
         name: demoPrdFeatured
-        description: Search filter for Featured product?
+        description: Search filter for Featured?
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdDocumentation
-        description: Search filter for Product documentation
+        description: Search filter for Documentation
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdBrochure
-        description: Search filter for Product brochure
+        description: Search filter for Brochure
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdOnlineDoc
-        description: Search filter for Online product documentation URL
+        description: Search filter for Online doc
         required: false
       - schema:
           type: string
         in: query
         name: demoPrdComments
-        description: Search filter for Comments on product
+        description: Search filter for Comments
         required: false
       - schema:
           type: string
         in: query
         name: row_permalink
-        description: Search filter for Record permanent link relative path
+        description: Search filter for Permalink
         required: false
       tags:
       - DemoProduct
