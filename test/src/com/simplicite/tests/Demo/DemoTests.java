@@ -167,22 +167,22 @@ public class DemoTests {
 		try {
 			ObjectDB sup = sys.getObject("test_DemoSupplier", "DemoSupplier");
 			Pattern pattern = Pattern.compile(sup.getField("demoSupCode").getRegExp());
-			assertTrue(pattern.matcher("SUP001").matches());
-			assertTrue(pattern.matcher("SUP-001").matches());
-			assertFalse(pattern.matcher("SUP 001").matches());
-			assertFalse(pattern.matcher("SUP#001").matches());
+			assertTrue(pattern.matcher("MYSUP").matches());
+			assertTrue(pattern.matcher("MY-SUP").matches());
+			assertFalse(pattern.matcher("MY SUP").matches());
+			assertFalse(pattern.matcher("MY#SUP").matches());
 
 			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
 			pattern = Pattern.compile(prd.getField("demoPrdReference").getRegExp());
 			assertTrue(pattern.matcher("REF001").matches());
-			assertTrue(pattern.matcher("REF-001").matches());
+			assertFalse(pattern.matcher("REF-001").matches());
 			assertFalse(pattern.matcher("REF 001").matches());
 			assertFalse(pattern.matcher("REF#001").matches());
 
 			ObjectDB cli = sys.getObject("test_DemoClient", "DemoClient");
 			pattern = Pattern.compile(cli.getField("demoCliCode").getRegExp());
 			assertTrue(pattern.matcher("CLI001").matches());
-			assertTrue(pattern.matcher("CLI-001").matches());
+			assertFalse(pattern.matcher("CLI-001").matches());
 			assertFalse(pattern.matcher("CLI 001").matches());
 			assertFalse(pattern.matcher("CLI#001").matches());
 		} catch (Exception e) {
