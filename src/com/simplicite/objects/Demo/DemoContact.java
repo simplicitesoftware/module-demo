@@ -97,4 +97,13 @@ public class DemoContact extends ObjectDB {
         // Hide history records on tree views
         return !isTreeviewInstance() || "DemoContactHistoric".equals(objName);
     }
+
+    @Override
+    public String getUserKeyLabel(String[] row) {
+        // Custom short label on the tree views
+        return isTreeviewInstance()
+            ? getFieldDisplayValue("demoCtcType", row)
+                + " (" + Tool.getHumanReadableDatetime(getFieldValue("demoCtcDatetime", row), getGrant().getLang()) + ")"
+            : super.getUserKeyLabel(row);
+    }
 }

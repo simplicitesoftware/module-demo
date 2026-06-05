@@ -260,6 +260,7 @@ stateDiagram-v2
 
 * `printExcel`: Microsoft Excel(R) sheet publication method
 * `printMustache`: HTML publication (using Mustache(R) templating) method
+* `getUserKeyLabel`
 * `postLoad`
 * `canReference`
 
