@@ -129,14 +129,6 @@ public class DemoOrder extends ObjectDB {
 	}
 
 	@Override
-	public String getUserKeyLabel(String[] row) {
-		// Custom short label on tree views
-		return isTreeviewInstance() || isModelerInstance()
-			? getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row)
-			: super.getUserKeyLabel(row);
-	}
-
-	@Override
 	public boolean canReference(String objName, String fkFieldName) {
 		// Hide history records on tree views
 		return !isTreeviewInstance() || "DemoOrderHistoric".equals(objName);
@@ -150,5 +142,13 @@ public class DemoOrder extends ObjectDB {
 			return "V".equals(s) || "D".equals(s);
 		}
 		return super.isPrintTemplateEnable(row, ptName);
+	}
+
+	@Override
+	public String getUserKeyLabel(String[] row) {
+		// Custom short label on the tree views and on the diagrams
+		return isTreeviewInstance() || isModelerInstance()
+			? getGrant().T("DEMO_ORDER_NUMBER") + getFieldValue(NUMBER_FIELDNAME, row)
+			: super.getUserKeyLabel(row);
 	}
 }
