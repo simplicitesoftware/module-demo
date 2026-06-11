@@ -258,11 +258,11 @@ stateDiagram-v2
 
 ### Implemented hooks
 
-* `printExcel`: Microsoft Excel(R) sheet publication method
-* `printMustache`: HTML publication (using Mustache(R) templating) method
 * `getUserKeyLabel`
 * `postLoad`
 * `canReference`
+* `printExcel`: Microsoft Excel(R) sheet publication method
+* `printMustache`: HTML publication (using Mustache(R) templating) method
 
 `DemoContactHistoric` (Contact (hist.)) business object definition
 ------------------------------------------------------------------
@@ -445,12 +445,12 @@ stateDiagram-v2
 
 ### Implemented hooks
 
+* `isPrintTemplateEnable`
 * `getUserKeyLabel`
 * `postValidate`
 * `postUpdate`
 * `postSave`
 * `canReference`
-* `isPrintTemplateEnable`
 
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------
@@ -612,14 +612,14 @@ state transition to _shipped_ status.
 
 ### Implemented hooks
 
-* `increaseStock`: Increase stock action method
-* `decreaseStock`: Decrease stock action method
-* `printBrochure`: Microsoft Word(R) brochure publication method
 * `getUserKeyLabel`
 * `initAction`
 * `preSave`
 * `canReference`
 * `sendEmail`: Send product data in an email action method
+* `printBrochure`: Microsoft Word(R) brochure publication method
+* `decreaseStock`: Decrease stock action method
+* `increaseStock`: Increase stock action method
 
 `DemoClient` (Customer) business object definition
 --------------------------------------------------
