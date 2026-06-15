@@ -459,13 +459,10 @@ the date-based, language-based and rights filterings.
 `DemoOrderAgenda` external object definition
 --------------------------------------------
 
-Custom order delivery agenda
------------------------------
+Delivery agenda
+---------------
 
-This custom UI page is didicated to display orders on an agenda.
-
-Note that the same features are also available using the
-standard object calendar.
+This redirects to the standard orders' agenda
 
 
 `DemoPlaceNewOrder` external object definition

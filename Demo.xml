@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1283" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1282" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -471,7 +471,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2026-06-03 18:32:24</usr_last_logon>
+		<usr_last_logon>2026-06-11 17:34:16</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -5691,18 +5691,15 @@ the date-based, language-based and rights filterings.]]></obe_comment>
 	<data>
 		<obe_name>DemoOrderAgenda</obe_name>
 		<obe_type>E</obe_type>
-		<obe_nature>com_simplicite_webapp_web_ResponsiveExternalObject</obe_nature>
-		<obe_url/>
+		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
+		<obe_url><![CDATA[javascript:$ui.displayCalendar(null, 'DemoOrder', 'DemoOrderAgenda'), { nav: 'new', showNav: true };]]></obe_url>
 		<obe_settings/>
-		<obe_comment><![CDATA[Custom order delivery agenda
------------------------------
+		<obe_comment><![CDATA[Delivery agenda
+---------------
 
-This custom UI page is didicated to display orders on an agenda.
-
-Note that the same features are also available using the
-standard object calendar.]]></obe_comment>
+This redirects to the standard orders' agenda]]></obe_comment>
 		<obe_help/>
-		<obe_class>com.simplicite.webapp.web.ResponsiveExternalObject</obe_class>
+		<obe_class/>
 		<obe_script_id/>
 		<obe_icon>img/color/calendar</obe_icon>
 		<obe_permalink/>
@@ -15265,6 +15262,23 @@ is still in pending state]]></cst_desc>
 				</data>
 			</object>
 		</res_object>
+		<res_type>FONT</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>Raleway</res_code>
+		<res_cached>1</res_cached>
+		<res_file>resources/Disposition/default/Raleway.zip</res_file>
+		<res_image/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
 		<res_type>ICO</res_type>
 		<res_lang>ANY</res_lang>
 		<res_code>demo</res_code>
@@ -15339,40 +15353,6 @@ is still in pending state]]></cst_desc>
 		<res_cached>1</res_cached>
 		<res_file/>
 		<res_image>resources/Disposition/default/DEMO_PRINT_LOGO.png</res_image>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>HTML</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>HTML</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoOrderAgenda/HTML.html</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoOrderAgenda</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>JS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>CLASS</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoOrderAgenda/CLASS.js</res_file>
-		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
