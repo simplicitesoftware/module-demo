@@ -1527,6 +1527,11 @@ paths:
         description: Search filter for Quantity
         type: integer
         required: false
+      - in: query
+        name: demoOrdDeliveryDate
+        description: Search filter for Delivery date
+        type: string
+        required: false
       tags:
       - DemoOrderHistoric
   /rest/DemoClient/{row_id}/placemap:DemoClients:
@@ -3533,6 +3538,11 @@ definitions:
       - Quantity
     type: object
     properties:
+      demoOrdDeliveryDate:
+        description: Delivery date
+        type: string
+        maxLength: 19
+        example: yyyy-MM-dd HH:mm:ss
       row_ref_id__demoOrdCliId__demoCliCode:
         description: Reference Customer Code
         type: string

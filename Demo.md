@@ -258,11 +258,11 @@ stateDiagram-v2
 
 ### Implemented hooks
 
+* `printMustache`: HTML publication (using Mustache(R) templating) method
+* `printExcel`: Microsoft Excel(R) sheet publication method
 * `getUserKeyLabel`
 * `postLoad`
 * `canReference`
-* `printExcel`: Microsoft Excel(R) sheet publication method
-* `printMustache`: HTML publication (using Mustache(R) templating) method
 
 `DemoContactHistoric` (Contact (hist.)) business object definition
 ------------------------------------------------------------------
@@ -445,12 +445,12 @@ stateDiagram-v2
 
 ### Implemented hooks
 
-* `isPrintTemplateEnable`
 * `getUserKeyLabel`
 * `postValidate`
 * `postUpdate`
 * `postSave`
 * `canReference`
+* `isPrintTemplateEnable`
 
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------
@@ -481,6 +481,7 @@ stateDiagram-v2
 | `row_diff`                                                   | html(2000000)                            |                                |          |           |          | -                                                                                |
 | `demoOrdStatus`                                              | enum(30) using DEMO_ORD_STATUS list      | ord_status                     | yes      | yes       |          | -                                                                                |
 | `demoOrdQuantity`                                            | int(11)                                  | ord_quantity                   | yes      | yes       |          | -                                                                                |
+| `demoOrdDeliveryDate`                                        | datetime                                 | ord_deliverydate               |          | yes       |          | -                                                                                |
 
 ### Enumerations
 
@@ -612,14 +613,14 @@ state transition to _shipped_ status.
 
 ### Implemented hooks
 
+* `increaseStock`: Increase stock action method
+* `decreaseStock`: Decrease stock action method
+* `printBrochure`: Microsoft Word(R) brochure publication method
 * `getUserKeyLabel`
 * `initAction`
 * `preSave`
 * `canReference`
 * `sendEmail`: Send product data in an email action method
-* `printBrochure`: Microsoft Word(R) brochure publication method
-* `decreaseStock`: Decrease stock action method
-* `increaseStock`: Increase stock action method
 
 `DemoClient` (Customer) business object definition
 --------------------------------------------------
@@ -703,7 +704,7 @@ External objects
 * `DemoContacts`: Contacts widget --------------- This UI widget is diplaying the list of contacts.
 * `DemoCounters`: Counters -------- This UI widget is displaying various counters.
 * `DemoNews`: News widget ----------- This UI widget is diplaying the standard platform news data. Note that the instance name `web_WebNews` is on purpose. Using this instance name applies the date-based, language-based and rights filterings.
-* `DemoOrderAgenda`: Custom order delivery agenda ----------------------------- This custom UI page is didicated to display orders on an agenda. Note that the same features are also available using the standard object calendar.
+* `DemoOrderAgenda`: Delivery agenda --------------- This redirects to the standard orders' agenda
 * `DemoPlaceNewOrder`: Custom place new order page --------------------------- This custom Ui page is dedicated to place orders using simplified UX.
 * `DemoSupplierStats`: _No description._
 

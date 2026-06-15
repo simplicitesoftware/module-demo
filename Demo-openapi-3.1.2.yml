@@ -455,6 +455,11 @@ components:
         - Quantity
       type: object
       properties:
+        demoOrdDeliveryDate:
+          description: Delivery date
+          type: string
+          maxLength: 19
+          example: yyyy-MM-dd HH:mm:ss
         row_ref_id__demoOrdCliId__demoCliCode:
           description: Reference Customer Code
           type: string
@@ -2769,6 +2774,12 @@ paths:
         in: query
         name: demoOrdQuantity
         description: Search filter for Quantity
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: demoOrdDeliveryDate
+        description: Search filter for Delivery date
         required: false
       tags:
       - DemoOrderHistoric

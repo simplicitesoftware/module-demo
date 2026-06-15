@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1293" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1294" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -179,7 +179,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<thm_menu_sact_t>#2481dd</thm_menu_sact_t>
 		<thm_menu_sta_c/>
 		<thm_menu_sta_t>#909090</thm_menu_sta_t>
-		<thm_compact/>
+		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<thm_const>files/Theme/DemoTheme/const.less</thm_const>
 		<thm_parent_id.thm_name/>
@@ -5204,14 +5204,17 @@ Open this dataset and click on the _Apply_ button after having imported the modu
     <div class="col-sm-3">
       <div class="field" data-field="created_dt_hist"></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <div class="field" data-field="created_by_hist"></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <div class="field" data-field="demoOrdStatus"></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <div class="field" data-field="demoOrdQuantity"></div>
+    </div>
+    <div class="col-sm-3">
+      <div class="field" data-field="demoOrdDeliveryDate"></div>
     </div>
   </div>
 </div>]]></tpl_ui>
@@ -6018,13 +6021,10 @@ the date-based, language-based and rights filterings.]]></obe_comment>
 		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
 		<obe_url><![CDATA[javascript:$ui.displayCalendar(null, 'DemoOrder', 'DemoOrderAgenda'), { nav: 'new', showNav: true };]]></obe_url>
 		<obe_settings/>
-		<obe_comment><![CDATA[Custom order delivery agenda
------------------------------
+		<obe_comment><![CDATA[Delivery agenda
+---------------
 
-This custom UI page is didicated to display orders on an agenda.
-
-Note that the same features are also available using the
-standard object calendar.]]></obe_comment>
+This redirects to the standard orders' agenda]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id/>
@@ -10058,6 +10058,38 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
 		<obf_field_id.fld_name>demoOrdQuantity</obf_field_id.fld_name>
 		<obf_order>110</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_reorder/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_uk/>
+		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_area_id.ofa_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name/>
+		<obf_joined_id.obf_field_id.fld_name/>
+		<obf_joined_id.obf_order/>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
+		<obf_field_id.fld_name>demoOrdDeliveryDate</obf_field_id.fld_name>
+		<obf_order>120</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_reorder/>
@@ -23150,19 +23182,19 @@ is still in pending state]]></cst_desc>
 	<data>
 		<dto_order>1</dto_order>
 		<dto_dt_id.dt_name>Demo-data</dto_dt_id.dt_name>
-		<dto_obo_id.obo_name>DemoSupplier</dto_obo_id.obo_name>
+		<dto_obo_id.obo_name>DemoClient</dto_obo_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<dto_order>2</dto_order>
 		<dto_dt_id.dt_name>Demo-data</dto_dt_id.dt_name>
-		<dto_obo_id.obo_name>DemoProduct</dto_obo_id.obo_name>
+		<dto_obo_id.obo_name>DemoSupplier</dto_obo_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
 		<dto_order>3</dto_order>
 		<dto_dt_id.dt_name>Demo-data</dto_dt_id.dt_name>
-		<dto_obo_id.obo_name>DemoClient</dto_obo_id.obo_name>
+		<dto_obo_id.obo_name>DemoProduct</dto_obo_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 </object>
