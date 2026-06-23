@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1282" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1295" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -369,7 +369,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2026-05-19 21:59:54</usr_logout>
-		<usr_last_logon>2026-05-19 17:51:03</usr_last_logon>
+		<usr_last_logon>2026-06-23 17:26:49</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -471,7 +471,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2026-06-11 17:34:16</usr_last_logon>
+		<usr_last_logon>2026-06-19 00:08:00</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -23066,7 +23066,79 @@ is still in pending state]]></cst_desc>
 			<object>
 				<name>PrintTemplate</name>
 				<data>
+					<prt_name>DemoContact-Excel</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoContact-Mustache</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
 					<prt_name>DemoProduct-Brochure</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoOrder-Listing</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoOrder-Receipt</prt_name>
 					<prt_lang>ANY</prt_lang>
 				</data>
 			</object>
@@ -23154,6 +23226,40 @@ is still in pending state]]></cst_desc>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoDoc</shc_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>TreeView</name>
+				<data>
+					<trv_name>DemoClientTreeview</trv_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>TreeView</name>
+				<data>
+					<trv_name>DemoSupplierTreeview</trv_name>
 				</data>
 			</object>
 		</prm_object>
@@ -23423,6 +23529,96 @@ is still in pending state]]></cst_desc>
 		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
 		<prm_object>
 			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoContact-Excel</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoContact-Mustache</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoProduct-Brochure</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoOrder-Listing</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>PrintTemplate</name>
+				<data>
+					<prt_name>DemoOrder-Receipt</prt_name>
+					<prt_lang>ANY</prt_lang>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoClientNew</shc_name>
@@ -23443,6 +23639,40 @@ is still in pending state]]></cst_desc>
 				<name>ShortCut</name>
 				<data>
 					<shc_name>DemoOrderNew</shc_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>TreeView</name>
+				<data>
+					<trv_name>DemoClientTreeview</trv_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+	</data>
+	<data>
+		<prm_group_id.grp_name>DEMO_USER</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>TreeView</name>
+				<data>
+					<trv_name>DemoSupplierTreeview</trv_name>
 				</data>
 			</object>
 		</prm_object>
