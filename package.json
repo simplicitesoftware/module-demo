@@ -2,6 +2,7 @@
   "devDependencies": {
     "eslint": "latest",
     "stylelint": "latest",
+    "@types/jquery": "4.0.1",
     "@eslint/js": "latest",
     "stylelint-config-standard-less": "latest",
     "jshint": "latest",
@@ -13,6 +14,7 @@
   "scripts": {
     "eslint": "eslint --config=.eslint-configuration.mjs --no-color --no-error-on-unmatched-pattern resources/**/*.js",
     "stylelint": "stylelint --config=.stylelint-configuration.mjs --no-color --allow-empty-input resources/**/*.css resources/**/*.less",
+    "tsc": "tsc --noEmit",
     "jshint": "jshint --config=.jshint-configuration.json --reporter=jslint resources"
   },
   "version": "7"

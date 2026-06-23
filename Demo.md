@@ -445,12 +445,12 @@ stateDiagram-v2
 
 ### Implemented hooks
 
+* `isPrintTemplateEnable`
 * `getUserKeyLabel`
 * `postValidate`
 * `postUpdate`
 * `postSave`
 * `canReference`
-* `isPrintTemplateEnable`
 
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------

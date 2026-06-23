@@ -48,3 +48,14 @@ npm install
 npm run stylelint
 ```
 
+Typescript
+==========
+
+Compile (optional, requires node.js)
+------------------------------------
+
+``` text
+npm install
+npm run tsc
+```
+
