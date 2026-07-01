@@ -347,7 +347,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	<action>upsert</action>
 	<data>
 		<usr_login>admin</usr_login>
-		<usr_lang>FRA</usr_lang>
+		<usr_lang>ENU</usr_lang>
 		<usr_image_id>files/User/admin.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
@@ -383,7 +383,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 	</data>
 	<data>
 		<usr_login>user_enu</usr_login>
-		<usr_lang>FRA</usr_lang>
+		<usr_lang>ENU</usr_lang>
 		<usr_image_id>files/User/user_enu.png</usr_image_id>
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
@@ -745,6 +745,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<shc_width/>
 		<shc_height/>
+		<shc_in_sitemap>1</shc_in_sitemap>
 	</data>
 	<data>
 		<shc_name>DemoClientNew</shc_name>
@@ -758,6 +759,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<shc_width/>
 		<shc_height/>
+		<shc_in_sitemap>1</shc_in_sitemap>
 	</data>
 	<data>
 		<shc_name>DemoOrderNew</shc_name>
@@ -771,6 +773,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<shc_width/>
 		<shc_height/>
+		<shc_in_sitemap>1</shc_in_sitemap>
 	</data>
 	<data>
 		<shc_name>DemoOrderAgenda</shc_name>
@@ -784,6 +787,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<shc_width/>
 		<shc_height/>
+		<shc_in_sitemap>1</shc_in_sitemap>
 	</data>
 	<data>
 		<shc_name>DemoDoc</shc_name>
@@ -797,6 +801,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<shc_width/>
 		<shc_height/>
+		<shc_in_sitemap>0</shc_in_sitemap>
 	</data>
 </object>
 <object>

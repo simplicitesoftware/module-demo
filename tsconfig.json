@@ -12,7 +12,7 @@
     "skipLibCheck": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "moduleDetection": "force",
     "strict": true,
     "noUnusedLocals": true,

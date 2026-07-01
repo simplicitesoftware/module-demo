@@ -130,140 +130,6 @@ System parameters
 | `DEMO_VAT` | `20.0` |  |  |
 | `MAP_SETTINGS` | `{    "tileLayer":"https://tile.openstreetmap.org/{z}/{x}/{y}.png",    "attribution":"&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",    "maxZoom":19 }` | APP | Map settings (for the Customer map) |
 
-`DemoContact` (Contact) business object definition
---------------------------------------------------
-
-The **contact** object holds the interactions with the clients.
-
-A contact can be linked or not a an order of the selelcted client
-(when linked to an order the `demoCtcOrdId` field is set).
-
-**Physical table**: `demo_contact`
-
-### Relationships
-
-* Belongs to **DemoClient** via `demoCtcCliId` (required) — on parent delete: cascade
-* Belongs to **DemoOrder** via `demoCtcOrdId` (optional) — on parent delete: cascade
-* Has many **DemoContactHistoric** via `row_ref_id` [on delete: cascade, visible]
-
-### Fields
-
-| Name                                                         | Type                                     | Column                         | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|--------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| **`demoCtcCliId`** link to **`DemoClient`**                  | id                                       | ctc_cli_id                     | yes*     | yes       |          | -                                                                                |
-| **`demoCtcOrdId`** link to **`DemoOrder`**                   | id                                       | ctc_ord_id                     |          | yes       |          | -                                                                                |
-| _`demoCliCode`_                                              | _regexp(10)_                             | _cli_code_                     |          |           |          | _-_                                                                              |
-| _`demoCliFirstname`_                                         | _char(100)_                              | _cli_firstname_                |          |           | yes      | _-_                                                                              |
-| _`demoCliLastname`_                                          | _char(100)_                              | _cli_lastname_                 |          |           | yes      | _-_                                                                              |
-| _`demoCliEmail`_                                             | _email(50)_                              | _cli_email_                    |          |           | yes      | _-_                                                                              |
-| _`demoCliHomePhone`_                                         | _phone(20)_                              | _cli_homephone_                |          |           | yes      | _-_                                                                              |
-| _`demoCliWorkPhone`_                                         | _phone(20)_                              | _cli_workphone_                |          |           | yes      | _-_                                                                              |
-| _`demoCliMobilePhone`_                                       | _phone(20)_                              | _cli_mobilephone_              |          |           | yes      | _-_                                                                              |
-| _`demoCliFax`_                                               | _phone(20)_                              | _cli_fax_                      |          |           | yes      | _-_                                                                              |
-| _`demoOrdNumber`_                                            | _int(11)_                                | _ord_number_                   |          |           |          | _-_                                                                              |
-| _`demoOrdDate`_                                              | _date_                                   | _ord_date_                     |          |           |          | _-_                                                                              |
-| _`demoOrdStatus`_                                            | _enum(30) using DEMO_ORD_STATUS list_    | _ord_status_                   |          |           |          | _-_                                                                              |
-| _`demoOrdCliId`_                                             | _id_                                     | _ord_cli_id_                   |          |           |          | _-_                                                                              |
-| _`demoOrdPrdId`_                                             | _id_                                     | _ord_prd_id_                   |          |           |          | _-_                                                                              |
-| _`demoPrdSupId`_                                             | _id_                                     | _prd_sup_id_                   |          |           |          | _-_                                                                              |
-| _`demoSupUsrId`_                                             | _id_                                     | _sup_usr_id_                   |          |           |          | _-_                                                                              |
-| _`demoPrdReference`_                                         | _regexp(10)_                             | _prd_code_                     |          |           |          | _-_                                                                              |
-| _`demoPrdName`_                                              | _char(100)_                              | _prd_name_                     |          |           |          | _-_                                                                              |
-| _`demoOrdQuantity`_                                          | _int(11)_                                | _ord_quantity_                 |          |           |          | _-_                                                                              |
-| `demoCtcDatetime`                                            | datetime                                 | ctc_datetime                   | yes*     |           |          | -                                                                                |
-| `demoCtcType`                                                | enum(10) using DEMO_CTC_TYPE list        | ctc_type                       | yes      | yes       |          | -                                                                                |
-| `demoCtcSubType`                                             | enum(10) using DEMO_CTC_SUBTYPE list     | ctc_subtype                    |          | yes       |          | -                                                                                |
-| `demoCtcCanal`                                               | enum(10) using DEMO_CTC_CANAL list       | ctc_canal                      | yes      | yes       |          | -                                                                                |
-| `demoCtcPriority`                                            | boolean                                  | ctc_priority                   | yes      | yes       |          | -                                                                                |
-| `demoCtcStatus`                                              | enum(1) using DEMO_CTC_STATUS list       | ctc_status                     | yes      | yes       |          | -                                                                                |
-| `demoCtcComments`                                            | notepad(2147483647)                      | ctc_comments                   |          | yes       |          | -                                                                                |
-| `demoCtcFile`                                                | document                                 | ctc_file                       |          | yes       |          | -                                                                                |
-| `demoCtcPicture`                                             | image                                    | ctc_picture                    |          | yes       |          | -                                                                                |
-| `demoCtcMessages`                                            | notepad(2147483647)                      | ctc_messages                   | yes      | yes       |          | -                                                                                |
-
-### Enumerations
-
-* `DEMO_CTC_TYPE`
-    - `INF` Information
-    - `REQ` Request
-    - `CMP` Complaint
-    - `OTH` Other
-* `DEMO_CTC_SUBTYPE`
-    - `EMPTY` 
-* `DEMO_CTC_CANAL`
-    - `PHONE` Code PHONE
-    - `EMAIL` Code EMAIL
-    - `CHAT` Code CHAT
-    - `WEB` Code WEB
-* `DEMO_CTC_STATUS`
-    - `O` Open
-    - `P` Processing
-    - `C` Closed
-
-### State transitions (`demoCtcStatus`)
-
-```mermaid
-stateDiagram-v2
-    state "Open" as O
-    state "Processing" as P
-    state "Closed" as C
-    O --> P
-    O --> C
-    P --> O
-    P --> C
-    C --> O
-```
-
-### Constraints
-
-* **DemoContact-C1**: Fields not updatable by default
-    - Condition: `true`
-    - Effects: back
-    - Impacts:
-        - demoCtcStatus.updatable = `false`
-        - demoCtcType.updatable = `false`
-        - demoCtcSubType.updatable = `false`
-        - demoCtcCanal.updatable = `false`
-        - demoCtcCliId.updatable = `false`
-        - demoCtcOrdId.updatable = `false`
-* **DemoContact-C2**: Status field only updatable by the administrator
-    - Condition: `![ISNEW]`
-    - Effects: back
-    - Impacts:
-        - demoCtcStatus.updatable = `true`
-* **DemoContact-C4**: Show/hide sub-type depending on type
-    - Condition: `true`
-    - Effects: back, front
-    - Impacts:
-        - demoCtcSubType.visible = `![FIELD:demoCtcType].isEmpty() && [VALUE:demoCtcType] != "OTH"`
-        - demoCtcSubType.mandatory = `![FIELD:demoCtcType].isEmpty() && [VALUE:demoCtcType] != "OTH"`
-* **DemoContact-C3**: Fields updatable at creation
-    - Condition: `[ISNEW]`
-    - Effects: back
-    - Impacts:
-        - demoCtcType.updatable = `true`
-        - demoCtcSubType.updatable = `true`
-        - demoCtcCanal.updatable = `true`
-        - demoCtcCliId.updatable = `true`
-        - demoCtcOrdId.updatable = `true`
-* **DemoContact-C5**: Allow order selection **after** customer selection
-    - Condition: `true`
-    - Effects: front
-    - Impacts:
-        - demoCtcOrdId.updatable = `[ISNEW] && ![FIELD:demoCtcCliId].isEmpty()`
-
-### Description (from code)
-
-> Contact business object
-
-### Implemented hooks
-
-* `printMustache`: HTML publication (using Mustache(R) templating) method
-* `printExcel`: Microsoft Excel(R) sheet publication method
-* `getUserKeyLabel`
-* `postLoad`
-* `canReference`
-
 `DemoContactHistoric` (Contact (hist.)) business object definition
 ------------------------------------------------------------------
 
@@ -277,7 +143,7 @@ stateDiagram-v2
 
 ### Relationships
 
-* Belongs to **DemoContact** via `row_ref_id` (required) — on parent delete: cascade
+* Belongs to **DemoContact** via `row_ref_id` (required)
 
 ### Fields
 
@@ -306,152 +172,6 @@ stateDiagram-v2
 * `DEMO_CTC_SUBTYPE`
     - `EMPTY` 
 
-`DemoOrder` (Order) business object definition
-----------------------------------------------
-
-The **order** business object corresponds to the
-product orders placed by clients.
-
-An order is for one single product.
-
-**Physical table**: `demo_order`
-
-### Relationships
-
-* Belongs to **DemoClient** via `demoOrdCliId` (required) — on parent delete: cascade
-* Belongs to **DemoProduct** via `demoOrdPrdId` (required) — on parent delete: cascade
-* Has many **DemoContact** via `demoCtcOrdId` [on delete: cascade, visible]
-* Has many **DemoOrderHistoric** via `row_ref_id` [on delete: cascade, visible]
-
-### Fields
-
-| Name                                                         | Type                                     | Column                         | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|--------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| **`demoOrdCliId`** link to **`DemoClient`**                  | id                                       | ord_cli_id                     | yes*     | yes       |          | -                                                                                |
-| **`demoOrdPrdId`** link to **`DemoProduct`**                 | id                                       | ord_prd_id                     | yes*     | yes       |          | -                                                                                |
-| _`demoCliCode`_                                              | _regexp(10)_                             | _cli_code_                     |          |           |          | _-_                                                                              |
-| _`demoCliFirstname`_                                         | _char(100)_                              | _cli_firstname_                |          |           | yes      | _-_                                                                              |
-| _`demoCliLastname`_                                          | _char(100)_                              | _cli_lastname_                 |          |           | yes      | _-_                                                                              |
-| _`demoCliEmail`_                                             | _email(50)_                              | _cli_email_                    |          |           | yes      | _-_                                                                              |
-| _`demoCliAddress1`_                                          | _char(100)_                              | _cli_address1_                 |          |           | yes      | _-_                                                                              |
-| _`demoCliAddress2`_                                          | _char(100)_                              | _cli_address2_                 |          |           | yes      | _-_                                                                              |
-| _`demoCliZipCode`_                                           | _char(10)_                               | _cli_zipcode_                  |          |           | yes      | _-_                                                                              |
-| _`demoCliCity`_                                              | _char(50)_                               | _cli_city_                     |          |           | yes      | _-_                                                                              |
-| _`demoCliCountry`_                                           | _enum(30) using DEMO_COUNTRY list_       | _cli_country_                  |          |           | yes      | _-_                                                                              |
-| _`demoPrdReference`_                                         | _regexp(10)_                             | _prd_code_                     |          |           |          | _-_                                                                              |
-| _`demoPrdName`_                                              | _char(100)_                              | _prd_name_                     |          |           |          | _-_                                                                              |
-| _`demoPrdType`_                                              | _enum(50) using DEMO_PRD_TYPE list_      | _prd_type_                     |          |           |          | _-_                                                                              |
-| _`demoPrdEan13`_                                             | _char(13)_                               | _prd_ean13_                    |          |           |          | _-_                                                                              |
-| _`demoPrdSupId`_                                             | _id_                                     | _prd_sup_id_                   |          |           |          | _-_                                                                              |
-| _`demoSupCode`_                                              | _regexp(50)_                             | _sup_code_                     |          |           |          | _-_                                                                              |
-| _`demoSupName`_                                              | _char(100)_                              | _sup_name_                     |          |           |          | _-_                                                                              |
-| _`demoSupUsrId`_                                             | _id_                                     | _sup_usr_id_                   |          |           |          | _-_                                                                              |
-| _`demoPrdStock`_                                             | _int(11)_                                | _prd_stock_                    |          |           |          | _-_                                                                              |
-| _`demoPrdUnitPrice`_                                         | _float(11, 0)_                           | _prd_unitprice_                |          |           |          | _-_                                                                              |
-| `demoOrdNumber`                                              | int(11)                                  | ord_number                     | yes*     |           |          | -                                                                                |
-| `demoOrdDate`                                                | date                                     | ord_date                       |          |           |          | -                                                                                |
-| `demoOrdStatus`                                              | enum(30) using DEMO_ORD_STATUS list      | ord_status                     | yes      | yes       |          | -                                                                                |
-| `demoOrdDeliveryDate`                                        | datetime                                 | ord_deliverydate               |          | yes       |          | -                                                                                |
-| `demoOrdUnitPrice`                                           | float(11, 2)                             | ord_unitprice                  |          |           |          | -                                                                                |
-| `demoOrdQuantity`                                            | int(11)                                  | ord_quantity                   | yes      | yes       |          | -                                                                                |
-| `demoOrdTotal`                                               | float(11, 0)                             | ord_total                      |          |           |          | -                                                                                |
-| `demoOrdVAT`                                                 | float(11, 2)                             |                                |          |           |          | -                                                                                |
-| `demoOrdComments`                                            | notepad(2147483647)                      | ord_comments                   |          | yes       |          | -                                                                                |
-
-### Enumerations
-
-* `DEMO_ORD_STATUS`
-    - `P` Pending status
-    - `H` On hold
-    - `V` Validated status
-    - `D` Shipped status
-    - `C` Canceled status
-
-### State transitions (`demoOrdStatus`)
-
-```mermaid
-stateDiagram-v2
-    state "Pending status" as P
-    state "Validated status" as V
-    state "On hold" as H
-    state "Canceled status" as C
-    state "Shipped status" as D
-    P --> V
-    P --> H
-    P --> C
-    V --> P
-    V --> H
-    V --> D
-    V --> C
-    H --> P
-    H --> V
-    H --> C
-    C --> P
-    C --> V
-    D --> [*]
-```
-
-### Constraints
-
-* **DemoOrder-C1**: Fields not updatable by default
-    - Condition: `true`
-    - Effects: back
-    - Impacts:
-        - demoOrdStatus.updatable = `false`
-        - demoOrdQuantity.updatable = `false`
-        - demoOrdCliId.updatable = `false`
-        - demoOrdPrdId.updatable = `false`
-        - demoOrdDeliveryDate.visible = `ObjectField.VIS_NOT`
-        - demoOrdDeliveryDate.updatable = `false`
-        - demoOrdDeliveryDate.mandatory = `false`
-* **DemoOrder-C2**: Status field only updatable by the administrator
-    - Condition: `true`
-    - Effects: back
-    - Impacts:
-        - demoOrdStatus.updatable = `true`
-* **DemoOrder-C3**: Customer, product and quantity fields updatable at creation or when the order  is still in pending state
-    - Condition: `[ISNEW] || [STATUS] == "P"`
-    - Effects: back
-    - Impacts:
-        - demoOrdQuantity.updatable = `true`
-        - demoOrdCliId.updatable = `true`
-        - demoOrdPrdId.updatable = `true`
-* **DemoOrder-C4**: Delivery date field only updatable when the order is not delivered nor cancelled
-    - Condition: `![ISNEW] && [STATUS] != "C"`
-    - Effects: back
-    - Impacts:
-        - demoOrdDeliveryDate.visible = `ObjectField.VIS_FORM`
-        - demoOrdDeliveryDate.updatable = `[STATUS] != "D" && [STATUS] != "C"`
-* **DemoOrder-C5**: Delivery order field mandatory at validation
-    - Condition: `[STATUS] == "V"`
-    - Effects: back
-    - Impacts:
-        - demoOrdDeliveryDate.mandatory = `true`
-* **DemoOrder-C6**: Allow order deleteion only in pending state
-    - Condition: `true`
-    - Effects: back
-    - Impacts:
-        - object.delete = `[STATUS] == "P"`
-* **DemoOrder-C7**: Update order only if administrator or if responsible of the product's supplier
-    - Condition: `true`
-    - Effects: back
-    - Impacts:
-        - object.update = `[VALUE:demoOrdPrdId.demoPrdSupId.demoSupUsrId] == [USERID]+""`
-        - object.delete = `[VALUE:demoOrdPrdId.demoPrdSupId.demoSupUsrId] == [USERID]+""`
-
-### Description (from code)
-
-> Order business object
-
-### Implemented hooks
-
-* `isPrintTemplateEnable`
-* `getUserKeyLabel`
-* `postValidate`
-* `postUpdate`
-* `postSave`
-* `canReference`
-
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------
 
@@ -464,7 +184,7 @@ stateDiagram-v2
 
 ### Relationships
 
-* Belongs to **DemoOrder** via `row_ref_id` (required) — on parent delete: cascade
+* Belongs to **DemoOrder** via `row_ref_id` (required)
 
 ### Fields
 
@@ -505,7 +225,7 @@ stateDiagram-v2
 
 ### Relationships
 
-* Belongs to **DemoProduct** via `row_ref_id` (required) — on parent delete: cascade
+* Belongs to **DemoProduct** via `row_ref_id` (required)
 
 ### Fields
 
@@ -532,7 +252,6 @@ suppliers of products that can be ordered.
 ### Relationships
 
 * Belongs to **User** via `demoSupUsrId` (optional)
-* Has many **DemoProduct** via `demoPrdSupId` [on delete: cascade, visible]
 
 ### Fields
 
@@ -549,138 +268,6 @@ suppliers of products that can be ordered.
 | `demoSupEmail`                                               | email(20)                                | sup_email                      |          | yes       |          | -                                                                                |
 | `demoSupLogo`                                                | image                                    | sup_logo                       |          | yes       |          | -                                                                                |
 | `demoSupComments`                                            | notepad(2147483647)                      | sup_comments                   |          | yes       |          | -                                                                                |
-
-`DemoProduct` (Product) business object definition
---------------------------------------------------
-
-The **product** business object corresponds to the
-products that can be ordered.
-
-Its reference is unique per supplier.
-
-**Physical table**: `demo_product`
-
-### Relationships
-
-* Belongs to **DemoSupplier** via `demoPrdSupId` (required) — on parent delete: cascade
-* Has many **DemoOrder** via `demoOrdPrdId` [on delete: cascade, hidden]
-* Has many **DemoProductHistoric** via `row_ref_id` [on delete: cascade, visible]
-
-### Fields
-
-| Name                                                         | Type                                     | Column                         | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|--------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| **`demoPrdSupId`** link to **`DemoSupplier`**                | id                                       | prd_sup_id                     | yes      | yes       |          | -                                                                                |
-| _`demoSupCode`_                                              | _regexp(50)_                             | _sup_code_                     |          |           |          | _-_                                                                              |
-| _`demoSupName`_                                              | _char(100)_                              | _sup_name_                     |          |           |          | _-_                                                                              |
-| _`demoSupUsrId`_                                             | _id_                                     | _sup_usr_id_                   |          |           |          | _-_                                                                              |
-| `demoPrdReference`                                           | regexp(10)                               | prd_code                       | yes*     |           |          | -                                                                                |
-| `demoPrdName`                                                | char(100)                                | prd_name                       | yes      | yes       |          | -                                                                                |
-| `demoPrdType`                                                | enum(50) using DEMO_PRD_TYPE list        | prd_type                       | yes      | yes       |          | -                                                                                |
-| `demoPrdDescription`                                         | text(1000000)                            | prd_description                |          | yes       |          | -                                                                                |
-| `demoPrdPicture`                                             | image                                    | prd_picture                    |          | yes       |          | -                                                                                |
-| `demoPrdEan13`                                               | char(13)                                 | prd_ean13                      |          | yes       |          | -                                                                                |
-| `demoPrdEan13Image`                                          | image                                    | prd_ean13_image                |          |           |          | -                                                                                |
-| `demoPrdStock`                                               | int(11)                                  | prd_stock                      | yes      | yes       |          | -                                                                                |
-| `demoPrdUnitPrice`                                           | float(11, 0)                             | prd_unitprice                  | yes      | yes       |          | -                                                                                |
-| `demoPrdAvailable`                                           | boolean                                  | prd_available                  | yes      | yes       |          | -                                                                                |
-| `demoPrdFeatured`                                            | boolean                                  | prd_featured                   | yes      | yes       |          | -                                                                                |
-| `demoPrdDocumentation`                                       | html(1000000)                            | prd_documentation              |          | yes       |          | -                                                                                |
-| `demoPrdBrochure`                                            | document                                 | prd_brochure                   |          | yes       |          | -                                                                                |
-| `demoPrdOnlineDoc`                                           | url(255)                                 | prd_onlinedoc                  |          | yes       |          | -                                                                                |
-| `demoPrdComments`                                            | notepad(2147483647)                      | prd_comments                   |          | yes       |          | -                                                                                |
-
-### Enumerations
-
-* `DEMO_PRD_TYPE`
-    - `LAPTOP` Laptop
-    - `DESKTOP` Desktop
-    - `TABLET` Tablet
-    - `SMARTPHONE` Smartphone
-    - `OTHER` Other
-
-### Custom actions
-
-* `DEMO_INCSTOCK`: Sample action for product stock **increment**
-(by `N` specified in the product business object code).
-* `DEMO_DECSTOCK`: Product stock **decrement** triggered by the order
-state transition to _shipped_ status.
-* `DEMO_PRD_EMAIL`: Send product information by email
-
-### Description (from code)
-
-> Product business object
-
-### Implemented hooks
-
-* `increaseStock`: Increase stock action method
-* `decreaseStock`: Decrease stock action method
-* `printBrochure`: Microsoft Word(R) brochure publication method
-* `getUserKeyLabel`
-* `initAction`
-* `preSave`
-* `canReference`
-* `sendEmail`: Send product data in an email action method
-
-`DemoClient` (Customer) business object definition
---------------------------------------------------
-
-The **customer** business object corresponds
-to the customer who places order.
-
-His address is geolocalized using GoogleMaps&reg; API.
-
-**Physical table**: `demo_client`
-
-### Relationships
-
-* Has many **DemoContact** via `demoCtcCliId` [on delete: cascade, visible]
-* Has many **DemoOrder** via `demoOrdCliId` [on delete: cascade, visible]
-
-### Fields
-
-| Name                                                         | Type                                     | Column                         | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|--------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `demoCliCode`                                                | regexp(10)                               | cli_code                       | yes*     |           |          | -                                                                                |
-| `demoCliFirstname`                                           | char(100)                                | cli_firstname                  | yes      | yes       | yes      | -                                                                                |
-| `demoCliLastname`                                            | char(100)                                | cli_lastname                   | yes      | yes       | yes      | -                                                                                |
-| `demoCliAddress1`                                            | char(100)                                | cli_address1                   | yes      | yes       | yes      | -                                                                                |
-| `demoCliAddress2`                                            | char(100)                                | cli_address2                   |          | yes       | yes      | -                                                                                |
-| `demoCliZipCode`                                             | char(10)                                 | cli_zipcode                    | yes      | yes       | yes      | -                                                                                |
-| `demoCliCity`                                                | char(50)                                 | cli_city                       | yes      | yes       | yes      | -                                                                                |
-| `demoCliCountry`                                             | enum(30) using DEMO_COUNTRY list         | cli_country                    | yes      | yes       | yes      | -                                                                                |
-| `demoCliCoords`                                              | geocoords                                | cli_coords                     |          | yes       | yes      | -                                                                                |
-| `demoCliEmail`                                               | email(50)                                | cli_email                      |          | yes       | yes      | -                                                                                |
-| `demoCliHomePhone`                                           | phone(20)                                | cli_homephone                  |          | yes       | yes      | -                                                                                |
-| `demoCliWorkPhone`                                           | phone(20)                                | cli_workphone                  |          | yes       | yes      | -                                                                                |
-| `demoCliMobilePhone`                                         | phone(20)                                | cli_mobilephone                |          | yes       | yes      | -                                                                                |
-| `demoCliFax`                                                 | phone(20)                                | cli_fax                        |          | yes       | yes      | -                                                                                |
-| `demoCliType`                                                | enum(30) using DEMO_CLI_TYPE list        | cli_type                       | yes      | yes       |          | -                                                                                |
-| `demoCliComments`                                            | html(1000000)                            | cli_comments                   |          | yes       |          | -                                                                                |
-| `demoCliPlacemapLabel`                                       | char(100)                                |                                |          | yes       |          | -                                                                                |
-
-### Enumerations
-
-* `DEMO_COUNTRY`
-    - `FR` France
-    - `UK` United Kingdom
-    - `IT` Italy
-    - `SP` Spain
-* `DEMO_CLI_TYPE`
-    - `T1` Code T1
-    - `T2` Code T2
-    - `T3` Code T3
-
-### Description (from code)
-
-> Customer business object
-
-### Implemented hooks
-
-* `getUserKeyLabel`
-* `postLoad`
-* `postValidate`
-* `preSave`
 
 ## Process: DemoOrderCreate
 

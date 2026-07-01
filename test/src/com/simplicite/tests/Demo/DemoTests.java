@@ -1,9 +1,9 @@
 package com.simplicite.tests.Demo;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 import org.json.JSONObject;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.simplicite.commons.Demo.DemoCommon;
 import com.simplicite.objects.Demo.DemoProduct;
@@ -35,7 +35,7 @@ public class DemoTests {
         Grant sys = Grant.getSystemAdmin();
         try {
             ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
-            prd.setValues(prd.getTool().search(new JSONObject().put("demoPrdReference", PRD_REF)).get(0), true);
+            prd.setValues(prd.search(new JSONObject().put("demoPrdReference", PRD_REF)).get(0), true);
 
             ObjectField s = prd.getField(DemoProduct.STOCK_FIELDNAME);
             int n = s.getInt(0);
@@ -56,7 +56,7 @@ public class DemoTests {
     public void testCreateOrder() {
         Grant sys = Grant.getSystemAdmin();
         try {
-            AppLog.info("Order creation test...", sys);
+            AppLog.info("Order creation test..", sys);
 
             int quantity = 5;
 
@@ -69,7 +69,7 @@ public class DemoTests {
             // Increase product quantity
             if (stock < quantity) {
                 ps.setValue(stock + quantity);
-                prd.getTool().validateAndSave(); // Update product
+                prd.validateAndSave(); // Update product
                 stock = ps.getInt(-1);
                 AppLog.info("Product stock increased to = " + stock, sys);
             }
@@ -86,7 +86,7 @@ public class DemoTests {
             // Get order for creation
             ObjectDB ord = sys.getObject("test_DemoOrder", "DemoOrder");
             AppLog.info("Using " + ord.getDisplay(), sys);
-            ord.getTool().getForCreate();
+            ord.getForCreate();
 
             // Check default values
             ObjectField q = ord.getField("demoOrdQuantity");
@@ -107,7 +107,7 @@ public class DemoTests {
             // Try to create order with a 0 quantity
             q.setValue(0);
             try {
-                ord.getTool().validateAndSave();
+                ord.validateAndSave();
             } catch (ValidateException e) {
                 AppLog.info("Expected validation error: " + sys.T(e.getMessage()), sys);
                 assertEquals(ValidateException.class, e.getClass());
@@ -116,21 +116,21 @@ public class DemoTests {
 
             // Create order
             q.setValue(quantity);
-            ord.getTool().validateAndSave(); // Create order
+            ord.validateAndSave(); // Create order
             String n = ord.getFieldValue("demoOrdNumber");
             AppLog.info("Created order #" + n + " for " + quantity + " quantity", sys);
 
-            ord.select(ord.getRowId()); // Reload the order's record
+            ord.get(ord.getRowId()); // Reload the order's record
             assertEquals(quantity, q.getInt(-1)); // Check the quantity
             assertEquals("P", s.getValue()); // Check the status value
             ObjectField d = ord.getField("demoOrdDeliveryDate");
 
             s.setOldValue(s.getValue());
             s.setValue("V"); // Validated
-            ord.getTool().validateAndSave();
+            ord.validateAndSave();
             AppLog.info("Validated order #" + n, sys);
 
-            ord.select(ord.getRowId()); // Reload the order's record
+            ord.get(ord.getRowId()); // Reload the order's record
             assertEquals("V", s.getValue()); // Check the status value
             assertFalse(p.isUpdatable()); // Check that the product is not updatable anymore
             assertFalse(c.isUpdatable()); // Check that the customer is not updatable anymore
@@ -139,18 +139,18 @@ public class DemoTests {
 
             s.setOldValue(s.getValue());
             s.setValue("D"); // Delivered
-            ord.getTool().validateAndSave();
+            ord.validateAndSave();
             AppLog.info("Delivered order #" + n, sys);
 
-            ord.select(ord.getRowId()); // Reload the order's record
+            ord.get(ord.getRowId()); // Reload the order's record
             assertEquals("D", s.getValue()); // Check the status value
             assertFalse(d.isUpdatable()); // Check that the delivery date is not updatable anymore
 
-            prd.select(prd.getRowId()); // Reload the product's record
+            prd.get(prd.getRowId()); // Reload the product's record
             AppLog.info("Product stock was decreased to = " + ps.getInt(-1), sys);
             assertEquals(ps.getInt(-1), stock - quantity);
 
-            ord.getTool().delete();
+            ord.delete(true);
             AppLog.info("Deleted order #" + n, sys);
 
             AppLog.info("Success", sys);

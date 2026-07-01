@@ -77,7 +77,7 @@ public class DemoOrder extends ObjectDB {
             try {
                 // Decrease stock
                 ObjectDB prd = getGrant().getTmpObject("DemoProduct");
-                prd.select(getFieldValue(PRODUCT_FIELDNAME));
+                prd.get(getFieldValue(PRODUCT_FIELDNAME));
                 int q = getField(QUANTITY_FIELDNAME).getInt(0);
                 prd.setParameter("QUANTITY", q);
                 String res = prd.invokeAction("DEMO_DECSTOCK");
