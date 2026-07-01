@@ -149,11 +149,11 @@ public class DemoProduct extends ObjectDB {
             dt.replace("productDescription", getFieldValue(DESCRIPTION_FIELDNAME));
             dt.addHTML(getFieldValue(DOCUMENTATION_FIELDNAME));
             return dt.toByteArray();
-      } catch (Exception e) { // Unexpected error => text file with error message
-          AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
-          pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
-          pt.setFilename(getGrant().T("ERROR") + ".txt");
-          return e.getMessage();
+        } catch (Exception e) { // Unexpected error => text file with error message
+            AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+            pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
+            pt.setFilename(getGrant().T("ERROR") + ".txt");
+            return e.getMessage();
         }
     }
 
