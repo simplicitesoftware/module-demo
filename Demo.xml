@@ -3527,7 +3527,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_updatable>0</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>4</fld_research>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
@@ -4167,7 +4167,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>4</fld_research>
 		<fld_researchreq>3</fld_researchreq>
 		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
@@ -4287,7 +4287,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_updatable>2;3</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>1</fld_research>
+		<fld_research>4</fld_research>
 		<fld_researchreq>3</fld_researchreq>
 		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
@@ -11543,7 +11543,7 @@ state transition to _shipped_ status.]]></act_comment>
 	</data>
 	<data>
 		<act_name>DEMO_INCSTOCK</act_name>
-		<act_type>O</act_type>
+		<act_type>F</act_type>
 		<act_async>0</act_async>
 		<act_job_depth/>
 		<act_method>increaseStock</act_method>
@@ -11552,7 +11552,7 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
-		<act_plus>0</act_plus>
+		<act_plus>1</act_plus>
 		<act_comment><![CDATA[Sample action for product stock **increment**
 (by `N` specified in the product business object code).]]></act_comment>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
