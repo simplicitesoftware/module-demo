@@ -291,8 +291,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -905,8 +905,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -1178,6 +1178,44 @@ paths:
         required: true
       tags:
       - DemoOrder
+  /rest/DemoProduct/{row_id}/action:DEMO_DECSTOCK:
+    get:
+      summary: Call a custom action for a DemoProduct business object record or for
+        all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-action-demo_decstock
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoOrderHistoric/{row_id}:
     post:
       summary: Create a new DemoOrderHistoric business object record
@@ -1480,8 +1518,8 @@ paths:
         required: false
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       - in: query
@@ -1742,6 +1780,44 @@ paths:
         required: true
       tags:
       - DemoSupplier
+  /rest/DemoProduct/{row_id}/action:DEMO_PRD_EMAIL:
+    get:
+      summary: Call a custom action for a DemoProduct business object record or for
+        all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-action-demo_prd_email
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoProductHistoric/{row_id}:
     post:
       summary: Create a new DemoProductHistoric business object record
@@ -2804,6 +2880,44 @@ paths:
       - DemoContactHistoric
       consumes:
       - application/json
+  /rest/DemoProduct/{row_id}/action:DEMO_INCSTOCK:
+    get:
+      summary: Call a custom action for a DemoProduct business object record or for
+        all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-action-demo_incstock
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoProduct/{row_id}:
     post:
       summary: Create a new DemoProduct business object record
@@ -3144,8 +3258,8 @@ definitions:
         maxLength: 30
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoOrdCliId__demoCliCode:
@@ -3469,8 +3583,8 @@ definitions:
         maxLength: 30
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       row_ref_id__demoOrdPrdId:
@@ -3812,8 +3926,8 @@ definitions:
         maxLength: 30
         enum:
         - P
-        - H
         - V
+        - H
         - D
         - C
       demoCtcPicture:
