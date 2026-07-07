@@ -56,14 +56,14 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
             // Get supplier row ID from supplier code code
             String supId;
             try {
-                supId = sup.get(new JSONObject().put("demoSupCode", values[0]));
+                supId = sup.getTool().get(new JSONObject().put("demoSupCode", values[0]));
                 if (debug) appendLog("Supplier " + values[0] + " found, row ID = " + supId);
             } catch (@SuppressWarnings("unused") GetException e) {
                 throw new PlatformException("No supplier found for " + values[0]);
             }
 
             // Product upsert (= create or update)
-            boolean exists = prd.getForUpsert(
+            boolean exists = prd.getTool().getForUpsert(
                 new JSONObject()
                     .put("demoPrdSupId", supId)
                     .put("demoPrdReference", values[1]));
@@ -72,7 +72,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
                 prd.setFieldValue("demoPrdReference", values[1]);
             }
             prd.setFieldValue("demoPrdName", values[2]);
-            prd.validateAndSave();
+            prd.getTool().validateAndSave();
             if (debug) appendLog("Product " + values[1] + " " + (exists ? "updated" : "created"));
         } catch (PlatformException e) {
             String msg = "Line " + n + " error: " + e.getMessage();

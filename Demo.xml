@@ -164,6 +164,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<thm_const>files/Theme/DemoTheme/const.less</thm_const>
+		<thm_custom_const><![CDATA[:local {}]]></thm_custom_const>
 		<thm_parent_id.thm_name/>
 		<thm_palette_id.pal_name>DemoTheme</thm_palette_id.pal_name>
 	</data>

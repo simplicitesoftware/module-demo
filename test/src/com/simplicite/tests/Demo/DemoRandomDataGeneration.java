@@ -38,7 +38,7 @@ public class DemoRandomDataGeneration {
                 ord.setFieldValue("demoOrdPrdId", getRandomRowId("demo_product"));
                 ord.setFieldValue("demoOrdQuantity", Tool.randomInt(1, 5));
                 ord.setFieldValue("demoOrdComments", Tool.getCurrentDateTime());
-                ord.validateAndSave();
+                ord.getTool().validateAndSave();
             }
         } catch (Exception e) {
             AppLog.error(e.getMessage(), e, g);

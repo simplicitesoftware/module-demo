@@ -62,7 +62,7 @@ public class DemoProduct extends ObjectDB {
             if (inc > 0) {
                 ObjectField s = getField(STOCK_FIELDNAME);
                 s.setValue(s.getInt(0) + inc);
-                validateAndSave();
+                getTool().validateAndSave();
                 // Log
                 AppLog.log("DEMO_INFO", getClass(), "increaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
                 // User message
@@ -86,7 +86,7 @@ public class DemoProduct extends ObjectDB {
             if (dec > 0) {
                 ObjectField s = getField(STOCK_FIELDNAME);
                 s.setValue(s.getInt() - dec);
-                validateAndSave();
+                getTool().validateAndSave();
                 // Log
                 AppLog.log("DEMO_INFO", getClass(), "decreaseStock", "Stock for " + getFieldValue(REFERENCE_FIELDNAME) + " is now " + s.getValue(), getGrant());
                 // User message

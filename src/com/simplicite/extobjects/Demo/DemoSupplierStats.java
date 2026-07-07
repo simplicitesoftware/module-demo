@@ -27,13 +27,13 @@ public class DemoSupplierStats extends com.simplicite.webapp.web.widgets.Chartjs
 
             ObjectDB ord = getGrant().getTmpObject("DemoOrder");
 
-            List<String[]> ps = prd.search(new JSONObject().put("demoPrdSupId", supId));
+            List<String[]> ps = prd.getTool().search(new JSONObject().put("demoPrdSupId", supId));
             for (String[] p : ps) {
                 labels.put(prd.getFieldValue("demoPrdReference", p) + " (" + prd.getFieldValue("demoPrdName", p) + ")");
 
                 JSONObject filter = new JSONObject().put("demoOrdPrdId", prd.getRowId(p)).put("demoOrdStatus", "D");
-                counts.put((double)ord.count(filter));
-                quantities.put(ord.sum("demoOrdQuantity", filter));
+                counts.put((double)ord.getTool().count(filter));
+                quantities.put(ord.getTool().sum("demoOrdQuantity", filter));
             }
         } catch (Exception e) {
             AppLog.error("Unable to process product stats", e, getGrant());
