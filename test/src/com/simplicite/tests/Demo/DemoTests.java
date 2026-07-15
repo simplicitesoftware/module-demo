@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.regex.Pattern;
 
 import org.json.JSONObject;
+import org.json.JSONException;
 
 import org.junit.jupiter.api.Test;
 
@@ -109,9 +110,15 @@ public class DemoTests {
             try {
                 ord.getTool().validateAndSave();
             } catch (ValidateException e) {
-                AppLog.info("Expected validation error: " + sys.T(e.getMessage()), sys);
+                String err = e.getMessage();
+                if (err.startsWith("{")) try {
+                    err = new JSONObject(err).getString("code");
+                    AppLog.info("Expected validation error: " + sys.T(err), sys);
+                } catch (JSONException je) {
+                    AppLog.warning("Unable to parse JSON validation error", je, sys);
+                }
                 assertEquals(ValidateException.class, e.getClass());
-                assertTrue(e.getMessage().startsWith(DemoOrder.QUANTITY_ERROR));
+                assertTrue(err.startsWith(DemoOrder.QUANTITY_ERROR));
             }
 
             // Create order
