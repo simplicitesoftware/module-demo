@@ -11841,8 +11841,8 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#b6d7a8</act_color_bg>
 		<act_image>fas/check-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11864,8 +11864,8 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#ffe599</act_color_bg>
 		<act_image>fas/play-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11935,8 +11935,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>2</act_order>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#ea9999</act_color_bg>
 		<act_image>icon/color/btn_red</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11958,8 +11958,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>3</act_order>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#b6d7a8</act_color_bg>
 		<act_image>icon/color/btn_green</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11981,8 +11981,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>1</act_order>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#f9cb9c</act_color_bg>
 		<act_image>icon/color/btn_orange</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
