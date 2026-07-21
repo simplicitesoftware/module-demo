@@ -111,11 +111,13 @@ public class DemoTests {
                 ord.getTool().validateAndSave();
             } catch (ValidateException e) {
                 String err = e.getMessage();
-                if (err.startsWith("{")) try {
-                    err = new JSONObject(err).getString("code");
-                    AppLog.info("Expected validation error: " + sys.T(err), sys);
-                } catch (JSONException je) {
-                    AppLog.warning("Unable to parse JSON validation error", je, sys);
+                if (err.startsWith("{")) {
+                    try {
+                        err = new JSONObject(err).getString("code");
+                        AppLog.info("Expected validation error: " + sys.T(err), sys);
+                    } catch (JSONException je) {
+                        AppLog.warning("Unable to parse JSON validation error", je, sys);
+                    }
                 }
                 assertEquals(ValidateException.class, e.getClass());
                 assertTrue(err.startsWith(DemoOrder.QUANTITY_ERROR));
