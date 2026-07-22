@@ -471,7 +471,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2026-06-19 00:08:00</usr_last_logon>
+		<usr_last_logon>2026-07-06 16:45:01</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -11488,8 +11488,8 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#d9ead3</act_color_bg>
 		<act_image>fas/check-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11511,8 +11511,8 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#fff2cc</act_color_bg>
 		<act_image>fas/play-circle</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11582,8 +11582,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>2</act_order>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#ea9999</act_color_bg>
 		<act_image>icon/color/btn_red</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11605,8 +11605,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>3</act_order>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#b6d7a8</act_color_bg>
 		<act_image>icon/color/btn_green</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
@@ -11628,8 +11628,8 @@ state transition to _shipped_ status.]]></act_comment>
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order>1</act_order>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#000000</act_color>
+		<act_color_bg>#f9cb9c</act_color_bg>
 		<act_image>icon/color/btn_orange</act_image>
 		<act_group_id.acg_name/>
 		<act_queue_id.acq_name/>
