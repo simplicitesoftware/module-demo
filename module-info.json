@@ -1,9 +1,11 @@
 {
-    "date": "2026-06-01 15:45:42",
+    "date": "2026-07-22 17:28:08",
     "name": "Demo",
+    "platform_revision": "5.3.92-preview",
     "format": "xml",
     "files": ["Demo.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo.git"}},
     "version": "5",
-    "platform": "5.3.89"
+    "branch": "master",
+    "platform": "5.3"
 }
