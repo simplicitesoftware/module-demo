@@ -4,6 +4,9 @@ import js from '@eslint/js';
 export default [
   js.configs.recommended,
   {
+    ignores: [ '**/*.min.js' ]
+  },
+  {
     languageOptions: {
       globals: {
         ...globals.browser,

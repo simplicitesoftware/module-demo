@@ -7,6 +7,7 @@ export default {
   plugins: [
     "@stylistic/stylelint-plugin"
   ],
+  ignoreFiles: [ "**/*.min.css" ],
   rules: {
     "@stylistic/indentation": 4,
     "@stylistic/max-empty-lines": 1,
