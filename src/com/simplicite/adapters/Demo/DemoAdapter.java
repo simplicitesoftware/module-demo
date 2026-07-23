@@ -60,8 +60,8 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
             try {
                 supId = sup.get(new JSONObject().put("demoSupCode", values[0]));
                 if (debug) appendLog("Supplier " + values[0] + " found, row ID = " + supId);
-            } catch (@SuppressWarnings("unused") GetException e) {
-                throw new ParamsException("No supplier found for " + values[0]);
+            } catch (GetException e) {
+                throw new ParamsException("No supplier found for " + values[0] + " (" + e.getMessage() + ")");
             }
 
             // Product upsert = create or update
@@ -76,7 +76,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
             prd.setFieldValue("demoPrdName", values[2]);
             prd.validateAndSave();
             if (debug) appendLog("Product " + values[1] + " " + (exists ? "updated" : "created"));
-        } catch (ParamsException|GetException|ValidateException|SaveException e) {
+        } catch (ParamsException | GetException | ValidateException | SaveException e) {
             String msg = "Line " + n + " error: " + e.getMessage();
             appendLog(msg);
             AppLog.error(msg, e, getGrant());

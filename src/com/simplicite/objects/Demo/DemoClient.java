@@ -7,6 +7,7 @@ import com.simplicite.util.AppLog;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.ObjectField;
+import com.simplicite.util.exceptions.ParamsException;
 import com.simplicite.util.tools.GMapTool;
 import com.simplicite.util.tools.GMapTool.Location;
 import com.simplicite.util.tools.PhoneNumTool;
@@ -39,7 +40,7 @@ public class DemoClient extends ObjectDB {
                 if (!f.isEmpty() && !pnt.isValid(f.getValue()))
                     msgs.add(Message.formatError("ERR_DEMO_INVALID_PHONE_NUMBER:" + f.getDisplay(), null, f.getName()));
             }
-        } catch (Exception e) {
+        } catch (ParamsException e) {
             AppLog.error(null, e, getGrant());
         }
 
@@ -49,24 +50,20 @@ public class DemoClient extends ObjectDB {
     @Override
     public String preSave() {
         if (isMainInstance()) { // Only done for the main UI instance
-            try {
-                // Geocode address fields
-                ObjectField coords = getField("demoCliCoords");
-                ObjectField a1 = getField("demoCliAddress1");
-                ObjectField a2 = getField("demoCliAddress2");
-                ObjectField zc = getField("demoCliZipCode");
-                ObjectField ci = getField("demoCliCity");
-                ObjectField co = getField("demoCliCountry");
+            // Geocode address fields
+            ObjectField coords = getField("demoCliCoords");
+            ObjectField a1 = getField("demoCliAddress1");
+            ObjectField a2 = getField("demoCliAddress2");
+            ObjectField zc = getField("demoCliZipCode");
+            ObjectField ci = getField("demoCliCity");
+            ObjectField co = getField("demoCliCountry");
 
-                if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
-                    String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
-                    AppLog.info("Try to geocode " + a, getGrant());
-                    Location c = new GMapTool(getGrant()).geocodeOne(a);
-                    AppLog.info("Coordinates = " + c, getGrant());
-                    coords.setValue(c == null ?  "" : c.toString());
-                }
-            } catch (Exception e) {
-                AppLog.warning(null, e, getGrant());
+            if (coords.isEmpty() || a1.hasChanged() || a2.hasChanged() || zc.hasChanged() || ci.hasChanged() || co.hasChanged()) {
+                String a = a1.getValue() + (a2.isEmpty() ? "" : ", " + a2.getValue()) + ", " + zc.getValue() + ", " + ci.getValue() + ", " + co.getValue();
+                AppLog.info("Try to geocode " + a, getGrant());
+                Location c = new GMapTool(getGrant()).geocodeOne(a);
+                AppLog.info("Coordinates = " + c, getGrant());
+                coords.setValue(c == null ?  "" : c.toString());
             }
         }
         return super.preSave();

@@ -15,6 +15,8 @@ import com.simplicite.util.tools.BarcodeTool;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.HTTPTool;
 import com.simplicite.util.tools.MailTool;
+import com.simplicite.util.exceptions.SaveException;
+import com.simplicite.util.exceptions.ValidateException;
 
 /**
  * Product business object
@@ -70,7 +72,7 @@ public class DemoProduct extends ObjectDB {
             } else {
                 return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT", String.valueOf(inc));
             }
-        } catch (Exception e) {
+        } catch (ValidateException | SaveException e) {
             return Message.formatSimpleError(e);
         }
     }
@@ -94,7 +96,7 @@ public class DemoProduct extends ObjectDB {
             } else {
                 return Message.formatSimpleError("DEMO_PRD_ERR_INCREMENT", String.valueOf(dec));
             }
-        } catch (Exception e) {
+        } catch (ValidateException | SaveException e) {
             return Message.formatSimpleError(e);
         }
     }
@@ -122,7 +124,7 @@ public class DemoProduct extends ObjectDB {
             mt.send();
             return Message.formatSimpleInfo("OK");
         } catch (Exception e) {
-            AppLog.error(null, e, getGrant());
+            AppLog.error("Unexpected error sending email", e, getGrant());
             return Message.formatSimpleError(e.getMessage());
         }
     }
@@ -150,7 +152,7 @@ public class DemoProduct extends ObjectDB {
             dt.addHTML(getFieldValue(DOCUMENTATION_FIELDNAME));
             return dt.toByteArray();
         } catch (Exception e) { // Unexpected error => text file with error message
-            AppLog.error("Unable to publish " + pt.getName(), e, getGrant());
+            AppLog.error("Unexpected exception during publication: " + pt.getName(), e, getGrant());
             pt.setMIMEType(HTTPTool.MIME_TYPE_TXT);
             pt.setFilename(getGrant().T("ERROR") + ".txt");
             return e.getMessage();

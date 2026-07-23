@@ -10,6 +10,8 @@ import com.simplicite.util.Mail;
 import com.simplicite.util.Message;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.Tool;
+import com.simplicite.util.exceptions.ActionException;
+import com.simplicite.util.exceptions.GetException;
 
 /**
  * Order business object
@@ -71,7 +73,7 @@ public class DemoOrder extends ObjectDB {
                     "Order " + n + " delivery schedule",
                     desc, desc);
             } catch (Exception e) {
-                AppLog.warning("Error sending invitation", e, getGrant());
+                AppLog.warning("Unexpected error sending invitation", e, getGrant());
             }
 
             try {
@@ -86,7 +88,7 @@ public class DemoOrder extends ObjectDB {
                 AppLog.info("Stock decreased by " + q + " on " + getFieldValue(REFERENCE_FIELDNAME), getGrant());
                 // User message
                 return res;
-            } catch (Exception e) {
+            } catch (GetException | ActionException e) {
                 String msg = "Error decreasing stock: " + e.getMessage();
                 // Log
                 AppLog.error(msg, e, getGrant());
@@ -116,7 +118,7 @@ public class DemoOrder extends ObjectDB {
                         "(" + stock + ")<br/>Please order new ones !</p>" +
                         "</body></html>");
             } catch (Exception e) {
-                AppLog.warning("Error sending low stock alert email", e, getGrant());
+                AppLog.warning("Unexpected error sending low stock alert email", e, getGrant());
             }
 
             // Log
