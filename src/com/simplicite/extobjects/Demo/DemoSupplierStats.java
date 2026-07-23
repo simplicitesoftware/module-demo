@@ -8,6 +8,8 @@ import org.json.JSONObject;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.tools.Parameters;
+import com.simplicite.util.exceptions.ParamsException;
+import com.simplicite.util.exceptions.SearchException;
 
 public class DemoSupplierStats extends com.simplicite.webapp.web.widgets.ChartjsExternalObject {
     public static final long serialVersionUID = 1L;
@@ -27,7 +29,7 @@ public class DemoSupplierStats extends com.simplicite.webapp.web.widgets.Chartjs
 
             ObjectDB ord = getGrant().getTmpObject("DemoOrder");
 
-            List<String[]> ps = prd.getTool().search(new JSONObject().put("demoPrdSupId", supId));
+            List<String[]> ps = prd.search(new JSONObject().put("demoPrdSupId", supId));
             for (String[] p : ps) {
                 labels.put(prd.getFieldValue("demoPrdReference", p) + " (" + prd.getFieldValue("demoPrdName", p) + ")");
 
@@ -35,7 +37,7 @@ public class DemoSupplierStats extends com.simplicite.webapp.web.widgets.Chartjs
                 counts.put((double)ord.getTool().count(filter));
                 quantities.put(ord.getTool().sum("demoOrdQuantity", filter));
             }
-        } catch (Exception e) {
+        } catch (ParamsException|SearchException e) {
             AppLog.error("Unable to process product stats", e, getGrant());
         }
 

@@ -62,8 +62,8 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
                 throw new PlatformException("No supplier found for " + values[0]);
             }
 
-            // Product upsert (= create or update)
-            boolean exists = prd.getTool().getForUpsert(
+            // Product upsert = create or update
+            boolean exists = prd.getForCreateOrUpdate(
                 new JSONObject()
                     .put("demoPrdSupId", supId)
                     .put("demoPrdReference", values[1]));
@@ -72,7 +72,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
                 prd.setFieldValue("demoPrdReference", values[1]);
             }
             prd.setFieldValue("demoPrdName", values[2]);
-            prd.getTool().validateAndSave();
+            prd.validateAndSave();
             if (debug) appendLog("Product " + values[1] + " " + (exists ? "updated" : "created"));
         } catch (PlatformException e) {
             String msg = "Line " + n + " error: " + e.getMessage();

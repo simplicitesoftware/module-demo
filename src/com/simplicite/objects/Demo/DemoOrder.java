@@ -22,11 +22,11 @@ public class DemoOrder extends ObjectDB {
     /** Number field name */
     private static final String NUMBER_FIELDNAME = "demoOrdNumber";
     /** Product field name */
-    private static final String PRODUCT_FIELDNAME = "demoOrdPrdId";
+    private static final String PRODUCT_ID_FIELDNAME = "demoOrdPrdId";
     /** Reference field name (from product object) */
-    private static final String REFERENCE_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.REFERENCE_FIELDNAME;
+    private static final String REFERENCE_FIELDNAME = PRODUCT_ID_FIELDNAME + "." + DemoProduct.REFERENCE_FIELDNAME;
     /** Stock field name (from product object) */
-    private static final String STOCK_FIELDNAME = PRODUCT_FIELDNAME + "." + DemoProduct.STOCK_FIELDNAME;
+    private static final String STOCK_FIELDNAME = PRODUCT_ID_FIELDNAME + "." + DemoProduct.STOCK_FIELDNAME;
 
     /** Error message text code for invalid quantity */
     public static final String QUANTITY_ERROR = "ERR_DEMO_ORD_QUANTITY";
@@ -49,7 +49,7 @@ public class DemoOrder extends ObjectDB {
         }
         // Set order unit price only at creation
         if (isNew())
-            setFieldValue("demoOrdUnitPrice", getFieldValue(PRODUCT_FIELDNAME + ".demoPrdUnitPrice"));
+            setFieldValue("demoOrdUnitPrice", getFieldValue(PRODUCT_ID_FIELDNAME + ".demoPrdUnitPrice"));
         return msgs;
     }
 
@@ -77,7 +77,7 @@ public class DemoOrder extends ObjectDB {
             try {
                 // Decrease stock
                 ObjectDB prd = getGrant().getTmpObject("DemoProduct");
-                prd.getTool().get(getFieldValue(PRODUCT_FIELDNAME));
+                prd.getForUpdate(getFieldValue(PRODUCT_ID_FIELDNAME));
                 int q = getField(QUANTITY_FIELDNAME).getInt(0);
                 prd.setParameter("QUANTITY", q);
                 String res = prd.invokeAction("DEMO_DECSTOCK");
@@ -101,7 +101,7 @@ public class DemoOrder extends ObjectDB {
     public String postSave() {
         // Check stock level
         int stock = getField(STOCK_FIELDNAME).getInt(0);
-        if (DemoCommon.getInstance().isLowStock(getGrant(), getFieldValue(PRODUCT_FIELDNAME), stock)) {
+        if (DemoCommon.getInstance().isLowStock(getGrant(), getFieldValue(PRODUCT_ID_FIELDNAME), stock)) {
             String ref = getFieldValue(REFERENCE_FIELDNAME);
 
             // Notify responsible user if stock is low

@@ -70,7 +70,7 @@ public class DemoTests {
             // Increase product quantity
             if (stock < quantity) {
                 ps.setValue(stock + quantity);
-                prd.getTool().validateAndSave(); // Update product
+                prd.validateAndSave(); // Update product
                 stock = ps.getInt(-1);
                 AppLog.info("Product stock increased to = " + stock, sys);
             }
@@ -108,7 +108,7 @@ public class DemoTests {
             // Try to create order with a 0 quantity
             q.setValue(0);
             try {
-                ord.getTool().validateAndSave();
+                ord.validateAndSave();
             } catch (ValidateException e) {
                 String err = e.getMessage();
                 if (err.startsWith("{")) {
@@ -125,7 +125,7 @@ public class DemoTests {
 
             // Create order
             q.setValue(quantity);
-            ord.getTool().validateAndSave(); // Create order
+            ord.validateAndSave(); // Create order
             String n = ord.getFieldValue("demoOrdNumber");
             AppLog.info("Created order #" + n + " for " + quantity + " quantity", sys);
 
@@ -136,7 +136,7 @@ public class DemoTests {
 
             s.setOldValue(s.getValue());
             s.setValue("V"); // Validated
-            ord.getTool().validateAndSave();
+            ord.validateAndSave();
             AppLog.info("Validated order #" + n, sys);
 
             ord.getTool().get(ord.getRowId()); // Reload the order's record
@@ -148,7 +148,7 @@ public class DemoTests {
 
             s.setOldValue(s.getValue());
             s.setValue("D"); // Delivered
-            ord.getTool().validateAndSave();
+            ord.validateAndSave();
             AppLog.info("Delivered order #" + n, sys);
 
             ord.getTool().get(ord.getRowId()); // Reload the order's record

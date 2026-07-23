@@ -31,6 +31,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <packaging>jar</packaging>
   <url>${simplicite.url}</url>
   <build>
+    <finalName>module-demo</finalName>
     <sourceDirectory>${project.basedir}/src</sourceDirectory>
     <testSourceDirectory>${project.basedir}/test/src</testSourceDirectory>
     <resources>
@@ -45,6 +46,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.5.0</version>
         <configuration>
+          <outputDirectory>build</outputDirectory>
           <excludes>
             <exclude>.gitkeep</exclude>
             <exclude>Disposition/**</exclude>

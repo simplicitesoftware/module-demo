@@ -15612,6 +15612,7 @@ is still in pending state]]></cst_desc>
 		<res_code>DEMO_PRINT_STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/Disposition/default/DEMO_PRINT_STYLES.less</res_file>
+		<res_file_compiled>resources/Disposition/default/DEMO_PRINT_STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15629,6 +15630,7 @@ is still in pending state]]></cst_desc>
 		<res_code>Raleway</res_code>
 		<res_cached>1</res_cached>
 		<res_file>resources/Disposition/default/Raleway.zip</res_file>
+		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15646,6 +15648,7 @@ is still in pending state]]></cst_desc>
 		<res_code>demo</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
+		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15663,6 +15666,7 @@ is still in pending state]]></cst_desc>
 		<res_code>demo-logo</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
+		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo-logo.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15680,6 +15684,7 @@ is still in pending state]]></cst_desc>
 		<res_code>demo-module</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
+		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo-module.svg</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15697,6 +15702,7 @@ is still in pending state]]></cst_desc>
 		<res_code>demo-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
+		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demo-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15714,6 +15720,7 @@ is still in pending state]]></cst_desc>
 		<res_code>DEMO_PRINT_LOGO</res_code>
 		<res_cached>1</res_cached>
 		<res_file/>
+		<res_file_compiled/>
 		<res_image>resources/Disposition/default/DEMO_PRINT_LOGO.png</res_image>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15731,6 +15738,7 @@ is still in pending state]]></cst_desc>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoPlaceNewOrder/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15748,6 +15756,7 @@ is still in pending state]]></cst_desc>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/HTML.html</res_file>
+		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15765,6 +15774,7 @@ is still in pending state]]></cst_desc>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoPlaceNewOrder/CLASS.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoPlaceNewOrder/CLASS.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15782,6 +15792,7 @@ is still in pending state]]></cst_desc>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoClient/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectInternal/DemoClient/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15799,6 +15810,7 @@ is still in pending state]]></cst_desc>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoClient/CLASS.js</res_file>
+		<res_file_compiled>resources/ObjectInternal/DemoClient/CLASS.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -15816,6 +15828,7 @@ is still in pending state]]></cst_desc>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/DemoOrder/CLASS.js</res_file>
+		<res_file_compiled>resources/ObjectInternal/DemoOrder/CLASS.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>

@@ -961,7 +961,7 @@ components:
       type: http
 servers:
 - url: /api
-openapi: 3.1.2
+openapi: 3.2.0
 paths:
   /rest/DemoProduct/{row_id}/publication:DemoProduct-Brochure:
     get:
