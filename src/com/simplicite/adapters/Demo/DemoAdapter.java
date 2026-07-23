@@ -5,7 +5,9 @@ import org.json.JSONObject;
 import com.simplicite.util.AppLog;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.exceptions.GetException;
-import com.simplicite.util.exceptions.PlatformException;
+import com.simplicite.util.exceptions.ParamsException;
+import com.simplicite.util.exceptions.SaveException;
+import com.simplicite.util.exceptions.ValidateException;
 
 /**
  * Custom CSV (TSV here) adapter (using the demo objects)
@@ -51,15 +53,15 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
             /* Line format: <supplier code><tab><product reference><tab><product name> */
 
             if (values.length != NB_COLS)
-                throw new PlatformException("Line " + n + " has " + values.length + " columns instead of " + NB_COLS + ", ignored");
+                throw new ParamsException("Line " + n + " has " + values.length + " columns instead of " + NB_COLS + ", ignored");
 
             // Get supplier row ID from supplier code code
             String supId;
             try {
-                supId = sup.getTool().get(new JSONObject().put("demoSupCode", values[0]));
+                supId = sup.get(new JSONObject().put("demoSupCode", values[0]));
                 if (debug) appendLog("Supplier " + values[0] + " found, row ID = " + supId);
             } catch (@SuppressWarnings("unused") GetException e) {
-                throw new PlatformException("No supplier found for " + values[0]);
+                throw new ParamsException("No supplier found for " + values[0]);
             }
 
             // Product upsert = create or update
@@ -74,7 +76,7 @@ public class DemoAdapter extends com.simplicite.util.integration.CSVLineBasedAda
             prd.setFieldValue("demoPrdName", values[2]);
             prd.validateAndSave();
             if (debug) appendLog("Product " + values[1] + " " + (exists ? "updated" : "created"));
-        } catch (PlatformException e) {
+        } catch (ParamsException|GetException|ValidateException|SaveException e) {
             String msg = "Line " + n + " error: " + e.getMessage();
             appendLog(msg);
             AppLog.error(msg, e, getGrant());
