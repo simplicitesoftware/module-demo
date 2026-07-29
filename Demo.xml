@@ -1516,8 +1516,8 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Pending status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#FFFFFF</lov_color>
-		<lov_color_bg>#6FA8DC</lov_color_bg>
+		<lov_color>#073763</lov_color>
+		<lov_color_bg>#6fa8dc</lov_color_bg>
 		<lov_icon>icon/color/btn_blue</lov_icon>
 		<lov_display>I;L</lov_display>
 	</data>
@@ -1527,7 +1527,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>2</lov_order_by>
 		<lov_label>On hold</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#FFFFFF</lov_color>
+		<lov_color>#20124d</lov_color>
 		<lov_color_bg>#8E7CC3</lov_color_bg>
 		<lov_icon>icon/color/btn_purple</lov_icon>
 		<lov_display>I;L</lov_display>
@@ -1538,7 +1538,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>2</lov_order_by>
 		<lov_label>Validated status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#FFFFFF</lov_color>
+		<lov_color>#783f04</lov_color>
 		<lov_color_bg>#F6B26B</lov_color_bg>
 		<lov_icon>icon/color/btn_orange</lov_icon>
 		<lov_display>I;L</lov_display>
@@ -1549,7 +1549,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>4</lov_order_by>
 		<lov_label>Shipped status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#FFFFFF</lov_color>
+		<lov_color>#274e13</lov_color>
 		<lov_color_bg>#93C47D</lov_color_bg>
 		<lov_icon>icon/color/btn_green</lov_icon>
 		<lov_display>I;L</lov_display>
@@ -1560,7 +1560,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<lov_order_by>5</lov_order_by>
 		<lov_label>Canceled status</lov_label>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<lov_color>#FFFFFF</lov_color>
+		<lov_color>#660000</lov_color>
 		<lov_color_bg>#E06666</lov_color_bg>
 		<lov_icon>icon/color/btn_red</lov_icon>
 		<lov_display>I;L</lov_display>
