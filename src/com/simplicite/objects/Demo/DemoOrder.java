@@ -49,9 +49,6 @@ public class DemoOrder extends ObjectDB {
             AppLog.log("DEMO_ERR", getClass(), "postValidate", "Zero stock on " + getFieldValue(REFERENCE_FIELDNAME), getGrant());
             msgs.add(Message.formatSimpleError(STOCK_ERROR));
         }
-        // Set order unit price only at creation
-        if (isNew())
-            setFieldValue("demoOrdUnitPrice", getFieldValue(PRODUCT_ID_FIELDNAME + ".demoPrdUnitPrice"));
         return msgs;
     }
 

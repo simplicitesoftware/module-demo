@@ -22,6 +22,9 @@
     "allowJs": false,
     "noEmit": true
   },
+  "files": [
+    "dist/simplicite.d.ts"
+  ],
   "include": [
     "resources/**/*.ts"
   ]

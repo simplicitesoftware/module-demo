@@ -501,8 +501,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         row_ref_id__demoOrdPrdId:
@@ -2765,8 +2765,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query

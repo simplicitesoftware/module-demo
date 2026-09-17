@@ -8,6 +8,7 @@ export default [
   },
   {
     languageOptions: {
+      sourceType: 'script',
       globals: {
         ...globals.browser,
         '$': true,
@@ -24,6 +25,7 @@ export default [
         '$tools': true,
         '$console': true,
         '$view': true,
+        '$factory': true,
       }
     },
     rules: {

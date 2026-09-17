@@ -7,7 +7,7 @@ Simplicite.UI.BusinessObjects.DemoOrder = class extends Simplicite.UI.BusinessOb
     onLoadForm(ctn, obj, p) {
         super.onLoadForm(ctn, obj, p);
 
-        // Note that this client-side logic will be overridden
+        // Note that this client-side "live" logic will be overridden
         // anyway by server-side logic at save
 
         const pup = $ui.getUIField(ctn, obj, 'demoOrdPrdId.demoPrdUnitPrice').ui;
