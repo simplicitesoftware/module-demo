@@ -91,6 +91,8 @@ public class DemoTests {
 			// Check default values
 			ObjectField q = ord.getField("demoOrdQuantity");
 			assertEquals(q.getDefaultValue(), q.getValue()); // Check the default quantity
+			ObjectField t = ord.getField("demoOrdTotal");
+			assertEquals(t.getDefaultValue(), t.getValue()); // Check the default total
 			ObjectField s = ord.getField("demoOrdStatus");
 			assertEquals("P", s.getValue()); // Check the default status
 
@@ -121,9 +123,10 @@ public class DemoTests {
 			AppLog.info("Created order #" + n + " for " + quantity + " quantity", sys);
 
 			ord.select(ord.getRowId()); // Reload the order's record
-			assertEquals(quantity, q.getInt(-1)); // Check the quantity
 			assertEquals("P", s.getValue()); // Check the status value
-			ObjectField d = ord.getField("demoOrdDeliveryDate");
+			assertEquals(quantity, q.getInt(-1)); // Check the quantity
+			assertEquals(ord.getField("demoOrdPrdId.demoPrdUnitPrice").getDouble(0) * q.getDouble(0), t.getDouble(-1), 0); // Check total calculation
+			assertEquals(t.getDouble(0) * Double.valueOf(sys.getParameter("DEMO_VAT")) / 100, ord.getField("demoOrdVAT").getDouble(-1), 0); // Check VAT calculation
 
 			s.setOldValue(s.getValue());
 			s.setValue("V"); // Validated
@@ -135,6 +138,7 @@ public class DemoTests {
 			assertFalse(p.isUpdatable()); // Check that the product is not updatable anymore
 			assertFalse(c.isUpdatable()); // Check that the customer is not updatable anymore
 			assertFalse(q.isUpdatable()); // Check that the quantity is not updatable anymore
+			ObjectField d = ord.getField("demoOrdDeliveryDate");
 			assertTrue(d.isUpdatable()); // Check that the delivery date is still updatable
 
 			s.setOldValue(s.getValue());
