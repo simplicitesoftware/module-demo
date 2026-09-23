@@ -1,4 +1,4 @@
-![Logo](https://platform.simplicite.io/logos/logo250.png)
+![Logo]([IMAGE:DEMO_LOGO])
 * * *
 
 Business case
