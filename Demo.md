@@ -619,8 +619,8 @@ state transition to _shipped_ status.
 
 ### Implemented hooks
 
-* `decreaseStock`: Decrease stock action method
 * `increaseStock`: Increase stock action method
+* `decreaseStock`: Decrease stock action method
 * `printBrochure`: Microsoft Word(R) brochure publication method
 * `getUserKeyLabel`
 * `initAction`
