@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1311" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1312" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -5316,21 +5316,22 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<tpl_name>DemoOrderHistoric-row</tpl_name>
 		<tpl_ui><![CDATA[<div>
   <div class="actions"></div>
-  <div class="row compact">
-    <div class="col-sm-3">
-      <div class="field" data-field="created_dt_hist"></div>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="field" data-field="created_dt_hist"></div>
+          <div class="field" data-field="created_by_hist"></div>
+        </div>
+        <div class="col-sm-6">
+          <div class="field" data-field="demoOrdStatus"></div>
+          <div class="field" data-field="demoOrdQuantity"></div>
+          <div class="field" data-field="demoOrdDeliveryDate"></div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-2">
-      <div class="field" data-field="created_by_hist"></div>
-    </div>
-    <div class="col-sm-2">
-      <div class="field" data-field="demoOrdStatus"></div>
-    </div>
-    <div class="col-sm-2">
-      <div class="field" data-field="demoOrdQuantity"></div>
-    </div>
-    <div class="col-sm-3">
-      <div class="field" data-field="demoOrdDeliveryDate"></div>
+    <div class="col-sm-5">
+      <div class="field" data-field="row_diff"></div>
     </div>
   </div>
 </div>]]></tpl_ui>
@@ -10325,6 +10326,39 @@ suppliers of products that can be ordered.]]></obo_comment>
 		<obf_ref_order/>
 		<obf_fld_uk/>
 		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_fld_compliance/>
+		<obf_area_id.ofa_name/>
+		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name/>
+		<obf_joined_id.obf_field_id.fld_name/>
+		<obf_joined_id.obf_order/>
+	</data>
+	<data>
+		<obf_object_id.obo_name>DemoOrderHistoric</obf_object_id.obo_name>
+		<obf_field_id.fld_name>row_diff</obf_field_id.fld_name>
+		<obf_order>990</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_reorder/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_uk/>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>

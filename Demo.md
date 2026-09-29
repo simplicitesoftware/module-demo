@@ -484,10 +484,10 @@ stateDiagram-v2
 | _`demoPrdReference`_                                         | _regexp(10)_                             | _prd_code_                     |          |           |          | _Product reference_                                                              |
 | _`demoPrdSupId`_                                             | _id_                                     | _prd_sup_id_                   |          |           |          | _Product supplier_                                                               |
 | _`demoSupCode`_                                              | _regexp(50)_                             | _sup_code_                     |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
-| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Calculated difference between two sibling rows of historic object                |
 | `demoOrdStatus`                                              | enum(30) using DEMO_ORD_STATUS list      | ord_status                     | yes      | yes       |          | Order status                                                                     |
 | `demoOrdQuantity`                                            | int(11)                                  | ord_quantity                   | yes      | yes       |          | Product quantity ordered                                                         |
 | `demoOrdDeliveryDate`                                        | datetime                                 | ord_deliverydate               |          | yes       |          | Order delivery date                                                              |
+| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Calculated difference between two sibling rows of historic object                |
 
 ### Enumerations
 
