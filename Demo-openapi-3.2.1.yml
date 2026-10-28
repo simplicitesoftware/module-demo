@@ -1728,6 +1728,47 @@ paths:
         required: true
       tags:
       - DemoClient
+  /rest/DemoProduct/{row_id}/publication:DemoProduct-Email:
+    get:
+      summary: Call a custom publication for a DemoProduct business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-demoproduct-publication-demoproduct-email
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoOrder/{row_id}:
     post:
       summary: Create a new DemoOrder business object record
@@ -1923,47 +1964,6 @@ paths:
         required: true
       tags:
       - DemoOrder
-  /rest/DemoProduct/{row_id}/publication:DemoProduct-Email:
-    get:
-      summary: Call a custom publication for a DemoProduct business object record
-        or for all records
-      security:
-      - bearerAuth: []
-      operationId: obj-demoproduct-publication-demoproduct-email
-      responses:
-        '200':
-          description: Success in calling the custom publication
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PublicationResult'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - DemoProduct
   /rest/DemoOrder:
     get:
       summary: Search DemoOrder business object records or get contextualized metadata
@@ -4267,6 +4267,8 @@ tags:
   description: Customer
 - name: DemoContact
   description: Contact
+- name: DemoProduct
+  description: Product
 - name: DemoOrder
   description: Order
 - name: DemoOrderHistoric
@@ -4277,5 +4279,3 @@ tags:
   description: Contact (hist.)
 - name: DemoSupplier
   description: Supplier
-- name: DemoProduct
-  description: Product

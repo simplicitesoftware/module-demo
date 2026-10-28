@@ -7,7 +7,7 @@ This file provides guidance for Claude when working on this Simplicité low code
 ## Project Overview
 
 - Java classes sources are in the `src` directory
-- Javascript, CSS and LESS sources are in the `resources` directory
+- JavaScript, CSS and LESS sources are in the `resources` directory
 - Everything in the `others` directory must be ignored
 
 ---
@@ -15,13 +15,13 @@ This file provides guidance for Claude when working on this Simplicité low code
 ## General Rules
 
 - Prefer explicit names over implicit
-- The business objects names and their fields names are available in the `Demo.md` file
+- The business objects names and their fields names are available in the `Demo-AI.md` file
 
 ---
 
 ## Java Rules
 
-### Code examples and javadoc
+### Code examples and Javadoc
 - Some relevant code examples are available at this URL: `https://docs.simplicite.io/category/core`
 - The applicable Javadoc is available at this URL: `https://platform.simplicite.io/7.0/javadoc`
 

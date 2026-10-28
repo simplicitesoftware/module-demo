@@ -634,6 +634,40 @@ paths:
       - DemoClient
       consumes:
       - application/json
+  /rest/DemoProduct/{row_id}/publication:DemoProduct-Email:
+    get:
+      summary: Call a custom publication for a DemoProduct business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-demoproduct-publication-demoproduct-email
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoOrder/{row_id}:
     post:
       summary: Create a new DemoOrder business object record
@@ -796,40 +830,6 @@ paths:
       - DemoOrder
       consumes:
       - application/json
-  /rest/DemoProduct/{row_id}/publication:DemoProduct-Email:
-    get:
-      summary: Call a custom publication for a DemoProduct business object record
-        or for all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-demoproduct-publication-demoproduct-email
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/PublicationResult'
-          description: Success in calling the custom publication
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - DemoProduct
   /rest/DemoOrder:
     get:
       summary: Search DemoOrder business object records or get contextualized metadata
@@ -3736,6 +3736,8 @@ tags:
   description: Customer
 - name: DemoContact
   description: Contact
+- name: DemoProduct
+  description: Product
 - name: DemoOrder
   description: Order
 - name: DemoOrderHistoric
@@ -3746,5 +3748,3 @@ tags:
   description: Contact (hist.)
 - name: DemoSupplier
   description: Supplier
-- name: DemoProduct
-  description: Product

@@ -3,13 +3,13 @@ This file provides guidance for Copilot when working on this Simplicité low cod
 ## Project Overview
 
 - Java classes sources are in the `src` directory
-- Javascript, CSS and LESS sources are in the `resources` directory
+- JavaScript, CSS and LESS sources are in the `resources` directory
 - Everything in the `others` directory must be ignored
 
 ## General
 
 - Prefer explicit names over implicit
-- The business objects names and their fields names are available in the `Demo.md` file
+- The business objects names and their fields names are available in the `Demo-AI.md` file
 
 ## Programming Language: Java
 
