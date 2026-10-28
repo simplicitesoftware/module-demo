@@ -1,5 +1,6 @@
 package com.simplicite.objects.Demo;
 
+import java.io.IOException;
 import java.util.Map;
 
 import com.simplicite.util.Action;
@@ -11,7 +12,7 @@ import com.simplicite.util.PrintTemplate;
 import com.simplicite.util.Tool;
 import com.simplicite.util.annotations.BusinessObjectAction;
 import com.simplicite.util.annotations.BusinessObjectPublication;
-import com.simplicite.util.tools.BarcodeTool;
+import com.simplicite.util.tools.GTINTool;
 import com.simplicite.util.tools.DocxTool;
 import com.simplicite.util.tools.HTTPTool;
 import com.simplicite.util.tools.MailTool;
@@ -161,13 +162,19 @@ public class DemoProduct extends ObjectDB {
 
     @Override
     public String preSave() {
-        // Manage the EAN13 image
+        // Manage the EAN-13 barcode image
         ObjectField ean13 = getField("demoPrdEan13");
         ObjectField ean13Img = getField("demoPrdEan13Image");
-        if (ean13.isEmpty())
-            ean13Img.setValue(""); // Remove image if EAN13 is empty
-        else if (isNew() || ean13.hasChanged())
-            ean13Img.setDocument(this, ean13.getValue() + ".png", BarcodeTool.ean13Image(ean13.getValue())); // (Re)generate image if ENA13 has changed
+        if (ean13.isEmpty()) {
+            ean13Img.setValue(""); // Remove image if EAN-13 code is empty
+        } else if (isNew() || ean13.hasChanged()) {
+            try {
+                ean13Img.setDocument(this, ean13.getValue() + ".png", GTINTool.ean13PNG(ean13.getValue())); // (Re)generate image if EAN13 has changed
+            } catch (IOException e) {
+                AppLog.warning("Unable to generate EAN-13 barcode image", e);
+                ean13Img.setValue("");
+            }
+        }
         return null;
     }
 

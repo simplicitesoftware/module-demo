@@ -8,6 +8,7 @@ export default [
   },
   {
     languageOptions: {
+      ecmaVersion: 2026,
       sourceType: 'script',
       globals: {
         ...globals.browser,

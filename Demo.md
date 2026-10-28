@@ -11,7 +11,7 @@
 `Demo` module definition
 ========================
 
-**Packages**: DemoDashboard, DemoAPIs, DemoCustomDisp
+**Packages**: DemoDashboard, DemoAPIs, DemoCustomDisp, DemoDSFR
 
 Demo
 ====
@@ -264,11 +264,11 @@ stateDiagram-v2
 
 ### Implemented hooks
 
-* `printMustache`: HTML publication (using Mustache(R) templating) method
 * `printExcel`: Microsoft Excel(R) sheet publication method
-* `getUserKeyLabel`
+* `printMustache`: HTML publication (using Mustache(R) templating) method
 * `postLoad`
 * `canReference`
+* `getUserKeyLabel`
 
 `DemoContactHistoric` (Contact (hist.)) business object definition
 ------------------------------------------------------------------
@@ -293,7 +293,7 @@ stateDiagram-v2
 | _`demoCtcDatetime`_                                          | _datetime_                               | _ctc_datetime_                 |          |           |          | _Contcat date and time_                                                          |
 | _`demoCtcCliId`_                                             | _id_                                     | _ctc_cli_id_                   |          |           |          | _Contact customer_                                                               |
 | _`demoCliCode`_                                              | _regexp(10)_                             | _cli_code_                     |          |           |          | _Customer code_                                                                  |
-| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Calculated difference between two sibling rows of historic object                |
+| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Computed differences between a row and its previous sibling row of the same object.<br/><br/>To enable it:<br/>- add the `row_diff` field to the object<br/>- call `setRowDiff(true)` in `postLoad`<br/><br/>It is enabled by default on the history panel of the parent object. |
 | `demoCtcStatus`                                              | enum(1) using DEMO_CTC_STATUS list       | ctc_status                     | yes      | yes       |          | Contact status                                                                   |
 | `demoCtcType`                                                | enum(10) using DEMO_CTC_TYPE list        | ctc_type                       | yes      | yes       |          | Contact type                                                                     |
 | `demoCtcSubType`                                             | enum(10) using DEMO_CTC_SUBTYPE list     | ctc_subtype                    |          | yes       |          | Contact sub type                                                                 |
@@ -451,12 +451,12 @@ stateDiagram-v2
 
 ### Implemented hooks
 
-* `isPrintTemplateEnable`
-* `getUserKeyLabel`
 * `postValidate`
 * `postUpdate`
 * `postSave`
 * `canReference`
+* `isPrintTemplateEnable`
+* `getUserKeyLabel`
 
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------
@@ -487,7 +487,7 @@ stateDiagram-v2
 | `demoOrdStatus`                                              | enum(30) using DEMO_ORD_STATUS list      | ord_status                     | yes      | yes       |          | Order status                                                                     |
 | `demoOrdQuantity`                                            | int(11)                                  | ord_quantity                   | yes      | yes       |          | Product quantity ordered                                                         |
 | `demoOrdDeliveryDate`                                        | datetime                                 | ord_deliverydate               |          | yes       |          | Order delivery date                                                              |
-| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Calculated difference between two sibling rows of historic object                |
+| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Computed differences between a row and its previous sibling row of the same object.<br/><br/>To enable it:<br/>- add the `row_diff` field to the object<br/>- call `setRowDiff(true)` in `postLoad`<br/><br/>It is enabled by default on the history panel of the parent object. |
 
 ### Enumerations
 
@@ -521,7 +521,7 @@ stateDiagram-v2
 | _`demoPrdSupId`_                                             | _id_                                     | _prd_sup_id_                   |          |           |          | _Product supplier_                                                               |
 | _`demoSupCode`_                                              | _regexp(50)_                             | _sup_code_                     |          |           |          | _Supplier unique code (e.g. `MYSUP`)_                                            |
 | _`demoPrdReference`_                                         | _regexp(10)_                             | _prd_code_                     |          |           |          | _Product reference_                                                              |
-| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Calculated difference between two sibling rows of historic object                |
+| `row_diff`                                                   | html(2000000)                            |                                |          |           |          | Computed differences between a row and its previous sibling row of the same object.<br/><br/>To enable it:<br/>- add the `row_diff` field to the object<br/>- call `setRowDiff(true)` in `postLoad`<br/><br/>It is enabled by default on the history panel of the parent object. |
 | `demoPrdReference`                                           | regexp(10)                               | prd_code                       | yes*     |           |          | Product reference                                                                |
 | `demoPrdName`                                                | char(100)                                | prd_name                       | yes      | yes       |          | Product name                                                                     |
 | `demoPrdUnitPrice`                                           | float(11, 0)                             | prd_unitprice                  | yes      | yes       |          | Unit price of product                                                            |
@@ -586,7 +586,7 @@ Its reference is unique per supplier.
 | `demoPrdDescription`                                         | text(1000000)                            | prd_description                |          | yes       |          | Product description                                                              |
 | `demoPrdPicture`                                             | image                                    | prd_picture                    |          | yes       |          | Product picture                                                                  |
 | `demoPrdEan13`                                               | char(13)                                 | prd_ean13                      |          | yes       |          | EAN13 code                                                                       |
-| `demoPrdEan13Image`                                          | image                                    | prd_ean13_image                |          |           |          | EAN13 code image                                                                 |
+| `demoPrdEan13Image`                                          | image                                    | prd_ean13_image                |          | yes       |          | EAN13 code image                                                                 |
 | `demoPrdStock`                                               | int(11)                                  | prd_stock                      | yes      | yes       |          | Current stock for product                                                        |
 | `demoPrdUnitPrice`                                           | float(11, 0)                             | prd_unitprice                  | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | prd_available                  | yes      | yes       |          | Available product?                                                               |
@@ -622,10 +622,10 @@ state transition to _shipped_ status.
 * `increaseStock`: Increase stock action method
 * `decreaseStock`: Decrease stock action method
 * `printBrochure`: Microsoft Word(R) brochure publication method
-* `getUserKeyLabel`
 * `initAction`
 * `preSave`
 * `canReference`
+* `getUserKeyLabel`
 * `sendEmail`: Send product data in an email action method
 
 `DemoClient` (Customer) business object definition
@@ -683,10 +683,10 @@ His address is geolocalized using GoogleMaps&reg; API.
 
 ### Implemented hooks
 
-* `getUserKeyLabel`
 * `postLoad`
 * `postValidate`
 * `preSave`
+* `getUserKeyLabel`
 
 ## Process: DemoOrderCreate
 

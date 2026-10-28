@@ -385,8 +385,14 @@ components:
           type: string
           maxLength: 100
         row_diff:
-          description: Calculated difference between two sibling rows of historic
-            object
+          description: |-
+            Computed differences between a row and its previous sibling row of the same object.
+
+            To enable it:
+            - add the `row_diff` field to the object
+            - call `setRowDiff(true)` in `postLoad`
+
+            It is enabled by default on the history panel of the parent object.
           type: string
           maxLength: 2000000
         created_by_hist:
@@ -522,8 +528,14 @@ components:
           type: string
           maxLength: 100
         row_diff:
-          description: Calculated difference between two sibling rows of historic
-            object
+          description: |-
+            Computed differences between a row and its previous sibling row of the same object.
+
+            To enable it:
+            - add the `row_diff` field to the object
+            - call `setRowDiff(true)` in `postLoad`
+
+            It is enabled by default on the history panel of the parent object.
           type: string
           maxLength: 2000000
     DemoProduct:
@@ -692,8 +704,14 @@ components:
           maxLength: 19
           example: yyyy-MM-dd HH:mm:ss
         row_diff:
-          description: Calculated difference between two sibling rows of historic
-            object
+          description: |-
+            Computed differences between a row and its previous sibling row of the same object.
+
+            To enable it:
+            - add the `row_diff` field to the object
+            - call `setRowDiff(true)` in `postLoad`
+
+            It is enabled by default on the history panel of the parent object.
           type: string
           maxLength: 2000000
         created_by_hist:
@@ -846,8 +864,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         demoCtcPicture:
@@ -1296,8 +1314,8 @@ paths:
           type: string
           enum:
           - P
-          - V
           - H
+          - V
           - D
           - C
         in: query
@@ -1710,47 +1728,6 @@ paths:
         required: true
       tags:
       - DemoClient
-  /rest/DemoProduct/{row_id}/publication:DemoProduct-Email:
-    get:
-      summary: Call a custom publication for a DemoProduct business object record
-        or for all records
-      security:
-      - bearerAuth: []
-      operationId: obj-demoproduct-publication-demoproduct-email
-      responses:
-        '200':
-          description: Success in calling the custom publication
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PublicationResult'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - DemoProduct
   /rest/DemoOrder/{row_id}:
     post:
       summary: Create a new DemoOrder business object record
@@ -1946,6 +1923,47 @@ paths:
         required: true
       tags:
       - DemoOrder
+  /rest/DemoProduct/{row_id}/publication:DemoProduct-Email:
+    get:
+      summary: Call a custom publication for a DemoProduct business object record
+        or for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-demoproduct-publication-demoproduct-email
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - DemoProduct
   /rest/DemoOrder:
     get:
       summary: Search DemoOrder business object records or get contextualized metadata
@@ -2645,8 +2663,10 @@ paths:
           type: string
         in: query
         name: row_diff
-        description: Search filter for Calculated difference between two sibling rows
-          of historic object
+        description: 'Search filter for Computed differences between a row and its
+          previous sibling row of the same object. To enable it: - add the `row_diff`
+          field to the object - call `setRowDiff(true)` in `postLoad` It is enabled
+          by default on the history panel of the parent object.'
         required: false
       tags:
       - DemoOrderHistoric
@@ -3321,8 +3341,10 @@ paths:
           type: string
         in: query
         name: row_diff
-        description: Search filter for Calculated difference between two sibling rows
-          of historic object
+        description: 'Search filter for Computed differences between a row and its
+          previous sibling row of the same object. To enable it: - add the `row_diff`
+          field to the object - call `setRowDiff(true)` in `postLoad` It is enabled
+          by default on the history panel of the parent object.'
         required: false
       - schema:
           type: string
@@ -3442,8 +3464,10 @@ paths:
           type: string
         in: query
         name: row_diff
-        description: Search filter for Calculated difference between two sibling rows
-          of historic object
+        description: 'Search filter for Computed differences between a row and its
+          previous sibling row of the same object. To enable it: - add the `row_diff`
+          field to the object - call `setRowDiff(true)` in `postLoad` It is enabled
+          by default on the history panel of the parent object.'
         required: false
       - schema:
           type: string
@@ -4243,15 +4267,15 @@ tags:
   description: Customer
 - name: DemoContact
   description: Contact
-- name: DemoProduct
-  description: Product
 - name: DemoOrder
   description: Order
+- name: DemoOrderHistoric
+  description: Order (hist.)
 - name: DemoProductHistoric
   description: Product (hist.)
 - name: DemoContactHistoric
   description: Contact (hist.)
 - name: DemoSupplier
   description: Supplier
-- name: DemoOrderHistoric
-  description: Order (hist.)
+- name: DemoProduct
+  description: Product

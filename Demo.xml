@@ -390,7 +390,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
-		<usr_active>1</usr_active>
+		<usr_active>0</usr_active>
 		<usr_title>MRS</usr_title>
 		<usr_last_name>MARTIN</usr_last_name>
 		<usr_first_name>Allison</usr_first_name>
@@ -409,7 +409,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2025-05-21 18:32:40</usr_logout>
+		<usr_logout>2026-10-20 22:21:02</usr_logout>
 		<usr_last_logon>2026-05-25 23:46:37</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
@@ -426,7 +426,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_timezone/>
 		<usr_minrows>10</usr_minrows>
 		<usr_maxrows>20</usr_maxrows>
-		<usr_active>1</usr_active>
+		<usr_active>0</usr_active>
 		<usr_title>MR</usr_title>
 		<usr_last_name>DUPONT</usr_last_name>
 		<usr_first_name>Pierre</usr_first_name>
@@ -445,7 +445,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu>1</usr_menu>
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
-		<usr_logout>2025-05-21 18:32:59</usr_logout>
+		<usr_logout>2026-10-20 22:20:53</usr_logout>
 		<usr_last_logon>2025-09-29 17:53:07</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
@@ -4200,7 +4200,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<fld_name>demoPrdEan13Image</fld_name>
 		<fld_dbname>prd_ean13_image</fld_dbname>
 		<fld_visible>3</fld_visible>
-		<fld_updatable>0</fld_updatable>
+		<fld_updatable>2</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
@@ -13557,6 +13557,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Excel publication example</prt_translation>
 		<prt_filename/>
@@ -13573,6 +13574,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>O</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Mustache publication example</prt_translation>
 		<prt_filename/>
@@ -13589,6 +13591,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Listing</prt_translation>
 		<prt_filename/>
@@ -13605,6 +13608,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>O</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Receipt</prt_translation>
 		<prt_filename><![CDATA[Order-[VALUE:demoOrdNumber]]]></prt_filename>
@@ -13621,6 +13625,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>E</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Custom XML publication</prt_translation>
 		<prt_filename/>
@@ -13637,6 +13642,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>O</prt_usage>
 		<prt_visible>P</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Brochure</prt_translation>
 		<prt_filename><![CDATA[[VALUE:demoPrdReference].docx]]></prt_filename>
@@ -13653,6 +13659,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>FRA</prt_lang>
 		<prt_translation>Email stock bas</prt_translation>
 		<prt_filename/>
@@ -13669,6 +13676,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ENU</prt_lang>
 		<prt_translation>Low stock email</prt_translation>
 		<prt_filename/>
@@ -13685,6 +13693,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
+		<prt_accessible/>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Catalog</prt_translation>
 		<prt_filename/>
@@ -18533,7 +18542,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>EAN 13 barcode image</tsl_value>
+		<tsl_value>EAN-13 barcode image</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -18553,7 +18562,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Image du code barre EAN 13</tsl_value>
+		<tsl_value>Image du code barre EAN-13</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -18573,7 +18582,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>EAN 13 barcode</tsl_value>
+		<tsl_value>EAN-13 code</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -18593,7 +18602,7 @@ is still in pending state]]></cst_desc>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Code barre EAN 13</tsl_value>
+		<tsl_value>Code EAN-13</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -23637,19 +23646,19 @@ is still in pending state]]></cst_desc>
 	<name>DatasetObject</name>
 	<action>upsert</action>
 	<data>
-		<dto_order>1</dto_order>
+		<dto_order>7</dto_order>
 		<dto_dt_id.dt_name>Demo-data</dto_dt_id.dt_name>
 		<dto_obo_id.obo_name>DemoClient</dto_obo_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<dto_order>2</dto_order>
+		<dto_order>8</dto_order>
 		<dto_dt_id.dt_name>Demo-data</dto_dt_id.dt_name>
 		<dto_obo_id.obo_name>DemoSupplier</dto_obo_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
 	<data>
-		<dto_order>3</dto_order>
+		<dto_order>9</dto_order>
 		<dto_dt_id.dt_name>Demo-data</dto_dt_id.dt_name>
 		<dto_obo_id.obo_name>DemoProduct</dto_obo_id.obo_name>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
