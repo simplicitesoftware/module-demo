@@ -255,8 +255,8 @@ stateDiagram-v2
 * `DEMO_CTC_SUBTYPE`
     - `EMPTY` 
 
-`DemoOrder` (Order) business object definition
-----------------------------------------------
+`DemoOrder` (Commande) business object definition
+-------------------------------------------------
 
 The **order** business object corresponds to the
 product orders placed by clients.
@@ -401,8 +401,8 @@ stateDiagram-v2
 * `isPrintTemplateEnable`
 * `getUserKeyLabel`
 
-`DemoOrderHistoric` (Order (hist.)) business object definition
---------------------------------------------------------------
+`DemoOrderHistoric` (Commande (hist.)) business object definition
+-----------------------------------------------------------------
 
 **Order** object history, tracks changes on:
 
@@ -441,7 +441,7 @@ stateDiagram-v2
     - `D` Shipped status
     - `C` Canceled status
 
-`DemoProductHistoric` (Product (hist.)) business object definition
+`DemoProductHistoric` (Produit (hist.)) business object definition
 ------------------------------------------------------------------
 
 **Product** object history, tracks changes on:
@@ -470,8 +470,8 @@ stateDiagram-v2
 | `demoPrdUnitPrice`                                           | float(11, 0)                             | prd_unitprice                  | yes      | yes       |          | Unit price of product                                                            |
 | `demoPrdAvailable`                                           | boolean                                  | prd_available                  | yes      | yes       |          | Available product?                                                               |
 
-`DemoSupplier` (Supplier) business object definition
-----------------------------------------------------
+`DemoSupplier` (Fournisseur) business object definition
+-------------------------------------------------------
 
 The **supplier** business object corresponds to the
 suppliers of products that can be ordered.
@@ -499,7 +499,7 @@ suppliers of products that can be ordered.
 | `demoSupLogo`                                                | image                                    | sup_logo                       |          | yes       |          | Supplier logo                                                                    |
 | `demoSupComments`                                            | notepad(2147483647)                      | sup_comments                   |          | yes       |          | Comments on supplier                                                             |
 
-`DemoProduct` (Product) business object definition
+`DemoProduct` (Produit) business object definition
 --------------------------------------------------
 
 The **product** business object corresponds to the
@@ -571,8 +571,8 @@ state transition to _shipped_ status.
 * `getUserKeyLabel`
 * `sendEmail`: Send product data in an email action method
 
-`DemoClient` (Customer) business object definition
---------------------------------------------------
+`DemoClient` (Client) business object definition
+------------------------------------------------
 
 The **customer** business object corresponds
 to the customer who places order.

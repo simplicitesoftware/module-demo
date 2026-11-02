@@ -99,8 +99,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoCliAddress1:
           description: Customer address (line 1)
           type: string
@@ -175,8 +175,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoOrdCliId__demoCliCode:
@@ -261,8 +261,8 @@ components:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         demoOrdPrdId__demoPrdPicture:
           description: Product picture
           type: object
@@ -507,8 +507,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         row_ref_id__demoOrdPrdId:
@@ -864,8 +864,8 @@ components:
           maxLength: 30
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         demoCtcPicture:
@@ -1314,8 +1314,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -2048,8 +2048,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -2121,8 +2121,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoOrdCliId__demoCliCountry
         description: Search filter for Customer country
@@ -2639,8 +2639,8 @@ paths:
           type: string
           enum:
           - P
-          - H
           - V
+          - H
           - D
           - C
         in: query
@@ -3640,8 +3640,8 @@ paths:
           enum:
           - FR
           - UK
-          - IT
           - SP
+          - IT
         in: query
         name: demoCliCountry
         description: Search filter for Customer country

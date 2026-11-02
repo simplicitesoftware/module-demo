@@ -4,9 +4,9 @@
 
 **Name**:  Designer
 
-**Preferred date format**: MM/DD/YYYY
+**Preferred date format**: DD/MM/YYYY
 
-**Preferred number format**: CD
+**Preferred number format**: SC
 
 
 # Module: Demo
@@ -426,7 +426,7 @@ DEMO_CTC_SUBTYPE:
 ## DemoOrder
 
 ```yaml
-label: Order
+label: Commande
 table: demo_order
 ```
 
@@ -591,7 +591,7 @@ getUserKeyLabel: ~
 ## DemoOrderHistoric
 
 ```yaml
-label: Order (hist.)
+label: Commande (hist.)
 table: demo_order_hist
 ```
 
@@ -651,7 +651,7 @@ DEMO_ORD_STATUS:
 ## DemoProductHistoric
 
 ```yaml
-label: Product (hist.)
+label: Produit (hist.)
 table: demo_product_hist
 ```
 
@@ -698,7 +698,7 @@ It is enabled by default on the history panel of the parent object.
 ## DemoSupplier
 
 ```yaml
-label: Supplier
+label: Fournisseur
 table: demo_supplier
 ```
 
@@ -740,7 +740,7 @@ referenced:
 ## DemoProduct
 
 ```yaml
-label: Product
+label: Produit
 table: demo_product
 ```
 
@@ -834,7 +834,7 @@ sendEmail: Send product data in an email action method
 ## DemoClient
 
 ```yaml
-label: Customer
+label: Client
 table: demo_client
 ```
 
