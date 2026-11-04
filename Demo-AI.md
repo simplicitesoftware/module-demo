@@ -4,9 +4,9 @@
 
 **Name**:  Designer
 
-**Preferred date format**: DD/MM/YYYY
+**Preferred date format**: MM/DD/YYYY
 
-**Preferred number format**: SC
+**Preferred number format**: CD
 
 
 # Module: Demo
@@ -426,7 +426,7 @@ DEMO_CTC_SUBTYPE:
 ## DemoOrder
 
 ```yaml
-label: Commande
+label: Order
 table: demo_order
 ```
 
@@ -591,7 +591,7 @@ getUserKeyLabel: ~
 ## DemoOrderHistoric
 
 ```yaml
-label: Commande (hist.)
+label: Order (hist.)
 table: demo_order_hist
 ```
 
@@ -651,7 +651,7 @@ DEMO_ORD_STATUS:
 ## DemoProductHistoric
 
 ```yaml
-label: Produit (hist.)
+label: Product (hist.)
 table: demo_product_hist
 ```
 
@@ -698,7 +698,7 @@ It is enabled by default on the history panel of the parent object.
 ## DemoSupplier
 
 ```yaml
-label: Fournisseur
+label: Supplier
 table: demo_supplier
 ```
 
@@ -740,7 +740,7 @@ referenced:
 ## DemoProduct
 
 ```yaml
-label: Produit
+label: Product
 table: demo_product
 ```
 
@@ -834,7 +834,7 @@ sendEmail: Send product data in an email action method
 ## DemoClient
 
 ```yaml
-label: Client
+label: Customer
 table: demo_client
 ```
 
@@ -933,10 +933,8 @@ widgets:
   DemoCounters: Counters -------- This UI widget is displaying various counters.
   DemoNews: News widget ----------- This UI widget is diplaying the standard platform news data. Note that the instance name `web_WebNews` is on purpose. Using this instance name applies the date-based, language-based and rights filterings.
   DemoOrderAgenda: Delivery agenda --------------- This redirects to the standard orders' agenda
-  DemoSupplierStats: No description.
-
-ui_pages:
   DemoPlaceNewOrder: Custom place new order page --------------------------- This custom Ui page is dedicated to place orders using simplified UX.
+  DemoSupplierStats: No description.
 
 api_services:
   DemoCatalogAPI: Custom catalog REST web service ------------------------------- This custom API returns the available products only.

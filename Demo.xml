@@ -3857,7 +3857,7 @@
 		<fld_sort_nulls/>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
-		<fld_listsum>5</fld_listsum>
+		<fld_listsum/>
 		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
@@ -6130,7 +6130,7 @@ This custom Ui page is dedicated to place orders using simplified UX.]]></obe_co
 		<obe_script_id/>
 		<obe_icon>img/color/documents_folder</obe_icon>
 		<obe_permalink/>
-		<obe_widget>0</obe_widget>
+		<obe_widget>1</obe_widget>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 		<obe_width/>
 		<obe_height/>
@@ -13520,7 +13520,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Excel publication example</prt_translation>
 		<prt_filename/>
@@ -13537,7 +13537,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>O</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Mustache publication example</prt_translation>
 		<prt_filename/>
@@ -13554,7 +13554,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Listing</prt_translation>
 		<prt_filename/>
@@ -13571,7 +13571,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>O</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Receipt</prt_translation>
 		<prt_filename><![CDATA[Order-[VALUE:demoOrdNumber]]]></prt_filename>
@@ -13588,7 +13588,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>E</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Custom XML publication</prt_translation>
 		<prt_filename/>
@@ -13605,7 +13605,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>O</prt_usage>
 		<prt_visible>P</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Brochure</prt_translation>
 		<prt_filename><![CDATA[[VALUE:demoPrdReference].docx]]></prt_filename>
@@ -13622,7 +13622,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>FRA</prt_lang>
 		<prt_translation>Email stock bas</prt_translation>
 		<prt_filename/>
@@ -13639,7 +13639,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>X</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ENU</prt_lang>
 		<prt_translation>Low stock email</prt_translation>
 		<prt_filename/>
@@ -13656,7 +13656,7 @@ is still in pending state]]></cst_desc>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-		<prt_accessible/>
+		<prt_accessible>0</prt_accessible>
 		<prt_lang>ANY</prt_lang>
 		<prt_translation>Catalog</prt_translation>
 		<prt_filename/>
@@ -16089,11 +16089,11 @@ is still in pending state]]></cst_desc>
 				</data>
 			</object>
 		</res_object>
-		<res_type>JS</res_type>
+		<res_type>TS</res_type>
 		<res_lang>ANY</res_lang>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectInternal/DemoClient/CLASS.js</res_file>
+		<res_file>resources/ObjectInternal/DemoClient/CLASS.ts</res_file>
 		<res_file_compiled>resources/ObjectInternal/DemoClient/CLASS.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
@@ -16107,11 +16107,11 @@ is still in pending state]]></cst_desc>
 				</data>
 			</object>
 		</res_object>
-		<res_type>JS</res_type>
+		<res_type>TS</res_type>
 		<res_lang>ANY</res_lang>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectInternal/DemoOrder/CLASS.js</res_file>
+		<res_file>resources/ObjectInternal/DemoOrder/CLASS.ts</res_file>
 		<res_file_compiled>resources/ObjectInternal/DemoOrder/CLASS.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
