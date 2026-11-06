@@ -11,24 +11,24 @@ Simplicite.UI.BusinessObjects.DemoClient = class extends Simplicite.UI.BusinessO
         const L = await $factory.Leaflet();
 
         const data: KeyObject = {};
-        data.row_id = $ui.getUIField(null, this, 'row_id')?.ui?.val();
+        data.row_id = $ui.getUIField(null, this, 'row_id').ui.val();
         if (data.row_id && data.row_id != '0') {
-            const coords = ($ui.getUIField(null, this, 'demoCliCoords')?.ui?.val() as string || '').replace(';', ',').split(',');
+            const coords = ($ui.getUIField(null, this, 'demoCliCoords').ui.val() as string || '').replace(';', ',').split(',');
             data.latitude = coords[0];
             data.longitude = coords[1];
             data.name = $.escapeHTML(
-                $ui.getUIField(null, this, 'demoCliFirstname')?.ui?.val() + ' ' +
-                $ui.getUIField(null, this, 'demoCliLastname')?.ui?.val()
+                $ui.getUIField(null, this, 'demoCliFirstname').ui.val() + ' ' +
+                $ui.getUIField(null, this, 'demoCliLastname').ui.val()
             );
             data.address = $.escapeHTML(
-                $ui.getUIField(null, this, 'demoCliAddress1')?.ui?.val() + ', ' +
-                $ui.getUIField(null, this, 'demoCliZipCode')?.ui?.val() + ' ' +
-                $ui.getUIField(null, this, 'demoCliCity')?.ui?.val() + ', ' +
-                $ui.getUIField(null, this, 'demoCliCountry')?.ui?.val()
+                $ui.getUIField(null, this, 'demoCliAddress1').ui.val() + ', ' +
+                $ui.getUIField(null, this, 'demoCliZipCode').ui.val() + ' ' +
+                $ui.getUIField(null, this, 'demoCliCity').ui.val() + ', ' +
+                $ui.getUIField(null, this, 'demoCliCountry').ui.val()
             );
         }
 
-        const settings = JSON.parse(await $ui.grant?.getParameter('MAP_SETTINGS') as string || '{}');
+        const settings = JSON.parse(await $grant.getParameter('MAP_SETTINGS') as string || '{}');
 
         $('#client-map').show();
 
