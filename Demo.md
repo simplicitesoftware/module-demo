@@ -350,7 +350,6 @@ stateDiagram-v2
         - demoOrdQuantity.updatable = `false`
         - demoOrdCliId.updatable = `false`
         - demoOrdPrdId.updatable = `false`
-        - demoOrdDeliveryDate.visible = `ObjectField.VIS_NOT`
         - demoOrdDeliveryDate.updatable = `false`
         - demoOrdDeliveryDate.mandatory = `false`
 * **DemoOrder-C2**: Status field only updatable by the administrator
@@ -366,10 +365,9 @@ stateDiagram-v2
         - demoOrdCliId.updatable = `true`
         - demoOrdPrdId.updatable = `true`
 * **DemoOrder-C4**: Delivery date field only updatable when the order is not delivered nor cancelled
-    - Condition: `![ISNEW] && [STATUS] != "C"`
+    - Condition: `true`
     - Effects: back
     - Impacts:
-        - demoOrdDeliveryDate.visible = `ObjectField.VIS_FORM`
         - demoOrdDeliveryDate.updatable = `[STATUS] != "D" && [STATUS] != "C"`
 * **DemoOrder-C5**: Delivery order field mandatory at validation
     - Condition: `[STATUS] == "V"`

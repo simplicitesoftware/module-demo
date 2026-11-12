@@ -520,7 +520,6 @@ DemoOrder-C1:
     - demoOrdQuantity.updatable = false
     - demoOrdCliId.updatable = false
     - demoOrdPrdId.updatable = false
-    - demoOrdDeliveryDate.visible = ObjectField.VIS_NOT
     - demoOrdDeliveryDate.updatable = false
     - demoOrdDeliveryDate.mandatory = false
 
@@ -541,11 +540,10 @@ DemoOrder-C3:
     - demoOrdPrdId.updatable = true
 
 DemoOrder-C4:
-  condition: ![ISNEW] && [STATUS] != "C"
+  condition: true
   effects: back
   description: Delivery date field only updatable when the order is not delivered nor cancelled
   impacts:
-    - demoOrdDeliveryDate.visible = ObjectField.VIS_FORM
     - demoOrdDeliveryDate.updatable = [STATUS] != "D" && [STATUS] != "C"
 
 DemoOrder-C5:
