@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="1300" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="1298" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -436,7 +436,7 @@ Open this dataset and click on the _Apply_ button after having imported the modu
 		<usr_menu_defcollapsed>0</usr_menu_defcollapsed>
 		<usr_menu_defdomain_id.obd_name/>
 		<usr_logout>2015-10-21 17:59:12</usr_logout>
-		<usr_last_logon>2026-09-16 14:56:57</usr_last_logon>
+		<usr_last_logon>2026-10-22 18:49:03</usr_last_logon>
 		<usr_dateformat/>
 		<usr_numformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
@@ -12231,7 +12231,7 @@ is still in pending state]]></cst_desc>
 		<cst_type>E</cst_type>
 		<cst_effects>B</cst_effects>
 		<cst_field_id.fld_name/>
-		<cst_expr><![CDATA[![ISNEW] && [STATUS] != "C"]]></cst_expr>
+		<cst_expr><![CDATA[true]]></cst_expr>
 		<cst_method/>
 		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
 	</data>
@@ -12546,20 +12546,6 @@ is still in pending state]]></cst_desc>
 		<csi_const_id.cst_object_id.obo_name>DemoOrder</csi_const_id.cst_object_id.obo_name>
 		<csi_order>50</csi_order>
 		<csi_object_prop/>
-		<csi_field_prop>V</csi_field_prop>
-		<csi_apply>F</csi_apply>
-		<csi_expr><![CDATA[ObjectField.VIS_NOT]]></csi_expr>
-		<csi_target/>
-		<csi_objfield_id.obf_object_id.obo_name>DemoOrder</csi_objfield_id.obf_object_id.obo_name>
-		<csi_objfield_id.obf_field_id.fld_name>demoOrdDeliveryDate</csi_objfield_id.obf_field_id.fld_name>
-		<csi_objfield_id.obf_order>130</csi_objfield_id.obf_order>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<csi_const_id.cst_name>DemoOrder-C1</csi_const_id.cst_name>
-		<csi_const_id.cst_object_id.obo_name>DemoOrder</csi_const_id.cst_object_id.obo_name>
-		<csi_order>60</csi_order>
-		<csi_object_prop/>
 		<csi_field_prop>U</csi_field_prop>
 		<csi_apply>F</csi_apply>
 		<csi_expr><![CDATA[false]]></csi_expr>
@@ -12572,7 +12558,7 @@ is still in pending state]]></cst_desc>
 	<data>
 		<csi_const_id.cst_name>DemoOrder-C1</csi_const_id.cst_name>
 		<csi_const_id.cst_object_id.obo_name>DemoOrder</csi_const_id.cst_object_id.obo_name>
-		<csi_order>70</csi_order>
+		<csi_order>60</csi_order>
 		<csi_object_prop/>
 		<csi_field_prop>M</csi_field_prop>
 		<csi_apply>F</csi_apply>
@@ -12643,20 +12629,6 @@ is still in pending state]]></cst_desc>
 		<csi_const_id.cst_name>DemoOrder-C4</csi_const_id.cst_name>
 		<csi_const_id.cst_object_id.obo_name>DemoOrder</csi_const_id.cst_object_id.obo_name>
 		<csi_order>10</csi_order>
-		<csi_object_prop/>
-		<csi_field_prop>V</csi_field_prop>
-		<csi_apply>F</csi_apply>
-		<csi_expr><![CDATA[ObjectField.VIS_FORM]]></csi_expr>
-		<csi_target/>
-		<csi_objfield_id.obf_object_id.obo_name>DemoOrder</csi_objfield_id.obf_object_id.obo_name>
-		<csi_objfield_id.obf_field_id.fld_name>demoOrdDeliveryDate</csi_objfield_id.obf_field_id.fld_name>
-		<csi_objfield_id.obf_order>130</csi_objfield_id.obf_order>
-		<row_module_id.mdl_name>Demo</row_module_id.mdl_name>
-	</data>
-	<data>
-		<csi_const_id.cst_name>DemoOrder-C4</csi_const_id.cst_name>
-		<csi_const_id.cst_object_id.obo_name>DemoOrder</csi_const_id.cst_object_id.obo_name>
-		<csi_order>20</csi_order>
 		<csi_object_prop/>
 		<csi_field_prop>U</csi_field_prop>
 		<csi_apply>F</csi_apply>

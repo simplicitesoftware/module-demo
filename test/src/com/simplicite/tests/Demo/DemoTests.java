@@ -62,10 +62,12 @@ public class DemoTests {
 
 			// Get first product
 			ObjectDB prd = sys.getObject("test_DemoProduct", "DemoProduct");
-			prd.setValues(prd.search().get(0), true); // Select the first product
+			prd.setValues(prd.getTool().search(new JSONObject()).get(0), true); // Select the first product
 			ObjectField ps = prd.getField(DemoProduct.STOCK_FIELDNAME);
-			int stock = ps.getInt(-1);
-			AppLog.info("Product " + prd.getFieldValue("demoPrdReference") + " stock = " + stock, sys);
+			int stock = ps.getInt(0);
+			ObjectField pup = prd.getField(DemoProduct.UNIT_PRICE_FIELDNAME);
+			double unitPrice = pup.getDouble(0);
+			AppLog.info("Product " + prd.getFieldValue("demoPrdReference") + " stock = " + stock + ", unit price = " + unitPrice, sys);
 			// Increase product quantity
 			if (stock < quantity) {
 				ps.setValue(stock + quantity);
@@ -91,6 +93,8 @@ public class DemoTests {
 			// Check default values
 			ObjectField q = ord.getField("demoOrdQuantity");
 			assertEquals(q.getDefaultValue(), q.getValue()); // Check the default quantity
+			ObjectField up = ord.getField("demoOrdUnitPrice");
+			assertEquals(up.getDefaultValue(), up.getValue()); // Check the default unit price
 			ObjectField t = ord.getField("demoOrdTotal");
 			assertEquals(t.getDefaultValue(), t.getValue()); // Check the default total
 			ObjectField s = ord.getField("demoOrdStatus");
@@ -120,42 +124,56 @@ public class DemoTests {
 			q.setValue(quantity);
 			ord.getTool().validateAndSave(); // Create order
 			String n = ord.getFieldValue("demoOrdNumber");
-			AppLog.info("Created order #" + n + " for " + quantity + " quantity", sys);
-
-			ord.select(ord.getRowId()); // Reload the order's record
+			AppLog.info("Created order #" + n + " in status " + s.getValue() + " for quantity = " + q.getValue() + ", unit price = " + up.getValue() + " and total = " + t.getValue(), sys);
 			assertEquals("P", s.getValue()); // Check the status value
 			assertEquals(quantity, q.getInt(-1)); // Check the quantity
-			assertEquals(ord.getField("demoOrdPrdId.demoPrdUnitPrice").getDouble(0) * q.getDouble(0), t.getDouble(-1), 0); // Check total calculation
-			assertEquals(t.getDouble(0) * Double.valueOf(sys.getParameter("DEMO_VAT")) / 100, ord.getField("demoOrdVAT").getDouble(-1), 0); // Check VAT calculation
+			assertEquals(unitPrice, up.getDouble(-1), 0); // Check the order-level unit price
+			assertEquals(unitPrice * quantity, t.getDouble(-1), 0); // Check the order total calculation
+			assertEquals(t.getDouble(0) * Double.valueOf(sys.getParameter("DEMO_VAT")) / 100, ord.getField("demoOrdVAT").getDouble(-1), 0); // Check the order VAT calculation
 
-			s.setOldValue(s.getValue());
-			s.setValue("V"); // Validated
+			// Check that constraints were applied
+			ord.getTool().get(ord.getRowId()); // Reload the order's record
+			assertEquals("P", s.getValue()); // Check the status value
+			assertTrue(p.isUpdatable()); // Check that the product is updatable anymore
+			assertTrue(c.isUpdatable()); // Check that the customer is updatable anymore
+			assertTrue(q.isUpdatable()); // Check that the quantity is updatable anymore
+			ObjectField d = ord.getField("demoOrdDeliveryDate");
+			assertTrue(d.isUpdatable()); // Check that the delivery date is updatable
+
+			// Validate the order
+			s.setOldValue(s.getValue()); // ZZZ set the old value to trigger the state transition logic
+			s.setValue("V"); // Set validated
 			ord.getTool().validateAndSave();
 			AppLog.info("Validated order #" + n, sys);
 
-			ord.select(ord.getRowId()); // Reload the order's record
+			// Check that constraints were applied
+			ord.getTool().get(ord.getRowId()); // Reload the order's record
 			assertEquals("V", s.getValue()); // Check the status value
 			assertFalse(p.isUpdatable()); // Check that the product is not updatable anymore
 			assertFalse(c.isUpdatable()); // Check that the customer is not updatable anymore
 			assertFalse(q.isUpdatable()); // Check that the quantity is not updatable anymore
-			ObjectField d = ord.getField("demoOrdDeliveryDate");
 			assertTrue(d.isUpdatable()); // Check that the delivery date is still updatable
 
-			s.setOldValue(s.getValue());
-			s.setValue("D"); // Delivered
+			// Mark order as delivered
+			s.setOldValue(s.getValue()); // ZZZ set the old value to trigger the state transition logic
+			s.setValue("D"); // Set delivered
 			ord.getTool().validateAndSave();
 			AppLog.info("Delivered order #" + n, sys);
 
-			ord.select(ord.getRowId()); // Reload the order's record
+			// Check that constraints were applied
+			ord.getTool().get(ord.getRowId()); // Reload the order's record
 			assertEquals("D", s.getValue()); // Check the status value
 			assertFalse(d.isUpdatable()); // Check that the delivery date is not updatable anymore
 
-			prd.select(prd.getRowId()); // Reload the product's record
+			// Check that stock decrement was done
+			prd.getTool().get(prd.getRowId()); // Reload the product's record
 			AppLog.info("Product stock was decreased to = " + ps.getInt(-1), sys);
 			assertEquals(ps.getInt(-1), stock - quantity);
 
+			// Clean up = delete order
 			ord.getTool().delete();
 			AppLog.info("Deleted order #" + n, sys);
+
 
 			AppLog.info("Success", sys);
 		} catch (Exception e) {
