@@ -38,6 +38,8 @@ public class DemoProduct extends ObjectDB {
     public static final String DOCUMENTATION_FIELDNAME = "demoPrdDocumentation";
     /** Stock field name */
     public static final String STOCK_FIELDNAME = "demoPrdStock";
+    /** Unit price field name */
+    public static final String UNIT_PRICE_FIELDNAME = "demoPrdUnitPrice";
     /** Stock increment field name */
     public static final String INCREMENT_FIELDNAME = "demoPrdIncrement";
 

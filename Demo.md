@@ -209,9 +209,9 @@ stateDiagram-v2
 
 * `printMustache`: HTML publication (using Mustache(R) templating) method
 * `printExcel`: Microsoft Excel(R) sheet publication method
+* `getUserKeyLabel`
 * `postLoad`
 * `canReference`
-* `getUserKeyLabel`
 
 `DemoContactHistoric` (Contact (hist.)) business object definition
 ------------------------------------------------------------------
@@ -394,12 +394,12 @@ stateDiagram-v2
 
 ### Implemented hooks
 
+* `isPrintTemplateEnable`
+* `getUserKeyLabel`
 * `postValidate`
 * `postUpdate`
 * `postSave`
 * `canReference`
-* `isPrintTemplateEnable`
-* `getUserKeyLabel`
 
 `DemoOrderHistoric` (Order (hist.)) business object definition
 --------------------------------------------------------------
@@ -565,10 +565,10 @@ state transition to _shipped_ status.
 * `increaseStock`: Increase stock action method
 * `decreaseStock`: Decrease stock action method
 * `printBrochure`: Microsoft Word(R) brochure publication method
+* `getUserKeyLabel`
 * `initAction`
 * `preSave`
 * `canReference`
-* `getUserKeyLabel`
 * `sendEmail`: Send product data in an email action method
 
 `DemoClient` (Customer) business object definition
@@ -626,10 +626,10 @@ His address is geolocalized using GoogleMaps&reg; API.
 
 ### Implemented hooks
 
+* `getUserKeyLabel`
 * `postLoad`
 * `postValidate`
 * `preSave`
-* `getUserKeyLabel`
 
 ## Process: DemoOrderCreate
 

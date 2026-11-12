@@ -352,9 +352,9 @@ Contact business object
 ```yaml
 printMustache: HTML publication (using Mustache(R) templating) method
 printExcel: Microsoft Excel(R) sheet publication method
+getUserKeyLabel: ~
 postLoad: ~
 canReference: ~
-getUserKeyLabel: ~
 ```
 
 ---
@@ -578,12 +578,12 @@ Order business object
 ### Hooks
 
 ```yaml
+isPrintTemplateEnable: ~
+getUserKeyLabel: ~
 postValidate: ~
 postUpdate: ~
 postSave: ~
 canReference: ~
-isPrintTemplateEnable: ~
-getUserKeyLabel: ~
 ```
 
 ---
@@ -822,10 +822,10 @@ Product business object
 increaseStock: Increase stock action method
 decreaseStock: Decrease stock action method
 printBrochure: Microsoft Word(R) brochure publication method
+getUserKeyLabel: ~
 initAction: ~
 preSave: ~
 canReference: ~
-getUserKeyLabel: ~
 sendEmail: Send product data in an email action method
 ```
 
@@ -902,10 +902,10 @@ Customer business object
 ### Hooks
 
 ```yaml
+getUserKeyLabel: ~
 postLoad: ~
 postValidate: ~
 preSave: ~
-getUserKeyLabel: ~
 ```
 
 ---
